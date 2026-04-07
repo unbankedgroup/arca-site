@@ -8,12 +8,16 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, meta_description, pubDate, updatedDate, last_updated, heroImage, author, target_keyword } = Astro.props;
+// Use meta_description if present (cluster posts), fall back to description (default posts)
+const pageDescription = meta_description || description || '';
+// Resolve author name for display
+const authorName = typeof author === 'string' ? author : author?.name;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={pageDescription} />
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -73,7 +77,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 									</div>
 								)
 							}
+							{
+								last_updated && !updatedDate && (
+									<div class="last-updated-on">Last updated: {last_updated}</div>
+								)
+							}
 						</div>
+						{authorName && <div class="author">By <strong>{authorName}</strong></div>}
 						<h1>{title}</h1>
 						<hr />
 					</div>

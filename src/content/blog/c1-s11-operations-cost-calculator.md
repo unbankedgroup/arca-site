@@ -1,5 +1,5 @@
 ---
-title: "Operations Cost Calculator: What Your Business Really Spends on Admin"
+title: "Operations Cost Calculator: Find Your Real Admin Cost in 5 Minutes"
 slug: operations-cost-calculator
 cluster: C1 — Managed Operations
 id: C1-S11
@@ -7,8 +7,10 @@ target_keyword: "operations cost calculator small business"
 secondary_keywords: "admin cost small business, DIY ops cost calculator, business operations ROI"
 search_intent: Informational
 word_count: ~1,000
-meta_description: "Calculate what your business really spends on operations. DIY tools + admin time + revenue leakage = the real cost of broken ops."
+meta_description: "Add up your tool costs, admin hours, and revenue leakage. Most coaches discover they're spending 10-40x more than they thought. Run the numbers in 5 minutes."
 links_to: C1-P, C1-S2, C1-S10, C5-P, C5-S1
+author: Mal Mposha
+last_updated: April 2026
 ---
 
 # Operations Cost Calculator: What Your Business Really Spends on Admin
@@ -241,5 +243,33 @@ Invest when ops cost exceeds 20% of revenue, or when admin time exceeds 10 hours
       }
     }
   ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Operations Cost Calculator: Find Your Real Admin Cost in 5 Minutes",
+  "description": "Calculate what your business really spends on operations. DIY tools + admin time + revenue leakage = the real cost of broken ops.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/operations-cost-calculator"
+  }
 }
 </script>

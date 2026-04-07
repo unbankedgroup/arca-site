@@ -122,9 +122,9 @@ Add up your points from all five questions.
 | 301-400 | Optimized — Minor improvements only |
 | 401-500 | Elite — Your operations are a competitive advantage |
 
-**The reality check:** In our analysis of 500+ coaching businesses, the average score was 187. That's "Fragile" — functional enough to survive, but vulnerable to any disruption.
+**The reality check:** Across coaches and consultants who've done this audit, the average score lands around 187. That's "Fragile" — functional enough to survive, but one sick week or busy quarter from falling apart.
 
-The top 10% scored 380+. Their secret wasn't better tools. It was systematic elimination of manual steps.
+The pattern among those who score 380+: their advantage isn't better tools. It's systematic elimination of manual steps.
 
 ## What your score means
 
@@ -211,7 +211,7 @@ No. Panic wastes energy. But do act. A score of 150 means you're losing revenue 
 
 ### What's the ROI of fixing operations?
 
-Based on our client data: 8-12 hours recovered per month, 23% increase in on-time payments, and 31% reduction in client churn. For a coach billing $150/hour, that's $1,400-2,100 per month in recovered value — plus the revenue from retained clients.
+Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, and reduced early churn from better onboarding and follow-up. For a coach billing $150/hour, recovering 10 hours/month is $1,500 — before counting revenue from clients who stop falling through the cracks.
 
 <script type="application/ld+json">
 {
@@ -255,7 +255,7 @@ Based on our client data: 8-12 hours recovered per month, 23% increase in on-tim
       "name": "What's the ROI of fixing operations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Based on our client data: 8-12 hours recovered per month, 23% increase in on-time payments, and 31% reduction in client churn. For a coach billing $150/hour, that's $1,400-2,100 per month in recovered value — plus the revenue from retained clients."
+        "text": "Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, and reduced early churn from better onboarding and follow-up. For a coach billing $150/hour, recovering 10 hours/month is $1,500 — before counting revenue from clients who stop falling through the cracks."
       }
     }
   ]

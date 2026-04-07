@@ -133,3 +133,31 @@ It sounds small. It changes everything.
 ---
 
 *Arca delivers your morning briefing through WhatsApp or Telegram. One message. Full picture. Set up for you in 7 days. [Book your free strategy call](https://runarca.xyz/#cta) to see what your briefing would look like.*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Morning Briefing: How One Daily Message Replaces Six Open Tabs",
+  "description": "One daily briefing message replaces your 30-minute morning ritual of checking six different apps. Here's what it looks like and why it changes everything.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/morning-briefing"
+  }
+}
+</script>

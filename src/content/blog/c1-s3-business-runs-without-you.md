@@ -9,6 +9,8 @@ search_intent: Informational
 word_count: ~1,200
 meta_description: "Most service business owners can't take a week off without everything falling apart. Here's why that happens — and what it takes to build a business that keeps running without you."
 links_to: C1-P, C1-S5, C2-S7, C5-S5, C1-S6
+author: Mal Mposha
+last_updated: April 2026
 ---
 
 # What Happens to Your Business When You Take a Week Off?
@@ -137,3 +139,31 @@ And if you're considering a VA instead of infrastructure, read about the [VA han
 ---
 
 *Arca builds your operations so your business keeps running. Diagnosed to your workflow. Set up in 7 days. [See how it works →](https://runarca.xyz)*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Happens to Your Business When You Take a Week Off?",
+  "description": "Most service business owners can't take a week off without everything falling apart. Here's why that happens — and what it takes to build a business that keeps running without you.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/business-runs-without-you"
+  }
+}
+</script>

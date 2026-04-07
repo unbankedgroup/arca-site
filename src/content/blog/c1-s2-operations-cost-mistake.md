@@ -3,12 +3,14 @@ title: "The $3,000/Month Operations Mistake Most Solo Consultants Make"
 slug: operations-cost-mistake
 cluster: C1 — Managed Operations
 id: C1-S2
-target_keyword: "operations cost solo consultant"
-secondary_keywords: "hidden cost of DIY ops, small business operations cost, consultant admin time cost"
+target_keyword: "true cost of running a coaching business"
+secondary_keywords: "hidden cost coaching business admin, how much time coaches spend on admin, coaching business operations cost"
 search_intent: Commercial
 word_count: ~1,000
-meta_description: "Most solo consultants spend $3,000+/month on operations without realizing it. Here's where the money actually goes — and how to stop the bleed."
+meta_description: "Most coaches and consultants spend $3,000–$17,000/month on operations without realizing it. It's not the tools. It's the time, the lost leads, and the late invoices. Here's the real math."
 links_to: C1-P, C1-S1, C5-P, C5-S1, C1-S10
+author: Mal Mposha
+last_updated: April 2026
 ---
 
 # The $3,000/Month Operations Mistake Most Solo Consultants Make
@@ -61,8 +63,8 @@ And that calculation is generous. It assumes you could fill those hours with bil
 
 **The hidden time costs:**
 - Knowledge workers spend **28% of their workweek** just managing information across apps (McKinsey)
-- **1,100+ app switches per day** for the average user — each switch costs 23 seconds of refocus time
-- Context switching drains up to **40% of productive capacity** before lunch
+- **1,100+ app switches per day** for the average knowledge worker (RingCentral) — each switch fragments attention and adds recovery time
+- Context switching drains up to **40% of productive capacity** (University of Michigan research)
 
 ### Layer 3: The revenue you never see
 
@@ -135,3 +137,31 @@ The $3,000/month mistake isn't buying the wrong tool. It's being the tool.
 ---
 
 *Arca replaces DIY ops with managed operations. Diagnosed to your business. Set up in 7 days. $97/month. [See how it works →](https://runarca.xyz)*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The $3,000/Month Operations Mistake Most Solo Consultants Make",
+  "description": "Most coaches and consultants spend $3,000–$17,000/month on operations without realizing it. It's not the tools. It's the time, the lost leads, and the late invoices. Here's the real math.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/operations-cost-mistake"
+  }
+}
+</script>

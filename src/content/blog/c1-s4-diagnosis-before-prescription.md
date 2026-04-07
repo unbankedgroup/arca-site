@@ -1,5 +1,5 @@
 ---
-title: "Done for You Business Setup: Why Diagnosis Comes Before Prescription"
+title: "Done for You Business Setup: Why We Ask Before We Build"
 slug: diagnosis-before-prescription
 cluster: C1 — Managed Operations
 id: C1-S4
@@ -9,9 +9,11 @@ search_intent: Commercial
 word_count: ~1,000
 meta_description: "Done for you business setup starts with diagnosis, not templates. Here's why we learn your business before we build anything — and how it prevents the 50-63% implementation failure rate."
 links_to: C1-P, C1-S5, C1-S6, C2-S2
+author: Mal Mposha
+last_updated: April 2026
 ---
 
-# Done for You Business Setup: Why Diagnosis Comes Before Prescription
+# Done for You Business Setup: Why We Ask Before We Build
 
 Most founders searching for a done for you business setup find platforms that hand them a blank canvas and say "good luck."
 
@@ -94,3 +96,89 @@ But if 50-63% of these projects fail at implementation, and we don't solve imple
 ---
 
 *Arca learns how your business works, then builds your operations around it. One conversation. 7 days. Done. [Start your diagnosis →](https://runarca.xyz)*
+
+## FAQ
+
+**Q: What does "done for you business setup" actually include?**
+A: Discovery call (60-90 min), workflow design, full configuration (scheduling, invoicing, follow-ups, onboarding, morning briefing), end-to-end testing, and a live handoff call. You provide the inputs. We build everything. You approve before anything goes live.
+
+**Q: How is this different from a Dubsado or HoneyBook setup specialist?**
+A: Setup specialists configure a template to your preferences. We start from a blank diagnostic and build around how your business actually runs. The output isn't a configured template — it's an operations system that matches your specific client lifecycle, pricing structure, and communication style.
+
+**Q: What if I don't know what I need?**
+A: That's exactly why we start with questions. You describe your business in plain English — how leads find you, how you onboard clients, how you handle invoicing. We turn that into a working system. You don't need to know what automations you need. That's our job.
+
+**Q: How long does the setup actually take?**
+A: 7 days elapsed, 3-4 hours of your time. Most of that is the Day 1 discovery call and Day 7 handoff. Everything in between is us building. See the [day-by-day breakdown →](/blog/managed-operations/operations-setup-week).
+
+**Q: What's the 50-63% CRM failure rate from?**
+A: Gartner and Forrester have both published figures in this range across multiple years. The consistent finding: implementation failure is almost never a software problem — it's a setup and adoption problem. Done-for-you setup directly addresses this.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does done for you business setup actually include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discovery call, workflow design, full configuration of scheduling, invoicing, follow-ups, onboarding, and morning briefing, end-to-end testing, and a live handoff call. You provide inputs. We build everything. You approve before anything goes live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a Dubsado or HoneyBook setup specialist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Setup specialists configure a template to your preferences. We start from a blank diagnostic and build around how your business actually runs. The output matches your specific client lifecycle, pricing structure, and communication style — not a generic template."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't know what I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That's exactly why we start with questions. You describe your business in plain English — how leads find you, how you onboard clients, how you handle invoicing. We turn that into a working system. You don't need to know what automations you need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the setup take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "7 days elapsed, 3-4 hours of your time. Most of that is the Day 1 discovery call and Day 7 handoff. Everything in between is us building and testing."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Done for You Business Setup: Why We Ask Before We Build",
+  "description": "Done for you business setup starts with diagnosis, not templates. Here's why we learn your business before we build anything — and how it prevents the 50-63% implementation failure rate.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/diagnosis-before-prescription"
+  }
+}
+</script>

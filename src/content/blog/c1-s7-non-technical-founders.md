@@ -168,3 +168,31 @@ Not sure if you're technical enough to DIY? Take the [15-minute operations audit
   ]
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"I Just Want My Business to Work\": What Non-Technical Founders Actually Need From Operations",
+  "description": "Non-technical founder business automation shouldn't require you to become technical. Here's why 'no code' still means 'you build it' — and what the real alternative looks like.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/non-technical-founders"
+  }
+}
+</script>

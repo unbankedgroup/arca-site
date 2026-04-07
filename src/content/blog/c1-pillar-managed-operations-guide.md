@@ -1,14 +1,20 @@
 ---
-title: "The Complete Guide to Managed Operations for Service Businesses"
-meta_description: "Managed operations for service businesses means one platform handles your scheduling, invoicing, follow-ups, and client management. Learn what it is, how it works, and why it replaces your 5-tool stack."
-target_keyword: "managed operations for service businesses"
-secondary_keywords: "what is managed operations, operations platform for service business, small business ops automation"
+title: "How to Run Your Coaching Business Without Doing the Admin"
+meta_description: "Most coaches spend 20+ hours a week on scheduling, invoicing, and follow-ups. Here's what a done-for-you operations system looks like, what it costs, and whether it's the right move for your business."
+target_keyword: "coaching business operations system"
+secondary_keywords: "how to automate coaching business, done for you coaching operations, managed operations for coaches, coaching business admin"
 cluster: C1
 article_id: C1-P
 word_count_target: 3500+
+author: Mal Mposha
+last_updated: April 2026
 ---
 
-# The complete guide to managed operations for service businesses
+# How to Run Your Coaching Business Without Doing the Admin
+
+**Quick answer:** Most coaches spend 16–30 hours a week on scheduling, invoicing, follow-ups, and client onboarding — work that doesn't require their expertise. A done-for-you coaching business operations system handles all of it: diagnosed to your specific workflow, set up in 7 days, running from one conversation in Telegram. Cost: $97–$497/month. This guide covers what it is, how it works, and whether it's right for your business.
+
+---
 
 I spent six years in capital markets building financial infrastructure. Clean systems. Reliable flows. Everything tracked, everything audited, everything running whether I was watching or not.
 
@@ -18,9 +24,9 @@ Smart people. Good at what they do. But spending 16 hours a week on admin. Using
 
 That's not an operations strategy. That's a founder holding the ceiling up with their hands.
 
-Managed operations for service businesses is the idea that changed how I think about this problem. Not "get a better CRM." Not "try this new app." Not "hire a VA." Something different: let one platform diagnose how your business actually works, set it up for you, and run the operational tasks that shouldn't need your attention.
+A coaching business operations system is the idea that changed how I think about this problem. Not "get a better CRM." Not "try this new app." Not "hire a VA." Something different: one platform that learns how your business actually works, sets itself up for you, and runs the operational tasks that shouldn't need your attention.
 
-This guide covers what managed operations actually means, how it differs from the way most service businesses run today, and how to figure out whether it's the right move for yours.
+This guide covers what that looks like in practice, why most tools fail before this one, and how to figure out whether it's the right move for your business.
 
 ---
 
@@ -339,3 +345,46 @@ If you're curious what that would look like for your specific business, [book a 
 - [Operations for one: running like a 10-person team](/blog/managed-operations/operations-for-one)
 - [Chat-first operations: why your next tool should live in WhatsApp](/blog/managed-operations/chat-first-operations)
 - [How to audit your operations in 15 minutes](/blog/managed-operations/operations-audit-checklist)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Arca",
+  "url": "https://runarca.xyz",
+  "description": "AI operations platform for coaches and consultants. Done-for-you operations setup in 7 days.",
+  "founder": {
+    "@type": "Person",
+    "name": "Mal Mposha"
+  },
+  "sameAs": []
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Run Your Coaching Business Without Doing the Admin",
+  "description": "Most coaches spend 20+ hours a week on scheduling, invoicing, and follow-ups. Here's what a done-for-you operations system looks like, what it costs, and whether it's the right move for your business.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/managed-operations-guide"
+  }
+}
+</script>

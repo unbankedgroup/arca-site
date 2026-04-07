@@ -9,6 +9,8 @@ search_intent: Informational
 word_count: ~1,200
 meta_description: "Your CRM isn't broken. Your operations infrastructure is. Here's why switching CRMs won't fix the real problem — and what actually will."
 links_to: C1-P, C1-S2, C1-S4, C3-P, C1-S10
+author: Mal Mposha
+last_updated: April 2026
 ---
 
 # Why Your CRM Isn't the Problem (Your Operations Infrastructure Is)
@@ -43,9 +45,9 @@ The [tool consolidation guide](/blog/tool-consolidation/replace-saas-stack-guide
 
 **The numbers back this up:**
 
-- **50-63% of CRM implementations fail** — not because the software is broken, but because the infrastructure around it is missing
+- **50-63% of CRM implementations fail** — not because the software is broken, but because the infrastructure around it is missing (Gartner, Forrester)
 - The average small business uses **20+ disconnected tools** — and the founder is the glue holding them together
-- Leads who don't get a response within **5 minutes are 9x less likely to convert** — but most CRMs don't trigger instant follow-up
+- Leads who don't get a response within **5 minutes are 9x less likely to convert** — but most CRMs don't trigger instant follow-up (Harvard Business Review)
 - By the time you manually respond to a lead (**12-24 hours average**), they've often already booked with someone else
 
 ## The CRM evaluation trap
@@ -66,7 +68,7 @@ Here's the part nobody calculates: the cost of living in the gap between tools.
 
 You finish a coaching session. The client says "send me that resource." You open a new tab. Find the document. Draft an email. Then you remember you need to log the session notes. That's a different tab. Then you need to mark the invoice as sent. Different tool. Then you check if they've booked their next session. Calendar tab.
 
-Each switch costs you 9.5 minutes of refocus time. Over a day, that's 45-60 minutes lost. Over a week, that's 4-5 hours. Over a year, that's 200+ hours — five full work weeks — vanished into context switching.
+Each switch fragments your attention. Across a full day, the accumulation costs 45-60 minutes of productive capacity. Over a week, that's 4-5 hours. Over a year, that's 200+ hours — five full work weeks — vanished into context switching.
 
 The tools work fine individually. The problem is the space between them. That's where your time goes. That's where your energy drains. That's where your business leaks revenue.
 
@@ -109,3 +111,31 @@ Your CRM was never the problem. The missing infrastructure was.
 ---
 
 *Arca builds your operations infrastructure in 7 days. One chat. Everything connected. [See how it works →](https://runarca.xyz)*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Your CRM Isn't the Problem (Your Operations Infrastructure Is)",
+  "description": "Your CRM isn't broken. Your operations infrastructure is. Here's why switching CRMs won't fix the real problem — and what actually will.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/crm-not-the-problem"
+  }
+}
+</script>

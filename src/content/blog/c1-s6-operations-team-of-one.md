@@ -7,7 +7,7 @@ target_keyword: "solo business operations system"
 secondary_keywords: "solo consultant operations, one person business infrastructure, run business like a team"
 search_intent: Informational
 word_count: 1200
-meta_description: "Solo consultants have the same operational needs as 10-person teams — with none of the infrastructure. Here's how managed operations closes the gap."
+meta_description: "Solo coaches and consultants have the same operational needs as a 10-person team — with none of the infrastructure. Here's how to build systems that handle the repeatable work for you."
 links_to: C1-P, C1-S2, C1-S3, C2-P, C1-S8, C1-S10
 last_updated: April 2026
 author: Mal Mposha
@@ -110,3 +110,31 @@ The foundation was always the missing piece.
 ---
 
 *Arca is managed operations for service businesses. We diagnose how your business runs, build the infrastructure for you in 7 days, and it runs from one conversation in WhatsApp or Telegram. [Book a free strategy call](https://runarca.xyz/#cta) to see what it would look like for your business.*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Operations for One: How Solo Service Businesses Run Like 10-Person Teams",
+  "description": "Solo consultants have the same operational needs as 10-person teams — with none of the infrastructure. Here's how managed operations closes the gap.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/operations-for-one"
+  }
+}
+</script>

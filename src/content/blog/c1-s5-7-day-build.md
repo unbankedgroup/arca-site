@@ -1,27 +1,31 @@
 ---
-title: "The 7-Day Build: Your Operations, Set Up in One Week"
-slug: 7-day-build-explained
+title: "Done-for-You Operations Setup: What Happens Each Day of Your First Week"
+slug: operations-setup-week
 cluster: C1 — Managed Operations
-id: C1-S5
-target_keyword: "7-day business setup sprint"
-secondary_keywords: "done for you business setup, operations setup sprint, business automation setup"
+id: C1-S5b
+target_keyword: "done for you operations setup"
+secondary_keywords: "business operations setup service, operations setup week, what to expect managed operations"
 search_intent: Commercial
 word_count: ~1,200
-meta_description: "Most platforms take 30-40 hours to set up. We build your operations in 7 days. Here's what happens each day and what you get at the end."
-links_to: C1-P, C1-S4, C1-S6, C1-S10
+meta_description: "Done-for-you operations setup takes 7 days and 3-4 hours of your time. Here's exactly what happens each day — discovery, build, test, and go-live."
+links_to: C1-P, C1-S4, C1-S5, C1-S6, C1-S10
+author: Mal Mposha
+last_updated: April 2026
 ---
 
-# The 7-Day Build: Your Operations, Set Up in One Week
+# Done-for-You Operations Setup: What Happens Each Day of Your First Week
 
-**Quick answer:** While competitors take 30-40 hours to set up (GoHighLevel) or weeks of configuration (Dubsado), the 7-Day Build delivers a fully configured operations system in one week. Day 1-3: diagnosis and design. Day 4-6: build and test. Day 7: handoff and training. You're live on day 8. This is the foundation of our [Managed Operations Platform](/blog/managed-operations/managed-operations-guide).
+**Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/managed-operations/diagnosis-before-prescription).
 
 ---
 
-I spent six years in capital markets building financial infrastructure. When systems went live, they worked — or they didn't go live at all. There was no "we'll figure it out after launch."
+Most operations platforms hand you login credentials and a "Getting Started" guide.
 
-Then I watched coaches and consultants spend weeks, sometimes months, trying to set up their own operations. GoHighLevel users report 30-40 hours of setup time. Dubsado users spend weeks configuring workflows. And many never finish — they abandon the tool halfway through because the learning curve is steeper than the benefit.
+That's not setup. That's the beginning of a 20-40 hour DIY project most founders never finish.
 
-That's why I built the 7-Day Build. Not a template. Not a blank canvas. A done-for-you setup sprint that delivers a working operations system in one week. This is the core of our [managed operations approach](/blog/managed-operations/managed-operations-guide) — operations as a service, not a DIY project.
+Done-for-you setup is different: you describe your business, we build it, you approve it, it runs. Here's exactly what that looks like — day by day — so you know what to expect before you start.
+
+*This is the step-by-step breakdown of the [7-Day Build](/blog/managed-operations/7-day-build-explained). If you want to understand why the process is structured this way, read that first.*
 
 ## Why 7 days?
 
@@ -281,5 +285,33 @@ A: If they're essential, yes. We integrate with your calendar, payment processor
       }
     }
   ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Done-for-You Operations Setup: What Happens Each Day of Your First Week",
+  "description": "Done-for-you operations setup takes 7 days and 3-4 hours of your time. Here's exactly what happens each day — discovery, build, test, and go-live.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/operations-setup-week"
+  }
 }
 </script>

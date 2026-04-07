@@ -9,6 +9,8 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Most operations setups take 30-40 hours and weeks of configuration. The 7-Day Build diagnoses your business, configures everything, and has you live in 7 days. Here's how it works."
 links_to: C1-P, C1-S4, C1-S6
+author: Mal Mposha
+last_updated: April 2026
 ---
 
 # The 7-Day Build: How a Full Operations Setup Actually Gets Done in a Week
@@ -213,5 +215,33 @@ A: You'll see it in your morning briefing. Arca reports failures transparently: 
       }
     }
   ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The 7-Day Build: How Arca Gets You Live in One Week (Not 7 Weeks)",
+  "description": "Most operations setups take 30-40 hours and weeks of configuration. The 7-Day Build diagnoses your business, configures everything, and has you live in 7 days. Here's how it works.",
+  "author": {
+    "@type": "Person",
+    "name": "Mal Mposha",
+    "url": "https://runarca.xyz/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arca",
+    "url": "https://runarca.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://runarca.xyz/logo.png"
+    }
+  },
+  "dateModified": "2026-04-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://runarca.xyz/blog/7-day-build-explained"
+  }
 }
 </script>
