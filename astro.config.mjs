@@ -4,13 +4,18 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://runarca.xyz',
-	base: '/blog',
-	integrations: [mdx(), sitemap()],
-	output: 'static',
-	build: {
-		format: 'file'
-	}
+  site: 'https://runarca.xyz',
+  base: '/blog',
+  integrations: [mdx(), sitemap()],
+  output: 'static',
+
+  build: {
+      format: 'file'
+	},
+
+  adapter: cloudflare()
 });
