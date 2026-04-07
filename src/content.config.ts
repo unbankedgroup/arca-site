@@ -38,7 +38,7 @@ const blog = defineCollection({
 			]).optional(),
 			canonical_url: z.string().optional(),
 			schema_type: z.string().optional(),
-			date_published: z.string().optional(),
+			date_published: z.union([z.string(), z.coerce.date()]).optional(),
 		}),
 });
 
