@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Client lifetime value optimization means keeping clients longer and expanding value ethically. Here's how to increase LTV without being pushy."
 links_to: C6-P, C6-S8, C6-S9, C1-S2, C5-P
-date_published: "2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca
