@@ -11,8 +11,6 @@ meta_description: "Referral request automation turns happy clients into a steady
 links_to: C6-P, C6-S7, C2-S8, C5-S5
 ---
 
-# Referral Request Automation: Turn Happy Clients Into a Steady Pipeline
-
 92% of consumers trust referrals from people they know. Referred customers have a 37% higher retention rate. They close 2-3x faster than cold leads.
 
 Yet most coaches leave referrals to chance. They hope happy clients will refer. They don't ask.

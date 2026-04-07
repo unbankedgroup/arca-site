@@ -11,8 +11,6 @@ meta_description: "Virtual assistant vs automation isn't an either/or choice. He
 links_to: C5-P, C5-S1, C5-S3, C1-S4
 ---
 
-# Virtual Assistant vs Automation for Small Business: The Real Decision Framework
-
 The question comes up in every business owner forum, every coaching Facebook group, every consultant Slack channel.
 
 "Should I hire a virtual assistant or use automation?"

@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# HoneyBook alternative after the 2025 price hike: what coaches are switching to
-
 ## What happened to HoneyBook pricing
 
 If you are searching for a HoneyBook alternative after price increase, here is the context. In 2025, HoneyBook raised its Starter plan from $19 to $36 per month. That is an 89% increase. The Essentials plan went from $39 to $59. Users who signed up two years ago are now paying 4 to 8 times what they originally budgeted for. The frustration is not about the dollar amount alone. It is about paying significantly more for features that were not requested.

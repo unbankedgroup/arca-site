@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -25,6 +25,7 @@ const {
 const pageDescription = meta_description || description || '';
 const authorName = typeof author === 'string' ? author : author?.name;
 const authorRole = typeof author === 'object' ? author?.role : undefined;
+const authorBio = typeof author === 'object' ? (author as any)?.bio : undefined;
 
 // Estimate reading time from word_count (fallback to 5 min)
 const parseWordCount = (wc: string | number | undefined): number => {
@@ -35,8 +36,23 @@ const parseWordCount = (wc: string | number | undefined): number => {
 const wordCountNum = parseWordCount(word_count);
 const readingMinutes = wordCountNum > 0 ? Math.max(1, Math.round(wordCountNum / 220)) : 5;
 
-// Extract category label from cluster string (e.g. "C1 — Managed Operations" → "Managed Operations")
-const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() : 'Learn';
+// Extract category label + cluster code from cluster string
+const clusterMatch = cluster ? cluster.match(/^(C\d+)\s*[—-]\s*(.*)$/) : null;
+const clusterCode = clusterMatch ? clusterMatch[1] : '';
+const categoryLabel = clusterMatch ? clusterMatch[2].trim() : (cluster || 'Learn');
+
+// Related posts: pull up to 3 from same cluster, excluding self
+const allPosts = await getCollection('blog');
+const currentSlug = Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
+const related = allPosts
+	.filter((p) => {
+		if (p.id === currentSlug) return false;
+		const pCluster = (p.data as any).cluster;
+		if (!pCluster || !cluster) return false;
+		const pCode = String(pCluster).match(/^(C\d+)/)?.[1];
+		return pCode && pCode === clusterCode;
+	})
+	.slice(0, 3);
 ---
 
 <html lang="en">
@@ -46,11 +62,14 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 
 	<body>
 		<Header />
+
+		<div class="reading-progress" id="reading-progress"></div>
+
 		<main class="article">
 			<article>
 				<header class="article-header">
 					<div class="prose-container">
-						<a href="/blog/" class="eyebrow">{categoryLabel}</a>
+						<a href={`/blog/#${clusterCode.toLowerCase()}`} class="eyebrow">{categoryLabel}</a>
 						<h1 class="article-title">{title}</h1>
 						{pageDescription && <p class="article-deck">{pageDescription}</p>}
 
@@ -65,9 +84,7 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 								</div>
 							)}
 							<div class="meta-divider" aria-hidden="true">·</div>
-							<div class="meta-item">
-								{readingMinutes} min read
-							</div>
+							<div class="meta-item">{readingMinutes} min read</div>
 							{(last_updated || updatedDate || pubDate) && (
 								<>
 									<div class="meta-divider" aria-hidden="true">·</div>
@@ -94,45 +111,185 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 					</div>
 				)}
 
+				<div class="toc-mobile" id="toc-mobile">
+					<details>
+						<summary>Jump to section</summary>
+						<ol id="toc-mobile-list"></ol>
+					</details>
+				</div>
+
 				<div class="article-body">
-					<div class="prose-container">
-						<div class="prose">
-							<slot />
-						</div>
+					<div class="article-layout">
+						<aside class="toc-desktop" id="toc-desktop" aria-label="Table of contents">
+							<div class="toc-label">In this article</div>
+							<ol id="toc-desktop-list"></ol>
+						</aside>
 
-						<footer class="article-footer">
-							<div class="share-row">
-								<span class="share-label">Share this article</span>
-								<div class="share-links">
-									<a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on Twitter">
-										<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-									</a>
-									<a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on LinkedIn">
-										<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-									</a>
+						<div class="prose-container">
+							<div class="prose" id="article-prose">
+								<slot />
+							</div>
+
+							{authorName && (
+								<div class="author-bio">
+									<div class="author-bio-avatar" aria-hidden="true">{authorName.charAt(0)}</div>
+									<div class="author-bio-text">
+										<div class="author-bio-name">{authorName}</div>
+										{authorRole && <div class="author-bio-role">{authorRole}</div>}
+										<p>{authorBio || "Writes about running small service businesses without the ops chaos. Builds Arca — the AI ops platform for coaches and consultants."}</p>
+									</div>
 								</div>
+							)}
+
+							<div class="inline-newsletter">
+								<h4>Get the next playbook</h4>
+								<p>One operations deep-dive a week. No spam, just the stuff we'd tell a friend over coffee.</p>
+								<form action="/#waitlist" method="get">
+									<input type="email" name="email" placeholder="you@example.com" required />
+									<button type="submit">Subscribe</button>
+								</form>
 							</div>
 
-							<div class="cta-card">
-								<h3>Run your operations on Arca</h3>
-								<p>Built for coaches and consultants who'd rather coach than chase invoices. Set up for you in 7 days.</p>
-								<a href="/#waitlist" class="btn btn-primary">Get started</a>
-							</div>
-						</footer>
+							<footer class="article-footer">
+								<div class="share-row">
+									<span class="share-label">Share this article</span>
+									<div class="share-links">
+										<a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on Twitter">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+										</a>
+										<a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+										</a>
+										<button type="button" id="copy-link-btn" aria-label="Copy link">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+										</button>
+									</div>
+								</div>
+							</footer>
+						</div>
 					</div>
 				</div>
+
+				{related.length > 0 && (
+					<section class="related-posts">
+						<div class="related-posts-inner">
+							<h3>Keep reading · {categoryLabel}</h3>
+							<div class="related-grid">
+								{related.map((post) => {
+									const pData = post.data as any;
+									const pDesc = pData.meta_description || pData.description || '';
+									const pCluster = pData.cluster;
+									const pClusterMatch = pCluster ? String(pCluster).match(/^C\d+\s*[—-]\s*(.*)$/) : null;
+									const pCat = pClusterMatch ? pClusterMatch[1].trim() : '';
+									return (
+										<a href={`/blog/${post.id}/`} class="related-card">
+											{pCat && <div class="related-eyebrow">{pCat}</div>}
+											<h4>{pData.title}</h4>
+										</a>
+									);
+								})}
+							</div>
+						</div>
+					</section>
+				)}
 			</article>
 		</main>
 		<Footer />
 
 		<script>
-			// Auto-wrap "Quick answer:" paragraphs in callout class
-			document.querySelectorAll('.prose p').forEach((p) => {
-				const html = p.innerHTML.trim();
-				if (html.startsWith('<strong>Quick answer:</strong>') || html.toLowerCase().startsWith('quick answer:')) {
-					p.classList.add('quick-answer');
-				}
+			// ===== Quick-answer callout + drop cap =====
+			const prose = document.querySelector('.prose');
+			if (prose) {
+				let quickAnswerFound = false;
+				const paragraphs = prose.querySelectorAll(':scope > p');
+				paragraphs.forEach((p) => {
+					const html = p.innerHTML.trim();
+					if (html.startsWith('<strong>Quick answer:</strong>') || html.toLowerCase().startsWith('quick answer:')) {
+						p.classList.add('quick-answer');
+						quickAnswerFound = true;
+					}
+				});
+
+				// Apply drop cap to first paragraph AFTER quick-answer (or first p if none)
+				const capTarget = Array.from(paragraphs).find((p, i) => {
+					if (quickAnswerFound) {
+						const prev = (p as HTMLElement).previousElementSibling;
+						return prev && (prev as HTMLElement).classList.contains('quick-answer');
+					}
+					return i === 0;
+				});
+				if (capTarget) capTarget.classList.add('drop-cap');
+			}
+
+			// ===== Build TOC from H2/H3 =====
+			function slugify(t: string) {
+				return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+			}
+			const headings = prose ? prose.querySelectorAll('h2, h3') : [];
+			const tocDesktopList = document.getElementById('toc-desktop-list');
+			const tocMobileList = document.getElementById('toc-mobile-list');
+			const tocItems: { id: string; el: Element }[] = [];
+
+			headings.forEach((h) => {
+				if (!h.id) h.id = slugify(h.textContent || '');
+				const level = h.tagName === 'H3' ? 3 : 2;
+				const li = `<li class="level-${level}"><a href="#${h.id}">${h.textContent}</a></li>`;
+				if (tocDesktopList) tocDesktopList.insertAdjacentHTML('beforeend', li);
+				if (tocMobileList) tocMobileList.insertAdjacentHTML('beforeend', li);
+				tocItems.push({ id: h.id, el: h });
 			});
+
+			// Hide TOC wrappers if no headings
+			if (tocItems.length === 0) {
+				document.getElementById('toc-desktop')?.style.setProperty('display', 'none');
+				document.getElementById('toc-mobile')?.style.setProperty('display', 'none');
+			}
+
+			// Active section highlighting via IntersectionObserver
+			const tocLinks = document.querySelectorAll('.toc-desktop a');
+			if ('IntersectionObserver' in window && tocItems.length > 0) {
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const id = (entry.target as HTMLElement).id;
+								tocLinks.forEach((a) => {
+									a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+								});
+							}
+						});
+					},
+					{ rootMargin: '-100px 0px -66% 0px', threshold: 0 }
+				);
+				tocItems.forEach((item) => observer.observe(item.el));
+			}
+
+			// ===== Reading progress bar =====
+			const progress = document.getElementById('reading-progress');
+			const article = document.querySelector('.article-body');
+			function updateProgress() {
+				if (!article || !progress) return;
+				const rect = (article as HTMLElement).getBoundingClientRect();
+				const total = (article as HTMLElement).offsetHeight - window.innerHeight;
+				const scrolled = Math.max(0, -rect.top);
+				const pct = total > 0 ? Math.min(100, (scrolled / total) * 100) : 0;
+				progress.style.width = pct + '%';
+			}
+			window.addEventListener('scroll', updateProgress, { passive: true });
+			updateProgress();
+
+			// ===== Copy link button =====
+			const copyBtn = document.getElementById('copy-link-btn');
+			if (copyBtn) {
+				copyBtn.addEventListener('click', async () => {
+					try {
+						await navigator.clipboard.writeText(window.location.href);
+						const original = copyBtn.innerHTML;
+						copyBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+						setTimeout(() => { copyBtn.innerHTML = original; }, 1600);
+					} catch {}
+				});
+			}
 		</script>
 	</body>
 </html>
@@ -159,9 +316,7 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 		text-decoration: none;
 	}
 
-	.eyebrow:hover {
-		color: var(--amber-hover);
-	}
+	.eyebrow:hover { color: var(--amber-hover); }
 
 	.article-title {
 		font-size: clamp(2rem, 5vw, 3.25rem);
@@ -190,11 +345,7 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 		color: var(--haze);
 	}
 
-	.byline {
-		display: flex;
-		align-items: center;
-		gap: 0.625rem;
-	}
+	.byline { display: flex; align-items: center; gap: 0.625rem; }
 
 	.avatar {
 		width: 36px;
@@ -210,34 +361,13 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 		font-size: 0.9375rem;
 	}
 
-	.byline-text {
-		text-align: left;
-		line-height: 1.2;
-	}
+	.byline-text { text-align: left; line-height: 1.2; }
+	.byline-name { font-weight: 600; color: var(--charcoal); font-size: 0.9375rem; }
+	.byline-role { font-size: 0.75rem; color: var(--haze); }
+	.meta-divider { color: var(--haze); opacity: 0.5; }
+	.meta-item { font-size: 0.875rem; }
 
-	.byline-name {
-		font-weight: 600;
-		color: var(--charcoal);
-		font-size: 0.9375rem;
-	}
-
-	.byline-role {
-		font-size: 0.75rem;
-		color: var(--haze);
-	}
-
-	.meta-divider {
-		color: var(--haze);
-		opacity: 0.5;
-	}
-
-	.meta-item {
-		font-size: 0.875rem;
-	}
-
-	.hero-image {
-		margin: 2rem 0 3rem;
-	}
+	.hero-image { margin: 2rem 0 3rem; }
 
 	.hero-image img {
 		width: 100%;
@@ -247,38 +377,28 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 		box-shadow: var(--shadow-lg);
 	}
 
-	.article-body {
-		padding-bottom: 4rem;
-	}
-
-	.article-footer {
-		margin-top: 4rem;
-		padding-top: 2rem;
-		border-top: 1px solid var(--cloud);
-	}
+	.article-body { padding: 1rem 0 4rem; }
+	.article-footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--cloud); }
 
 	.share-row {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 1rem;
-		margin-bottom: 3rem;
 	}
 
 	.share-label {
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 		font-weight: 600;
 		color: var(--haze);
 		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.08em;
 	}
 
-	.share-links {
-		display: flex;
-		gap: 0.5rem;
-	}
+	.share-links { display: flex; gap: 0.5rem; }
 
-	.share-links a {
+	.share-links a,
+	.share-links button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -290,55 +410,16 @@ const categoryLabel = cluster ? cluster.replace(/^C\d+\s*[—-]\s*/, '').trim() 
 		transition: all 0.2s var(--ease);
 	}
 
-	.share-links a:hover {
+	.share-links a:hover,
+	.share-links button:hover {
 		background: var(--amber);
 		color: #fff;
 	}
 
-	.cta-card {
-		background: var(--charcoal);
-		color: var(--canvas);
-		padding: 2.5rem 2rem;
-		border-radius: var(--radius-lg);
-		text-align: center;
-	}
-
-	.cta-card h3 {
-		font-size: 1.5rem;
-		color: var(--canvas);
-		margin-bottom: 0.5rem;
-	}
-
-	.cta-card p {
-		color: rgba(253, 250, 245, 0.8);
-		font-size: 1rem;
-		max-width: 440px;
-		margin: 0 auto 1.5rem;
-	}
-
 	@media (max-width: 768px) {
-		.article-header {
-			padding: 2.5rem 0 1.5rem;
-		}
-
-		.article-meta {
-			gap: 0.5rem;
-		}
-
-		.byline {
-			width: 100%;
-			justify-content: center;
-			margin-bottom: 0.5rem;
-		}
-
-		.share-row {
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 0.75rem;
-		}
-
-		.cta-card {
-			padding: 2rem 1.5rem;
-		}
+		.article-header { padding: 2.5rem 0 1.5rem; }
+		.article-meta { gap: 0.5rem; }
+		.byline { width: 100%; justify-content: center; margin-bottom: 0.5rem; }
+		.share-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
 	}
 </style>

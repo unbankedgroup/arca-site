@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/upsell-sequences
 ---
 
-# Upsell Sequences That Feel Like Service
-
 **Quick answer:** Upsell sequences offer additional services at natural inflection points — when a client achieves a win, nears completion, or expresses a new goal. The best upsells feel like helpful suggestions, not sales pitches. Done right, they increase lifetime value by 40-60%.
 
 ---

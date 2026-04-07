@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# The Coach's Guide to Choosing a Business Platform (Without Wasting Another 3 Months)
-
 *Knowing how to choose business platform coaching solutions shouldn't take a quarter of your year. Six questions will narrow the field. Here's the framework.*
 
 ---

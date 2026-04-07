@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/client-onboarding-automation-guide
 ---
 
-# Client Onboarding Automation: The Complete Guide for Service Businesses
-
 **Quick answer:** Client onboarding automation replaces your manual welcome process with a sequence that sends contracts, collects intake forms, schedules sessions, and processes payments — all without you touching anything. The result: clients feel cared for, you get 5-10 hours back per new client, and nobody forgets the paperwork.
 
 ---

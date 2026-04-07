@@ -10,8 +10,6 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-# How to Run Your Coaching Business Without Doing the Admin
-
 **Quick answer:** Most coaches spend 16–30 hours a week on scheduling, invoicing, follow-ups, and client onboarding — work that doesn't require their expertise. A done-for-you coaching business operations system handles all of it: diagnosed to your specific workflow, set up in 7 days, running from one conversation in Telegram. Cost: $97–$497/month. This guide covers what it is, how it works, and whether it's right for your business.
 
 ---

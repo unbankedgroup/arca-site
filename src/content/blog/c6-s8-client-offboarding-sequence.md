@@ -11,8 +11,6 @@ meta_description: "Client offboarding sequence ends engagements on a high note a
 links_to: C6-P, C6-S5, C6-S6, C6-S7, C2-S8
 ---
 
-# Client Offboarding Sequence: End on a High Note (And Keep the Door Open)
-
 How you end a coaching engagement matters as much as how you start.
 
 A strong offboarding sequence turns package completions into future opportunities. It generates referrals. It creates advocates. It leaves the client feeling supported — not abandoned.

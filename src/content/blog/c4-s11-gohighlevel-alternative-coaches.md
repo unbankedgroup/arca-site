@@ -11,8 +11,6 @@ meta_description: "GoHighLevel is built for agencies, not coaches. Here's what t
 links_to: C4-P, C4-S1, C4-S7, C4-S8, C2-P, C1-S5
 ---
 
-# GoHighLevel Alternative for Coaches: What to Use If GHL Is Overkill
-
 You signed up for GoHighLevel. The demo looked amazing. Funnels! Automations! White-label dashboards!
 
 Three weeks later, you're watching a YouTube tutorial titled "GoHighLevel for Beginners — Part 47" and you still don't know how to set up a simple follow-up sequence.

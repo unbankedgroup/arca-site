@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# GoHighLevel Hidden Fees: What the $97/Month Price Tag Doesn't Tell You
-
 *GoHighLevel hidden fees are the reason the $97 sticker price doesn't match the $150 to $300 most solo consultants actually pay. Here's what they don't tell you upfront.*
 
 ---

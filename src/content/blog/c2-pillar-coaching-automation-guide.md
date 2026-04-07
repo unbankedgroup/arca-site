@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# The coaching business automation guide: stop wearing all the hats
-
 I talk to coaches almost every week. Executive coaches. Leadership coaches. Health and wellness coaches. Business coaches. Career coaches. Different niches. Different clients. Different styles.
 
 Same problem.

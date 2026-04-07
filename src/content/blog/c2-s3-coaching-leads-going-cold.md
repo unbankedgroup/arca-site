@@ -11,8 +11,6 @@ meta_description: "Most coaching leads go cold because of slow follow-up, not ba
 links_to: C2-P, C2-S1, C2-S8, C1-S1, C2-S2
 ---
 
-# Why Your Coaching Leads Go Cold (And Exactly How to Fix It)
-
 Here's a stat that should bother every coach: leads contacted within five minutes are nine times more likely to convert than leads contacted after 30 minutes.
 
 Nine times.

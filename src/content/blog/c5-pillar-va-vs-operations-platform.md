@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/va-vs-platform/va-vs-operations-platform-guide
 ---
 
-# Virtual Assistant vs Operations Platform: The Honest Comparison for Service Businesses
-
 ## The question I keep hearing
 
 Every week someone asks me the same thing. Should I hire a virtual assistant or use an operations platform? The virtual assistant vs operations platform debate comes up in almost every conversation I have with service business owners. And I get it. Both promise to take work off your plate. Both cost real money. The wrong choice wastes months.

@@ -11,8 +11,6 @@ meta_description: "Life coach automation handles scheduling, follow-ups, onboard
 links_to: C2-P, C2-S1, C2-S2, C2-S3, C2-S4, C1-P, C5-P
 ---
 
-# Life Coach Automation: The Complete Operations Guide for 2026
-
 You became a life coach to transform lives. Not to spend your evenings chasing invoices, rescheduling sessions, or wondering which leads went cold.
 
 Life coach automation handles the operations around your coaching business — scheduling, onboarding, payment collection, follow-ups, session reminders — so you can focus on the work that actually matters. The coaching itself.

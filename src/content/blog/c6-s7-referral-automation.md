@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/referral-automation
 ---
 
-# Automating Referrals Without Being Awkward
-
 **Quick answer:** Referral automation asks at the right moment (after a win, completion, or compliment) with a low-friction request. Automated referral systems generate 20-40% of new business without awkward asks. The key is timing, not pressure.
 
 ---

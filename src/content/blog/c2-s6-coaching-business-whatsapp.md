@@ -11,8 +11,6 @@ meta_description: "You can run your coaching business from WhatsApp. Not as a wo
 links_to: C2-P, C2-S5, C1-S9, C1-S8, C3-S6
 ---
 
-# Running Your Coaching Business From WhatsApp: Why the Best Dashboard Is No Dashboard
-
 *You can run your coaching business from WhatsApp. Not as a workaround. As the actual system.*
 
 ---

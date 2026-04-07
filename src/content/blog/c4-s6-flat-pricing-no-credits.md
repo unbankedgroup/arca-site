@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# Why We Don't Use Credits: Flat Pricing for Operations Platforms
-
 *Flat pricing vs credits SaaS is more than a billing question. It's about whether you can trust your tools to stay affordable as your business grows.*
 
 ---

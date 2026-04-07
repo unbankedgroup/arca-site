@@ -11,8 +11,6 @@ meta_description: "Executive coach automation handles enterprise client onboardi
 links_to: C2-P, C2-S1, C2-S2, C2-S7, C2-S9, C1-P, C5-P
 ---
 
-# Executive Coach Automation: Operations for High-Ticket Coaching
-
 Executive coaching is a different business than life coaching. You charge $5,000-15,000 per engagement. You work with C-suite leaders and high-potential executives. Your clients expect white-glove service.
 
 But here's what nobody tells you: the operations behind great executive coaching are broken at most firms. Manual scheduling across executive calendars. Stakeholder updates that slip through cracks. Proposals that sit unsigned for weeks.

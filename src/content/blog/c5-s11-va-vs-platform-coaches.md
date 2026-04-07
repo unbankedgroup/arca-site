@@ -11,8 +11,6 @@ meta_description: "VA vs automation for coaches: a decision framework. When to h
 links_to: C5-P, C5-S1, C5-S2, C5-S3, C5-S6, C2-P, C1-P
 ---
 
-# VA vs Automation for Coaches: When to Hire vs When to Build
-
 You're at capacity. 20-25 clients. Full calendar. Great revenue. But you're drowning in admin.
 
 The solution is either a virtual assistant or an automation platform. But which one?

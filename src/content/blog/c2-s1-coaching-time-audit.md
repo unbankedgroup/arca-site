@@ -11,8 +11,6 @@ meta_description: "Most coaches underestimate their admin time by half. This coa
 links_to: C2-P, C2-S2, C2-S3, C1-S10, C1-S6
 ---
 
-# How Much Time Are You Actually Spending on Admin? A Coaching Business Time Audit
-
 I asked a life coach how many hours a week she spent on admin. She said five, maybe six.
 
 Then I asked her to track it. One week. Every task that wasn't coaching a client.

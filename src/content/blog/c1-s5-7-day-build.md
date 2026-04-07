@@ -13,8 +13,6 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-# Done-for-You Operations Setup: What Happens Each Day of Your First Week
-
 **Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/managed-operations/diagnosis-before-prescription).
 
 ---

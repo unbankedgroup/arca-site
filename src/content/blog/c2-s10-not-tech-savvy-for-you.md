@@ -11,8 +11,6 @@ meta_description: "\"I'm not tech-savvy\" is exactly who managed operations is f
 links_to: C2-P, C1-S7, C4-S4, C4-S6, C2-S9
 ---
 
-# "I'm Not Tech-Savvy" — Why That's Exactly Who This Is For
-
 *Business automation for non technical coaches isn't about making you more technical. It's about making technical irrelevant.*
 
 ---

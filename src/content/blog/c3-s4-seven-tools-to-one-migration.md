@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# From 7 tools to 1 conversation: a real migration story
-
 This is the story of a consultant I will call Dana. She is a composite of several real clients, but the numbers are exact. She came in running seven paid tools. Seven logins. Seven monthly invoices. She left running one. This is a consolidate business tools migration guide based on what actually happened during her [7-Day Build](/blog/managed-operations/7-day-build-explained).
 
 I am not going to pitch you on why consolidation matters. I wrote that [already](/blog/tool-consolidation/replace-saas-stack-guide). This is the day-by-day walkthrough of what it looks like when someone actually does it.

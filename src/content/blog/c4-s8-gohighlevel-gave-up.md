@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# "I Tried GoHighLevel for 45 Days and Gave Up": You're Not Alone
-
 *GoHighLevel too complex for a solo coach? You didn't fail at GHL. GHL wasn't built for you. Here's why, and what to do instead.*
 
 ---

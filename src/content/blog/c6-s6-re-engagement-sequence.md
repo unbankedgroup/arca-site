@@ -11,8 +11,6 @@ meta_description: "Re-engagement sequence for inactive clients recovers 15-25% o
 links_to: C6-P, C6-S5, C6-S7, C2-S8, C6-S2
 ---
 
-# Re-engagement Sequence for Inactive Clients: Win Back Lost Revenue
-
 Your CRM is full of former clients. People who loved your work. People who got results. People who haven't heard from you in months.
 
 A re-engagement sequence for inactive clients turns that graveyard into revenue. Not by being pushy. By being present.

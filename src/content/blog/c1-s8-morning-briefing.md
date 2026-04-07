@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# The Morning Briefing: How One Daily Message Replaces Six Open Tabs
-
 **Quick answer:** Instead of opening 6 tabs and spending 30-45 minutes assembling a picture of your business, one message arrives each morning with everything you need to know: today's schedule, invoices sent/paid, lead status, follow-ups that went out, and flags for what needs attention. Read it in 3 minutes. Start actual work immediately.
 
 ---

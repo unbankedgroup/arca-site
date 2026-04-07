@@ -11,8 +11,6 @@ meta_description: "Most client intake forms ask the wrong questions. Here's how 
 links_to: C6-P, C6-S2, C6-S7, C6-S4, C2-S2, C1-S4, C6-S1
 ---
 
-# Intake Forms That Actually Tell You Something Useful (Not Just Check Boxes)
-
 A coach showed me her intake form. Thirty-two fields. Name, email, phone, address, birthday, emergency contact, medical history, dietary restrictions, previous coaching experience (drop-down), goals (checkboxes: career, relationships, health, finances, spirituality), and a text box at the bottom labeled "Anything else?"
 
 She asked me why clients rush through it.

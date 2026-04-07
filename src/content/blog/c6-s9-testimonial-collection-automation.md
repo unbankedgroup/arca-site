@@ -11,8 +11,6 @@ meta_description: "Testimonial collection automation gets you more reviews witho
 links_to: C6-P, C6-S7, C6-S8, C2-S8
 ---
 
-# Testimonial Collection Automation: Get More Reviews Without Awkward Asking
-
 Testimonials are social proof. They close deals. They build trust. They differentiate you from coaches who can't prove their results.
 
 Yet most coaches have maybe 3-5 testimonials. Scattered across emails. Outdated. Hard to find.

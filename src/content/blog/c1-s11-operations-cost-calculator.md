@@ -13,8 +13,6 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-# Operations Cost Calculator: What Your Business Really Spends on Admin
-
 You know you spend money on operations. Software subscriptions. Maybe a VA. Your own time.
 
 But what's the real number? Not just the invoices. The fully loaded cost.

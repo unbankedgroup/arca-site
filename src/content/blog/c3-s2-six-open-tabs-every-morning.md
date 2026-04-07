@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# Six open tabs every morning: the hidden cost of disconnected tools
-
 Every morning used to start the same way for me. Six tabs. Six logins. Six partial views of my business. None of them talking to each other. If you're running too many business tools disconnected from one another, you already know this ritual. You just haven't calculated what it costs.
 
 ## The morning ritual

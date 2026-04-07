@@ -11,8 +11,6 @@ meta_description: "Upsell and cross-sell automation increases client lifetime va
 links_to: C6-P, C6-S5, C6-S7, C2-S4
 ---
 
-# Upsell and Cross-sell Automation: Increase Client Value Without Being Salesy
-
 Your current clients are your best revenue source. They know you. They trust you. They've already said yes.
 
 Upsell and cross-sell automation increases client lifetime value by 30-50%. Not by being pushy. By being strategic about timing and relevance.

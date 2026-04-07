@@ -11,8 +11,6 @@ meta_description: "A coaching business vacation without losing clients isn't a f
 links_to: C2-P, C2-S4, C1-S3, C5-S5, C1-S6
 ---
 
-# How to Take a Real Vacation From Your Coaching Business (Without Losing Clients)
-
 *A coaching business vacation without losing clients isn't a fantasy. It's an infrastructure question. Here's how to answer it.*
 
 ---

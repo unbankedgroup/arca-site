@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# Calendly + FreshBooks + HoneyBook + Mailchimp: what you're actually paying for
-
 I talk to coaches and consultants every week who run some version of the same stack. Calendly for scheduling. FreshBooks for invoicing. HoneyBook for contracts and client management. Mailchimp for email. The Calendly FreshBooks HoneyBook Mailchimp cost combined starts at $115/mo. That is the number on the invoices. The actual cost is higher.
 
 This is a breakdown of what each tool charges, what you realistically use, and where your time goes filling the gaps between them. If you have not run a [subscription audit](/blog/tool-consolidation/saas-subscription-audit) recently, this will be a useful starting point.

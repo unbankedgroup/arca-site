@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/churn-prediction
 ---
 
-# Predicting Client Churn Before It Happens
-
 **Quick answer:** Client churn is predictable. Warning signs include: missed sessions, delayed responses to emails, engagement drops, payment delays, and negative language shifts. Clients showing 2+ warning signs have 60-80% churn risk. Catch them early with automated alerts and save sequences.
 
 ---

@@ -11,8 +11,6 @@ meta_description: "What if you started every morning knowing exactly what needs 
 links_to: C2-P, C2-S1, C1-S8, C3-S2, C2-S6
 ---
 
-# The Coaching Business Morning Briefing: Start Every Day Knowing Exactly What Needs Your Attention
-
 Here's what a typical morning looks like for a coach.
 
 Wake up. Open Google Calendar to see today's sessions. Open email to check for cancellations or new inquiries. Open Stripe or PayPal to see if that overdue invoice got paid. Open the CRM (if there is one) to check lead status. Open the spreadsheet to review client notes for today's sessions. Open the to-do app to see what fell off yesterday's list.

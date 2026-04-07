@@ -11,8 +11,6 @@ meta_description: "Health and wellness coach automation handles meal planning fo
 links_to: C2-P, C2-S2, C2-S4, C2-S5, C6-S5, C1-P, C5-P
 ---
 
-# Health and Wellness Coach Automation: Client Management for 2026
-
 Health and wellness coaching is behavior change work. You're not just advising on nutrition or exercise. You're helping clients build new habits, break old patterns, and sustain changes over months and years.
 
 That requires consistency. Daily check-ins. Weekly accountability. Monthly progress reviews. The coaching happens between sessions as much as during them.

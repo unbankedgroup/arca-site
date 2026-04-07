@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# Operations for One: How Solo Service Businesses Run Like 10-Person Teams
-
 **Quick answer:** A 10-person team has someone handling scheduling, invoicing, follow-ups, and onboarding. A solo founder has themselves — and around 8-12 clients, the operational weight overwhelms one person's capacity. Managed operations gives you the infrastructure of a 10-person team without hiring anyone.
 
 ---

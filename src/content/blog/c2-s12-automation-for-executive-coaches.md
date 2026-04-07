@@ -11,8 +11,6 @@ meta_description: "Automation for executive coaches helps you scale high-touch s
 links_to: C2-P, C2-S1, C2-S4, C6-S1, C6-S3, C6-S5
 ---
 
-# Automation for Executive Coaches: Scale High-Touch Without Adding Overhead
-
 Executive coaching is high-touch by design. C-suite clients expect white-glove service. Personalized attention. Discretion. Responsiveness.
 
 But high-touch shouldn't mean high-overhead. The average executive coach spends 18-25 hours per week on administrative tasks. Scheduling around board meetings. Coordinating with EAs. Managing stakeholder communications. Chasing invoices from procurement departments.

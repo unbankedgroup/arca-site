@@ -13,8 +13,6 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-# What Happens to Your Business When You Take a Week Off?
-
 **Quick answer:** For most service businesses, nothing happens. Leads go unanswered. Invoices don't get sent. Follow-ups stop. The business doesn't break dramatically — it quietly stops moving. Building operational infrastructure means your business keeps running without you being available every moment.
 
 ---

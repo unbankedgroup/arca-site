@@ -11,8 +11,6 @@ meta_description: "Your coaching client onboarding process sets the tone for the
 links_to: C2-P, C2-S1, C2-S4, C1-S4, C2-S3
 ---
 
-# Client Onboarding for Coaches: How to Make a Great First Impression Every Time
-
 A coach told me she lost a client before the first session.
 
 The client paid. Signed the agreement. Was ready to start. But the coach was in the middle of a busy week. The welcome email went out three days late. The intake form didn't get sent until day five. By day seven, the client asked for a refund. She said it "didn't feel organized."

@@ -11,8 +11,6 @@ meta_description: "Offshore VA vs automation platform comparison: The timezone a
 links_to: C5-P, C5-S1, C5-S2, C1-S3
 ---
 
-# Offshore VA vs Automation Platform: The Timezone Advantage Nobody Talks About
-
 Hiring an offshore VA sounds like you're getting 24/7 coverage. A Filipino VA works while you sleep. A US client gets same-day responses even when you're offline.
 
 Here's the reality: an offshore VA gives you 40 hours of coverage per week. Not 168 hours. And those 40 hours might not overlap with when your business actually needs them.

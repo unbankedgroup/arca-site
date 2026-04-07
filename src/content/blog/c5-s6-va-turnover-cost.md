@@ -11,8 +11,6 @@ meta_description: "Virtual assistant turnover cost small business owners $30,000
 links_to: C5-P, C5-S1, C5-S5, C1-S3
 ---
 
-# Virtual Assistant Turnover Cost: The $30,000 Reality Check for Small Businesses
-
 Your VA just quit. Or maybe they gave two weeks notice and you're pretending everything is fine. Either way, you're facing a cost nobody told you about when you hired them.
 
 Virtual assistant turnover cost small businesses an average of $30,000-40,000 per turnover event. Not in direct expenses. In lost productivity, training time, and opportunities that disappeared during the gap.

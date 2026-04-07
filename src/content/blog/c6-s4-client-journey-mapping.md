@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/client-journey-mapping
 ---
 
-# Client Journey Mapping: From Interest to Advocacy
-
 **Quick answer:** Client journey mapping documents every touchpoint a client has with your business — from first website visit to post-engagement referral. The map reveals where clients drop off, where friction exists, and where automation can improve the experience without losing the human touch.
 
 ---

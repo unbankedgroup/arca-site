@@ -11,8 +11,6 @@ meta_description: "Your coaching clients should be getting follow-ups between se
 links_to: C2-P, C2-S2, C2-S3, C2-S7, C1-S4
 ---
 
-# Automated Follow-Ups for Coaches: The Messages Your Clients Should Be Getting (But Aren't)
-
 I asked a group of coaches a simple question: what happens between sessions?
 
 Most of them paused. Then they said something like "they work on their homework" or "they reach out if they need something."

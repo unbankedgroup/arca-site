@@ -11,8 +11,6 @@ meta_description: "VA vs automation for consultants: a decision framework based 
 links_to: C5-P, C5-S1, C5-S3, C5-S6, C5-S10, C1-P, C2-P
 ---
 
-# VA vs Automation for Consultants: The $3,000/Month Decision
-
 You're a consultant. You bill $150-300/hour. Your time is worth $25,000-50,000/month if fully utilized.
 
 But you're spending 20-30 hours/week on admin. Proposals. Scheduling. Invoicing. Follow-ups. Client coordination.

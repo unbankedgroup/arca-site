@@ -11,8 +11,6 @@ meta_description: "The first 48 hours after a client signs determine whether the
 links_to: C6-P, C6-S2, C6-S4, C6-S7, C2-S2, C1-S4
 ---
 
-# The First 48 Hours: Why Your Onboarding Window Is Smaller Than You Think
-
 A client says yes. She pays. She's excited.
 
 Forty-eight hours later, she's second-guessing herself. Not because you did anything wrong. Because you didn't do anything at all.

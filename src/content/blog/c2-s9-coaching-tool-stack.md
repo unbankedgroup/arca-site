@@ -11,8 +11,6 @@ meta_description: "The average coach pays for 5+ disconnected tools. Here's what
 links_to: C2-P, C2-S1, C3-P, C3-S1, C1-S10
 ---
 
-# Coaching Business Tools: The 5-Tool Stack You're Paying For (and the 1 That Replaces Them)
-
 *Finding the best tools for coaching business operations is exhausting. Here's why the answer isn't a better tool. It's fewer of them.*
 
 ---

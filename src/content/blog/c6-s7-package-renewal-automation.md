@@ -11,8 +11,6 @@ meta_description: "Package renewal automation fills your pipeline without cold o
 links_to: C6-P, C6-S5, C6-S6, C2-S8, C6-S2
 ---
 
-# Package Renewal Automation: Fill Your Pipeline Without Cold Outreach
-
 Your best next client is already in your pipeline. They just finished their package. They got results. They're happy.
 
 Package renewal automation turns completing clients into continuing clients. Not by being pushy. By being strategic about timing and messaging.

@@ -11,8 +11,6 @@ meta_description: "Discovery call automation reduces no-shows by 50-90% and incr
 links_to: C2-P, C2-S1, C2-S3, C6-S1, C6-S2
 ---
 
-# Discovery Call Automation: From No-Show to Signed Client
-
 You book a discovery call. The prospect seems excited. They confirm via email.
 
 Then they don't show up.

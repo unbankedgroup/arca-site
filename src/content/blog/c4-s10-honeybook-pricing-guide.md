@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# HoneyBook Pricing Guide 2026: What You Actually Pay (and When It's Worth It)
-
 HoneyBook pricing in 2026 ranges from $19 to $80 per month depending on your tier and billing cycle. But the real cost depends on what you need: the Starter plan at $19/month ($192/year) handles basic invoicing and contracts, while Premium at $39/month ($384/year) unlocks automations and unlimited projects.
 
 Then there are the hidden costs: payment processing fees (2.9% + $0.30 per transaction), add-on features, and the time cost of configuration.

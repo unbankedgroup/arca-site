@@ -11,8 +11,6 @@ meta_description: "Virtual assistant handoff documentation is the weak point in 
 links_to: C5-P, C5-S6, C1-S3, C2-S7
 ---
 
-# The Virtual Assistant Handoff Problem: Why Delegating to a Person Still Leaves You Vulnerable
-
 You hired a VA to get your life back. For a while, it worked. Then they quit. Or got sick for two weeks. Or took a better offer.
 
 Now you're facing the virtual assistant handoff problem. Half your processes lived in their head. The other half are in a Google Doc they wrote six months ago that may or may not reflect how things actually work now.

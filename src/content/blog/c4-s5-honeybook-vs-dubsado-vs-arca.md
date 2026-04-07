@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# HoneyBook vs Dubsado vs Arca: Which Is Right for Your Coaching Business?
-
 If you're comparing HoneyBook vs Dubsado vs Arca for coaches, you're probably at the stage where sticky notes and spreadsheets stopped working. You need a system. But these three platforms solve the problem differently, and the right one depends on what you actually need.
 
 I'll be honest about where each platform wins and where it falls short. I built Arca, so I have a bias. I'll be transparent about it.

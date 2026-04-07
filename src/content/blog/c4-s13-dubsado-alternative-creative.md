@@ -11,8 +11,6 @@ meta_description: "Dubsado takes weeks to configure. Creative services need simp
 links_to: C4-P, C4-S3, C4-S5, C4-S10, C1-S5, C3-P
 ---
 
-# Dubsado Alternative for Creative Services: Operations in 7 Days, Not 7 Weeks
-
 "Dubsado setup specialist" is a literal job title. People charge $500-2,000 to configure Dubsado for your business.
 
 Think about that. You're paying someone $500-2,000 and spending 2-4 weeks learning a tool just to send proposals and collect payments.

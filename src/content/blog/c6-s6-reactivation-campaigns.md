@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/reactivation-campaigns
 ---
 
-# Reactivation Campaigns: Bringing Cold Leads Back to Life
-
 **Quick answer:** Reactivation campaigns are automated sequences sent to leads who went cold or clients who haven't engaged in 90+ days. A well-structured reactivation sequence recovers 15-25% of dormant leads — revenue you've already earned but never collected.
 
 ---

@@ -11,8 +11,6 @@ meta_description: "Your VA can handle about 15 clients worth of operational work
 links_to: C5-P, C5-S1, C5-S3, C1-S6
 ---
 
-# When Your VA Hits a Scaling Limit: The 15-Client Ceiling
-
 You hired a VA when you hit 8 clients. It worked great. Now you're at 15. And things are slipping.
 
 Your VA is working full-time. But they can't keep up. Leads wait hours for responses. Invoices go out late. Follow-ups get forgotten.

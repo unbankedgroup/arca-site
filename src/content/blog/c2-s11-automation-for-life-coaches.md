@@ -11,8 +11,6 @@ meta_description: "Automation for life coaches helps you scale without losing th
 links_to: C2-P, C2-S1, C2-S2, C2-S4, C6-S1, C6-S5
 ---
 
-# Automation for Life Coaches: Scale Without Losing the Human Touch
-
 You became a life coach to transform lives. Not to spend your day wrestling with technology.
 
 But here's the reality: the average life coach spends 15-20 hours per week on administrative tasks. Scheduling. Follow-ups. Payment chasing. Onboarding. That's 15-20 hours you're not spending with clients. Or on your own growth. Or with your family.

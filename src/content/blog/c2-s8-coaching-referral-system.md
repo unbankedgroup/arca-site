@@ -11,8 +11,6 @@ meta_description: "A coaching referral follow up system turns satisfied clients 
 links_to: C2-P, C2-S3, C2-S4, C1-S6, C2-S2
 ---
 
-# How Top Coaches Turn One Discovery Call Into Three Referrals
-
 *A coaching referral follow up system turns satisfied clients into a steady pipeline. Most coaches never build one. Here's how it works.*
 
 ---

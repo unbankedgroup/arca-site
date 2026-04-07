@@ -11,8 +11,6 @@ meta_description: "Operations platform vs person isn't an either/or choice. Here
 links_to: C5-P, C5-S2, C5-S3, C1-S7
 ---
 
-# Operations Platform vs Person: The Decision Framework
-
 The question isn't "platform or person?" The question is "which tasks need a platform and which need a person?"
 
 An operations platform vs person debate misses the point. Platforms excel at some things. Humans excel at others. The right answer is usually "both, applied strategically."

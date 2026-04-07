@@ -11,8 +11,6 @@ meta_description: "Client retention automation keeps clients engaged longer thro
 links_to: C6-P, C6-S4, C6-S7, C2-S4, C2-S8, C6-S1
 ---
 
-# Client Retention Automation: Keep Clients Longer Without Being Pushy
-
 Acquiring a new client costs 5-7x more than retaining an existing one (Bain & Company). Yet most service businesses spend more energy on marketing than on retention.
 
 For coaching businesses specifically, clients who receive structured between-session follow-ups show 40% higher renewal rates (International Coaching Federation 2025). The difference between 70% and 90% completion rates isn't coaching quality — it's operational consistency.

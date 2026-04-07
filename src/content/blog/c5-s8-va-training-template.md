@@ -11,8 +11,6 @@ meta_description: "Virtual assistant training template and SOP framework for ser
 links_to: C5-P, C5-S4, C5-S5, C1-S4
 ---
 
-# Virtual Assistant Training Template: The SOP Framework That Actually Works
-
 You hired a VA. Now you need to train them. But you don't have a system. You're winging it. And winging it costs 40+ hours of your time.
 
 This virtual assistant training template gives you the framework. Not theory. The actual SOP structure, onboarding checklist, and training timeline that works for service businesses.

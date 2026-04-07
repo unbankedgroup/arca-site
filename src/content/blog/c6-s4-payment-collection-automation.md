@@ -11,8 +11,6 @@ meta_description: "Payment collection automation gets you paid 2-3 weeks faster 
 links_to: C6-P, C6-S5, C1-S4, C2-S4, C6-S1
 ---
 
-# Payment Collection Automation: Get Paid Faster Without the Awkward Conversations
-
 50% of US invoices go overdue. The number one cause isn't client cash flow problems. It's delayed sending. When you wait to send an invoice, you wait to get paid.
 
 Payment collection automation fixes this. Invoices go out on schedule. Payment reminders fire automatically. Escalation happens without you feeling awkward about chasing money.

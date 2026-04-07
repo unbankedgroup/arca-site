@@ -11,8 +11,6 @@ meta_description: "An automated client welcome sequence can feel personal if you
 links_to: C6-P, C6-S1, C6-S3, C6-S5, C6-S10, C2-S4, C2-S2
 ---
 
-# How to Create a Client Welcome Sequence That Feels Personal (Without Writing Every Message Manually)
-
 The objection I hear most from coaches about automation: "I don't want my clients getting generic messages."
 
 Fair. Neither do I. An automated client welcome sequence that feels like a mail merge is worse than no sequence at all.

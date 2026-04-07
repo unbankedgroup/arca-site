@@ -11,8 +11,6 @@ meta_description: "HoneyBook raised prices 89% in 2025. Consultants need alterna
 links_to: C4-P, C4-S2, C4-S5, C4-S7, C1-P, C3-P
 ---
 
-# HoneyBook Alternative for Consultants: What to Use After the 2025 Price Hike
-
 HoneyBook went from $19/month to $36/month overnight. An 89% increase. Essentials jumped from $39 to $59. Premium from $59 to $79.
 
 For consultants already paying for Calendly, Stripe, and email tools, this was the straw that broke the camel's back.

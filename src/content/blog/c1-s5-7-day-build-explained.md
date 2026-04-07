@@ -13,8 +13,6 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-# The 7-Day Build: How a Full Operations Setup Actually Gets Done in a Week
-
 I spent six years in capital markets building financial infrastructure. Clean systems. Reliable flows. Everything tracked, everything audited, everything running whether I was watching or not.
 
 When I started working with coaches and consultants, I saw the opposite.

@@ -11,8 +11,6 @@ meta_description: "Automation for health and wellness coaches helps you scale wi
 links_to: C2-P, C2-S1, C2-S2, C2-S4, C6-S1, C6-S5
 ---
 
-# Automation for Health and Wellness Coaches: Scale Without Losing the Personal Touch
-
 You became a health coach to transform lives through nutrition, fitness, and wellness. Not to spend your day sending reminder messages and chasing payments.
 
 But here's the reality: the average health coach spends 12-18 hours per week on administrative tasks. Meal plan follow-ups. Workout check-ins. Payment reminders. Supplement recommendations. That's 12-18 hours you're not spending with clients. Or on your own health. Or with your family.

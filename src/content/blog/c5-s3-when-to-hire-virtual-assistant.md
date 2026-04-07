@@ -11,8 +11,6 @@ meta_description: "When to hire a virtual assistant vs. use an operations platfo
 links_to: C5-P, C5-S1, C5-S2, C1-S2
 ---
 
-# When to Hire a VA vs. Use an Operations Platform: The Revenue-Based Decision Guide
-
 The question isn't "VA or platform?" The question is "VA or platform at my current stage?"
 
 When to hire a virtual assistant vs. use an operations platform depends on three things: your revenue, your task mix, and your available bandwidth for management.

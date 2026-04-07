@@ -13,8 +13,6 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-# The real cost of your SaaS stack: a small business subscription audit
-
 Most founders I talk to can't tell me their total SaaS spend within $100. That's not a guess. I've asked. A proper SaaS subscription cost small business audit usually reveals $300 to $500 per month spread across five to seven tools. And the dollar amount is only half the problem.
 
 The other half is what those tools do to your attention.

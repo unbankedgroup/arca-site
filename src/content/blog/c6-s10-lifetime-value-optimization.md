@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/lifetime-value-optimization
 ---
 
-# Maximizing Client Lifetime Value (Without Being Pushy)
-
 **Quick answer:** Client lifetime value (LTV) is increased by extending engagement length, expanding service scope, and creating referral loops. The best LTV optimization feels like service — helping clients get more results, not paying more money. Top coaches achieve 3-5x LTV through retention and expansion.
 
 ---

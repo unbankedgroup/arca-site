@@ -11,8 +11,6 @@ meta_description: "Switching operations platforms without losing clients or data
 links_to: C3-P, C3-S4, C3-S10, C4-P, C1-S5
 ---
 
-# Tool Migration Checklist: How to Switch Operations Platforms Without Losing Clients
-
 You've decided to switch. Maybe you're leaving HoneyBook after the price hike. Or GoHighLevel is too complex. Or you're tired of 7 disconnected tools.
 
 But there's a problem. Migration feels like surgery. What if you lose client data? What if invoices go missing? What if leads fall through cracks during the transition?

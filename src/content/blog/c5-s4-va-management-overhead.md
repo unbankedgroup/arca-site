@@ -11,8 +11,6 @@ meta_description: "Managing a virtual assistant takes 3-5 hours per week. Here's
 links_to: C5-P, C5-S1, C5-S6, C1-S2
 ---
 
-# Managing a Virtual Assistant: The 3-5 Hours Per Week Nobody Tells You About
-
 You hire a VA to get your time back. Instead, you get a new job: VA manager.
 
 Managing a virtual assistant takes 3-5 hours per week. Every week. That's 12-20 hours per month. At a $200/hour billing rate, that's $2,400-4,000 per month in management time.

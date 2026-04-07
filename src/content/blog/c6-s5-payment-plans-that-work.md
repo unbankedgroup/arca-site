@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/client-onboarding/payment-plans-that-work
 ---
 
-# Payment Plans That Actually Get Paid
-
 **Quick answer:** Payment plans that get paid have three things: auto-billing (not manual invoices), clear terms (due dates, late fees, what happens if they default), and automated dunning (reminder sequences that escalate). Manual payment collection costs 11 hours/month and 34% of late payments become never-payments.
 
 ---

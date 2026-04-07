@@ -17,8 +17,6 @@ schema_type: BlogPosting
 canonical_url: https://runarca.xyz/blog/managed-operations/operations-audit-checklist
 ---
 
-# How to Audit Your Operations in 15 Minutes
-
 I was talking to a business coach last month. She runs a solid practice — 14 active clients, $180K annual revenue, good referrals. She said something that stuck with me.
 
 "I feel like I'm drowning, but I can't tell you why."
