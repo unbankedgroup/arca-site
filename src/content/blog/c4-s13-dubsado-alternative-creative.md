@@ -1,6 +1,6 @@
 ---
 title: "Dubsado Alternative for Creative Services: Operations in 7 Days, Not 7 Weeks"
-slug: dubsado-alternative-creative-services
+slug: dubsado-alternative-for-creatives
 cluster: C4 — Competitor Alternatives
 id: C4-S13
 target_keyword: "Dubsado alternative for creative services"

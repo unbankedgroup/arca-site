@@ -1,5 +1,5 @@
 ---
-title: ""I Tried GoHighLevel for 45 Days and Gave Up": You're Not Alone"
+title: "I Tried GoHighLevel for 45 Days and Gave Up — You're Not Alone"
 slug: gohighlevel-gave-up
 cluster: C4 — Alternatives & Comparisons
 id: C4-S8
