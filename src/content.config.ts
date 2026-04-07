@@ -26,7 +26,7 @@ const blog = defineCollection({
 			article_id: z.string().optional(),
 			search_intent: z.string().optional(),
 			word_count: z.union([z.string(), z.number()]).optional(),
-			word_count_target: z.string().optional(),
+			word_count_target: z.union([z.string(), z.number()]).optional(),
 			links_to: z.union([z.string(), z.array(z.string())]).optional(),
 			// Accept both string and object for author
 			author: z.union([
