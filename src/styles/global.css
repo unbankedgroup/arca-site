@@ -63,6 +63,11 @@ html {
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: clip;
+}
+
+body {
+	overflow-x: clip;
 }
 
 body {
@@ -361,6 +366,20 @@ small { font-size: 0.875rem; }
 	font-size: 0.95rem;
 }
 
+/* On narrow viewports let tables scroll horizontally inside their own box
+   instead of forcing the whole article wide. */
+@media (max-width: 720px) {
+	.prose table {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	}
+	.prose pre {
+		overflow-x: auto;
+	}
+}
+
 .prose th,
 .prose td {
 	text-align: left;
@@ -571,6 +590,13 @@ small { font-size: 0.875rem; }
 	max-width: 1120px;
 	margin: 0 auto;
 	padding: 0 1.25rem;
+}
+
+/* Prevent grid blowout when wide content (tables, pre blocks) sits inside
+   a grid cell — grid items default to min-width: auto which respects content
+   intrinsic min-width and expands the cell beyond the track size. */
+.article-layout > * {
+	min-width: 0;
 }
 
 @media (min-width: 1080px) {
@@ -936,9 +962,13 @@ small { font-size: 0.875rem; }
 	border-bottom: 1px solid var(--cloud);
 	padding: 0.875rem 0;
 	margin: 2rem 0 3rem;
+	width: 100%;
+	max-width: 100vw;
+	overflow: hidden;
 }
 
 .category-nav-inner {
+	width: 100%;
 	max-width: var(--max-w);
 	margin: 0 auto;
 	padding: 0 1.25rem;
