@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Predict client churn by tracking warning signs: missed sessions, delayed responses, engagement drops. Here's how to save at-risk clients before they leave."
 links_to: C6-P, C6-S5, C6-S10, C1-S2, C1-S10
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

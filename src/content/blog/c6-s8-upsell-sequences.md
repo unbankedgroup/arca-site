@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Upsell sequences that feel like service offer the right thing at the right time. Here's how to expand client value without being pushy."
 links_to: C6-P, C6-S7, C6-S10, C1-S2, C5-P
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

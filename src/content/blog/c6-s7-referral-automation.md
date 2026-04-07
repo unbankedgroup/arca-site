@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Automating referrals means asking at the right moment with the right message. Here's how to build a referral system that feels natural, not awkward."
 links_to: C6-P, C6-S6, C6-S8, C1-S8, C2-S8
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

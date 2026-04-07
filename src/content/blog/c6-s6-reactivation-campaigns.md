@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Reactivation campaigns bring cold leads and dormant clients back. Here's the exact sequence that recovers 15-25% of lost revenue."
 links_to: C6-P, C6-S7, C1-S3, C1-S10
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

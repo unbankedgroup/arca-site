@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: 3500+
 meta_description: "Client onboarding automation turns your first impression from a manual scramble into a seamless experience. Here's the complete guide for service businesses."
 links_to: C6-S1, C6-S2, C6-S3, C6-S4, C6-S5, C6-S7, C1-P, C1-S4, C2-P
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

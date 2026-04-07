@@ -9,7 +9,7 @@ search_intent: Informational
 word_count: ~1,200
 meta_description: "A 15-minute diagnostic that reveals everything broken in your business operations. Use our operations audit checklist for small business to find gaps costing you revenue."
 links_to: C1-P, C1-S1, C1-S2, C1-S3, C1-S6, C1-S9
-date_published: 2026-04-02
+date_published: "2026-04-02"
 author:
   name: Mal Mposha
   role: Founder, Arca

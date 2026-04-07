@@ -9,7 +9,7 @@ secondary_keywords:
 cluster: C5
 article_id: C5-P
 word_count_target: 3500
-date_published: 2026-04-02
+date_published: "2026-04-02"
 author:
   name: Mal Mposha
   role: Founder, Arca

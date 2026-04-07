@@ -9,7 +9,7 @@ search_intent: Informational
 word_count: ~1,200
 meta_description: "Client journey mapping shows every touchpoint from first interest to referral. Here's how to map your client experience and find the gaps costing you revenue."
 links_to: C6-P, C6-S1, C6-S2, C6-S7, C1-S4, C1-S10
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca

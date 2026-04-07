@@ -9,7 +9,7 @@ search_intent: Commercial
 word_count: ~1,200
 meta_description: "Payment plans that get paid have auto-billing, clear terms, and automated dunning. Here's how to structure payment plans that protect your cash flow."
 links_to: C6-P, C1-S2, C1-S10, C5-P, C3-S5
-date_published: 2026-04-07
+date_published: "2026-04-07"
 author:
   name: Mal Mposha
   role: Founder, Arca
