@@ -73,7 +73,7 @@ For professional services specifically, leads contacted within 10 minutes conver
 
 None of this requires a human to be available. It requires infrastructure.
 
-[Why your coaching leads go cold](/blog/coaching-automation/coaching-leads-going-cold) covers the specific failure points in the inquiry stage.
+[Why your coaching leads go cold](/blog/c2-s3-coaching-leads-going-cold/) covers the specific failure points in the inquiry stage.
 
 ---
 
@@ -112,7 +112,7 @@ They paid. They're a client now. What happens in the first 48 hours sets the ton
 
 This sequence can be entirely automated. Or it can be draft-and-approve. Either way, it runs on schedule. Every client. No variation.
 
-[The first 48 hours of client onboarding](/blog/client-lifecycle/first-48-hours-onboarding) breaks down each step in detail.
+[The first 48 hours of client onboarding](/blog/c6-s1-first-48-hours-onboarding/) breaks down each step in detail.
 
 ---
 
@@ -136,7 +136,7 @@ This is what you're good at. The coaching. The consulting. The service delivery.
 
 The delivery is human. The operations around it are automated.
 
-[Automated follow-ups for coaches](/blog/coaching-automation/automated-follow-ups-coaches) covers the specific message types that improve retention.
+[Automated follow-ups for coaches](/blog/c2-s4-automated-follow-ups-coaches/) covers the specific message types that improve retention.
 
 ---
 
@@ -156,7 +156,7 @@ The package is done. The final session happened. Now what?
 
 The completion stage is where retention and referrals are won or lost. Don't leave it to chance.
 
-[The coaching referral system](/blog/coaching-automation/coaching-referral-system) shows how to turn completions into pipeline. [Client offboarding sequences](/blog/client-offboarding-sequence) cover the specific 4-step process for ending engagements well.
+[The coaching referral system](/blog/c2-s8-coaching-referral-system/) shows how to turn completions into pipeline. [Client offboarding sequences](/blog/c6-s8-client-offboarding-sequence/) cover the specific 4-step process for ending engagements well.
 
 ---
 
@@ -189,7 +189,7 @@ The client completed their package. Now you have three paths:
 - **Easy mechanism** — Include a forwardable link. Remove friction between intention and action.
 - **Thank-you loop** — When a referral comes in, thank the referrer immediately. Reinforces the behavior.
 
-[Client retention automation](/blog/client-lifecycle/client-retention-automation) covers the specific sequences that drive renewal rates.
+[Client retention automation](/blog/c6-s5-client-retention-automation/) covers the specific sequences that drive renewal rates.
 
 ---
 
@@ -236,7 +236,7 @@ You don't need to build all of this at once. Start with the biggest gap.
 
 **If renewals are low:** Fix completion and expansion. Satisfaction survey. Re-enrollment conversation. Referral request.
 
-The [7-Day Build](/blog/managed-operations/7-day-build-explained) process walks through implementing these workflows in one week. You don't need to configure anything. You describe your business. The system gets built around your answers.
+The [7-Day Build](/blog/c1-s5-7-day-build-explained/) process walks through implementing these workflows in one week. You don't need to configure anything. You describe your business. The system gets built around your answers.
 
 ---
 

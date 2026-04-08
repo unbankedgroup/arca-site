@@ -52,7 +52,7 @@ Here's a sequence that works for most coaching and consulting practices. Each me
 >
 > If you have any questions between now and then, just reply here.
 
-**Why it works:** It's warm but structured. It tells the client exactly what's coming. No uncertainty. The [first 48 hours](/blog/client-onboarding/first-48-hours-onboarding) are covered from the moment this lands.
+**Why it works:** It's warm but structured. It tells the client exactly what's coming. No uncertainty. The [first 48 hours](/blog/c6-s1-first-48-hours-onboarding/) are covered from the moment this lands.
 
 ### Message 2: The intake form (1-2 hours later)
 
@@ -67,7 +67,7 @@ Here's a sequence that works for most coaching and consulting practices. Each me
 >
 > [Link to intake form]
 
-**Why it works:** Setting expectations ("10 minutes," "I read every answer") reduces friction and signals care. The delay between welcome and intake form gives the client time to settle into the decision without feeling rushed. [Good intake forms](/blog/client-onboarding/intake-forms-that-work) surface what the coach actually needs to know.
+**Why it works:** Setting expectations ("10 minutes," "I read every answer") reduces friction and signals care. The delay between welcome and intake form gives the client time to settle into the decision without feeling rushed. [Good intake forms](/blog/c6-s3-intake-forms-that-work/) surface what the coach actually needs to know.
 
 ### Message 3: The logistics (day 1)
 
@@ -124,7 +124,7 @@ But here's the key: every message contains personalization fields. Name. Package
 
 The system that sends these messages needs access to client data. When a client signs up for the "12-week executive coaching" package, the welcome message says "12-week executive coaching." When she mentions "confidence in leadership meetings" as her goal, the prep note references it.
 
-That's not magic. It's templating done right. The same approach that makes [automated follow-ups](/blog/coaching-automation/automated-follow-ups-coaches) feel personal between sessions.
+That's not magic. It's templating done right. The same approach that makes [automated follow-ups](/blog/c2-s4-automated-follow-ups-coaches/) feel personal between sessions.
 
 ## Scaling without losing the feeling
 
@@ -132,9 +132,9 @@ Where this really matters: volume. A coach onboarding one client a month can wri
 
 With a welcome sequence, client #1 and client #5 both get the same polished experience. Both get their welcome within minutes. Both get their intake form the same day. Both get a prep note that references their specific goals. The coach's only variable task is reading intake forms and personalizing the prep note.
 
-That's [onboarding that scales to a group program](/blog/client-onboarding/group-coaching-onboarding) without collapsing under its own weight. Not because the coach works harder. Because the [system handles the sequence](/blog/client-onboarding/client-onboarding-automation-guide) and the coach handles the moments that require human judgment.
+That's [onboarding that scales to a group program](/blog/#c6) without collapsing under its own weight. Not because the coach works harder. Because the [system handles the sequence](/blog/c6-pillar-client-onboarding-automation/) and the coach handles the moments that require human judgment.
 
-Build the templates once. Get [plug-and-play onboarding sequences](/blog/client-onboarding/onboarding-templates-coaches) right, and you'll never write a rushed welcome email at midnight again.
+Build the templates once. Get [plug-and-play onboarding sequences](/blog/#c6) right, and you'll never write a rushed welcome email at midnight again.
 
 ## FAQ
 

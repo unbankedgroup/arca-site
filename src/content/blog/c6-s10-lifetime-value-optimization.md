@@ -48,7 +48,7 @@ Total revenue in period / Total clients in period.
 - Raise prices (obvious, but has limits)
 - Offer tiered packages (good, better, best)
 - Add complementary services (coaching + consulting + courses)
-- Upsell existing clients (covered in [C6-S8](/blog/client-onboarding/upsell-sequences))
+- Upsell existing clients (covered in [C6-S8](/blog/c6-s8-upsell-sequences/))
 
 **Target:** 20-30% year-over-year increase through package design, not just price increases.
 
@@ -79,7 +79,7 @@ The revenue from referrals each client generates.
 - Total LTV: $6,000 + $3,000 = $9,000
 
 **How to increase it:**
-- Automate referral requests (covered in [C6-S7](/blog/client-onboarding/referral-automation))
+- Automate referral requests (covered in [C6-S7](/blog/c6-s7-referral-automation/))
 - Make referrals easy (forwardable templates, simple forms)
 - Incentivize referrals (optional, but effective)
 - Track and thank referrers (recognition matters)

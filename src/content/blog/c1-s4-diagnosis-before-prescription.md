@@ -39,7 +39,7 @@ GoHighLevel's own community estimates 30-40 hours of self-setup before the platf
 
 When I built Arca, I made a decision that costs more to operate but solves the actual problem: we learn your business before we touch it.
 
-It starts with a conversation. Not a demo. Not a sales call. A [diagnostic conversation](/blog/managed-operations/managed-operations-guide).
+It starts with a conversation. Not a demo. Not a sales call. A [diagnostic conversation](/blog/c1-pillar-managed-operations-guide/).
 
 We ask questions like:
 
@@ -61,11 +61,11 @@ The self-serve model works for a specific type of user. Technical. Patient. Enjo
 
 That's not the audience Arca serves.
 
-Our audience is a [coach or consultant who's already spending 20-30 hours a week on non-coaching work](/blog/managed-operations/operations-cost-mistake). They don't have time to learn another dashboard. They've tried. They bought Dubsado or HoneyBook or GoHighLevel. They used it for a few weeks. Then they went back to the spreadsheet because at least the spreadsheet doesn't require configuration.
+Our audience is a [coach or consultant who's already spending 20-30 hours a week on non-coaching work](/blog/c1-s2-operations-cost-mistake/). They don't have time to learn another dashboard. They've tried. They bought Dubsado or HoneyBook or GoHighLevel. They used it for a few weeks. Then they went back to the spreadsheet because at least the spreadsheet doesn't require configuration.
 
 A coach described GoHighLevel to me like this: "I felt like I was trying to drive a semi-truck when all I needed was a reliable car."
 
-The [7-day build process](/blog/managed-operations/7-day-build-explained) shows what happens when we skip the template trap entirely — custom setup without the learning curve.
+The [7-day build process](/blog/c1-s5-7-day-build-explained/) shows what happens when we skip the template trap entirely — custom setup without the learning curve.
 
 The issue isn't intelligence. These are smart people running real businesses. The issue is that configuring operations tools is a specialized skill, and expecting every service provider to do it themselves is like expecting every homeowner to do their own electrical work. You can. Most people shouldn't.
 
@@ -77,7 +77,7 @@ Most business owners can describe their operations in 20 minutes. They know what
 
 That 20-minute conversation gives us everything we need to map the business. Client lifecycle. Revenue triggers. Communication patterns. Pain points. Priorities.
 
-From there, the [7-day build](/blog/managed-operations/7-day-build-explained) begins. Not from a template. From the diagnosis. Every workflow, every automation, every message sequence is built around how this specific business actually runs.
+From there, the [7-day build](/blog/c1-s5-7-day-build-explained/) begins. Not from a template. From the diagnosis. Every workflow, every automation, every message sequence is built around how this specific business actually runs.
 
 ## The philosophy underneath
 
@@ -85,7 +85,7 @@ There's a principle from medicine that applies here: diagnosis before prescripti
 
 A doctor who prescribes medication before examining you is negligent. A platform that gives you tools before understanding your business is doing the same thing. It's faster. It's cheaper. But it doesn't work. The 50-63% failure rate proves that.
 
-Arca's diagnostic approach means every [business that runs on our platform](/blog/managed-operations/operations-for-one) was set up specifically for how that business works. Not how businesses in general work. How yours works.
+Arca's diagnostic approach means every [business that runs on our platform](/blog/c1-s6-operations-team-of-one/) was set up specifically for how that business works. Not how businesses in general work. How yours works.
 
 It costs us more to operate this way. Every setup requires human attention, real conversation, custom configuration. We can't just hand out login credentials and let people figure it out.
 
@@ -107,7 +107,7 @@ A: Setup specialists configure a template to your preferences. We start from a b
 A: That's exactly why we start with questions. You describe your business in plain English — how leads find you, how you onboard clients, how you handle invoicing. We turn that into a working system. You don't need to know what automations you need. That's our job.
 
 **Q: How long does the setup actually take?**
-A: 7 days elapsed, 3-4 hours of your time. Most of that is the Day 1 discovery call and Day 7 handoff. Everything in between is us building. See the [day-by-day breakdown →](/blog/managed-operations/operations-setup-week).
+A: 7 days elapsed, 3-4 hours of your time. Most of that is the Day 1 discovery call and Day 7 handoff. Everything in between is us building. See the [day-by-day breakdown →](/blog/#c1).
 
 **Q: What's the 50-63% CRM failure rate from?**
 A: Gartner and Forrester have both published figures in this range across multiple years. The consistent finding: implementation failure is almost never a software problem — it's a setup and adoption problem. Done-for-you setup directly addresses this.

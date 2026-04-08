@@ -75,7 +75,7 @@ Platforms don't sleep. They don't have timezones. They execute Routines 168 hour
 - Platform: Triage and response within minutes
 - Offshore VA: Might be offline, might not see it until their next shift
 
-The [3am test](/blog/va-vs-platform/operations-at-3am) is simple: what happens in your business at 3am on a Saturday?
+The [3am test](/blog/#c5) is simple: what happens in your business at 3am on a Saturday?
 
 With a platform: Lead comes in, gets instant response, books a call, receives prep materials. All automatic.
 
@@ -104,7 +104,7 @@ An invoice sent 3 days late gets paid 3 days later. Over a year, with 50 invoice
 
 A client emails at 8pm with a question. They hear back at 9am their time (10pm your time). Not terrible. But if their issue is urgent, they've already moved on to someone more responsive.
 
-The [revenue leakage from disconnected systems](/blog/tool-consolidation/everything-connected) adds up. Timezone mismatch is one form of disconnection.
+The [revenue leakage from disconnected systems](/blog/c3-s9-everything-connected/) adds up. Timezone mismatch is one form of disconnection.
 
 ## When offshore VAs win
 
@@ -181,7 +181,7 @@ When your VA leaves:
 
 A platform doesn't have turnover. The Routines run whether someone is monitoring them or not.
 
-The [VA turnover cost](/blog/va-vs-platform/va-turnover-cost) calculator shows the real numbers. Timezone coverage loss is a hidden line item.
+The [VA turnover cost](/blog/c5-s6-va-turnover-cost/) calculator shows the real numbers. Timezone coverage loss is a hidden line item.
 
 ## The decision framework
 

@@ -32,7 +32,7 @@ Let me walk through a real scenario. A potential client finds your website at 9p
 
 Total time you spent: ~15 minutes across three days. Revenue lost: one client worth $2,000-5,000.
 
-The tools all worked. Your form tool captured the lead. Your email sent the message. Your calendar had availability. The failure wasn't in any single tool. It was in the [gaps between them](/blog/tool-consolidation/six-open-tabs-every-morning).
+The tools all worked. Your form tool captured the lead. Your email sent the message. Your calendar had availability. The failure wasn't in any single tool. It was in the [gaps between them](/blog/c3-s2-six-open-tabs-every-morning/).
 
 ## Connected: what should happen
 
@@ -56,7 +56,7 @@ Not everything needs to be connected. Your Canva account doesn't need to talk to
 
 ### 1. Lead capture → Response
 
-Speed kills here. 78% of customers buy from whoever responds first. When your form tool connects to your response system, leads hear back in minutes. When they don't, leads hear back in [hours or days](/blog/coaching-automation/coaching-leads-going-cold). The math is simple: faster response = more conversions.
+Speed kills here. 78% of customers buy from whoever responds first. When your form tool connects to your response system, leads hear back in minutes. When they don't, leads hear back in [hours or days](/blog/c2-s3-coaching-leads-going-cold/). The math is simple: faster response = more conversions.
 
 ### 2. Booking → Preparation
 
@@ -78,20 +78,20 @@ A client finishes their 12-session package. In a disconnected stack, you might n
 
 Let me quantify what disconnection costs.
 
-A [solo consultant or coach](/blog/managed-operations/operations-for-one) with 15 active clients and a healthy pipeline might experience:
+A [solo consultant or coach](/blog/c1-s6-operations-team-of-one/) with 15 active clients and a healthy pipeline might experience:
 - 2-3 leads per month going cold from slow response: $4,000-15,000/year in lost revenue
 - 10% of invoices paid late due to no automatic reminders: cash flow delays of $500-2,000/month
 - 15-20% of completed clients not re-enrolling because no one followed up: $6,000-20,000/year
 
-These aren't made-up numbers. They're the [real operations cost](/blog/tool-consolidation/replace-saas-stack-guide) that disconnected tools create. Not because the tools are bad. Because the connections between them don't exist.
+These aren't made-up numbers. They're the [real operations cost](/blog/c3-pillar-replace-saas-stack/) that disconnected tools create. Not because the tools are bad. Because the connections between them don't exist.
 
 ## Connected doesn't mean complex
 
 Here's the objection I hear: "Connected systems sound like they need a developer or a Zapier wizard to set up."
 
-Some do. GoHighLevel's "connected" experience requires [30-40 hours of configuration](/blog/tool-consolidation/why-all-in-one-tools-fail). Zapier can connect your apps, but you need to build the zaps, maintain them, and troubleshoot when they break.
+Some do. GoHighLevel's "connected" experience requires [30-40 hours of configuration](/blog/c3-s3-why-all-in-one-tools-fail/). Zapier can connect your apps, but you need to build the zaps, maintain them, and troubleshoot when they break.
 
-But "everything connected" doesn't have to mean "you connect everything." It can mean: you describe how your business works. Someone [builds the connections](/blog/tool-consolidation/seven-tools-to-one-migration) around it. The triggers fire automatically. You approve the outputs.
+But "everything connected" doesn't have to mean "you connect everything." It can mean: you describe how your business works. Someone [builds the connections](/blog/c3-s4-seven-tools-to-one-migration/) around it. The triggers fire automatically. You approve the outputs.
 
 That's the difference between a connected tool stack and connected operations. One is infrastructure you build. The other is infrastructure built for you.
 

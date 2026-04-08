@@ -37,11 +37,11 @@ That's backwards. Your operations should run more when business is good, not les
 
 ## The GoHighLevel pricing maze
 
-GoHighLevel is one of the more complex examples. The headline price is $97 per month. [The real cost is different](/blog/alternatives/gohighlevel-hidden-fees). Email sending costs $0.000675 per message. SMS costs $0.0079 per segment. Phone calls run $0.013 per minute. Each phone number costs $1.15 per month. Premium workflow actions have additional charges.
+GoHighLevel is one of the more complex examples. The headline price is $97 per month. [The real cost is different](/blog/c4-s7-gohighlevel-hidden-fees/). Email sending costs $0.000675 per message. SMS costs $0.0079 per segment. Phone calls run $0.013 per minute. Each phone number costs $1.15 per month. Premium workflow actions have additional charges.
 
 Reddit users consistently report real monthly costs between $150 and $300. One user described their bill: "$97 base plus $42 in SMS plus $18 in email sending plus $12 for phone numbers. Total: $169. And I only have 8 clients."
 
-For someone evaluating [operations platforms for their consulting business](/blog/alternatives/best-operations-platforms-2026), this pricing structure makes budgeting nearly impossible. What will the bill be next month? Depends on how many clients email you, how many sessions get scheduled, and how many follow-ups go out. You can estimate, but you can't know.
+For someone evaluating [operations platforms for their consulting business](/blog/c4-pillar-best-operations-platforms/), this pricing structure makes budgeting nearly impossible. What will the bill be next month? Depends on how many clients email you, how many sessions get scheduled, and how many follow-ups go out. You can estimate, but you can't know.
 
 ## What flat pricing actually means
 
@@ -49,9 +49,9 @@ Flat pricing means one number. The same number this month as next month. The sam
 
 Your operations cost is fixed. Your revenue grows. The margin improves every month.
 
-This isn't a minor detail. For solo consultants and coaches who already spend [$115 to $146 per month on disconnected tools](/blog/tool-consolidation/calendly-freshbooks-honeybook-cost), knowing exactly what the replacement will cost removes a real barrier to switching.
+This isn't a minor detail. For solo consultants and coaches who already spend [$115 to $146 per month on disconnected tools](/blog/c3-s5-calendly-freshbooks-honeybook-cost/), knowing exactly what the replacement will cost removes a real barrier to switching.
 
-The [hidden cost of DIY operations](/blog/managed-operations/operations-cost-mistake) is already high enough. The last thing a founder needs is a tool that adds financial uncertainty on top of operational uncertainty.
+The [hidden cost of DIY operations](/blog/c1-s2-operations-cost-mistake/) is already high enough. The last thing a founder needs is a tool that adds financial uncertainty on top of operational uncertainty.
 
 ## Why most platforms don't do this
 
@@ -63,7 +63,7 @@ From a customer perspective, it's unpredictable. And unpredictability is the opp
 
 The reason most platforms avoid flat pricing is simple: it requires confidence in your cost structure. You have to know what it costs to serve each customer and price accordingly. That's harder than passing variable costs through to the user.
 
-For founders evaluating [automation tools as non-technical users](/blog/alternatives/zapier-alternative-non-technical), the pricing model matters as much as the feature set. A platform with every feature you need but a bill you can't predict is a platform you'll eventually abandon.
+For founders evaluating [automation tools as non-technical users](/blog/c4-s4-zapier-alternative/), the pricing model matters as much as the feature set. A platform with every feature you need but a bill you can't predict is a platform you'll eventually abandon.
 
 ## The trust signal
 
@@ -71,7 +71,7 @@ Pricing transparency is a trust signal. When a platform tells you exactly what y
 
 Credits create a different relationship. The customer is always watching the meter. Always calculating whether the automation was "worth it." Always one unexpectedly busy month away from a bill that makes them question the whole setup.
 
-[GoHighLevel's pricing complexity](/blog/alternatives/gohighlevel-alternative-consultants) is one reason solo consultants abandon it. Not because the product is bad. Because they can't tell what it costs.
+[GoHighLevel's pricing complexity](/blog/c4-s11-gohighlevel-alternative-coaches/) is one reason solo consultants abandon it. Not because the product is bad. Because they can't tell what it costs.
 
 Flat pricing solves this. Not because it's cheaper in every scenario. But because it's knowable. And for a solo business owner trying to build stable operations, knowable is worth a premium.
 

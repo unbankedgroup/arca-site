@@ -61,7 +61,7 @@ GoHighLevel has spawned an ecosystem of consultants, course creators, and setup 
 
 This is revealing. If the tool required a cottage industry of specialists to set it up, the tool isn't simple. "No code" and "easy to use" appear in the marketing. "Hire a specialist" appears in the community forums.
 
-For [non-technical founders](/blog/managed-operations/non-technical-founders) who were drawn to GHL because it promised simplicity, the reality gap is significant. The marketing sells a destination. The product delivers a construction project.
+For [non-technical founders](/blog/c1-s7-non-technical-founders/) who were drawn to GHL because it promised simplicity, the reality gap is significant. The marketing sells a destination. The product delivers a construction project.
 
 ## You're not alone: the GHL exodus pattern
 
@@ -70,7 +70,7 @@ This pattern appears in coaching communities, consultant forums, and Reddit thre
 1. Sign up excited about consolidating tools
 2. Spend 2 to 4 weeks in setup mode
 3. Get partially configured but not fully operational
-4. Realize the [hidden fees](/blog/alternatives/gohighlevel-hidden-fees) push the real cost above $150 per month
+4. Realize the [hidden fees](/blog/c4-s7-gohighlevel-hidden-fees/) push the real cost above $150 per month
 5. Miss the simplicity of the old (disconnected) tools
 6. Cancel and feel guilty about "not being tech-savvy enough"
 
@@ -80,11 +80,11 @@ The guilt is misplaced. CRM and platform adoption fails 50 to 63% of the time ac
 
 The opposite of a 30-hour self-setup isn't a simpler self-setup. It's no self-setup at all.
 
-[Diagnosis before prescription](/blog/managed-operations/diagnosis-before-prescription) means someone learns how your business works first. Then they build the operational infrastructure around your answers. You describe. They configure. The system runs.
+[Diagnosis before prescription](/blog/c1-s4-diagnosis-before-prescription/) means someone learns how your business works first. Then they build the operational infrastructure around your answers. You describe. They configure. The system runs.
 
-That's what ["set up for you" actually means](/blog/alternatives/set-up-for-you-explained). Not a blank canvas with 200 drag-and-drop blocks. Not a YouTube tutorial playlist. A conversation where you explain your business and walk away with working operations.
+That's what ["set up for you" actually means](/blog/c1-s5-7-day-build-explained/). Not a blank canvas with 200 drag-and-drop blocks. Not a YouTube tutorial playlist. A conversation where you explain your business and walk away with working operations.
 
-The [platform comparison](/blog/alternatives/best-operations-platforms-2026) isn't just about features. It's about who's expected to do the work. If the answer is you, and you're a coach who bills $200 an hour, every hour of setup is $200 in lost revenue.
+The [platform comparison](/blog/c4-pillar-best-operations-platforms/) isn't just about features. It's about who's expected to do the work. If the answer is you, and you're a coach who bills $200 an hour, every hour of setup is $200 in lost revenue.
 
 GHL is a good product for agencies. If you're not an agency, it was never meant for you. And that's okay.
 

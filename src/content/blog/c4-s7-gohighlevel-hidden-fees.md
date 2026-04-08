@@ -47,7 +47,7 @@ One user shared their breakdown: "$97 base, $42 SMS, $18 email, $12 phone number
 
 Another: "I thought I was saving money by consolidating to GHL. My old stack was $145 a month. GHL costs me $180 and I spend 10 hours a week managing it."
 
-For [solo consultants already spending $115 to $146 on disconnected tools](/blog/tool-consolidation/saas-subscription-audit), the promise of consolidation at $97 is compelling. The reality of paying $200 plus spending 30 to 40 hours learning the platform is not.
+For [solo consultants already spending $115 to $146 on disconnected tools](/blog/c3-s1-saas-subscription-audit/), the promise of consolidation at $97 is compelling. The reality of paying $200 plus spending 30 to 40 hours learning the platform is not.
 
 ## The setup cost nobody advertises
 
@@ -55,7 +55,7 @@ The $97 price tag assumes you can set it up yourself. GHL's own community and ec
 
 Setup specialists charge $500 to $2,000 to configure GHL for your business. "Snapshots" (pre-built templates) cost $200 to $500. Training courses from GHL gurus run $97 to $997. Community members consistently report that it takes 30 to 40 hours of self-setup to get the basics running, or months if you're learning as you go.
 
-One review put it plainly: "GoHighLevel was built with agencies in mind, so solopreneurs and coaches may feel the tool is too big." The learning curve takes [about a year to reach competency](/blog/alternatives/gohighlevel-alternative-consultants) according to experienced users.
+One review put it plainly: "GoHighLevel was built with agencies in mind, so solopreneurs and coaches may feel the tool is too big." The learning curve takes [about a year to reach competency](/blog/c4-s11-gohighlevel-alternative-coaches/) according to experienced users.
 
 For a coach billing $200 per hour, 30 hours of setup time costs $6,000 in opportunity cost. Add the ongoing monthly charges, and the first-year total cost of GHL is closer to $8,400 to $9,600 than the $1,164 the sticker price suggests.
 
@@ -72,7 +72,7 @@ For a coach billing $200 per hour, 30 hours of setup time costs $6,000 in opport
 | **Monthly total** | **$162-$301** | **$97** |
 | **Year one total (with setup)** | **$2,444-$5,612** | **$1,164** |
 
-The [real cost of operations](/blog/managed-operations/operations-cost-mistake) isn't just the subscription. It's the subscription plus the hidden charges plus the time spent managing the tool itself.
+The [real cost of operations](/blog/c1-s2-operations-cost-mistake/) isn't just the subscription. It's the subscription plus the hidden charges plus the time spent managing the tool itself.
 
 ## When GHL makes sense (and when it doesn't)
 
@@ -80,9 +80,9 @@ To be fair: GoHighLevel is powerful. For agencies managing dozens of client sub-
 
 For a solo consultant or coach managing their own 10 to 20 clients, most of those features sit unused. You're paying for an agency tool and using maybe 20% of it. The hidden fees add up because you're on your own. No agency infrastructure to absorb the costs. No dedicated ops person to manage the platform.
 
-[Flat pricing](/blog/alternatives/flat-pricing-no-credits) exists specifically for this situation. One number. Every month. No calculator required.
+[Flat pricing](/blog/c4-s6-flat-pricing-no-credits/) exists specifically for this situation. One number. Every month. No calculator required.
 
-If you're currently on GHL and feeling the cost creep, you're not alone. The [GHL frustration](/blog/alternatives/gohighlevel-gave-up) is one of the most common patterns in operations platform communities.
+If you're currently on GHL and feeling the cost creep, you're not alone. The [GHL frustration](/blog/c4-s8-gohighlevel-gave-up/) is one of the most common patterns in operations platform communities.
 
 ---
 

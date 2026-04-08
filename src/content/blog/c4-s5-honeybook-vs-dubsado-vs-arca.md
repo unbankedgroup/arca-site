@@ -31,7 +31,7 @@ The interface is intuitive. Invoicing and payment processing work out of the box
 
 Where it falls short is automation depth. HoneyBook's automation is template-based. You can trigger emails when a form is submitted or a payment is received. But conditional logic, multi-step sequences, and branching flows are limited. If your follow-up process has any complexity, you'll hit the ceiling fast.
 
-The pricing has also climbed significantly. Starter costs $36 per month. Essentials costs $59 per month. Premium costs $109 per month. For coaches who started on the platform when it was cheaper, the [price increases have been frustrating](/blog/alternatives/honeybook-alternative-price-hike). And at the Premium tier, you're paying over $1,300 a year for a tool you still have to operate yourself.
+The pricing has also climbed significantly. Starter costs $36 per month. Essentials costs $59 per month. Premium costs $109 per month. For coaches who started on the platform when it was cheaper, the [price increases have been frustrating](/blog/c4-s2-honeybook-alternative/). And at the Premium tier, you're paying over $1,300 a year for a tool you still have to operate yourself.
 
 HoneyBook wins on: fast setup, clean design, built-in payments, and a smooth client experience.
 
@@ -43,7 +43,7 @@ Dubsado is the opposite trade-off. Where HoneyBook prioritizes speed, Dubsado pr
 
 The problem is the "build it" part. Setting up Dubsado properly takes weeks, not hours. The workflow builder is powerful but complex. Most coaches I've talked to either hire a Dubsado setup specialist (typically $500 to $2,000) or abandon their setup halfway through.
 
-For coaches who complete the setup, Dubsado runs reliably. The [customization depth](/blog/alternatives/dubsado-alternative-faster-setup) is genuinely impressive. But the time investment is real, and you need to maintain it. When your process changes, you rebuild the workflow.
+For coaches who complete the setup, Dubsado runs reliably. The [customization depth](/blog/c4-s3-dubsado-alternative/) is genuinely impressive. But the time investment is real, and you need to maintain it. When your process changes, you rebuild the workflow.
 
 Pricing is more accessible. Starter costs $20 per month. Premier costs $40 per month. That's significantly less than HoneyBook or Arca. If budget is the primary constraint and you have the time to invest in setup, Dubsado offers strong value.
 
@@ -102,7 +102,7 @@ Arca operates your business. You talk to it. It handles the rest.
 
 That's not better or worse in absolute terms. It's a different answer to a different question. HoneyBook and Dubsado answer "what tool should I use to run my business?" Arca answers "who runs my business operations so I can coach?"
 
-If you're still deciding, the [coaching business automation guide](/blog/coaching-automation/coaching-business-automation-guide) walks through what operations actually look like when they're working. And the [best operations platforms for 2026](/blog/alternatives/best-operations-platforms-2026) covers the broader landscape beyond these three.
+If you're still deciding, the [coaching business automation guide](/blog/c2-pillar-coaching-automation-guide/) walks through what operations actually look like when they're working. And the [best operations platforms for 2026](/blog/c4-pillar-best-operations-platforms/) covers the broader landscape beyond these three.
 
 The right platform is the one that gives you your time back. How it does that matters less than whether it actually does.
 

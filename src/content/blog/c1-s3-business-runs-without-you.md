@@ -63,9 +63,9 @@ And that's the thing that keeps founders from stepping away. Not that something 
 
 ## What structural independence looks like
 
-There's a different version of this. I've seen it in businesses that invested in their [operations infrastructure](/blog/managed-operations/managed-operations-guide), and the contrast is stark.
+There's a different version of this. I've seen it in businesses that invested in their [operations infrastructure](/blog/c1-pillar-managed-operations-guide/), and the contrast is stark.
 
-Coaches specifically face this challenge — see the [coaching vacation guide](/blog/coaching-automation/coaching-vacation-guide) for how client management changes when you're away.
+Coaches specifically face this challenge — see the [coaching vacation guide](/blog/c2-s7-coaching-vacation-guide/) for how client management changes when you're away.
 
 Same scenario. Founder takes a week off. Here's what happens.
 
@@ -83,7 +83,7 @@ The founder comes back Monday. Opens one chat. Everything is there. What happene
 
 That's not a fantasy. That's what happens when the repeatable parts of your business run on infrastructure instead of on you.
 
-The [VA handoff guide](/blog/va-vs-platform/va-handoff-guide) shows what happens when you try to delegate this to a person vs building infrastructure — the difference is structural.
+The [VA handoff guide](/blog/c5-s5-va-handoff-guide/) shows what happens when you try to delegate this to a person vs building infrastructure — the difference is structural.
 
 ## The 80/20 of founder dependency
 
@@ -97,11 +97,11 @@ That's the same process every time. Same steps. Same timing. Same messages. It d
 
 80-90% of the operational work in a service business is repeatable. It's the same sequence, triggered by the same events, producing the same outputs. The only reason it depends on the founder is because nobody built the infrastructure to handle it.
 
-For solo founders specifically, this is the [operations for one](/blog/managed-operations/operations-for-one) challenge — running like a 10-person team with zero staff.
+For solo founders specifically, this is the [operations for one](/blog/c1-s6-operations-team-of-one/) challenge — running like a 10-person team with zero staff.
 
 ## Building the off switch
 
-The path from "my business can't survive a weekend" to "my business keeps running without the founder" is not about working harder or hiring more people. It's about building the [operational foundation](/blog/managed-operations/7-day-build-explained) once and letting it run.
+The path from "my business can't survive a weekend" to "my business keeps running without the founder" is not about working harder or hiring more people. It's about building the [operational foundation](/blog/c1-s5-7-day-build-explained/) once and letting it run.
 
 That means:
 - Automated lead response so no one waits 18 hours to hear back from you
@@ -128,11 +128,11 @@ I told her the truth: I don't know yet. I'm still building toward that myself. B
 
 Your business should be able to survive a week without you. If it can't, the problem isn't the business. It's the infrastructure underneath it.
 
-**Want to see what your vacation test looks like?** The [operations audit checklist](/blog/managed-operations/operations-audit-checklist) shows you exactly where you're the single point of failure — and how to fix it.
+**Want to see what your vacation test looks like?** The [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) shows you exactly where you're the single point of failure — and how to fix it.
 
-For coaches specifically, the [coaching vacation guide](/blog/coaching-automation/coaching-vacation-guide) walks through how to set up client management that works while you're away.
+For coaches specifically, the [coaching vacation guide](/blog/c2-s7-coaching-vacation-guide/) walks through how to set up client management that works while you're away.
 
-And if you're considering a VA instead of infrastructure, read about the [VA handoff problem](/blog/va-vs-platform/va-handoff-guide) — why delegating to a person still leaves you vulnerable when they quit, get sick, or make mistakes.
+And if you're considering a VA instead of infrastructure, read about the [VA handoff problem](/blog/c5-s5-va-handoff-guide/) — why delegating to a person still leaves you vulnerable when they quit, get sick, or make mistakes.
 
 ---
 

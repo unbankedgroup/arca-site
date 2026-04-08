@@ -13,7 +13,7 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-**Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/managed-operations/diagnosis-before-prescription).
+**Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/c1-s4-diagnosis-before-prescription/).
 
 ---
 
@@ -23,11 +23,11 @@ That's not setup. That's the beginning of a 20-40 hour DIY project most founders
 
 Done-for-you setup is different: you describe your business, we build it, you approve it, it runs. Here's exactly what that looks like — day by day — so you know what to expect before you start.
 
-*This is the step-by-step breakdown of the [7-Day Build](/blog/managed-operations/7-day-build-explained). If you want to understand why the process is structured this way, read that first.*
+*This is the step-by-step breakdown of the [7-Day Build](/blog/c1-s5-7-day-build-explained/). If you want to understand why the process is structured this way, read that first.*
 
 ## Why 7 days?
 
-Most "setup" is actually teaching you how to build it yourself. That's not setup — that's a course. As we explain in [diagnosis before prescription](/blog/managed-operations/diagnosis-before-prescription), the right solution comes from understanding your business first — not from a template.
+Most "setup" is actually teaching you how to build it yourself. That's not setup — that's a course. As we explain in [diagnosis before prescription](/blog/c1-s4-diagnosis-before-prescription/), the right solution comes from understanding your business first — not from a template.
 
 The 7-Day Build is different because we do the building. You provide the inputs. We configure the system. You review. We refine. You're live.
 
@@ -134,7 +134,7 @@ We hop on a 60-minute call. We walk through the system together. You ask questio
 - Your invoices are automated
 - Your morning briefings are scheduled
 
-You're done. No more setup. No more configuration. You're running. Your [daily morning briefing](/blog/managed-operations/morning-briefing) becomes your command center — one message telling you what needs attention.
+You're done. No more setup. No more configuration. You're running. Your [daily morning briefing](/blog/c1-s8-morning-briefing/) becomes your command center — one message telling you what needs attention.
 
 ## What you need to provide
 

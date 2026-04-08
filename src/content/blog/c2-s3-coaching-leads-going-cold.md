@@ -59,7 +59,7 @@ Each message adds value. None of them are "just checking in" with no substance.
 
 This one surprises coaches. The lead converted. They paid. But between payment and the first session, there's a gap. If that gap is more than a few days and nothing happens, buyer's remorse sets in.
 
-**Where it breaks:** The [onboarding sequence](/blog/coaching-automation/coaching-client-onboarding) is manual, slow, or nonexistent. The new client waits. Doubt creeps in.
+**Where it breaks:** The [onboarding sequence](/blog/c2-s2-coaching-client-onboarding/) is manual, slow, or nonexistent. The new client waits. Doubt creeps in.
 
 **The fix:** Immediate post-purchase onboarding. Welcome message within minutes. Intake form within hours. First session booked within 48 hours. Every day of silence between purchase and first session increases the refund risk.
 
@@ -73,13 +73,13 @@ Now imagine a faster response time and a proper follow-up sequence doubles your 
 
 If your average client is worth $2,000-5,000 over their engagement, one additional client per month from better follow-up is $24,000-60,000 per year. From the same number of leads. The same marketing spend. The same offer.
 
-The lead flow isn't the problem for most coaches. The [follow-up infrastructure](/blog/coaching-automation/coaching-business-automation-guide) is.
+The lead flow isn't the problem for most coaches. The [follow-up infrastructure](/blog/c2-pillar-coaching-automation-guide/) is.
 
 ## Why it feels harder than it should
 
 I know what coaches think when they read this: "I know I should follow up more. I just don't have time."
 
-That's the right diagnosis. You don't have time because follow-up competes with everything else. Client sessions. Session prep. [Admin work that already eats 15-20 hours a week](/blog/coaching-automation/coaching-time-audit). When something has to give, lead follow-up is the first thing that drops. Because it doesn't feel urgent. It's not a client waiting for you. It's a stranger you haven't met yet.
+That's the right diagnosis. You don't have time because follow-up competes with everything else. Client sessions. Session prep. [Admin work that already eats 15-20 hours a week](/blog/c2-s1-coaching-time-audit/). When something has to give, lead follow-up is the first thing that drops. Because it doesn't feel urgent. It's not a client waiting for you. It's a stranger you haven't met yet.
 
 But strangers who fill out your contact form are people who raised their hand. They said "I'm interested." Leaving that hand hanging is leaving money, and people you could help, on the table.
 
@@ -93,11 +93,11 @@ The solution isn't "be more disciplined about follow-ups." Discipline doesn't sc
 
 The solution is a system that handles the repeatable parts automatically.
 
-Inquiry comes in. Acknowledgment goes out immediately. Follow-up sequence runs on a schedule. Discovery call happens. Post-call sequence runs automatically. Client converts. [Onboarding sequence](/blog/coaching-automation/coaching-client-onboarding) starts immediately.
+Inquiry comes in. Acknowledgment goes out immediately. Follow-up sequence runs on a schedule. Discovery call happens. Post-call sequence runs automatically. Client converts. [Onboarding sequence](/blog/c2-s2-coaching-client-onboarding/) starts immediately.
 
 At every stage, the coach can review and personalize the messages. But the timing, the triggers, and the delivery happen without the coach remembering to do them.
 
-The leads that used to go cold start converting. Not because the coaching got better. Because the [infrastructure](/blog/managed-operations/crm-not-the-problem) finally matched the quality of the work.
+The leads that used to go cold start converting. Not because the coaching got better. Because the [infrastructure](/blog/c1-s1-crm-not-the-problem/) finally matched the quality of the work.
 
 Your leads aren't going cold because they're not interested. They're going cold because nobody is there when they are.
 

@@ -83,7 +83,7 @@ Add the monthly charges. $12 + $17 + $13 + $49 = $91 to $155 per month. Call it 
 
 That's $1,380 per year in subscriptions alone. A study from BetterCloud found that the average small business wastes 32% of their SaaS spend on unused or underutilized tools — roughly $450/year thrown away.
 
-Now add the time. [The average coach spends 15 to 20 hours per week](/blog/coaching-automation/coaching-time-audit) on admin and operational tasks. Not all of that is tool-related. But a significant chunk is the overhead of managing information across five platforms that don't share data.
+Now add the time. [The average coach spends 15 to 20 hours per week](/blog/c2-s1-coaching-time-audit/) on admin and operational tasks. Not all of that is tool-related. But a significant chunk is the overhead of managing information across five platforms that don't share data.
 
 Checking Calendly for today's schedule. Logging into FreshBooks to send an invoice. Opening Mailchimp to see if a follow-up went out. Updating the spreadsheet with the latest lead status. Cross-referencing the CRM to check a client's history before a session.
 
@@ -95,7 +95,7 @@ The tools aren't expensive. The disconnection between them is.
 
 The obvious response is Zapier. Connect Calendly to FreshBooks. Connect Mailchimp to your CRM. Automate the handoffs.
 
-In theory, that works. In practice, for the [non-technical coach](/blog/managed-operations/non-technical-founders), it creates a sixth tool to manage. One that requires understanding triggers, actions, conditions, and field mapping. One that breaks when any of the connected tools updates its API. One that costs $20 to $49 per month on top of everything else.
+In theory, that works. In practice, for the [non-technical coach](/blog/c1-s7-non-technical-founders/), it creates a sixth tool to manage. One that requires understanding triggers, actions, conditions, and field mapping. One that breaks when any of the connected tools updates its API. One that costs $20 to $49 per month on top of everything else.
 
 Zapier is a powerful tool for people who think in workflows. Most coaches don't. They think in clients and sessions and outcomes. Asking them to become integration architects is asking them to do the wrong job.
 
@@ -109,13 +109,13 @@ When the connecting layer is a human, things fall through. Not because the human
 
 ## What replaces a 5-tool stack
 
-The answer isn't a better scheduling tool or a cheaper CRM. The answer is an [operations layer that connects everything](/blog/tool-consolidation/replace-saas-stack-guide) and runs from one place.
+The answer isn't a better scheduling tool or a cheaper CRM. The answer is an [operations layer that connects everything](/blog/c3-pillar-replace-saas-stack/) and runs from one place.
 
 One conversation where you check your schedule, review overdue invoices, approve follow-up messages, and get a morning briefing. Not five tabs. Not five logins. One thread.
 
 Your scheduling, invoicing, client management, follow-ups, and lead tracking all connected. When a client books a session, the invoice is queued. When a session ends, the follow-up is drafted. When a lead goes quiet, the re-engagement sequence fires. When something needs your attention, you see it in the same place you see everything else.
 
-The [total subscription cost drops](/blog/tool-consolidation/saas-subscription-audit). The admin hours drop further. And the revenue leakage from dropped follow-ups and delayed invoices stops because the system doesn't forget.
+The [total subscription cost drops](/blog/c3-s1-saas-subscription-audit/). The admin hours drop further. And the revenue leakage from dropped follow-ups and delayed invoices stops because the system doesn't forget.
 
 ## The consolidation question
 

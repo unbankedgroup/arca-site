@@ -50,9 +50,9 @@ That's roughly half your work week. For a profession where the billable work is 
 
 If you bill $200/hour and spend 15 hours a week on admin, that's $3,000 per week you're not earning. $12,000 per month. $144,000 per year.
 
-You're not losing that money because you're lazy. You're losing it because [your business doesn't have infrastructure](/blog/managed-operations/managed-operations-guide). You ARE the infrastructure. And infrastructure doesn't scale.
+You're not losing that money because you're lazy. You're losing it because [your business doesn't have infrastructure](/blog/c1-pillar-managed-operations-guide/). You ARE the infrastructure. And infrastructure doesn't scale.
 
-Want to get specific about your own numbers? I built a [coaching time audit](/blog/coaching-automation/coaching-time-audit) that walks you through tracking one week of your actual time. Most coaches are surprised by what they find.
+Want to get specific about your own numbers? I built a [coaching time audit](/blog/c2-s1-coaching-time-audit/) that walks you through tracking one week of your actual time. Most coaches are surprised by what they find.
 
 ---
 
@@ -96,7 +96,7 @@ You see the message four hours later. You respond, but by then they've reached o
 
 Research shows that leads contacted within 5 minutes are 9 times more likely to convert. Most coaches respond in 24-48 hours. That's not a gap. That's a canyon.
 
-The fix isn't "check your inbox more often." The fix is a system that responds within minutes, sends your availability, and starts a [follow-up sequence automatically](/blog/coaching-automation/coaching-leads-going-cold). If the lead doesn't respond in 48 hours, another message goes out. Then another. Not pushy. Persistent.
+The fix isn't "check your inbox more often." The fix is a system that responds within minutes, sends your availability, and starts a [follow-up sequence automatically](/blog/c2-s3-coaching-leads-going-cold/). If the lead doesn't respond in 48 hours, another message goes out. Then another. Not pushy. Persistent.
 
 You don't have to remember to follow up. The system remembers.
 
@@ -125,7 +125,7 @@ For a coach with automated onboarding: the client says yes. The welcome message 
 
 Every step happens in order. On time. Every time. No manual work. No steps skipped because you were busy with another client.
 
-[The onboarding experience sets the tone for the entire coaching relationship](/blog/coaching-automation/coaching-client-onboarding). A new client who receives a smooth, professional onboarding sequence trusts you more before the first session even starts. A client who waits three days for a welcome email wonders if they made the right choice.
+[The onboarding experience sets the tone for the entire coaching relationship](/blog/c2-s2-coaching-client-onboarding/). A new client who receives a smooth, professional onboarding sequence trusts you more before the first session even starts. A client who waits three days for a welcome email wonders if they made the right choice.
 
 ### 4. Invoicing and payment collection (the awkward part)
 
@@ -143,7 +143,7 @@ This is the one most coaches know they should be doing but don't have time for.
 
 A check-in message 48 hours after a session. An accountability nudge mid-week. A reminder before the next session with a prompt to reflect on the previous one. A congratulations message when a client hits a milestone.
 
-These touches are what make coaching feel personal and keep retention high. Coaches who do them consistently see [higher renewal rates and lower client drop-off](/blog/coaching-automation/automated-follow-ups-coaches). The data backs this up: coaching clients who receive structured follow-ups between sessions show 40% higher renewal rates.
+These touches are what make coaching feel personal and keep retention high. Coaches who do them consistently see [higher renewal rates and lower client drop-off](/blog/c2-s4-automated-follow-ups-coaches/). The data backs this up: coaching clients who receive structured follow-ups between sessions show 40% higher renewal rates.
 
 But when you're managing 12 clients, that's 12 post-session check-ins, 12 mid-week nudges, 12 pre-session reminders. Every single week. Manually. While also doing your actual coaching work.
 
@@ -153,7 +153,7 @@ Automation makes this sustainable. You design the message templates once. The sy
 
 A client finishes a 3-month coaching package. The sessions end. You mean to check in a month later to see if they want to continue. But you forget. Or you check in three months later when it's too late and they've moved on.
 
-[Referral and re-engagement systems](/blog/coaching-automation/coaching-referral-system) close this gap. A satisfaction check-in goes out when the package ends. A "how are things going?" message follows 30 days later. A renewal offer at 60 days. A referral request (specific, personal, not salesy) at 90 days.
+[Referral and re-engagement systems](/blog/c2-s8-coaching-referral-system/) close this gap. A satisfaction check-in goes out when the package ends. A "how are things going?" message follows 30 days later. A renewal offer at 60 days. A referral request (specific, personal, not salesy) at 90 days.
 
 Most coaches leave this revenue on the table. Not because they don't want it. Because they don't have a system that does it for them.
 
@@ -175,7 +175,7 @@ You're the chef. The operational work is the table-bussing. It needs to happen. 
 
 ## The typical coaching tool stack (and why it breaks)
 
-I already mentioned the [tool accumulation pattern](/blog/managed-operations/managed-operations-guide). For coaches specifically, here's what it usually looks like:
+I already mentioned the [tool accumulation pattern](/blog/c1-pillar-managed-operations-guide/). For coaches specifically, here's what it usually looks like:
 
 | Tool | What It Handles | Monthly Cost |
 |------|----------------|-------------|
@@ -202,7 +202,7 @@ You are the integration layer. You are the middleware between five disconnected 
 
 A study from BetterCloud found that the average small business employee switches between apps 1,100 times per day. At a coaching rate of $150-200/hour, that context-switching costs $1,500-2,500 per week in lost productive capacity.
 
-The answer isn't a better tool. It's [fewer tools that work as one system](/blog/coaching-automation/coaching-tool-stack). One platform that handles scheduling, invoicing, follow-ups, onboarding, and client tracking together. Where finishing a session triggers the invoice. Where a new lead triggers the follow-up. Where a paid invoice updates the client record. All without you touching anything.
+The answer isn't a better tool. It's [fewer tools that work as one system](/blog/c2-s9-coaching-tool-stack/). One platform that handles scheduling, invoicing, follow-ups, onboarding, and client tracking together. Where finishing a session triggers the invoice. Where a new lead triggers the follow-up. Where a paid invoice updates the client record. All without you touching anything.
 
 ---
 
@@ -226,11 +226,11 @@ Here's what that process looks like:
 
 **Day 5-6: Testing.** Everything gets tested. Does the follow-up sequence feel right? Are the invoice terms correct? Does the morning briefing include what you need? Adjustments happen here.
 
-**Day 7: Go live.** You wake up to [your first morning briefing](/blog/coaching-automation/coaching-morning-briefing). It tells you today's sessions, overdue invoices, leads that need attention, and follow-ups that went out overnight. Your coaching business is running on infrastructure instead of on you.
+**Day 7: Go live.** You wake up to [your first morning briefing](/blog/c2-s5-coaching-morning-briefing/). It tells you today's sessions, overdue invoices, leads that need attention, and follow-ups that went out overnight. Your coaching business is running on infrastructure instead of on you.
 
-The whole thing happens in a week because [the diagnosis comes first](/blog/managed-operations/diagnosis-before-prescription). There's no configuration maze. No 30-hour setup project. You talk about your business. The system gets built around your words.
+The whole thing happens in a week because [the diagnosis comes first](/blog/c1-s4-diagnosis-before-prescription/). There's no configuration maze. No 30-hour setup project. You talk about your business. The system gets built around your words.
 
-If you want the full day-by-day breakdown, I wrote a detailed walkthrough: [The 7-Day Build, explained](/blog/managed-operations/7-day-build-explained).
+If you want the full day-by-day breakdown, I wrote a detailed walkthrough: [The 7-Day Build, explained](/blog/c1-s5-7-day-build-explained/).
 
 ---
 
@@ -240,9 +240,9 @@ Good. That means you're exactly who this is for.
 
 I hear this from coaches constantly. Usually followed by: "I tried Dubsado once and gave up after two weeks" or "My VA set up my CRM and I have no idea how it works."
 
-The truth is, [most automation tools aren't built for you](/blog/coaching-automation/not-tech-savvy-for-you). They're built for people who enjoy configuring software. People who think in workflows and triggers and conditions. That's a very specific kind of person. And it's not most coaches.
+The truth is, [most automation tools aren't built for you](/blog/c2-s10-not-tech-savvy-for-you/). They're built for people who enjoy configuring software. People who think in workflows and triggers and conditions. That's a very specific kind of person. And it's not most coaches.
 
-Managed operations works differently. There's no dashboard to navigate. No workflows to build. No settings to configure. You talk to the system in plain English through [WhatsApp or Telegram](/blog/coaching-automation/coaching-business-whatsapp). The same apps you already use to message your clients.
+Managed operations works differently. There's no dashboard to navigate. No workflows to build. No settings to configure. You talk to the system in plain English through [WhatsApp or Telegram](/blog/c2-s6-coaching-business-whatsapp/). The same apps you already use to message your clients.
 
 Want to know who cancelled their session today? Ask. Want to see which invoices are overdue? Ask. Want to check if that follow-up went out to the lead from Monday? Ask.
 
@@ -266,7 +266,7 @@ Michael books a 6-session package. The onboarding sequence starts. Welcome email
 
 You wrap up your day at 5pm. You close your laptop.
 
-Nothing piles up. Nothing gets forgotten. [Your business keeps running](/blog/coaching-automation/coaching-vacation-guide) while you eat dinner with your family.
+Nothing piles up. Nothing gets forgotten. [Your business keeps running](/blog/c2-s7-coaching-vacation-guide/) while you eat dinner with your family.
 
 That's not a fantasy. That's operational infrastructure doing what it's supposed to do. Freeing the coach to coach.
 
@@ -298,7 +298,7 @@ Before you do anything, figure out where you stand. Here's a quick self-assessme
 
 **6-8:** Your business is running on you, not on systems. You're past the point where individual tools or "being more organized" will solve it. You need operational infrastructure.
 
-For a deeper version with specific time benchmarks per workflow, check the [full coaching time audit](/blog/coaching-automation/coaching-time-audit).
+For a deeper version with specific time benchmarks per workflow, check the [full coaching time audit](/blog/c2-s1-coaching-time-audit/).
 
 ---
 
@@ -320,9 +320,9 @@ That's the work. Everything else is operations. And operations should be handled
 
 If you're reading this and the checklist score was higher than you expected, here's what I'd suggest.
 
-Run the [time audit](/blog/coaching-automation/coaching-time-audit) first. One week. Track everything. Get the real number on how much time you're spending on non-coaching work.
+Run the [time audit](/blog/c2-s1-coaching-time-audit/) first. One week. Track everything. Get the real number on how much time you're spending on non-coaching work.
 
-Then look at your [tool stack](/blog/coaching-automation/coaching-tool-stack). Count the subscriptions. Add up the cost. Ask yourself: are these tools working together, or am I the glue?
+Then look at your [tool stack](/blog/c2-s9-coaching-tool-stack/). Count the subscriptions. Add up the cost. Ask yourself: are these tools working together, or am I the glue?
 
 If the answer is "I'm the glue," you're ready for a structural change.
 

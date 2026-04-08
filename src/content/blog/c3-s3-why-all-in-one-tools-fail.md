@@ -49,7 +49,7 @@ Pendo's research shows 80 percent of software features are rarely or never used.
 
 ## What actually works
 
-The alternative isn't going back to seven disconnected tools. That's the [six-tabs-every-morning problem](/blog/tool-consolidation/six-open-tabs-every-morning) and it has its own serious costs.
+The alternative isn't going back to seven disconnected tools. That's the [six-tabs-every-morning problem](/blog/c3-s2-six-open-tabs-every-morning/) and it has its own serious costs.
 
 The alternative is a platform that starts with a diagnosis instead of a demo.
 
@@ -59,19 +59,19 @@ The difference between a generic all-in-one tool and a diagnosed system is confi
 
 That's the approach I took with Arca. Instead of giving every business the same 200-feature dashboard and saying "good luck," the system starts with a diagnostic. What do you sell? How do you sell it? What does your week look like? What falls through the cracks?
 
-Then it builds only what you need. Not a blank canvas. Not a maze of features. A working system, configured for your business, [delivered in seven days](/blog/tool-consolidation/replace-saas-stack-guide).
+Then it builds only what you need. Not a blank canvas. Not a maze of features. A working system, configured for your business, [delivered in seven days](/blog/c3-pillar-replace-saas-stack/).
 
 ## The migration question
 
 The biggest fear with leaving your current stack is the migration. What happens to my data? What about the workflows I've already built?
 
-This is real, and I won't minimize it. Moving [from seven tools to one system](/blog/tool-consolidation/seven-tools-to-one-migration) takes planning. Client records, invoice history, scheduled content, pipeline data. All of it needs to transfer cleanly.
+This is real, and I won't minimize it. Moving [from seven tools to one system](/blog/c3-s4-seven-tools-to-one-migration/) takes planning. Client records, invoice history, scheduled content, pipeline data. All of it needs to transfer cleanly.
 
-But here's the thing most founders don't consider. The migration is a one-time cost. The daily tax of running disconnected tools is forever. A [proper SaaS audit](/blog/tool-consolidation/saas-subscription-audit) usually reveals $300 to $500 per month in subscriptions plus 15 or more hours per month in manual integration work. The migration pays for itself within the first quarter.
+But here's the thing most founders don't consider. The migration is a one-time cost. The daily tax of running disconnected tools is forever. A [proper SaaS audit](/blog/c3-s1-saas-subscription-audit/) usually reveals $300 to $500 per month in subscriptions plus 15 or more hours per month in manual integration work. The migration pays for itself within the first quarter.
 
 ## How to evaluate your options
 
-If you're [comparing platforms](/blog/alternatives/best-operations-platforms-2026), here's a simple framework.
+If you're [comparing platforms](/blog/c4-pillar-best-operations-platforms/), here's a simple framework.
 
 **Setup time.** If a tool takes more than a week to configure, it's not solving your problem. It's becoming your problem.
 
@@ -79,7 +79,7 @@ If you're [comparing platforms](/blog/alternatives/best-operations-platforms-202
 
 **Pricing transparency.** Watch for per-message charges, per-contact tiers, and features locked behind expensive plans. The base price is never the real price.
 
-**Specificity.** Does the tool adapt to you, or do you adapt to it? The best systems are [configured for your business](/blog/alternatives/gohighlevel-alternative-consultants), not configured by you for a generic audience.
+**Specificity.** Does the tool adapt to you, or do you adapt to it? The best systems are [configured for your business](/blog/c4-s11-gohighlevel-alternative-coaches/), not configured by you for a generic audience.
 
 ## The honest take
 

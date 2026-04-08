@@ -37,7 +37,7 @@ GoHighLevel advertises a $97 per month starting price. That number is misleading
 
 If you send 5,000 emails a month, 500 text messages, and make 200 minutes of calls, your real cost lands between $150 and $300 per month. For some users it runs higher. The per-unit charges are small individually, but they add up fast when your business actually uses the platform.
 
-Compare that to flat pricing. [Arca's Foundation plan](/blog/alternatives/best-operations-platforms-2026) is $97 per month with no per-email charges, no per-SMS charges, no surprise line items. Structure is $247 per month. Fortress is $497 per month. You know the number before the month starts.
+Compare that to flat pricing. [Arca's Foundation plan](/blog/c4-pillar-best-operations-platforms/) is $97 per month with no per-email charges, no per-SMS charges, no surprise line items. Structure is $247 per month. Fortress is $497 per month. You know the number before the month starts.
 
 ## What a consultant actually needs
 
@@ -55,13 +55,13 @@ That is it. Those three things, running consistently, cover 80% of what keeps a 
 
 Complexity is not neutral. Every extra feature you do not use is a configuration decision you still have to make. GHL gives you a website builder. You already have a website. GHL gives you a course platform. You are not selling courses. GHL gives you a reputation management dashboard. You have 12 Google reviews and that is fine.
 
-Each unused feature sits in your sidebar, cluttering your navigation, showing up in searches, creating one more thing to ignore. [All-in-one tools fail](/blog/tool-consolidation/why-all-in-one-tools-fail) when they try to be everything for everyone. The tool should match the operation, not the other way around.
+Each unused feature sits in your sidebar, cluttering your navigation, showing up in searches, creating one more thing to ignore. [All-in-one tools fail](/blog/c3-s3-why-all-in-one-tools-fail/) when they try to be everything for everyone. The tool should match the operation, not the other way around.
 
 ## What switching looks like with Arca
 
 Arca is built for service businesses that want operations to run without becoming an operations expert. Here is how it works in practice.
 
-You start with [The 7-Day Build](/blog/managed-operations/7-day-build-explained). We look at what you are currently doing manually, what is falling through the cracks, and what needs to run on its own. Then we build it. Not you. We build it.
+You start with [The 7-Day Build](/blog/c1-s5-7-day-build-explained/). We look at what you are currently doing manually, what is falling through the cracks, and what needs to run on its own. Then we build it. Not you. We build it.
 
 Your Routines handle the follow-ups. Your Connections tie your calendar, email, and invoicing into one system. Your Blueprints give you a repeatable structure for onboarding new clients, closing proposals, and managing active engagements.
 
@@ -89,7 +89,7 @@ Most consultants I talk to are not choosing between GHL and Arca. They are choos
 
 But staying on a platform because you already spent time configuring it is not a strategy. It is a trap.
 
-[Compare the full landscape](/blog/alternatives/best-operations-platforms-2026) of operations platforms for 2026. Or look at what [HoneyBook users are doing](/blog/alternatives/honeybook-alternative-price-hike) after their price hike, and what [Dubsado users are finding](/blog/alternatives/dubsado-alternative-faster-setup) when setup takes too long.
+[Compare the full landscape](/blog/c4-pillar-best-operations-platforms/) of operations platforms for 2026. Or look at what [HoneyBook users are doing](/blog/c4-s2-honeybook-alternative/) after their price hike, and what [Dubsado users are finding](/blog/c4-s3-dubsado-alternative/) when setup takes too long.
 
 The right tool is the one that matches how your business actually runs. Not the one with the longest feature list.
 

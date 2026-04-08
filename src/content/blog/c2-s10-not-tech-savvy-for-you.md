@@ -41,7 +41,7 @@ What does this trigger connect to? Which fields map to which? What happens when 
 
 For a coach who thinks in client outcomes, not system logic, this is the wrong mental model. It's not that they can't learn it. It's that learning it shouldn't be required.
 
-The [builder model works for builders](/blog/managed-operations/non-technical-founders). Developers. Tech-forward entrepreneurs. People who enjoy configuring systems.
+The [builder model works for builders](/blog/c1-s7-non-technical-founders/). Developers. Tech-forward entrepreneurs. People who enjoy configuring systems.
 
 The service model works for everyone else. Describe your business. Someone builds the operations. You approve the results.
 
@@ -93,7 +93,7 @@ Done.
 
 You're not locked out of your own operations. You're just not required to be the one implementing changes. The same way you'd tell an assistant what you need without having to explain how email servers work.
 
-## The [Zapier alternative](/blog/alternatives/zapier-alternative-non-technical) nobody talks about
+## The [Zapier alternative](/blog/c4-s4-zapier-alternative/) nobody talks about
 
 The automation market is full of tools competing to be the best builder platform. More integrations. More triggers. More visual workflow features. More power for the person doing the building.
 
@@ -105,7 +105,7 @@ According to IDC research, small businesses spend an average of 12 hours per mon
 
 The alternative is operations as a service. Not a tool that gives you the power to build. A system that's already built, already running, already connected.
 
-The difference in the coaching context is stark. [Flat, predictable pricing](/blog/alternatives/flat-pricing-no-credits) instead of per-automation charges. A 7-day setup instead of a 40-hour learning curve. A conversation interface instead of a workflow editor.
+The difference in the coaching context is stark. [Flat, predictable pricing](/blog/c4-s6-flat-pricing-no-credits/) instead of per-automation charges. A 7-day setup instead of a 40-hour learning curve. A conversation interface instead of a workflow editor.
 
 ## You already have the hardest skill
 
@@ -115,7 +115,7 @@ That takes emotional intelligence, business acumen, and deep expertise. Those ar
 
 The entire point of managed operations is that technical complexity becomes someone else's problem. You bring the expertise in coaching. The operations layer handles the rest.
 
-If you can send a text message, you can run your business through managed operations. That's not a metaphor. The interface is literally a [messaging conversation](/blog/coaching-automation/coaching-business-automation-guide). Check your schedule. Approve a follow-up. Review an invoice. Ask a question. All from the same app you use to message your family.
+If you can send a text message, you can run your business through managed operations. That's not a metaphor. The interface is literally a [messaging conversation](/blog/c2-pillar-coaching-automation-guide/). Check your schedule. Approve a follow-up. Review an invoice. Ask a question. All from the same app you use to message your family.
 
 ## The confession that isn't one
 

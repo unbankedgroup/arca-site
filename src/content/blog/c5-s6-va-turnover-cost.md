@@ -126,7 +126,7 @@ Why? Because the infrastructure lived in their head.
 
 That knowledge doesn't transfer cleanly to documentation. It transfers through experience. And when they leave, it's gone.
 
-This is the [single point of failure](/blog/va-vs-platform/va-quit-business-risk) problem. Your entire operations capability depends on one person who could leave tomorrow.
+This is the [single point of failure](/blog/#c5) problem. Your entire operations capability depends on one person who could leave tomorrow.
 
 ## What infrastructure-based operations look like
 
@@ -158,7 +158,7 @@ When someone leaves, the processes don't leave with them.
 - Client onboarding
 - Payment reminders
 
-This is the [hybrid model](/blog/va-vs-platform/va-vs-operations-platform-guide). Platform for operations. Human for judgment.
+This is the [hybrid model](/blog/c5-pillar-va-vs-operations-platform/). Platform for operations. Human for judgment.
 
 ## The math that changes the conversation
 

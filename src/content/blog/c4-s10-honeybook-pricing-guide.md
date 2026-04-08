@@ -131,7 +131,7 @@ Consider alternatives if you:
 1. **Don't have setup time** — If 30 hours of configuration sounds exhausting, Arca's done-for-you model is better value
 2. **Need advanced automations** — HoneyBook's automation builder is basic compared to dedicated tools
 3. **Are price-sensitive** — At $39/month plus time cost, HoneyBook isn't the budget option it appears to be
-4. **Want flat pricing** — HoneyBook has raised prices multiple times. [Flat pricing platforms](/blog/alternatives/flat-pricing-no-credits) offer predictability.
+4. **Want flat pricing** — HoneyBook has raised prices multiple times. [Flat pricing platforms](/blog/c4-s6-flat-pricing-no-credits/) offer predictability.
 
 ## The 89% price increase controversy
 

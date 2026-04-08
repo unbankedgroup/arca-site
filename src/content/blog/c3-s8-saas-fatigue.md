@@ -40,7 +40,7 @@ The problem isn't that business tools are bad. Most of them are well-designed fo
 
 The problem is the model. Every SaaS tool assumes the same thing: the user will learn the interface, configure the settings, maintain the workflows, and connect it to their other tools. The user becomes the operator.
 
-When you have 3 tools, that's manageable. When you have 7, you're spending [more time operating tools than doing your work](/blog/tool-consolidation/six-open-tabs-every-morning). When you have 12, you're drowning.
+When you have 3 tools, that's manageable. When you have 7, you're spending [more time operating tools than doing your work](/blog/c3-s2-six-open-tabs-every-morning/). When you have 12, you're drowning.
 
 56% of workers lose time every week just switching between apps. Research from UC Irvine found that it takes 9.5 minutes to regain focus after switching contexts. If you switch between 6 tools every morning, that's nearly an hour of productive time gone before you've done anything meaningful.
 
@@ -48,19 +48,19 @@ The model assumes you have bandwidth to be a systems administrator. You don't. Y
 
 ## What "tool overwhelm" actually costs
 
-Let's make it specific. The [real cost of your SaaS stack](/blog/tool-consolidation/saas-subscription-audit) isn't the $300-500/month in subscriptions, though that's real.
+Let's make it specific. The [real cost of your SaaS stack](/blog/c3-s1-saas-subscription-audit/) isn't the $300-500/month in subscriptions, though that's real.
 
 The bigger cost:
 - **Time to maintain:** 3-5 hours/week managing, updating, and switching between tools
 - **Time lost to context switching:** ~1 hour/day in focus loss
-- **Revenue leakage:** leads that go cold because follow-ups depend on you checking the [right tool at the right time](/blog/managed-operations/crm-not-the-problem)
+- **Revenue leakage:** leads that go cold because follow-ups depend on you checking the [right tool at the right time](/blog/c1-s1-crm-not-the-problem/)
 - **Decision fatigue:** every new tool requires evaluating, learning, and configuring. Every abandoned tool is sunk cost you feel bad about.
 
 The emotional weight of SaaS fatigue is real too. One founder told me: "I feel stupid. I can't figure out the tools that are supposed to make my business easier." She's not stupid. The model is designed for technical users who enjoy configuring systems. She's a nutrition coach. She shouldn't need to enjoy configuring systems to run her business.
 
 ## Why adding another tool won't help
 
-If your problem is too many tools, the solution cannot be one more tool. But that's what most "consolidation" platforms offer. GoHighLevel. Dubsado. All-in-one solutions that [promise to replace everything](/blog/tool-consolidation/why-all-in-one-tools-fail) but end up being just as complex as the stack they replaced.
+If your problem is too many tools, the solution cannot be one more tool. But that's what most "consolidation" platforms offer. GoHighLevel. Dubsado. All-in-one solutions that [promise to replace everything](/blog/c3-s3-why-all-in-one-tools-fail/) but end up being just as complex as the stack they replaced.
 
 GoHighLevel requires 30-40 hours of DIY setup. That's not simplification. That's exchanging 7 simple tools for 1 complex one. Dubsado is so configurable that "Dubsado setup specialist" is a job title on Fiverr. HoneyBook is easier but limited. None of them solve the fundamental problem: YOU are still the operator.
 
@@ -71,13 +71,13 @@ The fix isn't fewer tools. It's a different relationship with tools entirely.
 Instead of: you operate tools that run parts of your business.
 Try: a system operates your business and you approve the results.
 
-That's what managed operations means. You don't configure workflows. You don't build Zapier connections. You don't learn another dashboard. You describe how your [business actually works](/blog/tool-consolidation/when-to-consolidate). Someone builds the operational infrastructure around it. You interact with it through a single conversation.
+That's what managed operations means. You don't configure workflows. You don't build Zapier connections. You don't learn another dashboard. You describe how your [business actually works](/blog/c3-s6-when-to-consolidate/). Someone builds the operational infrastructure around it. You interact with it through a single conversation.
 
 Session reminders go out. Invoices get sent on schedule. Leads get immediate responses. Follow-ups happen between sessions. You wake up to a briefing that tells you what needs attention. You approve outgoing messages before they reach clients.
 
 The system does the operating. You do the directing. That's the model that cures SaaS fatigue. Not because you have fewer tools. Because you're no longer the one operating them.
 
-If you're reading this thinking "I've heard this before from the last 5 tools I tried," I understand the skepticism. The difference is that [non-technical founders](/blog/managed-operations/non-technical-founders) don't need to set this up themselves. It gets [built around your business](/blog/tool-consolidation/replace-saas-stack-guide) in 7 days. You describe. We build. You approve. It runs.
+If you're reading this thinking "I've heard this before from the last 5 tools I tried," I understand the skepticism. The difference is that [non-technical founders](/blog/c1-s7-non-technical-founders/) don't need to set this up themselves. It gets [built around your business](/blog/c3-pillar-replace-saas-stack/) in 7 days. You describe. We build. You approve. It runs.
 
 That's not a tool pitch. That's a model change.
 

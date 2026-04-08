@@ -57,9 +57,9 @@ Here's what that looks like in practice. You sit down. One view. Today's schedul
 
 No logging into six tools. No copying data between tabs. No trying to remember which client said what in which channel.
 
-The [morning briefing approach](/blog/managed-operations/morning-briefing) compresses that 45-minute ritual into about three minutes of reading. Not because it skips anything. Because the information is already gathered, compared, and organized before you open your laptop.
+The [morning briefing approach](/blog/c1-s8-morning-briefing/) compresses that 45-minute ritual into about three minutes of reading. Not because it skips anything. Because the information is already gathered, compared, and organized before you open your laptop.
 
-That's the difference between a stack of disconnected tools and a system with [real connections](/blog/tool-consolidation/replace-saas-stack-guide) between your data.
+That's the difference between a stack of disconnected tools and a system with [real connections](/blog/c3-pillar-replace-saas-stack/) between your data.
 
 ## The compounding cost
 
@@ -67,7 +67,7 @@ Forty-five minutes per morning. Five days a week. That's 3.75 hours per week, ro
 
 And that's just the morning check. It doesn't count the mid-day trips back to reconcile data or the end-of-week scramble to get your numbers straight.
 
-The tools themselves might cost $115 to $146 per month for a [typical SaaS stack](/blog/tool-consolidation/saas-subscription-audit). But the time cost is eight to ten times the subscription cost. That ratio is the part most founders miss.
+The tools themselves might cost $115 to $146 per month for a [typical SaaS stack](/blog/c3-s1-saas-subscription-audit/). But the time cost is eight to ten times the subscription cost. That ratio is the part most founders miss.
 
 ## Breaking the pattern
 
@@ -75,7 +75,7 @@ The fix isn't adding a seventh tool to connect the other six. I tried that. It j
 
 The fix is rethinking what you need from your mornings. You need a complete picture. You need it to be current. And you need it without effort.
 
-That's why I built Arca with a [daily coaching briefing](/blog/coaching-automation/coaching-morning-briefing) as a core routine. Not because briefings are flashy. Because the alternative is being your own middleware every morning for the rest of your business's life.
+That's why I built Arca with a [daily coaching briefing](/blog/c2-s5-coaching-morning-briefing/) as a core routine. Not because briefings are flashy. Because the alternative is being your own middleware every morning for the rest of your business's life.
 
 Close the tabs. Start your day with the answer instead of the search.
 

@@ -298,7 +298,7 @@ Here's the uncomfortable truth. Some of what you're training your VA to do shoul
 - Follow-up sequences (platform triggers based on events)
 - Client onboarding flows (platform runs the sequence)
 
-The [hybrid model](/blog/va-vs-platform/va-vs-operations-platform-guide) trains your VA on high-value work. The platform handles the repeatable execution.
+The [hybrid model](/blog/c5-pillar-va-vs-operations-platform/) trains your VA on high-value work. The platform handles the repeatable execution.
 
 ## The bottom line
 

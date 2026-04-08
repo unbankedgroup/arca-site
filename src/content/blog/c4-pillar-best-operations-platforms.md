@@ -77,7 +77,7 @@ I gave Arca the highest scores on setup and time-to-value because that is litera
 
 The base price does not include: email sending at $0.000675 per message, SMS at $0.0079 per segment, phone at $0.013 per minute, phone numbers at $1.15 per month each, and Mailgun add-on for better deliverability. Reddit consensus from agency owners puts the real monthly cost at $150 to $300 for most users on the Starter tier.
 
-For a detailed breakdown, see [GoHighLevel hidden fees: what the $97/month price tag doesn't tell you](/blog/alternatives/gohighlevel-hidden-fees).
+For a detailed breakdown, see [GoHighLevel hidden fees: what the $97/month price tag doesn't tell you](/blog/c4-s7-gohighlevel-hidden-fees/).
 
 ### Setup reality
 
@@ -85,7 +85,7 @@ For a detailed breakdown, see [GoHighLevel hidden fees: what the $97/month price
 
 I have talked to consultants who bought GoHighLevel because they heard it "replaces 10 tools." That is true. But only if you can configure all 10 replacements yourself. Most solo operators set up 2 to 3 features, use 10% of the platform, and feel like they are doing it wrong.
 
-If this sounds familiar: [GoHighLevel alternative for consultants](/blog/alternatives/gohighlevel-alternative-consultants) and ["I tried GoHighLevel for 45 days and gave up"](/blog/alternatives/gohighlevel-gave-up) were written for you.
+If this sounds familiar: [GoHighLevel alternative for consultants](/blog/c4-s11-gohighlevel-alternative-coaches/) and ["I tried GoHighLevel for 45 days and gave up"](/blog/c4-s8-gohighlevel-gave-up/) were written for you.
 
 ### Where GoHighLevel wins
 
@@ -111,7 +111,7 @@ Everything that makes it powerful for agencies makes it overwhelming for solo op
 | Essentials | $49/mo | $36.75/mo |
 | Premium | $109/mo | $81.75/mo |
 
-These prices are post-2025 hike. Starter was $19, now $36 (89% increase). Essentials was $39, now $49. The Starter tier limits you to basic features with no automation. If this pricing shift caught you off guard, you are not alone. [HoneyBook alternative after the 2025 price hike](/blog/alternatives/honeybook-alternative-price-hike) covers what coaches are switching to.
+These prices are post-2025 hike. Starter was $19, now $36 (89% increase). Essentials was $39, now $49. The Starter tier limits you to basic features with no automation. If this pricing shift caught you off guard, you are not alone. [HoneyBook alternative after the 2025 price hike](/blog/c4-s2-honeybook-alternative/) covers what coaches are switching to.
 
 ### Setup reality
 
@@ -150,7 +150,7 @@ The sticker price is straightforward and predictable. No per-message charges. No
 
 This is where Dubsado's story gets complicated. "Dubsado setup specialist" is a literal job title. People charge $500 to $2,000+ to configure Dubsado for your business. The form builder is powerful but complex. The workflow builder is deep but requires significant investment to configure properly.
 
-Community forums are full of users who spent weeks on setup, felt accomplished, and then felt locked in because switching would mean redoing everything. [Dubsado alternative: operations in 7 days, not 7 weeks](/blog/alternatives/dubsado-alternative-faster-setup) speaks directly to this experience.
+Community forums are full of users who spent weeks on setup, felt accomplished, and then felt locked in because switching would mean redoing everything. [Dubsado alternative: operations in 7 days, not 7 weeks](/blog/c4-s3-dubsado-alternative/) speaks directly to this experience.
 
 ### Where Dubsado wins
 
@@ -189,7 +189,7 @@ Costs scale linearly with usage. Every automated action counts as a task. A foll
 
 If you know what you are building, Zapier is straightforward. If you do not, you are on YouTube for hours trying to figure out what a trigger is, what a webhook does, and why your Zap broke at 2am.
 
-The platform assumes you can answer three questions: What should happen? When should it happen? What should happen if it fails? Most solo consultants cannot answer the third question. [Zapier alternatives for non-technical business owners](/blog/alternatives/zapier-alternative-non-technical) explores this gap in detail.
+The platform assumes you can answer three questions: What should happen? When should it happen? What should happen if it fails? Most solo consultants cannot answer the third question. [Zapier alternatives for non-technical business owners](/blog/c4-s4-zapier-alternative/) explores this gap in detail.
 
 ### Where Zapier wins
 
@@ -248,13 +248,13 @@ Still a builder. Still requires you to architect the automation. Still does not 
 | Structure | $247/mo | Everything in Foundation + advanced routines, multiple business lines |
 | Fortress | $497/mo | Full managed operations, priority support, custom routines |
 
-Flat pricing. No per-email charges. No per-SMS charges. No credit systems. No tasks that run out mid-month. What you see is what you pay. For the full argument on why this matters, see [why we don't use credits: flat pricing for operations platforms](/blog/alternatives/flat-pricing-no-credits).
+Flat pricing. No per-email charges. No per-SMS charges. No credit systems. No tasks that run out mid-month. What you see is what you pay. For the full argument on why this matters, see [why we don't use credits: flat pricing for operations platforms](/blog/c4-s6-flat-pricing-no-credits/).
 
 ### Setup reality
 
 The 7-Day Build works like this: Days 1 to 2 are diagnosis (we learn how your business actually works). Days 3 to 4 are configuration (your routines, connections, and blueprints get built). Days 5 to 6 are testing (every routine is verified with real scenarios). Day 7 is go-live. Your time investment is a few hours of conversation during diagnosis. No YouTube tutorials. No workflow builders. No specialists to hire.
 
-Read the full process at [The 7-Day Build: how a full operations setup actually gets done in a week](/blog/managed-operations/7-day-build-explained). Or see a narrative walkthrough in ["What 'set up for you' actually means"](/blog/alternatives/set-up-for-you-explained).
+Read the full process at [The 7-Day Build: how a full operations setup actually gets done in a week](/blog/c1-s5-7-day-build-explained/). Or see a narrative walkthrough in ["What 'set up for you' actually means"](/blog/c1-s5-7-day-build-explained/).
 
 ### Where Arca wins
 
@@ -281,7 +281,7 @@ Arca is a specialist, not a generalist. It does managed operations for service b
 
 There is no universal best. There is only best for your situation.
 
-For a structured decision framework, the [coach's guide to choosing a business platform](/blog/alternatives/choose-business-platform-guide) walks you through six specific questions that narrow the field based on how your business actually works.
+For a structured decision framework, the [coach's guide to choosing a business platform](/blog/c4-s9-choose-business-platform-guide/) walks you through six specific questions that narrow the field based on how your business actually works.
 
 ---
 
@@ -298,9 +298,9 @@ I talked to a consultant who had GoHighLevel, HoneyBook, and Zapier. Total month
 
 That is the pattern I see repeatedly. The platform is not the bottleneck. The setup is. The maintenance is. The time investment is. The best tool is the one that runs without you being the engine.
 
-If you want to [consolidate your tool stack](/blog/tool-consolidation/replace-saas-stack-guide), start with a clear picture of what you actually need. If you want a deeper understanding of [managed operations](/blog/managed-operations/managed-operations-guide) and how it differs from the DIY approach, that guide walks through the philosophy and the practical differences.
+If you want to [consolidate your tool stack](/blog/c3-pillar-replace-saas-stack/), start with a clear picture of what you actually need. If you want a deeper understanding of [managed operations](/blog/c1-pillar-managed-operations-guide/) and how it differs from the DIY approach, that guide walks through the philosophy and the practical differences.
 
-And if you are not sure which category you fall into, the [three-way comparison of HoneyBook vs Dubsado vs Arca](/blog/alternatives/honeybook-vs-dubsado-vs-arca) focuses specifically on the coaching use case with a 12-criteria comparison table.
+And if you are not sure which category you fall into, the [three-way comparison of HoneyBook vs Dubsado vs Arca](/blog/c4-s5-honeybook-vs-dubsado-vs-arca/) focuses specifically on the coaching use case with a 12-criteria comparison table.
 
 ---
 

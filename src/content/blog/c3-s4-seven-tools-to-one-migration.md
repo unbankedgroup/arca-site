@@ -13,9 +13,9 @@ last_updated: April 2026
 author: Mal Mposha
 ---
 
-This is the story of a consultant I will call Dana. She is a composite of several real clients, but the numbers are exact. She came in running seven paid tools. Seven logins. Seven monthly invoices. She left running one. This is a consolidate business tools migration guide based on what actually happened during her [7-Day Build](/blog/managed-operations/7-day-build-explained).
+This is the story of a consultant I will call Dana. She is a composite of several real clients, but the numbers are exact. She came in running seven paid tools. Seven logins. Seven monthly invoices. She left running one. This is a consolidate business tools migration guide based on what actually happened during her [7-Day Build](/blog/c1-s5-7-day-build-explained/).
 
-I am not going to pitch you on why consolidation matters. I wrote that [already](/blog/tool-consolidation/replace-saas-stack-guide). This is the day-by-day walkthrough of what it looks like when someone actually does it.
+I am not going to pitch you on why consolidation matters. I wrote that [already](/blog/c3-pillar-replace-saas-stack/). This is the day-by-day walkthrough of what it looks like when someone actually does it.
 
 ---
 
@@ -37,7 +37,7 @@ Here is the full stack, what she paid, and what she actually used each tool for:
 
 **Total: $144.75/mo in subscriptions.** But the real number was $412/mo when you added the per-contact Mailchimp overage, Calendly's second user seat for her VA, the FreshBooks Premium plan she upgraded to after hitting 50 clients, and the HoneyBook annual plan she forgot auto-renewed at $59/mo.
 
-The [subscription audit](/blog/tool-consolidation/saas-subscription-audit) is always where the surprises live.
+The [subscription audit](/blog/c3-s1-saas-subscription-audit/) is always where the surprises live.
 
 ---
 
@@ -59,7 +59,7 @@ We started with the two things every service business needs working before anyth
 
 Dana's Calendly had three booking types. We rebuilt them as routines in Arca. Same availability windows. Same buffer times. Same reminder sequence. But now when someone books, the system already knows who they are. Their intake answers, their invoice history, their last session notes. All connected. No tab switching.
 
-Her FreshBooks invoices followed a pattern. 80 percent of them were the same three line items with the same payment terms. We turned those into [blueprints](/blog/tool-consolidation/replace-saas-stack-guide). Invoice gets generated automatically after the session. Payment reminder goes out on day 3 and day 7. She never touches it unless something is unusual.
+Her FreshBooks invoices followed a pattern. 80 percent of them were the same three line items with the same payment terms. We turned those into [blueprints](/blog/c3-pillar-replace-saas-stack/). Invoice gets generated automatically after the session. Payment reminder goes out on day 3 and day 7. She never touches it unless something is unusual.
 
 ---
 
@@ -143,7 +143,7 @@ Dana's story is specific. Your stack will be different. Maybe you do not use Hon
 
 The pattern is always the same. Too many tools. Not enough of each tool used. And hours every week spent being the human glue between systems that should be talking to each other.
 
-If you want to see what your own [cost breakdown looks like](/blog/tool-consolidation/calendly-freshbooks-honeybook-cost) across the most common consulting tools, start there. If you are ready for the full picture, the [SaaS stack replacement guide](/blog/tool-consolidation/replace-saas-stack-guide) walks through the logic.
+If you want to see what your own [cost breakdown looks like](/blog/c3-s5-calendly-freshbooks-honeybook-cost/) across the most common consulting tools, start there. If you are ready for the full picture, the [SaaS stack replacement guide](/blog/c3-pillar-replace-saas-stack/) walks through the logic.
 
 The 7-Day Build is not magic. It is just what happens when someone finally decides to stop paying for seven tools and using 20 percent of each.
 

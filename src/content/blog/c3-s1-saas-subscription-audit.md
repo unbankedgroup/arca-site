@@ -63,11 +63,11 @@ When I ran my own audit before building Arca, the dollar cost surprised me. But 
 
 ## What to do with your audit results
 
-Once you have your spreadsheet, sort by feature usage percentage. The tools below 30 percent usage are candidates for elimination or [consolidation](/blog/tool-consolidation/replace-saas-stack-guide).
+Once you have your spreadsheet, sort by feature usage percentage. The tools below 30 percent usage are candidates for elimination or [consolidation](/blog/c3-pillar-replace-saas-stack/).
 
-Look for the tools you open every morning just to check one thing. That's the [six-tabs-every-morning problem](/blog/tool-consolidation/six-open-tabs-every-morning). Each of those partial checks adds a context switch to your day.
+Look for the tools you open every morning just to check one thing. That's the [six-tabs-every-morning problem](/blog/c3-s2-six-open-tabs-every-morning/). Each of those partial checks adds a context switch to your day.
 
-Then look at total spend. Compare it to what a single platform could do for the same functions. Not an [all-in-one tool that tries to do everything](/blog/tool-consolidation/why-all-in-one-tools-fail). A system that's configured for the specific things you actually do.
+Then look at total spend. Compare it to what a single platform could do for the same functions. Not an [all-in-one tool that tries to do everything](/blog/c3-s3-why-all-in-one-tools-fail/). A system that's configured for the specific things you actually do.
 
 ## The spreadsheet framework
 
@@ -83,7 +83,7 @@ Run this quarterly. SaaS creep is real and it's quiet. A free trial converts to 
 
 The point of this exercise isn't just to cancel a few subscriptions and save $50 a month. It's to see the full picture of how fragmented your operations have become.
 
-Every tool is a login. Every login is a context switch. Every context switch is lost time. The [real operational cost](/blog/managed-operations/operations-cost-mistake) isn't what you pay for software. It's what you pay in attention.
+Every tool is a login. Every login is a context switch. Every context switch is lost time. The [real operational cost](/blog/c1-s2-operations-cost-mistake/) isn't what you pay for software. It's what you pay in attention.
 
 I built Arca because I got tired of being the human middleware between seven different dashboards. The audit was step one. Seeing the problem clearly was what made the solution obvious.
 

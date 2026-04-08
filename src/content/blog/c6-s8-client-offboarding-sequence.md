@@ -174,7 +174,7 @@ Best,
 [Your name]
 ```
 
-**Why it works:** No agenda. Genuine care. Keeps the connection warm. This transitions naturally into the [re-engagement sequence](/blog/re-engagement-sequence-inactive-clients) if they respond.
+**Why it works:** No agenda. Genuine care. Keeps the connection warm. This transitions naturally into the [re-engagement sequence](/blog/c6-s6-re-engagement-sequence/) if they respond.
 
 ## When to offboard vs. re-engage
 
@@ -192,7 +192,7 @@ Not every completion is an offboarding moment.
 - New challenges have emerged
 - Client asks about continuing
 
-The offboarding sequence works for both. For re-engagement candidates, it flows into the [renewal sequence](/blog/package-renewal-automation) naturally.
+The offboarding sequence works for both. For re-engagement candidates, it flows into the [renewal sequence](/blog/c6-s7-package-renewal-automation/) naturally.
 
 ## The referral ask
 
@@ -239,7 +239,7 @@ Yes — include a testimonial request with the exit survey (day 2-3). The client
 
 ### How do I handle clients who want to continue vs. those who want to pause?
 
-For clients who want to continue, transition directly into the [package renewal sequence](/blog/package-renewal-automation) — skip the 30-day check-in and send the re-enrollment invitation at day 7-10 instead. For clients who want to pause, complete the full offboarding sequence and let the 30-day check-in serve as the re-engagement opener.
+For clients who want to continue, transition directly into the [package renewal sequence](/blog/c6-s7-package-renewal-automation/) — skip the 30-day check-in and send the re-enrollment invitation at day 7-10 instead. For clients who want to pause, complete the full offboarding sequence and let the 30-day check-in serve as the re-engagement opener.
 
 <script type="application/ld+json">
 {

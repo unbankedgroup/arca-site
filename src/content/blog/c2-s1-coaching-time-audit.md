@@ -39,9 +39,9 @@ Here are the categories to watch.
 
 **Client communication.** Session reminders. Pre-session prep emails. Post-session follow-ups. Check-ins between sessions. Welcome emails for new clients. Each one takes 5-10 minutes. Multiply by 15-20 clients. That's 3-5 hours a week you never see on a to-do list.
 
-**Onboarding new clients.** Sending the welcome packet. Getting the intake form filled out. Collecting payment details. Scheduling the first session. Walking them through what to expect. A proper [onboarding flow](/blog/coaching-automation/coaching-client-onboarding) takes 30-60 minutes per new client. If you're taking on 2-3 new clients a month, that's another hour or two each week averaged out.
+**Onboarding new clients.** Sending the welcome packet. Getting the intake form filled out. Collecting payment details. Scheduling the first session. Walking them through what to expect. A proper [onboarding flow](/blog/c2-s2-coaching-client-onboarding/) takes 30-60 minutes per new client. If you're taking on 2-3 new clients a month, that's another hour or two each week averaged out.
 
-**Lead follow-up.** Responding to inquiries. Booking discovery calls. Following up after discovery calls. Sending proposals or packages. [Leads that go cold](/blog/coaching-automation/coaching-leads-going-cold) represent both time wasted and revenue lost. This is 1-3 hours a week depending on your pipeline.
+**Lead follow-up.** Responding to inquiries. Booking discovery calls. Following up after discovery calls. Sending proposals or packages. [Leads that go cold](/blog/c2-s3-coaching-leads-going-cold/) represent both time wasted and revenue lost. This is 1-3 hours a week depending on your pipeline.
 
 **Tool management.** Logging into different platforms. Checking dashboards. Updating your CRM. Exporting data from one tool to import into another. Troubleshooting when an integration breaks. The average small business uses 20+ digital tools. Every switch between tools costs focus and time.
 
@@ -71,7 +71,7 @@ You're not spending that money. You're just not earning it. Because the hours ar
 
 Some coaches push back on this math. "I wouldn't fill all those hours with clients even if I had them." Fair. But would you fill some of them? Could you take on two more clients a week if you had the time? That's $1,200-2,000 a month in new revenue. From time you already have but can't use.
 
-And there's a cost beyond revenue. 67% of coaches experience severe burnout in their first three years. 43% consider quitting entirely. Not because coaching is hard. Because [running the business around the coaching](/blog/coaching-automation/coaching-business-automation-guide) is hard.
+And there's a cost beyond revenue. 67% of coaches experience severe burnout in their first three years. 43% consider quitting entirely. Not because coaching is hard. Because [running the business around the coaching](/blog/c2-pillar-coaching-automation-guide/) is hard.
 
 The Harvard Business Review reports that knowledge workers switch between apps 1,100 times per day on average, with task switching costing up to 40% of productive time. For coaches juggling five or more disconnected tools, that cognitive overhead accounts for 6-8 hours of lost capacity every week.
 
@@ -91,7 +91,7 @@ Those are the hours you get back first. Not by working faster. Not by hiring som
 
 Run the audit. See the real number. Then decide if that's how you want to spend your week.
 
-If you want a structured version of this exercise, the [operations audit checklist](/blog/managed-operations/operations-audit-checklist) walks through it in 15 minutes.
+If you want a structured version of this exercise, the [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) walks through it in 15 minutes.
 
 ## FAQ
 

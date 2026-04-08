@@ -37,9 +37,9 @@ Your CRM knows about the lead. Maybe. If you entered them manually or if the for
 
 You are the integration layer. You are the thing connecting your calendar to your invoicing tool to your email to your CRM to the spreadsheet you use for client notes. Every task routes through your brain because nothing else connects them.
 
-That's not a CRM problem. That's an [operations infrastructure problem](/blog/managed-operations/managed-operations-guide).
+That's not a CRM problem. That's an [operations infrastructure problem](/blog/c1-pillar-managed-operations-guide/).
 
-The [tool consolidation guide](/blog/tool-consolidation/replace-saas-stack-guide) shows how most businesses end up with 5-7 disconnected tools — and why switching CRMs doesn't fix the underlying gap.
+The [tool consolidation guide](/blog/c3-pillar-replace-saas-stack/) shows how most businesses end up with 5-7 disconnected tools — and why switching CRMs doesn't fix the underlying gap.
 
 **The numbers back this up:**
 
@@ -58,7 +58,7 @@ She didn't need a better way to track contacts. She needed a system that followe
 
 Every time you switch CRMs, you restart the learning curve. You re-enter data. You rebuild workflows. You lose momentum. And three months later you're still doing the same manual work because the new tool still only does one thing: track contacts.
 
-The [hidden cost of that cycle](/blog/managed-operations/operations-cost-mistake) is real. Not just the subscription fees. The hours spent setting up, migrating, and learning. The revenue lost while your operations stay broken.
+The [hidden cost of that cycle](/blog/c1-s2-operations-cost-mistake/) is real. Not just the subscription fees. The hours spent setting up, migrating, and learning. The revenue lost while your operations stay broken.
 
 ## What "in between" actually costs
 
@@ -88,7 +88,7 @@ Before you look at another CRM, ask yourself this: if I disappeared for a week, 
 
 Would invoices still go out? Would leads still get responses? Would clients still get session reminders? Would follow-ups still happen?
 
-If the answer is no, the problem isn't your CRM. The problem is that your business has no [operational foundation](/blog/managed-operations/diagnosis-before-prescription). No infrastructure that works when you don't.
+If the answer is no, the problem isn't your CRM. The problem is that your business has no [operational foundation](/blog/c1-s4-diagnosis-before-prescription/). No infrastructure that works when you don't.
 
 A CRM is one piece of that foundation. An important piece. But it's not the foundation itself.
 
@@ -98,13 +98,13 @@ The shift from DIY ops to managed operations isn't about adding another tool. It
 
 Instead of you connecting six tools with your own memory and attention, everything runs from one place. Scheduling, invoicing, follow-ups, client onboarding, daily briefings. Connected. Automatic where it should be automatic. Human where it should be human.
 
-You don't need to configure it. You don't need to learn a new dashboard. You [describe how your business works](/blog/managed-operations/diagnosis-before-prescription), and the operations layer gets built around it.
+You don't need to configure it. You don't need to learn a new dashboard. You [describe how your business works](/blog/c1-s4-diagnosis-before-prescription/), and the operations layer gets built around it.
 
 That's what managed operations means. Not a better CRM. Not a better tool. A better foundation.
 
 Your CRM was never the problem. The missing infrastructure was.
 
-**Want to see where your gaps are?** Run the [15-minute operations audit](/blog/managed-operations/operations-audit-checklist) — it maps every dependency on you personally.
+**Want to see where your gaps are?** Run the [15-minute operations audit](/blog/c1-s10-operations-audit-checklist/) — it maps every dependency on you personally.
 
 ---
 

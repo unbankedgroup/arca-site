@@ -52,13 +52,13 @@ Here is how the paid tiers break down:
 
 Tasks scale linearly with cost. Every form submission, every email trigger, every calendar sync counts as a task. A moderately active coaching practice sending automated follow-ups, confirmation emails, and weekly check-ins can hit 2,000 tasks in the first two weeks of the month. Then you either upgrade or your automations stop running.
 
-[Flat pricing with no per-task charges](/blog/alternatives/flat-pricing-no-credits) exists. You should not have to count how many times your business runs.
+[Flat pricing with no per-task charges](/blog/c4-s6-flat-pricing-no-credits/) exists. You should not have to count how many times your business runs.
 
 ## The category you actually need
 
 I spent 10 years in capital markets before building Arca. One thing I learned early: the best operators do not optimize tools. They design the operation first and pick the tool second.
 
-For [non-technical founders](/blog/managed-operations/non-technical-founders), the category is not "automation builder." It is managed operations. The difference:
+For [non-technical founders](/blog/c1-s7-non-technical-founders/), the category is not "automation builder." It is managed operations. The difference:
 
 **Automation builder (Zapier, Make, n8n):** You describe the problem. You research the solution. You build the workflow. You test it. You maintain it. You fix it when it breaks at 2am.
 
@@ -68,13 +68,13 @@ That is not a small distinction. It is the difference between hiring a contracto
 
 ## What this looks like in practice
 
-With Arca, you start with [The 7-Day Build](/blog/managed-operations/7-day-build-explained). We map your current operations, identify what is falling through cracks, and build your Routines for you. Not templates you customize. Built systems, tested and running in seven days.
+With Arca, you start with [The 7-Day Build](/blog/c1-s5-7-day-build-explained/). We map your current operations, identify what is falling through cracks, and build your Routines for you. Not templates you customize. Built systems, tested and running in seven days.
 
 Your follow-ups fire without you remembering. Your client onboarding runs without a checklist you manually tick through. Your invoicing connects to your scheduling without a zap you have to monitor.
 
 Foundation is $97 per month. Structure is $247 per month. Fortress is $497 per month. Flat. No per-task charges. No surprise invoices when your business gets busier.
 
-If you are [not tech-savvy](/blog/coaching-automation/not-tech-savvy-for-you) and tired of feeling like automation is a club you were not invited to, it is worth knowing that the club is optional. You do not need to build workflows. You need workflows that are built.
+If you are [not tech-savvy](/blog/c2-s10-not-tech-savvy-for-you/) and tired of feeling like automation is a club you were not invited to, it is worth knowing that the club is optional. You do not need to build workflows. You need workflows that are built.
 
 ## When Zapier is the right call
 
@@ -82,7 +82,7 @@ If you have a technical co-founder or an ops person who thinks in triggers and c
 
 But if you opened this article because you tried Zapier and felt like you were staring at a cockpit you were not trained to fly, the answer is not a different cockpit. It is a pilot.
 
-[Compare the full landscape](/blog/alternatives/best-operations-platforms-2026) of operations platforms for 2026 and see which category fits how you actually work.
+[Compare the full landscape](/blog/c4-pillar-best-operations-platforms/) of operations platforms for 2026 and see which category fits how you actually work.
 
 ## FAQ
 

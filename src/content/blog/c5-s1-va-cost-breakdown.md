@@ -54,7 +54,7 @@ Let's start with what you see on the job posting, then walk through what you act
 
 **All-in monthly cost:** $4,000-12,000 per month
 
-The [real cost of a virtual assistant](/blog/va-vs-platform/virtual-assistant-real-cost) goes deeper on each line item. But let's break down where these numbers come from.
+The [real cost of a virtual assistant](/blog/c5-s3-when-to-hire-virtual-assistant/) goes deeper on each line item. But let's break down where these numbers come from.
 
 ## Training: The cost nobody budgets for
 

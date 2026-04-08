@@ -99,7 +99,7 @@ That means if you're paying a VA $3,000/month, you're spending $1,800-2,100/mont
 
 This isn't the VA's fault. They didn't choose to spend their time on invoice reminders and appointment confirmations. They signed up to do meaningful work. But when operations depend on a person, the person ends up doing everything — including the stuff that should run automatically.
 
-The [VA vs operations platform comparison](/blog/va-vs-platform/va-vs-operations-platform-guide) breaks down the full math. But the summary is simple: automate the 60-70%, keep the VA for the 30-40%.
+The [VA vs operations platform comparison](/blog/c5-pillar-va-vs-operations-platform/) breaks down the full math. But the summary is simple: automate the 60-70%, keep the VA for the 30-40%.
 
 ## When automation fails
 

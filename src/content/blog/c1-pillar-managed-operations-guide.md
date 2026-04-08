@@ -56,7 +56,7 @@ Here's the pattern I've seen over and over.
 
 A coach or consultant starts their business. They get clients. Things go well. The admin starts piling up. They pick up Calendly for scheduling. FreshBooks for invoicing. Maybe HoneyBook or Dubsado for client management. Mailchimp for email sequences. And a Google Sheet that somehow becomes the actual source of truth for everything.
 
-Six months later, they're spending $300-500 per month on subscriptions and [using about 20% of what each tool offers](/blog/tool-consolidation/consolidation-guide). The tools don't talk to each other. The founder is the connective tissue. Moving data between apps. Remembering to trigger the next step in a process. Manually doing what should happen automatically.
+Six months later, they're spending $300-500 per month on subscriptions and [using about 20% of what each tool offers](/blog/c3-s10-consolidation-checklist/). The tools don't talk to each other. The founder is the connective tissue. Moving data between apps. Remembering to trigger the next step in a process. Manually doing what should happen automatically.
 
 The numbers tell the story:
 
@@ -110,9 +110,9 @@ Even if you spend "only" 10 hours per week on admin, that's still $8,000 per mon
 | Virtual assistant | $2,400-5,000 for the VA + $200-500 in tools they need | 3-5 hrs/week managing the VA | Breaks when they quit, get sick, or make mistakes |
 | Managed operations platform | $97-247/mo | 1-2 hrs/week reviewing | Runs 24/7 regardless |
 
-The difference is structural. DIY ops and virtual assistants both depend on a person being available and doing the right thing at the right time. Managed operations depends on a [system that's built to run whether you're watching or not](/blog/managed-operations/business-runs-without-you).
+The difference is structural. DIY ops and virtual assistants both depend on a person being available and doing the right thing at the right time. Managed operations depends on a [system that's built to run whether you're watching or not](/blog/c1-s3-business-runs-without-you/).
 
-I've written about this more in [The $3,000/month operations mistake most solo consultants make](/blog/va-vs-platform/operations-cost-mistake). The short version: the real cost of a VA isn't the invoice. It's the management overhead, the training cycles, and the single point of failure.
+I've written about this more in [The $3,000/month operations mistake most solo consultants make](/blog/c1-s2-operations-cost-mistake/). The short version: the real cost of a VA isn't the invoice. It's the management overhead, the training cycles, and the single point of failure.
 
 ---
 
@@ -135,19 +135,19 @@ You read it in two minutes. You don't open Calendly. You don't check Stripe. You
 
 While you're in your coaching session, the system sends a reminder to your 1pm client. It generates and sends an invoice for yesterday's consultation. It follows up (politely) with the client whose invoice is 12 days overdue.
 
-You didn't ask it to do any of this. These are [routines you set up once](/blog/managed-operations/7-day-build-explained). They run on their own.
+You didn't ask it to do any of this. These are [routines you set up once](/blog/c1-s5-7-day-build-explained/). They run on their own.
 
 **12:30 PM. A new lead comes in.**
 
 Someone fills out the contact form on your website. Within minutes (not hours, not the next day), they receive a personalized response with your availability and a booking link. If they don't respond within 48 hours, a follow-up goes out.
 
-Meanwhile, you're having lunch. You don't even know the lead came in yet. But they're being taken care of. That's the difference between a business where [leads go cold](/blog/coaching-automation/follow-up-gap) and one where they don't.
+Meanwhile, you're having lunch. You don't even know the lead came in yet. But they're being taken care of. That's the difference between a business where [leads go cold](/blog/c2-s4-automated-follow-ups-coaches/) and one where they don't.
 
 **5:00 PM. Your day wraps up.**
 
 Your last client signs off. The post-session invoice is already queued. A check-in message will go out to the client in three days. Your calendar for tomorrow is confirmed, and reminders are scheduled.
 
-You close your laptop. Your [business keeps running](/blog/managed-operations/business-runs-without-you).
+You close your laptop. Your [business keeps running](/blog/c1-s3-business-runs-without-you/).
 
 That's managed operations. Not a tool you use. A system that uses your rules to run your business.
 
@@ -173,12 +173,12 @@ Here's what that looks like in practice:
 | Speed | Minutes to hours (depends on their workload) | Seconds to minutes (automated) |
 | Consistency | Varies with mood, workload, and attention | Identical every time |
 | Cost | $2,400-5,000/mo + tools | $97-497/mo, tools included |
-| Setup | 2-4 weeks training, ongoing correction | [7 days, done for you](/blog/managed-operations/7-day-build-explained) |
+| Setup | 2-4 weeks training, ongoing correction | [7 days, done for you](/blog/c1-s5-7-day-build-explained/) |
 | Turnover risk | Average VA tenure: 6-12 months, then retrain | No turnover, no retraining |
 | Management overhead | 3-5 hours/week from you | ~1 hour/week reviewing |
 | Scales with clients | Need more VA hours or another VA | Handles more clients without cost increase |
 
-I'm not saying VAs are useless. If you need someone to make judgment calls, handle nuanced client situations, or do strategic work, a good VA is worth every dollar. But 70-80% of what most VAs do for solo consultants is [process work that doesn't require judgment](/blog/va-vs-platform/va-replacement-guide). It's the same steps in the same order every time.
+I'm not saying VAs are useless. If you need someone to make judgment calls, handle nuanced client situations, or do strategic work, a good VA is worth every dollar. But 70-80% of what most VAs do for solo consultants is [process work that doesn't require judgment](/blog/#c5). It's the same steps in the same order every time.
 
 That 70-80% is exactly what a managed operations platform handles. The remaining 20-30% is where your time (or a VA's time) actually matters.
 
@@ -194,7 +194,7 @@ This is where most solutions fall apart. And it's why I built what I built.
 
 Zapier, Make, n8n: they're powerful tools. But they require you to think like a systems architect. You have to know what you want automated. You have to map out the triggers, the conditions, the actions. You have to test it. You have to maintain it when something breaks.
 
-That's a 20-hour project for someone who knows what they're doing. For a [non-technical founder who just wants their business to work](/blog/managed-operations/non-technical-founders), it's a dead end.
+That's a 20-hour project for someone who knows what they're doing. For a [non-technical founder who just wants their business to work](/blog/c1-s7-non-technical-founders/), it's a dead end.
 
 The builder-tool approach assumes you know what you need. The managed operations approach starts from the opposite end: **diagnosis before prescription.**
 
@@ -207,7 +207,7 @@ Here's what that means. Before anyone touches your setup, someone asks you quest
 - What are you using right now, and what's not working?
 - What would "success" look like for you in 30 days?
 
-Your answers shape the [entire configuration](/blog/managed-operations/diagnosis-before-prescription). Not a template. Not a generic workflow. A setup built around how *your* business actually runs.
+Your answers shape the [entire configuration](/blog/c1-s4-diagnosis-before-prescription/). Not a template. Not a generic workflow. A setup built around how *your* business actually runs.
 
 That's why managed operations works for people who aren't technical. You don't need to know how to build the system. You need to know how your business works. That's a much easier question.
 
@@ -219,7 +219,7 @@ The whole thing gets configured and tested within a week. By day 7, you're live.
 
 A CRM stores contact information and tracks deal stages. That's its job. And it does that job fine.
 
-But [a CRM is not the problem](/blog/managed-operations/crm-not-the-problem). And it's not the solution either. A CRM doesn't follow up with a lead who went quiet. It doesn't send an invoice after a session ends. It doesn't onboard a new client with a welcome email, an intake form, and a first-session booking link. It doesn't give you a morning summary of everything that happened overnight.
+But [a CRM is not the problem](/blog/c1-s1-crm-not-the-problem/). And it's not the solution either. A CRM doesn't follow up with a lead who went quiet. It doesn't send an invoice after a session ends. It doesn't onboard a new client with a welcome email, an intake form, and a first-session booking link. It doesn't give you a morning summary of everything that happened overnight.
 
 A CRM records what happened. Managed operations makes things happen.
 
@@ -245,7 +245,7 @@ The honest answer: it depends on how you do it.
 
 **Self-serve platform (GoHighLevel, Dubsado, HoneyBook):** 15-40 hours of configuration over 2-4 weeks. There are templates, but you still have to customize everything for your business. Some people hire a "certified partner" to help, which adds $500-2,000 in setup fees.
 
-**Managed operations (done for you):** [7 days](/blog/managed-operations/7-day-build-explained). You spend 60-90 minutes answering questions about your business. The rest is handled. By the end of the week, you're live.
+**Managed operations (done for you):** [7 days](/blog/c1-s5-7-day-build-explained/). You spend 60-90 minutes answering questions about your business. The rest is handled. By the end of the week, you're live.
 
 The reason for the speed difference isn't magic. It's the order of operations.
 
@@ -271,11 +271,11 @@ Answer these questions:
 
 4. **What happens when you take a week off?** If the answer is "things pile up and I spend the first two days back catching up," your business depends on you being present for everything.
 
-5. **Are you paying for tools you barely use?** Most small businesses [use only 20% of their CRM features](/blog/managed-operations/crm-not-the-problem). If you're paying for the other 80%, something's off.
+5. **Are you paying for tools you barely use?** Most small businesses [use only 20% of their CRM features](/blog/c1-s1-crm-not-the-problem/). If you're paying for the other 80%, something's off.
 
-6. **Do you have a consistent client onboarding process?** Not "I usually send a welcome email." A real process. Same steps, same order, same timing, every time. If the answer is "it depends," that's a [system gap](/blog/client-onboarding/onboarding-guide).
+6. **Do you have a consistent client onboarding process?** Not "I usually send a welcome email." A real process. Same steps, same order, same timing, every time. If the answer is "it depends," that's a [system gap](/blog/#c6).
 
-7. **How do you know what needs your attention each morning?** If the answer involves opening 4-6 different apps and checking each one, that's 30-60 minutes of your day spent on information gathering instead of [getting a single briefing](/blog/managed-operations/morning-briefing) that tells you everything in two minutes.
+7. **How do you know what needs your attention each morning?** If the answer involves opening 4-6 different apps and checking each one, that's 30-60 minutes of your day spent on information gathering instead of [getting a single briefing](/blog/c1-s8-morning-briefing/) that tells you everything in two minutes.
 
 **Scoring:**
 
@@ -283,7 +283,7 @@ Answer these questions:
 - **2-3 "yes" answers:** You're heading toward a breaking point. Worth learning more.
 - **4+ "yes" answers:** Your business is running on you, not on systems. Managed operations would change your day-to-day experience of running this business.
 
-If you want a more detailed version of this, I wrote a full [operations audit checklist](/blog/managed-operations/operations-audit-checklist) you can run through in 15 minutes.
+If you want a more detailed version of this, I wrote a full [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) you can run through in 15 minutes.
 
 ---
 
@@ -303,7 +303,7 @@ Group session reminders and individual session reminders run on different schedu
 **For a small consulting firm with 3-4 team members:**
 Multi-person calendar coordination. Client assignments and handoffs tracked. Team-wide morning briefing shows each person's schedule and priorities. Invoicing rolls up across team members. Client communication stays consistent regardless of who's managing the account.
 
-Same platform. Different configurations. That's the diagnostic approach. One size doesn't fit all. But one platform can, when it's [built around your answers instead of around a template](/blog/managed-operations/diagnosis-before-prescription).
+Same platform. Different configurations. That's the diagnostic approach. One size doesn't fit all. But one platform can, when it's [built around your answers instead of around a template](/blog/c1-s4-diagnosis-before-prescription/).
 
 ---
 
@@ -351,13 +351,13 @@ If you're curious what that would look like for your specific business, [book a 
 ---
 
 *Related reading:*
-- [Why your CRM isn't the problem](/blog/managed-operations/crm-not-the-problem)
-- [The $3,000/month operations mistake](/blog/va-vs-platform/operations-cost-mistake)
-- [What happens when you take a week off?](/blog/managed-operations/business-runs-without-you)
-- [The 7-Day Build, explained](/blog/managed-operations/7-day-build-explained)
-- [Operations for one: running like a 10-person team](/blog/managed-operations/operations-for-one)
-- [Chat-first operations: why your next tool should live in WhatsApp](/blog/managed-operations/chat-first-operations)
-- [How to audit your operations in 15 minutes](/blog/managed-operations/operations-audit-checklist)
+- [Why your CRM isn't the problem](/blog/c1-s1-crm-not-the-problem/)
+- [The $3,000/month operations mistake](/blog/c1-s2-operations-cost-mistake/)
+- [What happens when you take a week off?](/blog/c1-s3-business-runs-without-you/)
+- [The 7-Day Build, explained](/blog/c1-s5-7-day-build-explained/)
+- [Operations for one: running like a 10-person team](/blog/c1-s6-operations-team-of-one/)
+- [Chat-first operations: why your next tool should live in WhatsApp](/blog/c1-s9-chat-first-operations/)
+- [How to audit your operations in 15 minutes](/blog/c1-s10-operations-audit-checklist/)
 
 <script type="application/ld+json">
 {

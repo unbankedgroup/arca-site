@@ -45,9 +45,9 @@ But that profile does not describe most business owners.
 
 Most service providers I talk to did not start their business to configure software. They started it to coach, consult, design, or advise. The hours spent in Dubsado's workflow builder are hours not spent on client work, business development, or rest.
 
-Arca takes a different approach. Instead of handing you a toolkit and wishing you luck, we start with a [diagnosis](/blog/managed-operations/diagnosis-before-prescription). What is actually happening in your business right now? Where are leads dropping? Where are follow-ups failing? What runs manually that should not?
+Arca takes a different approach. Instead of handing you a toolkit and wishing you luck, we start with a [diagnosis](/blog/c1-s4-diagnosis-before-prescription/). What is actually happening in your business right now? Where are leads dropping? Where are follow-ups failing? What runs manually that should not?
 
-Then we build it. That is [The 7-Day Build](/blog/managed-operations/7-day-build-explained). In one week, your Routines are configured, your Connections are live, and your Blueprints are ready for the workflows your business actually uses. Not a generic template. Your operation, built to match how you work.
+Then we build it. That is [The 7-Day Build](/blog/c1-s5-7-day-build-explained/). In one week, your Routines are configured, your Connections are live, and your Blueprints are ready for the workflows your business actually uses. Not a generic template. Your operation, built to match how you work.
 
 ## The numbers comparison
 
@@ -69,7 +69,7 @@ The switch from Dubsado to Arca is not a DIY migration. You do not export your d
 
 Your existing client data transfers. Your workflows are rebuilt as Routines. Your templates become Blueprints. And because we build it, you understand what is running and why. No inherited complexity from a setup specialist who configured things their way, not yours.
 
-Check the [full platform comparison for 2026](/blog/alternatives/best-operations-platforms-2026) to see where Dubsado, [GoHighLevel](/blog/alternatives/gohighlevel-alternative-consultants), [HoneyBook](/blog/alternatives/honeybook-alternative-price-hike), and Arca sit relative to each other. The best tool is the one you can actually use without hiring someone to run it.
+Check the [full platform comparison for 2026](/blog/c4-pillar-best-operations-platforms/) to see where Dubsado, [GoHighLevel](/blog/c4-s11-gohighlevel-alternative-coaches/), [HoneyBook](/blog/c4-s2-honeybook-alternative/), and Arca sit relative to each other. The best tool is the one you can actually use without hiring someone to run it.
 
 ## FAQ
 

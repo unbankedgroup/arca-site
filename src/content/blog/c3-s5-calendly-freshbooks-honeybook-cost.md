@@ -15,13 +15,13 @@ author: Mal Mposha
 
 I talk to coaches and consultants every week who run some version of the same stack. Calendly for scheduling. FreshBooks for invoicing. HoneyBook for contracts and client management. Mailchimp for email. The Calendly FreshBooks HoneyBook Mailchimp cost combined starts at $115/mo. That is the number on the invoices. The actual cost is higher.
 
-This is a breakdown of what each tool charges, what you realistically use, and where your time goes filling the gaps between them. If you have not run a [subscription audit](/blog/tool-consolidation/saas-subscription-audit) recently, this will be a useful starting point.
+This is a breakdown of what each tool charges, what you realistically use, and where your time goes filling the gaps between them. If you have not run a [subscription audit](/blog/c3-s1-saas-subscription-audit/) recently, this will be a useful starting point.
 
 ---
 
 ## The sticker price
 
-Here is what the standard [coaching tool stack](/blog/coaching-automation/coaching-tool-stack) costs at the most common tier for a solo consultant or small coaching practice:
+Here is what the standard [coaching tool stack](/blog/c2-s9-coaching-tool-stack/) costs at the most common tier for a solo consultant or small coaching practice:
 
 | Tool | Plan | Monthly Cost | What It Covers |
 |---|---|---|---|
@@ -104,7 +104,7 @@ What changes is the gaps disappear. Someone books. The system already knows who 
 
 One consultant I worked with described it like this: "I stopped managing my tools and started managing my clients."
 
-If you want to see this in practice, read the [migration story](/blog/tool-consolidation/seven-tools-to-one-migration) of a consultant who replaced all seven tools in seven days. Or start with the [full stack replacement guide](/blog/tool-consolidation/replace-saas-stack-guide) if you want the strategic picture first.
+If you want to see this in practice, read the [migration story](/blog/c3-s4-seven-tools-to-one-migration/) of a consultant who replaced all seven tools in seven days. Or start with the [full stack replacement guide](/blog/c3-pillar-replace-saas-stack/) if you want the strategic picture first.
 
 The four tools in this stack are not bad products. They are good products that were never designed to work together. And you are spending $125/mo plus 24 hours/month making up the difference yourself.
 

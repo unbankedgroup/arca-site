@@ -33,7 +33,7 @@ More than you think.
 
 Statista's 2024 data shows companies with fewer than 200 employees use an average of 42 SaaS applications. That includes everything from email and file storage to niche industry tools. For a service business with 1 to 15 people, the number is smaller but the problem is the same. You end up with a core stack of 5 to 7 tools doing operational work, and another 3 to 5 in the background you forgot you were paying for.
 
-Here is what the typical consulting or [coaching business tool stack](/blog/coaching-automation/coaching-business-automation-guide) looks like:
+Here is what the typical consulting or [coaching business tool stack](/blog/c2-pillar-coaching-automation-guide/) looks like:
 
 | Tool | Monthly Cost | What You Actually Use It For |
 |---|---|---|
@@ -66,7 +66,7 @@ The bigger cost is time. A [Lokalise study of 1,000 professionals](https://lokal
 
 And it gets worse. Research from the University of California found it takes 23 minutes and 15 seconds to fully regain focus after switching tasks. If you check your CRM, then flip to your invoicing tool, then open your calendar, you have not spent 3 minutes on admin. You have blown a hole in your morning.
 
-For a consultant billing $150 to $300 per hour, losing even 10 hours a week to admin and tool-switching costs $1,500 to $3,000 per week. That is $6,000 to $12,000 per month in lost billable time. Your [SaaS subscription costs](/blog/tool-consolidation/saas-subscription-audit) are a rounding error compared to that.
+For a consultant billing $150 to $300 per hour, losing even 10 hours a week to admin and tool-switching costs $1,500 to $3,000 per week. That is $6,000 to $12,000 per month in lost billable time. Your [SaaS subscription costs](/blog/c3-s1-saas-subscription-audit/) are a rounding error compared to that.
 
 Then there is revenue leakage. EY research shows companies lose 1 to 5 percent of realized EBITA from disconnected systems. For a service business doing $500,000 in revenue, that is $5,000 to $25,000 annually. Leads that go cold because your follow-up was manual and you forgot. Invoices that are overdue because you did not notice. Clients who do not renew because no one reached out.
 
@@ -90,7 +90,7 @@ Here is what actually happens when most service businesses try an all-in-one pla
 
 **Problem 4: The pricing tricks.** GoHighLevel's $97 per month base price does not include per-email and per-SMS charges that can double or triple the actual cost. HoneyBook's Starter tier ($19/month) limits you to basic features and charges more as you grow. The sticker price is not the real price. It never is.
 
-[Why "all-in-one" tools fail and what actually works](/blog/tool-consolidation/why-all-in-one-tools-fail) goes deeper on this, but the summary is this: replacing your stack with another complex tool is not consolidation. It is relocation.
+[Why "all-in-one" tools fail and what actually works](/blog/c3-s3-why-all-in-one-tools-fail/) goes deeper on this, but the summary is this: replacing your stack with another complex tool is not consolidation. It is relocation.
 
 ---
 
@@ -100,11 +100,11 @@ Consolidation is not "fewer tools." That is the trap.
 
 Real consolidation has three parts:
 
-**1. Connected data.** Everything knows about everything else. When a lead books a discovery call, the system already has their intake form, knows their history, and can send a confirmation without you touching anything. When an invoice is overdue, your morning briefing flags it alongside today's meetings and the leads waiting for follow-up. No more [six open tabs every morning](/blog/tool-consolidation/six-open-tabs-every-morning) to piece together what is happening in your own business.
+**1. Connected data.** Everything knows about everything else. When a lead books a discovery call, the system already has their intake form, knows their history, and can send a confirmation without you touching anything. When an invoice is overdue, your morning briefing flags it alongside today's meetings and the leads waiting for follow-up. No more [six open tabs every morning](/blog/c3-s2-six-open-tabs-every-morning/) to piece together what is happening in your own business.
 
-**2. Automated handoffs.** The gaps between tools are where revenue leaks. A lead fills out a form. Then what? In a consolidated system, the "then what" is handled. Acknowledgment goes out. Intake questionnaire follows. Booking link is included. If they do not book within 48 hours, a follow-up is sent. You get a briefing. You did not do any of that manually. This is what [everything connected](/blog/tool-consolidation/everything-connected) looks like in practice.
+**2. Automated handoffs.** The gaps between tools are where revenue leaks. A lead fills out a form. Then what? In a consolidated system, the "then what" is handled. Acknowledgment goes out. Intake questionnaire follows. Booking link is included. If they do not book within 48 hours, a follow-up is sent. You get a briefing. You did not do any of that manually. This is what [everything connected](/blog/c3-s9-everything-connected/) looks like in practice.
 
-**3. Set up for you.** This is the part that changes everything. Most consolidation platforms hand you a blank canvas. "Build your workflows." "Configure your automations." "Customize your templates." That is the builder model. The alternative: tell someone how your business actually works and have them build it for you. Diagnose first, set up second, run third. That is the [managed operations model](/blog/managed-operations/managed-operations-guide) and it is the reason consolidation finally works for non-technical founders.
+**3. Set up for you.** This is the part that changes everything. Most consolidation platforms hand you a blank canvas. "Build your workflows." "Configure your automations." "Customize your templates." That is the builder model. The alternative: tell someone how your business actually works and have them build it for you. Diagnose first, set up second, run third. That is the [managed operations model](/blog/c1-pillar-managed-operations-guide/) and it is the reason consolidation finally works for non-technical founders.
 
 When all three come together, you do not just have fewer logins. You have a business that runs its operational tasks without requiring you to be the connective tissue between five disconnected systems.
 
@@ -141,7 +141,7 @@ Numbers tell the story better than arguments. Here is what a typical service bus
 
 The subscription savings pay for the new platform. The time savings pay for everything else.
 
-And that calculation does not include [revenue leakage](/blog/tool-consolidation/saas-subscription-audit) from leads that went cold, invoices that were not followed up, or clients who churned because the gaps in your tools created gaps in their experience.
+And that calculation does not include [revenue leakage](/blog/c3-s1-saas-subscription-audit/) from leads that went cold, invoices that were not followed up, or clients who churned because the gaps in your tools created gaps in their experience.
 
 ---
 
@@ -167,7 +167,7 @@ Consolidation does NOT make sense when:
 
 **You genuinely enjoy building automations.** Some people like Zapier. They like configuring workflows and tweaking triggers. If that is you and it is working, keep going. Managed operations exists for people who do not want that job.
 
-For a more detailed framework, the [consolidation checklist](/blog/tool-consolidation/consolidation-checklist) walks through 10 specific questions to help you decide.
+For a more detailed framework, the [consolidation checklist](/blog/c3-s10-consolidation-checklist/) walks through 10 specific questions to help you decide.
 
 <aside class="callout callout-stat">
 <strong>Reality check:</strong> Gartner estimates 30% of SaaS spend is "toxic" — licenses and features nobody touches. Pull your last credit card statement right now. There's almost certainly a subscription on there you forgot you were paying for.
@@ -189,7 +189,7 @@ Before you make any decisions, start with data. Here is a quick audit you can do
 
 **Step 5: Add up the real cost (2 minutes).** Monthly subscriptions plus your hourly rate multiplied by hours spent on admin per week. The number is always higher than people expect.
 
-If you want the full version with benchmarks and scoring, the [SaaS subscription audit guide](/blog/tool-consolidation/saas-subscription-audit) breaks it down step by step. And the [operations audit checklist](/blog/managed-operations/operations-audit-checklist) gives you a broader view of where your business operations stand.
+If you want the full version with benchmarks and scoring, the [SaaS subscription audit guide](/blog/c3-s1-saas-subscription-audit/) breaks it down step by step. And the [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) gives you a broader view of where your business operations stand.
 
 ---
 
@@ -209,7 +209,7 @@ So let me walk through what this actually looks like in practice.
 
 Total time investment from you: a few hours of conversation during the diagnosis phase. That is it. No YouTube tutorials. No workflow builders. No "customization guides" that take 40 hours.
 
-The [7-Day Build](/blog/managed-operations/7-day-build-explained) explains this process in detail if you want the full day-by-day breakdown. And the [migration story](/blog/tool-consolidation/seven-tools-to-one-migration) follows a real consultant through this exact transition: $412 per month in subscription savings plus 18 hours per week in recovered admin time.
+The [7-Day Build](/blog/c1-s5-7-day-build-explained/) explains this process in detail if you want the full day-by-day breakdown. And the [migration story](/blog/c3-s4-seven-tools-to-one-migration/) follows a real consultant through this exact transition: $412 per month in subscription savings plus 18 hours per week in recovered admin time.
 
 ---
 
@@ -252,9 +252,9 @@ At 8 to 12 clients, cracks appear. You forgot to follow up with a lead because t
 
 At 20+ clients, the spreadsheet actively works against you. It does not remind. It does not follow up. It does not flag. It does not connect. It is a database pretending to be a business operation, and the pretense has collapsed.
 
-The upgrade path is not a better spreadsheet. It is not Notion (which is a better spreadsheet). It is a system that does the things the spreadsheet cannot: send the follow-up, flag the overdue invoice, [brief you every morning](/blog/tool-consolidation/six-open-tabs-every-morning) on what needs your attention, and handle the onboarding flow so you are not copying and pasting.
+The upgrade path is not a better spreadsheet. It is not Notion (which is a better spreadsheet). It is a system that does the things the spreadsheet cannot: send the follow-up, flag the overdue invoice, [brief you every morning](/blog/c3-s2-six-open-tabs-every-morning/) on what needs your attention, and handle the onboarding flow so you are not copying and pasting.
 
-If this sounds like your business, the [spreadsheet graveyard article](/blog/tool-consolidation/spreadsheet-graveyard) goes deeper on the specific breaking points and what to do about them.
+If this sounds like your business, the [spreadsheet graveyard article](/blog/c3-s7-spreadsheet-graveyard/) goes deeper on the specific breaking points and what to do about them.
 
 ---
 
@@ -268,7 +268,7 @@ Not every tool needs to go. Here is how I think about the decision for each tool
 
 **Ignore it** if: you are paying for it but not using it. Cancel it. Today. Gartner estimates that 30 percent of SaaS spend is "toxic," meaning it goes to licenses and features nobody touches. Check your credit card statement. There is probably at least one subscription you forgot to cancel.
 
-The framework for the ops layer is simple: [keep what works, consolidate the operations](/blog/tool-consolidation/when-to-consolidate). Your design tools stay. Your industry software stays. But the scheduling, invoicing, follow-ups, client management, and onboarding? Those should be connected. Those should be automated. Those should not require you to be the bridge.
+The framework for the ops layer is simple: [keep what works, consolidate the operations](/blog/c3-s6-when-to-consolidate/). Your design tools stay. Your industry software stays. But the scheduling, invoicing, follow-ups, client management, and onboarding? Those should be connected. Those should be automated. Those should not require you to be the bridge.
 
 ---
 
@@ -284,7 +284,7 @@ This is a structural problem, not a personal one. The SaaS model is designed to 
 
 The way out is not adding another tool. It is not "getting better at managing tools." It is changing the model entirely.
 
-[Managed operations](/blog/managed-operations/managed-operations-guide) means one platform that handles your business operations. Set up for you based on how your business actually works. Connected so data flows without you moving it. Running in the background so the [morning scramble across six apps](/blog/tool-consolidation/six-open-tabs-every-morning) becomes a single message at 8am telling you what needs your attention.
+[Managed operations](/blog/c1-pillar-managed-operations-guide/) means one platform that handles your business operations. Set up for you based on how your business actually works. Connected so data flows without you moving it. Running in the background so the [morning scramble across six apps](/blog/c3-s2-six-open-tabs-every-morning/) becomes a single message at 8am telling you what needs your attention.
 
 That is what replacing your SaaS stack actually looks like. Not fewer tools for the sake of fewer tools. A business that runs its operations without requiring you to be the infrastructure.
 

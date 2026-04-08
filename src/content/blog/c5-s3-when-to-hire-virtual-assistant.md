@@ -195,7 +195,7 @@ Regardless of your revenue stage, here's how to transition.
 
 **Week 7+: Optimize.** Evaluate what's working. Adjust. Add more automation where it makes sense.
 
-The [7-Day Build](/blog/managed-operations/7-day-build-explained) compresses this for most businesses. But the gradual approach works too.
+The [7-Day Build](/blog/c1-s5-7-day-build-explained/) compresses this for most businesses. But the gradual approach works too.
 
 ## The bottom line
 

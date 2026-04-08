@@ -45,7 +45,7 @@ This message takes 30 seconds to read. It does one thing: eliminate uncertainty.
 
 The form goes out while the decision is still fresh. She's motivated. She's engaged. If you wait three days to send the intake form, you'll get shallow, rushed answers. If you send it within hours, you'll get thoughtful, detailed responses.
 
-The intake form isn't just data collection. It's a signal. It says: "I take this seriously. I want to understand your situation before we start." [Good intake forms](/blog/client-onboarding/intake-forms-that-work) ask questions that make the client feel heard, not processed.
+The intake form isn't just data collection. It's a signal. It says: "I take this seriously. I want to understand your situation before we start." [Good intake forms](/blog/c6-s3-intake-forms-that-work/) ask questions that make the client feel heard, not processed.
 
 ### Day 1: First session scheduling
 
@@ -81,7 +81,7 @@ Day four: Sends scheduling link. Client books for next week.
 
 Day five through session: Nothing. The client waits. Wonders. Second-guesses.
 
-The session itself is great. But the [onboarding experience](/blog/client-onboarding/client-onboarding-automation-guide) was uneven, slow, and dependent on one person's bandwidth.
+The session itself is great. But the [onboarding experience](/blog/c6-pillar-client-onboarding-automation/) was uneven, slow, and dependent on one person's bandwidth.
 
 This isn't a discipline problem. It's a systems problem. The coach is doing everything manually, and manual processes break under load. Every new client competes for attention with existing clients, and existing clients always win.
 
@@ -95,9 +95,9 @@ Everything else fires on schedule. Payment triggers welcome message. Welcome tri
 
 The client gets a polished, professional experience whether the coach is having a busy week or a quiet one. The 48-hour window is covered. Every time.
 
-If you want to [audit your current onboarding experience](/blog/client-onboarding/onboarding-experience-audit), start by asking: what does a client experience in the first 48 hours after signing? If the answer is "it depends on how busy I am," the window is leaking.
+If you want to [audit your current onboarding experience](/blog/#c6), start by asking: what does a client experience in the first 48 hours after signing? If the answer is "it depends on how busy I am," the window is leaking.
 
-The [steps between contract and first session](/blog/client-onboarding/contract-to-first-session) are where clients decide if they made the right choice. Make sure the answer is yes before you've even started coaching.
+The [steps between contract and first session](/blog/#c6) are where clients decide if they made the right choice. Make sure the answer is yes before you've even started coaching.
 
 ## FAQ
 

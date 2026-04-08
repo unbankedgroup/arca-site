@@ -50,7 +50,7 @@ You're not being handed a solution. You're being handed a project.
 - **Learning curve.** Every new dashboard requires 2-4 hours of learning before you're productive. Most founders never find those hours. The tool sits unused.
 - **Information assembly.** Your calendar is in one place. Your invoices in another. Your leads in a third. Your follow-ups in a fourth. Every morning, you open four tabs and manually assemble a picture of your business. That's 30-45 minutes before actual work starts.
 
-The [six open tabs problem](/blog/tool-consolidation/six-open-tabs-every-morning) isn't just annoying. It's a structural tax on your attention. And it's why most operations tools end up as unused subscriptions.
+The [six open tabs problem](/blog/c3-s2-six-open-tabs-every-morning/) isn't just annoying. It's a structural tax on your attention. And it's why most operations tools end up as unused subscriptions.
 
 ---
 
@@ -102,7 +102,7 @@ Everything already lives in one place.
 
 ## Why adoption actually works with chat-first
 
-The [non-technical founder problem](/blog/managed-operations/non-technical-founders) isn't about intelligence. It's about time. And about tools that match how you already communicate.
+The [non-technical founder problem](/blog/c1-s7-non-technical-founders/) isn't about intelligence. It's about time. And about tools that match how you already communicate.
 
 **Dashboard-first platforms:**
 - Require you to learn a new interface
@@ -151,13 +151,13 @@ That's the goal.
 
 The client never learns a new system. They text. Things happen.
 
-For [solo business operations](/blog/managed-operations/operations-for-one), this is the difference between running a business that clients experience as professional and running one that feels ad-hoc.
+For [solo business operations](/blog/c1-s6-operations-team-of-one/), this is the difference between running a business that clients experience as professional and running one that feels ad-hoc.
 
 ---
 
 ## The morning briefing, chat edition
 
-The [daily briefing](/blog/managed-operations/morning-briefing) is the simplest operational change with the biggest impact. And it works best in chat.
+The [daily briefing](/blog/c1-s8-morning-briefing/) is the simplest operational change with the biggest impact. And it works best in chat.
 
 **Dashboard briefing:**
 1. Open browser
@@ -192,7 +192,7 @@ You don't have a scheduling interface and a separate invoicing interface and a s
 - **One search to run.** Need to find something? Search the chat. Every invoice, every booking, every client note is there.
 - **One habit to maintain.** You already check WhatsApp. You don't need to build a new habit of "checking the system." The system is in the system you already check.
 
-For [managed operations](/blog/managed-operations/managed-operations-guide), this is the end state. Not a better dashboard. No dashboard at all. Just a conversation that handles everything.
+For [managed operations](/blog/c1-pillar-managed-operations-guide/), this is the end state. Not a better dashboard. No dashboard at all. Just a conversation that handles everything.
 
 ---
 

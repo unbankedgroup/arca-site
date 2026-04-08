@@ -81,7 +81,7 @@ The coaches with the highest retention rates aren't necessarily better coaches. 
 
 The onboarding flow I described above has six steps. Each one follows the same pattern for every client. Same welcome message (personalized with name and package details). Same intake form. Same logistics document. Same scheduling process. Same pre-session note structure. Same reminder timing.
 
-That means it can be built once and [run automatically for every new client](/blog/coaching-automation/coaching-business-automation-guide).
+That means it can be built once and [run automatically for every new client](/blog/c2-pillar-coaching-automation-guide/).
 
 When a new client pays, the welcome message goes out immediately. The intake form follows an hour later. The contract and logistics go out on day one. The scheduling link is included. When the intake form is returned, the coach gets notified and sends the personalized prep note. The session reminder fires automatically 24 hours before.
 
@@ -93,9 +93,9 @@ And every client gets the same polished experience. Whether the coach is having 
 
 A coach I talked to described the shift simply: "I used to dread new client signups because it meant an hour of admin. Now I just look forward to meeting them."
 
-That's the point. Onboarding should be the beginning of a great relationship, not the beginning of a to-do list. When the [operational infrastructure](/blog/managed-operations/diagnosis-before-prescription) handles the logistics, the coach can focus on what they actually got into this for.
+That's the point. Onboarding should be the beginning of a great relationship, not the beginning of a to-do list. When the [operational infrastructure](/blog/c1-s4-diagnosis-before-prescription/) handles the logistics, the coach can focus on what they actually got into this for.
 
-Your clients are paying for your expertise. The least you can give them is a consistent, professional welcome. And that doesn't require you to work harder. It requires the right [follow-up system](/blog/coaching-automation/automated-follow-ups-coaches) to work for you.
+Your clients are paying for your expertise. The least you can give them is a consistent, professional welcome. And that doesn't require you to work harder. It requires the right [follow-up system](/blog/c2-s4-automated-follow-ups-coaches/) to work for you.
 
 Build the onboarding once. Let it run. Every client gets your best first impression.
 

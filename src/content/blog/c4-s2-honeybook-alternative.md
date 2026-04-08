@@ -31,7 +31,7 @@ A coach paying $19 per month for HoneyBook Starter was getting solid value. At $
 
 For context, many coaches are running lean. A $400 to $700 annual increase hits differently when your monthly revenue fluctuates between $3,000 and $8,000. The price hike did not come with proportional new features. It came with the same tool at a higher number.
 
-The [real cost of your tool stack](/blog/tool-consolidation/calendly-freshbooks-honeybook-cost) is worth calculating. If HoneyBook is your primary platform and the price jumped, you need to know what you are actually getting per dollar. Not what you were getting. What you are getting now.
+The [real cost of your tool stack](/blog/c3-s5-calendly-freshbooks-honeybook-cost/) is worth calculating. If HoneyBook is your primary platform and the price jumped, you need to know what you are actually getting per dollar. Not what you were getting. What you are getting now.
 
 ## What HoneyBook does not do
 
@@ -47,7 +47,7 @@ Those gaps cost more than any monthly subscription.
 
 The move I see most often is not from HoneyBook to another client management tool. It is from client management to full operations. Coaches want the proposal-and-payment flow, yes. But they also want the parts that HoneyBook never covered. Automated follow-ups. Client re-engagement. A system that runs between sessions, not just during onboarding.
 
-Arca handles this differently. Instead of giving you a tool and letting you figure out the setup, we start with [The 7-Day Build](/blog/managed-operations/7-day-build-explained). We look at your current client flow, identify where things drop, and build Routines that handle follow-ups, scheduling, invoicing, and re-engagement in one system.
+Arca handles this differently. Instead of giving you a tool and letting you figure out the setup, we start with [The 7-Day Build](/blog/c1-s5-7-day-build-explained/). We look at your current client flow, identify where things drop, and build Routines that handle follow-ups, scheduling, invoicing, and re-engagement in one system.
 
 Foundation is $97 per month, flat. No per-email charges. No per-SMS charges. Structure is $247 per month. Fortress is $497 per month. You know the cost before the month starts. No surprise increases because your usage went up.
 
@@ -55,7 +55,7 @@ Foundation is $97 per month, flat. No per-email charges. No per-SMS charges. Str
 
 The biggest concern I hear from coaches considering a switch: "I have everything set up in HoneyBook. Starting over sounds awful."
 
-That concern is valid. You have templates, workflows, client history, and automations configured. Rebuilding all of that yourself would take weeks. This is exactly why [The 7-Day Build](/blog/managed-operations/7-day-build-explained) exists. You do not rebuild it yourself. We build it. Your templates become Blueprints. Your automations become Routines. Your connected tools become Connections.
+That concern is valid. You have templates, workflows, client history, and automations configured. Rebuilding all of that yourself would take weeks. This is exactly why [The 7-Day Build](/blog/c1-s5-7-day-build-explained/) exists. You do not rebuild it yourself. We build it. Your templates become Blueprints. Your automations become Routines. Your connected tools become Connections.
 
 The transition is not you learning a new platform for a month. It is a structured handoff where your operations are rebuilt and running within a week.
 
@@ -67,7 +67,7 @@ The coaches leaving tend to be the ones whose business is relationship-based, no
 
 ## Comparing your options
 
-The [2026 operations platform comparison](/blog/alternatives/best-operations-platforms-2026) breaks down the full landscape. If you are also considering other alternatives, look at how [GoHighLevel compares for consultants](/blog/alternatives/gohighlevel-alternative-consultants) and where [Dubsado fits](/blog/alternatives/dubsado-alternative-faster-setup) in the picture. For a direct three-way comparison, the [HoneyBook vs Dubsado vs Arca breakdown](/blog/alternatives/honeybook-vs-dubsado-vs-arca) covers feature gaps, pricing, and setup time side by side.
+The [2026 operations platform comparison](/blog/c4-pillar-best-operations-platforms/) breaks down the full landscape. If you are also considering other alternatives, look at how [GoHighLevel compares for consultants](/blog/c4-s11-gohighlevel-alternative-coaches/) and where [Dubsado fits](/blog/c4-s3-dubsado-alternative/) in the picture. For a direct three-way comparison, the [HoneyBook vs Dubsado vs Arca breakdown](/blog/c4-s5-honeybook-vs-dubsado-vs-arca/) covers feature gaps, pricing, and setup time side by side.
 
 The goal is not to find the cheapest tool. It is to find the one that matches how your coaching business actually runs. The price hike gave you a reason to look. Make the look count.
 

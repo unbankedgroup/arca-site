@@ -169,7 +169,7 @@ If you've hit the VA ceiling, here's how to transition.
 
 **Week 5+: Optimize.** Your VA now has capacity for growth. Use it for client relationships, strategic projects, and business development.
 
-The [7-Day Build](/blog/managed-operations/7-day-build-explained) compresses this timeline. But the gradual approach works too.
+The [7-Day Build](/blog/c1-s5-7-day-build-explained/) compresses this timeline. But the gradual approach works too.
 
 ## The bottom line
 

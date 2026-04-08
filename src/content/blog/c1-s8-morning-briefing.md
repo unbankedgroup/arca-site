@@ -61,7 +61,7 @@ The contrast is sharper than it sounds.
 
 Time: 30 to 45 minutes. Feeling: scattered.
 
-Research from RingCentral shows the average knowledge worker switches between apps 1,100 times per day. A study from the University of Michigan found that [task switching costs up to 40% of productive time](/blog/tool-consolidation/six-open-tabs-every-morning). The six-tab morning isn't just slow. It's actively training your brain to fragment.
+Research from RingCentral shows the average knowledge worker switches between apps 1,100 times per day. A study from the University of Michigan found that [task switching costs up to 40% of productive time](/blog/c3-s2-six-open-tabs-every-morning/). The six-tab morning isn't just slow. It's actively training your brain to fragment.
 
 McKinsey found knowledge workers spend **28% of their workweek** just managing information across apps — that's more than a full day per week on finding and sorting, not doing.
 
@@ -82,7 +82,7 @@ McKinsey research found that knowledge workers spend 28% of their workweek manag
 
 The briefing eliminates the assembly. The decisions are pre-sorted. "Here's what matters. Here's what's handled. Here's what needs you." That's three categories, not forty.
 
-[Solo business owners running with proper infrastructure](/blog/managed-operations/operations-for-one) report recovering 10 or more hours per week. A meaningful chunk of that comes from the morning alone. Not because the briefing saves 30 minutes of tab-opening. Because it saves the scattered, half-distracted state that the tab ritual creates and that lingers for hours afterward.
+[Solo business owners running with proper infrastructure](/blog/c1-s6-operations-team-of-one/) report recovering 10 or more hours per week. A meaningful chunk of that comes from the morning alone. Not because the briefing saves 30 minutes of tab-opening. Because it saves the scattered, half-distracted state that the tab ritual creates and that lingers for hours afterward.
 
 ## What a briefing is not
 
@@ -96,23 +96,23 @@ The best analogy is an executive assistant who's been up since 5am. They've chec
 
 That's the briefing.
 
-For coaches, the briefing includes client progress tracking — see the [coaching morning briefing](/blog/coaching-automation/coaching-morning-briefing) for the specialized format.
+For coaches, the briefing includes client progress tracking — see the [coaching morning briefing](/blog/c2-s5-coaching-morning-briefing/) for the specialized format.
 
 ## How briefings connect to everything else
 
 The briefing is the surface layer of a managed operations system. It works because everything underneath is connected.
 
-Your scheduling feeds into it. Your [invoicing and payment tracking](/blog/managed-operations/managed-operations-guide) feed into it. Your follow-up sequences feed into it. Your lead pipeline feeds into it.
+Your scheduling feeds into it. Your [invoicing and payment tracking](/blog/c1-pillar-managed-operations-guide/) feed into it. Your follow-up sequences feed into it. Your lead pipeline feeds into it.
 
 When those systems are disconnected (which is the default for most solo businesses), a briefing is impossible. You can't summarize what isn't centralized. That's why the six-tab morning exists. The information is real. It's just scattered.
 
 When those systems are connected through a single operations layer, the briefing is automatic. One platform knows your schedule, your invoices, your leads, and your follow-ups. Assembling the morning summary is trivial. It costs nothing. It happens before you wake up.
 
-[Tool consolidation](/blog/tool-consolidation/replace-saas-stack-guide) isn't just about reducing subscriptions. It's about making this kind of synthesis possible.
+[Tool consolidation](/blog/c3-pillar-replace-saas-stack/) isn't just about reducing subscriptions. It's about making this kind of synthesis possible.
 
-The [six open tabs problem](/blog/tool-consolidation/six-open-tabs-every-morning) shows what happens when information stays scattered — and how consolidation fixes it.
+The [six open tabs problem](/blog/c3-s2-six-open-tabs-every-morning/) shows what happens when information stays scattered — and how consolidation fixes it.
 
-For coaches, [the briefing looks slightly different](/blog/coaching-automation/coaching-morning-briefing). It surfaces session prep and client progress alongside pipeline and payment data. Same principle. Tailored to how coaching days actually flow.
+For coaches, [the briefing looks slightly different](/blog/c2-s5-coaching-morning-briefing/). It surfaces session prep and client progress alongside pipeline and payment data. Same principle. Tailored to how coaching days actually flow.
 
 ## The shift that changes the morning
 
@@ -120,9 +120,9 @@ Here's what I noticed when I got my own systems running properly. The first hour
 
 That certainty is underrated. It's not a feature. It's a feeling. The feeling that your business is accounted for. That the small things didn't slip. That you can open your first client session fully present because the operational layer is handled.
 
-If you're not sure how much your morning ritual is actually costing you, the [operations audit checklist](/blog/managed-operations/operations-audit-checklist) will tell you in 15 minutes.
+If you're not sure how much your morning ritual is actually costing you, the [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) will tell you in 15 minutes.
 
-Want to see what infrastructure makes the briefing possible? Read about [operations for one](/blog/managed-operations/operations-for-one) — how solo founders run like 10-person teams.
+Want to see what infrastructure makes the briefing possible? Read about [operations for one](/blog/c1-s6-operations-team-of-one/) — how solo founders run like 10-person teams.
 
 One message. Every morning. Everything you need to know.
 

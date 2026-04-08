@@ -115,7 +115,7 @@ Here's the uncomfortable truth. Most VA handoff documentation is incomplete, out
 
 **Reason 4: The VA doesn't know what matters.** A new VA documenting their own processes doesn't know which details are critical vs. which are noise. They document the wrong things. They miss the things that actually make the process work.
 
-The [VA handoff problem](/blog/va-vs-platform/va-handoff-guide) isn't a documentation problem. It's a structural problem. You've built your operations on a foundation that leaves when the person leaves.
+The [VA handoff problem](/blog/c5-s5-va-handoff-guide/) isn't a documentation problem. It's a structural problem. You've built your operations on a foundation that leaves when the person leaves.
 
 ## What happens when handoff fails
 
@@ -163,7 +163,7 @@ Let's put numbers on this.
 
 That's a one-time cost. Every 6-12 months.
 
-This is the [real cost of VA turnover](/blog/va-vs-platform/va-turnover-cost). Not just the recruitment. The operational collapse that comes with it.
+This is the [real cost of VA turnover](/blog/c5-s6-va-turnover-cost/). Not just the recruitment. The operational collapse that comes with it.
 
 ## What replaces handoff-dependent operations
 
@@ -191,7 +191,7 @@ This doesn't mean you never have humans. It means the humans handle the work tha
 - Client onboarding flows
 - Daily briefings
 
-The [hybrid model](/blog/va-vs-platform/va-vs-operations-platform-guide) isn't VA vs. platform. It's platform for operations, human for judgment.
+The [hybrid model](/blog/c5-pillar-va-vs-operations-platform/) isn't VA vs. platform. It's platform for operations, human for judgment.
 
 ## The transition playbook
 
@@ -218,7 +218,7 @@ Everything running? Clients noticing any difference? (Spoiler: they usually noti
 
 From here, your handoff risk drops dramatically. If your VA leaves, the automatable work keeps running. You only need to hand off the human-required work.
 
-The [7-Day Build](/blog/managed-operations/7-day-build-explained) compresses this timeline for most businesses. But the gradual approach works too.
+The [7-Day Build](/blog/c1-s5-7-day-build-explained/) compresses this timeline for most businesses. But the gradual approach works too.
 
 ## The honest conversation
 

@@ -324,7 +324,7 @@ Onboarding ends when the real work begins. But the automation doesn't stop.
 - Homework/resource delivery
 - Check-in sequences between sessions
 - Payment reminders
-- Renewal/upsell sequences (covered in [C6-S8](/blog/client-onboarding/upsell-sequences) and [C6-S10](/blog/client-onboarding/lifetime-value-optimization))
+- Renewal/upsell sequences (covered in [C6-S8](/blog/c6-s8-upsell-sequences/) and [C6-S10](/blog/c6-s10-lifetime-value-optimization/))
 
 The onboarding sequence is just the first chapter. The rest of the client journey should be just as smooth.
 

@@ -44,7 +44,7 @@ McKinsey research found that knowledge workers spend 28% of their workweek manag
 
 ## What the briefing replaces
 
-The morning tab scramble isn't just annoying. It's expensive. It takes [15-20 minutes of context-switching](/blog/coaching-automation/coaching-time-audit) to assemble the same information that a briefing delivers in 30 seconds. And context-switching has a cognitive cost beyond the time. Studies show it takes an average of 23 minutes to fully regain focus after switching tasks. Starting your day with six app switches means you don't hit deep focus until almost an hour into your morning.
+The morning tab scramble isn't just annoying. It's expensive. It takes [15-20 minutes of context-switching](/blog/c2-s1-coaching-time-audit/) to assemble the same information that a briefing delivers in 30 seconds. And context-switching has a cognitive cost beyond the time. Studies show it takes an average of 23 minutes to fully regain focus after switching tasks. Starting your day with six app switches means you don't hit deep focus until almost an hour into your morning.
 
 The briefing replaces all of that with a single scan. Open the chat. Read the message. Know your day.
 
@@ -97,19 +97,19 @@ Not every piece of information deserves a spot in the daily briefing. The good o
 - Long-term planning items (that's weekly, not daily)
 - Metrics dashboards (interesting but not actionable at 8am)
 
-The briefing should take 30-60 seconds to read. If it takes longer, it's trying to be a [dashboard replacement](/blog/tool-consolidation/too-many-tabs). It's not. It's a prioritized summary. What needs you today. That's it.
+The briefing should take 30-60 seconds to read. If it takes longer, it's trying to be a [dashboard replacement](/blog/#c3). It's not. It's a prioritized summary. What needs you today. That's it.
 
 ## The shift it creates
 
 Coaches who start using a daily briefing describe the same feeling: calm.
 
-Not because their business got simpler. It didn't. They still have the same number of clients, the same complexity, the same demands. But the uncertainty is gone. They know what's coming. They know what needs attention. They're not carrying the mental load of remembering everything because the [briefing carries it for them](/blog/managed-operations/morning-briefing).
+Not because their business got simpler. It didn't. They still have the same number of clients, the same complexity, the same demands. But the uncertainty is gone. They know what's coming. They know what needs attention. They're not carrying the mental load of remembering everything because the [briefing carries it for them](/blog/c1-s8-morning-briefing/).
 
 One coach put it this way: "I used to spend my first hour every morning figuring out what I needed to do. Now I spend it actually doing it."
 
 That hour back isn't just productivity. It's peace of mind. It's walking into your first session grounded instead of frazzled. It's knowing that the overdue invoice is being handled. That the new lead got a response. That nothing slipped.
 
-The morning briefing is the simplest operational change a coaching business can make. One message. Every morning. [Everything you need to know](/blog/coaching-automation/coaching-business-automation-guide).
+The morning briefing is the simplest operational change a coaching business can make. One message. Every morning. [Everything you need to know](/blog/c2-pillar-coaching-automation-guide/).
 
 Start your day knowing. Stop your day wondering.
 

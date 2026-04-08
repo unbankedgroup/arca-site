@@ -43,7 +43,7 @@ It's not a discipline problem. It's a design problem. The tool is in the wrong p
 
 This isn't about using WhatsApp Business to send broadcast messages. That's a marketing feature. This is about full operational management through a conversation.
 
-**Morning briefing.** At 7am, a message arrives. Today you have three sessions: Sarah at 10, James at 1, a discovery call with a new lead at 3:30. One invoice is overdue (David, 12 days). A follow-up went out to Maria overnight. She responded. She wants to re-enroll. [Your day starts clear, not scrambled](/blog/coaching-automation/coaching-morning-briefing).
+**Morning briefing.** At 7am, a message arrives. Today you have three sessions: Sarah at 10, James at 1, a discovery call with a new lead at 3:30. One invoice is overdue (David, 12 days). A follow-up went out to Maria overnight. She responded. She wants to re-enroll. [Your day starts clear, not scrambled](/blog/c2-s5-coaching-morning-briefing/).
 
 **Between sessions.** You finish with Sarah. You type: "Send Sarah her session notes and schedule next week." Done. You don't open a CRM. You don't draft an email. You sent a message the same way you'd message a friend. The system handles the rest.
 
@@ -65,7 +65,7 @@ A dashboard requires you to go somewhere, log in, and interpret charts. A weekly
 
 Same information. Zero effort.
 
-The coaches who do want to go deeper can always access a [command view](/blog/coaching-automation/coaching-business-automation-guide) through the conversation. "Show me this month's revenue." "Which clients haven't booked a session in 30 days?" "How many leads came in this quarter?"
+The coaches who do want to go deeper can always access a [command view](/blog/c2-pillar-coaching-automation-guide/) through the conversation. "Show me this month's revenue." "Which clients haven't booked a session in 30 days?" "How many leads came in this quarter?"
 
 You ask. You get the answer. You don't navigate.
 
@@ -75,7 +75,7 @@ The dashboard isn't the value. The data is the value. And data can arrive in a m
 
 Coaches have a unique operational pattern. Their days are structured around sessions. Between sessions, they have short gaps. 10 minutes here. 15 minutes there. Not enough time to sit down at a computer and work through a dashboard. But plenty of time to check a message and tap approve.
 
-[Chat-first operations](/blog/managed-operations/chat-first-operations) matches this rhythm perfectly. Every operational task becomes a quick interaction in WhatsApp:
+[Chat-first operations](/blog/c1-s9-chat-first-operations/) matches this rhythm perfectly. Every operational task becomes a quick interaction in WhatsApp:
 
 - Check schedule: 5 seconds
 - Send a follow-up: 10 seconds (approve a draft)
@@ -91,7 +91,7 @@ For coaches who work from home offices, co-working spaces, coffee shops, or betw
 
 There's a secondary benefit that coaches notice after a few weeks. When operations live in WhatsApp, the number of apps you need drops dramatically.
 
-Your scheduling tool, your invoicing tool, your CRM, your email follow-up platform, and the spreadsheet you were using to track everything. [All of those functions converge into one conversation](/blog/coaching-automation/coaching-tool-stack). Not because WhatsApp replaced them. Because the operations layer behind it connects them all and surfaces the results in one place.
+Your scheduling tool, your invoicing tool, your CRM, your email follow-up platform, and the spreadsheet you were using to track everything. [All of those functions converge into one conversation](/blog/c2-s9-coaching-tool-stack/). Not because WhatsApp replaced them. Because the operations layer behind it connects them all and surfaces the results in one place.
 
 The average coach pays $115-$146 per month for scattered subscriptions (based on Calendly, FreshBooks, HoneyBook, and Mailchimp pricing). Consolidating into one operations layer cuts that cost by 60-70% while reducing the 15-20 hours per week in admin to brief check-ins throughout the day.
 

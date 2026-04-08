@@ -31,7 +31,7 @@ For most coaches, the honest answer sounds like this. Leads would go unanswered.
 
 Not because you don't care. Because there's no system running when you're not running it.
 
-This is the difference between a business that depends on a founder and a [business that runs without one](/blog/managed-operations/business-runs-without-you). It's structural, not personal.
+This is the difference between a business that depends on a founder and a [business that runs without one](/blog/c1-s3-business-runs-without-you/). It's structural, not personal.
 
 Research from the U.S. Travel Association shows that 55% of small business owners don't take vacation at all, and another 20% work during their time off. For coaches and consultants, the number is even higher — 68% report feeling "unable to disconnect" from their business operations (Freelancers Union 2025).
 
@@ -45,7 +45,7 @@ Here's what needs to keep running while you're away.
 
 **Client communication.** Your current clients don't need you available 24/7. But they do need to know what's happening. An out-of-office message that tells them when you'll be back and what to do if something is urgent. Automated session reminders that keep upcoming appointments on their radar.
 
-**Follow-up sequences.** The check-in messages after sessions. The mid-week accountability nudges. The [automated follow-ups](/blog/coaching-automation/automated-follow-ups-coaches) that keep the coaching relationship alive between calls. These should run whether you're on a beach or behind your desk.
+**Follow-up sequences.** The check-in messages after sessions. The mid-week accountability nudges. The [automated follow-ups](/blog/c2-s4-automated-follow-ups-coaches/) that keep the coaching relationship alive between calls. These should run whether you're on a beach or behind your desk.
 
 **Invoice reminders.** An invoice that sits unpaid for seven extra days because you weren't there to follow up is money stuck in limbo. Payment reminders should go out on schedule regardless.
 
@@ -75,7 +75,7 @@ Your client Sarah gets her session reminder for Thursday. She responds to resche
 
 An invoice reminder goes out to James. He's five days overdue. The reminder is polite, specific, and on-brand. He pays that afternoon.
 
-Your [coaching operations system](/blog/coaching-automation/coaching-business-automation-guide) sends its weekly summary on Friday. Revenue collected this week: $1,200. Two sessions rescheduled. One new lead in the pipeline. Nothing urgent.
+Your [coaching operations system](/blog/c2-pillar-coaching-automation-guide/) sends its weekly summary on Friday. Revenue collected this week: $1,200. Two sessions rescheduled. One new lead in the pipeline. Nothing urgent.
 
 You read it on Sunday night over dinner. Or you don't. Either way, everything is handled.
 
@@ -107,7 +107,7 @@ If any of these currently depend on you personally doing them, that's the gap. N
 
 ## Building the safety net
 
-Some coaches try to [replace themselves with a virtual assistant](/blog/va-vs-platform/va-to-platform-transition) for vacation coverage. That works for some things. But a VA who doesn't know your client relationships can only do so much. And the handoff creates its own overhead.
+Some coaches try to [replace themselves with a virtual assistant](/blog/#c5) for vacation coverage. That works for some things. But a VA who doesn't know your client relationships can only do so much. And the handoff creates its own overhead.
 
 The better model is infrastructure that runs continuously. Not a person stepping in temporarily, but systems that work the same whether you're there or not. Your follow-ups don't need to know you're on vacation. Your invoice reminders don't care. Your lead response doesn't take time off.
 

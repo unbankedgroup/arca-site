@@ -70,7 +70,7 @@ GoHighLevel is a builder tool. You get a blank canvas and 200+ features. The lea
 
 You're a marketing agency managing multiple client accounts. Or you're a tech-savvy solopreneur who wants full control over every automation and doesn't mind investing 30-40 hours in setup.
 
-[GoHighLevel alternative for consultants](/blog/alternatives/gohighlevel-alternative-consultants) explains why GHL isn't ideal for service businesses that don't need funnel-building.
+[GoHighLevel alternative for consultants](/blog/c4-s11-gohighlevel-alternative-coaches/) explains why GHL isn't ideal for service businesses that don't need funnel-building.
 
 ---
 
@@ -110,7 +110,7 @@ You're a marketing agency managing multiple client accounts. Or you're a tech-sa
 
 You're a photographer, designer, or coach with straightforward client workflows. You value simplicity over power. You don't need complex automations or custom integrations.
 
-[HoneyBook alternative for coaches](/blog/alternatives/honeybook-alternative) covers when HoneyBook isn't enough.
+[HoneyBook alternative for coaches](/blog/c4-s2-honeybook-alternative/) covers when HoneyBook isn't enough.
 
 ---
 
@@ -149,7 +149,7 @@ You're a photographer, designer, or coach with straightforward client workflows.
 
 You're a creative professional who wants customizable workflows and doesn't mind spending 10-20 hours on setup. You've outgrown HoneyBook but don't need GHL's agency features.
 
-[Dubsado alternative for creative professionals](/blog/alternatives/dubsado-alternative) covers alternatives when Dubsado isn't the right fit.
+[Dubsado alternative for creative professionals](/blog/c4-s3-dubsado-alternative/) covers alternatives when Dubsado isn't the right fit.
 
 ---
 
@@ -189,7 +189,7 @@ You're a creative professional who wants customizable workflows and doesn't mind
 
 You're a coach or consultant who wants operations that work without becoming a systems administrator. You'd rather describe your business in plain English than configure workflow triggers. You value outcomes over features.
 
-[Non-technical founder guide](/blog/managed-operations/non-technical-founders) explains why Arca is built for this profile.
+[Non-technical founder guide](/blog/c1-s7-non-technical-founders/) explains why Arca is built for this profile.
 
 ---
 
@@ -269,7 +269,7 @@ Arca is different. It's not a builder tool. It's a service. You describe your bu
 
 For coaches and consultants who'd rather coach than configure, that's the right model.
 
-[Best operations platforms for service businesses](/blog/alternatives/best-operations-platforms) has the full category breakdown if you want to see more options.
+[Best operations platforms for service businesses](/blog/c4-pillar-best-operations-platforms/) has the full category breakdown if you want to see more options.
 
 ---
 

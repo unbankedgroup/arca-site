@@ -65,7 +65,7 @@ That's specific. It names the problem. It reminds them of the work you did. And 
 
 Two reasons. Time and discomfort.
 
-Time: building and maintaining a referral sequence takes hours that coaches don't have between sessions and admin work. When you're spending [15 to 20 hours a week on operations](/blog/managed-operations/operations-for-one), adding a referral workflow to the manual stack feels impossible.
+Time: building and maintaining a referral sequence takes hours that coaches don't have between sessions and admin work. When you're spending [15 to 20 hours a week on operations](/blog/c1-s6-operations-team-of-one/), adding a referral workflow to the manual stack feels impossible.
 
 Discomfort: many coaches feel awkward asking for referrals. It feels salesy. It feels transactional. It feels like it undermines the coaching relationship.
 
@@ -83,7 +83,7 @@ The flywheel effect is real. But it only turns if something is pushing it.
 
 ## Automating the ask without losing the personal touch
 
-The key to a referral system that works is that it [feels personal even when it's automated](/blog/coaching-automation/automated-follow-ups-coaches). The check-in message should sound like you typed it. The referral request should use language you'd actually use.
+The key to a referral system that works is that it [feels personal even when it's automated](/blog/c2-s4-automated-follow-ups-coaches/). The check-in message should sound like you typed it. The referral request should use language you'd actually use.
 
 This is where the draft-and-approve model matters. A message is prepared for you. You read it. If it sounds right, you approve it. If it needs a personal detail, you adjust it. Nothing goes to a former client that doesn't pass your filter.
 
@@ -91,7 +91,7 @@ But you didn't have to remember to write it. You didn't have to set a calendar r
 
 That's the difference between a referral strategy and a referral system. Strategy says "I should ask for referrals." System says "here's the message, ready to send, at exactly the right time."
 
-## From [leads going cold](/blog/coaching-automation/coaching-leads-going-cold) to a warm pipeline
+## From [leads going cold](/blog/c2-s3-coaching-leads-going-cold/) to a warm pipeline
 
 When your referral system runs consistently, something shifts. Your pipeline starts filling with warm leads instead of cold ones. Discovery calls get easier because the prospect already trusts you by proxy. Your marketing spend can decrease because organic referrals are doing the heavy lifting.
 

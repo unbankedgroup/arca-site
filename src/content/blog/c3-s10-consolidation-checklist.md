@@ -25,13 +25,13 @@ List every tool you're paying for. Next to each one, write what you actually use
 
 You'll likely find tools where the answer is "I log in once a month" or "I set it up and never went back." Those are easy cuts.
 
-But also look for tools where the answer is "I use 20% of the features and pay for 100%." That's where [the real subscription cost audit](/blog/tool-consolidation/saas-subscription-audit) gets interesting.
+But also look for tools where the answer is "I use 20% of the features and pay for 100%." That's where [the real subscription cost audit](/blog/c3-s1-saas-subscription-audit/) gets interesting.
 
 ### 2. How much are you paying in total?
 
 Add it up. Every subscription. Monthly and annual. Include the ones you forgot about.
 
-The average coaching or consulting practice spends $200-500/month on SaaS tools. Many spend more. And that's before you count the time cost of operating them. When you [calculate the real operations cost](/blog/managed-operations/operations-cost-mistake), the number is usually 10-20x higher than the subscription total.
+The average coaching or consulting practice spends $200-500/month on SaaS tools. Many spend more. And that's before you count the time cost of operating them. When you [calculate the real operations cost](/blog/c1-s2-operations-cost-mistake/), the number is usually 10-20x higher than the subscription total.
 
 ### 3. What's still manual despite having tools?
 
@@ -49,7 +49,7 @@ Every crack is a gap between tools. A place where the connection depends on your
 
 Your calendar would still show availability. Maybe your payment processor would still collect payments. But would invoices go out? Would leads get responses? Would clients get follow-ups?
 
-If the answer is "nothing runs without me," the problem isn't the tools. It's that [you're the infrastructure](/blog/managed-operations/business-runs-without-you).
+If the answer is "nothing runs without me," the problem isn't the tools. It's that [you're the infrastructure](/blog/c1-s3-business-runs-without-you/).
 
 ### 6. Can you export your data?
 
@@ -67,17 +67,17 @@ This is the question most people skip.
 
 You don't need Calendly. You need clients to book sessions without a 5-email back-and-forth. You don't need FreshBooks. You need invoices sent on time with automatic reminders. You don't need Mailchimp. You need follow-ups to go out consistently.
 
-If you focus on outcomes instead of tools, consolidation becomes clearer. You're not looking for "a tool that does scheduling AND invoicing." You're looking for a system that [handles the outcomes you need](/blog/tool-consolidation/replace-saas-stack-guide) without you operating it.
+If you focus on outcomes instead of tools, consolidation becomes clearer. You're not looking for "a tool that does scheduling AND invoicing." You're looking for a system that [handles the outcomes you need](/blog/c3-pillar-replace-saas-stack/) without you operating it.
 
 ### 9. What does "set up" look like?
 
 This is where most consolidation fails. The new platform has all the features you need. But setting it up takes 30 hours. Or requires hiring a specialist. Or demands that you learn a new workflow builder.
 
-[All-in-one tools fail](/blog/tool-consolidation/why-all-in-one-tools-fail) most often at implementation, not at capability. Before you switch, ask: who sets this up? How long does it take? And what happens when I get stuck?
+[All-in-one tools fail](/blog/c3-s3-why-all-in-one-tools-fail/) most often at implementation, not at capability. Before you switch, ask: who sets this up? How long does it take? And what happens when I get stuck?
 
 If the answer is "you figure it out from YouTube tutorials," you're about to repeat the cycle.
 
-The alternative: [done-for-you setup](/blog/managed-operations/diagnosis-before-prescription) where someone diagnoses your business and builds the system for you. Different model. Different outcome.
+The alternative: [done-for-you setup](/blog/c1-s4-diagnosis-before-prescription/) where someone diagnoses your business and builds the system for you. Different model. Different outcome.
 
 ### 10. What's your timeline?
 
@@ -85,7 +85,7 @@ Be honest about when you need this working. If you're in a slow season and have 
 
 Most consolidation attempts fail because the founder starts the migration, gets busy with client work, and abandons it halfway through. The tools are half-configured. Data is half-migrated. It's worse than before.
 
-Match the setup model to your available bandwidth. If you don't have bandwidth, choose a model that [doesn't require it](/blog/managed-operations/7-day-build-explained).
+Match the setup model to your available bandwidth. If you don't have bandwidth, choose a model that [doesn't require it](/blog/c1-s5-7-day-build-explained/).
 
 ## After the checklist
 
@@ -93,9 +93,9 @@ If you answered these questions honestly, you know one of three things:
 
 **You're fine.** Your current stack works. The pain is manageable. Keep what you have and revisit in 6 months.
 
-**You need to cut.** You're paying for tools you don't use. Cancel the dead weight. [Audit the subscriptions](/blog/tool-consolidation/saas-subscription-audit), keep what works, cut the rest.
+**You need to cut.** You're paying for tools you don't use. Cancel the dead weight. [Audit the subscriptions](/blog/c3-s1-saas-subscription-audit/), keep what works, cut the rest.
 
-**You need to consolidate the operations layer.** The tools are fine individually but the connections between them depend on you. That's the [real problem](/blog/managed-operations/operations-audit-checklist). And it's solvable.
+**You need to consolidate the operations layer.** The tools are fine individually but the connections between them depend on you. That's the [real problem](/blog/c1-s10-operations-audit-checklist/). And it's solvable.
 
 The checklist isn't about finding the right tool. It's about understanding what you actually need. Most people don't need fewer tools. They need to stop being the glue between them.
 

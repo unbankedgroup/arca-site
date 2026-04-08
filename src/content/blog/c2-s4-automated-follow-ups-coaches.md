@@ -65,7 +65,7 @@ A client finishes their package. The last session happens. And then... nothing. 
 
 90 days later: "It's been a few months. If you're ever thinking about another round of coaching, or just want a one-off check-in, the door is always open."
 
-This sequence does what most coaches intend to do but never get around to. It keeps the relationship warm. It opens the door to renewal without pressure. And it turns completed clients into [referral sources](/blog/coaching-automation/coaching-referral-system) because they feel remembered, not transactional.
+This sequence does what most coaches intend to do but never get around to. It keeps the relationship warm. It opens the door to renewal without pressure. And it turns completed clients into [referral sources](/blog/c2-s8-coaching-referral-system/) because they feel remembered, not transactional.
 
 ## The "draft and approve" model
 
@@ -77,7 +77,7 @@ The model that works for coaches is draft and approve. The system generates the 
 
 This takes 10-15 seconds per message. Glance at the draft. Does it sound right? Approve. Need to add a personal detail? Edit one line. Approve. Not the right time for this client? Skip.
 
-The system handles the timing, the triggers, and the delivery. The coach handles the judgment. That's the split that makes [coaching automation](/blog/coaching-automation/coaching-business-automation-guide) work without losing the personal touch.
+The system handles the timing, the triggers, and the delivery. The coach handles the judgment. That's the split that makes [coaching automation](/blog/c2-pillar-coaching-automation-guide/) work without losing the personal touch.
 
 ## What this replaces
 
@@ -87,7 +87,7 @@ Without follow-up sequences, most coaches rely on one of two approaches.
 
 **Option B: Nothing.** The space between sessions is empty. The client works on their own. Some do great. Some drift. The coach doesn't know until the next session. Retention drops because clients don't feel supported between meetings.
 
-Automated follow-ups with coaching oversight replace both approaches. Every client gets consistent touchpoints. The coach stays involved without being buried. The experience [feels personal because it is](/blog/coaching-automation/coaching-client-onboarding). The coach approved every message. The system just made sure it happened on time.
+Automated follow-ups with coaching oversight replace both approaches. Every client gets consistent touchpoints. The coach stays involved without being buried. The experience [feels personal because it is](/blog/c2-s2-coaching-client-onboarding/). The coach approved every message. The system just made sure it happened on time.
 
 ## The retention math
 
@@ -97,7 +97,7 @@ For coaching businesses specifically, clients who receive structured between-ses
 
 Follow-ups directly impact retention. Clients who feel supported between sessions are more likely to complete their package, see results, and re-enroll. They're also more likely to refer others.
 
-One coach I talked to added mid-week check-ins and package milestone messages. Her completion rate went from 70% to 90%. Her re-enrollment rate doubled. She didn't change her coaching. She changed what happened [when she wasn't in the room](/blog/coaching-automation/coaching-vacation-guide).
+One coach I talked to added mid-week check-ins and package milestone messages. Her completion rate went from 70% to 90%. Her re-enrollment rate doubled. She didn't change her coaching. She changed what happened [when she wasn't in the room](/blog/c2-s7-coaching-vacation-guide/).
 
 The messages your clients should be getting aren't complicated. They're just consistent. And consistency is the one thing that's hardest to do manually.
 

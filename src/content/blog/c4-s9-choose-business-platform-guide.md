@@ -31,7 +31,7 @@ This is the most important question. It eliminates half the market immediately.
 
 If you enjoy configuring systems, testing automations, and building workflows on a Saturday afternoon, platforms like GoHighLevel, Dubsado, or Zapier are in the running. They're powerful. They reward the builder.
 
-If you'd rather describe how your business works and have someone set it up, you need a service model. [Managed operations](/blog/coaching-automation/coaching-business-automation-guide) where diagnosis comes first and setup happens for you, not by you.
+If you'd rather describe how your business works and have someone set it up, you need a service model. [Managed operations](/blog/c2-pillar-coaching-automation-guide/) where diagnosis comes first and setup happens for you, not by you.
 
 73% of small business owners say they want easier-to-use tools. If you're in that majority, the builder platforms will frustrate you. 46.8% of business owners cite lack of training as their top barrier to adopting new tools. That's not a character flaw. It's a signal about which type of platform you need.
 
@@ -47,9 +47,9 @@ Paying for agency features you'll never use isn't just a waste of money. It's a 
 
 Be honest. Not your aspirational budget. Your real one.
 
-[HoneyBook's recent price increases](/blog/alternatives/honeybook-alternative-price-hike) pushed the Essentials tier to $59 per month. GoHighLevel's real cost (including email, SMS, and deliverability fixes) runs $150 to $300 per month. Dubsado is $40 per month but often requires a $500 to $1,500 setup specialist.
+[HoneyBook's recent price increases](/blog/c4-s2-honeybook-alternative/) pushed the Essentials tier to $59 per month. GoHighLevel's real cost (including email, SMS, and deliverability fixes) runs $150 to $300 per month. Dubsado is $40 per month but often requires a $500 to $1,500 setup specialist.
 
-[Flat pricing platforms](/blog/alternatives/flat-pricing-no-credits) tell you exactly what you'll pay. Credit-based platforms can't. If budget predictability matters to you, eliminate the credit-based options now.
+[Flat pricing platforms](/blog/c4-s6-flat-pricing-no-credits/) tell you exactly what you'll pay. Credit-based platforms can't. If budget predictability matters to you, eliminate the credit-based options now.
 
 The average coach spends $115 to $146 per month across disconnected tools. If the replacement platform costs more than that and adds setup hours, the math doesn't work.
 
@@ -59,7 +59,7 @@ Count your current stack. Scheduling, invoicing, email marketing, CRM, spreadshe
 
 If you're replacing one tool, a simple swap might work. HoneyBook replaces a basic CRM. Calendly handles scheduling. Each does one thing.
 
-If you're replacing four to six tools, you need a platform that connects everything. Not just another single-purpose app. The [operations audit checklist](/blog/managed-operations/operations-audit-checklist) can help you map exactly what you're currently using and where the gaps are.
+If you're replacing four to six tools, you need a platform that connects everything. Not just another single-purpose app. The [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) can help you map exactly what you're currently using and where the gaps are.
 
 70% of small businesses that switched to integrated software saw measurable productivity gains within six months. The key word is "integrated." Replacing six disconnected tools with one disconnected tool doesn't help.
 
@@ -67,7 +67,7 @@ If you're replacing four to six tools, you need a platform that connects everyth
 
 GoHighLevel takes 30 to 40 hours to self-configure. Dubsado users report weeks to months of setup, often requiring a specialist. HoneyBook is faster to start but limited in automation depth.
 
-If you need operations running next week, not next quarter, the setup timeline is a hard filter. The [best platforms for coaches](/blog/alternatives/best-operations-platforms-2026) differ dramatically on time-to-value. Some promise power in exchange for weeks of your time. Others promise working operations in days.
+If you need operations running next week, not next quarter, the setup timeline is a hard filter. The [best platforms for coaches](/blog/c4-pillar-best-operations-platforms/) differ dramatically on time-to-value. Some promise power in exchange for weeks of your time. Others promise working operations in days.
 
 Ask yourself: can you afford 30 hours away from client work right now? At $200 per hour, that's $6,000 in opportunity cost before the platform does anything useful.
 

@@ -25,7 +25,7 @@ Here's the decision framework I use. If two or more of these are true, consolida
 
 The average small business uses 20-30% of the features in each tool they pay for. You bought HoneyBook for contracts and invoicing but you're not using the project management. You got Mailchimp for email campaigns but you send one newsletter a month. You have Calendly Pro but you only use the basic scheduling link.
 
-Run the numbers. [Add up what you're paying](/blog/tool-consolidation/calendly-freshbooks-honeybook-cost) and ask yourself: am I paying for five tools or am I paying for five partial tools?
+Run the numbers. [Add up what you're paying](/blog/c3-s5-calendly-freshbooks-honeybook-cost/) and ask yourself: am I paying for five tools or am I paying for five partial tools?
 
 ### Signal 2: You're manually copying data between tools
 
@@ -37,13 +37,13 @@ Every manual data transfer is a potential failure point. Miss one and a client f
 
 A lead fills out your form. Your form tool captures it. But your CRM doesn't know about it until you manually add them. And your follow-up system (email) doesn't know until you write and send a message. And your calendar doesn't know until you send a scheduling link.
 
-Every gap between tools is a chance for something to slip. The follow-up that's 18 hours late because you didn't see the notification. The invoice that sits unsent for a week because you forgot to open FreshBooks. The [lead that goes cold](/blog/coaching-automation/coaching-leads-going-cold) because nobody responded while you were in sessions.
+Every gap between tools is a chance for something to slip. The follow-up that's 18 hours late because you didn't see the notification. The invoice that sits unsent for a week because you forgot to open FreshBooks. The [lead that goes cold](/blog/c2-s3-coaching-leads-going-cold/) because nobody responded while you were in sessions.
 
 ### Signal 4: You spend more time managing tools than doing work
 
 If your morning routine includes opening 6 tabs to piece together what needs your attention, the tools are managing you. You've become the integration layer. The human middleware between apps that don't talk to each other.
 
-At that point, the [SaaS fatigue](/blog/tool-consolidation/saas-fatigue) isn't about the number of tools. It's about the fact that YOU are the only thing connecting them.
+At that point, the [SaaS fatigue](/blog/c3-s8-saas-fatigue/) isn't about the number of tools. It's about the fact that YOU are the only thing connecting them.
 
 ## When to keep a tool
 
@@ -70,7 +70,7 @@ The operational layer. This is where the mess lives.
 
 These tools need to talk to each other. A booked session should trigger a reminder. A completed session should trigger a follow-up. An overdue invoice should trigger a nudge. A new client should trigger an onboarding sequence.
 
-When these things are disconnected, you become the connection. When they're connected, they [run without you thinking about them](/blog/managed-operations/managed-operations-guide).
+When these things are disconnected, you become the connection. When they're connected, they [run without you thinking about them](/blog/c1-pillar-managed-operations-guide/).
 
 ## The consolidation test
 
@@ -80,13 +80,13 @@ Before you switch anything, answer these questions:
 2. How much time do I spend moving data between tools each week?
 3. What fell through the cracks in the last month because of disconnected tools?
 4. If I left for a week, which of these tools would keep running without me?
-5. Am I paying for 5 tools or am I paying for [one outcome spread across 5 partial solutions](/blog/tool-consolidation/replace-saas-stack-guide)?
+5. Am I paying for 5 tools or am I paying for [one outcome spread across 5 partial solutions](/blog/c3-pillar-replace-saas-stack/)?
 
-If the answers make you uncomfortable, consolidation makes sense. Not because fewer tools is inherently better. Because your current stack is [costing more than the subscription fees](/blog/managed-operations/operations-cost-mistake).
+If the answers make you uncomfortable, consolidation makes sense. Not because fewer tools is inherently better. Because your current stack is [costing more than the subscription fees](/blog/c1-s2-operations-cost-mistake/).
 
 The goal isn't minimalism. It's operational infrastructure that works without you being the glue.
 
-Keep what works. Replace the duct tape. Run your [coaching business from one conversation](/blog/coaching-automation/coaching-business-whatsapp) instead of six disconnected dashboards.
+Keep what works. Replace the duct tape. Run your [coaching business from one conversation](/blog/c2-s6-coaching-business-whatsapp/) instead of six disconnected dashboards.
 
 ---
 

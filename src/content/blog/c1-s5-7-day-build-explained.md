@@ -44,7 +44,7 @@ That's the bottleneck Arca's 7-Day Build eliminates. You don't design anything. 
 
 ## Day 1-2: Diagnosis and mapping
 
-Everything starts with the [diagnostic conversation](/blog/managed-operations/diagnosis-before-prescription). One call. Usually 20-30 minutes.
+Everything starts with the [diagnostic conversation](/blog/c1-s4-diagnosis-before-prescription/). One call. Usually 20-30 minutes.
 
 We're not selling during this call. We're listening. The questions are specific:
 
@@ -114,7 +114,7 @@ The first week after go-live, we monitor everything. If a workflow misfires or a
 
 Honest question I get sometimes: if you're building it, why does it take a whole week?
 
-Because the [diagnosis matters](/blog/managed-operations/diagnosis-before-prescription). Because the review stages matter. Because testing matters. We could technically configure the system faster. But rushing the diagnosis means building the wrong thing. Skipping the review means sending messages you wouldn't have approved. Cutting testing means bugs in the first week when trust is most fragile.
+Because the [diagnosis matters](/blog/c1-s4-diagnosis-before-prescription/). Because the review stages matter. Because testing matters. We could technically configure the system faster. But rushing the diagnosis means building the wrong thing. Skipping the review means sending messages you wouldn't have approved. Cutting testing means bugs in the first week when trust is most fragile.
 
 Seven days is fast for a full operations setup. It's slow enough to be right.
 
@@ -135,9 +135,9 @@ That's the 7-Day Build. Not a template. Not a tutorial. Not a dashboard with 40 
 ---
 
 *Related reading:*
-- [The Managed Operations Guide](/blog/managed-operations/managed-operations-guide) — What managed operations means and why it matters
-- [Diagnosis Before Prescription](/blog/managed-operations/diagnosis-before-prescription) — Why we start with questions, not solutions
-- [Operations for a Team of One](/blog/managed-operations/operations-team-of-one) — How to think about ops when you're solo
+- [The Managed Operations Guide](/blog/c1-pillar-managed-operations-guide/) — What managed operations means and why it matters
+- [Diagnosis Before Prescription](/blog/c1-s4-diagnosis-before-prescription/) — Why we start with questions, not solutions
+- [Operations for a Team of One](/blog/c1-s6-operations-team-of-one/) — How to think about ops when you're solo
 
 ---
 

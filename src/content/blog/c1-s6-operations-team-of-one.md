@@ -33,7 +33,7 @@ It works until it doesn't. And it stops working around the 8-12 client mark, whe
 
 A 10-person consulting firm has structure baked in. Someone handles intake. Someone sends invoices. Someone follows up with leads. Someone preps the calendar for the week. These are not sophisticated functions. They're routine, repeatable, and boring. But they're the reason the firm runs smoothly.
 
-A solo consultant has the same client expectations. The same need for prompt follow-ups, clean onboarding, timely invoices, and proactive communication. But none of the infrastructure. For coaches specifically, [the automation gap is even more visible](/blog/coaching-automation/coaching-business-automation-guide) because the work is so relational that admin tasks feel like a betrayal of what they signed up for.
+A solo consultant has the same client expectations. The same need for prompt follow-ups, clean onboarding, timely invoices, and proactive communication. But none of the infrastructure. For coaches specifically, [the automation gap is even more visible](/blog/c2-pillar-coaching-automation-guide/) because the work is so relational that admin tasks feel like a betrayal of what they signed up for.
 
 The result is predictable. Things slip.
 
@@ -51,7 +51,7 @@ None of these failures are about skill. They're about capacity. One person canno
 
 Let's break down what a well-run small firm does every day without thinking about it:
 
-**Morning briefing.** Someone reviews the calendar, checks outstanding invoices, flags leads that need attention, and surfaces anything unusual. This takes 10 minutes when a system does it. It takes 45 minutes when you're opening six tabs and cross-referencing a spreadsheet. Knowledge workers switch between apps [1,100 times per day on average](/blog/tool-consolidation/six-open-tabs-every-morning). That context switching costs up to 40% of productive time.
+**Morning briefing.** Someone reviews the calendar, checks outstanding invoices, flags leads that need attention, and surfaces anything unusual. This takes 10 minutes when a system does it. It takes 45 minutes when you're opening six tabs and cross-referencing a spreadsheet. Knowledge workers switch between apps [1,100 times per day on average](/blog/c3-s2-six-open-tabs-every-morning/). That context switching costs up to 40% of productive time.
 
 **Client follow-ups.** After a session, a check-in message goes out. After a proposal, a follow-up goes out on day 3, day 7, day 14. After onboarding, a satisfaction check goes out on day 30. These are not creative tasks. They're sequences. But 76% of businesses spend more than two hours a week chasing up follow-ups manually. When one person manages 15 clients, the sequences live in their head and gaps appear.
 
@@ -71,19 +71,19 @@ The tools aren't the problem. The absence of operational infrastructure is the p
 
 A 10-person team doesn't succeed because they have better software. They succeed because someone designed the flow between systems. Someone decided: when X happens, Y follows. When a lead comes in, this is what we do. When a session ends, this is what goes out.
 
-That design layer is what solo founders are missing. Not another app. A foundation. If you want to see exactly where your gaps are, the [operations audit checklist](/blog/managed-operations/operations-audit-checklist) takes 15 minutes and maps them all.
+That design layer is what solo founders are missing. Not another app. A foundation. If you want to see exactly where your gaps are, the [operations audit checklist](/blog/c1-s10-operations-audit-checklist/) takes 15 minutes and maps them all.
 
-The [six open tabs problem](/blog/tool-consolidation/six-open-tabs-every-morning) shows why adding another app isn't the answer — consolidation is.
+The [six open tabs problem](/blog/c3-s2-six-open-tabs-every-morning/) shows why adding another app isn't the answer — consolidation is.
 
 ## What managed operations changes
 
-[Managed operations](/blog/managed-operations/managed-operations-guide) is the idea that your business operations should be diagnosed, configured, and run for you. Not by you.
+[Managed operations](/blog/c1-pillar-managed-operations-guide/) is the idea that your business operations should be diagnosed, configured, and run for you. Not by you.
 
 For a solo consultant, that means:
 
-Your morning starts with a briefing. Not six tabs. [One message that tells you what happened overnight, what's on today, and what needs your attention](/blog/managed-operations/morning-briefing).
+Your morning starts with a briefing. Not six tabs. [One message that tells you what happened overnight, what's on today, and what needs your attention](/blog/c1-s8-morning-briefing/).
 
-Coaches get a specialized version — see the [coaching morning briefing](/blog/coaching-automation/coaching-morning-briefing) for how client progress tracking changes the format.
+Coaches get a specialized version — see the [coaching morning briefing](/blog/c2-s5-coaching-morning-briefing/) for how client progress tracking changes the format.
 
 Your follow-ups run on schedule. Not when you remember. Clients get consistent communication because the system handles sequencing. You handle the relationship.
 
@@ -93,11 +93,11 @@ Your onboarding is professional every single time. New clients get the same thor
 
 Your leads get responses in minutes, not days. The window between "interested" and "booked someone else" closes before it opens.
 
-This is what [running a business that works without you being the bottleneck](/blog/managed-operations/business-runs-without-you) looks like. Not a bigger team. Not more tools. A system that handles the operational basics so you can focus on the work you're actually good at.
+This is what [running a business that works without you being the bottleneck](/blog/c1-s3-business-runs-without-you/) looks like. Not a bigger team. Not more tools. A system that handles the operational basics so you can focus on the work you're actually good at.
 
 ## The math is simple
 
-If you bill $200 an hour and you're spending 15 hours a week on admin, that's $3,000 a week in time cost. [$156,000 a year on work that isn't client work](/blog/managed-operations/operations-cost-mistake). Coaches and consultants specifically spend 20 to 30 hours per week on non-client tasks, with scheduling alone consuming 4 to 6 hours weekly.
+If you bill $200 an hour and you're spending 15 hours a week on admin, that's $3,000 a week in time cost. [$156,000 a year on work that isn't client work](/blog/c1-s2-operations-cost-mistake/). Coaches and consultants specifically spend 20 to 30 hours per week on non-client tasks, with scheduling alone consuming 4 to 6 hours weekly.
 
 A managed operations platform costs $97 a month. It handles the work that's costing you $3,000 a week. The ROI math is simple: 70% of small businesses that switched to integrated software saw measurable productivity gains within 6 months.
 

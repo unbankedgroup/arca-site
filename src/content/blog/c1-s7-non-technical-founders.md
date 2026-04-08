@@ -29,7 +29,7 @@ That's not laziness. That's clarity.
 
 The non-technical founder business automation market is full of products that say "no code required" and then hand you a blank canvas with 200 drag-and-drop blocks. That's still building. You just replaced typing with clicking.
 
-The real question has never been "how do I automate my business?" It's "who will do it for me?" This is exactly what the [C1: Managed Operations cluster](/blog/managed-operations/managed-operations-guide) addresses — operations as a service, not a DIY project.
+The real question has never been "how do I automate my business?" It's "who will do it for me?" This is exactly what the [C1: Managed Operations cluster](/blog/c1-pillar-managed-operations-guide/) addresses — operations as a service, not a DIY project.
 
 ## Builder tools are built for builders
 
@@ -39,9 +39,9 @@ That's not most coaches. That's not most consultants. That's not most solo servi
 
 Most founders I've talked to didn't start their business because they love systems architecture. They started it because they're good at coaching leadership teams. Or because they help people get healthy. Or because they know how to fix broken marketing strategies.
 
-Asking them to build automations in a visual workflow tool is like asking a chef to wire their own kitchen. They can probably figure it out. But that's not what they should be spending their time on. And the result will never be as good as if someone who does this every day handled it for them. If you've tried the [Zapier alternative for non-technical founders](/blog/alternatives/zapier-alternative-non-technical), you're not alone — 23% of Zapier workflows fail within the first month.
+Asking them to build automations in a visual workflow tool is like asking a chef to wire their own kitchen. They can probably figure it out. But that's not what they should be spending their time on. And the result will never be as good as if someone who does this every day handled it for them. If you've tried the [Zapier alternative for non-technical founders](/blog/c4-s4-zapier-alternative/), you're not alone — 23% of Zapier workflows fail within the first month.
 
-The [flat pricing vs credits model](/blog/alternatives/flat-pricing-no-credits) shows why predictable pricing matters for non-technical founders who can't estimate usage.
+The [flat pricing vs credits model](/blog/c4-s6-flat-pricing-no-credits/) shows why predictable pricing matters for non-technical founders who can't estimate usage.
 
 ## The "no code" lie
 
@@ -82,15 +82,15 @@ A 2026 survey found that 73% of small business owners want easier-to-use tools, 
 
 ## Operations should be a service, not a project
 
-This is the shift that matters. Operations setup shouldn't be something you do to your business. It should be something that's done for your business. This is the core principle behind [Managed Operations](/blog/managed-operations/managed-operations-guide) — the C1 pillar.
+This is the shift that matters. Operations setup shouldn't be something you do to your business. It should be something that's done for your business. This is the core principle behind [Managed Operations](/blog/c1-pillar-managed-operations-guide/) — the C1 pillar.
 
 The difference looks like this:
 
 **DIY approach:** You sign up for a platform. You watch tutorials. You map your processes. You build automations. You test. You fix. You maintain. You spend 20 to 40 hours over several weeks. Maybe it works. Maybe you give up halfway. For solo coaches, GoHighLevel specifically "often means weeks spent tweaking software instead of coaching clients."
 
-**Done-for-you approach:** Someone asks you how your business works. What tools you use. Where things fall through the cracks. What a good month looks like. Then they build the entire operational setup around your answers. You're live in a week — the same [7-Day Build process](/blog/managed-operations/7-day-build-explained) we use for every client.
+**Done-for-you approach:** Someone asks you how your business works. What tools you use. Where things fall through the cracks. What a good month looks like. Then they build the entire operational setup around your answers. You're live in a week — the same [7-Day Build process](/blog/c1-s5-7-day-build-explained/) we use for every client.
 
-The second approach is what [diagnosis before prescription](/blog/managed-operations/diagnosis-before-prescription) looks like. It's the same process a good consultant uses with their own clients. Listen first. Understand the actual problem. Then build the right solution.
+The second approach is what [diagnosis before prescription](/blog/c1-s4-diagnosis-before-prescription/) looks like. It's the same process a good consultant uses with their own clients. Listen first. Understand the actual problem. Then build the right solution.
 
 It turns out most founders respond really well to this model. Because it's the same model they use in their own work.
 
@@ -104,9 +104,9 @@ You don't build a workflow. You describe what you need. "When a new client signs
 
 You don't maintain integrations. Your calendar, your payment processor, your email. All connected. When something changes, you say so in the conversation and the adjustment happens.
 
-This is what [chat-first operations](/blog/managed-operations/chat-first-operations) means in practice. The interface is a conversation. The complexity lives underneath. You never touch it.
+This is what [chat-first operations](/blog/c1-s9-chat-first-operations/) means in practice. The interface is a conversation. The complexity lives underneath. You never touch it.
 
-For non-technical founders, this isn't a nice-to-have. It's the only model that actually gets adopted and used daily. Because it matches how they already communicate. No learning curve. No new habits. Just talking to something that handles things. Coaches who aren't technical [feel this even more acutely](/blog/coaching-automation/not-tech-savvy-for-you).
+For non-technical founders, this isn't a nice-to-have. It's the only model that actually gets adopted and used daily. Because it matches how they already communicate. No learning curve. No new habits. Just talking to something that handles things. Coaches who aren't technical [feel this even more acutely](/blog/c2-s10-not-tech-savvy-for-you/).
 
 ## The real barrier was never technical skill
 
@@ -116,11 +116,11 @@ What they lack isn't technical ability. It's time. And patience for tools that r
 
 The question is whether the operations industry will keep building for builders. Or start building for the people who actually need operations help: the ones running real businesses, serving real clients, and losing real revenue to operational gaps they don't have time to close.
 
-The [alternative space](/blog/alternatives/flat-pricing-no-credits) is full of powerful platforms. But power isn't what most founders need. They need something that works without them having to make it work. If you're curious whether your operations actually need attention, the [15-minute audit checklist](/blog/managed-operations/operations-audit-checklist) is a good place to start.
+The [alternative space](/blog/c4-s6-flat-pricing-no-credits/) is full of powerful platforms. But power isn't what most founders need. They need something that works without them having to make it work. If you're curious whether your operations actually need attention, the [15-minute audit checklist](/blog/c1-s10-operations-audit-checklist/) is a good place to start.
 
 That's a different product. That's a service, not a tool.
 
-Not sure if you're technical enough to DIY? Take the [15-minute operations audit](/blog/managed-operations/operations-audit-checklist) — it tells you where you stand. Or read about the [7-Day Build process](/blog/managed-operations/7-day-build-explained) where we set everything up for you.
+Not sure if you're technical enough to DIY? Take the [15-minute operations audit](/blog/c1-s10-operations-audit-checklist/) — it tells you where you stand. Or read about the [7-Day Build process](/blog/c1-s5-7-day-build-explained/) where we set everything up for you.
 
 ---
 

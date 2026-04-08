@@ -73,7 +73,7 @@ Open door. Some clients have something they need to say but don't have a box for
 
 **Don't ask what you already know.** If she told you about her business on the discovery call, don't make her repeat it in the form. Reference it instead: "You mentioned on our call that you're running a nutrition practice with 18 clients. Has anything changed since we spoke?"
 
-**Make it part of the sequence.** The intake form should arrive within hours of signing, not days. Clients are most engaged immediately [after the decision](/blog/client-onboarding/first-48-hours-onboarding). Use that momentum. The form is the second step of a [structured onboarding flow](/blog/client-onboarding/client-onboarding-automation-guide), not a standalone task.
+**Make it part of the sequence.** The intake form should arrive within hours of signing, not days. Clients are most engaged immediately [after the decision](/blog/c6-s1-first-48-hours-onboarding/). Use that momentum. The form is the second step of a [structured onboarding flow](/blog/c6-pillar-client-onboarding-automation/), not a standalone task.
 
 ## What to do with the answers
 
@@ -81,15 +81,15 @@ The intake form is only as valuable as what happens after submission. The client
 
 **Step 1:** The coach gets notified and reviews the responses before the first session. Not during. Before.
 
-**Step 2:** The coach sends a brief personalized prep note referencing specific answers. "You mentioned that delegation is your biggest struggle right now. I'd like to start there." This is the step that transforms the [onboarding experience](/blog/client-onboarding/automated-welcome-sequence).
+**Step 2:** The coach sends a brief personalized prep note referencing specific answers. "You mentioned that delegation is your biggest struggle right now. I'd like to start there." This is the step that transforms the [onboarding experience](/blog/c6-s2-automated-welcome-sequence/).
 
 **Step 3:** The responses get stored with the client profile so they're accessible throughout the engagement. Session 6, when the client mentions progress on delegation, the coach can reference the original answer.
 
-A [diagnostic approach](/blog/managed-operations/diagnosis-before-prescription) to intake means the form serves the coaching, not just the filing system. Every question should earn its place by making the first session better.
+A [diagnostic approach](/blog/c1-s4-diagnosis-before-prescription/) to intake means the form serves the coaching, not just the filing system. Every question should earn its place by making the first session better.
 
 If your current form has 30 fields and checkboxes, cut it to 7 questions and open text. Watch what happens to the quality of answers. And the quality of your first sessions.
 
-Want to know how your overall [onboarding experience](/blog/client-onboarding/onboarding-experience-audit) stacks up? Start with the intake form. It's the first thing clients interact with after saying yes.
+Want to know how your overall [onboarding experience](/blog/#c6) stacks up? Start with the intake form. It's the first thing clients interact with after saying yes.
 
 ## FAQ
 

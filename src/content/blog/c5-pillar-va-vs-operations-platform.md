@@ -23,7 +23,7 @@ Every week someone asks me the same thing. Should I hire a virtual assistant or 
 
 I spent years in capital markets watching firms build operations teams, and now I build [Arca](https://runarca.xyz), an operations platform for service businesses. So yes, I have a bias. I am going to be upfront about that. But I have also watched enough business owners try both approaches to give you the honest version of this comparison. Not the version that sells you something. The version that saves you from a bad decision.
 
-Some of you will read this and realize you need to [replace your VA with a platform entirely](/blog/va-vs-platform/va-to-platform-transition). Others will realize a VA is exactly what you need. Most will land somewhere in between. That is the honest answer, and I will show you how to figure out which camp you belong to.
+Some of you will read this and realize you need to [replace your VA with a platform entirely](/blog/#c5). Others will realize a VA is exactly what you need. Most will land somewhere in between. That is the honest answer, and I will show you how to figure out which camp you belong to.
 
 <div class="stat-grid">
   <div class="stat"><div class="num">$6-9k/mo</div><div class="lbl">all-in cost of a US-based VA (2-3x sticker)</div></div>
@@ -58,7 +58,7 @@ Those numbers look manageable. Here is what they leave out.
 
 The all-in cost of a VA is 2 to 3 times the sticker price. That $1,200 per month Filipino VA actually costs $2,400 to $3,600. That $3,000 per month US-based VA is really $6,000 to $9,000 when you count everything.
 
-I break all of this down with specific numbers in [the real cost of a virtual assistant](/blog/va-vs-platform/virtual-assistant-real-cost). If you are doing the math on your own VA, start there.
+I break all of this down with specific numbers in [the real cost of a virtual assistant](/blog/c5-s3-when-to-hire-virtual-assistant/). If you are doing the math on your own VA, start there.
 
 ## What VAs do well
 
@@ -72,7 +72,7 @@ I am not here to tell you VAs are worthless. That would be dishonest. There are 
 
 **Tasks that change daily.** Some work has no repeatable pattern. It is different every time. One day your VA is coordinating a last-minute venue change for an event. The next day they are troubleshooting a vendor dispute. The variety itself is the job description.
 
-I wrote a full breakdown of [what to keep your VA for](/blog/va-vs-platform/what-to-keep-va-for) if you want to think through which of your VA's current tasks genuinely need a human.
+I wrote a full breakdown of [what to keep your VA for](/blog/#c5) if you want to think through which of your VA's current tasks genuinely need a human.
 
 ## Where VAs struggle
 
@@ -80,11 +80,11 @@ Here is where the honest part of this comparison gets uncomfortable for anyone c
 
 **Consistency.** Your VA is a person. They have good days and bad days. They forget things. They interpret instructions differently depending on their mood, their workload, or how clearly you communicated. I am not faulting them. I am describing reality. A task that runs perfectly on Monday might get skipped or done differently on Thursday.
 
-**Hours.** VAs work 40 hours per week at most. Your business needs to operate 168 hours per week. A lead comes in at 11pm on a Saturday. Research shows that leads contacted within 5 minutes are 9 times more likely to convert. Your VA will get to it Monday morning. By then, that lead has already contacted your competitor who responded at [3am on a Saturday](/blog/va-vs-platform/operations-at-3am).
+**Hours.** VAs work 40 hours per week at most. Your business needs to operate 168 hours per week. A lead comes in at 11pm on a Saturday. Research shows that leads contacted within 5 minutes are 9 times more likely to convert. Your VA will get to it Monday morning. By then, that lead has already contacted your competitor who responded at [3am on a Saturday](/blog/#c5).
 
 **Scaling.** You cannot give a VA more hours than exist in a day. When your business grows and task volume increases, the answer is always "hire another VA." Which means another round of recruiting, training, management, and tool seats. The cost scales linearly with volume. There is no efficiency gain.
 
-**Single point of failure.** This is the one that keeps me up at night when I talk to business owners. Your VA holds institutional knowledge in their head. Your processes live in their habits, not in documented systems. When they quit, and the [average tenure is 6 to 12 months](/blog/va-vs-platform/va-quit-business-risk), you do not just lose an employee. You lose your entire operational infrastructure.
+**Single point of failure.** This is the one that keeps me up at night when I talk to business owners. Your VA holds institutional knowledge in their head. Your processes live in their habits, not in documented systems. When they quit, and the [average tenure is 6 to 12 months](/blog/#c5), you do not just lose an employee. You lose your entire operational infrastructure.
 
 ## What an operations platform handles
 
@@ -100,9 +100,9 @@ An operations platform does one thing extremely well. It executes repeatable tas
 
 **Client onboarding.** Welcome email. Document collection. Intake form. First meeting scheduling. Resource delivery. The same sequence, executed identically for every new client, no matter how busy your week is.
 
-With Arca, these are called [Routines](/blog/managed-operations/managed-operations-guide). You build them once. They run forever. No training period. No management overhead. No turnover risk.
+With Arca, these are called [Routines](/blog/c1-pillar-managed-operations-guide/). You build them once. They run forever. No training period. No management overhead. No turnover risk.
 
-I outlined the specific tasks most VAs spend their time on that could run as Routines in [tasks your VA could automate](/blog/va-vs-platform/tasks-va-can-automate).
+I outlined the specific tasks most VAs spend their time on that could run as Routines in [tasks your VA could automate](/blog/#c5).
 
 ## What a platform cannot replace
 
@@ -116,7 +116,7 @@ Here is where I tell you the limits of what I build. Because if I do not, you wi
 
 **Exception handling.** When something goes wrong in a way nobody anticipated, you need a person who can think on their feet, improvise, and make a call. Platforms handle the predictable. Humans handle the exceptions.
 
-I wrote a longer piece on [trusting automated client communication](/blog/va-vs-platform/trust-automated-client-comms) that addresses the fear most business owners have about letting a platform talk to their clients.
+I wrote a longer piece on [trusting automated client communication](/blog/#c5) that addresses the fear most business owners have about letting a platform talk to their clients.
 
 ## The cost comparison
 
@@ -137,7 +137,7 @@ Numbers do not lie. But they can be presented selectively, so I am going to show
 | Creative work | Strong | Not applicable |
 | Break-even threshold | VA at $3,000/mo needs to save 15 hours/month at $200/hr billing | Platform at $97/mo breaks even in 30 minutes of saved time at $200/hr billing |
 
-The [full $97 vs $3,000 comparison](/blog/va-vs-platform/97-vs-3000-comparison) goes deeper into the math if you want to see the 12-month total cost of ownership side by side.
+The [full $97 vs $3,000 comparison](/blog/#c5) goes deeper into the math if you want to see the 12-month total cost of ownership side by side.
 
 Here is the number that matters most. 60 to 70 percent of a typical VA's time goes to tasks that could be automated. That means you are paying $1,200 to $4,000 per month for someone to do work that a $97 to $497 per month platform handles better, faster, and more consistently.
 
@@ -159,7 +159,7 @@ The result? Your VA goes from being an expensive task executor to being a high-v
 
 And here is the financial math. If your VA costs $3,000 per month and spends 65 percent of their time on automatable tasks, you are paying $1,950 per month for work a platform does for $97 to $497. The hybrid model saves you $1,450 to $1,850 per month while keeping everything that actually needs a human.
 
-Your VA probably already knows which of their tasks could be automated. I wrote about [what your VA wishes you would automate](/blog/va-vs-platform/what-your-va-wishes). Most VAs are not threatened by platforms. They are relieved. They did not sign up to send invoice reminders. They signed up to do meaningful work.
+Your VA probably already knows which of their tasks could be automated. I wrote about [what your VA wishes you would automate](/blog/#c5). Most VAs are not threatened by platforms. They are relieved. They did not sign up to send invoice reminders. They signed up to do meaningful work.
 
 ## Task audit: which of your VA's tasks should be automated?
 
@@ -203,7 +203,7 @@ These tasks require creativity, judgment, or relationship depth that only a pers
 
 Go through your VA's last 30 days of work. Categorize every task. Most business owners who do this exercise discover that 60 to 70 percent of their VA's work falls into Category 1. That number usually surprises them.
 
-I built a more detailed version of this framework in [tasks your VA could automate](/blog/va-vs-platform/tasks-va-can-automate), including a downloadable audit template.
+I built a more detailed version of this framework in [tasks your VA could automate](/blog/#c5), including a downloadable audit template.
 
 ## The single point of failure problem
 
@@ -225,7 +225,7 @@ When your VA leaves, here is what actually happens.
 
 A platform does not quit. Your Routines do not give two weeks notice. The processes you build in Arca are documented by design, because the Routine itself is the documentation. If you need to change platforms someday, your operations are explicitly defined. Nothing lives in someone's head.
 
-I wrote the full breakdown of this risk in [what happens when your VA quits](/blog/va-vs-platform/va-quit-business-risk). If you are currently dependent on a single VA for your entire operations, please read it.
+I wrote the full breakdown of this risk in [what happens when your VA quits](/blog/#c5). If you are currently dependent on a single VA for your entire operations, please read it.
 
 <blockquote class="pull-quote">
 A platform doesn't quit. It doesn't take a better offer. It doesn't hold your onboarding process hostage inside one person's head.
@@ -252,9 +252,9 @@ You can afford a VA, but you should be strategic about it. At this stage, every 
 
 You have the budget for either or both. The question is efficiency and risk management.
 
-**My recommendation.** Full platform for operations. VA or part-time ops person for high-value human work. At this stage, you might also consider a [managed operations approach](/blog/managed-operations/managed-operations-guide) where the platform runs the systems and a human oversees strategy. Arca's Fortress plan at $497 per month gives you the complete operational backbone, and your VA focuses entirely on the work that grows revenue.
+**My recommendation.** Full platform for operations. VA or part-time ops person for high-value human work. At this stage, you might also consider a [managed operations approach](/blog/c1-pillar-managed-operations-guide/) where the platform runs the systems and a human oversees strategy. Arca's Fortress plan at $497 per month gives you the complete operational backbone, and your VA focuses entirely on the work that grows revenue.
 
-For a more detailed walkthrough of this decision, read [VA or platform: which one is right for your business](/blog/va-vs-platform/va-or-platform-decision).
+For a more detailed walkthrough of this decision, read [VA or platform: which one is right for your business](/blog/#c5).
 
 ## Making the transition
 
@@ -270,17 +270,17 @@ If you have decided that some or all of your VA's work should move to a platform
 
 From there, you can tackle Category 2 tasks gradually. Some of those will move fully to the platform over time. Others will stay as a human-plus-platform collaboration permanently.
 
-Arca's [7-Day Build](/blog/managed-operations/managed-operations-guide) compresses this transition for most businesses. You go from zero to full operational Routines in one week. But the gradual approach works too if that is more comfortable.
+Arca's [7-Day Build](/blog/c1-pillar-managed-operations-guide/) compresses this transition for most businesses. You go from zero to full operational Routines in one week. But the gradual approach works too if that is more comfortable.
 
-I detailed the full transition playbook in [how to move from VA to platform](/blog/va-vs-platform/va-to-platform-transition). That article includes what to tell your VA during the transition, because handling that conversation well matters.
+I detailed the full transition playbook in [how to move from VA to platform](/blog/#c5). That article includes what to tell your VA during the transition, because handling that conversation well matters.
 
 ## How this connects to your bigger operations picture
 
 The virtual assistant vs operations platform question does not exist in isolation. It connects to every other operational decision in your business.
 
-If you are also evaluating your [tool stack](/blog/tool-consolidation/replace-saas-stack-guide), the platform choice matters because a good platform replaces multiple tools and eliminates the need for extra seats for your VA.
+If you are also evaluating your [tool stack](/blog/c3-pillar-replace-saas-stack/), the platform choice matters because a good platform replaces multiple tools and eliminates the need for extra seats for your VA.
 
-If you run a [coaching or consulting business](/blog/coaching-automation/coaching-business-automation-guide), the task mix tilts even more toward automation because so much of coaching operations is scheduling, follow-ups, and client communication sequences.
+If you run a [coaching or consulting business](/blog/c2-pillar-coaching-automation-guide/), the task mix tilts even more toward automation because so much of coaching operations is scheduling, follow-ups, and client communication sequences.
 
 The point is not to make this decision in a vacuum. Look at your whole operation. See where the gaps are. Then decide which gaps need a human and which ones need a system.
 
@@ -292,7 +292,7 @@ It depends on your task mix. If more than half of the tasks you need handled are
 
 ### How much does a virtual assistant actually cost per month?
 
-The all-in cost is 2 to 3 times the sticker price. A Filipino VA at $800 per month actually costs $1,600 to $2,400 when you add training time, management overhead, tool seats, and turnover replacement. A US-based VA at $3,000 per month runs $6,000 to $9,000 all-in. Read the [full cost breakdown](/blog/va-vs-platform/virtual-assistant-real-cost) for the detailed math.
+The all-in cost is 2 to 3 times the sticker price. A Filipino VA at $800 per month actually costs $1,600 to $2,400 when you add training time, management overhead, tool seats, and turnover replacement. A US-based VA at $3,000 per month runs $6,000 to $9,000 all-in. Read the [full cost breakdown](/blog/c5-s3-when-to-hire-virtual-assistant/) for the detailed math.
 
 ### Can automation replace a virtual assistant for my business?
 
@@ -300,15 +300,15 @@ For 60 to 70 percent of what most VAs do, yes. The repeatable, rule-based tasks 
 
 ### What tasks should I automate instead of delegating to a VA?
 
-Start with these: lead follow-up and response, appointment confirmations and reminders, invoice generation and payment collection, client onboarding sequences, recurring check-in scheduling, no-show follow-ups, and contract renewal notices. These tasks are repeatable, time-sensitive, and benefit from consistency more than creativity. See the [full task list](/blog/va-vs-platform/tasks-va-can-automate).
+Start with these: lead follow-up and response, appointment confirmations and reminders, invoice generation and payment collection, client onboarding sequences, recurring check-in scheduling, no-show follow-ups, and contract renewal notices. These tasks are repeatable, time-sensitive, and benefit from consistency more than creativity. See the [full task list](/blog/#c5).
 
 ### Is it cheaper to use an operations platform or a VA?
 
-Significantly cheaper. An operations platform like Arca costs $97 to $497 per month and breaks even in 30 minutes of saved time at a $200 per hour billing rate. A VA at $3,000 per month needs to save 15 hours per month just to break even at the same rate. The platform also operates 168 hours per week versus a VA's 40 hours. The [detailed cost comparison](/blog/va-vs-platform/97-vs-3000-comparison) shows the 12-month total cost of ownership.
+Significantly cheaper. An operations platform like Arca costs $97 to $497 per month and breaks even in 30 minutes of saved time at a $200 per hour billing rate. A VA at $3,000 per month needs to save 15 hours per month just to break even at the same rate. The platform also operates 168 hours per week versus a VA's 40 hours. The [detailed cost comparison](/blog/#c5) shows the 12-month total cost of ownership.
 
 ### What happens when my virtual assistant quits?
 
-Everything stops. The average VA tenure is 6 to 12 months. When they leave, you lose institutional knowledge, undocumented processes, and operational continuity. Expect 2 to 4 weeks of disruption and $5,000 to $15,000 in lost productivity during the transition. A platform eliminates this risk entirely because the Routines are the documentation. Read the [full risk assessment](/blog/va-vs-platform/va-quit-business-risk).
+Everything stops. The average VA tenure is 6 to 12 months. When they leave, you lose institutional knowledge, undocumented processes, and operational continuity. Expect 2 to 4 weeks of disruption and $5,000 to $15,000 in lost productivity during the transition. A platform eliminates this risk entirely because the Routines are the documentation. Read the [full risk assessment](/blog/#c5).
 
 ## The bottom line
 
@@ -324,7 +324,7 @@ That is not a sales pitch. That is the pattern I see repeated over and over.
 
 If you want to start with a clear picture of where your VA's time actually goes, run the task audit from this article. It takes 30 minutes. The answers usually speak for themselves.
 
-And if you want to see what it looks like when the repeatable stuff runs on its own, [Arca's 7-Day Build](/blog/managed-operations/managed-operations-guide) is designed for exactly this transition.
+And if you want to see what it looks like when the repeatable stuff runs on its own, [Arca's 7-Day Build](/blog/c1-pillar-managed-operations-guide/) is designed for exactly this transition.
 
 <script type="application/ld+json">
 {

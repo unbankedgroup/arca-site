@@ -106,7 +106,7 @@ Be honest. Do clients still get onboarded? Do payments still process? Do convers
 
 **Why this matters:** 89% of business coaches report feeling "trapped" by their own operations — unable to take time off without damaging client relationships or revenue. This is the clearest signal of operational debt.
 
-I wrote about this in more detail in [What Happens When You Take a Week Off?](/blog/managed-operations/business-runs-without-you). The short version: if your business can't survive a weekend, you don't have a business. You have a job where you're also the infrastructure.
+I wrote about this in more detail in [What Happens When You Take a Week Off?](/blog/c1-s3-business-runs-without-you/). The short version: if your business can't survive a weekend, you don't have a business. You have a job where you're also the infrastructure.
 
 ## Scoring your operations (0-100 scale)
 
@@ -131,11 +131,11 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 **Your situation:** You're one crisis away from losing clients or burning out completely.
 
 **Immediate actions (this week):**
-1. **Centralize conversations** — Pick one channel (email, WhatsApp, or a CRM) and force all client communication there. This is step one in any [operations audit checklist for small business](/blog/managed-operations/managed-operations-guide).
+1. **Centralize conversations** — Pick one channel (email, WhatsApp, or a CRM) and force all client communication there. This is step one in any [operations audit checklist for small business](/blog/c1-pillar-managed-operations-guide/).
 2. **Automate one payment** — Set up recurring billing for your most reliable retainer client. One win builds momentum.
 3. **Document your process** — Write down every step from "interested" to "paid." You can't fix what you haven't defined.
 
-**Read next:** [Why Your CRM Isn't the Problem](/blog/managed-operations/crm-not-the-problem) — the infrastructure gap most people miss.
+**Read next:** [Why Your CRM Isn't the Problem](/blog/c1-s1-crm-not-the-problem/) — the infrastructure gap most people miss.
 
 ### Score: 101-200 (Fragile)
 
@@ -146,7 +146,7 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 2. **Set up basic metrics tracking** — Create a simple dashboard: revenue this month, pipeline value, conversion rate. Review every Monday.
 3. **Build one onboarding automation** — When a client signs, what should happen automatically? Calendar invite, welcome email, intake form, first invoice.
 
-**Read next:** [The $3,000/Month Operations Mistake](/blog/managed-operations/operations-cost-mistake) — where your money is actually going.
+**Read next:** [The $3,000/Month Operations Mistake](/blog/c1-s2-operations-cost-mistake/) — where your money is actually going.
 
 ### Score: 201-300 (Functional)
 
@@ -157,7 +157,7 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 2. **Implement automation for routine tasks** — Client FAQs, scheduling, payment reminders, status updates. These are solved problems.
 3. **Create exception handling** — What requires your personal attention? Document it. Train someone or something to handle 80% of cases.
 
-**Read next:** [What Happens When You Take a Week Off](/blog/managed-operations/business-runs-without-you) — the vacation test.
+**Read next:** [What Happens When You Take a Week Off](/blog/c1-s3-business-runs-without-you/) — the vacation test.
 
 ### Score: 301-400 (Optimized)
 
@@ -263,7 +263,7 @@ Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, 
 ---
 
 **Related reading:**
-- [Why Your CRM Isn't the Problem](/blog/managed-operations/crm-not-the-problem)
-- [The $3,000/Month Operations Mistake](/blog/managed-operations/operations-cost-mistake)
-- [What Happens When You Take a Week Off](/blog/managed-operations/business-runs-without-you)
-- [The Complete Guide to Managed Operations](/blog/managed-operations/managed-operations-guide)
+- [Why Your CRM Isn't the Problem](/blog/c1-s1-crm-not-the-problem/)
+- [The $3,000/Month Operations Mistake](/blog/c1-s2-operations-cost-mistake/)
+- [What Happens When You Take a Week Off](/blog/c1-s3-business-runs-without-you/)
+- [The Complete Guide to Managed Operations](/blog/c1-pillar-managed-operations-guide/)
