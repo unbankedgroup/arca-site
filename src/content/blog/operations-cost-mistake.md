@@ -29,10 +29,11 @@ Most people never do that math. They look at their tool subscriptions. $30 here.
 
 It's not even close.
 
-<div class="stat-grid">
-  <div class="stat"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
-  <div class="stat"><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
-  <div class="stat"><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+<div class="stat-bars">
+<div class="stat-bars-title">The three layers of operations cost</div>
+<div class="bar-row"><div class="bar-label">L1 · Subs</div><div class="bar-wrap"><div class="bar tiny"><span class="val">$400</span></div></div></div>
+<div class="bar-row"><div class="bar-label">L2 · Time</div><div class="bar-wrap"><div class="bar huge"><span class="val">$12K</span></div></div></div>
+<div class="bar-row"><div class="bar-label">L3 · Leak</div><div class="bar-wrap"><div class="bar mid"><span class="val">$5K</span></div></div></div>
 </div>
 
 ## The three layers of operations cost
@@ -118,8 +119,9 @@ This is why the [VA vs platform comparison](/blog/#c5) matters. A VA can handle 
 A managed operations platform runs 24/7 without gaps. No sick days. No turnover. No forgotten steps. The [VA cost breakdown](/blog/va-cost-breakdown/) shows the real math: $2,400-5,000/month for a VA plus management overhead versus $97-497/month for a platform that never sleeps.
 
 <blockquote class="pull-quote">
+<span class="dek">Core insight · Layer 3</span>
 You'll never see it on a spreadsheet. But it's the most expensive layer of all.
-<cite>— Mal Mposha, Arca</cite>
+<cite>Mal Mposha · Arca</cite>
 </blockquote>
 
 ## The real math

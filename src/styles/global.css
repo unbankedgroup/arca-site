@@ -429,103 +429,210 @@ small { font-size: 0.875rem; }
 	color: var(--amber);
 }
 
-/* Pull quote — breaks the column, big serif-feel display */
+/* ============================================================
+   Editorial furniture — torn paper family (locked v1)
+   ============================================================
+   Pull quotes, callouts, and stat infographics all share a
+   "torn top edge + dashed sides + warm/plum backgrounds"
+   vocabulary so the post develops a single coherent visual
+   system. Lineage: design lab Rounds 1-3, picks merged.
+   ============================================================ */
+
+/* Pull quote — torn dek card (R3-PQ4) */
 .prose .pull-quote,
 .prose blockquote.pull-quote {
-	background: transparent;
-	border: none;
-	border-left: 3px solid var(--amber);
-	padding: 0.5em 0 0.5em 1.5em;
-	margin: 2.5em 0;
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-size: clamp(1.375rem, 2.5vw, 1.625rem);
+	position: relative;
+	margin: 3em 0;
+	padding: 2em 1.75em 1.75em;
+	background: var(--canvas);
+	box-shadow: var(--shadow-md);
+	border-left: 1px dashed rgba(45, 42, 50, 0.2);
+	border-right: 1px dashed rgba(45, 42, 50, 0.2);
+	border-top: none;
+	border-bottom: none;
+	border-radius: 0;
+	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-weight: 500;
+	font-size: clamp(1.25rem, 4vw, 1.625rem);
 	font-style: normal;
-	font-weight: 600;
-	line-height: 1.35;
+	line-height: 1.3;
 	color: var(--charcoal);
-	letter-spacing: -0.01em;
+	letter-spacing: -0.005em;
+}
+
+.prose .pull-quote::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: var(--canvas);
+	clip-path: polygon(0% 100%, 3% 40%, 6% 100%, 9% 30%, 12% 100%, 15% 50%, 18% 100%, 21% 20%, 24% 100%, 27% 55%, 30% 100%, 33% 35%, 36% 100%, 39% 25%, 42% 100%, 45% 45%, 48% 100%, 51% 30%, 54% 100%, 57% 50%, 60% 100%, 63% 25%, 66% 100%, 69% 45%, 72% 100%, 75% 30%, 78% 100%, 81% 55%, 84% 100%, 87% 35%, 90% 100%, 93% 45%, 96% 100%, 100% 40%);
+}
+
+.prose .pull-quote .dek {
+	display: block;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	font-size: 0.6875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	color: var(--amber);
+	margin-bottom: 0.75em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid var(--cloud);
 }
 
 .prose .pull-quote cite {
 	display: block;
-	margin-top: 0.75em;
-	font-size: 0.8125rem;
-	font-weight: 500;
+	margin-top: 1em;
+	text-align: right;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.6875rem;
+	font-weight: 700;
 	font-style: normal;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.18em;
 	color: var(--haze);
 }
 
-/* Callout variants — <aside class="callout callout-note">... */
-.prose .callout {
-	margin: 2em 0;
-	padding: 1.25em 1.5em 1.25em 3.25em;
-	border-radius: var(--radius);
-	border-left: 4px solid;
-	position: relative;
-	font-size: 1rem;
-	line-height: 1.6;
+/* Masthead modifier — centered formal declaration (R3-PQ2 alt) */
+.prose .pull-quote.masthead {
+	margin: 3em -12px;
+	padding: 2.25em 1.5em 2em;
+	text-align: center;
+	border-left: 1px dashed rgba(212, 145, 94, 0.4);
+	border-right: 1px dashed rgba(212, 145, 94, 0.4);
 }
-
-.prose .callout::before {
+.prose .pull-quote.masthead::after {
+	content: '';
 	position: absolute;
-	left: 1.25em;
-	top: 1.35em;
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-weight: 800;
-	font-size: 1rem;
-	width: 1.25em;
-	height: 1.25em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
+	bottom: -6px;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: var(--canvas);
+	clip-path: polygon(0% 0%, 3% 60%, 6% 0%, 9% 70%, 12% 0%, 15% 50%, 18% 0%, 21% 80%, 24% 0%, 27% 45%, 30% 0%, 33% 65%, 36% 0%, 39% 75%, 42% 0%, 45% 55%, 48% 0%, 51% 70%, 54% 0%, 57% 50%, 60% 0%, 63% 75%, 66% 0%, 69% 55%, 72% 0%, 75% 70%, 78% 0%, 81% 45%, 84% 0%, 87% 65%, 90% 0%, 93% 55%, 96% 0%, 100% 60%);
+}
+.prose .pull-quote.masthead .dek,
+.prose .pull-quote.masthead cite {
+	text-align: center;
+	border-bottom: none;
+	padding-bottom: 0;
 }
 
-.prose .callout-note {
-	background: var(--amber-light);
-	border-color: var(--amber);
+/* Callouts — torn paper cards with tape strip + warm semantic colors
+   Markup: <aside class="callout callout-stat"><strong>Label</strong>body</aside>
+   (R3-C1 tape + R3-C4 warm colors merged) */
+.prose .callout {
+	position: relative;
+	margin: 2.25em 0;
+	padding: 2em 1.5em 1.5em;
+	background: var(--canvas);
+	box-shadow: var(--shadow-md);
+	border-left: 1px dashed rgba(45, 42, 50, 0.2);
+	border-right: 1px dashed rgba(45, 42, 50, 0.2);
+	border-top: none;
+	border-bottom: none;
+	border-radius: 0;
+	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-size: 0.9375rem;
+	line-height: 1.6;
 	color: var(--charcoal);
 }
-.prose .callout-note::before { content: 'i'; background: var(--amber); color: #fff; }
-
-.prose .callout-warning {
-	background: #FEF6E7;
-	border-color: #E6A23C;
-	color: var(--charcoal);
+.prose .callout::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: var(--canvas);
+	clip-path: polygon(0% 100%, 3% 40%, 6% 100%, 9% 30%, 12% 100%, 15% 50%, 18% 100%, 21% 20%, 24% 100%, 27% 55%, 30% 100%, 33% 35%, 36% 100%, 39% 25%, 42% 100%, 45% 45%, 48% 100%, 51% 30%, 54% 100%, 57% 50%, 60% 100%, 63% 25%, 66% 100%, 69% 45%, 72% 100%, 75% 30%, 78% 100%, 81% 55%, 84% 100%, 87% 35%, 90% 100%, 93% 45%, 96% 100%, 100% 40%);
+	z-index: 1;
 }
-.prose .callout-warning::before { content: '!'; background: #E6A23C; color: #fff; }
-
-.prose .callout-stat {
-	background: var(--sage-light);
-	border-color: var(--sage);
-	color: var(--charcoal);
+.prose .callout::after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 48px;
+	width: 90px;
+	height: 18px;
+	background: rgba(212, 145, 94, 0.55);
+	transform: rotate(-2deg);
+	border-left: 1px dashed rgba(45, 42, 50, 0.15);
+	border-right: 1px dashed rgba(45, 42, 50, 0.15);
+	z-index: 2;
 }
-.prose .callout-stat::before { content: '%'; background: var(--sage); color: #fff; font-size: 0.75rem; }
-
-.prose .callout-try {
-	background: var(--cloud);
-	border-color: var(--charcoal);
-	color: var(--charcoal);
-}
-.prose .callout-try::before { content: '→'; background: var(--charcoal); color: var(--canvas); }
 
 .prose .callout h4,
 .prose .callout strong:first-child {
 	display: block;
 	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-weight: 700;
-	font-size: 0.75rem;
+	font-weight: 800;
+	font-size: 0.6875rem;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: var(--charcoal);
-	margin: 0 0 0.35em 0;
+	letter-spacing: 0.14em;
+	margin: 0 0 0.75em 0;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid rgba(45, 42, 50, 0.12);
 }
 
 .prose .callout p:last-child { margin-bottom: 0; }
 
-/* Stat block — big number with label, flexible grid */
+/* Semantic variants — warm backgrounds, distinct label colors */
+.prose .callout-stat {
+	background: var(--amber-light);
+}
+.prose .callout-stat::before { background: var(--amber-light); }
+.prose .callout-stat strong:first-child,
+.prose .callout-stat h4 {
+	color: var(--amber-hover);
+	border-bottom-color: rgba(191, 125, 74, 0.22);
+}
+
+.prose .callout-warning {
+	background: #F5E3DC;
+}
+.prose .callout-warning::before { background: #F5E3DC; }
+.prose .callout-warning::after {
+	background: rgba(59, 44, 64, 0.35);
+	left: auto;
+	right: 48px;
+	transform: rotate(2deg);
+}
+.prose .callout-warning strong:first-child,
+.prose .callout-warning h4 {
+	color: var(--plum);
+	border-bottom-color: rgba(59, 44, 64, 0.2);
+}
+
+.prose .callout-try {
+	background: var(--sage-light);
+}
+.prose .callout-try::before { background: var(--sage-light); }
+.prose .callout-try strong:first-child,
+.prose .callout-try h4 {
+	color: var(--sage);
+	border-bottom-color: rgba(107, 143, 113, 0.25);
+}
+
+.prose .callout-note {
+	background: var(--cloud);
+}
+.prose .callout-note::before { background: var(--cloud); }
+.prose .callout-note strong:first-child,
+.prose .callout-note h4 {
+	color: var(--charcoal);
+	border-bottom-color: rgba(45, 42, 50, 0.15);
+}
+
+/* ============================================================
+   Stat infographics — three variants, pick per post
+   ============================================================ */
+
+/* Baseline grid — still available for simple use cases */
 .prose .stat-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -559,6 +666,252 @@ small { font-size: 0.875rem; }
 	letter-spacing: 0.08em;
 	color: var(--haze);
 	line-height: 1.3;
+}
+
+/* Proportional bars — teaches arguments where values are unequal (R3-S1)
+   Markup:
+     <div class="stat-bars">
+       <div class="stat-bars-title">...</div>
+       <div class="bar-row">
+         <div class="bar-label">L1 · Subs</div>
+         <div class="bar-wrap"><div class="bar tiny"><span class="val">$400</span></div></div>
+       </div>
+     </div>
+*/
+.prose .stat-bars {
+	background: var(--plum);
+	margin: 3em -1.25rem;
+	padding: 2em 1.5em 1.75em;
+	position: relative;
+}
+
+.prose .stat-bars-title {
+	display: block;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.6875rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--amber);
+	margin: 0 0 1.25em 0;
+}
+
+.prose .stat-bars .bar-row {
+	display: grid;
+	grid-template-columns: 95px 1fr;
+	align-items: center;
+	gap: 0.875em;
+	margin-bottom: 0.75em;
+}
+.prose .stat-bars .bar-row:last-child { margin-bottom: 0; }
+
+.prose .stat-bars .bar-label {
+	font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+	font-size: 0.6875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--cloud);
+	line-height: 1.3;
+	font-weight: 500;
+}
+
+.prose .stat-bars .bar-wrap {
+	position: relative;
+	height: 42px;
+	display: flex;
+	align-items: center;
+}
+
+.prose .stat-bars .bar {
+	height: 100%;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.prose .stat-bars .bar.tiny {
+	width: 2.3%;
+	background: var(--amber-hover);
+	min-width: 10px;
+}
+.prose .stat-bars .bar.huge {
+	width: 69%;
+	background: var(--amber);
+	justify-content: flex-end;
+	padding-right: 14px;
+}
+.prose .stat-bars .bar.mid {
+	width: 28.7%;
+	background: var(--canvas);
+	justify-content: flex-end;
+	padding-right: 14px;
+}
+
+.prose .stat-bars .bar .val {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: clamp(0.9375rem, 3vw, 1.125rem);
+	font-weight: 800;
+	letter-spacing: -0.01em;
+	white-space: nowrap;
+}
+
+.prose .stat-bars .bar.tiny .val {
+	position: absolute;
+	left: calc(100% + 10px);
+	color: var(--canvas);
+}
+.prose .stat-bars .bar.huge .val {
+	color: var(--plum);
+}
+.prose .stat-bars .bar.mid .val {
+	color: var(--charcoal);
+}
+
+@media (max-width: 600px) {
+	.prose .stat-bars .bar-row {
+		grid-template-columns: 1fr;
+		gap: 0.375em;
+	}
+	.prose .stat-bars .bar-wrap {
+		height: 36px;
+	}
+}
+
+/* Flow diagram — causation chain (R3-S5) */
+.prose .stat-flow {
+	background: var(--plum);
+	margin: 3em -1.25rem;
+	padding: 2em 1.25em 1.75em;
+}
+
+.prose .stat-flow-title {
+	display: block;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.6875rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--amber);
+	text-align: center;
+	margin: 0 0 1.5em 0;
+}
+
+.prose .stat-flow-inner {
+	display: flex;
+	align-items: stretch;
+	gap: 4px;
+	justify-content: space-between;
+}
+
+.prose .stat-flow .node {
+	background: var(--canvas);
+	padding: 0.875em 0.625em 0.75em;
+	border-radius: var(--radius-sm);
+	flex: 1;
+	text-align: center;
+	min-width: 0;
+}
+
+.prose .stat-flow .node .tag {
+	font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+	font-size: 0.5625rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--amber-hover);
+	display: block;
+	margin-bottom: 0.25em;
+}
+.prose .stat-flow .node .num {
+	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-weight: 700;
+	font-size: clamp(1.25rem, 4.5vw, 1.625rem);
+	color: var(--charcoal);
+	line-height: 1;
+	display: block;
+}
+.prose .stat-flow .node .lbl {
+	font-size: 0.625rem;
+	color: var(--soft-charcoal);
+	margin-top: 0.4em;
+	display: block;
+	line-height: 1.35;
+}
+.prose .stat-flow .arrow {
+	align-self: center;
+	color: var(--amber);
+	font-family: 'Fraunces', serif;
+	font-size: 1.375rem;
+	font-weight: 700;
+	flex: 0 0 auto;
+	padding: 0 4px;
+}
+
+@media (max-width: 600px) {
+	.prose .stat-flow-inner {
+		flex-direction: column;
+		gap: 8px;
+	}
+	.prose .stat-flow .arrow {
+		transform: rotate(90deg);
+		padding: 4px 0;
+	}
+}
+
+/* Cards-on-plum — general-purpose three-number display (R2-V1) */
+.prose .stat-cards {
+	background: var(--plum);
+	margin: 3em -1.25rem;
+	padding: 2.25em 1.5em 2em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.75em;
+	position: relative;
+}
+.prose .stat-cards::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 1.5em;
+	right: 1.5em;
+	height: 2px;
+	background: var(--amber);
+}
+.prose .stat-cards .card {
+	background: var(--canvas);
+	border-radius: var(--radius);
+	padding: 1.125em 0.875em;
+}
+.prose .stat-cards .card .tag {
+	font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+	font-size: 0.625rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--amber-hover);
+	margin-bottom: 0.5em;
+	display: block;
+}
+.prose .stat-cards .card .num {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: clamp(1.5rem, 5.5vw, 2.125rem);
+	font-weight: 800;
+	color: var(--charcoal);
+	letter-spacing: -0.02em;
+	line-height: 1;
+	display: block;
+}
+.prose .stat-cards .card .lbl {
+	font-size: 0.75rem;
+	color: var(--soft-charcoal);
+	margin-top: 0.5em;
+	line-height: 1.4;
+	display: block;
+}
+
+@media (max-width: 600px) {
+	.prose .stat-cards {
+		grid-template-columns: 1fr;
+	}
 }
 
 /* Section dividers between major H2s — thin rule + mark */
