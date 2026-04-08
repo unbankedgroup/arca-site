@@ -2446,6 +2446,143 @@
 			color: var(--haze);
 		}
 
+		/* ================== QUICK ANSWER · R4 ================== */
+
+		.qa-v1 {
+			position: relative;
+			margin: 28px 0 36px;
+			padding: 22px 22px 26px;
+			background: var(--canvas);
+			box-shadow: var(--shadow-md);
+			border-left: 1px dashed rgba(45, 42, 50, 0.2);
+			border-right: 1px dashed rgba(45, 42, 50, 0.2);
+		}
+		.qa-v1::after {
+			content: '';
+			position: absolute;
+			bottom: -6px; left: 0; right: 0;
+			height: 8px;
+			background: var(--canvas);
+			clip-path: polygon(0% 0%, 3% 60%, 6% 0%, 9% 70%, 12% 0%, 15% 50%, 18% 0%, 21% 80%, 24% 0%, 27% 45%, 30% 0%, 33% 65%, 36% 0%, 39% 75%, 42% 0%, 45% 55%, 48% 0%, 51% 70%, 54% 0%, 57% 50%, 60% 0%, 63% 75%, 66% 0%, 69% 55%, 72% 0%, 75% 70%, 78% 0%, 81% 45%, 84% 0%, 87% 65%, 90% 0%, 93% 55%, 96% 0%, 100% 60%);
+		}
+		.qa-v1 .dek {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			color: var(--amber);
+			margin-bottom: 10px;
+			padding-bottom: 8px;
+			border-bottom: 1px solid var(--cloud);
+		}
+		.qa-v1 .body {
+			font-family: 'Fraunces', serif;
+			font-size: 1.0625rem;
+			line-height: 1.55;
+			color: var(--charcoal);
+		}
+
+		.qa-v2 {
+			margin: 24px -20px 36px;
+			padding: 28px 24px;
+			background: var(--plum);
+			color: var(--canvas);
+			position: relative;
+		}
+		.qa-v2::before, .qa-v2::after {
+			content: '';
+			position: absolute;
+			left: 28px; right: 28px;
+			height: 1px;
+			background: var(--amber);
+		}
+		.qa-v2::before { top: 12px; box-shadow: 0 3px 0 var(--amber); }
+		.qa-v2::after { bottom: 12px; box-shadow: 0 -3px 0 var(--amber); }
+		.qa-v2 .dek {
+			display: block;
+			text-align: center;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.625rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: var(--amber);
+			padding-top: 8px;
+			margin-bottom: 14px;
+		}
+		.qa-v2 .body {
+			font-family: 'Fraunces', serif;
+			font-size: 1.0625rem;
+			line-height: 1.5;
+			color: var(--canvas);
+		}
+
+		.qa-v3 {
+			position: relative;
+			margin: 28px 0 36px;
+			padding: 26px 22px 22px;
+			background: var(--amber-light);
+			box-shadow: var(--shadow-md);
+			border-left: 1px dashed rgba(212, 145, 94, 0.4);
+			border-right: 1px dashed rgba(212, 145, 94, 0.4);
+		}
+		.qa-v3::before {
+			content: '';
+			position: absolute;
+			top: -5px; left: 0; right: 0;
+			height: 7px;
+			background: var(--amber-light);
+			clip-path: polygon(0% 100%, 3% 40%, 6% 100%, 9% 30%, 12% 100%, 15% 50%, 18% 100%, 21% 20%, 24% 100%, 27% 55%, 30% 100%, 33% 35%, 36% 100%, 39% 25%, 42% 100%, 45% 45%, 48% 100%, 51% 30%, 54% 100%, 57% 50%, 60% 100%, 63% 25%, 66% 100%, 69% 45%, 72% 100%, 75% 30%, 78% 100%, 81% 55%, 84% 100%, 87% 35%, 90% 100%, 93% 45%, 96% 100%, 100% 40%);
+		}
+		.qa-v3 .dek {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			color: var(--amber-hover);
+			margin-bottom: 10px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid rgba(191, 125, 74, 0.25);
+		}
+		.qa-v3 .body {
+			font-family: 'Fraunces', serif;
+			font-size: 1.0625rem;
+			line-height: 1.55;
+			color: var(--charcoal);
+		}
+
+		.qa-v4 {
+			position: relative;
+			margin: 28px 0 36px;
+			background: var(--canvas);
+			box-shadow: var(--shadow-md);
+		}
+		.qa-v4 .ledger-bar {
+			background: var(--charcoal);
+			color: var(--canvas);
+			padding: 9px 22px 8px;
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.6875rem;
+			font-weight: 700;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+		}
+		.qa-v4 .ledger-bar::before { content: '// '; color: var(--amber); }
+		.qa-v4 .body {
+			padding: 18px 22px 20px;
+			font-family: 'Fraunces', serif;
+			font-size: 1.0625rem;
+			line-height: 1.55;
+			color: var(--charcoal);
+			border-left: 2px solid var(--charcoal);
+			border-right: 2px solid var(--charcoal);
+			border-bottom: 2px solid var(--charcoal);
+		}
+
 		@media (max-width: 520px) {
 			.sg-v1 { grid-template-columns: 1fr; gap: 16px; }
 			.sg-v2 { grid-template-columns: 1fr; gap: 28px; padding: 32px 0; }
@@ -2480,11 +2617,72 @@
 		</header>
 
 		<nav class="toc" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px;">
-			<a href="#stats-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Stats → R3 <span style="display:block;font-size:0.625rem;color:var(--amber);margin-top:2px;font-weight:600;letter-spacing:0.08em;">infographics</span></a>
-			<a href="#callouts-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Callouts → R3 <span style="display:block;font-size:0.625rem;color:var(--amber);margin-top:2px;font-weight:600;letter-spacing:0.08em;">from C5</span></a>
-			<a href="#quotes-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Quotes → R3 <span style="display:block;font-size:0.625rem;color:var(--amber);margin-top:2px;font-weight:600;letter-spacing:0.08em;">torn paper family</span></a>
+			<a href="#quick-answer-r4" style="grid-column:1/-1;display:block;padding:14px 12px;background:var(--amber);color:var(--plum);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:0.875rem;text-align:center;">Quick Answer → R4 <span style="display:block;font-size:0.6875rem;color:var(--plum);margin-top:2px;font-weight:600;letter-spacing:0.08em;opacity:0.75;">newest — pick one</span></a>
+			<a href="#stats-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Stats → R3</a>
+			<a href="#callouts-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Callouts → R3</a>
+			<a href="#quotes-r3" style="display:block;padding:12px 12px;background:var(--plum);color:var(--canvas);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Quotes → R3</a>
 			<a href="#density" style="display:block;padding:12px 12px;background:var(--cloud);color:var(--charcoal);border-radius:6px;border-bottom:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:0.8125rem;text-align:center;">Density</a>
 		</nav>
+
+		<!-- ================================================== -->
+		<!--  QUICK ANSWER                                       -->
+		<!-- ================================================== -->
+		<section class="section" id="quick-answer-r4" style="margin-top:48px;">
+			<h2 class="section-title">Quick answer</h2>
+			<p class="section-hint">First thing every reader sees. Biggest GEO payload. Needs to feel authoritative without screaming. All four variants use the locked torn paper vocabulary, tuned for lead-paragraph weight.</p>
+
+			<div class="variant">
+				<div class="variant-label">QA-V1 · DEK + TORN BOTTOM <span class="lineage">matches pull quote family</span></div>
+				<div class="variant-name">Amber dek label, serif body, torn bottom edge only</div>
+				<p class="variant-desc">Torn on the bottom only (it's the start of the article, nothing above it to tear from). Small "QUICK ANSWER" dek in amber, Fraunces serif body. Matches R3-PQ4 pull quote exactly — same system start to finish.</p>
+				<div class="stage">
+					<div class="qa-v1">
+						<span class="dek">Quick answer</span>
+						<div class="body">Most solo consultants spend $3,000–17,000/month on operations — not in subscriptions, but in unreachable revenue. The real mistake isn't buying the wrong tool. It's being the tool yourself. Managed operations costs $97–497/month and runs 24/7 without you.</div>
+					</div>
+					<p class="body-prose">Here's a number most solo consultants never calculate. Take your hourly billing rate. Multiply it by 15. That's roughly what DIY operations costs you every week.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">QA-V2 · PLUM FRAMED <span class="lineage">from stats R2-V4 · push commanding</span></div>
+				<div class="variant-name">Full-bleed plum banner with double amber rules</div>
+				<p class="variant-desc">Impossible to miss. Plum background, double amber rules top and bottom (same framing device as the "framed plum" stat variant we didn't end up picking). Sets an imperious tone for the rest of the article.</p>
+				<div class="stage">
+					<div class="qa-v2">
+						<span class="dek">Quick answer</span>
+						<div class="body">Most solo consultants spend $3,000–17,000/month on operations — not in subscriptions, but in unreachable revenue. The real mistake isn't buying the wrong tool. It's being the tool yourself. Managed operations costs $97–497/month and runs 24/7 without you.</div>
+					</div>
+					<p class="body-prose">Here's a number most solo consultants never calculate. Take your hourly billing rate. Multiply it by 15. That's roughly what DIY operations costs you every week.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">QA-V3 · WARM TORN TOP <span class="lineage">from callout-stat family · push unified</span></div>
+				<div class="variant-name">Amber-light card with torn top — matches callout-stat</div>
+				<p class="variant-desc">Same warm amber-light background and torn paper language as the callout-stat variant. If you want the entire post to feel like pages from the same warm notebook, this is the strongest system match.</p>
+				<div class="stage">
+					<div class="qa-v3">
+						<span class="dek">Quick answer</span>
+						<div class="body">Most solo consultants spend $3,000–17,000/month on operations — not in subscriptions, but in unreachable revenue. The real mistake isn't buying the wrong tool. It's being the tool yourself. Managed operations costs $97–497/month and runs 24/7 without you.</div>
+					</div>
+					<p class="body-prose">Here's a number most solo consultants never calculate. Take your hourly billing rate. Multiply it by 15. That's roughly what DIY operations costs you every week.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">QA-V4 · LEDGER BAR <span class="lineage">from callout R2-C6 · push serious</span></div>
+				<div class="variant-name">Thick charcoal ledger header + bordered body</div>
+				<p class="variant-desc">Terminal / finance document feel. Charcoal ledger bar at top with <code>// QUICK ANSWER</code> in JetBrains Mono (amber slashes). Heavy charcoal borders around the body. Most "serious document" option — reads as authoritative and slightly institutional.</p>
+				<div class="stage">
+					<div class="qa-v4">
+						<div class="ledger-bar">Quick answer</div>
+						<div class="body">Most solo consultants spend $3,000–17,000/month on operations — not in subscriptions, but in unreachable revenue. The real mistake isn't buying the wrong tool. It's being the tool yourself. Managed operations costs $97–497/month and runs 24/7 without you.</div>
+					</div>
+					<p class="body-prose">Here's a number most solo consultants never calculate. Take your hourly billing rate. Multiply it by 15. That's roughly what DIY operations costs you every week.</p>
+				</div>
+			</div>
+		</section>
 
 		<!-- ================================================== -->
 		<!--  STAT GRID                                          -->
