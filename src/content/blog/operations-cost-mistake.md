@@ -29,6 +29,12 @@ Most people never do that math. They look at their tool subscriptions. $30 here.
 
 It's not even close.
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+  <div class="stat"><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+  <div class="stat"><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+</div>
+
 ## The three layers of operations cost
 
 There are three ways DIY ops bleeds money from a service business. Most people only see one of them.
@@ -64,6 +70,11 @@ And that calculation is generous. It assumes you could fill those hours with bil
 - **1,100+ app switches per day** for the average knowledge worker (RingCentral) — each switch fragments attention and adds recovery time
 - Context switching drains up to **40% of productive capacity** (University of Michigan research)
 
+<aside class="callout callout-stat">
+<strong>The numbers</strong>
+Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. That's more than a full day of every week gone before anyone has done any actual work — not spent on it, just lost to the friction between tools.
+</aside>
+
 ### Layer 3: The revenue you never see
 
 This is the layer nobody tracks because it's invisible.
@@ -74,6 +85,11 @@ The lead who filled out your contact form at 9pm on a Wednesday. You saw it Thur
 - Responding within **5 minutes makes you 21x more likely** to qualify a lead vs responding after 30 minutes
 - The average solo business responds in **12-24 hours** — by then, 67% of leads have already moved on
 - **76% of small businesses** spend more than 2 hours per week just on manual follow-ups
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply. The average solo business replies in 12–24 hours, by which point two-thirds of leads have already booked someone else.
+</aside>
 
 The client who finished their package three weeks ago. No re-enrollment email went out because you were busy. She found another coach.
 
@@ -101,6 +117,11 @@ This is why the [VA vs platform comparison](/blog/#c5) matters. A VA can handle 
 
 A managed operations platform runs 24/7 without gaps. No sick days. No turnover. No forgotten steps. The [VA cost breakdown](/blog/va-cost-breakdown/) shows the real math: $2,400-5,000/month for a VA plus management overhead versus $97-497/month for a platform that never sleeps.
 
+<blockquote class="pull-quote">
+You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
+
 ## The real math
 
 Let me put it together for a consultant billing $200/hour with 15-20 active clients.
@@ -115,6 +136,11 @@ Let me put it together for a consultant billing $200/hour with 15-20 active clie
 You're looking at that number thinking it can't be right. Run it with your own numbers. It's probably close.
 
 The mistake isn't that you're spending money on operations. Every business does. The mistake is spending this much on operations that don't actually work. Tools that don't talk to each other. Follow-ups that depend on your memory. An invoicing process that runs on guilt and Friday-afternoon panic.
+
+<aside class="callout callout-try">
+<strong>Try this</strong>
+Pick one week and track it honestly. Log every hour spent on anything that isn't client work. Add your tool subscriptions. Name one lead that went cold, one invoice that slipped, one client who didn't renew. Put a dollar on each. The number almost always surprises people — and it's almost always bigger than the cost of fixing the system that produced it.
+</aside>
 
 ## What the alternative looks like
 
