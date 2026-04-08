@@ -399,17 +399,44 @@ small { font-size: 0.875rem; }
 	font-weight: 700;
 }
 
-/* Quick-answer callout — styles the first paragraph in the body if it starts
-   with "Quick answer:" — applied via :has() OR by wrapping in a class */
+/* Quick-answer — ledger-bar treatment (QA-V4, locked)
+   Auto-applied by BlogPost.astro to the first <p> that starts with
+   "Quick answer:". The inner <strong> becomes the ledger bar via
+   negative margins; the rest of the paragraph becomes the body. */
 .prose .quick-answer,
 .prose p.quick-answer {
-	background: var(--amber-light);
-	border-left: 4px solid var(--amber);
-	padding: 1.25em 1.5em;
-	border-radius: 0 var(--radius) var(--radius) 0;
-	margin: 0 0 2em 0;
+	position: relative;
+	margin: 0 0 2.5em 0;
+	padding: 0 22px 20px;
+	background: var(--canvas);
+	box-shadow: var(--shadow-md);
+	border-left: 2px solid var(--charcoal);
+	border-right: 2px solid var(--charcoal);
+	border-bottom: 2px solid var(--charcoal);
+	border-top: none;
+	border-radius: 0;
+	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
 	font-size: 1.0625em;
+	line-height: 1.6;
 	color: var(--charcoal);
+}
+
+.prose .quick-answer strong:first-child {
+	display: block;
+	margin: 0 -22px 18px;
+	padding: 10px 22px 9px;
+	background: var(--charcoal);
+	color: var(--canvas);
+	font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.prose .quick-answer strong:first-child::before {
+	content: '// ';
+	color: var(--amber);
 }
 
 /* ============================================================
