@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Arca Editorial Design Lab</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--charcoal: #2D2A32;
+			--soft-charcoal: #4A4550;
+			--amber: #D4915E;
+			--amber-hover: #BF7D4A;
+			--amber-light: #FDF1E7;
+			--canvas: #FDFAF5;
+			--cloud: #F0EDE8;
+			--sage: #6B8F71;
+			--sage-light: #E8F0E9;
+			--stone: #B8A898;
+			--plum: #3B2C40;
+			--haze: #9490A0;
+			--white: #FFFFFF;
+			--shadow-sm: 0 2px 8px rgba(45, 42, 50, 0.06);
+			--shadow: 0 4px 16px rgba(45, 42, 50, 0.08);
+			--shadow-md: 0 8px 24px rgba(45, 42, 50, 0.10);
+			--shadow-lg: 0 16px 48px rgba(45, 42, 50, 0.14);
+			--radius-sm: 8px;
+			--radius: 12px;
+			--radius-lg: 16px;
+			--ease: cubic-bezier(0.16, 1, 0.3, 1);
+		}
+		* { box-sizing: border-box; }
+		html, body { margin: 0; padding: 0; }
+		body {
+			background: var(--canvas);
+			color: var(--charcoal);
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			-webkit-font-smoothing: antialiased;
+		}
+		.wrap {
+			max-width: 780px;
+			margin: 0 auto;
+			padding: 48px 20px 120px;
+		}
+		.lab-header {
+			border-bottom: 1px solid var(--cloud);
+			padding-bottom: 24px;
+			margin-bottom: 48px;
+		}
+		.lab-eyebrow {
+			color: var(--amber);
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.75rem;
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+		}
+		.lab-title {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.75rem, 5vw, 2.5rem);
+			font-weight: 800;
+			letter-spacing: -0.02em;
+			line-height: 1.1;
+			margin: 8px 0 12px;
+		}
+		.lab-sub {
+			color: var(--soft-charcoal);
+			font-size: 1rem;
+			line-height: 1.6;
+			margin: 0;
+			max-width: 620px;
+		}
+		.section {
+			margin-top: 72px;
+		}
+		.section-title {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 1.5rem;
+			font-weight: 800;
+			letter-spacing: -0.015em;
+			margin: 0 0 6px;
+		}
+		.section-hint {
+			color: var(--haze);
+			font-size: 0.875rem;
+			margin: 0 0 36px;
+		}
+		.variant {
+			margin-bottom: 56px;
+			padding-top: 28px;
+			border-top: 1px dashed var(--cloud);
+		}
+		.variant-label {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.75rem;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			color: var(--charcoal);
+			background: var(--cloud);
+			padding: 5px 12px;
+			border-radius: 100px;
+			margin-bottom: 10px;
+		}
+		.variant-name {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 700;
+			font-size: 1.125rem;
+			margin: 6px 0 4px;
+			color: var(--charcoal);
+		}
+		.variant-desc {
+			font-size: 0.875rem;
+			color: var(--soft-charcoal);
+			margin: 0 0 24px;
+			max-width: 560px;
+		}
+		.stage {
+			background: var(--canvas);
+			border: 1px solid var(--cloud);
+			border-radius: var(--radius);
+			padding: 32px 20px;
+		}
+		.stage + .stage { margin-top: 16px; }
+		.body-prose {
+			font-family: 'Inter', sans-serif;
+			font-size: 1rem;
+			line-height: 1.75;
+			color: var(--soft-charcoal);
+			margin: 0 0 1em;
+		}
+		.body-prose:last-child { margin-bottom: 0; }
+
+		/* ============================================================= */
+		/*  STAT GRID VARIANTS                                            */
+		/* ============================================================= */
+
+		/* V1 — Baseline (current site style) */
+		.sg-v1 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			padding: 28px 0;
+			border-top: 1px solid var(--cloud);
+			border-bottom: 1px solid var(--cloud);
+		}
+		.sg-v1 .stat { text-align: center; }
+		.sg-v1 .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.75rem, 6vw, 2.25rem);
+			font-weight: 800;
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+		}
+		.sg-v1 .lbl {
+			font-size: 0.75rem;
+			color: var(--haze);
+			margin-top: 8px;
+			line-height: 1.4;
+		}
+
+		/* V2 — Editorial display serif */
+		.sg-v2 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 32px;
+			padding: 48px 0 40px;
+			margin: 40px 0;
+		}
+		.sg-v2 .stat { text-align: left; }
+		.sg-v2 .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(2.5rem, 10vw, 4.25rem);
+			line-height: 0.95;
+			color: var(--charcoal);
+			letter-spacing: -0.03em;
+			display: block;
+		}
+		.sg-v2 .lbl {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			color: var(--stone);
+			margin-top: 14px;
+			line-height: 1.35;
+			display: block;
+		}
+
+		/* V3 — Dark plum banner */
+		.sg-v3 {
+			background: var(--plum);
+			color: var(--canvas);
+			margin: 40px -20px;
+			padding: 36px 24px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			position: relative;
+		}
+		.sg-v3::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 24px;
+			right: 24px;
+			height: 2px;
+			background: var(--amber);
+		}
+		.sg-v3 .stat { text-align: center; }
+		.sg-v3 .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.75rem, 6vw, 2.5rem);
+			font-weight: 800;
+			color: var(--canvas);
+			letter-spacing: -0.02em;
+		}
+		.sg-v3 .lbl {
+			font-size: 0.6875rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--amber);
+			margin-top: 8px;
+		}
+
+		/* V4 — Hierarchy contrast (visible cost small, hidden costs large) */
+		.sg-v4 {
+			display: grid;
+			grid-template-columns: 1fr 1.5fr 1.5fr;
+			gap: 20px;
+			align-items: end;
+			padding: 28px 0;
+			margin: 36px 0;
+		}
+		.sg-v4 .stat { border-top: 1px solid var(--cloud); padding-top: 16px; }
+		.sg-v4 .stat.minor .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 600;
+			font-size: 1.5rem;
+			color: var(--haze);
+			text-decoration: line-through;
+			text-decoration-color: var(--stone);
+		}
+		.sg-v4 .stat.major .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: clamp(2.25rem, 8vw, 3.25rem);
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+		}
+		.sg-v4 .lbl {
+			font-size: 0.6875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--soft-charcoal);
+			margin-top: 10px;
+			line-height: 1.35;
+		}
+		.sg-v4 .stat.minor .lbl { color: var(--haze); }
+		.sg-v4 .stat.major .lbl { color: var(--charcoal); }
+
+		/* V5 — Elevated cards with amber accent bars */
+		.sg-v5 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 12px;
+			margin: 36px 0;
+		}
+		.sg-v5 .stat {
+			background: var(--white);
+			border-radius: var(--radius);
+			padding: 20px 16px;
+			box-shadow: var(--shadow-md);
+			position: relative;
+			overflow: hidden;
+		}
+		.sg-v5 .stat::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: var(--amber);
+		}
+		.sg-v5 .stat + .stat::before { background: var(--sage); }
+		.sg-v5 .stat + .stat + .stat::before { background: var(--plum); }
+		.sg-v5 .stat-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: var(--haze);
+			margin-bottom: 8px;
+		}
+		.sg-v5 .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.5rem, 5.5vw, 2rem);
+			font-weight: 800;
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+		}
+		.sg-v5 .lbl {
+			font-size: 0.75rem;
+			color: var(--soft-charcoal);
+			margin-top: 10px;
+			line-height: 1.4;
+		}
+
+		/* V6 — Two-column annotated with amber underline */
+		.sg-v6 {
+			margin: 36px 0;
+			border-left: 2px solid var(--charcoal);
+			padding-left: 24px;
+		}
+		.sg-v6 .stat {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 20px;
+			align-items: baseline;
+			padding: 14px 0;
+		}
+		.sg-v6 .stat + .stat { border-top: 1px dashed var(--cloud); }
+		.sg-v6 .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 600;
+			font-size: clamp(1.75rem, 7vw, 2.5rem);
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+			position: relative;
+			white-space: nowrap;
+		}
+		.sg-v6 .num::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -4px;
+			height: 3px;
+			background: var(--amber);
+			border-radius: 2px;
+			transform: skew(-8deg);
+		}
+		.sg-v6 .lbl {
+			font-size: 0.875rem;
+			color: var(--soft-charcoal);
+			line-height: 1.4;
+		}
+
+		/* ============================================================= */
+		/*  CALLOUT VARIANTS                                              */
+		/* ============================================================= */
+
+		/* Shared sample width for callouts */
+		.callout-base { font-family: 'Inter', sans-serif; font-size: 0.9375rem; line-height: 1.65; }
+
+		/* V1 — Baseline (border-left + tinted bg + icon) */
+		.c-v1 {
+			position: relative;
+			padding: 18px 20px 18px 56px;
+			border-radius: var(--radius);
+			border-left: 4px solid;
+			margin: 20px 0;
+		}
+		.c-v1.stat { background: var(--sage-light); border-color: var(--sage); }
+		.c-v1.warn { background: #FEF0EC; border-color: var(--amber); }
+		.c-v1::before {
+			position: absolute;
+			left: 18px;
+			top: 19px;
+			width: 26px;
+			height: 26px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			color: var(--white);
+			font-size: 0.875rem;
+		}
+		.c-v1.stat::before { content: '%'; background: var(--sage); }
+		.c-v1.warn::before { content: '!'; background: var(--amber); }
+		.c-v1 .label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 700;
+			font-size: 0.6875rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--charcoal);
+			margin-bottom: 4px;
+		}
+
+		/* V2 — Stamped chip label (no box) */
+		.c-v2 {
+			margin: 32px 0;
+			padding: 18px 0 18px;
+			border-top: 1px solid var(--charcoal);
+			position: relative;
+		}
+		.c-v2 .label {
+			display: inline-block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--canvas);
+			padding: 6px 14px 5px;
+			border-radius: 2px;
+			position: absolute;
+			top: -12px;
+			left: 0;
+			transform: rotate(-1.5deg);
+		}
+		.c-v2.stat .label { background: var(--sage); }
+		.c-v2.warn .label { background: var(--plum); }
+		.c-v2 .body { padding-top: 16px; color: var(--charcoal); }
+
+		/* V3 — Inset card with colored header strip */
+		.c-v3 {
+			margin: 24px 0;
+			background: var(--white);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow-md);
+			overflow: hidden;
+		}
+		.c-v3 .head {
+			padding: 10px 20px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--canvas);
+		}
+		.c-v3.stat .head { background: var(--sage); }
+		.c-v3.warn .head { background: var(--plum); }
+		.c-v3 .body { padding: 18px 20px 20px; color: var(--charcoal); }
+
+		/* V4 — Newspaper sidebar (full-column colored band) */
+		.c-v4 {
+			margin: 28px -20px;
+			padding: 24px 24px 26px;
+			position: relative;
+		}
+		.c-v4.stat { background: var(--sage); color: var(--canvas); }
+		.c-v4.warn { background: var(--plum); color: var(--canvas); }
+		.c-v4 .label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+		.c-v4.stat .label { color: #C5E0C8; }
+		.c-v4.warn .label { color: var(--amber); }
+
+		/* V5 — Marginalia (code-comment style) */
+		.c-v5 {
+			margin: 24px 0;
+			padding: 4px 0 4px 20px;
+			border-left: 6px solid var(--charcoal);
+		}
+		.c-v5.stat { border-left-color: var(--sage); }
+		.c-v5.warn { border-left-color: var(--amber); }
+		.c-v5 .label {
+			display: block;
+			font-family: 'JetBrains Mono', monospace;
+			font-weight: 700;
+			font-size: 0.6875rem;
+			letter-spacing: 0.04em;
+			color: var(--haze);
+			margin-bottom: 6px;
+			text-transform: uppercase;
+		}
+		.c-v5 .label::before { content: '// '; color: var(--stone); }
+		.c-v5 .body { color: var(--charcoal); }
+
+		/* V6 — Index card (slight rotation, ruled lines) */
+		.c-v6 {
+			margin: 32px 0;
+			background: var(--white);
+			padding: 22px 22px 22px 26px;
+			box-shadow: var(--shadow-lg);
+			transform: rotate(-0.4deg);
+			background-image: linear-gradient(var(--white) 30px, var(--cloud) 30px, var(--cloud) 31px, var(--white) 31px);
+			background-size: 100% 30px;
+			position: relative;
+			border-left: 3px double var(--amber);
+		}
+		.c-v6.warn { transform: rotate(0.5deg); border-left-color: var(--plum); }
+		.c-v6 .label {
+			display: block;
+			font-family: 'Fraunces', serif;
+			font-weight: 700;
+			font-size: 0.8125rem;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: var(--charcoal);
+			margin-bottom: 8px;
+		}
+		.c-v6 .label::before { content: '※ '; color: var(--amber); }
+		.c-v6.warn .label::before { color: var(--plum); }
+		.c-v6 .body { color: var(--charcoal); font-style: italic; }
+
+		/* ============================================================= */
+		/*  PULL QUOTE VARIANTS                                           */
+		/* ============================================================= */
+
+		.pq-base cite {
+			display: block;
+			margin-top: 14px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--haze);
+		}
+
+		/* V1 — Baseline (amber left border) */
+		.pq-v1 {
+			margin: 36px 0;
+			padding: 4px 0 4px 24px;
+			border-left: 3px solid var(--amber);
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.25rem, 3.6vw, 1.5rem);
+			font-weight: 600;
+			line-height: 1.35;
+			color: var(--charcoal);
+			font-style: normal;
+		}
+
+		/* V2 — Massive display serif */
+		.pq-v2 {
+			margin: 48px 0;
+			padding: 32px 0;
+			text-align: center;
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.625rem, 6vw, 2.5rem);
+			line-height: 1.15;
+			letter-spacing: -0.015em;
+			color: var(--charcoal);
+		}
+		.pq-v2 cite {
+			color: var(--stone);
+			margin-top: 24px;
+		}
+
+		/* V3 — Decorative quote mark behind text */
+		.pq-v3 {
+			margin: 48px 0 36px;
+			position: relative;
+			padding: 48px 8px 8px 32px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.25rem, 3.6vw, 1.5rem);
+			font-weight: 600;
+			line-height: 1.4;
+			color: var(--charcoal);
+		}
+		.pq-v3::before {
+			content: '\201C';
+			position: absolute;
+			top: -34px;
+			left: -6px;
+			font-family: 'Fraunces', serif;
+			font-size: 9rem;
+			line-height: 1;
+			color: var(--amber);
+			opacity: 0.35;
+			pointer-events: none;
+		}
+
+		/* V4 — Amber highlighter stripe through text */
+		.pq-v4 {
+			margin: 40px 0;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.25rem, 3.6vw, 1.5rem);
+			font-weight: 700;
+			line-height: 1.5;
+			color: var(--charcoal);
+		}
+		.pq-v4 .hl {
+			background-image: linear-gradient(180deg, transparent 0%, transparent 55%, var(--amber-light) 55%, var(--amber-light) 92%, transparent 92%);
+			box-decoration-break: clone;
+			-webkit-box-decoration-break: clone;
+			padding: 0 4px;
+		}
+
+		/* V5 — Full-bleed plum banner */
+		.pq-v5 {
+			margin: 40px -20px;
+			padding: 36px 28px;
+			background: var(--plum);
+			color: var(--canvas);
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.375rem, 4.5vw, 1.875rem);
+			line-height: 1.25;
+			position: relative;
+		}
+		.pq-v5::before {
+			content: '';
+			position: absolute;
+			left: 28px;
+			top: 20px;
+			width: 32px;
+			height: 3px;
+			background: var(--amber);
+		}
+		.pq-v5 { padding-top: 48px; }
+		.pq-v5 cite { color: var(--amber); }
+
+		/* V6 — Newspaper hang-indent */
+		.pq-v6 {
+			margin: 40px 0;
+			padding: 20px 0 20px 12px;
+			border-top: 1px solid var(--charcoal);
+			border-bottom: 1px solid var(--charcoal);
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-style: italic;
+			font-size: clamp(1.25rem, 4vw, 1.625rem);
+			line-height: 1.35;
+			color: var(--charcoal);
+			text-indent: -0.55em;
+		}
+		.pq-v6 cite {
+			text-align: right;
+			font-style: normal;
+			text-indent: 0;
+			color: var(--stone);
+		}
+
+		/* Density table */
+		.density-table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 24px 0;
+			font-size: 0.875rem;
+		}
+		.density-table th,
+		.density-table td {
+			text-align: left;
+			padding: 12px 14px;
+			border-bottom: 1px solid var(--cloud);
+		}
+		.density-table th {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 700;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: var(--charcoal);
+			background: var(--cloud);
+		}
+		.density-table td { color: var(--soft-charcoal); }
+		.density-table tr:last-child td { border-bottom: none; }
+
+		.toc {
+			position: sticky;
+			top: 16px;
+			margin: -12px 0 32px;
+			padding: 14px 16px;
+			background: var(--white);
+			border: 1px solid var(--cloud);
+			border-radius: var(--radius);
+			font-size: 0.8125rem;
+		}
+		.toc a {
+			display: inline-block;
+			margin: 4px 10px 4px 0;
+			color: var(--charcoal);
+			text-decoration: none;
+			border-bottom: 1px solid var(--amber);
+		}
+
+		@media (max-width: 520px) {
+			.sg-v1 { grid-template-columns: 1fr; gap: 16px; }
+			.sg-v2 { grid-template-columns: 1fr; gap: 28px; padding: 32px 0; }
+			.sg-v3 { grid-template-columns: 1fr; }
+			.sg-v4 { grid-template-columns: 1fr; }
+			.sg-v5 { grid-template-columns: 1fr; }
+			.sg-v6 .stat { grid-template-columns: 1fr; gap: 6px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header class="lab-header">
+			<div class="lab-eyebrow">Internal — noindex</div>
+			<h1 class="lab-title">Editorial Design Lab</h1>
+			<p class="lab-sub">Six variants each of the three heavy-lift editorial components — stat grid, callout, and pull quote — so you can pick a direction before I batch the other 12 C1 sub-posts. Every variant uses real content from <em>operations-cost-mistake</em>. Scroll on your phone and mark your favorites.</p>
+		</header>
+
+		<nav class="toc">
+			Jump:
+			<a href="#stats">Stat grid</a>
+			<a href="#callouts">Callouts</a>
+			<a href="#quotes">Pull quotes</a>
+			<a href="#density">Density rules</a>
+		</nav>
+
+		<!-- ================================================== -->
+		<!--  STAT GRID                                          -->
+		<!-- ================================================== -->
+		<section class="section" id="stats">
+			<h2 class="section-title">Stat grid</h2>
+			<p class="section-hint">Three-number summary of the three cost layers. Same numbers in every variant so you're judging form, not content.</p>
+
+			<div class="variant">
+				<div class="variant-label">V1 · BASELINE</div>
+				<div class="variant-name">Horizontal rules, balanced grid</div>
+				<p class="variant-desc">What's currently shipping. Clean but generic — looks like every SaaS marketing page in 2024.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v1">
+						<div class="stat"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+						<div class="stat"><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+						<div class="stat"><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V2 · EDITORIAL SERIF</div>
+				<div class="variant-name">Huge Fraunces numerals, tiny uppercase labels</div>
+				<p class="variant-desc">Newspaper/magazine editorial. The numbers do the talking. Nothing else on the page can compete with their size.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v2">
+						<div class="stat"><span class="num">$400</span><span class="lbl">Monthly tool subscriptions</span></div>
+						<div class="stat"><span class="num">$12K</span><span class="lbl">Lost billable hours</span></div>
+						<div class="stat"><span class="num">$5K</span><span class="lbl">Revenue that leaks away</span></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V3 · DARK BANNER</div>
+				<div class="variant-name">Plum full-bleed with amber top rule</div>
+				<p class="variant-desc">Breaks the canvas rhythm completely. Feels like a pull-out quote box in a print magazine.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v3">
+						<div class="stat"><div class="num">$400</div><div class="lbl">Tool subscriptions</div></div>
+						<div class="stat"><div class="num">$12K</div><div class="lbl">Billable hours lost</div></div>
+						<div class="stat"><div class="num">$5K</div><div class="lbl">Revenue leakage</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V4 · HIERARCHY</div>
+				<div class="variant-name">Visible cost small &amp; crossed out, hidden costs dominant</div>
+				<p class="variant-desc">Teaches the argument visually. The subscription number is shrunk and struck through — the eye goes straight to the numbers people don't see on their credit card statement.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v4">
+						<div class="stat minor"><div class="num">$400</div><div class="lbl">What you see on the card</div></div>
+						<div class="stat major"><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+						<div class="stat major"><div class="num">$5K</div><div class="lbl">Revenue that leaks</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V5 · ELEVATED CARDS</div>
+				<div class="variant-name">White cards with shadow + colored accent bars</div>
+				<p class="variant-desc">Each number gets its own space. The accent bar on top gives each card an identity (amber / sage / plum) without relying on color for the numbers themselves.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v5">
+						<div class="stat"><div class="stat-tag">Layer 1</div><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+						<div class="stat"><div class="stat-tag">Layer 2</div><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+						<div class="stat"><div class="stat-tag">Layer 3</div><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V6 · ANNOTATED</div>
+				<div class="variant-name">Vertical rail, serif numerals, amber underlines</div>
+				<p class="variant-desc">Each stat is a line item with a hand-drawn-style amber underline. Reads like a working notebook, not a slide deck.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-v6">
+						<div class="stat"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+						<div class="stat"><div class="num">$12K</div><div class="lbl">Lost billable hours each month</div></div>
+						<div class="stat"><div class="num">$5K</div><div class="lbl">Revenue that leaks away every month</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================================================== -->
+		<!--  CALLOUTS                                           -->
+		<!-- ================================================== -->
+		<section class="section" id="callouts">
+			<h2 class="section-title">Callouts</h2>
+			<p class="section-hint">Showing stat-type and warning-type side by side per variant so you can see how each design handles semantic colour.</p>
+
+			<div class="variant">
+				<div class="variant-label">V1 · BASELINE</div>
+				<div class="variant-name">Tinted background, border-left, icon circle</div>
+				<p class="variant-desc">Currently shipping. The exact pattern every MDX docs site and Tailwind prose variant ships with. Functional, forgettable.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v1 stat callout-base">
+						<span class="label">The numbers</span>
+						Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v1 warn callout-base">
+						<span class="label">Red flag</span>
+						The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V2 · STAMPED CHIP</div>
+				<div class="variant-name">Floating rotated label, hairline rule above, no box</div>
+				<p class="variant-desc">The chip sits half above the content like a sticker. No background fill — the content blends with the article body. Feels hand-set.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v2 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v2 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V3 · HEADER-STRIP CARD</div>
+				<div class="variant-name">Raised white card, coloured header band</div>
+				<p class="variant-desc">A proper object on the page. Feels like a sidebar you'd see in a finance newsletter. Strong separation, still quiet.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v3 stat callout-base">
+						<div class="head">The numbers</div>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v3 warn callout-base">
+						<div class="head">Red flag</div>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V4 · NEWSPAPER SIDEBAR</div>
+				<div class="variant-name">Full-column coloured band, canvas text</div>
+				<p class="variant-desc">Breaks out of the column by a small amount. High visual impact — uses the darkest colours in the palette. Great for 1–2 uses per post, overwhelming if you use 3+.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v4 stat callout-base">
+						<span class="label">The numbers</span>
+						Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v4 warn callout-base">
+						<span class="label">Red flag</span>
+						The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V5 · MARGINALIA</div>
+				<div class="variant-name">Thick accent rule, monospace label, code-comment feel</div>
+				<p class="variant-desc">Quietest option. Reads like a note in the margin of a book. Very easy to use a lot without the page feeling busy.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v5 stat callout-base">
+						<span class="label">the numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v5 warn callout-base">
+						<span class="label">red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V6 · INDEX CARD</div>
+				<div class="variant-name">Ruled paper, slight rotation, serif label</div>
+				<p class="variant-desc">A bit of personality. The ruled lines and tiny rotation make it feel like a pulled-out notecard. Use sparingly — two in one post is fine, five feels chaotic.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-v6 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-v6 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================================================== -->
+		<!--  PULL QUOTES                                        -->
+		<!-- ================================================== -->
+		<section class="section" id="quotes">
+			<h2 class="section-title">Pull quotes</h2>
+			<p class="section-hint">Same line in every variant: "You'll never see it on a spreadsheet. But it's the most expensive layer of all."</p>
+
+			<div class="variant">
+				<div class="variant-label">V1 · BASELINE</div>
+				<div class="variant-name">Amber left border, Plus Jakarta Sans display</div>
+				<p class="variant-desc">Current ship. Solid but ordinary — reads as "pull quote you've seen on every blog post for the past decade."</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v1 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V2 · DISPLAY SERIF</div>
+				<div class="variant-name">Massive Fraunces, centered, lots of air</div>
+				<p class="variant-desc">Opinion-column treatment. The quote is allowed to take over half the screen. Very strong on desktop, still calm on mobile because the font scales.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v2 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V3 · DECORATIVE QUOTE MARK</div>
+				<div class="variant-name">Oversized amber " behind the text</div>
+				<p class="variant-desc">The quote mark becomes a design element. Subtle enough at 35% opacity that it doesn't fight the words. Recognizably "pull quote" from across the room.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v3 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V4 · HIGHLIGHTER STRIPE</div>
+				<div class="variant-name">Amber-light stripe running through the key words</div>
+				<p class="variant-desc">Feels like someone marked up the article with a highlighter. Very warm and personal — like a recommendation from a friend who circled the good parts.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v4 pq-base">
+						<span class="hl">You'll never see it on a spreadsheet.</span> But it's the <span class="hl">most expensive layer of all</span>.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V5 · FULL-BLEED PLUM</div>
+				<div class="variant-name">Dark plum banner, canvas serif text</div>
+				<p class="variant-desc">Cinematic. Stops the scroll completely. Pair with V3 for stat grid and the post gets two moments of "wait, this is serious" punctuation.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v5 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">V6 · NEWSPAPER HANG</div>
+				<div class="variant-name">Italic Fraunces, horizontal rules, right-aligned cite</div>
+				<p class="variant-desc">Pure editorial. Rules top and bottom of the line, italic serif, cite tucked to the right. Feels like it was laid out by a print editor.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-v6 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>Mal Mposha — Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================================================== -->
+		<!--  DENSITY                                            -->
+		<!-- ================================================== -->
+		<section class="section" id="density">
+			<h2 class="section-title">Pillar vs supporting density</h2>
+			<p class="section-hint">Best-practice component counts by post type. Rule of thumb: components should feel earned, not routine.</p>
+
+			<table class="density-table">
+				<thead>
+					<tr>
+						<th>Component</th>
+						<th>Pillar (3K+ words)</th>
+						<th>Supporting (800–1,500 words)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td>Stat grid</td><td>1 in the hero area</td><td>0–1 (only if numbers drive the piece)</td></tr>
+					<tr><td>Callouts</td><td>3–5 spread through the body</td><td>1–2 max</td></tr>
+					<tr><td>Pull quotes</td><td>2–3 at section transitions</td><td>0–1 (only if there's a genuinely quotable line)</td></tr>
+					<tr><td>Comparison table</td><td>1 recommended</td><td>Optional; only if it's a listicle/comparison piece</td></tr>
+					<tr><td>Hero image</td><td>Required</td><td>Required (cluster-themed generative treatment is fine)</td></tr>
+				</tbody>
+			</table>
+
+			<p class="body-prose"><strong>The operations-cost-mistake sample is 5 elements on 1,000 words</strong> — that's on the heavy side, intentional so you could see the full component range at once. For the batch pass on the other 12 sub-posts I'd propose: 1 stat grid (only if the post is number-driven), 1–2 callouts, and 1 pull quote maximum. That's 2–4 elements per post, which respects brevity.</p>
+
+			<p class="body-prose"><strong>Ratio rule of thumb:</strong> roughly 1 editorial break element per 500–700 words of supporting content, and per 800–1,000 words of pillar content. Pillars can breathe; sub-posts need to respect the reader's time.</p>
+
+			<p class="body-prose"><strong>One hard rule:</strong> never stack two break elements back-to-back (callout immediately after a stat grid, pull quote immediately after a callout). There must be prose between each one, otherwise the page starts to feel like a slide deck instead of an article.</p>
+		</section>
+
+		<footer style="margin-top:80px;padding-top:24px;border-top:1px solid var(--cloud);font-size:0.8125rem;color:var(--haze);">
+			<p>Internal design lab — not indexed, not linked from the site. Delete after decision.</p>
+		</footer>
+	</div>
+</body>
+</html>
