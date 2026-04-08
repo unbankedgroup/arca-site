@@ -33,7 +33,7 @@ It works until it doesn't. And it stops working around the 8-12 client mark, whe
 
 A 10-person consulting firm has structure baked in. Someone handles intake. Someone sends invoices. Someone follows up with leads. Someone preps the calendar for the week. These are not sophisticated functions. They're routine, repeatable, and boring. But they're the reason the firm runs smoothly.
 
-A solo consultant has the same client expectations. The same need for prompt follow-ups, clean onboarding, timely invoices, and proactive communication. But none of the infrastructure. For coaches specifically, [the automation gap is even more visible](/blog/coaching-automation-guide/) because the work is so relational that admin tasks feel like a betrayal of what they signed up for.
+A solo consultant has the same client expectations. The same need for prompt follow-ups, clean onboarding, timely invoices, and proactive communication. But none of the infrastructure. For coaches specifically, the automation gap is even more visible because the work is so relational that admin tasks feel like a betrayal of what they signed up for.
 
 The result is predictable. Things slip.
 

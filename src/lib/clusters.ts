@@ -21,7 +21,7 @@ export const clusterDecks: Record<string, string> = {
 	C6: 'Turning new leads into paying clients without ghosting them in the inbox.',
 };
 
-export const clusterOrder = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6'];
+export const clusterOrder = ['C1'];
 
 // Resolve a frontmatter `cluster` value to { code, label }. Accepts either
 // a bare code ("C1") or "C1 — Label" form.
