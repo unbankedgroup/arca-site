@@ -1087,18 +1087,12 @@ small { font-size: 0.875rem; }
 	box-shadow: var(--shadow-md);
 }
 
-.start-here-card .num {
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-size: 1.75rem;
-	font-weight: 800;
-	color: var(--amber);
-	line-height: 1;
-}
-
 .start-here-card h4 {
-	margin: 0.75rem 0 0.25rem;
+	margin: 0 0 0.5rem;
 	font-size: 1rem;
+	font-weight: 700;
 	color: var(--charcoal);
+	line-height: 1.35;
 }
 
 .start-here-card p {
@@ -1116,7 +1110,7 @@ small { font-size: 0.875rem; }
 
 .cluster-header {
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: 1fr auto;
 	align-items: baseline;
 	gap: 1.5rem;
 	margin-bottom: 2rem;
@@ -1124,45 +1118,38 @@ small { font-size: 0.875rem; }
 	border-bottom: 1px solid var(--cloud);
 }
 
-.cluster-num {
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-size: clamp(2rem, 4vw, 3rem);
-	font-weight: 800;
-	color: var(--amber);
-	line-height: 1;
-	letter-spacing: -0.04em;
-}
-
 .cluster-info h2 {
-	font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-	margin: 0 0 0.25rem;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--charcoal);
+	margin: 0 0 0.35rem;
 }
 
 .cluster-info .cluster-deck {
 	font-size: 0.9375rem;
 	color: var(--haze);
 	margin: 0;
+	max-width: 60ch;
 }
 
-.cluster-view-all {
+.cluster-count {
 	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-size: 0.8125rem;
+	font-size: 0.75rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 0.08em;
-	color: var(--charcoal);
-	text-decoration: none;
-	border-bottom: 2px solid var(--amber);
-	padding-bottom: 2px;
+	letter-spacing: 0.1em;
+	color: var(--haze);
 	white-space: nowrap;
 }
 
 @media (max-width: 680px) {
 	.cluster-header {
-		grid-template-columns: auto 1fr;
-		gap: 1rem;
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
 	}
-	.cluster-view-all { grid-column: 1 / -1; justify-self: start; }
+	.cluster-count { justify-self: start; }
 }
 
 .cluster-grid {

@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { resolveCluster } from '../lib/clusters';
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	slug?: string;
@@ -52,10 +53,8 @@ const readingMinutes =
 				return wc > 0 ? Math.max(1, Math.round(wc / 220)) : 5;
 		  })();
 
-// Cluster parsing
-const clusterMatch = cluster ? cluster.match(/^(C\d+)\s*[—-]\s*(.*)$/) : null;
-const clusterCode = clusterMatch ? clusterMatch[1] : '';
-const categoryLabel = clusterMatch ? clusterMatch[2].trim() : (cluster || 'Learn');
+// Cluster parsing — frontmatter is just the code (C1, C5…); resolve to label
+const { code: clusterCode, label: categoryLabel } = resolveCluster(cluster as string | undefined);
 
 // Current slug — prefer the explicit prop, else parse from pathname
 const currentSlug =
@@ -273,7 +272,7 @@ const combinedJsonLd = {
 								<nav class="prev-next" aria-label="Previous and next post">
 									{prev ? (
 										<a href={`/blog/${prev.id}/`} class="pn-link pn-prev">
-											<span class="pn-label">← Previous in {categoryLabel}</span>
+											<span class="pn-label">← Previous</span>
 											<span class="pn-title">{prev.title}</span>
 										</a>
 									) : (
@@ -281,7 +280,7 @@ const combinedJsonLd = {
 									)}
 									{next ? (
 										<a href={`/blog/${next.id}/`} class="pn-link pn-next">
-											<span class="pn-label">Next in {categoryLabel} →</span>
+											<span class="pn-label">Next →</span>
 											<span class="pn-title">{next.title}</span>
 										</a>
 									) : (
@@ -313,16 +312,14 @@ const combinedJsonLd = {
 				{related.length > 0 && (
 					<section class="related-posts">
 						<div class="related-posts-inner">
-							<h3>Keep reading · {categoryLabel}</h3>
+							<h3>Keep reading</h3>
 							<div class="related-grid">
 								{related.map((post) => {
 									const pData = post.data as any;
-									const pCluster = pData.cluster;
-									const pClusterMatch = pCluster ? String(pCluster).match(/^C\d+\s*[—-]\s*(.*)$/) : null;
-									const pCat = pClusterMatch ? pClusterMatch[1].trim() : '';
+									const pCat = resolveCluster(pData.cluster).label;
 									return (
 										<a href={`/blog/${post.id}/`} class="related-card">
-											{pCat && <div class="related-eyebrow">{pCat}</div>}
+											{pCat && pCat !== 'Learn' && <div class="related-eyebrow">{pCat}</div>}
 											<h4>{pData.title}</h4>
 										</a>
 									);

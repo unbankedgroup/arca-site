@@ -3,30 +3,12 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import { clusterLabels, clusterDecks, clusterOrder } from '../../lib/clusters';
 
 const SITE_TITLE = 'Learn — Arca';
 const SITE_DESCRIPTION = 'Practical guides on operations, automation, and running a service business without burning out. Built for coaches and consultants.';
 
 const allPosts = await getCollection('blog');
-
-// Cluster metadata
-const clusterLabels: Record<string, string> = {
-	C1: 'Managed Operations',
-	C2: 'Automation for Service Businesses',
-	C3: 'Operations & Productivity',
-	C4: 'Tool Alternatives & Comparisons',
-	C5: 'VAs vs Operations Platforms',
-	C6: 'Client Onboarding & Revenue Ops',
-};
-
-const clusterDecks: Record<string, string> = {
-	C1: 'What managed operations actually means — and why done-for-you beats DIY for solo operators.',
-	C2: 'Automate the boring parts of a service business without turning into a Zapier monster.',
-	C3: 'Systems, rituals, and checklists for doing more of the work you actually want to do.',
-	C4: 'Honest comparisons of the tools solo operators use every day — what works, what doesn\'t.',
-	C5: 'Hiring a VA vs. buying an operations platform. Costs, trade-offs, and when to do which.',
-	C6: 'Turning new leads into paying clients without ghosting them in the inbox.',
-};
 
 // Group posts by cluster
 const clusters: Record<string, typeof allPosts> = {};
@@ -49,7 +31,7 @@ for (const key in clusters) {
 	});
 }
 
-// Hero feature: C1 pillar (the big managed ops guide)
+// Hero feature: the C1 flagship guide
 const heroFeature = allPosts.find((p) => p.id === 'c1-pillar-managed-operations-guide');
 
 // Start here: 3 evergreen anchors
@@ -62,7 +44,7 @@ const startHere = startHereIds
 	.map((id) => allPosts.find((p) => p.id === id))
 	.filter(Boolean) as typeof allPosts;
 
-const orderedClusters = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6'].filter((k) => clusters[k]);
+const orderedClusters = clusterOrder.filter((k) => clusters[k]);
 
 const readingMinutes = (wc: any): number => {
 	if (!wc) return 5;
@@ -108,26 +90,25 @@ const readingMinutes = (wc: any): number => {
 				{heroFeature && (
 					<a href={`/blog/${heroFeature.id}/`} class="hero-feature">
 						<div>
-							<span class="eyebrow">Featured pillar · {clusterLabels.C1}</span>
+							<span class="eyebrow">{clusterLabels.C1}</span>
 							<h2>{heroFeature.data.title}</h2>
 							<p>{heroFeature.data.meta_description || heroFeature.data.description}</p>
 							<span class="hero-feature-cta">Read the guide →</span>
 						</div>
 						<div class="hero-feature-stats">
 							<div class="hf-stat"><span class="num">{readingMinutes((heroFeature.data as any).word_count)}</span><span class="lbl">min read</span></div>
-							<div class="hf-stat"><span class="num">{clusters.C1?.length || 0}</span><span class="lbl">supporting posts</span></div>
-							<div class="hf-stat"><span class="num">6</span><span class="lbl">clusters</span></div>
+							<div class="hf-stat"><span class="num">{allPosts.length}</span><span class="lbl">articles</span></div>
+							<div class="hf-stat"><span class="num">{orderedClusters.length}</span><span class="lbl">topics</span></div>
 						</div>
 					</a>
 				)}
 
 				{startHere.length > 0 && (
 					<div class="start-here">
-						<div class="start-here-label">New to Arca ops? Start with these</div>
+						<div class="start-here-label">Start here</div>
 						<div class="start-here-grid">
-							{startHere.map((post, i) => (
+							{startHere.map((post) => (
 								<a href={`/blog/${post.id}/`} class="start-here-card">
-									<span class="num">0{i + 1}</span>
 									<h4>{post.data.title}</h4>
 									<p>{((post.data.meta_description || post.data.description || '') as string).slice(0, 110)}…</p>
 								</a>
@@ -136,17 +117,16 @@ const readingMinutes = (wc: any): number => {
 					</div>
 				)}
 
-				{orderedClusters.map((key, idx) => {
+				{orderedClusters.map((key) => {
 					const posts = clusters[key].slice(0, 7);
 					return (
 						<section class="cluster-section" id={key.toLowerCase()} data-cluster-section={key}>
 							<header class="cluster-header">
-								<div class="cluster-num">0{idx + 1}</div>
 								<div class="cluster-info">
 									<h2>{clusterLabels[key]}</h2>
 									<p class="cluster-deck">{clusterDecks[key]}</p>
 								</div>
-								<a href={`#${key.toLowerCase()}`} class="cluster-view-all">View all ({clusters[key].length})</a>
+								<span class="cluster-count">{clusters[key].length} articles</span>
 							</header>
 							<div class="cluster-grid">
 								{posts.map((post) => {
