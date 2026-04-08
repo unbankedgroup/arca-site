@@ -168,6 +168,11 @@ const combinedJsonLd = {
 			ogImageUrl={ogImageUrl}
 			canonicalUrl={canonicalUrl}
 			articleJsonLd={combinedJsonLd}
+			ogType="article"
+			articlePublishedTime={publishedDate ? publishedDate.toISOString() : undefined}
+			articleModifiedTime={modifiedDate ? modifiedDate.toISOString() : undefined}
+			articleAuthor={authorName}
+			articleSection={categoryLabel}
 		/>
 	</head>
 
