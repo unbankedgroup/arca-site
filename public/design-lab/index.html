@@ -696,6 +696,812 @@
 			border-bottom: 1px solid var(--amber);
 		}
 
+		/* ============================================================= */
+		/*  ROUND 2                                                        */
+		/*  Lineage: Stat V3+V5 · Callout V6/V2/V3 · Pull quote V4/V5     */
+		/* ============================================================= */
+
+		.round-marker {
+			margin: 80px 0 32px;
+			padding: 14px 0 10px;
+			border-top: 2px solid var(--charcoal);
+			border-bottom: 1px solid var(--charcoal);
+		}
+		.round-marker .eyebrow {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.6875rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--amber);
+			font-weight: 700;
+		}
+		.round-marker h3 {
+			margin: 4px 0 0;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 1.375rem;
+			font-weight: 800;
+			letter-spacing: -0.015em;
+		}
+		.round-marker p {
+			margin: 6px 0 0;
+			font-size: 0.8125rem;
+			color: var(--soft-charcoal);
+			max-width: 560px;
+		}
+		.lineage {
+			display: inline-block;
+			margin-left: 8px;
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			letter-spacing: 0.04em;
+			color: var(--haze);
+			text-transform: none;
+			background: none;
+			padding: 0;
+		}
+
+		/* ================== STAT GRID · R2 ================== */
+
+		/* R2-V1 — Cards on plum (V5 cards inside V3 banner) */
+		.sg-r2-v1 {
+			background: var(--plum);
+			margin: 40px -20px;
+			padding: 36px 20px 32px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 12px;
+			position: relative;
+		}
+		.sg-r2-v1::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 24px; right: 24px;
+			height: 2px;
+			background: var(--amber);
+		}
+		.sg-r2-v1 .stat {
+			background: var(--canvas);
+			border-radius: var(--radius);
+			padding: 18px 14px;
+			position: relative;
+		}
+		.sg-r2-v1 .stat-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--amber);
+			margin-bottom: 8px;
+		}
+		.sg-r2-v1 .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.5rem, 5.5vw, 2.125rem);
+			font-weight: 800;
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+		}
+		.sg-r2-v1 .lbl {
+			font-size: 0.75rem;
+			color: var(--soft-charcoal);
+			margin-top: 8px;
+			line-height: 1.4;
+		}
+
+		/* R2-V2 — Dark inverted cards on canvas */
+		.sg-r2-v2 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 12px;
+			margin: 36px 0;
+		}
+		.sg-r2-v2 .stat {
+			background: var(--plum);
+			color: var(--canvas);
+			border-radius: var(--radius);
+			padding: 22px 18px;
+			position: relative;
+			overflow: hidden;
+		}
+		.sg-r2-v2 .stat::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0;
+			height: 3px;
+			background: var(--amber);
+		}
+		.sg-r2-v2 .stat-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--amber);
+			margin-bottom: 10px;
+		}
+		.sg-r2-v2 .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 600;
+			font-size: clamp(1.75rem, 7vw, 2.5rem);
+			letter-spacing: -0.02em;
+			line-height: 1;
+			color: var(--canvas);
+		}
+		.sg-r2-v2 .lbl {
+			font-size: 0.75rem;
+			color: var(--stone);
+			margin-top: 10px;
+			line-height: 1.4;
+		}
+
+		/* R2-V3 — Magazine spread (dark label column + huge numbers) */
+		.sg-r2-v3 {
+			display: grid;
+			grid-template-columns: 140px 1fr;
+			margin: 36px 0;
+			background: var(--canvas);
+			border: 1px solid var(--cloud);
+			border-radius: var(--radius);
+			overflow: hidden;
+		}
+		.sg-r2-v3 .label-col {
+			background: var(--plum);
+			color: var(--canvas);
+			padding: 24px 18px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.sg-r2-v3 .label-col .head {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			color: var(--amber);
+			margin-bottom: 16px;
+		}
+		.sg-r2-v3 .label-col .layer {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.6875rem;
+			color: var(--canvas);
+			padding: 8px 0;
+			border-top: 1px solid rgba(212, 145, 94, 0.3);
+		}
+		.sg-r2-v3 .label-col .layer:first-of-type { border-top: none; }
+		.sg-r2-v3 .num-col {
+			padding: 24px 20px;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 8px;
+		}
+		.sg-r2-v3 .num-col .row {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			padding: 8px 0;
+		}
+		.sg-r2-v3 .num-col .row + .row { border-top: 1px dashed var(--cloud); }
+		.sg-r2-v3 .num-col .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 600;
+			font-size: clamp(1.5rem, 6vw, 2.25rem);
+			color: var(--charcoal);
+			line-height: 1;
+			letter-spacing: -0.02em;
+		}
+		.sg-r2-v3 .num-col .lbl {
+			font-size: 0.75rem;
+			color: var(--haze);
+			max-width: 55%;
+			text-align: right;
+		}
+
+		/* R2-V4 — Framed plum with double canvas border */
+		.sg-r2-v4 {
+			margin: 40px -20px;
+			padding: 32px 20px;
+			background: var(--plum);
+			position: relative;
+		}
+		.sg-r2-v4::before,
+		.sg-r2-v4::after {
+			content: '';
+			position: absolute;
+			left: 28px;
+			right: 28px;
+			height: 1px;
+			background: var(--amber);
+		}
+		.sg-r2-v4::before { top: 12px; box-shadow: 0 3px 0 var(--amber); }
+		.sg-r2-v4::after { bottom: 12px; box-shadow: 0 -3px 0 var(--amber); }
+		.sg-r2-v4 .inner {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			padding: 20px 0;
+		}
+		.sg-r2-v4 .stat { text-align: center; }
+		.sg-r2-v4 .stat-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--amber);
+			margin-bottom: 10px;
+		}
+		.sg-r2-v4 .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.875rem, 8vw, 3rem);
+			color: var(--canvas);
+			line-height: 1;
+			letter-spacing: -0.025em;
+		}
+		.sg-r2-v4 .lbl {
+			font-size: 0.6875rem;
+			color: var(--stone);
+			margin-top: 10px;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+		}
+
+		/* R2-V5 — Floating cards over plum band */
+		.sg-r2-v5 {
+			position: relative;
+			margin: 60px -20px 48px;
+			padding: 64px 20px 24px;
+			background: var(--plum);
+		}
+		.sg-r2-v5 .tag-header {
+			position: absolute;
+			top: 20px;
+			left: 24px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--amber);
+		}
+		.sg-r2-v5 .cards {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 12px;
+		}
+		.sg-r2-v5 .stat {
+			background: var(--canvas);
+			padding: 20px 16px 18px;
+			border-radius: var(--radius);
+			box-shadow: var(--shadow-lg);
+			transform: translateY(-28px);
+		}
+		.sg-r2-v5 .stat-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: var(--amber);
+			margin-bottom: 6px;
+		}
+		.sg-r2-v5 .num {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.5rem, 5.5vw, 2rem);
+			font-weight: 800;
+			color: var(--charcoal);
+			letter-spacing: -0.02em;
+			line-height: 1;
+		}
+		.sg-r2-v5 .lbl {
+			font-size: 0.75rem;
+			color: var(--soft-charcoal);
+			margin-top: 8px;
+			line-height: 1.4;
+		}
+
+		/* R2-V6 — Numbers as cut-outs in plum block */
+		.sg-r2-v6 {
+			margin: 40px -20px;
+			padding: 24px 20px;
+			background: var(--plum);
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2px;
+		}
+		.sg-r2-v6 .stat {
+			background: var(--canvas);
+			padding: 24px 12px 20px;
+			text-align: center;
+			position: relative;
+		}
+		.sg-r2-v6 .stat-tag {
+			position: absolute;
+			top: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: var(--amber);
+			color: var(--canvas);
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.5625rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			padding: 3px 10px 2px;
+			border-radius: 0 0 4px 4px;
+		}
+		.sg-r2-v6 .num {
+			font-family: 'Fraunces', serif;
+			font-weight: 600;
+			font-size: clamp(1.75rem, 6vw, 2.25rem);
+			color: var(--charcoal);
+			line-height: 1;
+			letter-spacing: -0.02em;
+			margin-top: 6px;
+		}
+		.sg-r2-v6 .lbl {
+			font-size: 0.6875rem;
+			color: var(--soft-charcoal);
+			margin-top: 8px;
+			line-height: 1.4;
+		}
+
+		/* ================== CALLOUT · R2 ================== */
+
+		/* R2-C1 — Sticky note */
+		.c-r2-v1 {
+			margin: 28px 0;
+			padding: 22px 22px 20px;
+			background: #FFE7B8;
+			box-shadow: 2px 6px 16px rgba(45, 42, 50, 0.15), 0 1px 3px rgba(45, 42, 50, 0.10);
+			transform: rotate(-0.8deg);
+			position: relative;
+			font-family: 'Fraunces', serif;
+			color: var(--charcoal);
+		}
+		.c-r2-v1.warn { background: #F5CFC1; transform: rotate(0.6deg); }
+		.c-r2-v1::before {
+			content: '';
+			position: absolute;
+			top: -3px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 10px;
+			background: rgba(212, 145, 94, 0.35);
+			border-radius: 2px;
+		}
+		.c-r2-v1 .label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			margin-bottom: 8px;
+			color: var(--charcoal);
+		}
+		.c-r2-v1 .body {
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: 0.9375rem;
+			line-height: 1.55;
+		}
+
+		/* R2-C2 — Rubber stamp */
+		.c-r2-v2 {
+			margin: 32px 0;
+			padding: 20px 22px;
+			position: relative;
+		}
+		.c-r2-v2::before,
+		.c-r2-v2::after {
+			content: '';
+			position: absolute;
+			left: 12px;
+			right: 12px;
+			height: 2px;
+		}
+		.c-r2-v2::before { top: 0; }
+		.c-r2-v2::after { bottom: 0; }
+		.c-r2-v2.stat::before,
+		.c-r2-v2.stat::after { background: var(--sage); opacity: 0.7; box-shadow: 0 3px 0 var(--sage); }
+		.c-r2-v2.warn::before,
+		.c-r2-v2.warn::after { background: var(--plum); opacity: 0.8; box-shadow: 0 3px 0 var(--plum); }
+		.c-r2-v2 .label {
+			display: inline-block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			letter-spacing: 0.16em;
+			padding: 4px 12px;
+			border: 2px solid;
+			margin-bottom: 12px;
+			transform: rotate(-2deg);
+		}
+		.c-r2-v2.stat .label { color: var(--sage); border-color: var(--sage); }
+		.c-r2-v2.warn .label { color: var(--plum); border-color: var(--plum); }
+		.c-r2-v2 .body { color: var(--charcoal); }
+
+		/* R2-C3 — Letterpress carbon (typewriter) */
+		.c-r2-v3 {
+			margin: 28px 0;
+			padding: 18px 22px 18px 28px;
+			background: var(--cloud);
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.8125rem;
+			line-height: 1.7;
+			color: var(--charcoal);
+			position: relative;
+			border-left: 1px solid var(--charcoal);
+		}
+		.c-r2-v3::before {
+			content: '';
+			position: absolute;
+			left: 4px;
+			top: 18px;
+			bottom: 18px;
+			width: 1px;
+			background: var(--charcoal);
+		}
+		.c-r2-v3 .label {
+			display: block;
+			font-weight: 700;
+			font-size: 0.6875rem;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			color: var(--charcoal);
+		}
+		.c-r2-v3.stat .label::before { content: '++ '; color: var(--sage); }
+		.c-r2-v3.warn .label::before { content: '!! '; color: var(--plum); }
+
+		/* R2-C4 — Index card with corner tape */
+		.c-r2-v4 {
+			margin: 36px 0;
+			padding: 26px 22px 22px;
+			background: var(--white);
+			box-shadow: var(--shadow-lg);
+			position: relative;
+			background-image: linear-gradient(var(--white) 38px, rgba(45, 42, 50, 0.08) 38px, rgba(45, 42, 50, 0.08) 39px, var(--white) 39px);
+			background-size: 100% 28px;
+			transform: rotate(-0.3deg);
+		}
+		.c-r2-v4.warn { transform: rotate(0.4deg); }
+		.c-r2-v4::before {
+			content: '';
+			position: absolute;
+			top: -8px;
+			left: 24px;
+			width: 60px;
+			height: 18px;
+			background: rgba(212, 145, 94, 0.55);
+			border-left: 1px dashed rgba(45, 42, 50, 0.2);
+			border-right: 1px dashed rgba(45, 42, 50, 0.2);
+			transform: rotate(-3deg);
+		}
+		.c-r2-v4.warn::before {
+			background: rgba(59, 44, 64, 0.35);
+			left: auto;
+			right: 24px;
+			transform: rotate(4deg);
+		}
+		.c-r2-v4 .label {
+			display: block;
+			font-family: 'Fraunces', serif;
+			font-weight: 700;
+			font-size: 0.9375rem;
+			color: var(--charcoal);
+			margin-bottom: 8px;
+			letter-spacing: 0.02em;
+		}
+		.c-r2-v4.stat .label::before { content: '→ '; color: var(--sage); font-weight: 800; }
+		.c-r2-v4.warn .label::before { content: '※ '; color: var(--plum); font-weight: 800; }
+		.c-r2-v4 .body {
+			font-family: 'Fraunces', serif;
+			font-size: 0.9375rem;
+			color: var(--charcoal);
+			line-height: 1.55;
+		}
+
+		/* R2-C5 — Torn paper edge (deckled top) */
+		.c-r2-v5 {
+			margin: 32px 0;
+			padding: 26px 22px 22px;
+			background: var(--canvas);
+			box-shadow: var(--shadow-md);
+			position: relative;
+			border-left: 1px dashed rgba(45, 42, 50, 0.2);
+			border-right: 1px dashed rgba(45, 42, 50, 0.2);
+		}
+		.c-r2-v5::before {
+			content: '';
+			position: absolute;
+			top: -6px; left: 0; right: 0;
+			height: 8px;
+			background: var(--canvas);
+			clip-path: polygon(0% 100%, 3% 40%, 6% 100%, 9% 30%, 12% 100%, 15% 50%, 18% 100%, 21% 20%, 24% 100%, 27% 55%, 30% 100%, 33% 35%, 36% 100%, 39% 25%, 42% 100%, 45% 45%, 48% 100%, 51% 30%, 54% 100%, 57% 50%, 60% 100%, 63% 25%, 66% 100%, 69% 45%, 72% 100%, 75% 30%, 78% 100%, 81% 55%, 84% 100%, 87% 35%, 90% 100%, 93% 45%, 96% 100%, 100% 40%);
+		}
+		.c-r2-v5 .label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.6875rem;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			margin-bottom: 10px;
+			padding-bottom: 8px;
+			border-bottom: 1px solid var(--cloud);
+		}
+		.c-r2-v5.stat .label { color: var(--sage); }
+		.c-r2-v5.warn .label { color: var(--plum); }
+		.c-r2-v5 .body {
+			font-family: 'Fraunces', serif;
+			font-size: 0.9375rem;
+			color: var(--charcoal);
+			line-height: 1.6;
+		}
+
+		/* R2-C6 — Ledger entry */
+		.c-r2-v6 {
+			margin: 28px 0;
+			padding: 16px 20px 14px;
+			background: var(--canvas);
+			border-top: 2px solid var(--charcoal);
+			border-bottom: 1px solid var(--cloud);
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 18px;
+			align-items: start;
+		}
+		.c-r2-v6 .ledger-tag {
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.625rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			padding-top: 4px;
+			min-width: 70px;
+		}
+		.c-r2-v6.stat .ledger-tag { color: var(--sage); }
+		.c-r2-v6.warn .ledger-tag { color: var(--plum); }
+		.c-r2-v6 .label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 800;
+			font-size: 0.875rem;
+			color: var(--charcoal);
+			margin-bottom: 4px;
+		}
+		.c-r2-v6 .body {
+			font-family: 'Inter', sans-serif;
+			font-size: 0.9375rem;
+			color: var(--soft-charcoal);
+			line-height: 1.6;
+		}
+
+		/* ================== PULL QUOTE · R2 ================== */
+
+		/* R2-PQ1 — Overflow giant serif (wider than column) */
+		.pq-r2-v1 {
+			margin: 48px -20px;
+			padding: 32px 20px;
+			text-align: left;
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.75rem, 7vw, 3.25rem);
+			line-height: 1.05;
+			letter-spacing: -0.02em;
+			color: var(--charcoal);
+			position: relative;
+		}
+		.pq-r2-v1::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 20px; right: 20px;
+			height: 1px;
+			background: var(--charcoal);
+		}
+		.pq-r2-v1 cite {
+			display: block;
+			margin-top: 24px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--amber);
+		}
+
+		/* R2-PQ2 — Split two-tone */
+		.pq-r2-v2 {
+			margin: 48px -20px;
+			position: relative;
+			background: linear-gradient(to right, var(--plum) 0%, var(--plum) 50%, var(--canvas) 50%, var(--canvas) 100%);
+			padding: 48px 24px;
+			font-family: 'Fraunces', serif;
+			font-size: clamp(1.375rem, 4.5vw, 1.875rem);
+			line-height: 1.25;
+			font-weight: 400;
+			color: var(--canvas);
+		}
+		.pq-r2-v2 .line {
+			display: block;
+			max-width: 620px;
+			margin: 0 auto;
+			mix-blend-mode: difference;
+			color: var(--canvas);
+		}
+		.pq-r2-v2 cite {
+			display: block;
+			max-width: 620px;
+			margin: 22px auto 0;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--amber);
+			mix-blend-mode: normal;
+		}
+
+		/* R2-PQ3 — Masthead dispatch */
+		.pq-r2-v3 {
+			margin: 48px 0;
+			padding: 24px 0;
+			text-align: center;
+			border-top: 3px double var(--charcoal);
+			border-bottom: 3px double var(--charcoal);
+		}
+		.pq-r2-v3 .dek {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: var(--amber);
+			margin-bottom: 14px;
+		}
+		.pq-r2-v3 .hed {
+			display: block;
+			font-family: 'Fraunces', serif;
+			font-weight: 900;
+			font-size: clamp(1.5rem, 5vw, 2.125rem);
+			line-height: 1.1;
+			color: var(--charcoal);
+			text-transform: uppercase;
+			letter-spacing: -0.005em;
+			max-width: 560px;
+			margin: 0 auto;
+		}
+		.pq-r2-v3 cite {
+			display: block;
+			margin-top: 18px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.625rem;
+			font-weight: 700;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: var(--haze);
+		}
+
+		/* R2-PQ4 — Pinned index card */
+		.pq-r2-v4 {
+			margin: 44px 12px 44px 8px;
+			padding: 32px 28px 28px;
+			background: var(--white);
+			box-shadow: var(--shadow-lg);
+			transform: rotate(-1deg);
+			position: relative;
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.25rem, 4vw, 1.625rem);
+			line-height: 1.3;
+			color: var(--charcoal);
+			background-image: linear-gradient(var(--white) 44px, rgba(212, 145, 94, 0.18) 44px, rgba(212, 145, 94, 0.18) 45px, var(--white) 45px);
+			background-size: 100% 36px;
+		}
+		.pq-r2-v4::before {
+			content: '';
+			position: absolute;
+			top: -12px;
+			left: 50%;
+			transform: translateX(-50%) rotate(-3deg);
+			width: 70px;
+			height: 22px;
+			background: rgba(212, 145, 94, 0.55);
+			border-left: 1px dashed rgba(45, 42, 50, 0.2);
+			border-right: 1px dashed rgba(45, 42, 50, 0.2);
+		}
+		.pq-r2-v4 cite {
+			display: block;
+			text-align: right;
+			margin-top: 16px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--amber);
+		}
+
+		/* R2-PQ5 — Torn plum banner */
+		.pq-r2-v5 {
+			margin: 44px -20px;
+			padding: 44px 28px 36px;
+			background: var(--plum);
+			color: var(--canvas);
+			font-family: 'Fraunces', serif;
+			font-weight: 400;
+			font-size: clamp(1.375rem, 4.5vw, 1.875rem);
+			line-height: 1.25;
+			position: relative;
+		}
+		.pq-r2-v5::before {
+			content: '';
+			position: absolute;
+			top: -8px; left: 0; right: 0;
+			height: 12px;
+			background: var(--plum);
+			clip-path: polygon(0 100%, 2% 30%, 5% 100%, 8% 20%, 11% 100%, 14% 40%, 17% 100%, 20% 15%, 23% 100%, 26% 35%, 29% 100%, 32% 20%, 35% 100%, 38% 45%, 41% 100%, 44% 25%, 47% 100%, 50% 30%, 53% 100%, 56% 20%, 59% 100%, 62% 40%, 65% 100%, 68% 25%, 71% 100%, 74% 35%, 77% 100%, 80% 20%, 83% 100%, 86% 40%, 89% 100%, 92% 25%, 95% 100%, 98% 30%, 100% 100%);
+		}
+		.pq-r2-v5::after {
+			content: '';
+			position: absolute;
+			bottom: -8px; left: 0; right: 0;
+			height: 12px;
+			background: var(--plum);
+			clip-path: polygon(0 0, 2% 70%, 5% 0, 8% 80%, 11% 0, 14% 60%, 17% 0, 20% 85%, 23% 0, 26% 65%, 29% 0, 32% 80%, 35% 0, 38% 55%, 41% 0, 44% 75%, 47% 0, 50% 70%, 53% 0, 56% 80%, 59% 0, 62% 60%, 65% 0, 68% 75%, 71% 0, 74% 65%, 77% 0, 80% 80%, 83% 0, 86% 60%, 89% 0, 92% 75%, 95% 0, 98% 70%, 100% 0);
+		}
+		.pq-r2-v5 cite {
+			display: block;
+			margin-top: 20px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--amber);
+		}
+
+		/* R2-PQ6 — Giant punctuation wing */
+		.pq-r2-v6 {
+			margin: 48px 0;
+			padding: 8px 0;
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 20px;
+			align-items: flex-start;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(1.25rem, 3.8vw, 1.625rem);
+			font-weight: 600;
+			line-height: 1.35;
+			color: var(--charcoal);
+		}
+		.pq-r2-v6 .mark {
+			font-family: 'Fraunces', serif;
+			font-size: clamp(4.5rem, 14vw, 7rem);
+			line-height: 0.7;
+			font-weight: 900;
+			color: var(--amber);
+			display: block;
+			margin-top: 4px;
+		}
+		.pq-r2-v6 cite {
+			display: block;
+			margin-top: 18px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--haze);
+		}
+
 		@media (max-width: 520px) {
 			.sg-v1 { grid-template-columns: 1fr; gap: 16px; }
 			.sg-v2 { grid-template-columns: 1fr; gap: 28px; padding: 32px 0; }
@@ -703,6 +1509,15 @@
 			.sg-v4 { grid-template-columns: 1fr; }
 			.sg-v5 { grid-template-columns: 1fr; }
 			.sg-v6 .stat { grid-template-columns: 1fr; gap: 6px; }
+			.sg-r2-v1 { grid-template-columns: 1fr; }
+			.sg-r2-v2 { grid-template-columns: 1fr; }
+			.sg-r2-v3 { grid-template-columns: 1fr; }
+			.sg-r2-v3 .label-col { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+			.sg-r2-v3 .label-col .layer { border-top: none; padding: 4px 0; }
+			.sg-r2-v4 .inner { grid-template-columns: 1fr; gap: 24px; }
+			.sg-r2-v5 .cards { grid-template-columns: 1fr; }
+			.sg-r2-v5 .stat { transform: translateY(-14px); }
+			.sg-r2-v6 { grid-template-columns: 1fr; }
 		}
 	</style>
 </head>
@@ -715,11 +1530,11 @@
 		</header>
 
 		<nav class="toc">
-			Jump:
-			<a href="#stats">Stat grid</a>
+			<strong style="display:block;margin-bottom:6px;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.6875rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--haze);">Round 2 is live — scroll past Round 1 in each section</strong>
+			<a href="#stats">Stats</a>
 			<a href="#callouts">Callouts</a>
-			<a href="#quotes">Pull quotes</a>
-			<a href="#density">Density rules</a>
+			<a href="#quotes">Quotes</a>
+			<a href="#density">Density</a>
 		</nav>
 
 		<!-- ================================================== -->
@@ -814,6 +1629,115 @@
 						<div class="stat"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
 						<div class="stat"><div class="num">$12K</div><div class="lbl">Lost billable hours each month</div></div>
 						<div class="stat"><div class="num">$5K</div><div class="lbl">Revenue that leaks away every month</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="round-marker">
+				<div class="eyebrow">Round 2 · from V3 + V5</div>
+				<h3>Combining dark banner energy with card structure</h3>
+				<p>You liked V3's cinematic drama and V5's layered cards + tags. These push the combination six ways.</p>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V1 · CARDS ON PLUM <span class="lineage">from V3+V5 · direct hybrid</span></div>
+				<div class="variant-name">V5 white cards embedded in V3's plum banner</div>
+				<p class="variant-desc">The most literal combination. Plum banner stays, cards sit inside it, Layer 1/2/3 tags in amber to pop against the dark ground. Closest to what you asked for.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v1">
+						<div class="stat"><div class="stat-tag">Layer 1</div><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+						<div class="stat"><div class="stat-tag">Layer 2</div><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+						<div class="stat"><div class="stat-tag">Layer 3</div><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V2 · INVERTED CARDS <span class="lineage">from V5 · push darker</span></div>
+				<div class="variant-name">Plum cards on canvas, serif numerals, amber accent rules</div>
+				<p class="variant-desc">Inverts the relationship. Instead of dark container + light cards, we get light page + dark cards. Feels like a financial dispatch. Serif numerals bring the editorial weight.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v2">
+						<div class="stat"><div class="stat-tag">Layer 1</div><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+						<div class="stat"><div class="stat-tag">Layer 2</div><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+						<div class="stat"><div class="stat-tag">Layer 3</div><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V3 · MAGAZINE SPREAD <span class="lineage">from V3+V5 · push asymmetric</span></div>
+				<div class="variant-name">Dark label column + ruled number list</div>
+				<p class="variant-desc">Asymmetric: dark plum sidebar carries the framework (category + layer labels), the right column gives the numbers room to breathe as a ruled list. Feels like a magazine annotation spread.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v3">
+						<div class="label-col">
+							<div class="head">Three layers</div>
+							<div class="layer">L1 · Subs</div>
+							<div class="layer">L2 · Time</div>
+							<div class="layer">L3 · Leak</div>
+						</div>
+						<div class="num-col">
+							<div class="row"><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+							<div class="row"><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+							<div class="row"><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+						</div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V4 · FRAMED PLUM <span class="lineage">from V3 · push formal</span></div>
+				<div class="variant-name">Plum banner with double amber frame rules, serif centered</div>
+				<p class="variant-desc">More formal take on V3 — the double amber rules frame the stats like a classified document. Serif numerals centered, labels in small caps. Feels ceremonial, almost proclamatory.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v4">
+						<div class="inner">
+							<div class="stat"><div class="stat-tag">Layer 1</div><div class="num">$400</div><div class="lbl">Subscriptions</div></div>
+							<div class="stat"><div class="stat-tag">Layer 2</div><div class="num">$12K</div><div class="lbl">Lost hours</div></div>
+							<div class="stat"><div class="stat-tag">Layer 3</div><div class="num">$5K</div><div class="lbl">Leakage</div></div>
+						</div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V5 · FLOATING CARDS <span class="lineage">from V5 · push layering</span></div>
+				<div class="variant-name">White cards lifted above a plum band</div>
+				<p class="variant-desc">V5's elevated cards physically rise out of a plum band, overlapping the top edge. The band holds the section label; the cards hold the numbers. Strongest depth sense of the batch.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v5">
+						<div class="tag-header">Three layers of operations cost</div>
+						<div class="cards">
+							<div class="stat"><div class="stat-tag">Layer 1</div><div class="num">$400</div><div class="lbl">Monthly tool subscriptions</div></div>
+							<div class="stat"><div class="stat-tag">Layer 2</div><div class="num">$12K</div><div class="lbl">Lost billable hours</div></div>
+							<div class="stat"><div class="stat-tag">Layer 3</div><div class="num">$5K</div><div class="lbl">Revenue that leaks away</div></div>
+						</div>
+					</div>
+					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-V6 · WINDOW CUTOUTS <span class="lineage">from V3+V5 · push raw</span></div>
+				<div class="variant-name">Canvas cutouts through a plum block, amber tabs</div>
+				<p class="variant-desc">Instead of cards sitting on plum, the numbers appear as canvas "windows" cut through the plum block. Each window has a small amber tab label peeking down from the top edge. More brutalist than the others.</p>
+				<div class="stage">
+					<p class="body-prose">…Most people look at their tool subscriptions. $30 here. $50 there. They think that's what operations costs them. It's not even close.</p>
+					<div class="sg-r2-v6">
+						<div class="stat"><div class="stat-tag">L1</div><div class="num">$400</div><div class="lbl">Subscriptions</div></div>
+						<div class="stat"><div class="stat-tag">L2</div><div class="num">$12K</div><div class="lbl">Lost hours</div></div>
+						<div class="stat"><div class="stat-tag">L3</div><div class="num">$5K</div><div class="lbl">Leakage</div></div>
 					</div>
 					<p class="body-prose">There are three ways DIY ops bleeds money from a service business…</p>
 				</div>
@@ -934,6 +1858,126 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="round-marker">
+				<div class="eyebrow">Round 2 · from V6 (lead) + V2/V3</div>
+				<h3>Pushing tactile / hand-set personality</h3>
+				<p>V6's index card was the strongest signal — tactile, personal, object-on-page. These push further in that direction, plus a typewriter and ledger-entry experiment.</p>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C1 · STICKY NOTE <span class="lineage">from V6 · push physical</span></div>
+				<div class="variant-name">Coloured paper, drop shadow, taped to the page</div>
+				<p class="variant-desc">V6 pushed all the way into physical object. Amber sticky for stats, terracotta for warnings. Visible tape across the top. Warmest option of the batch.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v1 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v1 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C2 · RUBBER STAMP <span class="lineage">from V2+V6 · push ink</span></div>
+				<div class="variant-name">Bordered label chip, rotated, ink-stamp rules top/bottom</div>
+				<p class="variant-desc">V2's chip + V6's tactility. The label is stamped onto the page in ink, with a shadow double-rule above and below the body. No background fill — the stamp IS the callout.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v2 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v2 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C3 · TYPEWRITER CARBON <span class="lineage">from V6 · push mechanical</span></div>
+				<div class="variant-name">Mono type on cloud ground, margin rail, ++/!! markers</div>
+				<p class="variant-desc">V6's character reimagined as a draft note from an old typewriter. Monospace body, subtle offset rail on the left, ++ for positive stats and !! for warnings. Quietest R2 variant.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v3 stat callout-base">
+						<span class="label">The numbers</span>
+						Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v3 warn callout-base">
+						<span class="label">Red flag</span>
+						The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C4 · TAPED INDEX CARD <span class="lineage">from V6+V2 · push object</span></div>
+				<div class="variant-name">V6 ruled paper + visible tape corner + serif label</div>
+				<p class="variant-desc">Direct evolution of V6: wider ruled lines, a visible amber tape strip holding the card to the page, serif label with → and ※ glyphs. Feels like a pulled-out research note.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v4 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v4 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C5 · TORN PAPER <span class="lineage">from V6 · push deckled</span></div>
+				<div class="variant-name">Raised card with a torn top edge, dashed sides</div>
+				<p class="variant-desc">V6's index card minus the rotation, plus a torn paper edge on top. Dashed side borders imply a perforation. Feels like a page ripped from a notebook. Cleaner than V6, more character than V3.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v5 stat callout-base">
+						<span class="label">The numbers</span>
+						<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v5 warn callout-base">
+						<span class="label">Red flag</span>
+						<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-C6 · LEDGER ENTRY <span class="lineage">from V6+V3 · push finance</span></div>
+				<div class="variant-name">Two-column ledger row with mono tag</div>
+				<p class="variant-desc">A nod to your finance background. Thick charcoal top rule, monospace tag on the left (like a ledger date/code), label + body on the right. Spartan, direct, serious. Reads like a statement line item.</p>
+				<div class="stage">
+					<p class="body-prose">Layer 2 is the time you're spending. 36% of the average work week goes to administrative tasks.</p>
+					<div class="c-r2-v6 stat callout-base">
+						<div class="ledger-tag">STAT.01</div>
+						<div>
+							<span class="label">The numbers</span>
+							<div class="body">Knowledge workers lose 28% of the average workweek just managing information across disconnected apps. More than a full day of every week gone before anyone has done any actual work.</div>
+						</div>
+					</div>
+					<p class="body-prose">Layer 3 is the revenue you never see. The lead who filled out your contact form at 9pm.</p>
+					<div class="c-r2-v6 warn callout-base">
+						<div class="ledger-tag">WARN.01</div>
+						<div>
+							<span class="label">Red flag</span>
+							<div class="body">The 5-minute window is not a best practice — it's a cliff. Respond inside it and you're 21× more likely to qualify the lead. Miss it and most of your competitors get the first reply.</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- ================================================== -->
@@ -1022,6 +2066,100 @@
 					<blockquote class="pq-v6 pq-base">
 						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
 						<cite>Mal Mposha — Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="round-marker">
+				<div class="eyebrow">Round 2 · push wider (V4/V5 closest but struggling)</div>
+				<h3>Bigger swings since nothing's landed yet</h3>
+				<p>Stopping the incremental variants. These go wider — overflow the column, break the frame, punctuation as design, torn paper, split two-tone. At least one is an experiment that might fail.</p>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ1 · OVERFLOW GIANT <span class="lineage">push size brutally</span></div>
+				<div class="variant-name">Fraunces larger than the column, bleeds into gutters</div>
+				<p class="variant-desc">Maximum typographic impact. The quote is bigger than the prose column and breaks out into the page gutters. Single charcoal rule above, amber cite. Feels like an op-ed.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v1 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ2 · SPLIT TWO-TONE <span class="lineage">from V5 · push half-and-half</span></div>
+				<div class="variant-name">Plum left, canvas right, text crosses the seam</div>
+				<p class="variant-desc">Experimental. Background is half plum, half canvas. The quote text sits across both halves using mix-blend-mode so it's readable on both sides. Either you love this or it's a miss — want your read.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v2 pq-base">
+						<span class="line">You'll never see it on a spreadsheet. But it's the most expensive layer of all.</span>
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ3 · MASTHEAD DISPATCH <span class="lineage">push newspaper</span></div>
+				<div class="variant-name">Uppercase Fraunces headline, double rules, dek &amp; byline</div>
+				<p class="variant-desc">Treats the quote like a news headline. Amber dek above ("FROM THE FIELD"), all-caps Fraunces hed, byline below, bracketed by double rules. Strong signal this is "the important line."</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v3 pq-base">
+						<span class="dek">From the field</span>
+						<span class="hed">You'll never see it on a spreadsheet. But it's the most expensive layer of all.</span>
+						<cite>Mal Mposha · Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ4 · PINNED CARD <span class="lineage">from callout V6 family · push cross-pollinate</span></div>
+				<div class="variant-name">Ruled index card, visible amber tape, slight rotation</div>
+				<p class="variant-desc">Cross-pollinates with your callout picks. If you love the tactile callouts, the pull quote in the same family creates a visual system across the post. Serif body, rotated card, tape strip on top.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v4 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>Mal Mposha · Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ5 · TORN PLUM <span class="lineage">from V5 · push tactile</span></div>
+				<div class="variant-name">V5 banner but with ragged top and bottom edges</div>
+				<p class="variant-desc">Direct evolution of V5: same cinematic plum drama, but the top and bottom edges are torn instead of sharp. Adds a crafted quality that V5 was missing. Still cinematic, now also handmade.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v5 pq-base">
+						You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+						<cite>— Mal Mposha, Arca</cite>
+					</blockquote>
+					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
+				</div>
+			</div>
+
+			<div class="variant">
+				<div class="variant-label">R2-PQ6 · PUNCTUATION WING <span class="lineage">from V3 · push mark-as-element</span></div>
+				<div class="variant-name">Giant amber " to the left, quote text as a wing</div>
+				<p class="variant-desc">V3 put the quote mark behind the text at 35% opacity. This version makes the " a full design element to the left of the quote, at 100% amber. The quote text becomes the wing. Strongest "mark-forward" treatment.</p>
+				<div class="stage">
+					<p class="body-prose">Every dropped follow-up. Every slow lead response. Every invoice sent late. That's revenue that evaporated. Not because of a bad business. Because of broken operations.</p>
+					<blockquote class="pq-r2-v6 pq-base">
+						<span class="mark">&#8220;</span>
+						<div>
+							You'll never see it on a spreadsheet. But it's the most expensive layer of all.
+							<cite>— Mal Mposha, Arca</cite>
+						</div>
 					</blockquote>
 					<p class="body-prose">Let me put it together for a consultant billing $200/hour with 15–20 active clients.</p>
 				</div>
