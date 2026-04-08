@@ -1,5 +1,5 @@
 ---
-title: "The 7-Day Build: How Arca Gets You Live in One Week (Not 7 Weeks)"
+title: "The 7-Day Build: Live in a Week, Not Seven"
 slug: 7-day-build-explained
 cluster: C1 — Managed Operations
 id: C1-S5
@@ -7,7 +7,7 @@ target_keyword: "7-day business setup sprint"
 secondary_keywords: "7 day business setup, done for you operations setup, fast business automation"
 search_intent: Commercial
 word_count: ~1,200
-meta_description: "Most operations setups take 30-40 hours and weeks of configuration. The 7-Day Build diagnoses your business, configures everything, and has you live in 7 days. Here's how it works."
+meta_description: "Most operations setups take weeks of configuration. The 7-Day Build diagnoses your business, configures everything, and has you live in seven days."
 links_to: C1-P, C1-S4, C1-S6
 author: Mal Mposha
 last_updated: April 2026
@@ -50,7 +50,7 @@ That's the bottleneck Arca's 7-Day Build eliminates. You don't design anything. 
 
 ## Day 1-2: Diagnosis and mapping
 
-Everything starts with the [diagnostic conversation](/blog/diagnosis-before-prescription/). One call. Usually 20-30 minutes.
+Everything starts with the [diagnostic conversation](/blog/diagnosis-before-prescription). One call. Usually 20-30 minutes.
 
 We're not selling during this call. We're listening. The questions are specific:
 
@@ -125,7 +125,7 @@ The first week after go-live, we monitor everything. If a workflow misfires or a
 
 Honest question I get sometimes: if you're building it, why does it take a whole week?
 
-Because the [diagnosis matters](/blog/diagnosis-before-prescription/). Because the review stages matter. Because testing matters. We could technically configure the system faster. But rushing the diagnosis means building the wrong thing. Skipping the review means sending messages you wouldn't have approved. Cutting testing means bugs in the first week when trust is most fragile.
+Because the [diagnosis matters](/blog/diagnosis-before-prescription). Because the review stages matter. Because testing matters. We could technically configure the system faster. But rushing the diagnosis means building the wrong thing. Skipping the review means sending messages you wouldn't have approved. Cutting testing means bugs in the first week when trust is most fragile.
 
 Seven days is fast for a full operations setup. It's slow enough to be right.
 
@@ -152,9 +152,9 @@ That's the 7-Day Build. Not a template. Not a tutorial. Not a dashboard with 40 
 ---
 
 *Related reading:*
-- [The Managed Operations Guide](/blog/managed-operations-guide/) — What managed operations means and why it matters
-- [Diagnosis Before Prescription](/blog/diagnosis-before-prescription/) — Why we start with questions, not solutions
-- [Operations for a Team of One](/blog/operations-team-of-one/) — How to think about ops when you're solo
+- [The Managed Operations Guide](/blog/managed-operations-guide) — What managed operations means and why it matters
+- [Diagnosis Before Prescription](/blog/diagnosis-before-prescription) — Why we start with questions, not solutions
+- [Operations for a Team of One](/blog/operations-team-of-one) — How to think about ops when you're solo
 
 ---
 
@@ -184,79 +184,3 @@ A: You'll see it in your morning briefing. Arca reports failures transparently: 
 
 *Ready to see what your 7-Day Build would look like? [Start with a diagnosis →](https://runarca.xyz)*
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What if I need changes after day 7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The 7-Day Build gets you live. After that, you can request adjustments through your Arca chat. Most changes — tone tweaks, timing adjustments, new workflows — happen within 24-48 hours."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to be technical?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. If you can use WhatsApp or Telegram, you can use Arca. The 7-Day Build is done for you — you provide answers, we handle configuration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if my tools aren't supported?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Arca integrates with the most common tools: Gmail, Calendly, Stripe, HubSpot, Notion. If you use something niche, we'll tell you during the discovery call whether it's supported or needs replacement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel if it doesn't work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. 30-day money-back guarantee. If Arca doesn't save you 10+ hours/month, we'll refund your first month and help you export your data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if something breaks after go-live?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You'll see it in your morning briefing. Arca reports failures transparently: 'That message didn't send. Here's what happened. Want me to retry or send manually?' Nothing goes silent."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The 7-Day Build: How Arca Gets You Live in One Week (Not 7 Weeks)",
-  "description": "Most operations setups take 30-40 hours and weeks of configuration. The 7-Day Build diagnoses your business, configures everything, and has you live in 7 days. Here's how it works.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/7-day-build-explained"
-  }
-}
-</script>

@@ -1,5 +1,5 @@
 ---
-title: "Operations Cost Calculator: Find Your Real Admin Cost in 5 Minutes"
+title: "Operations Cost Calculator: Your Real Admin Cost"
 slug: operations-cost-calculator
 cluster: C1 — Managed Operations
 id: C1-S11
@@ -213,79 +213,3 @@ Revenue leakage = Lost leads (leads × cold rate × avg client value) + Late inv
 
 Invest when ops cost exceeds 20% of revenue, or when admin time exceeds 10 hours/week. For most service businesses, this happens at $5,000-10,000/month revenue. Earlier investment = faster path to profitability.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What should I include in operations cost calculation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Include: (1) Tool subscriptions (scheduling, CRM, invoicing, email, automation), (2) Admin time (your hours × billing rate), and (3) Revenue leakage (lost leads, late payments, early churn). Most businesses find admin time and leakage dwarf tool costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much should a small business spend on operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Healthy service businesses spend 10-15% of revenue on operations. Broken operations run 25-40%+. The difference isn't tool costs — it's admin time (15-25 hrs/week vs 2-4 hrs/week) and revenue leakage (10-20% lost vs 2-5% lost)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the ROI of managed operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typical ROI: 60-80% reduction in admin time (15-25 hrs/week → 2-4 hrs/week), 50-70% reduction in revenue leakage (better lead response, faster payment collection), and 50-70% reduction in tool costs (consolidation). Payback period: 2-4 weeks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I calculate revenue leakage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Revenue leakage = Lost leads (leads × cold rate × avg client value) + Late invoices (revenue × late rate × cost of capital) + Early churn (clients lost × avg value × early departure rate). Most businesses lose 10-20% of potential revenue to leakage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When should I invest in managed operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Invest when ops cost exceeds 20% of revenue, or when admin time exceeds 10 hours/week. For most service businesses, this happens at $5,000-10,000/month revenue. Earlier investment = faster path to profitability."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Operations Cost Calculator: Find Your Real Admin Cost in 5 Minutes",
-  "description": "Calculate what your business really spends on operations. DIY tools + admin time + revenue leakage = the real cost of broken ops.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/operations-cost-calculator"
-  }
-}
-</script>

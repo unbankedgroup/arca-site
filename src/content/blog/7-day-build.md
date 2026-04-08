@@ -1,5 +1,5 @@
 ---
-title: "Done-for-You Operations Setup: What Happens Each Day of Your First Week"
+title: "Done-for-You Operations Setup: Your First Week"
 slug: operations-setup-week
 cluster: C1 — Managed Operations
 id: C1-S5b
@@ -13,7 +13,7 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-**Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/diagnosis-before-prescription/).
+**Quick answer:** A done-for-you operations setup takes 7 days elapsed and 3-4 hours of your time. Day 1: discovery call and business mapping. Day 2: workflow design. Days 3-4: we build everything. Days 5-6: testing and your review. Day 7: handoff call and go-live. You don't configure anything. [Here's why we start with diagnosis, not templates](/blog/diagnosis-before-prescription).
 
 ---
 
@@ -23,11 +23,11 @@ That's not setup. That's the beginning of a 20-40 hour DIY project most founders
 
 Done-for-you setup is different: you describe your business, we build it, you approve it, it runs. Here's exactly what that looks like — day by day — so you know what to expect before you start.
 
-*This is the step-by-step breakdown of the [7-Day Build](/blog/7-day-build-explained/). If you want to understand why the process is structured this way, read that first.*
+*This is the step-by-step breakdown of the [7-Day Build](/blog/7-day-build-explained). If you want to understand why the process is structured this way, read that first.*
 
 ## Why 7 days?
 
-Most "setup" is actually teaching you how to build it yourself. That's not setup — that's a course. As we explain in [diagnosis before prescription](/blog/diagnosis-before-prescription/), the right solution comes from understanding your business first — not from a template.
+Most "setup" is actually teaching you how to build it yourself. That's not setup — that's a course. As we explain in [diagnosis before prescription](/blog/diagnosis-before-prescription), the right solution comes from understanding your business first — not from a template.
 
 The 7-Day Build is different because we do the building. You provide the inputs. We configure the system. You review. We refine. You're live.
 
@@ -141,7 +141,7 @@ We hop on a 60-minute call. We walk through the system together. You ask questio
 - Your invoices are automated
 - Your morning briefings are scheduled
 
-You're done. No more setup. No more configuration. You're running. Your [daily morning briefing](/blog/morning-briefing/) becomes your command center — one message telling you what needs attention.
+You're done. No more setup. No more configuration. You're running. Your [daily morning briefing](/blog/morning-briefing) becomes your command center — one message telling you what needs attention.
 
 ## What you need to provide
 
@@ -254,79 +254,3 @@ A: Perfect. You're exactly who this is for. If you can send a text message and r
 **Q: Do you work with my existing tools?**
 A: If they're essential, yes. We integrate with your calendar, payment processor, and communication channels. If a tool is broken, we'll tell you — and we'll show you what to replace it with.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What if my business is unusual?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We've built systems for executive coaches, business consultants, health coaches, financial advisors, and marketing consultants. Every business is unusual in some way. The 7-Day Build is custom — we configure to how you work, not how a template says you should work."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I need changes after day 7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The first 30 days include unlimited tweaks. You discover edge cases as you use the system. We adjust. After 30 days, changes are billed separately — but most clients find the system works as-is."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I see the system before day 7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You get a walkthrough video on day 4 and day 6. You can request changes at each stage. The system doesn't go live until you approve it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I'm not technical?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Perfect. You're exactly who this is for. If you can send a text message and reply to emails, you can use what we build. The whole point is that you don't need to configure anything."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you work with my existing tools?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If they're essential, yes. We integrate with your calendar, payment processor, and communication channels. If a tool is broken, we'll tell you — and we'll show you what to replace it with."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Done-for-You Operations Setup: What Happens Each Day of Your First Week",
-  "description": "Done-for-you operations setup takes 7 days and 3-4 hours of your time. Here's exactly what happens each day — discovery, build, test, and go-live.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/operations-setup-week"
-  }
-}
-</script>

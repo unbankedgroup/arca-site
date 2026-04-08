@@ -74,21 +74,35 @@ const relatedCandidates = allPosts.filter((p) => {
 const related = relatedCandidates.slice(0, 3);
 
 // Canonical post URL (avoids the base-path doubling Astro produces)
-const canonicalUrl = `https://runarca.xyz/blog/${currentSlug}/`;
+const canonicalUrl = `https://runarca.xyz/blog/${currentSlug}`;
 
 // OG image URL — generated at build time by scripts/generate-og.mjs
 const ogImageUrl = `https://runarca.xyz/blog/og/${currentSlug}.png`;
 
-// Article JSON-LD
-const effectiveDate = updatedDate || pubDate || new Date();
-const articleJsonLd = {
+// Article JSON-LD — use frontmatter dates, never build time.
+// Parses the human-readable `last_updated` string ("April 2026") when Date
+// fields are absent, and omits dateModified entirely if no real date is
+// available (better than shipping a wrong build-time value).
+const toDate = (v: unknown): Date | undefined => {
+	if (!v) return undefined;
+	if (v instanceof Date) return isNaN(v.getTime()) ? undefined : v;
+	if (typeof v === 'string') {
+		const parsed = new Date(v);
+		return isNaN(parsed.getTime()) ? undefined : parsed;
+	}
+	return undefined;
+};
+const publishedDate = toDate(pubDate) || toDate((Astro.props as any).date_published);
+const modifiedDate =
+	toDate(updatedDate) || toDate(last_updated) || publishedDate;
+const canonicalId = `https://runarca.xyz/blog/${currentSlug}`;
+
+const articleJsonLd: Record<string, unknown> = {
 	'@context': 'https://schema.org',
 	'@type': 'Article',
 	headline: title,
 	description: pageDescription,
 	image: [ogImageUrl],
-	datePublished: (pubDate || effectiveDate).toISOString ? (pubDate || effectiveDate).toISOString() : undefined,
-	dateModified: (updatedDate || pubDate || effectiveDate).toISOString ? (updatedDate || pubDate || effectiveDate).toISOString() : undefined,
 	author: {
 		'@type': 'Person',
 		name: authorName,
@@ -105,11 +119,13 @@ const articleJsonLd = {
 	},
 	mainEntityOfPage: {
 		'@type': 'WebPage',
-		'@id': `https://runarca.xyz/blog/${currentSlug}/`,
+		'@id': canonicalId,
 	},
 	wordCount: readingWords || parseWordCount(word_count) || undefined,
 	articleSection: categoryLabel,
 };
+if (publishedDate) articleJsonLd.datePublished = publishedDate.toISOString();
+if (modifiedDate) articleJsonLd.dateModified = modifiedDate.toISOString();
 
 // Breadcrumb JSON-LD
 const breadcrumbJsonLd = {
@@ -117,14 +133,14 @@ const breadcrumbJsonLd = {
 	'@type': 'BreadcrumbList',
 	itemListElement: [
 		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://runarca.xyz/' },
-		{ '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://runarca.xyz/blog/' },
+		{ '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://runarca.xyz/blog' },
 		...(clusterCode
 			? [
 					{
 						'@type': 'ListItem',
 						position: 3,
 						name: categoryLabel,
-						item: `https://runarca.xyz/blog/#${clusterCode.toLowerCase()}`,
+						item: `https://runarca.xyz/blog#${clusterCode.toLowerCase()}`,
 					},
 			  ]
 			: []),
@@ -132,7 +148,7 @@ const breadcrumbJsonLd = {
 			'@type': 'ListItem',
 			position: clusterCode ? 4 : 3,
 			name: title,
-			item: `https://runarca.xyz/blog/${currentSlug}/`,
+			item: canonicalId,
 		},
 	],
 };
@@ -271,7 +287,7 @@ const combinedJsonLd = {
 							{(prev || next) && (
 								<nav class="prev-next" aria-label="Previous and next post">
 									{prev ? (
-										<a href={`/blog/${prev.id}/`} class="pn-link pn-prev">
+										<a href={`/blog/${prev.id}`} class="pn-link pn-prev">
 											<span class="pn-label">← Previous</span>
 											<span class="pn-title">{prev.title}</span>
 										</a>
@@ -279,7 +295,7 @@ const combinedJsonLd = {
 										<span class="pn-spacer"></span>
 									)}
 									{next ? (
-										<a href={`/blog/${next.id}/`} class="pn-link pn-next">
+										<a href={`/blog/${next.id}`} class="pn-link pn-next">
 											<span class="pn-label">Next →</span>
 											<span class="pn-title">{next.title}</span>
 										</a>
@@ -318,7 +334,7 @@ const combinedJsonLd = {
 									const pData = post.data as any;
 									const pCat = resolveCluster(pData.cluster).label;
 									return (
-										<a href={`/blog/${post.id}/`} class="related-card">
+										<a href={`/blog/${post.id}`} class="related-card">
 											{pCat && pCat !== 'Learn' && <div class="related-eyebrow">{pCat}</div>}
 											<h4>{pData.title}</h4>
 										</a>

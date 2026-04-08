@@ -1,5 +1,5 @@
 ---
-title: "Why Coaches Stop Using Their Business Software (And What Works Instead)"
+title: "Why Coaches Stop Using Business Software (and What Works)"
 slug: chat-first-operations
 cluster: C1 — Managed Operations
 id: C1-S9
@@ -7,7 +7,7 @@ target_keyword: "coaching business management without dashboard"
 secondary_keywords: "why coaches abandon business software, chat-based business management, coaching business single app, no login business operations"
 search_intent: Informational
 word_count: 1200
-meta_description: "Coaches buy HoneyBook, Dubsado, or GoHighLevel. They use it for 3 weeks. Then they go back to the spreadsheet. Here's why dashboard-first tools fail — and what actually gets used every day."
+meta_description: "Coaches buy HoneyBook, Dubsado, or GoHighLevel. Three weeks later they're back on the spreadsheet. Why dashboard-first tools fail — and what works."
 links_to: C1-P, C1-S6, C1-S8
 last_updated: April 2026
 author: Mal Mposha
@@ -50,7 +50,7 @@ You're not being handed a solution. You're being handed a project.
 - **Learning curve.** Every new dashboard requires 2-4 hours of learning before you're productive. Most founders never find those hours. The tool sits unused.
 - **Information assembly.** Your calendar is in one place. Your invoices in another. Your leads in a third. Your follow-ups in a fourth. Every morning, you open four tabs and manually assemble a picture of your business. That's 30-45 minutes before actual work starts.
 
-The [six open tabs problem](/blog/six-open-tabs-every-morning/) isn't just annoying. It's a structural tax on your attention. And it's why most operations tools end up as unused subscriptions.
+The [six open tabs problem](/blog/six-open-tabs-every-morning) isn't just annoying. It's a structural tax on your attention. And it's why most operations tools end up as unused subscriptions.
 
 ---
 
@@ -102,7 +102,7 @@ Everything already lives in one place.
 
 ## Why adoption actually works with chat-first
 
-The [non-technical founder problem](/blog/non-technical-founders/) isn't about intelligence. It's about time. And about tools that match how you already communicate.
+The [non-technical founder problem](/blog/non-technical-founders) isn't about intelligence. It's about time. And about tools that match how you already communicate.
 
 **Dashboard-first platforms:**
 - Require you to learn a new interface
@@ -162,13 +162,13 @@ The client never learns a new system. They text. Things happen.
 Chat-first tools hit 85-95% daily use. Dashboard-first tools sit at 20-30%. Same information, same workflows — the only thing that changed is whether the founder had to log in somewhere new.
 </aside>
 
-For [solo business operations](/blog/operations-team-of-one/), this is the difference between running a business that clients experience as professional and running one that feels ad-hoc.
+For [solo business operations](/blog/operations-team-of-one), this is the difference between running a business that clients experience as professional and running one that feels ad-hoc.
 
 ---
 
 ## The morning briefing, chat edition
 
-The [daily briefing](/blog/morning-briefing/) is the simplest operational change with the biggest impact. And it works best in chat.
+The [daily briefing](/blog/morning-briefing) is the simplest operational change with the biggest impact. And it works best in chat.
 
 **Dashboard briefing:**
 1. Open browser
@@ -203,7 +203,7 @@ You don't have a scheduling interface and a separate invoicing interface and a s
 - **One search to run.** Need to find something? Search the chat. Every invoice, every booking, every client note is there.
 - **One habit to maintain.** You already check WhatsApp. You don't need to build a new habit of "checking the system." The system is in the system you already check.
 
-For [managed operations](/blog/managed-operations-guide/), this is the end state. Not a better dashboard. No dashboard at all. Just a conversation that handles everything.
+For [managed operations](/blog/managed-operations-guide), this is the end state. Not a better dashboard. No dashboard at all. Just a conversation that handles everything.
 
 ---
 
@@ -309,31 +309,3 @@ The best infrastructure is invisible.
   ]
 }
 ```
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Why Coaches Stop Using Their Business Software (And What Works Instead)",
-  "description": "Coaches buy HoneyBook, Dubsado, or GoHighLevel. They use it for 3 weeks. Then they go back to the spreadsheet. Here's why dashboard-first tools fail — and what actually gets used every day.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/chat-first-operations"
-  }
-}
-</script>

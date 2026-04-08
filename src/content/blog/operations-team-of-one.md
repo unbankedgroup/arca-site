@@ -1,5 +1,5 @@
 ---
-title: "Operations for One: How Solo Service Businesses Run Like 10-Person Teams"
+title: "Operations for One: Solo Businesses Run Like Teams"
 slug: operations-for-one
 cluster: C1 — Managed Operations
 id: C1-S6
@@ -7,7 +7,7 @@ target_keyword: "solo business operations system"
 secondary_keywords: "solo consultant operations, one person business infrastructure, run business like a team"
 search_intent: Informational
 word_count: 1200
-meta_description: "Solo coaches and consultants have the same operational needs as a 10-person team — with none of the infrastructure. Here's how to build systems that handle the repeatable work for you."
+meta_description: "Solo coaches have the same ops needs as a 10-person team — with none of the infrastructure. How to build systems that handle the repeatable work."
 links_to: C1-P, C1-S2, C1-S3, C2-P, C1-S8, C1-S10
 last_updated: April 2026
 author: Mal Mposha
@@ -62,7 +62,7 @@ Responding to a lead inside five minutes makes you 21 times more likely to quali
 
 Let's break down what a well-run small firm does every day without thinking about it:
 
-**Morning briefing.** Someone reviews the calendar, checks outstanding invoices, flags leads that need attention, and surfaces anything unusual. This takes 10 minutes when a system does it. It takes 45 minutes when you're opening six tabs and cross-referencing a spreadsheet. Knowledge workers switch between apps [1,100 times per day on average](/blog/six-open-tabs-every-morning/). That context switching costs up to 40% of productive time.
+**Morning briefing.** Someone reviews the calendar, checks outstanding invoices, flags leads that need attention, and surfaces anything unusual. This takes 10 minutes when a system does it. It takes 45 minutes when you're opening six tabs and cross-referencing a spreadsheet. Knowledge workers switch between apps [1,100 times per day on average](/blog/six-open-tabs-every-morning). That context switching costs up to 40% of productive time.
 
 **Client follow-ups.** After a session, a check-in message goes out. After a proposal, a follow-up goes out on day 3, day 7, day 14. After onboarding, a satisfaction check goes out on day 30. These are not creative tasks. They're sequences. But 76% of businesses spend more than two hours a week chasing up follow-ups manually. When one person manages 15 clients, the sequences live in their head and gaps appear.
 
@@ -82,19 +82,19 @@ The tools aren't the problem. The absence of operational infrastructure is the p
 
 A 10-person team doesn't succeed because they have better software. They succeed because someone designed the flow between systems. Someone decided: when X happens, Y follows. When a lead comes in, this is what we do. When a session ends, this is what goes out.
 
-That design layer is what solo founders are missing. Not another app. A foundation. If you want to see exactly where your gaps are, the [operations audit checklist](/blog/operations-audit-checklist/) takes 15 minutes and maps them all.
+That design layer is what solo founders are missing. Not another app. A foundation. If you want to see exactly where your gaps are, the [operations audit checklist](/blog/operations-audit-checklist) takes 15 minutes and maps them all.
 
-The [six open tabs problem](/blog/six-open-tabs-every-morning/) shows why adding another app isn't the answer — consolidation is.
+The [six open tabs problem](/blog/six-open-tabs-every-morning) shows why adding another app isn't the answer — consolidation is.
 
 ## What managed operations changes
 
-[Managed operations](/blog/managed-operations-guide/) is the idea that your business operations should be diagnosed, configured, and run for you. Not by you.
+[Managed operations](/blog/managed-operations-guide) is the idea that your business operations should be diagnosed, configured, and run for you. Not by you.
 
 For a solo consultant, that means:
 
-Your morning starts with a briefing. Not six tabs. [One message that tells you what happened overnight, what's on today, and what needs your attention](/blog/morning-briefing/).
+Your morning starts with a briefing. Not six tabs. [One message that tells you what happened overnight, what's on today, and what needs your attention](/blog/morning-briefing).
 
-Coaches get a specialized version — see the [coaching morning briefing](/blog/coaching-morning-briefing/) for how client progress tracking changes the format.
+Coaches get a specialized version — see the [coaching morning briefing](/blog/coaching-morning-briefing) for how client progress tracking changes the format.
 
 Your follow-ups run on schedule. Not when you remember. Clients get consistent communication because the system handles sequencing. You handle the relationship.
 
@@ -104,11 +104,11 @@ Your onboarding is professional every single time. New clients get the same thor
 
 Your leads get responses in minutes, not days. The window between "interested" and "booked someone else" closes before it opens.
 
-This is what [running a business that works without you being the bottleneck](/blog/business-runs-without-you/) looks like. Not a bigger team. Not more tools. A system that handles the operational basics so you can focus on the work you're actually good at.
+This is what [running a business that works without you being the bottleneck](/blog/business-runs-without-you) looks like. Not a bigger team. Not more tools. A system that handles the operational basics so you can focus on the work you're actually good at.
 
 ## The math is simple
 
-If you bill $200 an hour and you're spending 15 hours a week on admin, that's $3,000 a week in time cost. [$156,000 a year on work that isn't client work](/blog/operations-cost-mistake/). Coaches and consultants specifically spend 20 to 30 hours per week on non-client tasks, with scheduling alone consuming 4 to 6 hours weekly.
+If you bill $200 an hour and you're spending 15 hours a week on admin, that's $3,000 a week in time cost. [$156,000 a year on work that isn't client work](/blog/operations-cost-mistake). Coaches and consultants specifically spend 20 to 30 hours per week on non-client tasks, with scheduling alone consuming 4 to 6 hours weekly.
 
 A managed operations platform costs $97 a month. It handles the work that's costing you $3,000 a week. The ROI math is simple: 70% of small businesses that switched to integrated software saw measurable productivity gains within 6 months.
 
@@ -125,31 +125,3 @@ You don't need a 10-person team. You need the infrastructure that a 10-person te
 ---
 
 *Arca is managed operations for service businesses. We diagnose how your business runs, build the infrastructure for you in 7 days, and it runs from one conversation in WhatsApp or Telegram. [Book a free strategy call](https://runarca.xyz/#cta) to see what it would look like for your business.*
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Operations for One: How Solo Service Businesses Run Like 10-Person Teams",
-  "description": "Solo consultants have the same operational needs as 10-person teams — with none of the infrastructure. Here's how managed operations closes the gap.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/operations-for-one"
-  }
-}
-</script>

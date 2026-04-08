@@ -88,7 +88,7 @@ const readingMinutes = (wc: any): number => {
 
 			<div class="container" id="all">
 				{heroFeature && (
-					<a href={`/blog/${heroFeature.id}/`} class="hero-feature">
+					<a href={`/blog/${heroFeature.id}`} class="hero-feature">
 						<div>
 							<span class="eyebrow">{clusterLabels.C1}</span>
 							<h2>{heroFeature.data.title}</h2>
@@ -108,7 +108,7 @@ const readingMinutes = (wc: any): number => {
 						<div class="start-here-label">Start here</div>
 						<div class="start-here-grid">
 							{startHere.map((post) => (
-								<a href={`/blog/${post.id}/`} class="start-here-card">
+								<a href={`/blog/${post.id}`} class="start-here-card">
 									<h4>{post.data.title}</h4>
 									<p>{((post.data.meta_description || post.data.description || '') as string).slice(0, 110)}…</p>
 								</a>
@@ -135,7 +135,7 @@ const readingMinutes = (wc: any): number => {
 									const minutes = readingMinutes(data.word_count);
 									const isBig = !!(data.pillar);
 									return (
-										<a href={`/blog/${post.id}/`} class={`post-card ${isBig ? 'big' : ''}`} data-title={data.title.toLowerCase()} data-desc={desc.toLowerCase()}>
+										<a href={`/blog/${post.id}`} class={`post-card ${isBig ? 'big' : ''}`} data-title={data.title.toLowerCase()} data-desc={desc.toLowerCase()}>
 											<div class="post-eyebrow">{minutes} min · {clusterLabels[key]}</div>
 											<h3>{data.title}</h3>
 											{desc && <p>{desc.slice(0, isBig ? 180 : 120)}{desc.length > (isBig ? 180 : 120) ? '…' : ''}</p>}

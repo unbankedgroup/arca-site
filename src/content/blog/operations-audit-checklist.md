@@ -7,7 +7,7 @@ target_keyword: "operations audit checklist for small business"
 secondary_keywords: "small business operations audit, business efficiency checklist, operational gaps"
 search_intent: Informational
 word_count: ~1,200
-meta_description: "A 15-minute diagnostic that reveals everything broken in your business operations. Use our operations audit checklist for small business to find gaps costing you revenue."
+meta_description: "A 15-minute diagnostic that reveals what's broken in your business operations. Find the gaps costing you revenue with this audit checklist."
 links_to: C1-P, C1-S1, C1-S2, C1-S3, C1-S6, C1-S9
 date_published: "2026-04-02"
 author:
@@ -116,7 +116,7 @@ Be honest. Do clients still get onboarded? Do payments still process? Do convers
 89% of business coaches report feeling trapped by their own operations. If you can't step away for a week without the business quietly stopping, the problem isn't your work ethic — it's that you are the infrastructure.
 </aside>
 
-I wrote about this in more detail in [What Happens When You Take a Week Off?](/blog/business-runs-without-you/). The short version: if your business can't survive a weekend, you don't have a business. You have a job where you're also the infrastructure.
+I wrote about this in more detail in [What Happens When You Take a Week Off?](/blog/business-runs-without-you). The short version: if your business can't survive a weekend, you don't have a business. You have a job where you're also the infrastructure.
 
 ## Scoring your operations (0-100 scale)
 
@@ -141,11 +141,11 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 **Your situation:** You're one crisis away from losing clients or burning out completely.
 
 **Immediate actions (this week):**
-1. **Centralize conversations** — Pick one channel (email, WhatsApp, or a CRM) and force all client communication there. This is step one in any [operations audit checklist for small business](/blog/managed-operations-guide/).
+1. **Centralize conversations** — Pick one channel (email, WhatsApp, or a CRM) and force all client communication there. This is step one in any [operations audit checklist for small business](/blog/managed-operations-guide).
 2. **Automate one payment** — Set up recurring billing for your most reliable retainer client. One win builds momentum.
 3. **Document your process** — Write down every step from "interested" to "paid." You can't fix what you haven't defined.
 
-**Read next:** [Why Your CRM Isn't the Problem](/blog/crm-not-the-problem/) — the infrastructure gap most people miss.
+**Read next:** [Why Your CRM Isn't the Problem](/blog/crm-not-the-problem) — the infrastructure gap most people miss.
 
 ### Score: 101-200 (Fragile)
 
@@ -156,7 +156,7 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 2. **Set up basic metrics tracking** — Create a simple dashboard: revenue this month, pipeline value, conversion rate. Review every Monday.
 3. **Build one onboarding automation** — When a client signs, what should happen automatically? Calendar invite, welcome email, intake form, first invoice.
 
-**Read next:** [The $3,000/Month Operations Mistake](/blog/operations-cost-mistake/) — where your money is actually going.
+**Read next:** [The $3,000/Month Operations Mistake](/blog/operations-cost-mistake) — where your money is actually going.
 
 ### Score: 201-300 (Functional)
 
@@ -167,7 +167,7 @@ The pattern among those who score 380+: their advantage isn't better tools. It's
 2. **Implement automation for routine tasks** — Client FAQs, scheduling, payment reminders, status updates. These are solved problems.
 3. **Create exception handling** — What requires your personal attention? Document it. Train someone or something to handle 80% of cases.
 
-**Read next:** [What Happens When You Take a Week Off](/blog/business-runs-without-you/) — the vacation test.
+**Read next:** [What Happens When You Take a Week Off](/blog/business-runs-without-you) — the vacation test.
 
 ### Score: 301-400 (Optimized)
 
@@ -226,60 +226,10 @@ No. Panic wastes energy. But do act. A score of 150 means you're losing revenue 
 ### What's the ROI of fixing operations?
 
 Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, and reduced early churn from better onboarding and follow-up. For a coach billing $150/hour, recovering 10 hours/month is $1,500 — before counting revenue from clients who stop falling through the cracks.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How often should I do an operations audit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Quarterly is ideal. Monthly is better if you're in rapid growth mode (over 20% month-over-month). The key is consistency — same time each quarter, same five questions, honest answers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I don't use a CRM yet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Start with email. Centralize everything there first. A CRM adds complexity; you need consistency before complexity helps. Once all conversations live in one place, then evaluate CRM options."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is 15 minutes enough time for a real audit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — if you're honest. The five questions target the highest-impact areas. Deep dives into each area take longer, but the audit itself is designed to be fast enough that you'll actually do it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "My score was 150. Should I panic?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Panic wastes energy. But do act. A score of 150 means you're losing revenue and working harder than necessary. Pick one question where you scored 0 or 25. Fix that one thing this week. Then move to the next."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the ROI of fixing operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, and reduced early churn from better onboarding and follow-up. For a coach billing $150/hour, recovering 10 hours/month is $1,500 — before counting revenue from clients who stop falling through the cracks."
-      }
-    }
-  ]
-}
-</script>
-
 ---
 
 **Related reading:**
-- [Why Your CRM Isn't the Problem](/blog/crm-not-the-problem/)
-- [The $3,000/Month Operations Mistake](/blog/operations-cost-mistake/)
-- [What Happens When You Take a Week Off](/blog/business-runs-without-you/)
-- [The Complete Guide to Managed Operations](/blog/managed-operations-guide/)
+- [Why Your CRM Isn't the Problem](/blog/crm-not-the-problem)
+- [The $3,000/Month Operations Mistake](/blog/operations-cost-mistake)
+- [What Happens When You Take a Week Off](/blog/business-runs-without-you)
+- [The Complete Guide to Managed Operations](/blog/managed-operations-guide)

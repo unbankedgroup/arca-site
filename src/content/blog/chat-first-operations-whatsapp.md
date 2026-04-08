@@ -1,5 +1,5 @@
 ---
-title: "Why Consultants Are Running Their Business on Telegram (Not a Dashboard)"
+title: "Why Consultants Run Their Business on Telegram"
 slug: telegram-business-operations
 cluster: C1 — Managed Operations
 id: C1-S9b
@@ -13,7 +13,7 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
-**Quick answer:** Telegram has a 98% message open rate. Most operations dashboards get checked 2-3 times per week. Chat-first puts your entire business in the app you already use — no login fatigue, no context switching, no learning curve. Leads respond faster. Invoices go out on time. Everything runs from one conversation. [Here's how the full chat-first model works →](/blog/chat-first-operations/)
+**Quick answer:** Telegram has a 98% message open rate. Most operations dashboards get checked 2-3 times per week. Chat-first puts your entire business in the app you already use — no login fatigue, no context switching, no learning curve. Leads respond faster. Invoices go out on time. Everything runs from one conversation. [Here's how the full chat-first model works →](/blog/chat-first-operations)
 
 ---
 
@@ -23,7 +23,7 @@ I had spent weeks configuring a beautiful dashboard. Pipelines. Kanban boards. C
 
 Then I watched a coach use it for the first time. She logged in once. Then she forgot her password. Then she logged in on her phone, hated the mobile experience, and went back to her spreadsheet.
 
-The dashboard wasn't the problem. The dashboard was the problem. This is why we built [chat-first operations](/blog/chat-first-operations/) — because the interface determines adoption.
+The dashboard wasn't the problem. The dashboard was the problem. This is why we built [chat-first operations](/blog/chat-first-operations) — because the interface determines adoption.
 
 ## The dashboard problem
 
@@ -67,7 +67,7 @@ Here's what running your business from Telegram actually looks like:
 
 **5:00 PM:** You send one message: "What's left?" The system tells you: nothing. You close your laptop.
 
-**That's chat-first.** Not a dashboard. Not a login. A conversation. This is exactly what the [morning briefing](/blog/morning-briefing/) delivers — everything in one message, no dashboard needed.
+**That's chat-first.** Not a dashboard. Not a login. A conversation. This is exactly what the [morning briefing](/blog/morning-briefing) delivers — everything in one message, no dashboard needed.
 
 <aside class="callout callout-stat">
 <strong>The gap</strong>
@@ -125,7 +125,7 @@ They log into maybe one of them regularly. The rest are ghost towns.
 
 Every dashboard is another place to check. Another login to remember. Another context switch. Your brain wasn't built to live in seven places at once.
 
-Telegram consolidates everything into one place: the conversation. You check Telegram. The briefing is there. The client response is there. The invoice confirmation is there. Everything is in one thread, searchable, sequential. Learn more about how [chat-first operations](/blog/chat-first-operations/) replaces dashboard fatigue with conversation-driven workflows.
+Telegram consolidates everything into one place: the conversation. You check Telegram. The briefing is there. The client response is there. The invoice confirmation is there. Everything is in one thread, searchable, sequential. Learn more about how [chat-first operations](/blog/chat-first-operations) replaces dashboard fatigue with conversation-driven workflows.
 
 ## What you give up (and what you keep)
 
@@ -193,84 +193,8 @@ A: For client-facing features, yes. Telegram is free and takes 2 minutes to set 
 A: Telegram uses end-to-end encryption for secret chats and server-side encryption for regular chats. All business data is processed through Arca's encrypted infrastructure — we store only the metadata needed for automation, never message content.
 
 **Q: Can I still use my calendar?**
-A: Yes. Your calendar syncs to the chat. You see appointments in your [morning briefing](/blog/morning-briefing/). Clients get reminders via Telegram. The calendar is still there — you just don't need to check it constantly.
+A: Yes. Your calendar syncs to the chat. You see appointments in your [morning briefing](/blog/morning-briefing). Clients get reminders via Telegram. The calendar is still there — you just don't need to check it constantly.
 
 **Q: Can I turn off automation?**
 A: Yes. You approve everything before it reaches a client. The automation drafts. You review. You send. Or you don't. You're in control.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does Arca use Telegram or WhatsApp?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Telegram. WhatsApp banned general-purpose AI bots in January 2026. Telegram actively supports business automation via its Bot API and has 900M+ active users. Most clients adapt within minutes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my data private on Telegram?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Telegram uses end-to-end encryption for secret chats and server-side encryption for regular chats. All business data is processed through Arca's encrypted infrastructure — we store only the metadata needed for automation, never message content."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I still use my calendar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Your calendar syncs to the chat. You see appointments in your morning briefing. Clients get reminders via chat. The calendar is still there — you just don't need to check it constantly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I want to see everything at once?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your morning briefing shows you everything: leads, clients, invoices, follow-ups. One message. No dashboard needed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I turn off automation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You approve everything before it reaches a client. The automation drafts. You review. You send. Or you don't. You're in control."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Why Consultants Are Running Their Business on Telegram (Not a Dashboard)",
-  "description": "Consultants are ditching dashboards for Telegram. 98% message open rate, zero learning curve, and everything runs from one conversation. Here's how it works.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/telegram-business-operations"
-  }
-}
-</script>

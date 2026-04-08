@@ -1,5 +1,5 @@
 ---
-title: "Why Your CRM Isn't the Problem (Your Operations Infrastructure Is)"
+title: "Why Your CRM Isn't the Problem (Your Ops Infra Is)"
 slug: crm-not-the-problem
 cluster: C1 — Managed Operations
 id: C1-S1
@@ -37,9 +37,9 @@ Your CRM knows about the lead. Maybe. If you entered them manually or if the for
 
 You are the integration layer. You are the thing connecting your calendar to your invoicing tool to your email to your CRM to the spreadsheet you use for client notes. Every task routes through your brain because nothing else connects them.
 
-That's not a CRM problem. That's an [operations infrastructure problem](/blog/managed-operations-guide/).
+That's not a CRM problem. That's an [operations infrastructure problem](/blog/managed-operations-guide).
 
-The [tool consolidation guide](/blog/replace-saas-stack/) shows how most businesses end up with 5-7 disconnected tools — and why switching CRMs doesn't fix the underlying gap.
+The [tool consolidation guide](/blog/replace-saas-stack) shows how most businesses end up with 5-7 disconnected tools — and why switching CRMs doesn't fix the underlying gap.
 
 **The numbers back this up:**
 
@@ -64,7 +64,7 @@ She didn't need a better way to track contacts. She needed a system that followe
 
 Every time you switch CRMs, you restart the learning curve. You re-enter data. You rebuild workflows. You lose momentum. And three months later you're still doing the same manual work because the new tool still only does one thing: track contacts.
 
-The [hidden cost of that cycle](/blog/operations-cost-mistake/) is real. Not just the subscription fees. The hours spent setting up, migrating, and learning. The revenue lost while your operations stay broken.
+The [hidden cost of that cycle](/blog/operations-cost-mistake) is real. Not just the subscription fees. The hours spent setting up, migrating, and learning. The revenue lost while your operations stay broken.
 
 ## What "in between" actually costs
 
@@ -99,7 +99,7 @@ Before you look at another CRM, ask yourself this: if I disappeared for a week, 
 
 Would invoices still go out? Would leads still get responses? Would clients still get session reminders? Would follow-ups still happen?
 
-If the answer is no, the problem isn't your CRM. The problem is that your business has no [operational foundation](/blog/diagnosis-before-prescription/). No infrastructure that works when you don't.
+If the answer is no, the problem isn't your CRM. The problem is that your business has no [operational foundation](/blog/diagnosis-before-prescription). No infrastructure that works when you don't.
 
 A CRM is one piece of that foundation. An important piece. But it's not the foundation itself.
 
@@ -109,7 +109,7 @@ The shift from DIY ops to managed operations isn't about adding another tool. It
 
 Instead of you connecting six tools with your own memory and attention, everything runs from one place. Scheduling, invoicing, follow-ups, client onboarding, daily briefings. Connected. Automatic where it should be automatic. Human where it should be human.
 
-You don't need to configure it. You don't need to learn a new dashboard. You [describe how your business works](/blog/diagnosis-before-prescription/), and the operations layer gets built around it.
+You don't need to configure it. You don't need to learn a new dashboard. You [describe how your business works](/blog/diagnosis-before-prescription), and the operations layer gets built around it.
 
 That's what managed operations means. Not a better CRM. Not a better tool. A better foundation.
 
@@ -121,36 +121,8 @@ You are the integration layer.
 <cite>Mal Mposha · Arca</cite>
 </blockquote>
 
-**Want to see where your gaps are?** Run the [15-minute operations audit](/blog/operations-audit-checklist/) — it maps every dependency on you personally.
+**Want to see where your gaps are?** Run the [15-minute operations audit](/blog/operations-audit-checklist) — it maps every dependency on you personally.
 
 ---
 
 *Arca builds your operations infrastructure in 7 days. One chat. Everything connected. [See how it works →](https://runarca.xyz)*
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Why Your CRM Isn't the Problem (Your Operations Infrastructure Is)",
-  "description": "Your CRM isn't broken. Your operations infrastructure is. Here's why switching CRMs won't fix the real problem — and what actually will.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/crm-not-the-problem"
-  }
-}
-</script>

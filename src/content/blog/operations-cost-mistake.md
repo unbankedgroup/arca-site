@@ -1,5 +1,5 @@
 ---
-title: "The $3,000/Month Operations Mistake Most Solo Consultants Make"
+title: "The $3K/Month Operations Mistake Consultants Make"
 slug: operations-cost-mistake
 cluster: C1 — Managed Operations
 id: C1-S2
@@ -7,7 +7,7 @@ target_keyword: "true cost of running a coaching business"
 secondary_keywords: "hidden cost coaching business admin, how much time coaches spend on admin, coaching business operations cost"
 search_intent: Commercial
 word_count: ~1,000
-meta_description: "Most coaches and consultants spend $3,000–$17,000/month on operations without realizing it. It's not the tools. It's the time, the lost leads, and the late invoices. Here's the real math."
+meta_description: "Most coaches spend $3,000–$17,000/month on operations without realizing it. Not the tools — the time, lost leads, and late invoices. The real math."
 links_to: C1-P, C1-S1, C5-P, C5-S1, C1-S10
 author: Mal Mposha
 last_updated: April 2026
@@ -62,7 +62,7 @@ That's the visible cost. The one you see on your credit card statement. It's rea
 
 I keep hearing the same version of this: "I spend more time running my business than actually doing my work."
 
-That time has a dollar value. If you bill $150/hour and spend 15 hours a week on operations, that's $2,250/week. $9,000/month. Not money you spent. Money you couldn't earn because you were busy being [your own infrastructure](/blog/crm-not-the-problem/).
+That time has a dollar value. If you bill $150/hour and spend 15 hours a week on operations, that's $2,250/week. $9,000/month. Not money you spent. Money you couldn't earn because you were busy being [your own infrastructure](/blog/crm-not-the-problem).
 
 And that calculation is generous. It assumes you could fill those hours with billable work. Many consultants can't, because the operations bottleneck is what's preventing them from taking on more clients in the first place.
 
@@ -116,7 +116,7 @@ Add those up. For a consultant with 15-20 active clients, the conservative total
 
 This is why the [VA vs platform comparison](/blog/#c5) matters. A VA can handle some of this. But a VA is still limited by working hours, attention, and the same disconnected tools. When your VA takes a week off, your operations take a week off too. When your VA quits, you lose institutional knowledge and restart training.
 
-A managed operations platform runs 24/7 without gaps. No sick days. No turnover. No forgotten steps. The [VA cost breakdown](/blog/va-cost-breakdown/) shows the real math: $2,400-5,000/month for a VA plus management overhead versus $97-497/month for a platform that never sleeps.
+A managed operations platform runs 24/7 without gaps. No sick days. No turnover. No forgotten steps. The [VA cost breakdown](/blog/va-cost-breakdown) shows the real math: $2,400-5,000/month for a VA plus management overhead versus $97-497/month for a platform that never sleeps.
 
 <blockquote class="pull-quote">
 <span class="dek">Core insight · Layer 3</span>
@@ -152,9 +152,9 @@ There are really three options for handling business operations.
 
 **Option 2: Hire a virtual assistant.** Cost: $2,400-5,000/month. Solves the time problem but creates a new dependency. When [your VA takes a week off](/blog/#c5), your operations take a week off too. And you still need to manage them.
 
-**Option 3: Managed operations.** Cost: $97-497/month. A system [diagnosed to your business](/blog/managed-operations-guide/), set up for you, running 24/7. Handles the 80-90% of operations work that's repeatable. You handle the judgment calls.
+**Option 3: Managed operations.** Cost: $97-497/month. A system [diagnosed to your business](/blog/managed-operations-guide), set up for you, running 24/7. Handles the 80-90% of operations work that's repeatable. You handle the judgment calls.
 
-**Not sure which option fits?** The [operations audit checklist](/blog/operations-audit-checklist/) shows your current cost structure in 15 minutes.
+**Not sure which option fits?** The [operations audit checklist](/blog/operations-audit-checklist) shows your current cost structure in 15 minutes.
 
 The math is not complicated. The inertia is what's complicated. You've been running operations yourself for so long that it feels normal. It's not. It's the most expensive thing in your business.
 
@@ -163,31 +163,3 @@ The $3,000/month mistake isn't buying the wrong tool. It's being the tool.
 ---
 
 *Arca replaces DIY ops with managed operations. Diagnosed to your business. Set up in 7 days. $97/month. [See how it works →](https://runarca.xyz)*
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The $3,000/Month Operations Mistake Most Solo Consultants Make",
-  "description": "Most coaches and consultants spend $3,000–$17,000/month on operations without realizing it. It's not the tools. It's the time, the lost leads, and the late invoices. Here's the real math.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/operations-cost-mistake"
-  }
-}
-</script>

@@ -7,7 +7,7 @@ target_keyword: "business keeps running without founder"
 secondary_keywords: "step away from business, business runs without me, founder dependency"
 search_intent: Informational
 word_count: ~1,200
-meta_description: "Most service business owners can't take a week off without everything falling apart. Here's why that happens — and what it takes to build a business that keeps running without you."
+meta_description: "Most service businesses can't survive a week off. Here's why — and what it takes to build a business that keeps running without you."
 links_to: C1-P, C1-S5, C2-S7, C5-S5, C1-S6
 author: Mal Mposha
 last_updated: April 2026
@@ -75,9 +75,9 @@ The business doesn't break in a dramatic way. It just quietly stops moving.
 
 ## What structural independence looks like
 
-There's a different version of this. I've seen it in businesses that invested in their [operations infrastructure](/blog/managed-operations-guide/), and the contrast is stark.
+There's a different version of this. I've seen it in businesses that invested in their [operations infrastructure](/blog/managed-operations-guide), and the contrast is stark.
 
-Coaches specifically face this challenge — see the [coaching vacation guide](/blog/coaching-vacation-guide/) for how client management changes when you're away.
+Coaches specifically face this challenge — see the [coaching vacation guide](/blog/coaching-vacation-guide) for how client management changes when you're away.
 
 Same scenario. Founder takes a week off. Here's what happens.
 
@@ -95,7 +95,7 @@ The founder comes back Monday. Opens one chat. Everything is there. What happene
 
 That's not a fantasy. That's what happens when the repeatable parts of your business run on infrastructure instead of on you.
 
-The [VA handoff guide](/blog/va-handoff-guide/) shows what happens when you try to delegate this to a person vs building infrastructure — the difference is structural.
+The [VA handoff guide](/blog/va-handoff-guide) shows what happens when you try to delegate this to a person vs building infrastructure — the difference is structural.
 
 ## The 80/20 of founder dependency
 
@@ -109,11 +109,11 @@ That's the same process every time. Same steps. Same timing. Same messages. It d
 
 80-90% of the operational work in a service business is repeatable. It's the same sequence, triggered by the same events, producing the same outputs. The only reason it depends on the founder is because nobody built the infrastructure to handle it.
 
-For solo founders specifically, this is the [operations for one](/blog/operations-team-of-one/) challenge — running like a 10-person team with zero staff.
+For solo founders specifically, this is the [operations for one](/blog/operations-team-of-one) challenge — running like a 10-person team with zero staff.
 
 ## Building the off switch
 
-The path from "my business can't survive a weekend" to "my business keeps running without the founder" is not about working harder or hiring more people. It's about building the [operational foundation](/blog/7-day-build-explained/) once and letting it run.
+The path from "my business can't survive a weekend" to "my business keeps running without the founder" is not about working harder or hiring more people. It's about building the [operational foundation](/blog/7-day-build-explained) once and letting it run.
 
 That means:
 - Automated lead response so no one waits 18 hours to hear back from you
@@ -145,40 +145,12 @@ Your business should be able to survive a week without you. If it can't, the pro
 Run the vacation test on paper. List every operational thing that would need to happen next week: lead responses, session reminders, invoices, follow-ups, onboarding. Next to each, write the name of what handles it when you're offline. Any blank line is a single point of failure — and it's you.
 </aside>
 
-**Want to see what your vacation test looks like?** The [operations audit checklist](/blog/operations-audit-checklist/) shows you exactly where you're the single point of failure — and how to fix it.
+**Want to see what your vacation test looks like?** The [operations audit checklist](/blog/operations-audit-checklist) shows you exactly where you're the single point of failure — and how to fix it.
 
-For coaches specifically, the [coaching vacation guide](/blog/coaching-vacation-guide/) walks through how to set up client management that works while you're away.
+For coaches specifically, the [coaching vacation guide](/blog/coaching-vacation-guide) walks through how to set up client management that works while you're away.
 
-And if you're considering a VA instead of infrastructure, read about the [VA handoff problem](/blog/va-handoff-guide/) — why delegating to a person still leaves you vulnerable when they quit, get sick, or make mistakes.
+And if you're considering a VA instead of infrastructure, read about the [VA handoff problem](/blog/va-handoff-guide) — why delegating to a person still leaves you vulnerable when they quit, get sick, or make mistakes.
 
 ---
 
 *Arca builds your operations so your business keeps running. Diagnosed to your workflow. Set up in 7 days. [See how it works →](https://runarca.xyz)*
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "What Happens to Your Business When You Take a Week Off?",
-  "description": "Most service business owners can't take a week off without everything falling apart. Here's why that happens — and what it takes to build a business that keeps running without you.",
-  "author": {
-    "@type": "Person",
-    "name": "Mal Mposha",
-    "url": "https://runarca.xyz/about"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Arca",
-    "url": "https://runarca.xyz",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://runarca.xyz/logo.png"
-    }
-  },
-  "dateModified": "2026-04-07",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://runarca.xyz/blog/business-runs-without-you"
-  }
-}
-</script>
