@@ -15,6 +15,8 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
+**Quick answer:** Done-for-you business setup fails 50–63% of the time when it starts from templates. The fix isn't a better template — it's skipping templates entirely. Before Arca builds anything, we ask how your business actually runs: what services you offer, how leads find you, what your onboarding looks like today, what's not working. Your answers shape the whole configuration. No blank canvases, no wrong-fit starter packs, no three-week template tuning session.
+
 Most founders searching for a done for you business setup find platforms that hand them a blank canvas and say "good luck."
 
 Every operations platform I've looked at starts the same way.

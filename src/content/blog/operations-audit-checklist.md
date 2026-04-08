@@ -2,6 +2,8 @@
 title: "How to Audit Your Operations in 15 Minutes"
 slug: operations-audit-checklist
 cluster: C1 — Managed Operations
+pubDate: 2026-04-02
+updatedDate: 2026-04-08
 id: C1-S10
 target_keyword: "operations audit checklist for small business"
 secondary_keywords: "small business operations audit, business efficiency checklist, operational gaps"
@@ -13,9 +15,10 @@ date_published: "2026-04-02"
 author:
   name: Mal Mposha
   role: Founder, Arca
-schema_type: BlogPosting
-canonical_url: https://runarca.xyz/blog/managed-operations/operations-audit-checklist
+last_updated: April 2026
 ---
+
+**Quick answer:** Most solo consultants can't tell you why their business feels heavy — they just know it does. This 15-minute operations audit makes the cause specific. Seven questions about your tools, admin time, dropped leads, late invoices, and client onboarding. You walk away with a ranked list of what to fix first, whether you use Arca or not. No tools to install. No tracking spreadsheets.
 
 I was talking to a business coach last month. She runs a solid practice — 14 active clients, $180K annual revenue, good referrals. She said something that stuck with me.
 

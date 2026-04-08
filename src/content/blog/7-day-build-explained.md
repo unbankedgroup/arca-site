@@ -15,6 +15,8 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
+**Quick answer:** The 7-Day Build is Arca's done-for-you operations setup. You spend 60–90 minutes on day one answering questions about how your business actually runs. The rest of the week is diagnosis, configuration, and testing against your answers. By day seven you're live — no templates to fight, no dashboards to learn, no workflows to configure. $97–$497/month, flat.
+
 I spent six years in capital markets building financial infrastructure. Clean systems. Reliable flows. Everything tracked, everything audited, everything running whether I was watching or not.
 
 When I started working with coaches and consultants, I saw the opposite.

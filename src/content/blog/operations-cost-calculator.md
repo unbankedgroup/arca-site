@@ -15,13 +15,13 @@ author: Mal Mposha
 last_updated: April 2026
 ---
 
+**Quick answer:** Most service businesses spend $8,000–$15,000/month on operations when you count tools, admin time, and revenue leakage from dropped leads and late payments. A managed operations platform costs $97–$497/month all-in. The gap is profit. This calculator walks you through the real math in five minutes.
+
 You know you spend money on operations. Software subscriptions. Maybe a VA. Your own time.
 
 But what's the real number? Not just the invoices. The fully loaded cost.
 
 This calculator helps you figure that out. Subscription costs. Admin hours. Revenue leakage from dropped leads and late payments. The hidden tax of broken operations.
-
-**TL;DR:** Most service businesses spend $8,000-15,000/month on operations when you factor in tools, admin time, and revenue leakage. Managed operations platforms cost $2,000-3,000/month all-in. The gap is profit.
 
 ## The calculator
 
