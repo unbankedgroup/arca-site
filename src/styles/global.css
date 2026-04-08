@@ -1292,6 +1292,49 @@ small { font-size: 0.875rem; }
 	white-space: nowrap;
 }
 
+/* ============================================================
+   Heading anchors (rehype-autolink-headings)
+   ============================================================ */
+
+.prose :is(h2, h3, h4) {
+	position: relative;
+}
+
+.prose .heading-anchor {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.4em;
+	height: 1.4em;
+	margin-left: 0.4em;
+	color: var(--haze);
+	text-decoration: none;
+	font-weight: 500;
+	opacity: 0;
+	transition: opacity 0.15s ease, color 0.15s ease;
+	vertical-align: middle;
+}
+
+.prose :is(h2, h3, h4):hover .heading-anchor,
+.prose .heading-anchor:focus-visible {
+	opacity: 1;
+}
+
+.prose .heading-anchor:hover {
+	color: var(--amber);
+}
+
+.prose .heading-anchor-icon {
+	font-size: 0.75em;
+	line-height: 1;
+}
+
+@media (max-width: 720px) {
+	.prose .heading-anchor {
+		display: none;
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	* {
 		animation-duration: 0.01ms !important;

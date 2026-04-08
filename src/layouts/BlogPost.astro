@@ -6,7 +6,13 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'] & { rawContent?: string };
+type Props = CollectionEntry<'blog'>['data'] & {
+	slug?: string;
+	prev?: { id: string; title: string } | null;
+	next?: { id: string; title: string } | null;
+	readingTime?: number;
+	readingWords?: number;
+};
 
 const {
 	title,
@@ -18,55 +24,160 @@ const {
 	heroImage,
 	author,
 	cluster,
-	target_keyword,
+	slug,
+	prev = null,
+	next = null,
+	readingTime,
+	readingWords,
 	word_count,
 } = Astro.props;
 
 const pageDescription = meta_description || description || '';
-const authorName = typeof author === 'string' ? author : author?.name;
-const authorRole = typeof author === 'object' ? author?.role : undefined;
+const authorName = typeof author === 'string' ? author : author?.name || 'Mal Mposha';
+const authorRole = typeof author === 'object' ? author?.role : 'Founder, Arca';
 const authorBio = typeof author === 'object' ? (author as any)?.bio : undefined;
+const authorAvatar = typeof author === 'object' ? (author as any)?.avatar : undefined;
 
-// Estimate reading time from word_count (fallback to 5 min)
+// Reading time — prefer build-time computed, fall back to manual word_count
 const parseWordCount = (wc: string | number | undefined): number => {
 	if (!wc) return 0;
-	const str = String(wc).replace(/[^0-9]/g, '');
-	return parseInt(str, 10) || 0;
+	const n = parseInt(String(wc).replace(/[^0-9]/g, ''), 10);
+	return n > 0 ? n : 0;
 };
-const wordCountNum = parseWordCount(word_count);
-const readingMinutes = wordCountNum > 0 ? Math.max(1, Math.round(wordCountNum / 220)) : 5;
+const readingMinutes =
+	readingTime && readingTime > 0
+		? readingTime
+		: (() => {
+				const wc = parseWordCount(word_count);
+				return wc > 0 ? Math.max(1, Math.round(wc / 220)) : 5;
+		  })();
 
-// Extract category label + cluster code from cluster string
+// Cluster parsing
 const clusterMatch = cluster ? cluster.match(/^(C\d+)\s*[—-]\s*(.*)$/) : null;
 const clusterCode = clusterMatch ? clusterMatch[1] : '';
 const categoryLabel = clusterMatch ? clusterMatch[2].trim() : (cluster || 'Learn');
 
-// Related posts: pull up to 3 from same cluster, excluding self
+// Current slug — prefer the explicit prop, else parse from pathname
+const currentSlug =
+	slug || Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '').replace(/\.html$/, '');
+
+// Related posts: pull up to 3 from same cluster, excluding self, excluding prev/next
 const allPosts = await getCollection('blog');
-const currentSlug = Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
-const related = allPosts
-	.filter((p) => {
-		if (p.id === currentSlug) return false;
-		const pCluster = (p.data as any).cluster;
-		if (!pCluster || !cluster) return false;
-		const pCode = String(pCluster).match(/^(C\d+)/)?.[1];
-		return pCode && pCode === clusterCode;
-	})
-	.slice(0, 3);
+const relatedCandidates = allPosts.filter((p) => {
+	if (p.id === currentSlug) return false;
+	if (prev && p.id === prev.id) return false;
+	if (next && p.id === next.id) return false;
+	const pCluster = (p.data as any).cluster;
+	if (!pCluster || !cluster) return false;
+	const pCode = String(pCluster).match(/^(C\d+)/)?.[1];
+	return pCode && pCode === clusterCode;
+});
+const related = relatedCandidates.slice(0, 3);
+
+// Canonical post URL (avoids the base-path doubling Astro produces)
+const canonicalUrl = `https://runarca.xyz/blog/${currentSlug}/`;
+
+// OG image URL — generated at build time by scripts/generate-og.mjs
+const ogImageUrl = `https://runarca.xyz/blog/og/${currentSlug}.png`;
+
+// Article JSON-LD
+const effectiveDate = updatedDate || pubDate || new Date();
+const articleJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description: pageDescription,
+	image: [ogImageUrl],
+	datePublished: (pubDate || effectiveDate).toISOString ? (pubDate || effectiveDate).toISOString() : undefined,
+	dateModified: (updatedDate || pubDate || effectiveDate).toISOString ? (updatedDate || pubDate || effectiveDate).toISOString() : undefined,
+	author: {
+		'@type': 'Person',
+		name: authorName,
+		url: 'https://runarca.xyz/',
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: 'Arca',
+		url: 'https://runarca.xyz/',
+		logo: {
+			'@type': 'ImageObject',
+			url: 'https://runarca.xyz/favicon.svg',
+		},
+	},
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': `https://runarca.xyz/blog/${currentSlug}/`,
+	},
+	wordCount: readingWords || parseWordCount(word_count) || undefined,
+	articleSection: categoryLabel,
+};
+
+// Breadcrumb JSON-LD
+const breadcrumbJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://runarca.xyz/' },
+		{ '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://runarca.xyz/blog/' },
+		...(clusterCode
+			? [
+					{
+						'@type': 'ListItem',
+						position: 3,
+						name: categoryLabel,
+						item: `https://runarca.xyz/blog/#${clusterCode.toLowerCase()}`,
+					},
+			  ]
+			: []),
+		{
+			'@type': 'ListItem',
+			position: clusterCode ? 4 : 3,
+			name: title,
+			item: `https://runarca.xyz/blog/${currentSlug}/`,
+		},
+	],
+};
+
+// Combined JSON-LD graph
+const combinedJsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [articleJsonLd, breadcrumbJsonLd],
+};
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={pageDescription} />
+		<BaseHead
+			title={title}
+			description={pageDescription}
+			ogImageUrl={ogImageUrl}
+			canonicalUrl={canonicalUrl}
+			articleJsonLd={combinedJsonLd}
+		/>
 	</head>
 
 	<body>
+		<a href="#article-prose" class="skip-to-content">Skip to content</a>
 		<Header />
 
 		<div class="reading-progress" id="reading-progress"></div>
 
 		<main class="article">
 			<article>
+				<nav class="breadcrumb" aria-label="Breadcrumb">
+					<div class="breadcrumb-inner">
+						<a href="/">Home</a>
+						<span class="sep" aria-hidden="true">/</span>
+						<a href="/blog/">Learn</a>
+						{clusterCode && (
+							<>
+								<span class="sep" aria-hidden="true">/</span>
+								<a href={`/blog/#${clusterCode.toLowerCase()}`}>{categoryLabel}</a>
+							</>
+						)}
+					</div>
+				</nav>
+
 				<header class="article-header">
 					<div class="prose-container">
 						<a href={`/blog/#${clusterCode.toLowerCase()}`} class="eyebrow">{categoryLabel}</a>
@@ -76,7 +187,11 @@ const related = allPosts
 						<div class="article-meta">
 							{authorName && (
 								<div class="byline">
-									<div class="avatar" aria-hidden="true">{authorName.charAt(0)}</div>
+									{authorAvatar ? (
+										<img src={authorAvatar} alt={authorName} class="avatar avatar-img" width="36" height="36" />
+									) : (
+										<div class="avatar" aria-hidden="true">{authorName.charAt(0)}</div>
+									)}
 									<div class="byline-text">
 										<div class="byline-name">{authorName}</div>
 										{authorRole && <div class="byline-role">{authorRole}</div>}
@@ -132,7 +247,11 @@ const related = allPosts
 
 							{authorName && (
 								<div class="author-bio">
-									<div class="author-bio-avatar" aria-hidden="true">{authorName.charAt(0)}</div>
+									{authorAvatar ? (
+										<img src={authorAvatar} alt={authorName} class="author-bio-avatar author-bio-avatar-img" width="56" height="56" />
+									) : (
+										<div class="author-bio-avatar" aria-hidden="true">{authorName.charAt(0)}</div>
+									)}
 									<div class="author-bio-text">
 										<div class="author-bio-name">{authorName}</div>
 										{authorRole && <div class="author-bio-role">{authorRole}</div>}
@@ -150,14 +269,35 @@ const related = allPosts
 								</form>
 							</div>
 
+							{(prev || next) && (
+								<nav class="prev-next" aria-label="Previous and next post">
+									{prev ? (
+										<a href={`/blog/${prev.id}/`} class="pn-link pn-prev">
+											<span class="pn-label">← Previous in {categoryLabel}</span>
+											<span class="pn-title">{prev.title}</span>
+										</a>
+									) : (
+										<span class="pn-spacer"></span>
+									)}
+									{next ? (
+										<a href={`/blog/${next.id}/`} class="pn-link pn-next">
+											<span class="pn-label">Next in {categoryLabel} →</span>
+											<span class="pn-title">{next.title}</span>
+										</a>
+									) : (
+										<span class="pn-spacer"></span>
+									)}
+								</nav>
+							)}
+
 							<footer class="article-footer">
 								<div class="share-row">
 									<span class="share-label">Share this article</span>
 									<div class="share-links">
-										<a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on Twitter">
+										<a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(canonicalUrl)}`} target="_blank" rel="noopener" aria-label="Share on Twitter">
 											<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
 										</a>
-										<a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://runarca.xyz${Astro.url.pathname}`)}`} target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+										<a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalUrl)}`} target="_blank" rel="noopener" aria-label="Share on LinkedIn">
 											<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
 										</a>
 										<button type="button" id="copy-link-btn" aria-label="Copy link">
@@ -177,7 +317,6 @@ const related = allPosts
 							<div class="related-grid">
 								{related.map((post) => {
 									const pData = post.data as any;
-									const pDesc = pData.meta_description || pData.description || '';
 									const pCluster = pData.cluster;
 									const pClusterMatch = pCluster ? String(pCluster).match(/^C\d+\s*[—-]\s*(.*)$/) : null;
 									const pCat = pClusterMatch ? pClusterMatch[1].trim() : '';
@@ -196,6 +335,12 @@ const related = allPosts
 		</main>
 		<Footer />
 
+		<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+				<polyline points="18 15 12 9 6 15"/>
+			</svg>
+		</button>
+
 		<script>
 			// ===== Quick-answer callout + drop cap =====
 			const prose = document.querySelector('.prose');
@@ -209,8 +354,6 @@ const related = allPosts
 						quickAnswerFound = true;
 					}
 				});
-
-				// Apply drop cap to first paragraph AFTER quick-answer (or first p if none)
 				const capTarget = Array.from(paragraphs).find((p, i) => {
 					if (quickAnswerFound) {
 						const prev = (p as HTMLElement).previousElementSibling;
@@ -221,7 +364,7 @@ const related = allPosts
 				if (capTarget) capTarget.classList.add('drop-cap');
 			}
 
-			// ===== Build TOC from H2/H3 =====
+			// ===== Build TOC from H2/H3 (IDs already SSR'd by rehype-slug) =====
 			function slugify(t: string) {
 				return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 			}
@@ -231,21 +374,21 @@ const related = allPosts
 			const tocItems: { id: string; el: Element }[] = [];
 
 			headings.forEach((h) => {
-				if (!h.id) h.id = slugify(h.textContent || '');
+				if (!h.id) h.id = slugify((h.textContent || '').replace(/#$/, '').trim());
 				const level = h.tagName === 'H3' ? 3 : 2;
-				const li = `<li class="level-${level}"><a href="#${h.id}">${h.textContent}</a></li>`;
+				// Strip trailing "#" from rehype-autolink-headings when building TOC label
+				const label = (h.textContent || '').replace(/#$/, '').trim();
+				const li = `<li class="level-${level}"><a href="#${h.id}">${label}</a></li>`;
 				if (tocDesktopList) tocDesktopList.insertAdjacentHTML('beforeend', li);
 				if (tocMobileList) tocMobileList.insertAdjacentHTML('beforeend', li);
 				tocItems.push({ id: h.id, el: h });
 			});
 
-			// Hide TOC wrappers if no headings
 			if (tocItems.length === 0) {
 				document.getElementById('toc-desktop')?.style.setProperty('display', 'none');
 				document.getElementById('toc-mobile')?.style.setProperty('display', 'none');
 			}
 
-			// Active section highlighting via IntersectionObserver
 			const tocLinks = document.querySelectorAll('.toc-desktop a');
 			if ('IntersectionObserver' in window && tocItems.length > 0) {
 				const observer = new IntersectionObserver(
@@ -264,9 +407,10 @@ const related = allPosts
 				tocItems.forEach((item) => observer.observe(item.el));
 			}
 
-			// ===== Reading progress bar =====
+			// ===== Reading progress bar + back-to-top visibility =====
 			const progress = document.getElementById('reading-progress');
 			const article = document.querySelector('.article-body');
+			const backToTop = document.getElementById('back-to-top');
 			function updateProgress() {
 				if (!article || !progress) return;
 				const rect = (article as HTMLElement).getBoundingClientRect();
@@ -274,9 +418,21 @@ const related = allPosts
 				const scrolled = Math.max(0, -rect.top);
 				const pct = total > 0 ? Math.min(100, (scrolled / total) * 100) : 0;
 				progress.style.width = pct + '%';
+
+				if (backToTop) {
+					const shouldShow = window.scrollY > window.innerHeight;
+					if (shouldShow) backToTop.removeAttribute('hidden');
+					else backToTop.setAttribute('hidden', '');
+				}
 			}
 			window.addEventListener('scroll', updateProgress, { passive: true });
 			updateProgress();
+
+			if (backToTop) {
+				backToTop.addEventListener('click', () => {
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				});
+			}
 
 			// ===== Copy link button =====
 			const copyBtn = document.getElementById('copy-link-btn');
@@ -299,8 +455,47 @@ const related = allPosts
 		background: var(--canvas);
 	}
 
+	.skip-to-content {
+		position: absolute;
+		left: -9999px;
+		top: 0;
+		background: var(--charcoal);
+		color: var(--canvas);
+		padding: 0.75rem 1.25rem;
+		font-weight: 600;
+		z-index: 1000;
+		border-radius: 0 0 var(--radius) 0;
+	}
+	.skip-to-content:focus {
+		left: 0;
+		outline: 2px solid var(--amber);
+		outline-offset: 2px;
+	}
+
+	.breadcrumb {
+		padding: 1.25rem 0 0;
+	}
+	.breadcrumb-inner {
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 0 1.25rem;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		font-size: 0.8125rem;
+		color: var(--haze);
+	}
+	.breadcrumb-inner a {
+		color: var(--haze);
+		text-decoration: none;
+		transition: color 0.2s var(--ease);
+	}
+	.breadcrumb-inner a:hover { color: var(--charcoal); }
+	.breadcrumb-inner .sep { opacity: 0.4; }
+
 	.article-header {
-		padding: 4rem 0 2.5rem;
+		padding: 2rem 0 2.5rem;
 		text-align: center;
 	}
 
@@ -360,12 +555,20 @@ const related = allPosts
 		font-weight: 700;
 		font-size: 0.9375rem;
 	}
+	.avatar-img {
+		padding: 0;
+		object-fit: cover;
+	}
 
 	.byline-text { text-align: left; line-height: 1.2; }
 	.byline-name { font-weight: 600; color: var(--charcoal); font-size: 0.9375rem; }
 	.byline-role { font-size: 0.75rem; color: var(--haze); }
 	.meta-divider { color: var(--haze); opacity: 0.5; }
 	.meta-item { font-size: 0.875rem; }
+
+	.author-bio-avatar-img {
+		object-fit: cover;
+	}
 
 	.hero-image { margin: 2rem 0 3rem; }
 
@@ -416,10 +619,80 @@ const related = allPosts
 		color: #fff;
 	}
 
+	/* Prev/next nav */
+	.prev-next {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		margin: 3rem 0 1rem;
+	}
+	.pn-link {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		padding: 1.25rem 1.5rem;
+		background: var(--cloud);
+		border-radius: var(--radius);
+		text-decoration: none;
+		transition: all 0.2s var(--ease);
+		min-width: 0;
+	}
+	.pn-link:hover {
+		background: var(--amber-light);
+		transform: translateY(-2px);
+	}
+	.pn-next { text-align: right; align-items: flex-end; }
+	.pn-label {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 0.6875rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--amber);
+	}
+	.pn-title {
+		font-weight: 600;
+		font-size: 0.9375rem;
+		color: var(--charcoal);
+		line-height: 1.35;
+	}
+	.pn-spacer { display: block; }
+
+	@media (max-width: 640px) {
+		.prev-next { grid-template-columns: 1fr; }
+		.pn-next { text-align: left; align-items: flex-start; }
+	}
+
+	/* Back-to-top button */
+	.back-to-top {
+		position: fixed;
+		bottom: 1.5rem;
+		right: 1.5rem;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background: var(--charcoal);
+		color: var(--canvas);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: var(--shadow-md);
+		z-index: 50;
+		transition: all 0.2s var(--ease);
+	}
+	.back-to-top:hover {
+		background: var(--amber);
+		transform: translateY(-2px);
+	}
+	.back-to-top[hidden] {
+		display: none;
+	}
+
 	@media (max-width: 768px) {
-		.article-header { padding: 2.5rem 0 1.5rem; }
+		.article-header { padding: 1rem 0 1.5rem; }
 		.article-meta { gap: 0.5rem; }
 		.byline { width: 100%; justify-content: center; margin-bottom: 0.5rem; }
 		.share-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+		.back-to-top { bottom: 1rem; right: 1rem; }
 	}
 </style>

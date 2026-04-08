@@ -4,17 +4,61 @@ import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
-}
-type Props = CollectionEntry<'blog'>;
 
-const post = Astro.props;
-const { Content } = await render(post);
+	// Group by cluster code (C1, C2, …) and sort pillars first, then by id
+	const byCluster: Record<string, CollectionEntry<'blog'>[]> = {};
+	for (const p of posts) {
+		const c = (p.data as any).cluster;
+		const m = c ? String(c).match(/^(C\d+)/) : null;
+		const key = m ? m[1] : 'OTHER';
+		(byCluster[key] ||= []).push(p);
+	}
+	for (const k in byCluster) {
+		byCluster[k].sort((a, b) => {
+			const ap = a.id.toLowerCase().includes('pillar');
+			const bp = b.id.toLowerCase().includes('pillar');
+			if (ap && !bp) return -1;
+			if (!ap && bp) return 1;
+			return a.id.localeCompare(b.id);
+		});
+	}
+
+	return posts.map((post) => {
+		const c = (post.data as any).cluster;
+		const m = c ? String(c).match(/^(C\d+)/) : null;
+		const key = m ? m[1] : 'OTHER';
+		const siblings = byCluster[key] || [];
+		const idx = siblings.findIndex((p) => p.id === post.id);
+		const prev = idx > 0 ? siblings[idx - 1] : null;
+		const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
+		return {
+			params: { slug: post.id },
+			props: {
+				post,
+				prev: prev ? { id: prev.id, title: prev.data.title } : null,
+				next: next ? { id: next.id, title: next.data.title } : null,
+			},
+		};
+	});
+}
+
+type Props = {
+	post: CollectionEntry<'blog'>;
+	prev: { id: string; title: string } | null;
+	next: { id: string; title: string } | null;
+};
+
+const { post, prev, next } = Astro.props as Props;
+const { Content, remarkPluginFrontmatter } = await render(post);
 ---
 
-<BlogPost {...post.data}>
+<BlogPost
+	{...post.data}
+	slug={post.id}
+	prev={prev}
+	next={next}
+	readingTime={remarkPluginFrontmatter?.readingTime}
+	readingWords={remarkPluginFrontmatter?.readingWords}
+>
 	<Content />
 </BlogPost>

@@ -90,8 +90,10 @@ const readingMinutes = (wc: any): number => {
 			</section>
 
 			<div class="blog-search">
-				<input type="search" id="blog-search-input" placeholder="Search articles…" aria-label="Search articles" />
+				<div id="search"></div>
 			</div>
+			<link rel="stylesheet" href="/blog/pagefind/pagefind-ui.css" />
+			<script src="/blog/pagefind/pagefind-ui.js" is:inline></script>
 
 			<nav class="category-nav" aria-label="Clusters">
 				<div class="category-nav-inner">
@@ -178,33 +180,18 @@ const readingMinutes = (wc: any): number => {
 		<Footer />
 
 		<script>
-			// ===== Client-side search (filters cards in place) =====
-			const input = document.getElementById('blog-search-input') as HTMLInputElement | null;
-			if (input) {
-				input.addEventListener('input', () => {
-					const q = input.value.trim().toLowerCase();
-					const cards = document.querySelectorAll('.post-card');
-					const sections = document.querySelectorAll('.cluster-section');
-					if (!q) {
-						cards.forEach((c) => ((c as HTMLElement).style.display = ''));
-						sections.forEach((s) => ((s as HTMLElement).style.display = ''));
-						return;
-					}
-					sections.forEach((section) => {
-						const sectionCards = section.querySelectorAll('.post-card');
-						let anyVisible = false;
-						sectionCards.forEach((c) => {
-							const el = c as HTMLElement;
-							const title = el.dataset.title || '';
-							const desc = el.dataset.desc || '';
-							const match = title.includes(q) || desc.includes(q);
-							el.style.display = match ? '' : 'none';
-							if (match) anyVisible = true;
-						});
-						(section as HTMLElement).style.display = anyVisible ? '' : 'none';
+			// ===== Pagefind search UI =====
+			window.addEventListener('DOMContentLoaded', () => {
+				if (typeof (window as any).PagefindUI !== 'undefined') {
+					new (window as any).PagefindUI({
+						element: '#search',
+						showSubResults: true,
+						showImages: false,
+						resetStyles: false,
+						placeholder: 'Search articles…',
 					});
-				});
-			}
+				}
+			});
 
 			// ===== Sticky category nav active state =====
 			const navLinks = document.querySelectorAll('.category-nav a');

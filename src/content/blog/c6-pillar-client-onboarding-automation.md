@@ -53,6 +53,12 @@ Onboarding automation is not sending a template email. It's a sequence of events
 
 The automation handles the repeatable. You handle the relationship.
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">2-3 hrs</div><div class="lbl">manual onboarding time per new client</div></div>
+  <div class="stat"><div class="num">60 sec</div><div class="lbl">from signature to full welcome sequence sent</div></div>
+  <div class="stat"><div class="num">68%</div><div class="lbl">of churn happens in the first 90 days</div></div>
+</div>
+
 ## The cost of manual onboarding
 
 Let me show you why this matters.
@@ -242,6 +248,10 @@ Not everything should be automated. Here's the framework.
 
 **The test:** If a VA could do it with a checklist, automate it. If it requires your expertise or emotional intelligence, keep it human.
 
+<aside class="callout callout-note">
+<strong>Rule of thumb:</strong> Automate the paperwork, never the welcome. The moment a client signs is the one moment you can't afford to feel like an autoresponder. Everything else — contract, intake, scheduling, payment — should fire in under a minute.
+</aside>
+
 ## The technical setup: what you need
 
 You don't need much to automate onboarding.
@@ -298,6 +308,11 @@ How do you know if your onboarding is working?
 - Time spent on onboarding per client (target: <30 minutes of your time)
 
 If any of these metrics are off, the onboarding sequence is the place to fix it.
+
+<blockquote class="pull-quote">
+The first 48 hours after a client says yes decide whether they stay a year or ghost after session two. Don't spend them chasing a signature.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ## The onboarding → delivery handoff
 

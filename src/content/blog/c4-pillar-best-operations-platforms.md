@@ -55,6 +55,12 @@ I gave Arca the highest scores on setup and time-to-value because that is litera
 
 ---
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">6</div><div class="lbl">platforms compared on setup, pricing, and time-to-value</div></div>
+  <div class="stat"><div class="num">30-40 hrs</div><div class="lbl">typical GoHighLevel self-configuration</div></div>
+  <div class="stat"><div class="num">7 days</div><div class="lbl">done-for-you build on managed operations</div></div>
+</div>
+
 ## GoHighLevel
 
 **What it is:** An all-in-one marketing and operations platform built for digital marketing agencies. White-label capable. Sub-account architecture. CRM, funnel builder, email/SMS marketing, pipeline management, website builder, and more.
@@ -157,6 +163,10 @@ Setup time kills the value proposition for most solo operators. The workflow bui
 For most consultants and coaches, the 40 to 60 hours of setup time has an opportunity cost of $6,000 to $18,000 at typical billing rates. That context matters.
 
 ---
+
+<aside class="callout callout-warning">
+<strong>Hidden cost alert:</strong> Sticker prices on this list rarely match the real price. Per-email, per-SMS, credit systems, and "setup specialist" fees can double or triple what you actually pay in month one. Always ask what breaks the $97 line before you swipe a card.
+</aside>
 
 ## Zapier
 
@@ -274,6 +284,11 @@ There is no universal best. There is only best for your situation.
 For a structured decision framework, the [coach's guide to choosing a business platform](/blog/alternatives/choose-business-platform-guide) walks you through six specific questions that narrow the field based on how your business actually works.
 
 ---
+
+<blockquote class="pull-quote">
+The best platform isn't the one with the most features. It's the one you'll still be using in six months, running the work you stopped doing yourself.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ## The real question behind the comparison
 

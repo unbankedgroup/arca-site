@@ -52,6 +52,12 @@ This is not a technology problem. It is an architecture problem. You have built 
 
 ---
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">5-7</div><div class="lbl">core SaaS tools in the average service business</div></div>
+  <div class="stat"><div class="num">20-30%</div><div class="lbl">of features actually used across the stack</div></div>
+  <div class="stat"><div class="num">$412/mo</div><div class="lbl">typical savings after consolidation</div></div>
+</div>
+
 ## The real cost of your SaaS stack (it is not the subscription fees)
 
 The $126 to $159 per month bothers people. But it is actually the smallest cost.
@@ -163,6 +169,10 @@ Consolidation does NOT make sense when:
 
 For a more detailed framework, the [consolidation checklist](/blog/tool-consolidation/consolidation-checklist) walks through 10 specific questions to help you decide.
 
+<aside class="callout callout-stat">
+<strong>Reality check:</strong> Gartner estimates 30% of SaaS spend is "toxic" — licenses and features nobody touches. Pull your last credit card statement right now. There's almost certainly a subscription on there you forgot you were paying for.
+</aside>
+
 ---
 
 ## How to audit your current stack in 20 minutes
@@ -222,6 +232,11 @@ Here is what service business owners report after consolidation:
 **Revenue goes up.** Not because of magic. Because the leads that used to go cold at hour 24 now get a response at minute 5. Because the invoices that used to be 3 weeks overdue now get reminders at 48 hours. Because the clients who used to churn silently now get re-engagement check-ins at 30, 60, and 90 days. The math is straightforward: fewer gaps, less leakage, more revenue.
 
 ---
+
+<blockquote class="pull-quote">
+You don't have a tool problem. You have a gap problem. Every handoff between apps is a place where revenue quietly leaks out of your business.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ## The spreadsheet graveyard problem
 

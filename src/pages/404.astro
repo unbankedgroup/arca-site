@@ -1,0 +1,73 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Page not found · ${SITE_TITLE}`} description="The page you're looking for doesn't exist." />
+	</head>
+	<body>
+		<Header />
+		<main class="not-found">
+			<div class="nf-inner">
+				<div class="nf-eyebrow">Error 404</div>
+				<h1 class="nf-title">This page wandered off.</h1>
+				<p class="nf-lede">
+					The link is broken, the post moved, or it never existed. Try one of these instead.
+				</p>
+				<div class="nf-actions">
+					<a href="/" class="btn btn-primary">Back to home</a>
+					<a href="/blog/" class="btn btn-ghost">Browse Learn</a>
+				</div>
+			</div>
+		</main>
+		<Footer />
+
+		<style>
+			.not-found {
+				max-width: var(--max-w);
+				margin: 0 auto;
+				padding: 120px 24px 160px;
+				display: flex;
+				justify-content: center;
+			}
+			.nf-inner {
+				max-width: 640px;
+				text-align: center;
+			}
+			.nf-eyebrow {
+				color: var(--amber);
+				font-weight: 800;
+				font-size: 0.85rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				margin-bottom: 18px;
+			}
+			.nf-title {
+				font-family: 'Plus Jakarta Sans', sans-serif;
+				font-size: clamp(2rem, 5vw, 3.25rem);
+				font-weight: 800;
+				color: var(--charcoal);
+				letter-spacing: -0.025em;
+				line-height: 1.1;
+				margin: 0 0 18px;
+			}
+			.nf-lede {
+				color: var(--soft-charcoal);
+				font-size: 1.125rem;
+				line-height: 1.6;
+				margin: 0 0 36px;
+			}
+			.nf-actions {
+				display: flex;
+				gap: 12px;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+		</style>
+	</body>
+</html>

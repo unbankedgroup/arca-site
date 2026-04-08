@@ -56,6 +56,12 @@ Want to get specific about your own numbers? I built a [coaching time audit](/bl
 
 ---
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">20-30 hrs</div><div class="lbl">per week coaches spend on non-coaching tasks</div></div>
+  <div class="stat"><div class="num">67%</div><div class="lbl">of coaches report burnout in their first 3 years</div></div>
+  <div class="stat"><div class="num">9x</div><div class="lbl">higher conversion when leads get a reply in 5 min</div></div>
+</div>
+
 ## The 8-12 client breaking point
 
 There's a threshold I keep seeing. Somewhere between 8 and 12 active clients, things start breaking.
@@ -190,6 +196,10 @@ When a client pays an invoice in FreshBooks, does your Google Sheet update? Of c
 
 You are the integration layer. You are the middleware between five disconnected tools. That's why 68% of coaches spend 5+ hours per week just on tool juggling.
 
+<aside class="callout callout-warning">
+<strong>Watch out:</strong> If your "CRM" is really a Google Sheet you update after every session, you don't have a CRM problem. You have a missing operations layer. Adding a new tool on top won't fix it — it'll just give you one more tab to keep open.
+</aside>
+
 A study from BetterCloud found that the average small business employee switches between apps 1,100 times per day. At a coaching rate of $150-200/hour, that context-switching costs $1,500-2,500 per week in lost productive capacity.
 
 The answer isn't a better tool. It's [fewer tools that work as one system](/blog/coaching-automation/coaching-tool-stack). One platform that handles scheduling, invoicing, follow-ups, onboarding, and client tracking together. Where finishing a session triggers the invoice. Where a new lead triggers the follow-up. Where a paid invoice updates the client record. All without you touching anything.
@@ -259,6 +269,11 @@ You wrap up your day at 5pm. You close your laptop.
 Nothing piles up. Nothing gets forgotten. [Your business keeps running](/blog/coaching-automation/coaching-vacation-guide) while you eat dinner with your family.
 
 That's not a fantasy. That's operational infrastructure doing what it's supposed to do. Freeing the coach to coach.
+
+<blockquote class="pull-quote">
+You didn't train for years in coaching to become the person who sends Calendly reminders at 11pm. Give that job to a system and take your evenings back.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ---
 

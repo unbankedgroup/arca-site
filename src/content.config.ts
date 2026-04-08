@@ -26,6 +26,9 @@ const blog = defineCollection({
 			article_id: z.string().optional(),
 			search_intent: z.string().optional(),
 			word_count: z.union([z.string(), z.number()]).optional(),
+			// Injected at build time by remarkReadingTime — do not set manually
+			readingTime: z.number().optional(),
+			readingWords: z.number().optional(),
 			word_count_target: z.union([z.string(), z.number()]).optional(),
 			links_to: z.union([z.string(), z.array(z.string())]).optional(),
 			// Accept both string and object for author
@@ -33,7 +36,9 @@ const blog = defineCollection({
 				z.string(),
 				z.object({
 					name: z.string(),
-					role: z.string().optional()
+					role: z.string().optional(),
+					bio: z.string().optional(),
+					avatar: z.string().optional()
 				})
 			]).optional(),
 			canonical_url: z.string().optional(),

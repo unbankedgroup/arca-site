@@ -46,6 +46,12 @@ Revenue leakage happens in the gaps. Not because the service is bad. Because the
 
 ---
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">6 stages</div><div class="lbl">in the service business client lifecycle</div></div>
+  <div class="stat"><div class="num">2x</div><div class="lbl">conversion lift from fixing inquiry response</div></div>
+  <div class="stat"><div class="num">3 of 5</div><div class="lbl">revenue leaks happen in the gaps between stages</div></div>
+</div>
+
 ## Stage 1: Inquiry — The 5-minute window
 
 The first stage is also the most expensive to get wrong.
@@ -109,6 +115,10 @@ This sequence can be entirely automated. Or it can be draft-and-approve. Either 
 [The first 48 hours of client onboarding](/blog/client-lifecycle/first-48-hours-onboarding) breaks down each step in detail.
 
 ---
+
+<aside class="callout callout-stat">
+<strong>The math:</strong> A 5-minute response window converts 9x better than a 30-minute one. If your inbox is your inquiry system, you're losing most of your pipeline before anyone has said no.
+</aside>
 
 ## Stage 4: Delivery — The work happens
 
@@ -210,6 +220,11 @@ According to Gartner, businesses with automated operations experience 40% less r
 The difference isn't better marketing. It's better operations. Same leads. Better conversion. Better retention. More referrals.
 
 ---
+
+<blockquote class="pull-quote">
+Your service is the product. Your operations are the business. Most founders spend years perfecting the product and leave the business running on memory.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ## Building revenue ops for your business
 

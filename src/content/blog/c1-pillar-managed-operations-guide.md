@@ -44,6 +44,12 @@ That distinction matters more than it sounds.
 
 ---
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">16 hrs</div><div class="lbl">per week solo coaches lose to admin</div></div>
+  <div class="stat"><div class="num">$3,200</div><div class="lbl">weekly opportunity cost at $200/hr</div></div>
+  <div class="stat"><div class="num">5-7</div><div class="lbl">disconnected tools in a typical stack</div></div>
+</div>
+
 ## Why most service businesses are stuck on DIY ops
 
 Here's the pattern I've seen over and over.
@@ -175,6 +181,10 @@ Here's what that looks like in practice:
 I'm not saying VAs are useless. If you need someone to make judgment calls, handle nuanced client situations, or do strategic work, a good VA is worth every dollar. But 70-80% of what most VAs do for solo consultants is [process work that doesn't require judgment](/blog/va-vs-platform/va-replacement-guide). It's the same steps in the same order every time.
 
 That 70-80% is exactly what a managed operations platform handles. The remaining 20-30% is where your time (or a VA's time) actually matters.
+
+<aside class="callout callout-note">
+<strong>Quick rule:</strong> If a task shows up on your calendar at the same time every week and the steps never change, it shouldn't be on your calendar at all. That's infrastructure work, not founder work.
+</aside>
 
 ---
 
@@ -310,6 +320,11 @@ That works when you have 4 clients. At 8-12 clients, things start slipping. Not 
 Those numbers are connected. The burnout isn't from coaching. It's from operating a business that has no infrastructure.
 
 Managed operations is the structural fix. Not a productivity hack. Not a better to-do list. An actual shift from "the founder runs everything" to "the system runs the repeatable stuff, and the founder does the work that requires their brain."
+
+<blockquote class="pull-quote">
+Your business shouldn't depend on you remembering things. It should depend on a system that remembers for you.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 I keep thinking about what one consultant told me: "I started this business to help people. Somewhere along the way, I became an operations manager who also does coaching."
 

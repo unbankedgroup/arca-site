@@ -25,6 +25,12 @@ I spent years in capital markets watching firms build operations teams, and now 
 
 Some of you will read this and realize you need to [replace your VA with a platform entirely](/blog/va-vs-platform/va-to-platform-transition). Others will realize a VA is exactly what you need. Most will land somewhere in between. That is the honest answer, and I will show you how to figure out which camp you belong to.
 
+<div class="stat-grid">
+  <div class="stat"><div class="num">$6-9k/mo</div><div class="lbl">all-in cost of a US-based VA (2-3x sticker)</div></div>
+  <div class="stat"><div class="num">60-70%</div><div class="lbl">of typical VA time on automatable tasks</div></div>
+  <div class="stat"><div class="num">6-12 mo</div><div class="lbl">average VA tenure before turnover</div></div>
+</div>
+
 ## Key Takeaways
 
 - A virtual assistant costs 2 to 3 times the sticker price when you factor in training, management time, tool seats, and turnover replacement.
@@ -137,6 +143,10 @@ Here is the number that matters most. 60 to 70 percent of a typical VA's time go
 
 The question is not which one costs less. The question is which one gives you the right return on what you are spending.
 
+<aside class="callout callout-try">
+<strong>Try this:</strong> Open your VA's last 10 Slack messages to you. Count how many were status updates on repeatable tasks versus judgment calls you actually needed their brain for. The ratio is usually the answer to this whole debate.
+</aside>
+
 ## The hybrid model: platform for ops, VA for high-value work
 
 For many service businesses, the smartest move is not choosing one or the other. It is using both strategically.
@@ -216,6 +226,11 @@ When your VA leaves, here is what actually happens.
 A platform does not quit. Your Routines do not give two weeks notice. The processes you build in Arca are documented by design, because the Routine itself is the documentation. If you need to change platforms someday, your operations are explicitly defined. Nothing lives in someone's head.
 
 I wrote the full breakdown of this risk in [what happens when your VA quits](/blog/va-vs-platform/va-quit-business-risk). If you are currently dependent on a single VA for your entire operations, please read it.
+
+<blockquote class="pull-quote">
+A platform doesn't quit. It doesn't take a better offer. It doesn't hold your onboarding process hostage inside one person's head.
+<cite>— Mal Mposha, Arca</cite>
+</blockquote>
 
 ## The decision matrix
 
