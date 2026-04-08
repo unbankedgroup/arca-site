@@ -9,11 +9,54 @@ import { remarkReadingTime } from './src/lib/reading-time.mjs';
 
 import cloudflare from '@astrojs/cloudflare';
 
+// Sitemap URL dedupe across serialize calls (the sitemap integration calls
+// serialize per-item, so we need a set at module scope to catch collisions
+// after our /blog/blog/ → /blog/ rewrite merges two distinct routes).
+const SITEMAP_SEEN = new Set();
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://runarca.xyz',
   base: '/blog',
-  integrations: [mdx(), sitemap()],
+  integrations: [
+    mdx(),
+    sitemap({
+      // Astro doubles `/blog/` in sitemap URLs because `base: '/blog'` is
+      // applied on top of routes that already live under src/pages/blog/.
+      // The real deployed URLs are /blog/<slug>, not /blog/blog/<slug>.
+      // Strip the extra segment, drop utility pages from the public sitemap,
+      // and dedupe URLs that collide after the fix-up.
+      serialize(item) {
+        // Drop utility / system pages from the public sitemap
+        if (
+          item.url.endsWith('/blog/404') ||
+          item.url.endsWith('/blog/404/') ||
+          item.url.endsWith('/blog/about') ||
+          item.url.endsWith('/blog/about/') ||
+          item.url.endsWith('/blog/privacy') ||
+          item.url.endsWith('/blog/privacy/') ||
+          item.url.endsWith('/blog/terms') ||
+          item.url.endsWith('/blog/terms/')
+        ) {
+          return undefined;
+        }
+        // Fix the doubled /blog/blog/ prefix (Astro applies `base: '/blog'`
+        // on top of routes that already live under src/pages/blog/)
+        item.url = item.url.replace('/blog/blog/', '/blog/');
+        if (item.url.endsWith('/blog/blog')) {
+          item.url = item.url.replace('/blog/blog', '/blog');
+        }
+        // Normalize trailing slashes to match the canonical form (no slash)
+        if (item.url.length > 'https://runarca.xyz/'.length && item.url.endsWith('/')) {
+          item.url = item.url.slice(0, -1);
+        }
+        // Dedupe (site root and blog index both land on /blog after fix-up)
+        if (SITEMAP_SEEN.has(item.url)) return undefined;
+        SITEMAP_SEEN.add(item.url);
+        return item;
+      },
+    }),
+  ],
   output: 'static',
 
   markdown: {

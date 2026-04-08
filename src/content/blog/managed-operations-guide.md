@@ -4,6 +4,8 @@ meta_description: "Coaches spend 20+ hours a week on scheduling, invoicing, and 
 target_keyword: "coaching business operations system"
 secondary_keywords: "how to automate coaching business, done for you coaching operations, managed operations for coaches, coaching business admin"
 cluster: C1
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 article_id: C1-P
 word_count_target: 3500+
 author: Mal Mposha

@@ -2,6 +2,8 @@
 title: "Done for You Business Setup: Why We Ask Before We Build"
 slug: diagnosis-before-prescription
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S4
 target_keyword: "done for you business setup"
 secondary_keywords: "custom business automation, business operations setup service, diagnosed business automation, dfy setup"

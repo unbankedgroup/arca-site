@@ -2,6 +2,8 @@
 title: "The 7-Day Build: Live in a Week, Not Seven"
 slug: 7-day-build-explained
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S5
 target_keyword: "7-day business setup sprint"
 secondary_keywords: "7 day business setup, done for you operations setup, fast business automation"

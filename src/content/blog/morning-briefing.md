@@ -2,6 +2,8 @@
 title: "The Morning Briefing: One Message Beats Six Tabs"
 slug: morning-briefing
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S8
 target_keyword: "daily business briefing automation"
 secondary_keywords: "morning business briefing, business dashboard alternative, daily operations summary"

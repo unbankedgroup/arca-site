@@ -2,6 +2,8 @@
 title: "Operations for One: Solo Businesses Run Like Teams"
 slug: operations-for-one
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S6
 target_keyword: "solo business operations system"
 secondary_keywords: "solo consultant operations, one person business infrastructure, run business like a team"

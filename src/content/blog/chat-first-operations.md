@@ -2,6 +2,8 @@
 title: "Why Coaches Stop Using Business Software (and What Works)"
 slug: chat-first-operations
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S9
 target_keyword: "coaching business management without dashboard"
 secondary_keywords: "why coaches abandon business software, chat-based business management, coaching business single app, no login business operations"

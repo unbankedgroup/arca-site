@@ -2,6 +2,8 @@
 title: "Operations Cost Calculator: Your Real Admin Cost"
 slug: operations-cost-calculator
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S11
 target_keyword: "operations cost calculator small business"
 secondary_keywords: "admin cost small business, DIY ops cost calculator, business operations ROI"

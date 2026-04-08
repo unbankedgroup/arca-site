@@ -2,6 +2,8 @@
 title: "What Happens to Your Business When You Take a Week Off?"
 slug: business-runs-without-you
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S3
 target_keyword: "business keeps running without founder"
 secondary_keywords: "step away from business, business runs without me, founder dependency"

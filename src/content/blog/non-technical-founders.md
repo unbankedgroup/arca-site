@@ -2,6 +2,8 @@
 title: "What Non-Technical Founders Actually Need From Ops"
 slug: non-technical-founders
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S7
 target_keyword: "non technical founder business automation"
 secondary_keywords: "business automation for non technical, no code business tools, done for you automation"

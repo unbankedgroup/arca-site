@@ -2,6 +2,8 @@
 title: "Why Consultants Run Their Business on Telegram"
 slug: telegram-business-operations
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S9b
 target_keyword: "Telegram for business operations consultants"
 secondary_keywords: "Telegram business automation, run business on Telegram, Telegram operations management"

@@ -2,6 +2,8 @@
 title: "The $3K/Month Operations Mistake Consultants Make"
 slug: operations-cost-mistake
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S2
 target_keyword: "true cost of running a coaching business"
 secondary_keywords: "hidden cost coaching business admin, how much time coaches spend on admin, coaching business operations cost"

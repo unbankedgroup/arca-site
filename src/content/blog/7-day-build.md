@@ -2,6 +2,8 @@
 title: "Done-for-You Operations Setup: Your First Week"
 slug: operations-setup-week
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S5b
 target_keyword: "done for you operations setup"
 secondary_keywords: "business operations setup service, operations setup week, what to expect managed operations"

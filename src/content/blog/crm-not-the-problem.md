@@ -2,6 +2,8 @@
 title: "Why Your CRM Isn't the Problem (Your Ops Infra Is)"
 slug: crm-not-the-problem
 cluster: C1 — Managed Operations
+pubDate: 2026-04-01
+updatedDate: 2026-04-08
 id: C1-S1
 target_keyword: "why CRM doesn't work for small business"
 secondary_keywords: "CRM vs operations platform, CRM problems small business, operations infrastructure"
