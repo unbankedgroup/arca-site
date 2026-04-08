@@ -22,6 +22,7 @@ const blog = defineCollection({
 			// Accept both string and array for secondary_keywords
 			secondary_keywords: z.union([z.string(), z.array(z.string())]).optional(),
 			cluster: z.string().optional(),
+			pillar: z.boolean().optional(),
 			id: z.string().optional(),
 			article_id: z.string().optional(),
 			search_intent: z.string().optional(),

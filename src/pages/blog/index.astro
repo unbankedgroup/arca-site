@@ -23,8 +23,8 @@ for (const post of allPosts) {
 // Sort clusters: pillars first
 for (const key in clusters) {
 	clusters[key].sort((a, b) => {
-		const aPillar = String((a.data as any).id || a.id || '').toLowerCase().includes('pillar');
-		const bPillar = String((b.data as any).id || b.id || '').toLowerCase().includes('pillar');
+		const aPillar = !!(a.data as any).pillar;
+		const bPillar = !!(b.data as any).pillar;
 		if (aPillar && !bPillar) return -1;
 		if (!aPillar && bPillar) return 1;
 		return a.id.localeCompare(b.id);
@@ -32,7 +32,7 @@ for (const key in clusters) {
 }
 
 // Hero feature: the C1 flagship guide
-const heroFeature = allPosts.find((p) => p.id === 'c1-pillar-managed-operations-guide');
+const heroFeature = allPosts.find((p) => p.id === 'managed-operations-guide');
 
 // Start here: 3 evergreen anchors
 const startHereIds = [
@@ -133,7 +133,7 @@ const readingMinutes = (wc: any): number => {
 									const data = post.data as any;
 									const desc = (data.meta_description || data.description || '') as string;
 									const minutes = readingMinutes(data.word_count);
-									const isBig = post.id.toLowerCase().includes('pillar');
+									const isBig = !!(data.pillar);
 									return (
 										<a href={`/blog/${post.id}/`} class={`post-card ${isBig ? 'big' : ''}`} data-title={data.title.toLowerCase()} data-desc={desc.toLowerCase()}>
 											<div class="post-eyebrow">{minutes} min · {clusterLabels[key]}</div>

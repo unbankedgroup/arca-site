@@ -15,8 +15,8 @@ export async function getStaticPaths() {
 	}
 	for (const k in byCluster) {
 		byCluster[k].sort((a, b) => {
-			const ap = a.id.toLowerCase().includes('pillar');
-			const bp = b.id.toLowerCase().includes('pillar');
+			const ap = !!(a.data as any).pillar;
+			const bp = !!(b.data as any).pillar;
 			if (ap && !bp) return -1;
 			if (!ap && bp) return 1;
 			return a.id.localeCompare(b.id);
