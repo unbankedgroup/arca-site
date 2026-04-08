@@ -350,35 +350,70 @@
     .nav-mobile {
       display: none;
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background: var(--canvas);
-      z-index: 999;
+      z-index: 1100;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
     }
     .nav-mobile.open { display: flex; }
-    .nav-mobile a {
+    .nav-mobile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.125rem 1.25rem;
+      border-bottom: 1px solid rgba(184, 168, 152, 0.18);
+    }
+    .nav-mobile-brand {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: 800;
+      font-size: 1.25rem;
       color: var(--charcoal);
+      letter-spacing: -0.02em;
+      text-decoration: none;
     }
     .nav-mobile-close {
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
-      width: 44px;
-      height: 44px;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: transparent;
+      border: 0;
       font-size: 1.75rem;
+      line-height: 1;
       color: var(--charcoal);
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .nav-mobile-close:hover { background: var(--cloud); }
+    .nav-mobile-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 1.25rem 2rem;
+      overflow-y: auto;
+    }
+    .nav-mobile-link {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      padding: 0.875rem 0;
+      border-bottom: 1px solid rgba(184, 168, 152, 0.12);
+    }
+    .nav-mobile-link:hover { color: var(--amber); }
+    .nav-mobile-cta {
+      margin-top: auto;
+      padding-top: 1.5rem;
+    }
+    .nav-mobile-cta .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 0.875rem 1.25rem;
+      font-size: 1rem;
     }
 
     @media (max-width: 768px) {
@@ -1531,51 +1566,92 @@
        ======================================== */
     .site-footer {
       background: var(--charcoal);
-      color: rgba(255,255,255,0.5);
-      padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+      color: rgba(253, 250, 245, 0.7);
+      padding: 4rem 0 2rem;
+      margin-top: 6rem;
     }
     .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1.5rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
-    .footer-brand {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand .brand-mark {
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 800;
-      font-size: 1.25rem;
-      color: rgba(255,255,255,0.7);
+      font-size: 1.5rem;
+      color: var(--canvas);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
     }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
+    .footer-brand .tagline {
+      font-size: 0.9375rem;
+      color: rgba(253, 250, 245, 0.85);
+      margin-bottom: 1rem;
+      max-width: 240px;
     }
-    .footer-links a {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.45);
+    .footer-brand .parent {
+      font-size: 0.8125rem;
+      color: rgba(253, 250, 245, 0.5);
+    }
+    .footer-brand .parent strong { color: var(--canvas); }
+    .footer-col h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--canvas);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.25rem;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col li { margin-bottom: 0.75rem; }
+    .footer-col a {
+      color: rgba(253, 250, 245, 0.7);
+      font-size: 0.9375rem;
+      text-decoration: none;
       transition: color 0.2s ease;
     }
-    .footer-links a:hover { color: rgba(255,255,255,0.75); }
-    .footer-legal {
-      width: 100%;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      margin-top: 0.5rem;
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom {
+      border-top: 1px solid rgba(253, 250, 245, 0.1);
+      padding-top: 2rem;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1rem;
       font-size: 0.8125rem;
+      color: rgba(253, 250, 245, 0.5);
     }
-    .footer-legal a { color: rgba(255,255,255,0.35); transition: color 0.2s ease; }
-    .footer-legal a:hover { color: rgba(255,255,255,0.6); }
+    .footer-bottom a {
+      color: rgba(253, 250, 245, 0.5);
+      text-decoration: none;
+    }
+    .footer-bottom a:hover { color: var(--amber); }
 
-    @media (max-width: 600px) {
-      .footer-inner { flex-direction: column; text-align: center; }
-      .footer-links { justify-content: center; }
-      .footer-legal { justify-content: center; }
+    @media (max-width: 768px) {
+      .site-footer {
+        padding: 3rem 0 1.5rem;
+        margin-top: 4rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1.5rem;
+      }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
     /* ========================================
@@ -1653,11 +1729,19 @@
 
   <!-- Mobile Nav Overlay -->
   <div class="nav-mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
-    <button class="nav-mobile-close" aria-label="Close menu">&times;</button>
-    <a href="#how-it-works" class="nav-mobile-link">How it works</a>
-    <a href="#pricing" class="nav-mobile-link">Pricing</a>
-    <a href="#faq" class="nav-mobile-link">FAQ</a>
-    <a href="#diagnosis" class="btn btn-primary">Get your diagnosis</a>
+    <div class="nav-mobile-header">
+      <a href="/" class="nav-mobile-brand">Arca</a>
+      <button class="nav-mobile-close" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="nav-mobile-body">
+      <a href="#how-it-works" class="nav-mobile-link">How it works</a>
+      <a href="#pricing" class="nav-mobile-link">Pricing</a>
+      <a href="#faq" class="nav-mobile-link">FAQ</a>
+      <a href="/blog/" class="nav-mobile-link">Learn</a>
+      <div class="nav-mobile-cta">
+        <a href="#diagnosis" class="btn btn-primary">Get your diagnosis</a>
+      </div>
+    </div>
   </div>
 
   <main>
@@ -2248,22 +2332,48 @@
        FOOTER
        ========================================== -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">Arca</div>
-        <div class="footer-links">
-          <a href="#how-it-works">How it works</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-          <a href="#diagnosis">Book a call</a>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-mark">Arca</div>
+          <p class="tagline">You coach. We handle the rest.</p>
+          <p class="parent">An <strong>Unbanked</strong> company.</p>
         </div>
-        <div class="footer-legal">
-          <span>&copy; 2026 Arca &middot; Built by Unbanked</span>
-          <span>
-            <a href="/privacy">Privacy Policy</a> &middot;
-            <a href="/terms">Terms of Service</a>
-          </span>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#diagnosis">Get started</a></li>
+          </ul>
         </div>
+
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/">All articles</a></li>
+            <li><a href="/blog/c1-pillar-managed-operations-guide/">Managed operations guide</a></li>
+            <li><a href="/blog/c5-pillar-va-vs-operations-platform/">VA vs platform</a></li>
+            <li><a href="/blog/c6-pillar-client-onboarding-automation/">Client onboarding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:hello@runarca.xyz">Contact</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arca. All rights reserved.</p>
+        <p>Built for coaches and consultants who'd rather coach.</p>
       </div>
     </div>
   </footer>
