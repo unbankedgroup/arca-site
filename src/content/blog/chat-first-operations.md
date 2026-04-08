@@ -131,6 +131,12 @@ The difference is structural. A dashboard asks you to come to it. A chat convers
 
 WhatsApp has a 98% open rate. Email averages 20%. That's not a marginal difference. That's a structural advantage. When your operations live in WhatsApp, your team actually uses them.
 
+<div class="stat-bars">
+<div class="stat-bars-title">Daily active use</div>
+<div class="bar-row"><div class="bar-label">Chat-first</div><div class="bar-wrap"><div class="bar huge"><span class="val">85-95%</span></div></div></div>
+<div class="bar-row"><div class="bar-label">Dashboard</div><div class="bar-wrap"><div class="bar tiny"><span class="val">20-30%</span></div></div></div>
+</div>
+
 ---
 
 ## Client adoption: zero learning curve
@@ -150,6 +156,11 @@ That's the goal.
 - **Follow-ups.** Three days after a session: "How did it go? Any questions?" Client responds. System logs the interaction.
 
 The client never learns a new system. They text. Things happen.
+
+<aside class="callout callout-stat">
+<strong>The adoption gap</strong>
+Chat-first tools hit 85-95% daily use. Dashboard-first tools sit at 20-30%. Same information, same workflows — the only thing that changed is whether the founder had to log in somewhere new.
+</aside>
 
 For [solo business operations](/blog/operations-team-of-one/), this is the difference between running a business that clients experience as professional and running one that feels ad-hoc.
 
@@ -235,6 +246,12 @@ You don't configure workflows. You describe what you need. It runs.
 You don't assemble information from six sources. One briefing arrives. You know everything.
 
 That's the chat-first promise. Not a better tool. A tool you don't have to think about.
+
+<blockquote class="pull-quote">
+<span class="dek">The principle</span>
+The best infrastructure is invisible.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ---
 

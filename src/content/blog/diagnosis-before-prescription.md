@@ -35,6 +35,12 @@ That's the template trap. Maximum flexibility. Zero guidance. The burden of conf
 
 GoHighLevel's own community estimates 30-40 hours of self-setup before the platform is functional. Dubsado has spawned an entire gig economy of setup specialists charging $500 to $2,000 because the DIY route is so complex. And across the automation industry, 80-90% of DIY projects fail at implementation — not because the tools don't work, but because the person configuring them doesn't know what they're building. Maximum flexibility. Zero guidance. The burden of configuration falls on the person least equipped to handle it.
 
+<div class="stat-cards">
+<div class="card"><div class="tag">GoHighLevel</div><div class="num">30-40h</div><div class="lbl">DIY setup time</div></div>
+<div class="card"><div class="tag">Dubsado</div><div class="num">$500-2K</div><div class="lbl">Specialist fee</div></div>
+<div class="card"><div class="tag">DIY projects</div><div class="num">80-90%</div><div class="lbl">Fail at implementation</div></div>
+</div>
+
 ## What diagnosis actually looks like
 
 When I built Arca, I made a decision that costs more to operate but solves the actual problem: we learn your business before we touch it.
@@ -79,6 +85,11 @@ That 20-minute conversation gives us everything we need to map the business. Cli
 
 From there, the [7-day build](/blog/7-day-build-explained/) begins. Not from a template. From the diagnosis. Every workflow, every automation, every message sequence is built around how this specific business actually runs.
 
+<aside class="callout callout-try">
+<strong>Try this</strong>
+Before evaluating another platform, write answers to the five questions above: how leads find you, what happens between interest and first session, how you invoice, where things fall through the cracks, what a 30-day win looks like. That list is the diagnosis. Any system built on those answers will outperform any template.
+</aside>
+
 ## The philosophy underneath
 
 There's a principle from medicine that applies here: diagnosis before prescription.
@@ -90,6 +101,12 @@ Arca's diagnostic approach means every [business that runs on our platform](/blo
 It costs us more to operate this way. Every setup requires human attention, real conversation, custom configuration. We can't just hand out login credentials and let people figure it out.
 
 But if 50-63% of these projects fail at implementation, and we don't solve implementation, we haven't solved anything. The diagnosis is the product. Everything else is execution.
+
+<blockquote class="pull-quote">
+<span class="dek">The principle</span>
+The diagnosis is the product. Everything else is execution.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ---
 

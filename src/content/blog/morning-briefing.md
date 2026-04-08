@@ -70,6 +70,12 @@ McKinsey found knowledge workers spend **28% of their workweek** just managing i
 
 Time: 3 minutes. Feeling: clear.
 
+<div class="stat-bars">
+<div class="stat-bars-title">Time to know where your business stands</div>
+<div class="bar-row"><div class="bar-label">Six tabs</div><div class="bar-wrap"><div class="bar huge"><span class="val">30-45 min</span></div></div></div>
+<div class="bar-row"><div class="bar-label">One message</div><div class="bar-wrap"><div class="bar tiny"><span class="val">3 min</span></div></div></div>
+</div>
+
 The information is the same. The difference is assembly. In the six-tab version, you're the one assembling the picture from scattered sources. In the briefing version, the picture arrives assembled.
 
 ## Why this matters more than it sounds
@@ -79,6 +85,11 @@ There's a psychological cost to the daily assembly ritual that doesn't show up i
 Every time you open a new tab and scan for information, you're making small decisions. Is this important? Should I act on this now or later? Did I miss something? The cognitive load adds up. Research from Baumeister and colleagues on decision fatigue demonstrates that the quality of decisions degrades as the quantity increases. After 10 or more sequential decisions, subsequent choices measurably decline in quality. By the time you've finished your morning scan, you've made 30 to 40 micro-decisions before touching client work.
 
 McKinsey research found that knowledge workers spend 28% of their workweek managing information across apps. That's more than a full day each week spent not on actual work, but on finding, sorting, and context-switching between the information you need to do the work.
+
+<aside class="callout callout-stat">
+<strong>The real cost</strong>
+28% of the workweek goes to managing information across apps — more than a full day of every week lost before anyone has done any actual work. The briefing exists because assembly is the expensive part, not the information itself.
+</aside>
 
 The briefing eliminates the assembly. The decisions are pre-sorted. "Here's what matters. Here's what's handled. Here's what needs you." That's three categories, not forty.
 
@@ -127,6 +138,12 @@ Want to see what infrastructure makes the briefing possible? Read about [operati
 One message. Every morning. Everything you need to know.
 
 It sounds small. It changes everything.
+
+<blockquote class="pull-quote">
+<span class="dek">The shift</span>
+One message. Every morning. Everything you need to know.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ---
 

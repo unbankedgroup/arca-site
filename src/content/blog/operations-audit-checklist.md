@@ -46,6 +46,11 @@ Be specific. Where do messages live? Can you find last week's conversation with 
 
 **Why this matters:** The average consultant loses 4.2 hours per week searching for client information across fragmented channels. That's 218 hours per year — over five full work weeks — vanished into the digital void.
 
+<aside class="callout callout-stat">
+<strong>The search tax</strong>
+4.2 hours a week lost just finding client information. That's 218 hours a year — more than five full work weeks — spent locating things instead of doing things. And it never shows up on an invoice.
+</aside>
+
 I've seen coaches with six different places where client conversations live. Their brain is the integration layer. That's not sustainable.
 
 ### Question 2: What happens when a client says "I'm interested"?
@@ -105,6 +110,11 @@ Be honest. Do clients still get onboarded? Do payments still process? Do convers
 - **100 points:** System handles 90% of client interactions; you review summaries on Monday
 
 **Why this matters:** 89% of business coaches report feeling "trapped" by their own operations — unable to take time off without damaging client relationships or revenue. This is the clearest signal of operational debt.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+89% of business coaches report feeling trapped by their own operations. If you can't step away for a week without the business quietly stopping, the problem isn't your work ethic — it's that you are the infrastructure.
+</aside>
 
 I wrote about this in more detail in [What Happens When You Take a Week Off?](/blog/business-runs-without-you/). The short version: if your business can't survive a weekend, you don't have a business. You have a job where you're also the infrastructure.
 
@@ -186,6 +196,12 @@ If your score was lower than you hoped, you're not alone. And more importantly, 
 The question isn't whether you can afford to fix your operations.
 
 It's whether you can afford not to.
+
+<blockquote class="pull-quote">
+<span class="dek">The bottom line</span>
+The question isn't whether you can afford to fix your operations. It's whether you can afford not to.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ---
 

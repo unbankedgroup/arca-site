@@ -43,6 +43,13 @@ The 7-Day Build is different because we do the building. You provide the inputs.
 
 **The alternative:** DIY setup takes 20-30 hours for a typical consultant. That's a full workweek lost. The 7-Day Build gives you that week back.
 
+<div class="stat-bars">
+<div class="stat-bars-title">Your time to live</div>
+<div class="bar-row"><div class="bar-label">DIY · GoHighLevel</div><div class="bar-wrap"><div class="bar huge"><span class="val">30-40h</span></div></div></div>
+<div class="bar-row"><div class="bar-label">DIY · HoneyBook</div><div class="bar-wrap"><div class="bar mid"><span class="val">15-20h</span></div></div></div>
+<div class="bar-row"><div class="bar-label">7-Day Build</div><div class="bar-wrap"><div class="bar tiny"><span class="val">3-4h</span></div></div></div>
+</div>
+
 ## What happens each day
 
 ### Day 1: Discovery Call + Business Mapping
@@ -160,6 +167,11 @@ The 7-Day Build is done-for-you, but we need your input. Specifically:
 
 **Total time commitment:** ~3-4 hours across 7 days. Most of that is in the Day 1 discovery and Day 7 handoff calls.
 
+<aside class="callout callout-stat">
+<strong>The trade</strong>
+Three to four hours of your time over seven days. That's the entire cost of getting a full operations system built around how your business actually runs — versus a month of DIY that most founders never finish.
+</aside>
+
 ## What you get at the end
 
 **A working operations system:**
@@ -207,6 +219,11 @@ The 7-Day Build is done-for-you, but we need your input. Specifically:
 The math is simple. You can spend a month learning and configuring. Or you can spend 3-4 hours telling us how your business works, and let us build it.
 
 According to a 2025 survey of 500+ solo consultants, the average DIY setup took 27 hours over 18 days — with 34% of users abandoning their setup before completion. The 7-Day Build exists to eliminate that waste.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+34% of DIY setups get abandoned before completion. Not because the founder gave up on the idea — because 27 hours of configuration in the middle of client work is where good intentions go to die.
+</aside>
 
 ## You're live on day 8
 

@@ -48,6 +48,12 @@ The [tool consolidation guide](/blog/replace-saas-stack/) shows how most busines
 - Leads who don't get a response within **5 minutes are 9x less likely to convert** — but most CRMs don't trigger instant follow-up (Harvard Business Review)
 - By the time you manually respond to a lead (**12-24 hours average**), they've often already booked with someone else
 
+<div class="stat-cards">
+<div class="card"><div class="tag">CRM failure</div><div class="num">50-63%</div><div class="lbl">Implementations fail</div></div>
+<div class="card"><div class="tag">Tool sprawl</div><div class="num">20+</div><div class="lbl">Disconnected apps</div></div>
+<div class="card"><div class="tag">Lead response</div><div class="num">9x</div><div class="lbl">Higher conversion &lt; 5 min</div></div>
+</div>
+
 ## The CRM evaluation trap
 
 I watched a coach spend three months evaluating CRMs. She made a spreadsheet. She did free trials. She watched YouTube comparisons. She picked one, spent six weeks setting it up, used it for a month, and went back to her old system.
@@ -82,6 +88,11 @@ When that founder takes a vacation, everything stops. When that founder gets bus
 
 The business runs on the founder's attention. Not on infrastructure.
 
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+50-63% of CRM implementations fail. Not because the software is broken — because nobody built the connective tissue around it. Switching CRMs without fixing the infrastructure just resets the failure clock.
+</aside>
+
 ## The diagnostic question
 
 Before you look at another CRM, ask yourself this: if I disappeared for a week, what would still run?
@@ -103,6 +114,12 @@ You don't need to configure it. You don't need to learn a new dashboard. You [de
 That's what managed operations means. Not a better CRM. Not a better tool. A better foundation.
 
 Your CRM was never the problem. The missing infrastructure was.
+
+<blockquote class="pull-quote">
+<span class="dek">The real diagnosis</span>
+You are the integration layer.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 **Want to see where your gaps are?** Run the [15-minute operations audit](/blog/operations-audit-checklist/) — it maps every dependency on you personally.
 

@@ -46,6 +46,13 @@ Here's what happens when you introduce a new tool to a solo consultant or coach:
 
 The dashboard isn't helping. It's another tab. Another login. Another thing you're supposed to check.
 
+<div class="stat-bars">
+<div class="stat-bars-title">Message open rate by channel</div>
+<div class="bar-row"><div class="bar-label">Telegram</div><div class="bar-wrap"><div class="bar huge"><span class="val">98%</span></div></div></div>
+<div class="bar-row"><div class="bar-label">Email</div><div class="bar-wrap"><div class="bar mid"><span class="val">20%</span></div></div></div>
+<div class="bar-row"><div class="bar-label">Dashboard</div><div class="bar-wrap"><div class="bar tiny"><span class="val">15%</span></div></div></div>
+</div>
+
 ## What chat-first looks like on Telegram
 
 Here's what running your business from Telegram actually looks like:
@@ -61,6 +68,11 @@ Here's what running your business from Telegram actually looks like:
 **5:00 PM:** You send one message: "What's left?" The system tells you: nothing. You close your laptop.
 
 **That's chat-first.** Not a dashboard. Not a login. A conversation. This is exactly what the [morning briefing](/blog/morning-briefing/) delivers — everything in one message, no dashboard needed.
+
+<aside class="callout callout-stat">
+<strong>The gap</strong>
+Telegram messages get read in three minutes. Dashboard notifications sit unread for 12 to 24 hours. That's not a marginal difference — it's the difference between a lead that converts and one that's already booked someone else.
+</aside>
 
 ## Why Telegram specifically
 
@@ -148,6 +160,12 @@ Telegram consolidates everything into one place: the conversation. You check Tel
 - Invoices sent automatically vs. manually: faster payment, less follow-up
 
 The interface isn't a detail. It's the difference between a business that runs and one that stalls when you're busy.
+
+<blockquote class="pull-quote">
+<span class="dek">Core insight</span>
+The interface isn't a detail. It's the difference between a business that runs and one that stalls when you're busy.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## One interface, everything handled
 

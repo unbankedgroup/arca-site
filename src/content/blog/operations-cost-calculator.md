@@ -126,11 +126,23 @@ Let's run the numbers for a typical coach/consultant:
 
 **Grand total: $137 + $17,200 + $21,250 = $38,587/month**
 
+<div class="stat-bars">
+<div class="stat-bars-title">The three layers of ops cost (example)</div>
+<div class="bar-row"><div class="bar-label">L1 · Tools</div><div class="bar-wrap"><div class="bar tiny"><span class="val">$137</span></div></div></div>
+<div class="bar-row"><div class="bar-label">L2 · Time</div><div class="bar-wrap"><div class="bar mid"><span class="val">$17.2K</span></div></div></div>
+<div class="bar-row"><div class="bar-label">L3 · Leak</div><div class="bar-wrap"><div class="bar huge"><span class="val">$21.2K</span></div></div></div>
+</div>
+
 **As % of revenue: $38,587 ÷ $5,000 × 100 = 772%**
 
 Wait. That can't be right.
 
 It is. The founder is spending more on ops (in time value) than they're collecting in revenue. They're not running a business. They're running a charity for their clients.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+Tool subscriptions are the smallest layer. The real cost is time (15-25 hours a week) and revenue leakage (10-20% of potential revenue). That's the part founders never put on the spreadsheet — and it's 100x bigger than the software bill.
+</aside>
 
 ## The fix: Managed operations
 
@@ -166,6 +178,12 @@ Run the calculator. Use your real numbers.
 Most founders are shocked. They thought they were spending $500/month on ops. The real number is $10,000-40,000/month when you factor in time and leakage.
 
 The fix isn't working harder. It's working differently. Automation handles the repeatable stuff. You handle the high-value stuff.
+
+<blockquote class="pull-quote">
+<span class="dek">The reframe</span>
+The fix isn't working harder. It's working differently.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 Do the math. Then decide.
 

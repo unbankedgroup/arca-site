@@ -37,6 +37,12 @@ A solo consultant has the same client expectations. The same need for prompt fol
 
 The result is predictable. Things slip.
 
+<div class="stat-cards">
+<div class="card"><div class="tag">Breaking point</div><div class="num">8-12</div><div class="lbl">Active clients</div></div>
+<div class="card"><div class="tag">Lead response</div><div class="num">21x</div><div class="lbl">Better inside 5 min</div></div>
+<div class="card"><div class="tag">Time cost</div><div class="num">$156K</div><div class="lbl">Per year on admin</div></div>
+</div>
+
 The breaking point is consistent: 8-12 active clients. Below that, you can hold everything in your head. Above that, the cracks appear. An invoice goes out three days late. A lead you talked to two weeks ago gets forgotten. A new client's onboarding feels rushed because you're juggling too many things. This isn't a personal failure — it's a structural one. At 8-12 clients, you're doing the work of a scheduler, a bookkeeper, a CRM operator, a marketing coordinator, and a client success manager. All while doing the actual coaching. That's five operational roles stacked on top of the role you're actually good at.
 
 A lead comes in on Tuesday. You see it on Thursday. By Friday, they booked someone else. Research shows that responding within 5 minutes makes you 21 times more likely to qualify a lead than responding after 30 minutes. Most solo businesses respond in 12 to 24 hours. By then, the prospect has often moved on.
@@ -46,6 +52,11 @@ An invoice should go out after every session. Instead, you batch them on Fridays
 A new client signs up. They need a welcome packet, an intake form, a scheduling link, and a prep email before the first session. You send the welcome email. You forget the intake form. The first session feels unprepared. The client doesn't say anything, but the impression is already set.
 
 None of these failures are about skill. They're about capacity. One person cannot reliably run six operational functions from memory while also doing the actual work they're paid for.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+Responding to a lead inside five minutes makes you 21 times more likely to qualify them. Most solo businesses respond in 12 to 24 hours. That's the gap between a booked call and a lead who already signed with someone else.
+</aside>
 
 ## What a 10-person team's operations actually look like
 
@@ -104,6 +115,12 @@ A managed operations platform costs $97 a month. It handles the work that's cost
 You don't need a 10-person team. You need the infrastructure that a 10-person team takes for granted.
 
 The foundation was always the missing piece.
+
+<blockquote class="pull-quote">
+<span class="dek">The core point</span>
+You don't need a 10-person team. You need the infrastructure that a 10-person team takes for granted.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ---
 

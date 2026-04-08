@@ -64,7 +64,19 @@ The adoption numbers confirm this. CRM failure rates sit between 50 and 63 perce
 - 23% of Zapier automations fail within the first month due to configuration errors (Zapier Status Reports, 2024)
 - Non-technical founders spend 20-40 hours on initial setup (GoHighLevel user surveys)
 
+<div class="stat-cards">
+<div class="card"><div class="tag">DIY setup</div><div class="num">20-40h</div><div class="lbl">Before anything runs</div></div>
+<div class="card"><div class="tag">Zapier fails</div><div class="num">23%</div><div class="lbl">Broken in month one</div></div>
+<div class="card"><div class="tag">Training gap</div><div class="num">46.8%</div><div class="lbl">Cite it as top barrier</div></div>
+</div>
+
 I built my own operations stack. I've spent hundreds of hours on it. I can do it because I come from finance and I think in systems. But I would never tell a coaching client to do what I did. The path shouldn't require my background to walk.
+
+<blockquote class="pull-quote">
+<span class="dek">The core complaint</span>
+Every tool assumes I know what I want to automate. I don't even know what's possible.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## What non-technical founders actually say they want
 
@@ -117,6 +129,11 @@ What they lack isn't technical ability. It's time. And patience for tools that r
 The question is whether the operations industry will keep building for builders. Or start building for the people who actually need operations help: the ones running real businesses, serving real clients, and losing real revenue to operational gaps they don't have time to close.
 
 The [alternative space](/blog/flat-pricing-no-credits/) is full of powerful platforms. But power isn't what most founders need. They need something that works without them having to make it work. If you're curious whether your operations actually need attention, the [15-minute audit checklist](/blog/operations-audit-checklist/) is a good place to start.
+
+<aside class="callout callout-try">
+<strong>Try this</strong>
+Next time you look at an automation tool, time how long it takes you to build one working workflow from scratch. If the answer is more than 30 minutes — and for most non-technical founders it's 3-5 hours per Zap — that tool is asking you to become the implementation layer. That's the wrong job.
+</aside>
 
 That's a different product. That's a service, not a tool.
 

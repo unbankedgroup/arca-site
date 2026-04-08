@@ -40,6 +40,12 @@ These are operations design questions. And they're being asked of someone whose 
 
 So the setup stalls. Not from inability. From overwhelm. There are too many choices, not enough guidance, and no one to say "here's what works for a business like yours."
 
+<div class="stat-cards">
+<div class="card"><div class="tag">GoHighLevel</div><div class="num">30-40h</div><div class="lbl">DIY setup time</div></div>
+<div class="card"><div class="tag">Dubsado</div><div class="num">$500-2K</div><div class="lbl">Specialist fee</div></div>
+<div class="card"><div class="tag">CRM</div><div class="num">50-63%</div><div class="lbl">Implementation failure</div></div>
+</div>
+
 That's the bottleneck Arca's 7-Day Build eliminates. You don't design anything. You describe your business. We design it.
 
 ## Day 1-2: Diagnosis and mapping
@@ -67,6 +73,11 @@ The blueprint covers:
 - Morning briefing structure (what you want to see every day)
 
 You review this. You approve it or adjust it. Nothing gets built until you're satisfied with the plan.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+CRM implementations fail 50-63% of the time — not because the software is broken, but because setup asks too much of the person running the business. Skipping diagnosis is how you end up in that bucket.
+</aside>
 
 ## Day 3-4: Configuration and connection
 
@@ -117,6 +128,12 @@ Honest question I get sometimes: if you're building it, why does it take a whole
 Because the [diagnosis matters](/blog/diagnosis-before-prescription/). Because the review stages matter. Because testing matters. We could technically configure the system faster. But rushing the diagnosis means building the wrong thing. Skipping the review means sending messages you wouldn't have approved. Cutting testing means bugs in the first week when trust is most fragile.
 
 Seven days is fast for a full operations setup. It's slow enough to be right.
+
+<blockquote class="pull-quote">
+<span class="dek">The framing</span>
+Seven days is fast for a full operations setup. It's slow enough to be right.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## The comparison
 

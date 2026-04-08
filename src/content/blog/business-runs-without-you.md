@@ -39,6 +39,12 @@ The pattern is always the same. You start the business because you're great at t
 
 And at some point, usually around 8-12 active clients, the operational weight starts dragging down the actual work. You're spending more time managing the business than doing the business.
 
+<div class="stat-cards">
+<div class="card"><div class="tag">Overwhelm</div><div class="num">72%</div><div class="lbl">Of small business owners</div></div>
+<div class="card"><div class="tag">Admin hours</div><div class="num">15-20</div><div class="lbl">Per week, solo founders</div></div>
+<div class="card"><div class="tag">Coach burnout</div><div class="num">67%</div><div class="lbl">Not from the work</div></div>
+</div>
+
 **The dependency data:**
 - **41% of solopreneurs** cite time management as their #1 challenge — ahead of marketing and cash flow
 - Solo founders spend **15-20 hours/week on admin** — that's $156K/year in opportunity cost at $200/hr
@@ -55,6 +61,12 @@ Would new leads get a response? Would session reminders go out? Would invoices g
 For most solo service businesses, the answer to every one of those questions is no. Nothing happens. The business doesn't break in a dramatic way. It just quietly stops moving.
 
 And that's the thing that keeps founders from stepping away. Not that something terrible will happen. But that nothing will happen. The momentum stops the moment their attention does.
+
+<blockquote class="pull-quote">
+<span class="dek">The vacation test</span>
+The business doesn't break in a dramatic way. It just quietly stops moving.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 **The response time gap:**
 - Industry benchmark for lead response: **5 minutes** — most solo businesses respond in **12-24 hours**
@@ -127,6 +139,11 @@ The consultant I mentioned at the top? She asked me something after we talked. "
 I told her the truth: I don't know yet. I'm still building toward that myself. But the operational part? That part is solvable. That part doesn't have to depend on you being available every moment.
 
 Your business should be able to survive a week without you. If it can't, the problem isn't the business. It's the infrastructure underneath it.
+
+<aside class="callout callout-try">
+<strong>Try this</strong>
+Run the vacation test on paper. List every operational thing that would need to happen next week: lead responses, session reminders, invoices, follow-ups, onboarding. Next to each, write the name of what handles it when you're offline. Any blank line is a single point of failure — and it's you.
+</aside>
 
 **Want to see what your vacation test looks like?** The [operations audit checklist](/blog/operations-audit-checklist/) shows you exactly where you're the single point of failure — and how to fix it.
 

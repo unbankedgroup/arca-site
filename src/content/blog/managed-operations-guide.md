@@ -45,10 +45,10 @@ That distinction matters more than it sounds.
 
 ---
 
-<div class="stat-grid">
-  <div class="stat"><div class="num">16 hrs</div><div class="lbl">per week solo coaches lose to admin</div></div>
-  <div class="stat"><div class="num">$3,200</div><div class="lbl">weekly opportunity cost at $200/hr</div></div>
-  <div class="stat"><div class="num">5-7</div><div class="lbl">disconnected tools in a typical stack</div></div>
+<div class="stat-cards">
+<div class="card"><div class="tag">Time</div><div class="num">16 hrs</div><div class="lbl">per week solo coaches lose to admin</div></div>
+<div class="card"><div class="tag">Money</div><div class="num">$3,200</div><div class="lbl">weekly opportunity cost at $200/hr</div></div>
+<div class="card"><div class="tag">Stack</div><div class="num">5–7</div><div class="lbl">disconnected tools in a typical stack</div></div>
 </div>
 
 ## Why most service businesses are stuck on DIY ops
@@ -66,6 +66,11 @@ The numbers tell the story:
 - **44% of small business owners** manually create and send invoices every week
 - **22% of workers** lose 2 or more hours per week just switching between tools. Over a year, that's 100+ hours gone
 - Most small businesses **use only 20% of their CRM features**
+
+<aside class="callout callout-stat">
+<strong>The numbers</strong>
+Forty percent of the workweek on admin isn't a personal-discipline problem. It's what happens when you become the connective tissue between tools that were never built to talk to each other. The 16 hours aren't wasted — they're load-bearing.
+</aside>
 
 That last one is the most telling. You're paying for tools you barely use. Not because the tools are bad. Because they were built for a different kind of business and a different kind of user.
 
@@ -112,6 +117,11 @@ Even if you spend "only" 10 hours per week on admin, that's still $8,000 per mon
 | Managed operations platform | $97-247/mo | 1-2 hrs/week reviewing | Runs 24/7 regardless |
 
 The difference is structural. DIY ops and virtual assistants both depend on a person being available and doing the right thing at the right time. Managed operations depends on a [system that's built to run whether you're watching or not](/blog/business-runs-without-you/).
+
+<aside class="callout callout-try">
+<strong>Try this</strong>
+Add up your current tool subscriptions. Multiply your billing rate by the hours you spend on admin each week. Compare the total to $97–$497. Almost every solo consultant who runs this math comes out the same way: the DIY option is the expensive one, not the cheap one.
+</aside>
 
 I've written about this more in [The $3,000/month operations mistake most solo consultants make](/blog/operations-cost-mistake/). The short version: the real cost of a VA isn't the invoice. It's the management overhead, the training cycles, and the single point of failure.
 
@@ -224,6 +234,12 @@ But [a CRM is not the problem](/blog/crm-not-the-problem/). And it's not the sol
 
 A CRM records what happened. Managed operations makes things happen.
 
+<blockquote class="pull-quote">
+<span class="dek">The structural difference</span>
+A CRM records what happened. Managed operations makes things happen.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
+
 Most solo consultants I've talked to follow the same arc: they buy a CRM expecting it to run their business, realize it only tracks contacts, then add more tools to fill the gaps. Before long they have a CRM, a scheduling tool, an invoicing tool, an email platform, and a spreadsheet. Five tools. Zero integration between them. And the founder is still the glue.
 
 The managed operations approach replaces the stack. One platform. All the functions. Connected. No gaps.
@@ -323,8 +339,9 @@ Those numbers are connected. The burnout isn't from coaching. It's from operatin
 Managed operations is the structural fix. Not a productivity hack. Not a better to-do list. An actual shift from "the founder runs everything" to "the system runs the repeatable stuff, and the founder does the work that requires their brain."
 
 <blockquote class="pull-quote">
+<span class="dek">Core insight</span>
 Your business shouldn't depend on you remembering things. It should depend on a system that remembers for you.
-<cite>— Mal Mposha, Arca</cite>
+<cite>Mal Mposha · Arca</cite>
 </blockquote>
 
 I keep thinking about what one consultant told me: "I started this business to help people. Somewhere along the way, I became an operations manager who also does coaching."
