@@ -1,0 +1,520 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title="Arca — The Grand Plan" description="How we're building Arca: workstreams, phases, and the roadmap to AI-powered ops for coaches and consultants." />
+	<style is:global>
+		/* ── Strategy page: dark premium skin ── */
+		.strategy-page {
+			background: #0F0D13;
+			color: #E8E4DE;
+			min-height: 100vh;
+		}
+
+		.strategy-page .site-nav {
+			background: rgba(15, 13, 19, 0.92);
+			border-bottom-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.strategy-page .brand { color: #FDFAF5; }
+		.strategy-page .brand:hover { color: #FDFAF5; }
+		.strategy-page .nav-links a { color: rgba(253, 250, 245, 0.55); }
+		.strategy-page .nav-links a:hover,
+		.strategy-page .nav-links a.active { color: #FDFAF5; }
+
+		.strategy-page .site-footer {
+			background: #0A0810;
+			border-top: 1px solid rgba(255, 255, 255, 0.06);
+		}
+
+		/* ── Hero ── */
+		.strat-hero {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 5rem 1.5rem 3rem;
+			text-align: center;
+		}
+
+		.strat-hero .eyebrow {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			color: #D4915E;
+			margin-bottom: 1.25rem;
+			display: block;
+		}
+
+		.strat-hero h1 {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(2.25rem, 6vw, 3.75rem);
+			font-weight: 800;
+			color: #FDFAF5;
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 0 0 1.25rem;
+		}
+
+		.strat-hero .tagline {
+			font-size: clamp(1rem, 2vw, 1.25rem);
+			color: rgba(253, 250, 245, 0.6);
+			max-width: 600px;
+			margin: 0 auto;
+			line-height: 1.55;
+		}
+
+		.strat-hero .phase-badge {
+			display: inline-block;
+			margin-top: 2rem;
+			padding: 0.5rem 1.25rem;
+			background: rgba(212, 145, 94, 0.15);
+			border: 1px solid rgba(212, 145, 94, 0.35);
+			border-radius: 100px;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.8125rem;
+			font-weight: 700;
+			color: #D4915E;
+			letter-spacing: 0.04em;
+		}
+
+		/* ── Section titles ── */
+		.strat-section {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 3rem 1.5rem;
+		}
+
+		.strat-section-title {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			color: #D4915E;
+			margin-bottom: 2rem;
+		}
+
+		/* ── Workstream cards ── */
+		.strat-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+			gap: 1.25rem;
+		}
+
+		.strat-card {
+			background: rgba(253, 250, 245, 0.04);
+			border: 1px solid rgba(255, 255, 255, 0.07);
+			border-radius: 14px;
+			padding: 1.75rem;
+			transition: border-color 0.2s ease, transform 0.2s ease;
+		}
+
+		.strat-card:hover {
+			border-color: rgba(212, 145, 94, 0.35);
+			transform: translateY(-2px);
+		}
+
+		.strat-card-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: 1rem;
+		}
+
+		.strat-card-name {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 1.125rem;
+			font-weight: 700;
+			color: #FDFAF5;
+			line-height: 1.25;
+		}
+
+		.strat-card-agent {
+			font-family: 'JetBrains Mono', 'SF Mono', monospace;
+			font-size: 0.6875rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: rgba(253, 250, 245, 0.4);
+			margin-top: 0.25rem;
+		}
+
+		.strat-badge {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.625rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			padding: 0.3rem 0.75rem;
+			border-radius: 100px;
+			white-space: nowrap;
+			flex-shrink: 0;
+		}
+
+		.strat-badge-live {
+			background: rgba(107, 143, 113, 0.2);
+			color: #6B8F71;
+			border: 1px solid rgba(107, 143, 113, 0.35);
+		}
+
+		.strat-badge-building {
+			background: rgba(212, 145, 94, 0.15);
+			color: #D4915E;
+			border: 1px solid rgba(212, 145, 94, 0.3);
+		}
+
+		.strat-badge-planned {
+			background: rgba(148, 144, 160, 0.15);
+			color: #9490A0;
+			border: 1px solid rgba(148, 144, 160, 0.25);
+		}
+
+		.strat-card-focus {
+			font-size: 0.9375rem;
+			color: rgba(253, 250, 245, 0.55);
+			line-height: 1.5;
+		}
+
+		/* ── Phase timeline ── */
+		.strat-timeline {
+			position: relative;
+			padding-left: 2.5rem;
+		}
+
+		.strat-timeline::before {
+			content: '';
+			position: absolute;
+			left: 7px;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			background: linear-gradient(to bottom, #D4915E 0%, rgba(148, 144, 160, 0.2) 100%);
+		}
+
+		.strat-phase {
+			position: relative;
+			padding-bottom: 3rem;
+		}
+
+		.strat-phase:last-child {
+			padding-bottom: 0;
+		}
+
+		.strat-phase-dot {
+			position: absolute;
+			left: -2.5rem;
+			top: 0.35rem;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background: #0F0D13;
+			border: 2px solid #D4915E;
+		}
+
+		.strat-phase.active .strat-phase-dot {
+			background: #D4915E;
+			box-shadow: 0 0 12px rgba(212, 145, 94, 0.5);
+		}
+
+		.strat-phase.future .strat-phase-dot {
+			border-color: rgba(148, 144, 160, 0.35);
+		}
+
+		.strat-phase-label {
+			font-family: 'JetBrains Mono', 'SF Mono', monospace;
+			font-size: 0.6875rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: #D4915E;
+			margin-bottom: 0.35rem;
+		}
+
+		.strat-phase.future .strat-phase-label {
+			color: rgba(148, 144, 160, 0.6);
+		}
+
+		.strat-phase h3 {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 1.25rem;
+			font-weight: 700;
+			color: #FDFAF5;
+			margin: 0 0 0.35rem;
+			line-height: 1.25;
+		}
+
+		.strat-phase.future h3 {
+			color: rgba(253, 250, 245, 0.45);
+		}
+
+		.strat-phase p {
+			font-size: 0.9375rem;
+			color: rgba(253, 250, 245, 0.5);
+			line-height: 1.55;
+			margin: 0;
+		}
+
+		.strat-phase.active h3 + p {
+			color: rgba(253, 250, 245, 0.65);
+		}
+
+		/* ── Sprint section ── */
+		.strat-sprint {
+			background: rgba(212, 145, 94, 0.06);
+			border: 1px solid rgba(212, 145, 94, 0.15);
+			border-radius: 16px;
+			padding: 2rem;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.strat-sprint-header {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.strat-sprint-pulse {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #D4915E;
+			animation: pulse 2s ease-in-out infinite;
+		}
+
+		@keyframes pulse {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.4; }
+		}
+
+		.strat-sprint-title {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			color: #D4915E;
+		}
+
+		.strat-sprint-items {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+			gap: 0.75rem;
+		}
+
+		.strat-sprint-item {
+			font-size: 0.9375rem;
+			color: rgba(253, 250, 245, 0.7);
+			line-height: 1.45;
+			padding-left: 1.25rem;
+			position: relative;
+		}
+
+		.strat-sprint-item::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0.65em;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #D4915E;
+		}
+
+		/* ── Footer link fix for dark page ── */
+		.strategy-page .site-footer a {
+			color: rgba(253, 250, 245, 0.55);
+		}
+		.strategy-page .site-footer a:hover {
+			color: #D4915E;
+		}
+
+		/* ── Mobile ── */
+		@media (max-width: 768px) {
+			.strat-hero {
+				padding: 3.5rem 1.25rem 2rem;
+			}
+
+			.strat-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.strat-sprint-items {
+				grid-template-columns: 1fr;
+			}
+
+			.strat-card {
+				padding: 1.25rem;
+			}
+		}
+	</style>
+</head>
+<body class="strategy-page">
+	<nav class="site-nav">
+		<div class="nav-inner">
+			<a href="/" class="brand">
+				<span class="brand-mark">Arca</span>
+			</a>
+			<nav class="nav-links">
+				<a href="/">Home</a>
+				<a href="/blog/">Learn</a>
+				<a href="/strategy" class="active">Strategy</a>
+			</nav>
+			<div class="nav-cta">
+				<a href="/#waitlist" class="btn btn-primary btn-sm">Get started</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="strat-hero">
+			<span class="eyebrow">Arca Ops</span>
+			<h1>The Grand Plan</h1>
+			<p class="tagline">AI-powered operations for coaches and consultants. One agent team that runs your back office so you can focus on coaching.</p>
+			<span class="phase-badge">Phase 1 — Content machine live & first clients</span>
+		</section>
+
+		<section class="strat-section">
+			<h2 class="strat-section-title">Workstreams</h2>
+			<div class="strat-grid">
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Build</div>
+							<div class="strat-card-agent">Forge</div>
+						</div>
+						<span class="strat-badge strat-badge-live">Live</span>
+					</div>
+					<div class="strat-card-focus">Ops board infrastructure, agent tooling, API integrations</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Strategy</div>
+							<div class="strat-card-agent">Cognis</div>
+						</div>
+						<span class="strat-badge strat-badge-live">Live</span>
+					</div>
+					<div class="strat-card-focus">Orchestration, roadmap, morning briefs, task triage</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Content</div>
+							<div class="strat-card-agent">Studio</div>
+						</div>
+						<span class="strat-badge strat-badge-building">Building</span>
+					</div>
+					<div class="strat-card-focus">LinkedIn, YouTube, blog, Shorts pipeline</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Research</div>
+							<div class="strat-card-agent">Atlas</div>
+						</div>
+						<span class="strat-badge strat-badge-building">Building</span>
+					</div>
+					<div class="strat-card-focus">Market signals, competitor intel, daily briefs</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Distribution</div>
+							<div class="strat-card-agent">Nexus</div>
+						</div>
+						<span class="strat-badge strat-badge-planned">Planned</span>
+					</div>
+					<div class="strat-card-focus">X/Twitter, newsletter, content repurposing</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Outreach</div>
+							<div class="strat-card-agent">Herald</div>
+						</div>
+						<span class="strat-badge strat-badge-planned">Planned</span>
+					</div>
+					<div class="strat-card-focus">Direct outreach, partnerships, warm intros</div>
+				</div>
+
+				<div class="strat-card">
+					<div class="strat-card-head">
+						<div>
+							<div class="strat-card-name">Finance</div>
+							<div class="strat-card-agent">Ledger</div>
+						</div>
+						<span class="strat-badge strat-badge-planned">Planned</span>
+					</div>
+					<div class="strat-card-focus">Pricing, unit economics, spend tracking, margin analysis</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="strat-section">
+			<h2 class="strat-section-title">Phases</h2>
+			<div class="strat-timeline">
+				<div class="strat-phase active">
+					<div class="strat-phase-dot"></div>
+					<div class="strat-phase-label">Phase 1 — Now</div>
+					<h3>Content machine live, first 3 clients</h3>
+					<p>Ops board running, agent team operational, blog + LinkedIn publishing, first paying clients on board.</p>
+				</div>
+
+				<div class="strat-phase future">
+					<div class="strat-phase-dot"></div>
+					<div class="strat-phase-label">Phase 2</div>
+					<h3>$97 productized offer, 10 clients</h3>
+					<p>Self-serve onboarding, standardized ops packages, automated client delivery.</p>
+				</div>
+
+				<div class="strat-phase future">
+					<div class="strat-phase-dot"></div>
+					<div class="strat-phase-label">Phase 3</div>
+					<h3>$497 tier, Donna model live</h3>
+					<p>White-glove ops. Donna (AI ops manager) handles client work end-to-end. Monthly retainers.</p>
+				</div>
+
+				<div class="strat-phase future">
+					<div class="strat-phase-dot"></div>
+					<div class="strat-phase-label">Phase 4</div>
+					<h3>Platform — sell the system</h3>
+					<p>Arca as a platform. Other agencies license the agent team infrastructure. Scale without headcount.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="strat-section">
+			<div class="strat-sprint">
+				<div class="strat-sprint-header">
+					<div class="strat-sprint-pulse"></div>
+					<div class="strat-sprint-title">This Sprint</div>
+				</div>
+				<ul class="strat-sprint-items">
+					<li class="strat-sprint-item">Ops board v2 — cost tracking, atomic pickup, client goals</li>
+					<li class="strat-sprint-item">Auto-clipping pipeline — YouTube to Shorts</li>
+					<li class="strat-sprint-item">Strategy page — internal roadmap (you're here)</li>
+					<li class="strat-sprint-item">Mobile polish — runarca.xyz responsive fixes</li>
+					<li class="strat-sprint-item">Client onboarding — first 3 coaching clients</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</body>
+</html>
