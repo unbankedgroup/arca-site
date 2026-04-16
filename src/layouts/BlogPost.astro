@@ -39,7 +39,7 @@ const authorRole = typeof author === 'object' ? author?.role : 'Founder, Arca';
 const authorBio = typeof author === 'object' ? (author as any)?.bio : undefined;
 const authorAvatar = typeof author === 'object' ? (author as any)?.avatar : undefined;
 
-// Reading time — prefer build-time computed, fall back to manual word_count
+// Reading time: prefer build-time computed, fall back to manual word_count
 const parseWordCount = (wc: string | number | undefined): number => {
 	if (!wc) return 0;
 	const n = parseInt(String(wc).replace(/[^0-9]/g, ''), 10);
@@ -53,10 +53,10 @@ const readingMinutes =
 				return wc > 0 ? Math.max(1, Math.round(wc / 220)) : 5;
 		  })();
 
-// Cluster parsing — frontmatter is just the code (C1, C5…); resolve to label
+// Cluster parsing: frontmatter is just the code (C1, C5...); resolve to label
 const { code: clusterCode, label: categoryLabel } = resolveCluster(cluster as string | undefined);
 
-// Current slug — prefer the explicit prop, else parse from pathname
+// Current slug: prefer the explicit prop, else parse from pathname
 const currentSlug =
 	slug || Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '').replace(/\.html$/, '');
 
@@ -76,10 +76,10 @@ const related = relatedCandidates.slice(0, 3);
 // Canonical post URL (avoids the base-path doubling Astro produces)
 const canonicalUrl = `https://runarca.xyz/blog/${currentSlug}`;
 
-// OG image URL — generated at build time by scripts/generate-og.mjs
+// OG image URL: generated at build time by scripts/generate-og.mjs
 const ogImageUrl = `https://runarca.xyz/blog/og/${currentSlug}.png`;
 
-// Article JSON-LD — use frontmatter dates, never build time.
+// Article JSON-LD: use frontmatter dates, never build time.
 // Parses the human-readable `last_updated` string ("April 2026") when Date
 // fields are absent, and omits dateModified entirely if no real date is
 // available (better than shipping a wrong build-time value).
@@ -664,7 +664,7 @@ const combinedJsonLd = {
 		box-shadow: inset 0 0 0 1px var(--ink);
 	}
 
-	/* Prev/next nav — paper cards */
+	/* Prev/next nav: paper cards */
 	.prev-next {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
