@@ -6,8 +6,11 @@ const today = new Date();
 	<div class="footer-inner">
 		<div class="footer-grid">
 			<div class="footer-brand">
-				<div class="brand-mark">Arca</div>
-				<p class="tagline">You coach. We handle the rest.</p>
+				<a href="/" class="brand" aria-label="Arca home">
+					<span class="brand-dot" aria-hidden="true"></span>
+					<span class="brand-mark">Arca</span>
+				</a>
+				<p class="tagline">Run your business in one chat.</p>
 				<p class="parent">An <strong>Unbanked</strong> company.</p>
 			</div>
 
@@ -17,7 +20,7 @@ const today = new Date();
 					<li><a href="/#how-it-works">How it works</a></li>
 					<li><a href="/#pricing">Pricing</a></li>
 					<li><a href="/#faq">FAQ</a></li>
-					<li><a href="/#waitlist">Get started</a></li>
+					<li><a href="/#waitlist">Start your build</a></li>
 				</ul>
 			</div>
 
@@ -44,16 +47,16 @@ const today = new Date();
 
 		<div class="footer-bottom">
 			<p>&copy; {today.getFullYear()} Arca. All rights reserved.</p>
-			<p>Built for coaches and consultants who'd rather coach.</p>
+			<p>Built for the small service businesses who'd rather do the work.</p>
 		</div>
 	</div>
 </footer>
 
 <style>
 	.site-footer {
-		background: var(--charcoal);
-		color: rgba(253, 250, 245, 0.7);
-		padding: 4rem 0 2rem;
+		background: var(--ink);
+		color: rgba(251, 248, 242, 0.65);
+		padding: 5rem 0 2rem;
 		margin-top: 6rem;
 	}
 
@@ -67,41 +70,59 @@ const today = new Date();
 		display: grid;
 		grid-template-columns: 1.5fr 1fr 1fr 1fr;
 		gap: 3rem;
-		margin-bottom: 3rem;
+		margin-bottom: 3.5rem;
 	}
 
-	.footer-brand .brand-mark {
+	.footer-brand .brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-weight: 800;
-		font-size: 1.5rem;
-		color: var(--canvas);
-		margin-bottom: 0.75rem;
-		letter-spacing: -0.02em;
+		font-size: 1.375rem;
+		color: var(--paper);
+		letter-spacing: -0.03em;
+		text-decoration: none;
+		margin-bottom: 1rem;
+	}
+
+	.footer-brand .brand-dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: var(--amber);
+		box-shadow: 0 0 0 3px rgba(232, 138, 71, 0.2);
+		flex-shrink: 0;
 	}
 
 	.footer-brand .tagline {
-		font-size: 0.9375rem;
-		color: rgba(253, 250, 245, 0.85);
-		margin-bottom: 1rem;
-		max-width: 240px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 1.0625rem;
+		font-weight: 500;
+		color: rgba(251, 248, 242, 0.9);
+		margin-bottom: 1.25rem;
+		max-width: 260px;
+		line-height: 1.4;
+		letter-spacing: -0.015em;
 	}
 
 	.footer-brand .parent {
 		font-size: 0.8125rem;
-		color: rgba(253, 250, 245, 0.5);
+		color: rgba(251, 248, 242, 0.45);
 	}
 
 	.footer-brand .parent strong {
-		color: var(--canvas);
+		color: var(--paper);
+		font-weight: 600;
 	}
 
 	.footer-col h4 {
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		font-size: 0.8125rem;
-		font-weight: 700;
-		color: var(--canvas);
+		font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+		font-size: 0.6875rem;
+		font-weight: 600;
+		color: rgba(251, 248, 242, 0.6);
 		text-transform: uppercase;
-		letter-spacing: 0.08em;
+		letter-spacing: 0.14em;
 		margin-bottom: 1.25rem;
 	}
 
@@ -116,7 +137,7 @@ const today = new Date();
 	}
 
 	.footer-col a {
-		color: rgba(253, 250, 245, 0.7);
+		color: rgba(251, 248, 242, 0.72);
 		font-size: 0.9375rem;
 		text-decoration: none;
 		transition: color 0.2s var(--ease);
@@ -127,25 +148,26 @@ const today = new Date();
 	}
 
 	.footer-bottom {
-		border-top: 1px solid rgba(253, 250, 245, 0.1);
+		border-top: 1px solid rgba(251, 248, 242, 0.08);
 		padding-top: 2rem;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 1rem;
 		font-size: 0.8125rem;
-		color: rgba(253, 250, 245, 0.5);
+		color: rgba(251, 248, 242, 0.45);
 	}
 
 	@media (max-width: 768px) {
 		.site-footer {
-			padding: 3rem 0 1.5rem;
+			padding: 3.5rem 0 1.5rem;
 			margin-top: 4rem;
 		}
 
 		.footer-grid {
 			grid-template-columns: 1fr 1fr;
-			gap: 2rem 1.5rem;
+			gap: 2.25rem 1.5rem;
+			margin-bottom: 2.5rem;
 		}
 
 		.footer-brand {

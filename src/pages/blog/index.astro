@@ -6,7 +6,7 @@ import Header from '../../components/Header.astro';
 import { clusterLabels, clusterDecks, clusterOrder } from '../../lib/clusters';
 
 const SITE_TITLE = 'Learn — Arca';
-const SITE_DESCRIPTION = 'Practical guides on operations, automation, and running a service business without burning out. Built for coaches and consultants.';
+const SITE_DESCRIPTION = 'Practical playbooks on operations, automation, and running a small service business without the ops chaos. Written for operators, not marketers.';
 
 const allPosts = await getCollection('blog');
 
@@ -51,23 +51,67 @@ const readingMinutes = (wc: any): number => {
 	const n = parseInt(String(wc).replace(/[^0-9]/g, ''), 10);
 	return n > 0 ? Math.max(1, Math.round(n / 220)) : 5;
 };
+
+const totalArticles = allPosts.length;
+
+const collectionSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'CollectionPage',
+	name: SITE_TITLE,
+	description: SITE_DESCRIPTION,
+	url: 'https://runarca.xyz/blog/',
+	isPartOf: {
+		'@type': 'WebSite',
+		name: 'Arca',
+		url: 'https://runarca.xyz',
+	},
+	about: orderedClusters.map((key) => ({
+		'@type': 'Thing',
+		name: clusterLabels[key] || key,
+	})),
+	mainEntity: {
+		'@type': 'Blog',
+		name: 'Arca Learn',
+		description: SITE_DESCRIPTION,
+		url: 'https://runarca.xyz/blog/',
+		blogPost: allPosts.map((p) => ({
+			'@type': 'BlogPosting',
+			headline: p.data.title,
+			description: p.data.description,
+			url: `https://runarca.xyz/blog/${p.id}`,
+			datePublished: p.data.pubDate instanceof Date ? p.data.pubDate.toISOString() : p.data.pubDate,
+		})),
+	},
+};
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section class="blog-hero">
 				<div class="container">
-					<div class="eyebrow-big">Arca · Learn</div>
-					<h1>The operations playbook for solo coaches and consultants.</h1>
+					<div class="blog-eyebrow">
+						<span class="dot" aria-hidden="true"></span>
+						Arca · Learn
+					</div>
+					<h1>Operations playbooks for small service businesses.</h1>
 					<p class="lede">
-						Practical guides on automation, client systems, and running a service business
-						without burning out. Written for the people doing the actual work.
+						Automation, client systems, and the unsexy infrastructure that keeps a
+						solo business running. No gurus. No fluff. Written for the people
+						doing the actual work.
 					</p>
+					<div class="hero-meta">
+						<span><strong>{totalArticles}</strong> articles</span>
+						<span class="dot-sep" aria-hidden="true">·</span>
+						<span><strong>{orderedClusters.length}</strong> topics</span>
+						<span class="dot-sep" aria-hidden="true">·</span>
+						<span>Updated weekly</span>
+					</div>
 				</div>
 			</section>
 
@@ -89,30 +133,50 @@ const readingMinutes = (wc: any): number => {
 			<div class="container" id="all">
 				{heroFeature && (
 					<a href={`/blog/${heroFeature.id}`} class="hero-feature">
-						<div>
-							<span class="eyebrow">{clusterLabels.C1}</span>
+						<div class="hf-body">
+							<span class="hf-eyebrow">
+								<span class="hf-dot" aria-hidden="true"></span>
+								Flagship · {clusterLabels.C1}
+							</span>
 							<h2>{heroFeature.data.title}</h2>
 							<p>{heroFeature.data.meta_description || heroFeature.data.description}</p>
-							<span class="hero-feature-cta">Read the guide →</span>
+							<span class="hero-feature-cta">Read the guide <span aria-hidden="true">→</span></span>
 						</div>
 						<div class="hero-feature-stats">
-							<div class="hf-stat"><span class="num">{readingMinutes((heroFeature.data as any).word_count)}</span><span class="lbl">min read</span></div>
-							<div class="hf-stat"><span class="num">{allPosts.length}</span><span class="lbl">articles</span></div>
-							<div class="hf-stat"><span class="num">{orderedClusters.length}</span><span class="lbl">topics</span></div>
+							<div class="hf-stat">
+								<span class="num">{readingMinutes((heroFeature.data as any).word_count)}</span>
+								<span class="lbl">min read</span>
+							</div>
+							<div class="hf-stat">
+								<span class="num">{totalArticles}</span>
+								<span class="lbl">articles</span>
+							</div>
+							<div class="hf-stat">
+								<span class="num">{orderedClusters.length}</span>
+								<span class="lbl">topics</span>
+							</div>
 						</div>
 					</a>
 				)}
 
 				{startHere.length > 0 && (
 					<div class="start-here">
-						<div class="start-here-label">Start here</div>
+						<div class="start-here-label">
+							<span class="dot" aria-hidden="true"></span>
+							Start here
+						</div>
 						<div class="start-here-grid">
-							{startHere.map((post) => (
-								<a href={`/blog/${post.id}`} class="start-here-card">
-									<h4>{post.data.title}</h4>
-									<p>{((post.data.meta_description || post.data.description || '') as string).slice(0, 110)}…</p>
-								</a>
-							))}
+							{startHere.map((post) => {
+								const data = post.data as any;
+								const mins = readingMinutes(data.word_count);
+								return (
+									<a href={`/blog/${post.id}`} class="start-here-card">
+										<div class="sh-meta">{mins} min</div>
+										<h4>{data.title}</h4>
+										<p>{((data.meta_description || data.description || '') as string).slice(0, 120)}…</p>
+									</a>
+								);
+							})}
 						</div>
 					</div>
 				)}
@@ -123,6 +187,7 @@ const readingMinutes = (wc: any): number => {
 						<section class="cluster-section" id={key.toLowerCase()} data-cluster-section={key}>
 							<header class="cluster-header">
 								<div class="cluster-info">
+									<span class="cluster-code">{key}</span>
 									<h2>{clusterLabels[key]}</h2>
 									<p class="cluster-deck">{clusterDecks[key]}</p>
 								</div>
@@ -136,9 +201,10 @@ const readingMinutes = (wc: any): number => {
 									const isBig = !!(data.pillar);
 									return (
 										<a href={`/blog/${post.id}`} class={`post-card ${isBig ? 'big' : ''}`} data-title={data.title.toLowerCase()} data-desc={desc.toLowerCase()}>
-											<div class="post-eyebrow">{minutes} min · {clusterLabels[key]}</div>
+											<div class="post-eyebrow">{minutes} min · {isBig ? 'Pillar' : clusterLabels[key]}</div>
 											<h3>{data.title}</h3>
-											{desc && <p>{desc.slice(0, isBig ? 180 : 120)}{desc.length > (isBig ? 180 : 120) ? '…' : ''}</p>}
+											{desc && <p>{desc.slice(0, isBig ? 200 : 130)}{desc.length > (isBig ? 200 : 130) ? '…' : ''}</p>}
+											<span class="post-card-cta">Read <span aria-hidden="true">→</span></span>
 										</a>
 									);
 								})}
@@ -197,40 +263,285 @@ const readingMinutes = (wc: any): number => {
 </html>
 
 <style>
+	/* Scoped overrides — tighten the hero, tune hero-feature + start-here for new brand */
+	.blog-hero {
+		padding: 5rem 0 2rem;
+		text-align: center;
+	}
+
+	.blog-eyebrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+		font-size: 0.6875rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		color: var(--ink-muted);
+		margin-bottom: 1.25rem;
+	}
+
+	.blog-eyebrow .dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--amber);
+	}
+
+	.hero-meta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-top: 1.75rem;
+		padding: 0.5rem 1.25rem;
+		background: var(--paper-2);
+		border-radius: 999px;
+		font-size: 0.8125rem;
+		color: var(--ink-muted);
+		font-family: 'JetBrains Mono', monospace;
+		letter-spacing: -0.01em;
+	}
+
+	.hero-meta strong {
+		color: var(--ink);
+		font-weight: 600;
+	}
+
+	.hero-meta .dot-sep {
+		color: var(--line);
+	}
+
+	/* Hero-feature — modern paper card with amber accent */
 	.hero-feature {
 		text-decoration: none;
+		background: var(--ink);
+		color: var(--paper);
+		border-radius: var(--radius-xl);
+		padding: 3rem;
+		margin-bottom: 4.5rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		position: relative;
+		overflow: hidden;
+		transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 	}
+
+	.hero-feature::before {
+		content: '';
+		position: absolute;
+		top: -40%;
+		right: -10%;
+		width: 60%;
+		height: 140%;
+		background: radial-gradient(circle at center, rgba(232, 138, 71, 0.18), transparent 65%);
+		pointer-events: none;
+	}
+
+	.hero-feature:hover {
+		transform: translateY(-3px);
+		box-shadow: var(--shadow-lg);
+	}
+
+	.hero-feature .hf-body {
+		position: relative;
+		z-index: 1;
+	}
+
+	.hf-eyebrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.6875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		color: rgba(251, 248, 242, 0.7);
+		margin-bottom: 1.25rem;
+	}
+
+	.hf-dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--amber);
+	}
+
+	.hero-feature h2 {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		color: var(--paper);
+		font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+		margin: 0 0 1rem;
+		line-height: 1.12;
+		letter-spacing: -0.03em;
+		max-width: 22ch;
+	}
+
+	.hero-feature p {
+		color: rgba(251, 248, 242, 0.78);
+		font-size: 1.0625rem;
+		line-height: 1.55;
+		margin: 0 0 1.75rem;
+		max-width: 52ch;
+	}
+
+	.hero-feature .hero-feature-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 0.9375rem;
+		font-weight: 600;
+		color: var(--amber);
+		letter-spacing: -0.005em;
+		text-transform: none;
+	}
+
 	.hero-feature-stats {
+		position: relative;
+		z-index: 1;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 		padding-top: 2rem;
-		border-top: 1px solid rgba(253, 250, 245, 0.1);
+		border-top: 1px solid rgba(251, 248, 242, 0.08);
 	}
+
 	@media (min-width: 880px) {
+		.hero-feature {
+			grid-template-columns: 1.4fr 1fr;
+			align-items: center;
+			padding: 4rem;
+		}
+
 		.hero-feature-stats {
 			grid-template-columns: 1fr;
 			padding-top: 0;
 			border-top: none;
-			border-left: 1px solid rgba(253, 250, 245, 0.1);
+			border-left: 1px solid rgba(251, 248, 242, 0.08);
 			padding-left: 2.5rem;
 			align-self: stretch;
 			align-content: center;
 		}
 	}
-	.hf-stat { display: flex; flex-direction: column; }
+
+	.hf-stat {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.hf-stat .num {
 		font-family: 'Plus Jakarta Sans', sans-serif;
-		font-size: clamp(1.75rem, 3vw, 2.5rem);
+		font-size: clamp(1.875rem, 3vw, 2.75rem);
 		font-weight: 800;
 		color: var(--amber);
 		line-height: 1;
+		letter-spacing: -0.04em;
 	}
+
 	.hf-stat .lbl {
-		font-size: 0.75rem;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.6875rem;
 		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: rgba(253, 250, 245, 0.6);
-		margin-top: 0.35rem;
+		letter-spacing: 0.14em;
+		color: rgba(251, 248, 242, 0.55);
+		margin-top: 0.45rem;
+	}
+
+	/* Start here — refreshed, lighter cards */
+	.start-here-label {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.start-here-label .dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--amber);
+	}
+
+	.start-here-card {
+		background: var(--paper);
+		border: 1px solid var(--line);
+		border-radius: var(--radius);
+		padding: 1.5rem;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.2s var(--ease);
+	}
+
+	.start-here-card:hover {
+		transform: translateY(-3px);
+		box-shadow: var(--shadow);
+		border-color: var(--amber);
+	}
+
+	.start-here-card .sh-meta {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.6875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--amber-deep);
+		margin-bottom: 0.75rem;
+	}
+
+	.start-here-card h4 {
+		font-size: 1.0625rem;
+		line-height: 1.3;
+	}
+
+	/* Cluster section header — add mono cluster code */
+	.cluster-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.cluster-code {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.6875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--amber-deep);
+		margin-bottom: 0.15rem;
+	}
+
+	.cluster-count {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.6875rem;
+		letter-spacing: 0.12em;
+	}
+
+	/* Post card CTA */
+	.post-card-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: var(--amber-deep);
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		margin-top: auto;
+	}
+
+	.post-card.big .post-card-cta {
+		color: var(--amber);
+	}
+
+	.post-card:hover .post-card-cta {
+		transform: translateX(2px);
+	}
+
+	/* Blog search override — match new aesthetic */
+	.blog-search {
+		max-width: 520px;
+		margin: 1rem auto 0;
+		padding: 0 1.25rem;
 	}
 </style>

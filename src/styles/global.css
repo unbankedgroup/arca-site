@@ -4,26 +4,47 @@
    ============================================================ */
 
 :root {
-	/* Brand colors */
-	--charcoal: #2D2A32;
-	--soft-charcoal: #4A4550;
-	--amber: #D4915E;
-	--amber-hover: #BF7D4A;
-	--amber-light: #FDF1E7;
-	--canvas: #FDFAF5;
-	--cloud: #F0EDE8;
-	--sage: #6B8F71;
-	--sage-light: #E8F0E9;
+	/* Ink scale (text + dark surfaces) */
+	--ink: #17151B;
+	--ink-soft: #2A262F;
+	--ink-muted: #55505A;
+	--ink-haze: #8A848E;
+
+	/* Paper scale (backgrounds + rules) */
+	--paper: #FBF8F2;
+	--paper-2: #F4F0E8;
+	--line: #E8E2D4;
+	--line-soft: #EFEAE0;
+
+	/* Amber (brand accent) */
+	--amber: #E88A47;
+	--amber-deep: #C56F2E;
+	--amber-wash: #FBEFE3;
+
+	/* Sage (secondary accent) */
+	--sage: #5E8A6A;
+	--sage-wash: #E6EDE6;
+
+	/* Legacy token aliases — all existing CSS references these names.
+	   Remapping them to the new scale rebrands every downstream file
+	   (blog index, post layout, callouts, pull quotes) in one shot. */
+	--charcoal: var(--ink);
+	--soft-charcoal: var(--ink-muted);
+	--amber-hover: var(--amber-deep);
+	--amber-light: var(--amber-wash);
+	--canvas: var(--paper);
+	--cloud: var(--paper-2);
+	--sage-light: var(--sage-wash);
 	--stone: #B8A898;
 	--plum: #3B2C40;
-	--haze: #9490A0;
+	--haze: var(--ink-haze);
 	--white: #FFFFFF;
 
-	/* Shadows */
-	--shadow-sm: 0 2px 8px rgba(45, 42, 50, 0.06);
-	--shadow: 0 4px 16px rgba(45, 42, 50, 0.08);
-	--shadow-md: 0 8px 24px rgba(45, 42, 50, 0.10);
-	--shadow-lg: 0 16px 48px rgba(45, 42, 50, 0.14);
+	/* Shadows — tuned for warm paper, slightly softer */
+	--shadow-sm: 0 1px 2px rgba(23, 21, 27, 0.04), 0 2px 6px rgba(23, 21, 27, 0.04);
+	--shadow: 0 2px 4px rgba(23, 21, 27, 0.04), 0 6px 16px rgba(23, 21, 27, 0.06);
+	--shadow-md: 0 4px 10px rgba(23, 21, 27, 0.05), 0 12px 28px rgba(23, 21, 27, 0.09);
+	--shadow-lg: 0 8px 20px rgba(23, 21, 27, 0.07), 0 24px 56px rgba(23, 21, 27, 0.12);
 
 	/* Radius */
 	--radius-sm: 8px;
@@ -36,14 +57,14 @@
 	--prose-w: 680px;
 	--ease: cubic-bezier(0.16, 1, 0.3, 1);
 
-	/* Legacy tokens (kept so older Astro template references don't break) */
+	/* Legacy Astro-template tokens */
 	--accent: var(--amber);
-	--accent-dark: var(--amber-hover);
-	--black: 45, 42, 50;
-	--gray: 148, 144, 160;
-	--gray-light: 240, 237, 232;
-	--gray-dark: 74, 69, 80;
-	--gray-gradient: rgba(240, 237, 232, 50%), var(--canvas);
+	--accent-dark: var(--amber-deep);
+	--black: 23, 21, 27;
+	--gray: 138, 132, 142;
+	--gray-light: 232, 226, 212;
+	--gray-dark: 85, 80, 90;
+	--gray-gradient: rgba(232, 226, 212, 50%), var(--paper);
 	--box-shadow: var(--shadow);
 }
 
