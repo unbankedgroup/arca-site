@@ -59,6 +59,7 @@ const { Content, remarkPluginFrontmatter } = await render(post);
 	next={next}
 	readingTime={remarkPluginFrontmatter?.readingTime}
 	readingWords={remarkPluginFrontmatter?.readingWords}
+	faqs={remarkPluginFrontmatter?.faqs}
 >
 	<Content />
 </BlogPost>

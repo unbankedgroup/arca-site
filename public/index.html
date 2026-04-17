@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arca: Run your business in one chat | runarca.xyz</title>
   <meta name="description" content="Arca runs your operations from a single chat. Scheduling, invoicing, onboarding, follow-ups. No dashboards. No CRMs. Live in 7 days. From $97/mo.">
-  <meta name="theme-color" content="#17151B">
+  <meta name="theme-color" content="#151413">
   <link rel="canonical" href="https://runarca.xyz">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
@@ -26,7 +26,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -117,23 +117,29 @@
        TOKENS: Arca v2 (lean, minimalist, modern SaaS)
        ========================================================= */
     :root {
-      --ink:         #17151B;
-      --ink-soft:    #2A262F;
-      --ink-muted:   #55505A;
-      --ink-haze:    #8A848E;
-      --paper:       #FBF8F2;
-      --paper-2:     #F4F0E8;
-      --line:        #E8E2D4;
-      --line-soft:   #EFEAE0;
-      --amber:       #E88A47;
-      --amber-deep:  #C56F2E;
-      --amber-wash:  #FBEFE3;
-      --sage:        #5E8A6A;
-      --sage-wash:   #E6EDE6;
-      --shadow-xs:   0 1px 2px rgba(23, 21, 27, 0.04);
-      --shadow-sm:   0 2px 6px rgba(23, 21, 27, 0.05);
-      --shadow:      0 8px 24px rgba(23, 21, 27, 0.06);
-      --shadow-lg:   0 24px 64px rgba(23, 21, 27, 0.12);
+      /* Vellum & Ink — canonical Arca palette. See /BRAND-BIBLE.html, Ch. III. */
+      --ink:         #151413;
+      --ink-soft:    #3A3632;
+      --ink-muted:   #55504A;
+      --ink-haze:    #8A8278;
+      --paper:       #F4EFE6;   /* Vellum — dominant ground */
+      --paper-2:     #E8E0D1;   /* Parchment — alt surface */
+      --line:        #D9CFBB;
+      --line-soft:   #E8E0D1;
+      --amber:       #B8743D;   /* Ochre — the only accent */
+      --amber-deep:  #8E5628;
+      --amber-wash:  #F6E9D5;
+      --sage:        #2F4034;   /* Moss — dark secondary */
+      --sage-wash:   #DAE2DC;
+      --vellum:      var(--paper);
+      --parchment:   var(--paper-2);
+      --ochre:       var(--amber);
+      --moss:        var(--sage);
+      --stone:       #8A8278;
+      --shadow-xs:   0 1px 2px rgba(21, 20, 19, 0.04);
+      --shadow-sm:   0 2px 6px rgba(21, 20, 19, 0.05);
+      --shadow:      0 8px 24px rgba(21, 20, 19, 0.06);
+      --shadow-lg:   0 24px 64px rgba(21, 20, 19, 0.12);
       --r-sm: 6px;
       --r:    10px;
       --r-lg: 16px;
@@ -188,9 +194,9 @@
     }
     .btn-primary {
       background: var(--ink); color: var(--paper);
-      box-shadow: inset 0 0 0 1px var(--ink), 0 1px 2px rgba(23,21,27,0.15);
+      box-shadow: inset 0 0 0 1px var(--ink), 0 1px 2px rgba(21,20,19,0.15);
     }
-    .btn-primary:hover { background: #0A090D; transform: translateY(-1px); }
+    .btn-primary:hover { background: #050503; transform: translateY(-1px); }
     .btn-primary .arrow { transition: transform 0.2s var(--ease); }
     .btn-primary:hover .arrow { transform: translateX(3px); }
     .btn-ghost {
@@ -200,7 +206,7 @@
     .btn-ghost:hover { box-shadow: inset 0 0 0 1px var(--ink); background: var(--paper-2); }
     .btn-amber {
       background: var(--amber); color: #fff;
-      box-shadow: 0 1px 2px rgba(197,111,46,0.25);
+      box-shadow: 0 1px 2px rgba(142,86,40,0.25);
     }
     .btn-amber:hover { background: var(--amber-deep); transform: translateY(-1px); }
 
@@ -221,14 +227,14 @@
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 0.75rem 0;
-      background: rgba(251, 248, 242, 0.72);
+      background: rgba(244, 239, 230, 0.72);
       backdrop-filter: saturate(180%) blur(14px);
       -webkit-backdrop-filter: saturate(180%) blur(14px);
       border-bottom: 1px solid transparent;
       transition: border-color 0.3s ease, background 0.3s ease;
     }
     .nav.scrolled {
-      background: rgba(251, 248, 242, 0.88);
+      background: rgba(244, 239, 230, 0.88);
       border-bottom-color: var(--line-soft);
     }
     .nav-row {
@@ -236,16 +242,13 @@
       max-width: var(--w); margin: 0 auto; padding: 0 1.5rem;
     }
     .brand {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 800; font-size: 1.15rem;
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      font-family: 'Instrument Serif', 'Times New Roman', serif;
+      font-style: italic; font-weight: 400;
+      font-size: 1.6rem; line-height: 1;
       color: var(--ink); letter-spacing: -0.03em;
     }
-    .brand-dot {
-      width: 9px; height: 9px; border-radius: 50%;
-      background: var(--amber);
-      box-shadow: 0 0 0 3px rgba(232, 138, 71, 0.15);
-    }
+    .brand-mark { flex-shrink: 0; display: inline-block; }
     .nav-links {
       display: flex; align-items: center; gap: 1.75rem;
       font-size: 0.9rem; color: var(--ink-muted);
@@ -284,7 +287,8 @@
     }
     .nav-mobile-body .btn { margin-top: 1.5rem; justify-content: center; width: 100%; padding: 1rem; font-size: 1rem; }
 
-    /* HERO */
+    /* HERO — centered, pill, modern but restrained. Italic serif em
+       remains the one editorial accent in the headline. */
     .hero {
       padding: clamp(7.5rem, 14vw, 10rem) 0 clamp(3rem, 5vw, 5rem);
       position: relative; overflow: hidden;
@@ -293,7 +297,7 @@
       content: '';
       position: absolute; top: 0; right: -200px;
       width: 720px; height: 720px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(232, 138, 71, 0.14), transparent 60%);
+      background: radial-gradient(circle, rgba(184, 116, 61, 0.12), transparent 60%);
       filter: blur(20px); pointer-events: none; z-index: 0;
     }
     .hero-inner { position: relative; z-index: 1; text-align: center; max-width: 900px; margin: 0 auto; }
@@ -316,12 +320,10 @@
     .hero-pill strong { color: var(--ink); font-weight: 600; }
     .hero-pill .arrow { color: var(--amber); font-weight: 700; }
     .hero h1 { margin-bottom: 1.5rem; max-width: 14ch; margin-left: auto; margin-right: auto; }
+    /* Accent word — color only. Ochre is precious; used sparingly. */
     .hero h1 em {
-      font-style: normal; color: var(--amber); position: relative;
-    }
-    .hero h1 em::after {
-      content: ''; position: absolute; left: 0; right: 0; bottom: 0.1em;
-      height: 0.12em; background: var(--amber); opacity: 0.22; border-radius: 2px;
+      font-style: normal;
+      color: var(--ochre);
     }
     .hero-sub {
       font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
@@ -347,7 +349,7 @@
       border-radius: var(--r-xl);
       border: 1px solid var(--line);
       overflow: hidden;
-      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(23,21,27,0.02);
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(21,20,19,0.02);
     }
     .preview-bar {
       display: flex; align-items: center; gap: 0.5rem;
@@ -461,9 +463,9 @@
     .pb-msg.from-me strong { color: var(--amber); }
     .pb-msg .pb-list { margin: 0.35rem 0 0; padding: 0; list-style: none; font-size: 0.8rem; }
     .pb-msg .pb-list li { padding: 0.15rem 0; color: var(--ink-muted); }
-    .pb-msg.from-me .pb-list li { color: rgba(251, 248, 242, 0.82); }
+    .pb-msg.from-me .pb-list li { color: rgba(244, 239, 230, 0.82); }
     .pb-msg .pb-time { display: block; margin-top: 0.4rem; font-size: 0.7rem; color: var(--ink-haze); }
-    .pb-msg.from-me .pb-time { color: rgba(251, 248, 242, 0.45); }
+    .pb-msg.from-me .pb-time { color: rgba(244, 239, 230, 0.45); }
 
     @media (max-width: 600px) {
       .hero-ctas { flex-direction: column; width: 100%; padding: 0 1rem; }
@@ -501,6 +503,7 @@
     .features { background: var(--paper); }
     .features-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
     .features-head h2 { margin: 1rem auto 1rem; max-width: 18ch; }
+    .features-head h2 em { font-style: normal; color: var(--ochre); }
     .features-head p { font-size: 1.075rem; color: var(--ink-muted); max-width: 52ch; margin: 0 auto; }
     .features-grid {
       display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem;
@@ -525,6 +528,7 @@
     }
     .f-card .f-icon svg { width: 20px; height: 20px; }
     .f-card h3 { font-size: 1.15rem; margin-bottom: 0.55rem; }
+    .f-card h3 em { font-style: normal; color: var(--ochre); }
     .f-card p { font-size: 0.925rem; line-height: 1.55; color: var(--ink-muted); margin: 0; }
     .f-card .f-mini {
       margin-top: 1.25rem; padding: 0.9rem 1rem;
@@ -549,12 +553,12 @@
       align-items: center;
     }
     .split h2 { color: var(--paper); margin: 1rem 0 1rem; max-width: 18ch; }
-    .split h2 em { font-style: normal; color: var(--amber); }
+    .split h2 em { font-style: normal; color: var(--ochre); }
     .split .eyebrow { color: var(--amber); }
     .split .eyebrow::before { background: var(--amber); }
     .split p {
       font-size: 1.05rem; line-height: 1.6;
-      color: rgba(251, 248, 242, 0.72);
+      color: rgba(244, 239, 230, 0.72);
       margin-bottom: 1.5rem; max-width: 52ch;
     }
     .split-list {
@@ -563,12 +567,12 @@
     }
     .split-list li {
       display: flex; align-items: flex-start; gap: 0.75rem;
-      font-size: 0.95rem; color: rgba(251, 248, 242, 0.85);
+      font-size: 0.95rem; color: rgba(244, 239, 230, 0.85);
     }
     .split-list li::before {
       content: ''; flex-shrink: 0;
       width: 18px; height: 18px; border-radius: 50%;
-      background: rgba(232, 138, 71, 0.15);
+      background: rgba(184, 116, 61, 0.15);
       background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23E88A47' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: center;
       margin-top: 0.15em;
@@ -586,7 +590,7 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
       margin-bottom: 0.75rem;
       font-size: 0.9rem; line-height: 1.5;
-      color: rgba(251, 248, 242, 0.88);
+      color: rgba(244, 239, 230, 0.88);
     }
     .sv-msg.mine {
       background: var(--amber); border-color: var(--amber);
@@ -603,7 +607,7 @@
       display: flex; align-items: center; gap: 0.6rem;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em;
-      color: rgba(251, 248, 242, 0.45);
+      color: rgba(244, 239, 230, 0.45);
       padding-bottom: 0.75rem; margin-bottom: 1rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
@@ -619,6 +623,7 @@
     .how { background: var(--paper); }
     .how-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
     .how-head h2 { margin: 1rem auto 1rem; max-width: 16ch; }
+    .how-head h2 em { font-style: normal; color: var(--ochre); }
     .how-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     @media (max-width: 820px) {
@@ -668,6 +673,7 @@
     .pricing { background: var(--paper); }
     .pricing-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
     .pricing-head h2 { margin: 1rem auto 1rem; max-width: 16ch; }
+    .pricing-head h2 em { font-style: normal; color: var(--ochre); }
     .pricing-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
     .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     @media (max-width: 920px) {
@@ -702,7 +708,7 @@
     }
     .tier.featured .tier-name { color: var(--paper); }
     .tier-who { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1.25rem; line-height: 1.45; }
-    .tier.featured .tier-who { color: rgba(251, 248, 242, 0.65); }
+    .tier.featured .tier-who { color: rgba(244, 239, 230, 0.65); }
     .tier-price { display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.15rem; }
     .tier-price .num {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -711,9 +717,9 @@
     }
     .tier.featured .tier-price .num { color: var(--paper); }
     .tier-price .per { font-size: 0.85rem; color: var(--ink-muted); }
-    .tier.featured .tier-price .per { color: rgba(251, 248, 242, 0.55); }
+    .tier.featured .tier-price .per { color: rgba(244, 239, 230, 0.55); }
     .tier-setup { font-size: 0.78rem; color: var(--ink-haze); margin-bottom: 1.5rem; }
-    .tier.featured .tier-setup { color: rgba(251, 248, 242, 0.5); }
+    .tier.featured .tier-setup { color: rgba(244, 239, 230, 0.5); }
     .tier-cta { margin-bottom: 1.5rem; }
     .tier-cta .btn { width: 100%; justify-content: center; }
     .tier.featured .btn-primary { background: var(--amber); color: #fff; box-shadow: none; }
@@ -729,18 +735,18 @@
       display: flex; align-items: flex-start; gap: 0.55rem;
       color: var(--ink-soft);
     }
-    .tier.featured .tier-feats li { color: rgba(251, 248, 242, 0.85); }
+    .tier.featured .tier-feats li { color: rgba(244, 239, 230, 0.85); }
     .tier-feats li::before {
       content: ''; flex-shrink: 0;
       width: 16px; height: 16px; border-radius: 50%;
       background: var(--amber-wash);
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23C56F2E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%238E5628' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: center;
       margin-top: 0.1em;
     }
     .tier.featured .tier-feats li::before {
-      background-color: rgba(232, 138, 71, 0.2);
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23E88A47' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-color: rgba(184, 116, 61, 0.2);
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23B8743D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     }
     .pricing-note { text-align: center; margin-top: 3rem; font-size: 0.88rem; color: var(--ink-muted); }
     .pricing-note strong { color: var(--ink); }
@@ -750,6 +756,7 @@
     .faq-wrap { max-width: 780px; margin: 0 auto; }
     .faq-head { text-align: center; margin-bottom: 3rem; }
     .faq-head h2 { margin: 1rem auto 0; max-width: 18ch; }
+    .faq-head h2 em { font-style: normal; color: var(--ochre); }
     .faq-list { border-top: 1px solid var(--line-soft); }
     .faq-item { border-bottom: 1px solid var(--line-soft); }
     .faq-q {
@@ -765,15 +772,37 @@
     }
     .faq-q::-webkit-details-marker { display: none; }
     .faq-q:hover { color: var(--amber-deep); }
+    /* CSS-drawn plus — the "+" character sits ~1px low because the em-box
+       includes descender space. Drawing the crosshair with pseudo-elements
+       keeps it geometrically centered and rotation-perfect. */
     .faq-icon {
       flex-shrink: 0;
+      position: relative;
       width: 24px; height: 24px; border-radius: 50%;
       background: var(--paper-2);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; color: var(--ink-muted); line-height: 1;
+      font-size: 0; color: transparent;
       transition: background 0.2s ease, transform 0.3s var(--ease);
     }
-    .faq-item[open] .faq-icon { background: var(--amber); color: #fff; transform: rotate(45deg); }
+    .faq-icon::before,
+    .faq-icon::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      background: var(--ink-muted);
+      border-radius: 0.5px;
+      transition: background 0.2s ease;
+    }
+    .faq-icon::before { /* horizontal bar */
+      width: 10px; height: 1.5px;
+      transform: translate(-50%, -50%);
+    }
+    .faq-icon::after { /* vertical bar */
+      width: 1.5px; height: 10px;
+      transform: translate(-50%, -50%);
+    }
+    .faq-item[open] .faq-icon { background: var(--amber); transform: rotate(45deg); }
+    .faq-item[open] .faq-icon::before,
+    .faq-item[open] .faq-icon::after { background: #fff; }
     .faq-a {
       padding: 0 0 1.5rem;
       font-size: 0.97rem; line-height: 1.65;
@@ -800,7 +829,7 @@
       top: -120px; right: -120px;
       width: 400px; height: 400px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(232, 138, 71, 0.45), transparent 60%);
+      background: radial-gradient(circle, rgba(184, 116, 61, 0.45), transparent 60%);
       filter: blur(30px);
     }
     .final-inner > * { position: relative; z-index: 1; }
@@ -810,8 +839,9 @@
       margin: 1rem auto 1rem; max-width: 16ch;
       font-size: clamp(1.875rem, 3.5vw, 2.5rem);
     }
+    .final h2 em { font-style: normal; color: var(--ochre); }
     .final p {
-      color: rgba(251, 248, 242, 0.75);
+      color: rgba(244, 239, 230, 0.75);
       font-size: 1.05rem; line-height: 1.6;
       max-width: 52ch; margin: 0 auto 2rem;
     }
@@ -823,7 +853,7 @@
       .foot-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
       .foot-brand { grid-column: 1 / -1; }
     }
-    .foot-brand .brand { margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .foot-brand .brand { margin-bottom: 0.75rem; font-size: 1.75rem; }
     .foot-brand p { font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 0.75rem; max-width: 32ch; }
     .foot-brand small { font-size: 0.78rem; color: var(--ink-haze); }
     .foot-col h4 {
@@ -859,9 +889,18 @@
 
 <nav class="nav" id="nav">
   <div class="nav-row">
-    <a href="/" class="brand">
-      <span class="brand-dot"></span>
-      <span>Arca</span>
+    <a href="/" class="brand" aria-label="Arca home">
+      <svg class="brand-mark" width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill="var(--ink)"/>
+        <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
+        <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
+        <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
+        <rect x="14" y="18" width="1.5" height="38" fill="var(--ink)" opacity="0.3"/>
+        <rect x="48.5" y="18" width="1.5" height="38" fill="var(--ink)" opacity="0.3"/>
+        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+      </svg>
+      <span>arca</span>
     </a>
     <div class="nav-links">
       <a href="#features">Product</a>
@@ -881,7 +920,17 @@
 
 <div class="nav-mobile" id="navMobile" role="dialog" aria-modal="true">
   <div class="nav-mobile-top">
-    <a href="/" class="brand"><span class="brand-dot"></span><span>Arca</span></a>
+    <a href="/" class="brand" aria-label="Arca home">
+      <svg class="brand-mark" width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill="var(--ink)"/>
+        <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
+        <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
+        <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
+        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+      </svg>
+      <span>arca</span>
+    </a>
     <button class="nav-toggle" id="navCloseBtn" aria-label="Close" style="font-size:1.5rem;line-height:1;color:var(--ink);">✕</button>
   </div>
   <div class="nav-mobile-body">
@@ -934,7 +983,17 @@
         </div>
         <div class="preview-body">
           <aside class="preview-side">
-            <div class="ps-brand"><span class="brand-dot"></span>Arca</div>
+            <div class="ps-brand">
+              <svg width="18" height="18" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0;">
+                <path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill="var(--ink)"/>
+                <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
+                <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
+                <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
+                <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+                <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+              </svg>
+              <span style="font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:1.25rem;">arca</span>
+            </div>
             <div class="ps-label">Today</div>
             <div class="ps-item active"><span class="ps-bullet"></span>Morning brief</div>
             <div class="ps-item"><span class="ps-bullet"></span>Clients</div>
@@ -1007,7 +1066,7 @@
   <div class="wrap">
     <div class="features-head reveal">
       <div class="eyebrow">The product</div>
-      <h2>Everything a small service business needs. None of the software.</h2>
+      <h2>Everything a small service business needs. <em>None of the software.</em></h2>
       <p>Six operations your VA, CRM, scheduler, and invoicing tool used to do. Now one message away.</p>
     </div>
 
@@ -1121,7 +1180,7 @@
   <div class="wrap">
     <div class="how-head reveal">
       <div class="eyebrow">How it works</div>
-      <h2>Live in seven days. Not seven weeks.</h2>
+      <h2>Live in <em>seven days.</em> Not seven weeks.</h2>
       <p>You don't set up Arca. We do. Every build is custom to how your business actually runs.</p>
     </div>
 
@@ -1172,7 +1231,7 @@
   <div class="wrap">
     <div class="pricing-head reveal">
       <div class="eyebrow">Pricing</div>
-      <h2>Less than one billable hour. Per month.</h2>
+      <h2>Less than one billable hour. <em>Per month.</em></h2>
       <p>Flat pricing. No contracts. 30-day money-back. Includes the 7-day build, managed for you.</p>
     </div>
 
@@ -1234,7 +1293,7 @@
     <div class="faq-wrap">
       <div class="faq-head reveal">
         <div class="eyebrow no-dot" style="justify-content:center;">FAQ</div>
-        <h2>Questions we hear often.</h2>
+        <h2>Questions we <em>hear often.</em></h2>
       </div>
       <div class="faq-list">
         <details class="faq-item">
@@ -1270,7 +1329,7 @@
   <div class="wrap">
     <div class="final-inner reveal">
       <div class="eyebrow" style="color: var(--amber); justify-content:center;">Start here</div>
-      <h2>Stop being your own ops manager.</h2>
+      <h2>Stop being your own <em>ops manager.</em></h2>
       <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca. Live in 7 days. $97 to start.</p>
       <a href="mailto:hello@runarca.xyz?subject=Diagnosis%20call" class="btn btn-amber">Book diagnosis call <span class="arrow">→</span></a>
     </div>
@@ -1281,7 +1340,17 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="/" class="brand"><span class="brand-dot"></span><span>Arca</span></a>
+        <a href="/" class="brand" aria-label="Arca home">
+          <svg class="brand-mark" width="26" height="26" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill="var(--ink)"/>
+            <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
+            <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
+            <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
+            <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+            <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+          </svg>
+          <span>arca</span>
+        </a>
         <p>Managed operations for small service businesses. Run your business in one chat.</p>
         <small>An Unbanked company · © 2026</small>
       </div>

@@ -1,4 +1,5 @@
 ---
+import Mark from './Mark.astro';
 const path = Astro.url.pathname;
 const isBlog = path.startsWith('/blog');
 const isStrategy = path.startsWith('/strategy');
@@ -7,8 +8,8 @@ const isStrategy = path.startsWith('/strategy');
 <header class="site-nav" id="site-nav">
 	<div class="nav-row">
 		<a href="/" class="brand" aria-label="Arca home">
-			<span class="brand-dot" aria-hidden="true"></span>
-			<span class="brand-mark">Arca</span>
+			<Mark variant="symbol" size={24} />
+			<span class="brand-mark">arca</span>
 		</a>
 
 		<nav class="nav-links" aria-label="Primary">
@@ -67,7 +68,7 @@ const isStrategy = path.startsWith('/strategy');
 		top: 0;
 		z-index: 1000;
 		padding: 0.75rem 0;
-		background: rgba(251, 248, 242, 0.72);
+		background: rgba(244, 239, 230, 0.72);
 		backdrop-filter: saturate(180%) blur(14px);
 		-webkit-backdrop-filter: saturate(180%) blur(14px);
 		border-bottom: 1px solid transparent;
@@ -75,7 +76,7 @@ const isStrategy = path.startsWith('/strategy');
 	}
 
 	.site-nav.scrolled {
-		background: rgba(251, 248, 242, 0.9);
+		background: rgba(244, 239, 230, 0.9);
 		border-bottom-color: var(--line-soft);
 	}
 
@@ -92,10 +93,12 @@ const isStrategy = path.startsWith('/strategy');
 	.brand {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.5rem;
-		font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-		font-weight: 800;
-		font-size: 1.125rem;
+		gap: 0.55rem;
+		font-family: 'Instrument Serif', 'Times New Roman', serif;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1;
 		color: var(--ink);
 		letter-spacing: -0.03em;
 		text-decoration: none;
@@ -103,14 +106,7 @@ const isStrategy = path.startsWith('/strategy');
 
 	.brand:hover { color: var(--ink); }
 
-	.brand-dot {
-		width: 9px;
-		height: 9px;
-		border-radius: 50%;
-		background: var(--amber);
-		box-shadow: 0 0 0 3px rgba(232, 138, 71, 0.15);
-		flex-shrink: 0;
-	}
+	.brand svg { flex-shrink: 0; }
 
 	.nav-links {
 		display: flex;
@@ -174,7 +170,7 @@ const isStrategy = path.startsWith('/strategy');
 	}
 
 	.btn-nav-primary:hover {
-		background: #0A090D;
+		background: #050503;
 		color: var(--paper);
 		transform: translateY(-1px);
 	}
@@ -214,7 +210,7 @@ const isStrategy = path.startsWith('/strategy');
 		flex-direction: column;
 		padding: 0.5rem 1.5rem 1.25rem;
 		gap: 0;
-		background: rgba(251, 248, 242, 0.98);
+		background: rgba(244, 239, 230, 0.98);
 		backdrop-filter: blur(14px);
 		-webkit-backdrop-filter: blur(14px);
 		border-bottom: 1px solid var(--line-soft);

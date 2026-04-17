@@ -13,6 +13,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	next?: { id: string; title: string } | null;
 	readingTime?: number;
 	readingWords?: number;
+	faqs?: { question: string; answer: string }[];
 };
 
 const {
@@ -31,6 +32,7 @@ const {
 	readingTime,
 	readingWords,
 	word_count,
+	faqs,
 } = Astro.props;
 
 const pageDescription = meta_description || description || '';
@@ -153,10 +155,24 @@ const breadcrumbJsonLd = {
 	],
 };
 
+// FAQ schema — extracted at build time by remarkFaqSchema from the post's
+// "## FAQ" / "## Frequently asked questions" section. Unlocks FAQ rich
+// results in Google when at least two Q&A pairs are present.
+const faqJsonLd = faqs && faqs.length >= 2
+	? {
+			'@type': 'FAQPage',
+			mainEntity: faqs.map((f) => ({
+				'@type': 'Question',
+				name: f.question,
+				acceptedAnswer: { '@type': 'Answer', text: f.answer },
+			})),
+	  }
+	: null;
+
 // Combined JSON-LD graph
 const combinedJsonLd = {
 	'@context': 'https://schema.org',
-	'@graph': [articleJsonLd, breadcrumbJsonLd],
+	'@graph': [articleJsonLd, breadcrumbJsonLd, ...(faqJsonLd ? [faqJsonLd] : [])],
 };
 ---
 
@@ -382,21 +398,23 @@ const combinedJsonLd = {
 				if (capTarget) capTarget.classList.add('drop-cap');
 			}
 
-			// ===== Build TOC from H2/H3 (IDs already SSR'd by rehype-slug) =====
+			// ===== Build TOC from H2s only (IDs already SSR'd by rehype-slug) =====
+			// H3s — especially the five in a typical FAQ section — blow the TOC
+			// out to 15+ items and bury the actual chapter structure. A magazine
+			// TOC lists chapters, not paragraphs.
 			function slugify(t: string) {
 				return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 			}
-			const headings = prose ? prose.querySelectorAll('h2, h3') : [];
+			const headings = prose ? prose.querySelectorAll('h2') : [];
 			const tocDesktopList = document.getElementById('toc-desktop-list');
 			const tocMobileList = document.getElementById('toc-mobile-list');
 			const tocItems: { id: string; el: Element }[] = [];
 
 			headings.forEach((h) => {
 				if (!h.id) h.id = slugify((h.textContent || '').replace(/#$/, '').trim());
-				const level = h.tagName === 'H3' ? 3 : 2;
 				// Strip trailing "#" from rehype-autolink-headings when building TOC label
 				const label = (h.textContent || '').replace(/#$/, '').trim();
-				const li = `<li class="level-${level}"><a href="#${h.id}">${label}</a></li>`;
+				const li = `<li class="level-2"><a href="#${h.id}">${label}</a></li>`;
 				if (tocDesktopList) tocDesktopList.insertAdjacentHTML('beforeend', li);
 				if (tocMobileList) tocMobileList.insertAdjacentHTML('beforeend', li);
 				tocItems.push({ id: h.id, el: h });
@@ -552,6 +570,10 @@ const combinedJsonLd = {
 		margin: 0 0 1.25rem 0;
 		letter-spacing: -0.035em;
 	}
+	.article-title em {
+		font-style: normal;
+		color: var(--ochre);
+	}
 
 	.article-deck {
 		font-size: clamp(1.125rem, 2vw, 1.3125rem);
@@ -586,7 +608,7 @@ const combinedJsonLd = {
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-weight: 700;
 		font-size: 0.875rem;
-		box-shadow: 0 0 0 3px rgba(232, 138, 71, 0.12);
+		box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.12);
 	}
 	.avatar-img {
 		padding: 0;

@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { remarkReadingTime } from './src/lib/reading-time.mjs';
+import { remarkFaqSchema } from './src/lib/faq-schema.mjs';
 
 import cloudflare from '@astrojs/cloudflare';
 
@@ -60,7 +61,7 @@ export default defineConfig({
   output: 'static',
 
   markdown: {
-    remarkPlugins: [remarkReadingTime],
+    remarkPlugins: [remarkReadingTime, remarkFaqSchema],
     rehypePlugins: [
       rehypeSlug,
       [

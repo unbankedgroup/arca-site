@@ -261,53 +261,24 @@ The best infrastructure is invisible.
 
 ---
 
-## FAQ Schema
+## Frequently asked questions
 
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a WhatsApp business operations interface?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A WhatsApp business operations interface replaces traditional dashboards with a chat-based interface. Instead of logging into multiple platforms, you manage scheduling, invoicing, follow-ups, and client communication entirely through WhatsApp conversations. The system sends you a daily briefing, responds to commands, and handles operations automatically."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is WhatsApp secure enough for business operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. WhatsApp uses end-to-end encryption for all messages. Business operations platforms add additional security layers including encrypted data storage, role-based access controls, and compliance with data protection regulations. Your client data is as secure in WhatsApp as it is in any business platform."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Telegram instead of WhatsApp?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Chat-first operations platforms typically support multiple messaging apps including WhatsApp, Telegram, and sometimes Slack. The interface is the same — one conversation that handles everything. Choose the platform you and your clients already use."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if I need to access historical data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All chat-first systems maintain searchable history. You can search your conversation for any invoice, booking, client note, or interaction. The system also typically provides export options for reporting, tax purposes, or client records."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to set up chat-first operations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A full chat-first operations setup typically takes 7 days when done for you. This includes the diagnostic conversation (20-30 minutes), configuration of all workflows, testing, and go-live. No learning curve is required since the interface is WhatsApp, which you already know."
-      }
-    }
-  ]
-}
-```
+### What is a WhatsApp business operations interface?
+
+A WhatsApp business operations interface replaces traditional dashboards with a chat-based interface. Instead of logging into multiple platforms, you manage scheduling, invoicing, follow-ups, and client communication entirely through WhatsApp conversations. The system sends you a daily briefing, responds to commands, and handles operations automatically.
+
+### Is WhatsApp secure enough for business operations?
+
+Yes. WhatsApp uses end-to-end encryption for all messages. Business operations platforms add additional security layers including encrypted data storage, role-based access controls, and compliance with data protection regulations. Your client data is as secure in WhatsApp as it is in any business platform.
+
+### Can I use Telegram instead of WhatsApp?
+
+Yes. Chat-first operations platforms typically support multiple messaging apps including WhatsApp, Telegram, and sometimes Slack. The interface is the same — one conversation that handles everything. Choose the platform you and your clients already use.
+
+### What happens if I need to access historical data?
+
+All chat-first systems maintain searchable history. You can search your conversation for any invoice, booking, client note, or interaction. The system also typically provides export options for reporting, tax purposes, or client records.
+
+### How long does it take to set up chat-first operations?
+
+A full chat-first operations setup typically takes 7 days when done for you. This includes the diagnostic conversation (20-30 minutes), configuration of all workflows, testing, and go-live. No learning curve is required since the interface is WhatsApp, which you already know.

@@ -4,47 +4,60 @@
    ============================================================ */
 
 :root {
-	/* Ink scale (text + dark surfaces) */
-	--ink: #17151B;
-	--ink-soft: #2A262F;
-	--ink-muted: #55505A;
-	--ink-haze: #8A848E;
+	/* Vellum & Ink — the canonical Arca palette.
+	   Ground is warm vellum, figure is deep ink, a single precious ochre
+	   carries every accent. Zero pure black, zero pure white, one spark.
+	   (See /root/arca/BRAND-BIBLE.html, Chapter III.) */
+	--ink: #151413;
+	--ink-soft: #3A3632;
+	--ink-muted: #55504A;
+	--ink-haze: #8A8278;
 
-	/* Paper scale (backgrounds + rules) */
-	--paper: #FBF8F2;
-	--paper-2: #F4F0E8;
-	--line: #E8E2D4;
-	--line-soft: #EFEAE0;
+	--paper: #F4EFE6;          /* Vellum — dominant ground, >60% */
+	--paper-2: #E8E0D1;        /* Parchment — alt surface, cards, bands */
+	--line: #D9CFBB;
+	--line-soft: #E8E0D1;
 
-	/* Amber (brand accent) */
-	--amber: #E88A47;
-	--amber-deep: #C56F2E;
-	--amber-wash: #FBEFE3;
+	/* Ochre — the only accent. Used sparingly: CTA, foundation line,
+	   single most important word on a page. If everything is gold,
+	   nothing is gold. */
+	--amber: #B8743D;
+	--amber-deep: #8E5628;
+	--amber-wash: #F6E9D5;
 
-	/* Sage (secondary accent) */
-	--sage: #5E8A6A;
-	--sage-wash: #E6EDE6;
+	/* Moss — deep secondary for contrast sections + success states.
+	   Not an accent — a shelter colour. */
+	--sage: #2F4034;
+	--sage-wash: #DAE2DC;
 
-	/* Legacy token aliases — all existing CSS references these names.
-	   Remapping them to the new scale rebrands every downstream file
-	   (blog index, post layout, callouts, pull quotes) in one shot. */
+	/* Named tokens — the Brand Bible vocabulary. Prefer these in new code. */
+	--vellum: var(--paper);
+	--parchment: var(--paper-2);
+	--ochre: var(--amber);
+	--ochre-deep: var(--amber-deep);
+	--ochre-light: var(--amber-wash);
+	--moss: var(--sage);
+	--stone: #8A8278;
+	--stone-soft: #B5ADA2;
+
+	/* Legacy aliases — keep every downstream file rendering until the
+	   renames catch up. All map to the new Vellum & Ink scale. */
 	--charcoal: var(--ink);
-	--soft-charcoal: var(--ink-muted);
+	--soft-charcoal: var(--ink-soft);
 	--amber-hover: var(--amber-deep);
 	--amber-light: var(--amber-wash);
 	--canvas: var(--paper);
 	--cloud: var(--paper-2);
 	--sage-light: var(--sage-wash);
-	--stone: #B8A898;
-	--plum: #3B2C40;
+	--plum: var(--moss);           /* Moss supplants Plum as the dark secondary */
 	--haze: var(--ink-haze);
 	--white: #FFFFFF;
 
-	/* Shadows — tuned for warm paper, slightly softer */
-	--shadow-sm: 0 1px 2px rgba(23, 21, 27, 0.04), 0 2px 6px rgba(23, 21, 27, 0.04);
-	--shadow: 0 2px 4px rgba(23, 21, 27, 0.04), 0 6px 16px rgba(23, 21, 27, 0.06);
-	--shadow-md: 0 4px 10px rgba(23, 21, 27, 0.05), 0 12px 28px rgba(23, 21, 27, 0.09);
-	--shadow-lg: 0 8px 20px rgba(23, 21, 27, 0.07), 0 24px 56px rgba(23, 21, 27, 0.12);
+	/* Shadows — tuned for warm vellum, a shade softer than before */
+	--shadow-sm: 0 1px 2px rgba(21, 20, 19, 0.04), 0 2px 6px rgba(21, 20, 19, 0.04);
+	--shadow: 0 2px 4px rgba(21, 20, 19, 0.04), 0 6px 16px rgba(21, 20, 19, 0.06);
+	--shadow-md: 0 4px 10px rgba(21, 20, 19, 0.05), 0 12px 28px rgba(21, 20, 19, 0.09);
+	--shadow-lg: 0 8px 20px rgba(21, 20, 19, 0.07), 0 24px 56px rgba(21, 20, 19, 0.12);
 
 	/* Radius */
 	--radius-sm: 8px;
@@ -60,11 +73,11 @@
 	/* Legacy Astro-template tokens */
 	--accent: var(--amber);
 	--accent-dark: var(--amber-deep);
-	--black: 23, 21, 27;
-	--gray: 138, 132, 142;
-	--gray-light: 232, 226, 212;
-	--gray-dark: 85, 80, 90;
-	--gray-gradient: rgba(232, 226, 212, 50%), var(--paper);
+	--black: 21, 20, 19;
+	--gray: 138, 130, 120;
+	--gray-light: 217, 207, 187;
+	--gray-dark: 85, 80, 74;
+	--gray-gradient: rgba(217, 207, 187, 50%), var(--paper);
 	--box-shadow: var(--shadow);
 }
 
@@ -197,20 +210,20 @@ small { font-size: 0.875rem; }
 .btn-primary {
 	background: var(--amber);
 	color: #fff;
-	box-shadow: 0 2px 12px rgba(212, 145, 94, 0.3);
+	box-shadow: 0 2px 12px rgba(184, 116, 61, 0.3);
 }
 
 .btn-primary:hover {
 	background: var(--amber-hover);
 	color: #fff;
-	box-shadow: 0 4px 20px rgba(212, 145, 94, 0.4);
+	box-shadow: 0 4px 20px rgba(184, 116, 61, 0.4);
 	transform: translateY(-1px);
 }
 
 .btn-secondary {
 	background: transparent;
 	color: var(--charcoal);
-	border: 1.5px solid rgba(184, 168, 152, 0.5);
+	border: 1.5px solid rgba(138, 130, 120, 0.5);
 }
 
 .btn-secondary:hover {
@@ -436,7 +449,7 @@ small { font-size: 0.875rem; }
 	border-bottom: 2px solid var(--charcoal);
 	border-top: none;
 	border-radius: 0;
-	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
 	font-size: 1.0625em;
 	line-height: 1.6;
 	color: var(--charcoal);
@@ -494,12 +507,12 @@ small { font-size: 0.875rem; }
 	padding: 2em 1.75em 1.75em;
 	background: var(--canvas);
 	box-shadow: var(--shadow-md);
-	border-left: 1px dashed rgba(45, 42, 50, 0.2);
-	border-right: 1px dashed rgba(45, 42, 50, 0.2);
+	border-left: 1px dashed rgba(58, 54, 50, 0.2);
+	border-right: 1px dashed rgba(58, 54, 50, 0.2);
 	border-top: none;
 	border-bottom: none;
 	border-radius: 0;
-	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
 	font-weight: 500;
 	font-size: clamp(1.25rem, 4vw, 1.625rem);
 	font-style: normal;
@@ -550,8 +563,8 @@ small { font-size: 0.875rem; }
 	margin: 3em -12px;
 	padding: 2.25em 1.5em 2em;
 	text-align: center;
-	border-left: 1px dashed rgba(212, 145, 94, 0.4);
-	border-right: 1px dashed rgba(212, 145, 94, 0.4);
+	border-left: 1px dashed rgba(184, 116, 61, 0.4);
+	border-right: 1px dashed rgba(184, 116, 61, 0.4);
 }
 .prose .pull-quote.masthead::after {
 	content: '';
@@ -579,12 +592,12 @@ small { font-size: 0.875rem; }
 	padding: 2em 1.5em 1.5em;
 	background: var(--canvas);
 	box-shadow: var(--shadow-md);
-	border-left: 1px dashed rgba(45, 42, 50, 0.2);
-	border-right: 1px dashed rgba(45, 42, 50, 0.2);
+	border-left: 1px dashed rgba(58, 54, 50, 0.2);
+	border-right: 1px dashed rgba(58, 54, 50, 0.2);
 	border-top: none;
 	border-bottom: none;
 	border-radius: 0;
-	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
 	font-size: 0.9375rem;
 	line-height: 1.6;
 	color: var(--charcoal);
@@ -607,10 +620,10 @@ small { font-size: 0.875rem; }
 	left: 48px;
 	width: 90px;
 	height: 18px;
-	background: rgba(212, 145, 94, 0.55);
+	background: rgba(184, 116, 61, 0.55);
 	transform: rotate(-2deg);
-	border-left: 1px dashed rgba(45, 42, 50, 0.15);
-	border-right: 1px dashed rgba(45, 42, 50, 0.15);
+	border-left: 1px dashed rgba(58, 54, 50, 0.15);
+	border-right: 1px dashed rgba(58, 54, 50, 0.15);
 	z-index: 2;
 }
 
@@ -624,7 +637,7 @@ small { font-size: 0.875rem; }
 	letter-spacing: 0.14em;
 	margin: 0 0 0.75em 0;
 	padding-bottom: 0.5em;
-	border-bottom: 1px solid rgba(45, 42, 50, 0.12);
+	border-bottom: 1px solid rgba(58, 54, 50, 0.12);
 }
 
 .prose .callout p:last-child { margin-bottom: 0; }
@@ -637,7 +650,7 @@ small { font-size: 0.875rem; }
 .prose .callout-stat strong:first-child,
 .prose .callout-stat h4 {
 	color: var(--amber-hover);
-	border-bottom-color: rgba(191, 125, 74, 0.22);
+	border-bottom-color: rgba(142, 86, 40, 0.22);
 }
 
 .prose .callout-warning {
@@ -645,7 +658,7 @@ small { font-size: 0.875rem; }
 }
 .prose .callout-warning::before { background: #F5E3DC; }
 .prose .callout-warning::after {
-	background: rgba(59, 44, 64, 0.35);
+	background: rgba(47, 64, 52, 0.35);
 	left: auto;
 	right: 48px;
 	transform: rotate(2deg);
@@ -653,7 +666,7 @@ small { font-size: 0.875rem; }
 .prose .callout-warning strong:first-child,
 .prose .callout-warning h4 {
 	color: var(--plum);
-	border-bottom-color: rgba(59, 44, 64, 0.2);
+	border-bottom-color: rgba(47, 64, 52, 0.2);
 }
 
 .prose .callout-try {
@@ -663,7 +676,7 @@ small { font-size: 0.875rem; }
 .prose .callout-try strong:first-child,
 .prose .callout-try h4 {
 	color: var(--sage);
-	border-bottom-color: rgba(107, 143, 113, 0.25);
+	border-bottom-color: rgba(47, 64, 52, 0.25);
 }
 
 .prose .callout-note {
@@ -673,7 +686,7 @@ small { font-size: 0.875rem; }
 .prose .callout-note strong:first-child,
 .prose .callout-note h4 {
 	color: var(--charcoal);
-	border-bottom-color: rgba(45, 42, 50, 0.15);
+	border-bottom-color: rgba(58, 54, 50, 0.15);
 }
 
 /* ============================================================
@@ -871,7 +884,7 @@ small { font-size: 0.875rem; }
 	margin-bottom: 0.25em;
 }
 .prose .stat-flow .node .num {
-	font-family: 'Fraunces', 'Times New Roman', Georgia, serif;
+	font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
 	font-weight: 700;
 	font-size: clamp(1.25rem, 4.5vw, 1.625rem);
 	color: var(--charcoal);
@@ -888,7 +901,7 @@ small { font-size: 0.875rem; }
 .prose .stat-flow .arrow {
 	align-self: center;
 	color: var(--amber);
-	font-family: 'Fraunces', serif;
+	font-family: 'Instrument Serif', serif;
 	font-size: 1.375rem;
 	font-weight: 700;
 	flex: 0 0 auto;
@@ -1279,7 +1292,7 @@ small { font-size: 0.875rem; }
 
 .inline-newsletter p {
 	font-size: 0.9375rem;
-	color: rgba(253, 250, 245, 0.75);
+	color: rgba(244, 239, 230, 0.75);
 	margin: 0 auto 1.25rem;
 	max-width: 420px;
 }
@@ -1295,15 +1308,15 @@ small { font-size: 0.875rem; }
 	flex: 1;
 	padding: 0.75rem 1rem;
 	border-radius: 100px;
-	border: 1px solid rgba(253, 250, 245, 0.2);
-	background: rgba(253, 250, 245, 0.08);
+	border: 1px solid rgba(244, 239, 230, 0.2);
+	background: rgba(244, 239, 230, 0.08);
 	color: var(--canvas);
 	font-family: inherit;
 	font-size: 0.9375rem;
 }
 
 .inline-newsletter input[type="email"]::placeholder {
-	color: rgba(253, 250, 245, 0.5);
+	color: rgba(244, 239, 230, 0.5);
 }
 
 .inline-newsletter button {
@@ -1357,7 +1370,7 @@ small { font-size: 0.875rem; }
 	position: sticky;
 	top: 64px;
 	z-index: 40;
-	background: rgba(253, 250, 245, 0.92);
+	background: rgba(244, 239, 230, 0.92);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border-bottom: 1px solid var(--cloud);
@@ -1436,7 +1449,7 @@ small { font-size: 0.875rem; }
 }
 
 .hero-feature p {
-	color: rgba(253, 250, 245, 0.75);
+	color: rgba(244, 239, 230, 0.75);
 	font-size: 1rem;
 	line-height: 1.55;
 	margin: 0 0 1.5rem;
@@ -1479,7 +1492,7 @@ small { font-size: 0.875rem; }
 	padding: 1.5rem;
 	text-decoration: none;
 	display: block;
-	border: 1px solid rgba(212, 145, 94, 0.2);
+	border: 1px solid rgba(184, 116, 61, 0.2);
 	transition: all 0.2s var(--ease);
 }
 
@@ -1600,7 +1613,7 @@ small { font-size: 0.875rem; }
 }
 
 .post-card.big p {
-	color: rgba(253, 250, 245, 0.75);
+	color: rgba(244, 239, 230, 0.75);
 }
 
 .post-card.big .post-eyebrow { color: var(--amber); }

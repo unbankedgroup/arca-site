@@ -1,0 +1,106 @@
+---
+// Arca Mark — "Keystone & Word". The canonical logo system.
+// Two slim pillars, a keystone wedge, paired ochre footings, and an italic
+// Instrument Serif wordmark. Six configurations share one anatomy so the
+// mark scales from a 16-px favicon to a billboard without redrawing.
+// Full spec in /root/arca/BRAND-BIBLE.html, Chapter II.
+export interface Props {
+	// 'symbol' | 'symbol-tiny' | 'wordmark' | 'horizontal' | 'vertical' | 'stamp'
+	variant?: string;
+	size?: number;
+	fg?: string;
+	accent?: string;
+	bg?: string;
+	ariaLabel?: string;
+}
+
+const {
+	variant = 'symbol',
+	size,
+	fg = 'var(--ink, #151413)',
+	accent = 'var(--ochre, #B8743D)',
+	bg = 'var(--ink, #151413)',
+	ariaLabel = variant === 'wordmark' ? 'arca' : 'Arca',
+} = Astro.props;
+
+const defaultSize: Record<string, number> = {
+	symbol: 40,
+	'symbol-tiny': 16,
+	wordmark: 40,
+	horizontal: 40,
+	vertical: 120,
+	stamp: 48,
+};
+const s = size ?? defaultSize[variant] ?? 40;
+const wordFg = variant === 'stamp' ? 'var(--vellum, #F4EFE6)' : fg;
+---
+
+{variant === 'symbol' && (
+	<svg width={s} height={s} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill={fg}/>
+		<rect x="10" y="12" width="44" height="6" fill={fg}/>
+		<rect x="14" y="18" width="6" height="38" fill={fg}/>
+		<rect x="44" y="18" width="6" height="38" fill={fg}/>
+		<rect x="14" y="18" width="1.5" height="38" fill={fg} opacity="0.3"/>
+		<rect x="48.5" y="18" width="1.5" height="38" fill={fg} opacity="0.3"/>
+		<rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+		<rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+	</svg>
+)}
+
+{variant === 'symbol-tiny' && (
+	<svg width={s} height={s} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<path d="M 6 1 L 10 1 L 10.5 2.5 L 5.5 2.5 Z" fill={fg}/>
+		<rect x="2" y="2.5" width="12" height="2" fill={fg}/>
+		<rect x="3" y="4.5" width="2" height="10" fill={fg}/>
+		<rect x="11" y="4.5" width="2" height="10" fill={fg}/>
+	</svg>
+)}
+
+{variant === 'wordmark' && (
+	<svg width={Math.round(s * 3)} height={s} viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<text x="150" y="78" font-family="Instrument Serif, Times New Roman, serif" font-size="96" font-style="italic" fill={fg} text-anchor="middle" letter-spacing="-3.5" font-weight="400">arca</text>
+	</svg>
+)}
+
+{variant === 'horizontal' && (
+	<svg width={Math.round(s * 4)} height={s} viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<g transform="translate(10, 10) scale(1.25)">
+			<path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill={fg}/>
+			<rect x="10" y="12" width="44" height="6" fill={fg}/>
+			<rect x="14" y="18" width="6" height="38" fill={fg}/>
+			<rect x="44" y="18" width="6" height="38" fill={fg}/>
+			<rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+			<rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+		</g>
+		<circle cx="130" cy="50" r="3" fill={accent}/>
+		<text x="150" y="76" font-family="Instrument Serif, Times New Roman, serif" font-size="88" font-style="italic" fill={fg} letter-spacing="-3">arca</text>
+	</svg>
+)}
+
+{variant === 'vertical' && (
+	<svg width={s} height={Math.round(s * 1.1)} viewBox="0 0 240 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<g transform="translate(88, 10) scale(1.0)">
+			<path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill={fg}/>
+			<rect x="10" y="12" width="44" height="6" fill={fg}/>
+			<rect x="14" y="18" width="6" height="38" fill={fg}/>
+			<rect x="44" y="18" width="6" height="38" fill={fg}/>
+			<rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+			<rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill={accent}/>
+		</g>
+		<text x="120" y="210" font-family="Instrument Serif, Times New Roman, serif" font-size="88" font-style="italic" fill={fg} text-anchor="middle" letter-spacing="-3">arca</text>
+		<rect x="98" y="230" width="44" height="2" rx="1" fill={accent}/>
+	</svg>
+)}
+
+{variant === 'stamp' && (
+	<svg width={s} height={s} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={ariaLabel} role="img">
+		<rect width="64" height="64" rx="14" fill={bg}/>
+		<path d="M 26 14 L 38 14 L 40 20 L 24 20 Z" fill={wordFg}/>
+		<rect x="10" y="20" width="44" height="5" fill={wordFg}/>
+		<rect x="14" y="25" width="6" height="28" fill={wordFg}/>
+		<rect x="44" y="25" width="6" height="28" fill={wordFg}/>
+		<rect x="14" y="53" width="6" height="2.5" rx="1.25" fill={accent}/>
+		<rect x="44" y="53" width="6" height="2.5" rx="1.25" fill={accent}/>
+	</svg>
+)}

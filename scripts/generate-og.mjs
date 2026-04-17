@@ -40,9 +40,9 @@ const fonts = [
 ];
 
 const COLORS = {
-	canvas: '#FDFAF5',
-	charcoal: '#2D2A32',
-	amber: '#D4915E',
+	canvas: '#F4EFE6',
+	charcoal: '#151413',
+	amber: '#B8743D',
 	cloud: '#F0EDE8',
 	haze: '#9490A0',
 };

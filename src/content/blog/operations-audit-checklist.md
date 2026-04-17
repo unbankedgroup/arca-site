@@ -229,6 +229,7 @@ No. Panic wastes energy. But do act. A score of 150 means you're losing revenue 
 ### What's the ROI of fixing operations?
 
 Typical outcomes: 8-12 hours recovered per month, higher on-time payment rates, and reduced early churn from better onboarding and follow-up. For a coach billing $150/hour, recovering 10 hours/month is $1,500 — before counting revenue from clients who stop falling through the cracks.
+
 ---
 
 **Related reading:**
