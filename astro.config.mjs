@@ -8,6 +8,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { remarkReadingTime } from './src/lib/reading-time.mjs';
 import { remarkFaqSchema } from './src/lib/faq-schema.mjs';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // Sitemap URL dedupe across serialize calls (the sitemap integration calls
 // serialize per-item, so we need a set at module scope to catch collisions
 // after our /blog/blog/ → /blog/ rewrite merges two distinct routes).
@@ -92,4 +94,6 @@ export default defineConfig({
   build: {
       format: 'file'
 	},
+
+  adapter: cloudflare(),
 });

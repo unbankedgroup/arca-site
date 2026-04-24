@@ -7,13 +7,13 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate-og.mjs && pagefind --site dist/blog",
+    "build": "astro build && cp -r dist/client/_astro dist/client/blog/_astro && node scripts/generate-og.mjs && pagefind --site dist/client/blog",
     "preview": "npm run build && npx serve dist",
     "astro": "astro",
     "deploy": "npm run build && echo 'Deploy: upload dist/ to your host'"
-
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.2.1",
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
