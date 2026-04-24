@@ -13,7 +13,7 @@ import { html as toReactNode } from 'satori-html';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const CONTENT_DIR = path.join(ROOT, 'src/content/blog');
 const FONT_DIR = path.join(ROOT, 'src/assets/fonts');
-const OUT_DIR = path.join(ROOT, 'dist/client/blog/og');
+const OUT_DIR = path.join(ROOT, 'dist/blog/og');
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -134,4 +134,3 @@ for (const file of files) {
 	await renderPost(slug, data);
 	count++;
 }
-console.log(`[og] generated ${count} images → dist/client/blog/og/`);

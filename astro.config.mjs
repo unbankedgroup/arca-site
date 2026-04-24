@@ -8,8 +8,6 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { remarkReadingTime } from './src/lib/reading-time.mjs';
 import { remarkFaqSchema } from './src/lib/faq-schema.mjs';
 
-import cloudflare from '@astrojs/cloudflare';
-
 // Sitemap URL dedupe across serialize calls (the sitemap integration calls
 // serialize per-item, so we need a set at module scope to catch collisions
 // after our /blog/blog/ → /blog/ rewrite merges two distinct routes).
@@ -51,6 +49,14 @@ export default defineConfig({
         if (item.url.length > 'https://runarca.xyz/'.length && item.url.endsWith('/')) {
           item.url = item.url.slice(0, -1);
         }
+        // Rewrite /blog/vacation-test → /vacation-test (page lives at root, not under /blog/)
+        if (item.url.includes('/blog/vacation-test')) {
+          item.url = item.url.replace('/blog/vacation-test', '/vacation-test');
+        }
+        // Rewrite /blog/strategy → /strategy (page lives at root, not under /blog/)
+        if (item.url.includes('/blog/strategy')) {
+          item.url = item.url.replace('/blog/strategy', '/strategy');
+        }
         // Dedupe (site root and blog index both land on /blog after fix-up)
         if (SITEMAP_SEEN.has(item.url)) return undefined;
         SITEMAP_SEEN.add(item.url);
@@ -86,6 +92,4 @@ export default defineConfig({
   build: {
       format: 'file'
 	},
-
-  adapter: cloudflare()
 });

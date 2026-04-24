@@ -10,6 +10,7 @@ export const clusterLabels: Record<string, string> = {
 	C4: 'Tool Alternatives & Comparisons',
 	C5: 'VAs vs Operations Platforms',
 	C6: 'Client Onboarding & Revenue Ops',
+	C7: 'Vacation Test',
 };
 
 export const clusterDecks: Record<string, string> = {
@@ -19,9 +20,10 @@ export const clusterDecks: Record<string, string> = {
 	C4: "Honest comparisons of the tools solo operators use every day — what works, what doesn't.",
 	C5: 'Hiring a VA vs. buying an operations platform. Costs, trade-offs, and when to do which.',
 	C6: 'Turning new leads into paying clients without ghosting them in the inbox.',
+	C7: 'Can your business survive two weeks without you? The vacation test and how to pass it.',
 };
 
-export const clusterOrder = ['C1'];
+export const clusterOrder = ['C1', 'C7'];
 
 // Resolve a frontmatter `cluster` value to { code, label }. Accepts either
 // a bare code ("C1") or "C1 — Label" form.

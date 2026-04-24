@@ -102,5 +102,5 @@ const ogImage = ogImageUrl || new URL(image.src, Astro.url).toString();
 <meta property="twitter:image" content={ogImage} />
 
 {articleJsonLd && (
-	<script type="application/ld+json" set:html={JSON.stringify(articleJsonLd)} />
+	<script type="application/ld+json" set:html={JSON.stringify(articleJsonLd).replace(/</g, '\\u003c')} />
 )}

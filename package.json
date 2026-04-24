@@ -7,18 +7,16 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && cp -r dist/client/_astro dist/client/blog/_astro && node scripts/generate-og.mjs && pagefind --site dist/client/blog",
-    "preview": "npm run build && wrangler dev",
+    "build": "astro build && node scripts/generate-og.mjs && pagefind --site dist/blog",
+    "preview": "npm run build && npx serve dist",
     "astro": "astro",
-    "generate-types": "wrangler types",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && echo 'Deploy: upload dist/ to your host'"
+
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.1.7",
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
-    "@fontsource/plus-jakarta-sans": "^5.2.8",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "^6.1.4",
     "mdast-util-to-string": "^4.0.0",
@@ -29,11 +27,5 @@
     "satori": "^0.26.0",
     "satori-html": "^0.3.2",
     "sharp": "^0.34.3"
-  },
-  "devDependencies": {
-    "wrangler": "^4.81.0"
-  },
-  "overrides": {
-    "vite": "^7"
   }
 }

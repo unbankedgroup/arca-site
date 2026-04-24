@@ -1,0 +1,532 @@
+---
+/**
+ * VacationTestEmailGate — Email capture form for the Vacation Readiness Diagnostic.
+ *
+ * Triggers after the user sees their composite score.
+ * Before email: score + tier label + one-liner.
+ * After email: full results (radar chart, pillar breakdown, action plan, share).
+ *
+ * Fields: email (required), first name (optional), business type dropdown.
+ * On submit: POST to Zapier webhook, store in localStorage, reveal full results.
+ *
+ * Brand: Arca Vellum & Ink system
+ * Spec: /root/.openclaw/workspace/arca/vacation-readiness-diagnostic-spec.md §8
+ */
+---
+
+<!-- ============================================================ -->
+<!-- STYLES                                                        -->
+<!-- ============================================================ -->
+<style>
+  /* ——— Email gate container ——— */
+  .vt-email-gate {
+    background: var(--vellum);
+    border: 2px solid var(--ochre);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    max-width: 520px;
+    margin: 2rem auto 0;
+  }
+
+  /* ——— Gate icon ——— */
+  .vt-gate-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(184, 116, 61, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+  }
+  .vt-gate-icon svg {
+    color: var(--ochre);
+  }
+
+  /* ——— Gate headline ——— */
+  .vt-gate-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.375rem, 2.5vw, 1.625rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .vt-gate-headline em {
+    font-style: italic;
+    color: var(--ochre);
+  }
+
+  /* ——— Gate subtext ——— */
+  .vt-gate-subtext {
+    font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ——— Unlock CTA ——— */
+  .vt-gate-cta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ochre);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ——— Form layout ——— */
+  .vt-gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* ——— Input row (name + email side by side on desktop) ——— */
+  .vt-gate-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /* ——— Input fields ——— */
+  .vt-gate-input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid var(--line);
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--ink);
+    background: #fff;
+    transition: border-color 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                box-shadow 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    outline: none;
+  }
+  .vt-gate-input:focus {
+    border-color: var(--ochre);
+    box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.15);
+  }
+  .vt-gate-input::placeholder {
+    color: var(--ink-haze);
+  }
+  .vt-gate-input.error {
+    border-color: #9B3828;
+    box-shadow: 0 0 0 3px rgba(155, 56, 40, 0.12);
+  }
+
+  /* ——— Business type dropdown ——— */
+  .vt-gate-select {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    padding-right: 2.5rem;
+    border: 2px solid var(--line);
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--ink);
+    background: #fff;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%238A8278' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    cursor: pointer;
+    transition: border-color 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                 box-shadow 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    outline: none;
+  }
+  .vt-gate-select:focus {
+    border-color: var(--ochre);
+    box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.15);
+  }
+
+  /* ——— Submit button ——— */
+  .vt-gate-submit {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: var(--ochre);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(184, 116, 61, 0.3);
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .vt-gate-submit:hover:not(:disabled) {
+    background: var(--ochre-deep);
+    box-shadow: 0 4px 20px rgba(184, 116, 61, 0.4);
+    transform: translateY(-1px);
+  }
+  .vt-gate-submit:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 1px 6px rgba(184, 116, 61, 0.2);
+  }
+  .vt-gate-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .vt-gate-submit.loading {
+    pointer-events: none;
+  }
+  .vt-gate-submit .spinner {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: vt-spin 0.6s linear infinite;
+  }
+  .vt-gate-submit.loading .spinner {
+    display: inline-block;
+  }
+  .vt-gate-submit.loading .btn-text {
+    opacity: 0.6;
+  }
+  @keyframes vt-spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* ——— Error message ——— */
+  .vt-gate-error {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8125rem;
+    color: #9B3828;
+    margin-top: 0.25rem;
+    display: none;
+    text-align: left;
+    padding-left: 1.25rem;
+  }
+  .vt-gate-error.visible {
+    display: block;
+  }
+
+  /* ——— Privacy assurance ——— */
+  .vt-gate-privacy {
+    font-size: 0.75rem;
+    color: var(--ink-haze);
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+  .vt-gate-privacy svg {
+    width: 12px;
+    height: 12px;
+    vertical-align: -1px;
+    margin-right: 2px;
+    color: var(--stone-soft);
+  }
+
+  /* ——— Success state ——— */
+  .vt-gate-success {
+    display: none;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .vt-gate-success.visible {
+    display: block;
+    animation: vt-fade-in 0.4s ease;
+  }
+  @keyframes vt-fade-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .vt-gate-success-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--moss);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  .vt-gate-success-icon svg {
+    color: #fff;
+  }
+  .vt-gate-success h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .vt-gate-success p {
+    font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* ——— Responsive ——— */
+  @media (max-width: 480px) {
+    .vt-gate-row {
+      flex-direction: column;
+    }
+    .vt-gate {
+      padding: 2rem 1.25rem;
+    }
+  }
+</style>
+
+<!-- ============================================================ -->
+<!-- HTML                                                          -->
+<!-- ============================================================ -->
+<div class="vt-email-gate" id="vt-email-gate">
+
+  <!-- Pre-submit: the form -->
+  <div id="vt-gate-form-section">
+    <div class="vt-gate-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ochre)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="M22 4L12 13L2 4"/>
+      </svg>
+    </div>
+
+    <div class="vt-gate-cta">Unlock your full diagnostic report</div>
+
+    <h3 class="vt-gate-headline">
+      Get your <em>pillar breakdown</em>, radar chart, and personalized action plan
+    </h3>
+
+    <p class="vt-gate-subtext">
+      See exactly where your gaps are and what it takes to pass the vacation test.
+    </p>
+
+    <form class="vt-gate-form" id="vt-gate-form" novalidate>
+      <!-- Name + Email row -->
+      <div class="vt-gate-row">
+        <input
+          type="text"
+          id="vt-gate-name"
+          class="vt-gate-input"
+          placeholder="First name (optional)"
+          autocomplete="given-name"
+          aria-label="First name"
+        />
+        <input
+          type="email"
+          id="vt-gate-email"
+          class="vt-gate-input"
+          placeholder="you@example.com"
+          required
+          autocomplete="email"
+          aria-label="Email address"
+        />
+      </div>
+
+      <!-- Business type dropdown -->
+      <select id="vt-gate-biztype" class="vt-gate-select" aria-label="Business type">
+        <option value="" disabled selected>What type of business?</option>
+        <option value="coach">Coach / Consultant</option>
+        <option value="agency">Creative / Marketing Agency</option>
+        <option value="freelancer">Freelancer / Solo Operator</option>
+        <option value="other">Other Service Business</option>
+      </select>
+
+      <!-- Email error -->
+      <div class="vt-gate-error" id="vt-gate-email-error">
+        Please enter a valid email address.
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="vt-gate-submit" id="vt-gate-submit">
+        <span class="spinner"></span>
+        <span class="btn-text">Unlock My Results</span>
+      </button>
+    </form>
+
+    <p class="vt-gate-privacy">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      No spam. One email with your results, then we'll let you decide if Arca is right for you.
+    </p>
+  </div>
+
+  <!-- Post-submit: success message (hidden until submit) -->
+  <div class="vt-gate-success" id="vt-gate-success">
+    <div class="vt-gate-success-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <h3>You're in.</h3>
+    <p>Your full diagnostic report is on its way. Check your inbox.</p>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- JS: Form handling, validation, submission                    -->
+<!-- ============================================================ -->
+<script is:inline>
+(function() {
+  'use strict';
+
+  // ── Zapier webhook placeholder (replace with real URL when ready) ──
+  const WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/placeholder/vacation-test-lead/';
+
+  // ── DOM refs ──
+  const form = document.getElementById('vt-gate-form');
+  const emailInput = document.getElementById('vt-gate-email');
+  const nameInput = document.getElementById('vt-gate-name');
+  const biztypeSelect = document.getElementById('vt-gate-biztype');
+  const submitBtn = document.getElementById('vt-gate-submit');
+  const emailError = document.getElementById('vt-gate-email-error');
+  const formSection = document.getElementById('vt-gate-form-section');
+  const successSection = document.getElementById('vt-gate-success');
+
+  // ── Email validation ──
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  // Show/hide error
+  function showEmailError(show) {
+    if (show) {
+      emailInput.classList.add('error');
+      emailError.classList.add('visible');
+    } else {
+      emailInput.classList.remove('error');
+      emailError.classList.remove('visible');
+    }
+  }
+
+  // Clear error on input
+  emailInput.addEventListener('input', function() {
+    if (emailInput.classList.contains('error')) {
+      showEmailError(false);
+    }
+  });
+
+  // ── Form submission ──
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = emailInput.value.trim();
+    const firstName = nameInput.value.trim();
+    const businessType = biztypeSelect.value;
+
+    // Validate email
+    if (!email || !isValidEmail(email)) {
+      showEmailError(true);
+      emailInput.focus();
+      return;
+    }
+
+    showEmailError(false);
+
+    // Get results from parent page (stored by quiz)
+    const storedResults = JSON.parse(localStorage.getItem('vacation-test-results') || '{}');
+
+    // Build lead payload
+    const payload = {
+      email: email,
+      firstName: firstName,
+      businessType: businessType || 'unknown',
+      score: storedResults.score || 0,
+      tier: storedResults.tier || 2,
+      topGap: storedResults.topGap || '',
+      source: 'vacation-test',
+      submittedAt: new Date().toISOString(),
+    };
+
+    // Add pillar scores
+    if (storedResults.pillars) {
+      Object.assign(payload, storedResults.pillars);
+    }
+
+    // Loading state
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    // POST to Zapier webhook (fire and forget, don't block results)
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch(function() {
+      // Fail silently — results are still shown
+    });
+
+    // Store email locally
+    localStorage.setItem('vacation-test-email', email);
+    if (firstName) {
+      localStorage.setItem('vacation-test-name', firstName);
+    }
+    if (businessType) {
+      localStorage.setItem('vacation-test-biztype', businessType);
+    }
+
+    // Mark as submitted
+    localStorage.setItem('vacation-test-submitted', 'true');
+
+    // Transition to success state
+    setTimeout(function() {
+      formSection.style.display = 'none';
+      successSection.classList.add('visible');
+
+      // Reveal full results (call parent page function)
+      if (typeof window.revealFullResults === 'function') {
+        window.revealFullResults();
+      }
+    }, 600); // Brief delay for the loading state to be visible
+  });
+
+  // ── Auto-fill from localStorage if returning ──
+  const savedEmail = localStorage.getItem('vacation-test-email');
+  const savedName = localStorage.getItem('vacation-test-name');
+  const savedBiztype = localStorage.getItem('vacation-test-biztype');
+  const alreadySubmitted = localStorage.getItem('vacation-test-submitted');
+
+  if (savedEmail) {
+    emailInput.value = savedEmail;
+  }
+  if (savedName) {
+    nameInput.value = savedName;
+  }
+  if (savedBiztype && biztypeSelect.querySelector(`option[value="${savedBiztype}"]`)) {
+    biztypeSelect.value = savedBiztype;
+  }
+
+  // If already submitted, auto-reveal results
+  if (alreadySubmitted === 'true') {
+    formSection.style.display = 'none';
+    successSection.classList.add('visible');
+    if (typeof window.revealFullResults === 'function') {
+      window.revealFullResults();
+    }
+  }
+
+  // ── Expose reset function for re-quiz ──
+  window.resetEmailGate = function() {
+    formSection.style.display = 'block';
+    successSection.classList.remove('visible');
+    submitBtn.classList.remove('loading');
+    submitBtn.disabled = false;
+    localStorage.removeItem('vacation-test-submitted');
+    localStorage.removeItem('vacation-test-email');
+    localStorage.removeItem('vacation-test-name');
+    localStorage.removeItem('vacation-test-biztype');
+    localStorage.removeItem('vacation-test-results');
+    emailInput.value = '';
+    nameInput.value = '';
+    biztypeSelect.selectedIndex = 0;
+  };
+})();
+</script>

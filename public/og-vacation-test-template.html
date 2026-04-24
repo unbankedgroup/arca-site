@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vacation Readiness Diagnostic — OG Image Template</title>
+<meta name="description" content="Template for generating dynamic Open Graph images for the Vacation Readiness Diagnostic results.">
+
+<!--
+  OG IMAGE TEMPLATE — Vacation Readiness Diagnostic
+
+  Dimensions: 1200 × 630 (standard OG ratio)
+  Brand: Arca Vellum & Ink system
+  Usage: Render this page at 1200x630 via Puppeteer/Satori/vercel-og
+         and use the screenshot as og:image.
+
+  DYNAMIC VALUES (inject via search params or JS):
+    ?score=47          — composite score (0-100)
+    ?tier=2            — tier number (1-4)
+    ?tierLabel=Partially+Operational  — tier label text
+    ?topGap=Communications  — #1 gap pillar name
+    ?businessType=consultant  — business type for weight context
+
+  DEFAULT (no params): shows the "Partially Operational" example.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #151413;
+    --ink-soft: #3A3632;
+    --vellum: #F4EFE6;
+    --parchment: #E8E0D1;
+    --ochre: #B8743D;
+    --ochre-deep: #8E5628;
+    --moss: #2F4034;
+    --stone: #8A8278;
+    --stone-soft: #B5ADA2;
+
+    --serif: 'Instrument Serif', 'Times New Roman', serif;
+    --display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: var(--vellum);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .og-card {
+    width: 1200px;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  /* ——— Paper grain overlay ——— */
+  .og-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    z-index: 10;
+  }
+
+  /* ——— LEFT: Score + Identity ——— */
+  .og-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 56px 64px 72px;
+    position: relative;
+  }
+
+  .og-left::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 80px;
+    bottom: 80px;
+    width: 1px;
+    background: rgba(21,20,19,0.12);
+  }
+
+  .og-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 16px;
+  }
+
+  .og-score-block {
+    margin-bottom: 20px;
+  }
+
+  .og-score {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+  }
+
+  .og-score-max {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--stone);
+    letter-spacing: -0.02em;
+    margin-left: 4px;
+  }
+
+  .og-tier {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 28px;
+    color: var(--ochre);
+    margin-bottom: 24px;
+  }
+
+  .og-headline {
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1.15;
+    color: var(--ink);
+    max-width: 440px;
+  }
+
+  .og-headline em {
+    font-style: italic;
+    color: var(--ochre);
+  }
+
+  .og-gap {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(21,20,19,0.12);
+  }
+
+  .og-gap-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 6px;
+  }
+
+  .og-gap-value {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--ink);
+  }
+
+  .og-gap-value em {
+    font-style: italic;
+    color: var(--ochre);
+  }
+
+  /* ——— RIGHT: Radar Chart ——— */
+  .og-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 72px 48px 56px;
+    position: relative;
+  }
+
+  .og-radar-wrap {
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+  }
+
+  .og-radar-wrap canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .og-pillars-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .og-pillar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .og-pillar-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .og-pillar-dot.gap {
+    background: var(--ochre);
+  }
+
+  .og-pillar-dot.ok {
+    background: var(--stone-soft);
+  }
+
+  .og-pillar-score {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--stone);
+    margin-left: auto;
+  }
+
+  .og-pillar-score.gap-score {
+    color: var(--ochre-deep);
+    font-weight: 600;
+  }
+
+  /* ——— Footer bar ——— */
+  .og-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 72px;
+    z-index: 5;
+  }
+
+  .og-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .og-footer-logo {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--vellum);
+  }
+
+  .og-footer-mark {
+    width: 24px;
+    height: 24px;
+  }
+
+  .og-footer-url {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--stone-soft);
+  }
+
+  .og-footer-cta {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: var(--ochre);
+    text-transform: none;
+  }
+
+  /* ——— Tier-specific accent colors ——— */
+  .og-card[data-tier="1"] .og-score { color: var(--ink); }
+  .og-card[data-tier="1"] .og-tier { color: var(--ochre-deep); }
+  .og-card[data-tier="2"] .og-score { color: var(--ink); }
+  .og-card[data-tier="2"] .og-tier { color: var(--ochre); }
+  .og-card[data-tier="3"] .og-score { color: var(--moss); }
+  .og-card[data-tier="3"] .og-tier { color: var(--moss); }
+  .og-card[data-tier="4"] .og-score { color: var(--moss); }
+  .og-card[data-tier="4"] .og-tier { color: var(--moss); }
+</style>
+</head>
+<body>
+
+<div class="og-card" id="og-card" data-tier="2">
+  <!-- LEFT: Score + Identity -->
+  <div class="og-left">
+    <div class="og-eyebrow">Vacation Readiness Diagnostic</div>
+    <div class="og-score-block">
+      <span class="og-score" id="og-score">47</span><span class="og-score-max">/100</span>
+    </div>
+    <div class="og-tier" id="og-tier">Partially Operational</div>
+    <div class="og-headline" id="og-headline">
+      Your business runs — but only because <em>you're</em> running it.
+    </div>
+    <div class="og-gap">
+      <div class="og-gap-label">Your #1 gap</div>
+      <div class="og-gap-value" id="og-gap">
+        <em>Communications</em> — inquiries go cold before you see them
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Radar Chart -->
+  <div class="og-right">
+    <div class="og-radar-wrap">
+      <canvas id="radar-canvas" width="440" height="400"></canvas>
+    </div>
+    <div class="og-pillars-list" id="og-pillars-list">
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot gap"></span>
+        <span>Client Delivery</span>
+        <span class="og-pillar-score gap-score" id="score-delivery">50</span>
+      </div>
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot gap"></span>
+        <span>Communications</span>
+        <span class="og-pillar-score gap-score" id="score-comms">33</span>
+      </div>
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot ok"></span>
+        <span>Scheduling</span>
+        <span class="og-pillar-score" id="score-scheduling">67</span>
+      </div>
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot gap"></span>
+        <span>Invoicing</span>
+        <span class="og-pillar-score gap-score" id="score-invoicing">50</span>
+      </div>
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot ok"></span>
+        <span>Lead Generation</span>
+        <span class="og-pillar-score" id="score-leads">67</span>
+      </div>
+      <div class="og-pillar-item">
+        <span class="og-pillar-dot ok"></span>
+        <span>Team Coordination</span>
+        <span class="og-pillar-score" id="score-team">67</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="og-footer">
+    <div class="og-footer-brand">
+      <!-- Arca arch mark (simplified SVG) -->
+      <svg class="og-footer-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 20V11a8 8 0 0 1 16 0v9" stroke="#F4EFE6" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M4 20h16" stroke="#F4EFE6" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="7" y="17" width="3" height="3" fill="#B8743D" rx="0.5"/>
+        <rect x="14" y="17" width="3" height="3" fill="#B8743D" rx="0.5"/>
+      </svg>
+      <span class="og-footer-logo">Arca</span>
+    </div>
+    <span class="og-footer-cta">Take the test &rarr;</span>
+    <span class="og-footer-url">runarca.xyz/vacation-test</span>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// RADAR CHART RENDERER
+// Draws a 6-axis spider/radar chart on the canvas
+// ============================================================
+
+const PILLARS = [
+  { key: 'delivery',    label: 'Delivery',    defaultScore: 50 },
+  { key: 'comms',       label: 'Comms',      defaultScore: 33 },
+  { key: 'scheduling',  label: 'Schedule',   defaultScore: 67 },
+  { key: 'invoicing',   label: 'Invoice',    defaultScore: 50 },
+  { key: 'leads',       label: 'Leads',      defaultScore: 67 },
+  { key: 'team',        label: 'Team',       defaultScore: 67 },
+];
+
+const TIER_CONFIG = {
+  1: { label: 'Business Dependent',      headline: 'Your business can\'t survive a week without you.' },
+  2: { label: 'Partially Operational',    headline: 'Your business runs — but only because <em>you\'re</em> running it.' },
+  3: { label: 'Systematically Strong',   headline: 'Your business can breathe without you — but it holds its breath.' },
+  4: { label: 'Vacation Ready',           headline: 'You pass the vacation test.' },
+};
+
+const GAP_MESSAGES = {
+  delivery:    '<em>Client Delivery</em> — your clients depend on you for every touchpoint',
+  comms:       '<em>Communications</em> — inquiries go cold before you see them',
+  scheduling:  '<em>Scheduling</em> — booking with you requires a game of email ping-pong',
+  invoicing:   '<em>Invoicing</em> — revenue stops flowing the moment you stop sending invoices',
+  leads:       '<em>Lead Generation</em> — you\'re losing leads you never knew you had',
+  team:        '<em>Team Coordination</em> — your team waits for you to tell them what to do',
+};
+
+function parseParams() {
+  const p = new URLSearchParams(window.location.search);
+  return {
+    score:        parseInt(p.get('score')) || 47,
+    tier:         parseInt(p.get('tier')) || 2,
+    tierLabel:    p.get('tierLabel') || null,
+    topGap:       p.get('topGap') || 'comms',
+    businessType: p.get('businessType') || 'consultant',
+    delivery:     parseInt(p.get('delivery'))    || 50,
+    comms:       parseInt(p.get('comms'))        || 33,
+    scheduling:  parseInt(p.get('scheduling'))   || 67,
+    invoicing:   parseInt(p.get('invoicing'))    || 50,
+    leads:       parseInt(p.get('leads'))        || 67,
+    team:         parseInt(p.get('team'))        || 67,
+  };
+}
+
+function drawRadar(scores) {
+  const canvas = document.getElementById('radar-canvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+  const cx = W / 2;
+  const cy = H / 2 - 10;
+  const R = Math.min(W, H) * 0.36;
+
+  // Colors
+  const ink      = '#151413';
+  const ochre    = '#B8743D';
+  const ochre50  = 'rgba(184,116,61,0.25)';
+  const stone    = '#B5ADA2';
+  const stone30  = 'rgba(181,173,162,0.3)';
+  const vellum   = '#F4EFE6';
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Reference circles (20, 40, 60, 80, 100)
+  const levels = [20, 40, 60, 80, 100];
+  levels.forEach(level => {
+    const r = (level / 100) * R;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.strokeStyle = stone30;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  });
+
+  // The 60% threshold circle (gap threshold)
+  const thresholdR = 0.6 * R;
+  ctx.beginPath();
+  ctx.arc(cx, cy, thresholdR, 0, Math.PI * 2);
+  ctx.strokeStyle = ochre;
+  ctx.lineWidth = 1;
+  ctx.setLineDash([4, 4]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Axis lines + labels
+  const n = 6;
+  const angleStep = (Math.PI * 2) / n;
+  const startAngle = -Math.PI / 2; // top
+
+  PILLARS.forEach((pillar, i) => {
+    const angle = startAngle + i * angleStep;
+    const x2 = cx + R * Math.cos(angle);
+    const y2 = cy + R * Math.sin(angle);
+
+    // Axis line
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(x2, y2);
+    ctx.strokeStyle = stone30;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+
+    // Label
+    const labelR = R + 24;
+    const lx = cx + labelR * Math.cos(angle);
+    const ly = cy + labelR * Math.sin(angle);
+    ctx.font = '500 12px Inter, -apple-system, sans-serif';
+    ctx.fillStyle = ink;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Adjust alignment for left/right axes
+    if (Math.cos(angle) < -0.3) ctx.textAlign = 'right';
+    else if (Math.cos(angle) > 0.3) ctx.textAlign = 'left';
+
+    ctx.fillText(pillar.label, lx, ly);
+  });
+
+  // Data polygon
+  const scoreValues = PILLARS.map(p => scores[p.key] / 100);
+  ctx.beginPath();
+  scoreValues.forEach((val, i) => {
+    const angle = startAngle + i * angleStep;
+    const x = cx + val * R * Math.cos(angle);
+    const y = cy + val * R * Math.sin(angle);
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+
+  // Fill
+  ctx.fillStyle = ochre50;
+  ctx.fill();
+
+  // Stroke
+  ctx.strokeStyle = ochre;
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Data points
+  scoreValues.forEach((val, i) => {
+    const angle = startAngle + i * angleStep;
+    const x = cx + val * R * Math.cos(angle);
+    const y = cy + val * R * Math.sin(angle);
+
+    ctx.beginPath();
+    ctx.arc(x, y, 4, 0, Math.PI * 2);
+    ctx.fillStyle = val < 0.6 ? ochre : ink;
+    ctx.fill();
+    ctx.strokeStyle = vellum;
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  });
+
+  // Center score (large)
+  ctx.font = '800 48px "Plus Jakarta Sans", -apple-system, sans-serif';
+  ctx.fillStyle = ink;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(scores.composite || 47, cx, cy - 6);
+
+  ctx.font = '400 11px "Inter", -apple-system, sans-serif';
+  ctx.fillStyle = stone;
+  ctx.fillText('out of 100', cx, cy + 18);
+}
+
+function applyParams(params) {
+  // Score
+  document.getElementById('og-score').textContent = params.score;
+
+  // Tier
+  const tierConfig = TIER_CONFIG[params.tier] || TIER_CONFIG[2];
+  document.getElementById('og-tier').textContent = params.tierLabel || tierConfig.label;
+  document.getElementById('og-headline').innerHTML = tierConfig.headline;
+  document.getElementById('og-card').setAttribute('data-tier', params.tier);
+
+  // Gap
+  const gapMsg = GAP_MESSAGES[params.topGap] || GAP_MESSAGES['comms'];
+  document.getElementById('og-gap').innerHTML = gapMsg;
+
+  // Pillar scores
+  document.getElementById('score-delivery').textContent = params.delivery;
+  document.getElementById('score-comms').textContent = params.comms;
+  document.getElementById('score-scheduling').textContent = params.scheduling;
+  document.getElementById('score-invoicing').textContent = params.invoicing;
+  document.getElementById('score-leads').textContent = params.leads;
+  document.getElementById('score-team').textContent = params.team;
+
+  // Pillar dot classes (gap vs ok)
+  const pillars = document.querySelectorAll('.og-pillar-item');
+  const scores = [params.delivery, params.comms, params.scheduling, params.invoicing, params.leads, params.team];
+  pillars.forEach((item, i) => {
+    const dot = item.querySelector('.og-pillar-dot');
+    const scoreEl = item.querySelector('.og-pillar-score');
+    if (scores[i] < 60) {
+      dot.className = 'og-pillar-dot gap';
+      scoreEl.className = 'og-pillar-score gap-score';
+    } else {
+      dot.className = 'og-pillar-dot ok';
+      scoreEl.className = 'og-pillar-score';
+    }
+  });
+
+  // Draw radar
+  const composite = params.score;
+  drawRadar({
+    delivery: params.delivery,
+    comms: params.comms,
+    scheduling: params.scheduling,
+    invoicing: params.invoicing,
+    leads: params.leads,
+    team: params.team,
+    composite: composite,
+  });
+}
+
+// ============================================================
+// INIT — parse URL params and render
+// ============================================================
+const params = parseParams();
+applyParams(params);
+</script>
+
+</body>
+</html>

@@ -29,10 +29,10 @@ const isStrategy = path.startsWith('/strategy');
 
 		<button
 			class="nav-hamburger"
+			id="nav-hamburger"
 			aria-label="Menu"
 			aria-expanded="false"
 			aria-controls="nav-drawer"
-			onclick="const d=document.getElementById('nav-drawer'); const o=d.classList.toggle('open'); this.setAttribute('aria-expanded', o);"
 		>
 			<span></span><span></span><span></span>
 		</button>
@@ -50,7 +50,10 @@ const isStrategy = path.startsWith('/strategy');
 
 <script>
 	const nav = document.getElementById('site-nav');
+	const hamburger = document.getElementById('nav-hamburger');
+	const drawer = document.getElementById('nav-drawer');
 	let lastScrolled = false;
+
 	function onScroll() {
 		const scrolled = window.scrollY > 8;
 		if (scrolled !== lastScrolled && nav) {
@@ -60,6 +63,13 @@ const isStrategy = path.startsWith('/strategy');
 	}
 	window.addEventListener('scroll', onScroll, { passive: true });
 	onScroll();
+
+	if (hamburger && drawer) {
+		hamburger.addEventListener('click', () => {
+			const isOpen = drawer.classList.toggle('open');
+			hamburger.setAttribute('aria-expanded', String(isOpen));
+		});
+	}
 </script>
 
 <style>

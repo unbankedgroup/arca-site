@@ -1,0 +1,767 @@
+---
+/**
+ * VacationTestResults — Results page component for the Vacation Readiness Diagnostic.
+ *
+ * Renders: score display, tier badge, radar chart, pillar breakdown with
+ * progress bars, personalized action plan, email gate, and social share buttons.
+ *
+ * Brand: Arca Vellum & Ink system (see BRAND-BIBLE.html)
+ * Spec: /root/.openclaw/workspace/arca/vacation-readiness-diagnostic-spec.md
+ */
+---
+
+<!-- ============================================================ -->
+<!-- STYLES                                                        -->
+<!-- ============================================================ -->
+<style>
+  /* ——— Tier badges ——— */
+  .vt-tier-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    border-radius: 100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+  }
+  .vt-tier-badge[data-tier="1"] {
+    background: rgba(184, 116, 61, 0.12);
+    color: #8E5628;
+    border: 1.5px solid rgba(184, 116, 61, 0.3);
+  }
+  .vt-tier-badge[data-tier="2"] {
+    background: rgba(184, 116, 61, 0.1);
+    color: #B8743D;
+    border: 1.5px solid rgba(184, 116, 61, 0.25);
+  }
+  .vt-tier-badge[data-tier="3"] {
+    background: rgba(47, 64, 52, 0.08);
+    color: #2F4034;
+    border: 1.5px solid rgba(47, 64, 52, 0.2);
+  }
+  .vt-tier-badge[data-tier="4"] {
+    background: rgba(47, 64, 52, 0.12);
+    color: #2F4034;
+    border: 1.5px solid rgba(47, 64, 52, 0.25);
+  }
+  .vt-tier-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .vt-tier-badge[data-tier="1"] .vt-tier-dot { background: #8E5628; }
+  .vt-tier-badge[data-tier="2"] .vt-tier-dot { background: #B8743D; }
+  .vt-tier-badge[data-tier="3"] .vt-tier-dot { background: #2F4034; }
+  .vt-tier-badge[data-tier="4"] .vt-tier-dot { background: #2F4034; }
+
+  /* ——— Pillar cards (enhanced) ——— */
+  .vt-pillar-card {
+    background: var(--vellum);
+    border: 1.5px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .vt-pillar-card:hover {
+    border-color: var(--ochre);
+    box-shadow: 0 4px 16px rgba(184, 116, 61, 0.1);
+    transform: translateY(-1px);
+  }
+  .vt-pillar-card.gap {
+    border-color: var(--ochre);
+    background: rgba(184, 116, 61, 0.04);
+  }
+  .vt-pillar-card.gap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--ochre);
+    border-radius: 3px 0 0 3px;
+  }
+  .vt-pillar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+  }
+  .vt-pillar-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--ink);
+  }
+  .vt-pillar-score-label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+  }
+  .vt-pillar-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--ochre);
+  }
+  .vt-pillar-score-max {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--ink-haze);
+  }
+  .vt-pillar-bar {
+    height: 6px;
+    background: var(--line);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+  }
+  .vt-pillar-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: var(--ochre);
+    transition: width 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .vt-pillar-fill.ok {
+    background: var(--moss);
+  }
+  .vt-pillar-desc {
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    margin-top: 0.375rem;
+    line-height: 1.4;
+  }
+  .vt-pillar-card.gap .vt-pillar-desc {
+    color: var(--ochre-deep);
+  }
+
+  /* ——— Share buttons ——— */
+  .vt-share {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  .vt-share-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-haze);
+    margin-bottom: 1rem;
+  }
+  .vt-share-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .vt-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border: 1.5px solid var(--line);
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    background: var(--vellum);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    text-decoration: none;
+    line-height: 1;
+  }
+  .vt-share-btn:hover {
+    border-color: var(--ochre);
+    color: var(--ochre);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(184, 116, 61, 0.15);
+  }
+  .vt-share-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .vt-share-btn.copied {
+    border-color: var(--moss);
+    color: var(--moss);
+    background: rgba(47, 64, 52, 0.06);
+  }
+
+  /* ——— Toast notification ——— */
+  .vt-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--ink);
+    color: var(--vellum);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    box-shadow: 0 8px 32px rgba(21, 20, 19, 0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    pointer-events: none;
+  }
+  .vt-toast.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  /* ——— Score hero (enhanced) ——— */
+  .vt-score-hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .vt-score-number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(4.5rem, 14vw, 8rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+  }
+  .vt-score-number[data-tier="3"],
+  .vt-score-number[data-tier="4"] {
+    color: var(--moss);
+  }
+  .vt-score-of {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8125rem;
+    color: var(--ink-haze);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .vt-score-tagline {
+    font-family: 'Instrument Serif', 'Times New Roman', Georgia, serif;
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    max-width: 480px;
+    margin: 0.75rem auto 0;
+  }
+
+  /* ——— Chart wrapper ——— */
+  .vt-chart-wrap {
+    background: #fff;
+    border: 1.5px solid var(--line);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  .vt-chart-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ochre);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .vt-chart-canvas {
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
+  }
+  .vt-chart-threshold {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    color: var(--stone-soft);
+    letter-spacing: 0.06em;
+  }
+
+  /* ——— Action plan (enhanced) ——— */
+  .vt-action-plan {
+    background: var(--ink);
+    color: var(--vellum);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .vt-action-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #E0A76F;
+    margin-bottom: 0.75rem;
+  }
+  .vt-action-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--vellum);
+    margin-bottom: 1.5rem;
+  }
+  .vt-action-headline em {
+    font-style: italic;
+    color: #E0A76F;
+  }
+  .vt-action-step {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(244, 239, 230, 0.08);
+  }
+  .vt-action-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .vt-action-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #E0A76F;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .vt-action-step h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--vellum);
+    margin-bottom: 0.25rem;
+  }
+  .vt-action-step p {
+    font-size: 0.875rem;
+    color: rgba(244, 239, 230, 0.65);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .vt-action-timeline {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(244, 239, 230, 0.12);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: rgba(244, 239, 230, 0.45);
+    letter-spacing: 0.04em;
+  }
+
+  /* ——— Responsive ——— */
+  @media (max-width: 640px) {
+    .vt-pillars { grid-template-columns: 1fr; }
+    .vt-share-links { flex-direction: column; align-items: stretch; }
+    .vt-share-btn { justify-content: center; }
+  }
+</style>
+
+<!-- ============================================================ -->
+<!-- HTML: Results section                                         -->
+<!-- ============================================================ -->
+<fragment id="vacation-test-results-fragment">
+  <!-- Score hero -->
+  <div class="vt-score-hero" id="results-hero">
+    <div class="vt-tier-badge" id="results-tier-badge" data-tier="2">
+      <span class="vt-tier-dot"></span>
+      <span id="results-tier-label">Partially Operational</span>
+    </div>
+    <div class="vt-score-of">Your Vacation Readiness Score</div>
+    <div class="vt-score-number" id="results-score" data-tier="2">0</div>
+    <div class="vt-score-of">out of 100</div>
+    <div class="vt-score-tagline" id="results-tagline">Calculating...</div>
+  </div>
+
+  <!-- Radar chart -->
+  <div class="vt-chart-wrap" id="results-chart-wrap">
+    <div class="vt-chart-title">Your Operations Profile</div>
+    <canvas class="vt-chart-canvas" id="results-radar-chart" width="420" height="420"></canvas>
+    <div class="vt-chart-threshold">60 = gap threshold</div>
+  </div>
+
+  <!-- Pillar breakdown -->
+  <div class="vt-pillars" id="results-pillars">
+    <div class="vt-pillar-card" data-pillar="delivery">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Client Delivery</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-delivery">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-delivery" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-delivery">Can your service run without you?</div>
+    </div>
+
+    <div class="vt-pillar-card" data-pillar="comms">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Communications</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-comms">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-comms" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-comms">Do clients get timely responses without you?</div>
+    </div>
+
+    <div class="vt-pillar-card" data-pillar="scheduling">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Scheduling</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-scheduling">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-scheduling" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-scheduling">Can appointments book and confirm without you?</div>
+    </div>
+
+    <div class="vt-pillar-card" data-pillar="invoicing">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Invoicing</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-invoicing">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-invoicing" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-invoicing">Does money flow whether you're watching or not?</div>
+    </div>
+
+    <div class="vt-pillar-card" data-pillar="leads">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Lead Generation</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-leads">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-leads" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-leads">Do new prospects get engaged within minutes?</div>
+    </div>
+
+    <div class="vt-pillar-card" data-pillar="team">
+      <div class="vt-pillar-header">
+        <span class="vt-pillar-name">Team Coordination</span>
+        <div class="vt-pillar-score-label">
+          <span class="vt-pillar-score" id="results-score-team">0</span>
+          <span class="vt-pillar-score-max">/100</span>
+        </div>
+      </div>
+      <div class="vt-pillar-bar"><div class="vt-pillar-fill" id="results-bar-team" style="width:0%"></div></div>
+      <div class="vt-pillar-desc" id="results-desc-team">Can contractors operate from systems, not your instructions?</div>
+    </div>
+  </div>
+
+  <!-- Action plan (behind email gate) -->
+  <div class="vt-action-plan" id="results-action-plan" style="display:none;">
+    <div class="vt-action-title">Your Personalized Action Plan</div>
+    <div class="vt-action-headline" id="results-action-headline">Your #1 gap is <em>Communications</em>. Arca fixes it in 30 days.</div>
+    <div id="results-action-steps"></div>
+    <div class="vt-action-timeline">Arca can close your #1 gap in under 30 days.</div>
+  </div>
+
+  <!-- Share buttons -->
+  <div class="vt-share" id="results-share" style="display:none;">
+    <div class="vt-share-label">Share your score</div>
+    <div class="vt-share-links">
+      <a class="vt-share-btn" id="share-x" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Post on X
+      </a>
+      <a class="vt-share-btn" id="share-linkedin" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        Share on LinkedIn
+      </a>
+      <button class="vt-share-btn" id="share-copy" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Copy Link
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="vt-toast" id="results-toast">Link copied to clipboard</div>
+</fragment>
+
+<!-- ============================================================ -->
+<!-- JS: Results rendering, share, toast                          -->
+<!-- ============================================================ -->
+<script is:inline>
+(function() {
+  'use strict';
+
+  // ── Tier config (from spec §5) ──
+  const TIERS = {
+    1: { label: 'Business Dependent', headline: "Your business can't survive a week without you.", tagline: 'You are the business. Every process, every response, every invoice runs through you. The good news: you have the most room to grow.' },
+    2: { label: 'Partially Operational', headline: "Your business runs — but only because you're running it.", tagline: "You've built some systems, but they still need you to function. You're closer than you think to real freedom." },
+    3: { label: 'Systematically Strong', headline: "Your business can breathe without you — but it holds its breath.", tagline: "You've got solid foundations. A few key gaps are all that stand between you and a real vacation." },
+    4: { label: 'Vacation Ready', headline: 'You pass the vacation test.', tagline: 'Your business runs whether you\'re watching or not. You built it right. Now protect it.' },
+  };
+
+  // ── Pillar config (from spec §2 & §6) ──
+  const PILLARS = [
+    { id: 'delivery',   label: 'Client Delivery',   desc: 'Can your service run without your direct involvement?', gap: 'Your clients depend on you for every touchpoint.', fix: 'Arca automates follow-ups, session reminders, and check-ins — so your clients feel supported even when you\'re not in the room.', feature: 'Client Delivery' },
+    { id: 'comms',      label: 'Communications',    desc: 'Do clients get timely responses even when you\'re away?', gap: 'Inquiries go cold before you see them.', fix: 'Arca responds to every lead in under 2 minutes, triages urgency, and routes what matters to you.', feature: 'Communications' },
+    { id: 'scheduling', label: 'Scheduling',        desc: 'Can appointments be booked, changed, and confirmed without you?', gap: 'Booking with you requires a game of email ping-pong.', fix: 'Arca gives prospects and clients self-serve scheduling that confirms, reminds, and reschedules without you.', feature: 'Scheduling' },
+    { id: 'invoicing',  label: 'Invoicing',         desc: 'Does money flow whether you\'re watching or not?', gap: 'Revenue stops flowing the moment you stop sending invoices.', fix: 'Arca generates, sends, and follows up on invoices on schedule. You get paid whether you\'re watching or not.', feature: 'Invoicing' },
+    { id: 'leads',       label: 'Lead Generation',   desc: 'Do new prospects get engaged within minutes, not days?', gap: 'You\'re losing leads you never knew you had.', fix: 'Arca captures every inquiry, responds instantly, and follows up automatically — turning more prospects into conversations.', feature: 'Lead Generation' },
+    { id: 'team',       label: 'Team Coordination',  desc: 'Can contractors/staff operate from systems, not your instructions?', gap: 'Your team waits for you to tell them what to do.', fix: 'Arca assigns tasks, tracks progress, and sends you a summary — so your team works from systems, not your instructions.', feature: 'Team Coordination' },
+  ];
+
+  // ── Weighted scoring (from spec §4) ──
+  const WEIGHTS = {
+    coach:      { delivery: 0.20, comms: 0.20, scheduling: 0.20, invoicing: 0.10, leads: 0.15, team: 0.10 },
+    consultant: { delivery: 0.15, comms: 0.20, scheduling: 0.10, invoicing: 0.15, leads: 0.25, team: 0.10 },
+    agency:     { delivery: 0.20, comms: 0.15, scheduling: 0.15, invoicing: 0.10, leads: 0.20, team: 0.15 },
+    other:      { delivery: 0.18, comms: 0.18, scheduling: 0.18, invoicing: 0.14, leads: 0.18, team: 0.14 },
+  };
+  const DEFAULT_WEIGHTS = { delivery: 0.18, comms: 0.18, scheduling: 0.18, invoicing: 0.14, leads: 0.18, team: 0.14 };
+
+  // ── State (populated by parent page) ──
+  let _scores = {};
+  let _totalScore = 0;
+  let _tier = 2;
+  let _worstPillar = 'comms';
+  let _vertical = 'consultant';
+
+  // ── Expose render function globally ──
+  window.renderResults = function(scores, vertical) {
+    _scores = scores;
+    _vertical = vertical || 'consultant';
+    const weights = WEIGHTS[_vertical] || DEFAULT_WEIGHTS;
+
+    // Weighted composite
+    let composite = 0;
+    for (const [pillar, weight] of Object.entries(weights)) {
+      composite += (scores[pillar] || 0) * weight;
+    }
+
+    // Bonus modifiers (Q14, Q15) — handled by parent page
+    _totalScore = Math.max(0, Math.min(100, Math.round(composite)));
+
+    // Determine tier
+    if (_totalScore <= 24) _tier = 1;
+    else if (_totalScore <= 49) _tier = 2;
+    else if (_totalScore <= 74) _tier = 3;
+    else _tier = 4;
+
+    // Find gaps (pillars below 60)
+    const gaps = PILLARS
+      .map(p => ({ id: p.id, score: scores[p.id] || 0 }))
+      .filter(p => p.score < 60)
+      .sort((a, b) => a.score - b.score);
+
+    _worstPillar = gaps.length > 0 ? gaps[0].id : 'delivery';
+
+    renderScoreHero();
+    renderPillarBreakdown(gaps);
+    renderActionPlan(gaps);
+    renderShareLinks();
+	    // Action plan + share section revealed after email gate via window.revealFullResults()
+  };
+
+  // Allow parent to set final score (including Q14/Q15 modifiers)
+  window.setFinalScore = function(score) {
+    _totalScore = Math.max(0, Math.min(100, score));
+    if (_totalScore <= 24) _tier = 1;
+    else if (_totalScore <= 49) _tier = 2;
+    else if (_totalScore <= 74) _tier = 3;
+    else _tier = 4;
+    renderScoreHero();
+  };
+
+  // Allow parent to reveal action plan + share after email gate
+  window.revealFullResults = function() {
+    document.getElementById('results-action-plan').style.display = 'block';
+    document.getElementById('results-share').style.display = 'block';
+  };
+
+  // ── Render: Score hero ──
+  function renderScoreHero() {
+    const tier = TIERS[_tier];
+    const scoreEl = document.getElementById('results-score');
+    const badgeEl = document.getElementById('results-tier-badge');
+    const taglineEl = document.getElementById('results-tagline');
+
+    badgeEl.setAttribute('data-tier', _tier);
+    document.getElementById('results-tier-label').textContent = tier.label;
+    scoreEl.setAttribute('data-tier', _tier);
+    taglineEl.textContent = tier.tagline;
+
+    animateNumber(scoreEl, 0, _totalScore, 900);
+  }
+
+  // ── Render: Pillar breakdown ──
+  function renderPillarBreakdown(gaps) {
+    const gapIds = gaps.map(g => g.id);
+
+    PILLARS.forEach(p => {
+      const score = _scores[p.id] || 0;
+      const card = document.querySelector(`[data-pillar="${p.id}"]`);
+      const scoreEl = document.getElementById(`results-score-${p.id}`);
+      const barEl = document.getElementById(`results-bar-${p.id}`);
+      const descEl = document.getElementById(`results-desc-${p.id}`);
+
+      scoreEl.textContent = score;
+      descEl.textContent = p.desc;
+
+      if (gapIds.includes(p.id)) {
+        card.classList.add('gap');
+        barEl.classList.remove('ok');
+      } else {
+        card.classList.remove('gap');
+        barEl.classList.add('ok');
+      }
+
+      // Animate bar
+      setTimeout(() => {
+        barEl.style.width = `${score}%`;
+      }, 100);
+    });
+  }
+
+  // ── Render: Action plan ──
+  function renderActionPlan(gaps) {
+    const worst = PILLARS.find(p => p.id === _worstPillar);
+    if (!worst) return;
+
+    document.getElementById('results-action-headline').innerHTML =
+      `Your #1 gap is <em>${worst.gap.replace(/^Your /, '').replace(/^/, '')}</em> Arca fixes it in 30 days.`;
+
+    // Build top 3 gap steps
+    const stepsEl = document.getElementById('results-action-steps');
+    stepsEl.innerHTML = '';
+
+    const topGaps = gaps.slice(0, 3);
+    topGaps.forEach((g, i) => {
+      const pillar = PILLARS.find(p => p.id === g.id);
+      if (!pillar) return;
+      stepsEl.innerHTML += `
+        <div class="vt-action-step">
+          <div class="vt-action-num">${i + 1}</div>
+          <div>
+            <h4>${pillar.feature} — ${pillar.gap}</h4>
+            <p>${pillar.fix}</p>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  // ── Render: Share links ──
+  function renderShareLinks() {
+    const url = 'https://runarca.xyz/vacation-test';
+    const worst = PILLARS.find(p => p.id === _worstPillar);
+    const pillarLabel = worst ? worst.label : 'Operations';
+
+    // X/Twitter — from spec §7
+    const xText = `I scored ${_totalScore}/100 on the Vacation Readiness Test. Can your business survive two weeks without you? \u2192 ${url}`;
+    document.getElementById('share-x').href =
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(xText)}`;
+
+    // LinkedIn — from spec §7
+    const liText = `Most service business owners can't take a real vacation. I scored ${_totalScore}/100 on the Vacation Readiness Diagnostic. The #1 gap? ${pillarLabel}. Take the test \u2192`;
+    document.getElementById('share-linkedin').href =
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&summary=${encodeURIComponent(liText)}`;
+
+    // Copy link button
+    document.getElementById('share-copy').onclick = function(e) {
+      e.preventDefault();
+      copyToClipboard(url);
+    };
+  }
+
+  function showShareSection() {
+    document.getElementById('results-action-plan').style.display = 'block';
+    document.getElementById('results-share').style.display = 'block';
+  }
+
+  // ── Toast notification ──
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        showCopySuccess();
+      }).catch(() => {
+        fallbackCopy(text);
+      });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      showCopySuccess();
+    } catch (e) {
+      showToast('Could not copy — please copy the URL manually');
+    }
+    document.body.removeChild(textarea);
+  }
+
+  function showCopySuccess() {
+    const btn = document.getElementById('share-copy');
+    const original = btn.innerHTML;
+    btn.classList.add('copied');
+    btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+
+    showToast('Link copied to clipboard');
+
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.classList.remove('copied');
+    }, 2500);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('results-toast');
+    toast.textContent = message;
+    toast.classList.add('visible');
+    setTimeout(() => {
+      toast.classList.remove('visible');
+    }, 3000);
+  }
+
+  // ── Number animation ──
+  function animateNumber(el, from, to, duration) {
+    const start = performance.now();
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(from + (to - from) * eased);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+})();
+</script>

@@ -88,7 +88,7 @@ const collectionSchema = {
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(collectionSchema).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<Header />
@@ -216,7 +216,7 @@ const collectionSchema = {
 				<section class="inline-newsletter" style="margin: 5rem 0;">
 					<h4>Get the next playbook</h4>
 					<p>One operations deep-dive a week. No spam, just the stuff we'd tell a friend over coffee.</p>
-					<form action="/#waitlist" method="get">
+					<form action="https://formspree.io/f/xnqevwdr" method="POST">
 						<input type="email" name="email" placeholder="you@example.com" required />
 						<button type="submit">Subscribe</button>
 					</form>
