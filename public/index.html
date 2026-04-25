@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arca: Run your business in one chat | runarca.xyz</title>
   <meta name="description" content="Arca runs your operations from a single chat using the CLOSED framework. Scheduling, invoicing, onboarding, follow-ups. No dashboards. No CRMs. Live in 7 days. From $99/mo.">
-  <meta name="theme-color" content="#151413">
+  <meta name="theme-color" content="#1A1A2E">
   <link rel="canonical" href="https://runarca.xyz">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
@@ -106,6 +106,30 @@
           "@type": "Answer",
           "text": "No contracts. Month-to-month. Cancel anytime. 30-day money-back on your first month."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the CLOSED Framework?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CLOSED stands for Capture, Log, Orchestrate, Scan, Execute, Document. It's the operating loop Arca runs on every cycle. Each pass, your operations get sharper because the system learns from what worked and what didn't."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Arca different from Zapier or Make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zapier and Make connect apps together. Arca runs your operations end-to-end. Instead of building automations yourself, Arca captures your workflows, orchestrates them, and learns from every cycle. No setup required — we build it for you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to set up anything?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. We build your Arca for you. After a 30-minute diagnosis call, our team wires up your scheduling, invoicing, onboarding, and follow-ups. You wake up to your first morning brief on day 7."
+        }
       }
     ]
   }
@@ -113,37 +137,41 @@
 
   <style>
     /* =========================================================
-       TOKENS: Arca v2 (lean, minimalist, modern SaaS)
+       TOKENS: Arca Brand System
+       Navy + Paper + Brass + Mist
        ========================================================= */
     :root {
-      /* Vellum & Ink — canonical Arca palette. See /BRAND-BIBLE.html, Ch. III. */
-      --ink:         #151413;
-      --ink-soft:    #3A3632;
-      --ink-muted:   #55504A;
-      --ink-haze:    #8A8278;
-      --paper:       #F4EFE6;   /* Vellum — dominant ground */
-      --paper-2:     #E8E0D1;   /* Parchment — alt surface */
-      --line:        #D9CFBB;
-      --line-soft:   #E8E0D1;
-      --amber:       #B8743D;   /* Ochre — the only accent */
-      --amber-deep:  #8E5628;
-      --amber-wash:  #F6E9D5;
-      --sage:        #2F4034;   /* Moss — dark secondary */
-      --sage-wash:   #DAE2DC;
-      --vellum:      var(--paper);
-      --parchment:   var(--paper-2);
-      --ochre:       var(--amber);
-      --moss:        var(--sage);
-      --stone:       #8A8278;
-      --shadow-xs:   0 1px 2px rgba(21, 20, 19, 0.04);
-      --shadow-sm:   0 2px 6px rgba(21, 20, 19, 0.05);
-      --shadow:      0 8px 24px rgba(21, 20, 19, 0.06);
-      --shadow-lg:   0 24px 64px rgba(21, 20, 19, 0.12);
+      --navy:        #1A1A2E;
+      --navy-light:  #2A2A42;
+      --navy-soft:   #3D3D58;
+      --ink:         #1A1A2E;
+      --ink-soft:    #3D3D58;
+      --ink-muted:   #6B6B80;
+      --ink-haze:    #9090A3;
+      --paper:       #FAFAF8;
+      --paper-2:     #F0F0EC;
+      --mist:        #E6EAF0;
+      --mist-deep:   #D8DEE8;
+      --line:        #D8DAE0;
+      --line-soft:   #E8EAF0;
+      --brass:       #C9A76A;
+      --brass-deep:  #A8854A;
+      --brass-wash:  #F5EFE0;
+      --brass-glow:  rgba(201, 167, 106, 0.12);
+      --sage:        #2F6B4A;
+      --sage-wash:   #E0EDE6;
+
+      --shadow-xs:   0 1px 2px rgba(26, 26, 46, 0.04);
+      --shadow-sm:   0 2px 8px rgba(26, 26, 46, 0.05);
+      --shadow:      0 8px 24px rgba(26, 26, 46, 0.06);
+      --shadow-lg:   0 24px 64px rgba(26, 26, 46, 0.10);
+      --shadow-card: 0 1px 3px rgba(26, 26, 46, 0.04), 0 6px 16px rgba(26, 26, 46, 0.04);
+
       --r-sm: 6px;
       --r:    10px;
-      --r-lg: 16px;
-      --r-xl: 24px;
-      --w: 1180px;
+      --r-lg: 14px;
+      --r-xl: 20px;
+      --w: 1140px;
       --w-prose: 680px;
       --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
     }
@@ -152,88 +180,90 @@
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-size-adjust: 100%; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-      font-size: 16.5px;
-      line-height: 1.55;
+      font-size: 16px;
+      line-height: 1.6;
       color: var(--ink-soft);
       background: var(--paper);
       overflow-x: clip;
-      letter-spacing: -0.005em;
+      letter-spacing: -0.006em;
     }
     img, svg { display: block; max-width: 100%; height: auto; }
     a { color: inherit; text-decoration: none; }
     button { cursor: pointer; font: inherit; border: 0; background: 0; }
-    ::selection { background: var(--amber-wash); color: var(--ink); }
+    ::selection { background: var(--brass-wash); color: var(--ink); }
 
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
       color: var(--ink);
       letter-spacing: -0.025em;
-      line-height: 1.08;
+      line-height: 1.1;
       font-weight: 700;
     }
-    h1 { font-weight: 800; font-size: clamp(2.5rem, 5.6vw, 4.5rem); letter-spacing: -0.035em; }
-    h2 { font-size: clamp(1.875rem, 3.6vw, 2.875rem); letter-spacing: -0.03em; }
-    h3 { font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.2; }
+    h1 { font-weight: 800; font-size: clamp(2.5rem, 5.6vw, 4.25rem); letter-spacing: -0.035em; line-height: 1.05; }
+    h2 { font-size: clamp(1.75rem, 3.4vw, 2.625rem); letter-spacing: -0.03em; line-height: 1.12; }
+    h3 { font-size: clamp(1.15rem, 2vw, 1.375rem); line-height: 1.25; }
     h4 { font-size: 1.0625rem; font-weight: 600; line-height: 1.3; }
     p { max-width: 60ch; }
 
     .wrap { width: 100%; max-width: var(--w); margin: 0 auto; padding: 0 1.5rem; }
-    .pad { padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
-    .pad-sm { padding: clamp(3rem, 6vw, 5rem) 0; }
+    .section { padding: clamp(5rem, 10vw, 8rem) 0; }
+    .section-sm { padding: clamp(3.5rem, 7vw, 5.5rem) 0; }
 
+    /* ---- BUTTONS ---- */
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
       font-family: 'Inter', sans-serif;
-      font-weight: 600; font-size: 0.95rem;
-      line-height: 1; padding: 0.85rem 1.35rem;
-      border-radius: 6px;
-      transition: transform 0.2s var(--ease), background 0.2s var(--ease), box-shadow 0.2s var(--ease), color 0.2s var(--ease);
+      font-weight: 600; font-size: 0.9375rem;
+      line-height: 1; padding: 0.8125rem 1.375rem;
+      border-radius: 8px;
+      transition: all 0.2s var(--ease);
       white-space: nowrap;
     }
     .btn-primary {
-      background: var(--ink); color: var(--paper);
-      box-shadow: inset 0 0 0 1px var(--ink), 0 1px 2px rgba(21,20,19,0.15);
+      background: var(--navy); color: var(--paper);
+      box-shadow: 0 1px 2px rgba(26,26,46,0.15), 0 0 0 1px rgba(26,26,46,0.08);
     }
-    .btn-primary:hover { background: #050503; transform: translateY(-1px); }
+    .btn-primary:hover { background: #12122a; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(26,26,46,0.18), 0 0 0 1px rgba(26,26,46,0.12); }
     .btn-primary .arrow { transition: transform 0.2s var(--ease); }
     .btn-primary:hover .arrow { transform: translateX(3px); }
     .btn-ghost {
       background: transparent; color: var(--ink);
       box-shadow: inset 0 0 0 1px var(--line);
     }
-    .btn-ghost:hover { box-shadow: inset 0 0 0 1px var(--ink); background: var(--paper-2); }
-    .btn-amber {
-      background: var(--amber); color: #fff;
-      box-shadow: 0 1px 2px rgba(142,86,40,0.25);
+    .btn-ghost:hover { box-shadow: inset 0 0 0 1px var(--ink-muted); background: var(--mist); }
+    .btn-brass {
+      background: var(--brass); color: #fff;
+      box-shadow: 0 1px 3px rgba(168,133,74,0.3);
     }
-    .btn-amber:hover { background: var(--amber-deep); transform: translateY(-1px); }
+    .btn-brass:hover { background: var(--brass-deep); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(168,133,74,0.25); }
 
+    /* ---- EYEBROW ---- */
     .eyebrow {
       display: inline-flex; align-items: center; gap: 0.5rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem; text-transform: uppercase;
-      letter-spacing: 0.16em; font-weight: 500;
+      font-size: 0.6875rem; text-transform: uppercase;
+      letter-spacing: 0.14em; font-weight: 500;
       color: var(--ink-muted);
     }
     .eyebrow::before {
       content: ''; width: 6px; height: 6px; border-radius: 50%;
-      background: var(--amber);
+      background: var(--brass);
     }
     .eyebrow.no-dot::before { display: none; }
 
-    /* NAV */
+    /* ---- NAV ---- */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 0.75rem 0;
-      background: rgba(244, 239, 230, 0.72);
-      backdrop-filter: saturate(180%) blur(14px);
-      -webkit-backdrop-filter: saturate(180%) blur(14px);
+      padding: 0.625rem 0;
+      background: rgba(250, 250, 248, 0.72);
+      backdrop-filter: saturate(180%) blur(16px);
+      -webkit-backdrop-filter: saturate(180%) blur(16px);
       border-bottom: 1px solid transparent;
       transition: border-color 0.3s ease, background 0.3s ease;
     }
     .nav.scrolled {
-      background: rgba(244, 239, 230, 0.88);
+      background: rgba(250, 250, 248, 0.92);
       border-bottom-color: var(--line-soft);
     }
     .nav-row {
@@ -241,16 +271,16 @@
       max-width: var(--w); margin: 0 auto; padding: 0 1.5rem;
     }
     .brand {
-      display: inline-flex; align-items: center; gap: 0.55rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
       font-family: 'Instrument Serif', 'Times New Roman', serif;
       font-style: italic; font-weight: 400;
-      font-size: 1.6rem; line-height: 1;
+      font-size: 1.5rem; line-height: 1;
       color: var(--ink); letter-spacing: -0.03em;
     }
     .brand-mark { flex-shrink: 0; display: inline-block; }
     .nav-links {
       display: flex; align-items: center; gap: 1.75rem;
-      font-size: 0.9rem; color: var(--ink-muted);
+      font-size: 0.875rem; color: var(--ink-muted);
       font-weight: 500;
     }
     .nav-links a { transition: color 0.2s ease; }
@@ -286,74 +316,80 @@
     }
     .nav-mobile-body .btn { margin-top: 1.5rem; justify-content: center; width: 100%; padding: 1rem; font-size: 1rem; }
 
-    /* HERO — centered, pill, modern but restrained. Italic serif em
-       remains the one editorial accent in the headline. */
+    /* ---- HERO ---- */
     .hero {
-      padding: clamp(7.5rem, 14vw, 10rem) 0 clamp(3rem, 5vw, 5rem);
+      padding: clamp(8rem, 15vw, 11rem) 0 clamp(3rem, 5vw, 5rem);
       position: relative; overflow: hidden;
     }
     .hero::before {
       content: '';
-      position: absolute; top: 0; right: -200px;
-      width: 720px; height: 720px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(184, 116, 61, 0.12), transparent 60%);
-      filter: blur(20px); pointer-events: none; z-index: 0;
+      position: absolute; top: -100px; right: -200px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, var(--brass-glow), transparent 65%);
+      filter: blur(40px); pointer-events: none; z-index: 0;
     }
-    .hero-inner { position: relative; z-index: 1; text-align: center; max-width: 900px; margin: 0 auto; }
+    .hero::after {
+      content: '';
+      position: absolute; bottom: -100px; left: -150px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(230, 234, 240, 0.4), transparent 65%);
+      filter: blur(50px); pointer-events: none; z-index: 0;
+    }
+    .hero-inner { position: relative; z-index: 1; text-align: center; max-width: 860px; margin: 0 auto; }
     .hero-pill {
-      display: inline-flex; align-items: center; gap: 0.55rem;
-      padding: 0.4rem 0.9rem 0.4rem 0.45rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.35rem 0.85rem 0.35rem 0.4rem;
       border-radius: 999px; background: var(--paper-2);
-      box-shadow: inset 0 0 0 1px var(--line);
+      border: 1px solid var(--line);
       font-size: 0.78rem; color: var(--ink-muted);
-      margin-bottom: 1.75rem;
+      margin-bottom: 2rem;
     }
     .hero-pill .tag {
-      display: inline-block; padding: 0.2rem 0.55rem;
-      background: var(--ink); color: var(--paper);
+      display: inline-block; padding: 0.15rem 0.5rem;
+      background: var(--navy); color: var(--paper);
       border-radius: 999px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65rem; font-weight: 600;
+      font-size: 0.625rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.1em;
     }
     .hero-pill strong { color: var(--ink); font-weight: 600; }
-    .hero-pill .arrow { color: var(--amber); font-weight: 700; }
-    .hero h1 { margin-bottom: 1.5rem; max-width: 14ch; margin-left: auto; margin-right: auto; }
-    /* Accent word — color only. Ochre is precious; used sparingly. */
+    .hero-pill .arrow { color: var(--brass); font-weight: 700; }
+    .hero h1 { margin-bottom: 1.75rem; max-width: 14ch; margin-left: auto; margin-right: auto; }
     .hero h1 em {
       font-style: normal;
-      color: var(--ochre);
+      color: var(--brass);
     }
     .hero-sub {
-      font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
-      line-height: 1.55; color: var(--ink-muted);
-      max-width: 52ch; margin: 0 auto 2.5rem;
+      font-size: clamp(1.0625rem, 1.7vw, 1.1875rem);
+      line-height: 1.6; color: var(--ink-muted);
+      max-width: 48ch; margin: 0 auto 2.5rem;
     }
+    .hero-sub strong { color: var(--ink); font-weight: 600; }
     .hero-ctas {
       display: inline-flex; align-items: center; gap: 0.75rem;
       flex-wrap: wrap; justify-content: center;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
     .hero-micro {
       display: flex; align-items: center; justify-content: center;
       gap: 1.25rem; flex-wrap: wrap;
-      font-size: 0.82rem; color: var(--ink-haze);
+      font-size: 0.8rem; color: var(--ink-haze);
     }
     .hero-micro span { display: inline-flex; align-items: center; gap: 0.35rem; }
     .hero-micro svg { width: 14px; height: 14px; color: var(--sage); }
 
-    .hero-preview { margin: clamp(3rem, 6vw, 5rem) auto 0; max-width: 1040px; position: relative; }
+    .hero-preview { margin: clamp(3.5rem, 7vw, 5.5rem) auto 0; max-width: 1020px; position: relative; }
     .preview-frame {
       background: #fff;
       border-radius: var(--r-xl);
       border: 1px solid var(--line);
       overflow: hidden;
-      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(21,20,19,0.02);
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(26,26,46,0.02);
     }
     .preview-bar {
       display: flex; align-items: center; gap: 0.5rem;
-      padding: 0.6rem 1rem;
-      background: linear-gradient(to bottom, #FAFAF7, #F4F0E8);
+      padding: 0.55rem 1rem;
+      background: linear-gradient(to bottom, var(--paper), var(--paper-2));
       border-bottom: 1px solid var(--line-soft);
     }
     .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
@@ -363,12 +399,12 @@
     .preview-bar .url {
       margin-left: 0.75rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem; color: var(--ink-haze);
+      font-size: 0.7rem; color: var(--ink-haze);
     }
     .preview-body {
       display: grid;
-      grid-template-columns: 220px 1fr 280px;
-      min-height: 520px;
+      grid-template-columns: 210px 1fr 270px;
+      min-height: 500px;
     }
     @media (max-width: 900px) {
       .preview-body { grid-template-columns: 1fr; }
@@ -387,21 +423,21 @@
     }
     .preview-side .ps-label {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.62rem; text-transform: uppercase;
+      font-size: 0.6rem; text-transform: uppercase;
       letter-spacing: 0.1em; color: var(--ink-haze);
       margin: 1.25rem 0 0.5rem;
     }
     .preview-side .ps-item {
-      display: flex; align-items: center; gap: 0.55rem;
-      padding: 0.5rem 0.65rem; border-radius: var(--r-sm);
-      font-size: 0.85rem; color: var(--ink-muted);
-      margin-bottom: 0.2rem;
+      display: flex; align-items: center; gap: 0.5rem;
+      padding: 0.45rem 0.6rem; border-radius: var(--r-sm);
+      font-size: 0.835rem; color: var(--ink-muted);
+      margin-bottom: 0.15rem;
     }
-    .preview-side .ps-item.active { background: var(--paper-2); color: var(--ink); font-weight: 600; }
+    .preview-side .ps-item.active { background: var(--mist); color: var(--ink); font-weight: 600; }
     .preview-side .ps-item .ps-bullet {
       width: 6px; height: 6px; border-radius: 50%; background: var(--line);
     }
-    .preview-side .ps-item.active .ps-bullet { background: var(--amber); }
+    .preview-side .ps-item.active .ps-bullet { background: var(--brass); }
 
     .preview-main { padding: 1.5rem 1.75rem; background: #fff; }
     .preview-main h4 {
@@ -412,7 +448,7 @@
     .preview-main .pm-sub { font-size: 0.78rem; color: var(--ink-haze); margin-bottom: 1.25rem; }
     .pm-row {
       display: flex; align-items: center; gap: 0.75rem;
-      padding: 0.85rem 0.5rem;
+      padding: 0.8rem 0.5rem;
       border-bottom: 1px solid var(--line-soft);
     }
     .pm-row:last-child { border-bottom: none; }
@@ -427,85 +463,85 @@
       background: var(--paper-2); color: var(--ink-haze);
       box-shadow: inset 0 0 0 1.5px var(--line);
     }
-    .pm-text { flex: 1; font-size: 0.875rem; color: var(--ink-soft); }
+    .pm-text { flex: 1; font-size: 0.85rem; color: var(--ink-soft); }
     .pm-text.done { color: var(--ink-haze); text-decoration: line-through; text-decoration-color: var(--line); }
     .pm-tag {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em;
+      font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em;
       padding: 0.2rem 0.5rem; border-radius: 4px;
       background: var(--paper-2); color: var(--ink-muted); font-weight: 500;
     }
-    .pm-tag.urgent { background: var(--amber-wash); color: var(--amber-deep); }
+    .pm-tag.urgent { background: var(--brass-wash); color: var(--brass-deep); }
     .pm-time { font-size: 0.78rem; color: var(--ink-haze); }
 
     .preview-brief {
       border-left: 1px solid var(--line-soft);
-      padding: 1.25rem 1.25rem;
+      padding: 1.25rem;
       background: var(--paper);
-      display: flex; flex-direction: column; gap: 0.75rem;
+      display: flex; flex-direction: column; gap: 0.65rem;
     }
     .pb-head {
       display: flex; align-items: center; gap: 0.5rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em;
-      color: var(--ink-haze); margin-bottom: 0.35rem;
+      font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--ink-haze); margin-bottom: 0.25rem;
     }
     .pb-msg {
-      padding: 0.85rem 1rem;
+      padding: 0.8rem 0.95rem;
       background: #fff; border-radius: var(--r);
       box-shadow: var(--shadow-xs);
-      font-size: 0.835rem; line-height: 1.5;
+      font-size: 0.825rem; line-height: 1.5;
       color: var(--ink-soft);
     }
-    .pb-msg.from-me { background: var(--ink); color: var(--paper); margin-left: 2rem; }
-    .pb-msg strong { color: var(--ink); font-weight: 600; display: block; margin-bottom: 0.25rem; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-haze); }
-    .pb-msg.from-me strong { color: var(--amber); }
-    .pb-msg .pb-list { margin: 0.35rem 0 0; padding: 0; list-style: none; font-size: 0.8rem; }
-    .pb-msg .pb-list li { padding: 0.15rem 0; color: var(--ink-muted); }
-    .pb-msg.from-me .pb-list li { color: rgba(244, 239, 230, 0.82); }
-    .pb-msg .pb-time { display: block; margin-top: 0.4rem; font-size: 0.7rem; color: var(--ink-haze); }
-    .pb-msg.from-me .pb-time { color: rgba(244, 239, 230, 0.45); }
+    .pb-msg.from-me { background: var(--navy); color: var(--paper); margin-left: 2rem; }
+    .pb-msg strong { color: var(--ink); font-weight: 600; display: block; margin-bottom: 0.2rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-haze); }
+    .pb-msg.from-me strong { color: var(--brass); }
+    .pb-msg .pb-list { margin: 0.35rem 0 0; padding: 0; list-style: none; font-size: 0.78rem; }
+    .pb-msg .pb-list li { padding: 0.12rem 0; color: var(--ink-muted); }
+    .pb-msg.from-me .pb-list li { color: rgba(250, 250, 248, 0.78); }
+    .pb-msg .pb-time { display: block; margin-top: 0.35rem; font-size: 0.68rem; color: var(--ink-haze); }
+    .pb-msg.from-me .pb-time { color: rgba(250, 250, 248, 0.4); }
 
     @media (max-width: 600px) {
       .hero-ctas { flex-direction: column; width: 100%; padding: 0 1rem; }
       .hero-ctas .btn { width: 100%; }
     }
 
-    /* LOGO STRIP */
+    /* ---- LOGO STRIP ---- */
     .logos {
       border-top: 1px solid var(--line-soft);
       border-bottom: 1px solid var(--line-soft);
-      padding: 2.5rem 0;
-      margin-top: 3rem;
+      padding: 2rem 0;
+      margin-top: 2rem;
     }
     .logos-row {
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 2rem;
+      display: flex; align-items: center; justify-content: center;
+      flex-wrap: wrap; gap: 2rem 3rem;
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 700;
       color: var(--ink-haze);
     }
     .logos-label {
-      flex-basis: 100%; text-align: center; margin-bottom: 0.5rem;
+      flex-basis: 100%; text-align: center; margin-bottom: 0.25rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em;
+      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em;
       color: var(--ink-haze); font-weight: 500;
     }
     .logos-row .logo {
-      font-size: 1.1rem; letter-spacing: -0.02em;
+      font-size: 1rem; letter-spacing: -0.02em;
       display: inline-flex; align-items: center; gap: 0.3rem;
-      opacity: 0.6; transition: opacity 0.2s ease;
+      opacity: 0.45; transition: opacity 0.2s ease;
     }
-    .logos-row .logo:hover { opacity: 1; }
+    .logos-row .logo:hover { opacity: 0.8; }
 
-    /* FEATURES */
+    /* ---- FEATURES ---- */
     .features { background: var(--paper); }
-    .features-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
-    .features-head h2 { margin: 1rem auto 1rem; max-width: 18ch; }
-    .features-head h2 em { font-style: normal; color: var(--ochre); }
-    .features-head p { font-size: 1.075rem; color: var(--ink-muted); max-width: 52ch; margin: 0 auto; }
+    .features-head { max-width: 640px; margin: 0 auto 3.5rem; text-align: center; }
+    .features-head h2 { margin: 0.75rem auto 1rem; }
+    .features-head h2 em { font-style: normal; color: var(--brass); }
+    .features-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
     .features-grid {
-      display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem;
+      display: grid; grid-template-columns: repeat(12, 1fr); gap: 0.875rem;
     }
     .f-card {
       grid-column: span 6;
@@ -516,98 +552,98 @@
       position: relative; overflow: hidden;
       transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
     }
-    .f-card:hover { transform: translateY(-3px); border-color: var(--line); box-shadow: var(--shadow); }
+    .f-card:hover { transform: translateY(-2px); border-color: var(--line); box-shadow: var(--shadow-card); }
     .f-card.wide { grid-column: span 12; }
     .f-card.third { grid-column: span 4; }
     .f-card .f-icon {
-      width: 40px; height: 40px; border-radius: 10px;
-      background: var(--amber-wash); color: var(--amber-deep);
+      width: 38px; height: 38px; border-radius: 9px;
+      background: var(--brass-wash); color: var(--brass-deep);
       display: inline-flex; align-items: center; justify-content: center;
       margin-bottom: 1rem;
     }
-    .f-card .f-icon svg { width: 20px; height: 20px; }
-    .f-card h3 { font-size: 1.15rem; margin-bottom: 0.55rem; }
-    .f-card h3 em { font-style: normal; color: var(--ochre); }
-    .f-card p { font-size: 0.925rem; line-height: 1.55; color: var(--ink-muted); margin: 0; }
+    .f-card .f-icon svg { width: 18px; height: 18px; }
+    .f-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .f-card h3 em { font-style: normal; color: var(--brass); }
+    .f-card p { font-size: 0.9rem; line-height: 1.6; color: var(--ink-muted); margin: 0; }
     .f-card .f-mini {
-      margin-top: 1.25rem; padding: 0.9rem 1rem;
+      margin-top: 1.25rem; padding: 0.85rem 1rem;
       background: var(--paper); border-radius: var(--r);
       border: 1px solid var(--line-soft);
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem; color: var(--ink-muted);
+      font-size: 0.73rem; color: var(--ink-muted);
       line-height: 1.55;
     }
-    .f-card .f-mini b { color: var(--amber-deep); font-weight: 600; }
+    .f-card .f-mini b { color: var(--brass-deep); font-weight: 600; }
     .f-card .f-mini .ok { color: var(--sage); }
     @media (max-width: 880px) {
       .f-card, .f-card.third { grid-column: span 12; }
     }
 
-    /* SPLIT (dark) */
-    .split { padding: clamp(4rem, 8vw, 7rem) 0; background: var(--ink); color: var(--paper); }
+    /* ---- SPLIT (dark) ---- */
+    .split { padding: clamp(5rem, 9vw, 7.5rem) 0; background: var(--navy); color: var(--paper); }
     .split-row {
       display: grid;
       grid-template-columns: 1.05fr 1fr;
-      gap: clamp(2rem, 5vw, 5rem);
+      gap: clamp(2.5rem, 5vw, 5rem);
       align-items: center;
     }
-    .split h2 { color: var(--paper); margin: 1rem 0 1rem; max-width: 18ch; }
-    .split h2 em { font-style: normal; color: var(--ochre); }
-    .split .eyebrow { color: var(--amber); }
-    .split .eyebrow::before { background: var(--amber); }
+    .split h2 { color: var(--paper); margin: 0.75rem 0 1.25rem; max-width: 18ch; }
+    .split h2 em { font-style: normal; color: var(--brass); }
+    .split .eyebrow { color: var(--brass); }
+    .split .eyebrow::before { background: var(--brass); }
     .split p {
-      font-size: 1.05rem; line-height: 1.6;
-      color: rgba(244, 239, 230, 0.72);
-      margin-bottom: 1.5rem; max-width: 52ch;
+      font-size: 1.025rem; line-height: 1.65;
+      color: rgba(250, 250, 248, 0.68);
+      margin-bottom: 1.5rem; max-width: 50ch;
     }
     .split-list {
       list-style: none; padding: 0; margin: 0 0 2rem;
-      display: flex; flex-direction: column; gap: 0.85rem;
+      display: flex; flex-direction: column; gap: 0.75rem;
     }
     .split-list li {
       display: flex; align-items: flex-start; gap: 0.75rem;
-      font-size: 0.95rem; color: rgba(244, 239, 230, 0.85);
+      font-size: 0.925rem; color: rgba(250, 250, 248, 0.82);
     }
     .split-list li::before {
       content: ''; flex-shrink: 0;
       width: 18px; height: 18px; border-radius: 50%;
-      background: rgba(184, 116, 61, 0.15);
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23E88A47' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background: rgba(201, 167, 106, 0.15);
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23C9A76A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: center;
       margin-top: 0.15em;
     }
     .split-visual {
-      background: linear-gradient(145deg, #1F1C24, #14121A);
+      background: linear-gradient(145deg, #22223A, #16162A);
       border-radius: var(--r-xl);
       padding: 1.5rem;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), var(--shadow-lg);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), var(--shadow-lg);
     }
     .sv-msg {
-      padding: 1rem 1.1rem;
+      padding: 0.95rem 1.1rem;
       background: rgba(255, 255, 255, 0.04);
       border-radius: var(--r);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      margin-bottom: 0.75rem;
-      font-size: 0.9rem; line-height: 1.5;
-      color: rgba(244, 239, 230, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: 0.65rem;
+      font-size: 0.875rem; line-height: 1.5;
+      color: rgba(250, 250, 248, 0.85);
     }
     .sv-msg.mine {
-      background: var(--amber); border-color: var(--amber);
+      background: var(--brass); border-color: var(--brass);
       color: #1A0F04; margin-left: 1.5rem;
     }
-    .sv-msg strong { color: #fff; font-weight: 600; display:block; margin-bottom: 0.3rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(251,248,242,0.55); }
-    .sv-msg.mine strong { color: rgba(26, 15, 4, 0.6); }
+    .sv-msg strong { color: #fff; font-weight: 600; display:block; margin-bottom: 0.25rem; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(250,250,248,0.5); }
+    .sv-msg.mine strong { color: rgba(26, 15, 4, 0.55); }
     .sv-msg .sv-time {
-      display: block; margin-top: 0.35rem;
-      font-size: 0.7rem; color: rgba(255, 255, 255, 0.4);
+      display: block; margin-top: 0.3rem;
+      font-size: 0.68rem; color: rgba(255, 255, 255, 0.35);
     }
-    .sv-msg.mine .sv-time { color: rgba(26, 15, 4, 0.55); }
+    .sv-msg.mine .sv-time { color: rgba(26, 15, 4, 0.5); }
     .sv-thread-head {
       display: flex; align-items: center; gap: 0.6rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em;
-      color: rgba(244, 239, 230, 0.45);
-      padding-bottom: 0.75rem; margin-bottom: 1rem;
+      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em;
+      color: rgba(250, 250, 248, 0.4);
+      padding-bottom: 0.65rem; margin-bottom: 0.85rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
     .sv-thread-head::before {
@@ -618,13 +654,13 @@
       .split-row { grid-template-columns: 1fr; }
     }
 
-    /* HOW IT WORKS */
+    /* ---- HOW IT WORKS ---- */
     .how { background: var(--paper); }
-    .how-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
-    .how-head h2 { margin: 1rem auto 1rem; max-width: 16ch; }
-    .how-head h2 em { font-style: normal; color: var(--ochre); }
-    .how-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .how-head { max-width: 640px; margin: 0 auto 3.5rem; text-align: center; }
+    .how-head h2 { margin: 0.75rem auto 1rem; }
+    .how-head h2 em { font-style: normal; color: var(--brass); }
+    .how-head p { font-size: 1.025rem; color: var(--ink-muted); max-width: 48ch; margin: 0 auto; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.875rem; }
     @media (max-width: 820px) {
       .steps { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
     }
@@ -636,132 +672,292 @@
     .step:hover { transform: translateY(-2px); border-color: var(--line); }
     .step-num {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem; font-weight: 600;
+      font-size: 0.7rem; font-weight: 600;
       letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--amber-deep); margin-bottom: 1.5rem;
-      display: flex; align-items: center; gap: 0.55rem;
+      color: var(--brass-deep); margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.5rem;
     }
     .step-num::before {
       content: ''; width: 8px; height: 8px;
-      border-radius: 50%; background: var(--amber);
+      border-radius: 50%; background: var(--brass);
     }
-    .step h3 { font-size: 1.2rem; margin-bottom: 0.6rem; }
-    .step p { font-size: 0.925rem; color: var(--ink-muted); line-height: 1.6; }
+    .step h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+    .step p { font-size: 0.9rem; color: var(--ink-muted); line-height: 1.6; }
 
-    /* PROOF BAND */
+    /* ---- PROOF BAND ---- */
     .proof-band {
-      padding: clamp(3.5rem, 6vw, 5rem) 0;
-      background: var(--paper-2);
+      padding: clamp(3rem, 5vw, 4.5rem) 0;
+      background: var(--mist);
       border-top: 1px solid var(--line-soft);
       border-bottom: 1px solid var(--line-soft);
     }
     .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-    .proof-item { text-align: left; border-left: 2px solid var(--amber); padding-left: 1rem; }
+    .proof-item { text-align: left; border-left: 2px solid var(--brass); padding-left: 1rem; }
     .proof-num {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(2rem, 3.6vw, 2.75rem);
+      font-size: clamp(1.75rem, 3.2vw, 2.5rem);
       font-weight: 800; color: var(--ink);
-      letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.35rem;
+      letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.3rem;
     }
-    .proof-lbl { font-size: 0.85rem; color: var(--ink-muted); line-height: 1.45; }
+    .proof-lbl { font-size: 0.825rem; color: var(--ink-muted); line-height: 1.45; }
     @media (max-width: 720px) {
       .proof-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     }
 
-    /* PRICING */
+    /* ---- CLOSED FRAMEWORK ---- */
+    .closed { background: var(--navy); color: var(--paper); overflow: hidden; }
+    .closed-head { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
+    .closed-head .eyebrow { color: var(--brass); }
+    .closed-head .eyebrow::before { background: var(--brass); }
+    .closed-head h2 { color: var(--paper); margin: 0.75rem auto 1rem; }
+    .closed-head h2 em { font-style: normal; color: var(--brass); }
+    .closed-head p { color: rgba(250, 250, 248, 0.6); font-size: 1.025rem; margin: 0 auto; max-width: 48ch; }
+
+    /* Hexagonal cycle layout */
+    .closed-cycle {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+      aspect-ratio: 1.15 / 1;
+    }
+    .closed-node {
+      position: absolute;
+      width: 160px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+    /* Position nodes in a hexagon: top, top-right, bottom-right, bottom, bottom-left, top-left */
+    .closed-node:nth-child(1) { top: 4%;  left: 50%; }
+    .closed-node:nth-child(2) { top: 26%; left: 90%; }
+    .closed-node:nth-child(3) { top: 68%; left: 90%; }
+    .closed-node:nth-child(4) { top: 92%; left: 50%; }
+    .closed-node:nth-child(5) { top: 68%; left: 10%; }
+    .closed-node:nth-child(6) { top: 26%; left: 10%; }
+
+    .closed-letter {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 3rem; height: 3rem; border-radius: 50%;
+      background: var(--brass); color: var(--navy);
+      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+      font-size: 1.25rem; margin-bottom: 0.6rem;
+      box-shadow: 0 0 0 4px rgba(201, 167, 106, 0.15), 0 2px 8px rgba(0,0,0,0.2);
+      position: relative; z-index: 2;
+    }
+    .closed-node h3 { color: var(--paper); font-size: 1rem; margin-bottom: 0.25rem; }
+    .closed-node p { font-size: 0.8rem; line-height: 1.45; color: rgba(250,250,248,0.55); max-width: 20ch; margin: 0 auto; }
+
+    /* Connector ring */
+    .closed-ring {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(201, 167, 106, 0.25);
+    }
+    .closed-ring-inner {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: rgba(201, 167, 106, 0.06);
+      border: 1px solid rgba(201, 167, 106, 0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Instrument Serif', serif; font-style: italic;
+      font-size: 1.1rem; color: var(--brass);
+    }
+    /* Directional arrows on ring */
+    .closed-arrows {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55%;
+      aspect-ratio: 1;
+    }
+    .closed-arrows svg {
+      position: absolute; top: 50%; left: 50%;
+      width: 100%; height: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    .closed-tag {
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(250,250,248,0.5);
+      max-width: 48ch;
+      margin: 0 auto;
+    }
+    .closed-tag strong { color: var(--brass); font-weight: 600; }
+
+    /* Mobile CLOSED fallback */
+    @media (max-width: 640px) {
+      .closed-cycle { display: none; }
+      .closed-mobile { display: grid !important; }
+    }
+    .closed-mobile {
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .cm-step {
+      padding: 1.25rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--r);
+      text-align: center;
+    }
+    .cm-step .closed-letter { margin-bottom: 0.5rem; }
+    .cm-step h3 { color: var(--paper); font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .cm-step p { font-size: 0.78rem; line-height: 1.4; color: rgba(250,250,248,0.5); max-width: none; }
+
+    /* ---- COMPARISON ---- */
+    .compare { background: var(--paper); }
+    .compare-head { text-align: center; max-width: 640px; margin: 0 auto 3rem; }
+    .compare-head h2 { margin: 0.75rem auto 0; }
+    .compare-head h2 em { font-style: normal; color: var(--brass); }
+    .compare-table {
+      overflow-x: auto;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--line-soft);
+      background: #fff;
+    }
+    .compare-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .compare-table th, .compare-table td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid var(--line-soft); }
+    .compare-table th {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600; font-size: 0.72rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--ink-haze);
+      background: var(--paper);
+    }
+    .compare-table th.compare-highlight { color: var(--ink); }
+    .compare-table td.compare-highlight { font-weight: 600; color: var(--ink); background: var(--brass-wash); }
+    .compare-table td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
+    .compare-table tbody tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr { transition: background 0.15s ease; }
+    .compare-table tbody tr:hover { background: var(--paper); }
+    @media (max-width: 640px) {
+      .compare-table th, .compare-table td { padding: 0.75rem 0.65rem; font-size: 0.82rem; }
+    }
+
+    /* ---- SOCIAL PROOF ---- */
+    .social-proof { background: var(--mist); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+    .sp-head { text-align: center; max-width: 580px; margin: 0 auto 3rem; }
+    .sp-head h2 { margin: 0.75rem auto 0.75rem; }
+    .sp-head h2 em { font-style: normal; color: var(--brass); }
+    .sp-head p { font-size: 1rem; color: var(--ink-muted); margin: 0 auto; }
+    .sp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .sp-item { text-align: center; }
+    .sp-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 2.25rem;
+      color: var(--ink); line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+    .sp-lbl { font-size: 0.825rem; color: var(--ink-muted); margin-top: 0.3rem; line-height: 1.4; max-width: 18ch; margin-left: auto; margin-right: auto; }
+    @media (max-width: 768px) { .sp-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .sp-grid { grid-template-columns: 1fr; } }
+
+    /* ---- PRICING ---- */
     .pricing { background: var(--paper); }
-    .pricing-head { max-width: 680px; margin: 0 auto 4rem; text-align: center; }
-    .pricing-head h2 { margin: 1rem auto 1rem; max-width: 16ch; }
-    .pricing-head h2 em { font-style: normal; color: var(--ochre); }
-    .pricing-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
-    .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-    @media (max-width: 920px) {
-      .tiers { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
+    .pricing-head { max-width: 640px; margin: 0 auto 3.5rem; text-align: center; }
+    .pricing-head h2 { margin: 0.75rem auto 1rem; }
+    .pricing-head h2 em { font-style: normal; color: var(--brass); }
+    .pricing-head p { font-size: 1.025rem; color: var(--ink-muted); max-width: 48ch; margin: 0 auto; }
+    .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 800px; margin: 0 auto; }
+    @media (max-width: 720px) {
+      .tiers { grid-template-columns: 1fr; max-width: 440px; }
     }
     .tier {
       background: #fff;
       border: 1px solid var(--line-soft);
       border-radius: var(--r-lg);
-      padding: 2rem 1.75rem;
+      padding: 2.25rem 2rem;
       display: flex; flex-direction: column;
-      transition: border-color 0.2s ease, transform 0.2s ease;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .tier:hover { border-color: var(--line); transform: translateY(-2px); }
+    .tier:hover { border-color: var(--line); transform: translateY(-2px); box-shadow: var(--shadow-card); }
     .tier.featured {
-      background: var(--ink); color: var(--paper);
-      border-color: var(--ink); position: relative;
+      background: var(--navy); color: var(--paper);
+      border-color: var(--navy); position: relative;
+      box-shadow: var(--shadow-lg);
     }
+    .tier.featured:hover { transform: translateY(-3px); box-shadow: 0 28px 72px rgba(26, 26, 46, 0.15); }
     .tier.featured::before {
       content: 'Most popular';
-      position: absolute; top: -12px; right: 1.5rem;
-      background: var(--amber); color: #fff;
+      position: absolute; top: -11px; right: 1.5rem;
+      background: var(--brass); color: #fff;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65rem; font-weight: 600;
+      font-size: 0.625rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.1em;
-      padding: 0.3rem 0.7rem; border-radius: 999px;
+      padding: 0.25rem 0.65rem; border-radius: 999px;
     }
     .tier-name {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 0.95rem; font-weight: 700;
-      color: var(--ink); margin-bottom: 0.35rem;
+      font-size: 1rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 0.3rem;
     }
     .tier.featured .tier-name { color: var(--paper); }
-    .tier-who { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1.25rem; line-height: 1.45; }
-    .tier.featured .tier-who { color: rgba(244, 239, 230, 0.65); }
-    .tier-price { display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.15rem; }
+    .tier-who { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1.5rem; line-height: 1.45; }
+    .tier.featured .tier-who { color: rgba(250, 250, 248, 0.55); }
+    .tier-price { display: flex; align-items: baseline; gap: 0.3rem; margin-bottom: 0.15rem; }
     .tier-price .num {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 2.4rem; font-weight: 800;
+      font-size: 2.75rem; font-weight: 800;
       color: var(--ink); letter-spacing: -0.03em; line-height: 1;
     }
     .tier.featured .tier-price .num { color: var(--paper); }
     .tier-price .per { font-size: 0.85rem; color: var(--ink-muted); }
-    .tier.featured .tier-price .per { color: rgba(244, 239, 230, 0.55); }
-    .tier-setup { font-size: 0.78rem; color: var(--ink-haze); margin-bottom: 1.5rem; }
-    .tier.featured .tier-setup { color: rgba(244, 239, 230, 0.5); }
-    .tier-cta { margin-bottom: 1.5rem; }
-    .tier-cta .btn { width: 100%; justify-content: center; }
-    .tier.featured .btn-primary { background: var(--amber); color: #fff; box-shadow: none; }
-    .tier.featured .btn-primary:hover { background: var(--amber-deep); }
+    .tier.featured .tier-price .per { color: rgba(250, 250, 248, 0.45); }
+    .tier-setup { font-size: 0.78rem; color: var(--ink-haze); margin-bottom: 1.75rem; }
+    .tier.featured .tier-setup { color: rgba(250, 250, 248, 0.4); }
+    .tier-cta { margin-bottom: 1.75rem; }
+    .tier-cta .btn { width: 100%; justify-content: center; padding: 0.875rem 1.5rem; }
+    .tier.featured .btn-primary { background: var(--brass); color: #fff; box-shadow: 0 1px 3px rgba(168,133,74,0.3); }
+    .tier.featured .btn-primary:hover { background: var(--brass-deep); }
     .tier-feats {
       list-style: none; padding: 0;
       display: flex; flex-direction: column; gap: 0.65rem;
-      font-size: 0.88rem;
-      padding-top: 1.5rem; border-top: 1px solid var(--line-soft);
+      font-size: 0.875rem;
+      padding-top: 1.75rem; border-top: 1px solid var(--line-soft);
     }
     .tier.featured .tier-feats { border-top-color: rgba(255,255,255,0.08); }
     .tier-feats li {
       display: flex; align-items: flex-start; gap: 0.55rem;
       color: var(--ink-soft);
     }
-    .tier.featured .tier-feats li { color: rgba(244, 239, 230, 0.85); }
+    .tier.featured .tier-feats li { color: rgba(250, 250, 248, 0.8); }
     .tier-feats li::before {
       content: ''; flex-shrink: 0;
       width: 16px; height: 16px; border-radius: 50%;
-      background: var(--amber-wash);
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%238E5628' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background: var(--brass-wash);
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23A8854A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: center;
       margin-top: 0.1em;
     }
     .tier.featured .tier-feats li::before {
-      background-color: rgba(184, 116, 61, 0.2);
-      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23B8743D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-color: rgba(201, 167, 106, 0.2);
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 6L5 9L10 3' stroke='%23C9A76A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     }
-    .pricing-note { text-align: center; margin-top: 3rem; font-size: 0.88rem; color: var(--ink-muted); }
+    .pricing-note { text-align: center; margin-top: 2.5rem; font-size: 0.875rem; color: var(--ink-muted); }
     .pricing-note strong { color: var(--ink); }
 
-    /* FAQ */
+    /* ---- FAQ ---- */
     .faq { background: var(--paper); }
-    .faq-wrap { max-width: 780px; margin: 0 auto; }
+    .faq-wrap { max-width: 720px; margin: 0 auto; }
     .faq-head { text-align: center; margin-bottom: 3rem; }
-    .faq-head h2 { margin: 1rem auto 0; max-width: 18ch; }
-    .faq-head h2 em { font-style: normal; color: var(--ochre); }
+    .faq-head h2 { margin: 0.75rem auto 0; }
+    .faq-head h2 em { font-style: normal; color: var(--brass); }
     .faq-list { border-top: 1px solid var(--line-soft); }
     .faq-item { border-bottom: 1px solid var(--line-soft); }
     .faq-q {
       display: flex; width: 100%; align-items: flex-start; justify-content: space-between;
       gap: 1rem;
-      padding: 1.5rem 0;
+      padding: 1.35rem 0;
       text-align: left; cursor: pointer;
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 1.0625rem; font-weight: 600;
@@ -770,15 +966,12 @@
       list-style: none;
     }
     .faq-q::-webkit-details-marker { display: none; }
-    .faq-q:hover { color: var(--amber-deep); }
-    /* CSS-drawn plus — the "+" character sits ~1px low because the em-box
-       includes descender space. Drawing the crosshair with pseudo-elements
-       keeps it geometrically centered and rotation-perfect. */
+    .faq-q:hover { color: var(--brass-deep); }
     .faq-icon {
       flex-shrink: 0;
       position: relative;
-      width: 24px; height: 24px; border-radius: 50%;
-      background: var(--paper-2);
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--mist);
       font-size: 0; color: transparent;
       transition: background 0.2s ease, transform 0.3s var(--ease);
     }
@@ -791,89 +984,90 @@
       border-radius: 0.5px;
       transition: background 0.2s ease;
     }
-    .faq-icon::before { /* horizontal bar */
+    .faq-icon::before {
       width: 10px; height: 1.5px;
       transform: translate(-50%, -50%);
     }
-    .faq-icon::after { /* vertical bar */
+    .faq-icon::after {
       width: 1.5px; height: 10px;
       transform: translate(-50%, -50%);
     }
-    .faq-item[open] .faq-icon { background: var(--amber); transform: rotate(45deg); }
+    .faq-item[open] .faq-icon { background: var(--brass); transform: rotate(45deg); }
     .faq-item[open] .faq-icon::before,
     .faq-item[open] .faq-icon::after { background: #fff; }
     .faq-a {
-      padding: 0 0 1.5rem;
-      font-size: 0.97rem; line-height: 1.65;
+      padding: 0 0 1.35rem;
+      font-size: 0.95rem; line-height: 1.7;
       color: var(--ink-muted);
-      max-width: 64ch;
+      max-width: 60ch;
     }
 
-    /* FINAL CTA */
+    /* ---- FINAL CTA ---- */
     .final {
-      padding: clamp(4rem, 9vw, 7rem) 0;
+      padding: clamp(4rem, 8vw, 6rem) 0;
       background: var(--paper);
       border-top: 1px solid var(--line-soft);
     }
     .final-inner {
-      max-width: 760px; margin: 0 auto;
-      padding: clamp(2.5rem, 5vw, 4rem);
-      background: var(--ink); color: var(--paper);
+      max-width: 720px; margin: 0 auto;
+      padding: clamp(3rem, 5vw, 4rem);
+      background: var(--navy); color: var(--paper);
       border-radius: var(--r-xl);
       text-align: center;
       position: relative; overflow: hidden;
     }
     .final-inner::before {
       content: ''; position: absolute;
-      top: -120px; right: -120px;
-      width: 400px; height: 400px;
+      top: -100px; right: -100px;
+      width: 360px; height: 360px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(184, 116, 61, 0.45), transparent 60%);
-      filter: blur(30px);
+      background: radial-gradient(circle, rgba(201, 167, 106, 0.35), transparent 60%);
+      filter: blur(40px);
     }
     .final-inner > * { position: relative; z-index: 1; }
-    .final-inner .eyebrow::before { background: var(--amber); }
+    .final-inner .eyebrow { color: var(--brass); }
+    .final-inner .eyebrow::before { background: var(--brass); }
     .final h2 {
       color: var(--paper);
-      margin: 1rem auto 1rem; max-width: 16ch;
-      font-size: clamp(1.875rem, 3.5vw, 2.5rem);
+      margin: 0.75rem auto 1rem; max-width: 16ch;
+      font-size: clamp(1.75rem, 3.2vw, 2.375rem);
     }
-    .final h2 em { font-style: normal; color: var(--ochre); }
+    .final h2 em { font-style: normal; color: var(--brass); }
     .final p {
-      color: rgba(244, 239, 230, 0.75);
-      font-size: 1.05rem; line-height: 1.6;
-      max-width: 52ch; margin: 0 auto 2rem;
+      color: rgba(250, 250, 248, 0.65);
+      font-size: 1rem; line-height: 1.65;
+      max-width: 46ch; margin: 0 auto 2rem;
     }
 
-    /* FOOTER */
-    .foot { padding: 4rem 0 2.5rem; background: var(--paper); border-top: 1px solid var(--line-soft); }
-    .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 3rem; }
+    /* ---- FOOTER ---- */
+    .foot { padding: 3.5rem 0 2rem; background: var(--paper); border-top: 1px solid var(--line-soft); }
+    .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
     @media (max-width: 720px) {
       .foot-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
       .foot-brand { grid-column: 1 / -1; }
     }
-    .foot-brand .brand { margin-bottom: 0.75rem; font-size: 1.75rem; }
-    .foot-brand p { font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 0.75rem; max-width: 32ch; }
+    .foot-brand .brand { margin-bottom: 0.75rem; font-size: 1.5rem; }
+    .foot-brand p { font-size: 0.875rem; color: var(--ink-muted); margin-bottom: 0.75rem; max-width: 30ch; }
     .foot-brand small { font-size: 0.78rem; color: var(--ink-haze); }
     .foot-col h4 {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem; text-transform: uppercase;
+      font-size: 0.65rem; text-transform: uppercase;
       letter-spacing: 0.14em; font-weight: 500;
       color: var(--ink-haze); margin-bottom: 1rem;
     }
     .foot-col ul { list-style: none; padding: 0; }
-    .foot-col li { margin-bottom: 0.6rem; }
-    .foot-col a { color: var(--ink-soft); font-size: 0.9rem; transition: color 0.2s ease; }
-    .foot-col a:hover { color: var(--amber-deep); }
+    .foot-col li { margin-bottom: 0.55rem; }
+    .foot-col a { color: var(--ink-soft); font-size: 0.875rem; transition: color 0.2s ease; }
+    .foot-col a:hover { color: var(--brass-deep); }
     .foot-bottom {
-      padding-top: 2rem;
+      padding-top: 1.75rem;
       border-top: 1px solid var(--line-soft);
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1rem;
-      font-size: 0.82rem; color: var(--ink-haze);
+      font-size: 0.8rem; color: var(--ink-haze);
     }
 
-    /* REVEAL */
+    /* ---- REVEAL ---- */
     .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .rd-1 { transition-delay: 0.05s; }
@@ -883,57 +1077,15 @@
       .reveal { opacity: 1; transform: none; transition: none; }
     }
 
-    /* CLOSED Framework section */
-    .closed { background: var(--parchment); }
-    .closed-head { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
-    .closed-head h2 { max-width: 16ch; margin-left: auto; margin-right: auto; }
-    .closed-steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-bottom: 2.5rem;
+    /* ---- SECTION DIVIDER ---- */
+    .divider {
+      width: 100%; max-width: var(--w); margin: 0 auto;
+      padding: 0 1.5rem;
     }
-    .closed-step { text-align: center; }
-    .closed-letter {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 3rem; height: 3rem; border-radius: 50%;
-      background: var(--ink); color: var(--paper);
-      font-family: 'Instrument Serif', serif; font-style: italic;
-      font-size: 1.5rem; margin-bottom: 0.75rem;
+    .divider-line {
+      height: 1px;
+      background: var(--line-soft);
     }
-    .closed-step h3 { margin-bottom: 0.35rem; }
-    .closed-step p { font-size: 0.92rem; line-height: 1.55; color: var(--stone); max-width: 22ch; margin: 0 auto; }
-    .closed-tag { text-align: center; font-size: 0.95rem; color: var(--stone); }
-    @media (max-width: 768px) {
-      .closed-steps { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 480px) {
-      .closed-steps { grid-template-columns: 1fr; }
-    }
-
-    /* Comparison table */
-    .compare { background: var(--cream); }
-    .compare-head { text-align: center; max-width: 720px; margin: 0 auto 2.5rem; }
-    .compare-table { overflow-x: auto; }
-    .compare-table table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
-    .compare-table th, .compare-table td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.06); }
-    .compare-table th { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--stone); }
-    .compare-table th.compare-highlight { color: var(--ink); }
-    .compare-table td.compare-highlight { font-weight: 600; background: rgba(244,237,223,0.35); }
-    .compare-table td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
-    @media (max-width: 640px) {
-      .compare-table th, .compare-table td { padding: 0.6rem 0.5rem; font-size: 0.82rem; }
-    }
-
-    /* Social proof section */
-    .social-proof { background: var(--parchment); }
-    .sp-head { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
-    .sp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-    .sp-item { text-align: center; }
-    .sp-num { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 2.5rem; color: var(--ink); line-height: 1.1; }
-    .sp-lbl { font-size: 0.85rem; color: var(--stone); margin-top: 0.35rem; line-height: 1.4; max-width: 18ch; margin-left: auto; margin-right: auto; }
-    @media (max-width: 768px) { .sp-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 480px) { .sp-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -948,8 +1100,8 @@
         <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
         <rect x="14" y="18" width="1.5" height="38" fill="var(--ink)" opacity="0.3"/>
         <rect x="48.5" y="18" width="1.5" height="38" fill="var(--ink)" opacity="0.3"/>
-        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
-        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
+        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
       </svg>
       <span>arca</span>
     </a>
@@ -962,7 +1114,7 @@
     </div>
     <div class="nav-cta">
       <a href="#pricing" class="btn btn-ghost">Sign in</a>
-      <a href="#get-started" class="btn btn-primary">Get started <span class="arrow">→</span></a>
+      <a href="#get-started" class="btn btn-primary">Get started <span class="arrow">&rarr;</span></a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -978,12 +1130,12 @@
         <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
         <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
         <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
-        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
-        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+        <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
+        <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
       </svg>
       <span>arca</span>
     </a>
-    <button class="nav-toggle" id="navCloseBtn" aria-label="Close" style="font-size:1.5rem;line-height:1;color:var(--ink);">✕</button>
+    <button class="nav-toggle" id="navCloseBtn" aria-label="Close" style="font-size:1.5rem;line-height:1;color:var(--ink);">&#x2715;</button>
   </div>
   <div class="nav-mobile-body">
     <a href="#features" data-close>Product</a>
@@ -991,17 +1143,20 @@
     <a href="#how" data-close>How it works</a>
     <a href="#pricing" data-close>Pricing</a>
     <a href="/blog/" data-close>Learn</a>
-    <a href="#get-started" class="btn btn-primary" data-close>Get started →</a>
+    <a href="#get-started" class="btn btn-primary" data-close>Get started &rarr;</a>
   </div>
 </div>
 
+<!-- ============================================================
+     HERO
+     ============================================================ -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-inner">
       <div class="hero-pill reveal visible">
         <span class="tag">New</span>
-        <span><strong>Arca v1.</strong> Live in 7 days. Better every week after.</span>
-        <span class="arrow">→</span>
+        <span><strong>Arca v1</strong> &mdash; live in 7 days, better every week after</span>
+        <span class="arrow">&rarr;</span>
       </div>
 
       <h1 class="reveal visible rd-1">
@@ -1010,16 +1165,13 @@
       </h1>
 
       <p class="hero-sub reveal visible rd-2">
-        Your ops don't just run. They learn.
-      </p>
-      <p class="hero-sub reveal visible rd-2" style="margin-top: 0.5rem; font-size: 1.05rem; opacity: 0.8;">
-        One message runs your scheduling, invoicing, onboarding, and follow-ups.
-        No dashboards. No CRMs. No learning curve. Built for small service businesses.
+        <strong>Your ops don't just run. They learn.</strong><br>
+        One message handles scheduling, invoicing, onboarding, and follow-ups. No dashboards. No CRMs. Built for small service businesses.
       </p>
 
       <div class="hero-ctas reveal visible rd-3">
         <a href="#get-started" class="btn btn-primary">
-          Start your 7-day build <span class="arrow">→</span>
+          Start your 7-day build <span class="arrow">&rarr;</span>
         </a>
         <a href="#features" class="btn btn-ghost">See how it works</a>
       </div>
@@ -1045,8 +1197,8 @@
                 <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
                 <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
                 <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
-                <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
-                <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+                <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
+                <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
               </svg>
               <span style="font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:1.25rem;">arca</span>
             </div>
@@ -1062,28 +1214,28 @@
           </aside>
 
           <main class="preview-main">
-            <h4>Morning brief · Tuesday</h4>
+            <h4>Morning brief &middot; Tuesday</h4>
             <div class="pm-sub">6 items handled. 2 need your call.</div>
-            <div class="pm-row"><span class="pm-check done">✓</span><span class="pm-text done">Sarah Chen: session confirmed for 9:30 AM</span><span class="pm-time">6:02 AM</span></div>
-            <div class="pm-row"><span class="pm-check done">✓</span><span class="pm-text done">Invoice #1043 sent to Marcus ($2,400)</span><span class="pm-time">6:04 AM</span></div>
-            <div class="pm-row"><span class="pm-check done">✓</span><span class="pm-text done">Welcome sequence → Lena (Day 1 of 4)</span><span class="pm-time">6:05 AM</span></div>
+            <div class="pm-row"><span class="pm-check done">&#10003;</span><span class="pm-text done">Sarah Chen: session confirmed for 9:30 AM</span><span class="pm-time">6:02 AM</span></div>
+            <div class="pm-row"><span class="pm-check done">&#10003;</span><span class="pm-text done">Invoice #1043 sent to Marcus ($2,400)</span><span class="pm-time">6:04 AM</span></div>
+            <div class="pm-row"><span class="pm-check done">&#10003;</span><span class="pm-text done">Welcome sequence &rarr; Lena (Day 1 of 4)</span><span class="pm-time">6:05 AM</span></div>
             <div class="pm-row"><span class="pm-check pending">!</span><span class="pm-text"><strong>Draft reply</strong>: Priya re-scheduling Thursday</span><span class="pm-tag urgent">Review</span></div>
             <div class="pm-row"><span class="pm-check pending">!</span><span class="pm-text"><strong>Nudge</strong>: Tom 12 days silent since discovery call</span><span class="pm-tag urgent">Review</span></div>
-            <div class="pm-row"><span class="pm-check done">✓</span><span class="pm-text done">Calendar blocked · 1–3 PM for deep work</span><span class="pm-time">6:06 AM</span></div>
+            <div class="pm-row"><span class="pm-check done">&#10003;</span><span class="pm-text done">Calendar blocked &middot; 1&ndash;3 PM for deep work</span><span class="pm-time">6:06 AM</span></div>
           </main>
 
           <aside class="preview-brief">
             <div class="pb-head">
               <span>Thread</span>
-              <span style="margin-left:auto; color: var(--sage);">● Live</span>
+              <span style="margin-left:auto; color: var(--sage);">&#9679; Live</span>
             </div>
             <div class="pb-msg">
               <strong>Arca</strong>
               Morning. Here's yours for today:
               <ul class="pb-list">
-                <li>· 3 sessions (9:30 / 11 / 4)</li>
-                <li>· 2 drafts waiting for you</li>
-                <li>· $2,400 invoiced overnight</li>
+                <li>&middot; 3 sessions (9:30 / 11 / 4)</li>
+                <li>&middot; 2 drafts waiting for you</li>
+                <li>&middot; $2,400 invoiced overnight</li>
               </ul>
               <span class="pb-time">6:07 AM</span>
             </div>
@@ -1104,6 +1256,9 @@
   </div>
 </section>
 
+<!-- ============================================================
+     LOGO STRIP
+     ============================================================ -->
 <section class="logos">
   <div class="wrap">
     <div class="logos-row">
@@ -1118,12 +1273,15 @@
   </div>
 </section>
 
-<section class="features pad" id="features">
+<!-- ============================================================
+     FEATURES
+     ============================================================ -->
+<section class="features section" id="features">
   <div class="wrap">
     <div class="features-head reveal">
       <div class="eyebrow">The product</div>
-      <h2>Everything a small service business needs. <em>None of the software.</em></h2>
-      <p>Six operations your VA, CRM, scheduler, and invoicing tool used to do. Now one message away.</p>
+      <h2>Everything a service business needs. <em>None of the software.</em></h2>
+      <p>Six operations your VA, CRM, scheduler, and invoicing tool handle today. One message from now.</p>
     </div>
 
     <div class="features-grid">
@@ -1133,14 +1291,14 @@
             <div class="f-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
-            <h3>One chat, one source of truth.</h3>
+            <h3>One chat. One source of truth.</h3>
             <p>Tell Arca what to do in plain English. "Reschedule Priya to Friday." "Send the onboarding welcome to Lena." "Who hasn't paid yet?" It handles the rest across every tool you use.</p>
           </div>
           <div class="f-mini">
-            <div style="color:var(--ink-muted);">you · 6:12 AM</div>
+            <div style="color:var(--ink-muted);">you &middot; 6:12 AM</div>
             <div style="color:var(--ink); margin: 0.3rem 0 0.7rem;"><b>send invoice to marcus for the april retainer</b></div>
-            <div style="color:var(--ink-muted);">arca · 6:12 AM</div>
-            <div style="color:var(--ink);"><span class="ok">✓</span> sent · $2,400 · net-7 · receipt on file</div>
+            <div style="color:var(--ink-muted);">arca &middot; 6:12 AM</div>
+            <div style="color:var(--ink);"><span class="ok">&#10003;</span> sent &middot; $2,400 &middot; net-7 &middot; receipt on file</div>
           </div>
         </div>
       </div>
@@ -1158,15 +1316,15 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
         <h3>Invoicing on autopilot.</h3>
-        <p>Payments raised, sent, and chased. Overdue-nudge emails written in your voice. Reconciled against your bank. No missed invoices. No awkward "just checking in…" messages.</p>
+        <p>Payments raised, sent, and chased. Overdue nudges written in your voice. Reconciled against your bank. No missed invoices, no awkward follow-ups.</p>
       </div>
 
       <div class="f-card third reveal">
         <div class="f-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <h3>Onboarding, done.</h3>
-        <p>New client signs the contract? Arca sends the welcome packet, books the kickoff, adds them to your CRM, and tees up the first message.</p>
+        <h3>Onboarding, handled.</h3>
+        <p>New client signs? Arca sends the welcome packet, books the kickoff, adds them to your CRM, and tees up the first message.</p>
       </div>
 
       <div class="f-card third reveal rd-1">
@@ -1174,7 +1332,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
         <h3>Follow-ups that never slip.</h3>
-        <p>Lead went cold? Session coming up? 30-day check-in? Arca sees it all and drafts the message. You approve, it sends.</p>
+        <p>Lead went cold? Session coming up? 30-day check-in? Arca sees it and drafts the message. You approve, it sends.</p>
       </div>
 
       <div class="f-card third reveal rd-2">
@@ -1182,40 +1340,41 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3>Morning brief. Every day.</h3>
-        <p>Your AI ops team debriefs you every morning. What happened overnight. What's coming. What it learned. Delivered to email, WhatsApp, or Telegram.</p>
+        <p>What happened overnight. What's coming. What Arca learned. Delivered to your phone before your first coffee.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ============================================================
+     SPLIT (Dark) — Voice / Control
+     ============================================================ -->
 <section class="split">
   <div class="wrap">
     <div class="split-row">
       <div>
-        <div class="eyebrow">Your voice · always</div>
-        <h2>Nothing client-facing goes out without <em>your say-so.</em></h2>
+        <div class="eyebrow">Your voice, always</div>
+        <h2>Nothing reaches your clients without <em>your say-so.</em></h2>
         <p>
-          Arca doesn't impersonate you. It drafts in your voice, using the words you actually use,
-          and shows you the message before it sends. Approve, edit, or skip. Everything that reaches
-          your clients still sounds like you.
+          Arca drafts in your voice, using words you actually use, and shows you the message before it sends. Approve, edit, or skip. Your clients never know the difference.
         </p>
         <ul class="split-list">
-          <li>Drafts trained on your past messages, not a template library</li>
-          <li>Review queue in WhatsApp, Telegram, or web. One tap to approve.</li>
-          <li>Auto-send mode (optional) for low-risk items like appointment confirmations</li>
-          <li>Full audit trail of what was sent, when, and to whom</li>
+          <li>Drafts trained on your past messages, not templates</li>
+          <li>Review queue in Telegram or web. One tap to approve.</li>
+          <li>Auto-send for low-risk items like appointment confirms</li>
+          <li>Full audit trail: what was sent, when, and to whom</li>
         </ul>
-        <a href="#pricing" class="btn btn-amber">See pricing <span class="arrow">→</span></a>
+        <a href="#pricing" class="btn btn-brass">See pricing <span class="arrow">&rarr;</span></a>
       </div>
 
       <div class="split-visual reveal">
         <div class="sv-thread-head">
-          <span>Arca draft queue · 2 pending</span>
+          <span>Arca draft queue &middot; 2 pending</span>
         </div>
         <div class="sv-msg">
-          <strong>Draft to Priya Shah · Re-schedule</strong>
+          <strong>Draft to Priya Shah &middot; Re-schedule</strong>
           Hi Priya, totally works. I've moved our Thursday 2pm to Friday at 2pm instead. Calendar invite coming. Speak soon, M
-          <span class="sv-time">Drafted 6:11 AM · awaiting your approval</span>
+          <span class="sv-time">Drafted 6:11 AM &middot; awaiting your approval</span>
         </div>
         <div class="sv-msg mine">
           <strong>You</strong>
@@ -1225,14 +1384,17 @@
         <div class="sv-msg">
           <strong>Arca</strong>
           Sent. Priya will have the confirm in under a minute.
-          <span class="sv-time">6:12 AM · ✓ delivered</span>
+          <span class="sv-time">6:12 AM &middot; &#10003; delivered</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="how pad" id="how">
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how section" id="how">
   <div class="wrap">
     <div class="how-head reveal">
       <div class="eyebrow">How it works</div>
@@ -1244,15 +1406,15 @@
       <div class="step reveal">
         <div class="step-num">01 / Diagnosis</div>
         <h3>A 30-minute call. One week to build.</h3>
-        <p>We map your current stack and find the leaks. The midnight invoices. The dropped leads. The manual re-entry. Every Arca build is custom to where your business actually loses time.</p>
+        <p>We map your current stack and find the leaks: the midnight invoices, the dropped leads, the manual re-entry. Every build is custom to where you lose time.</p>
       </div>
       <div class="step reveal rd-1">
         <div class="step-num">02 / Build</div>
         <h3>We build it. You don't.</h3>
-        <p>We wire up scheduling, invoicing, onboarding, and your follow-up library. Trained on your voice, tuned to your clients. You review as we go.</p>
+        <p>Scheduling, invoicing, onboarding, and your follow-up library. Trained on your voice, tuned to your clients. You review as we go.</p>
       </div>
       <div class="step reveal rd-2">
-        <div class="step-num">03 / Live · Day 7</div>
+        <div class="step-num">03 / Live &middot; Day 7</div>
         <h3>First brief hits your inbox.</h3>
         <p>On day 7 you wake up to your first morning brief. From here, every operation is one message away. Cancel your other tools that week.</p>
       </div>
@@ -1260,76 +1422,142 @@
   </div>
 </section>
 
+<!-- ============================================================
+     PROOF BAND
+     ============================================================ -->
 <section class="proof-band">
   <div class="wrap">
     <div class="proof-grid">
       <div class="proof-item">
         <div class="proof-num">17.3h</div>
-        <div class="proof-lbl">average admin time per week for solo operators. Handed back.</div>
+        <div class="proof-lbl">Average weekly admin time for solo operators. Handed back.</div>
       </div>
       <div class="proof-item">
-        <div class="proof-num">$150–400</div>
-        <div class="proof-lbl">typical monthly savings from tools replaced on day 7.</div>
+        <div class="proof-num">$150&ndash;400</div>
+        <div class="proof-lbl">Monthly savings from tools replaced on day 7.</div>
       </div>
       <div class="proof-item">
         <div class="proof-num">7 days</div>
-        <div class="proof-lbl">from diagnosis call to your first morning brief. Not weeks.</div>
+        <div class="proof-lbl">From diagnosis call to your first morning brief.</div>
       </div>
       <div class="proof-item">
         <div class="proof-num">0</div>
-        <div class="proof-lbl">dashboards. No CRM to learn. No settings page to configure.</div>
+        <div class="proof-lbl">Dashboards to learn. No CRM. No settings page.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="closed pad" id="how-arca-thinks">
+<!-- ============================================================
+     CLOSED FRAMEWORK
+     ============================================================ -->
+<section class="closed section" id="how-arca-thinks">
   <div class="wrap">
     <div class="closed-head reveal">
       <div class="eyebrow">How Arca Thinks</div>
       <h2>Most tools automate a task. <em>Arca automates a loop.</em></h2>
-      <p>Every cycle, your operations get sharper. That's not a feature. It's a framework.</p>
+      <p>Every cycle, your operations get sharper. Not a feature. A framework.</p>
     </div>
 
-    <div class="closed-steps">
-      <div class="closed-step reveal">
+    <!-- Desktop: Hexagonal cycle -->
+    <div class="closed-cycle reveal">
+      <div class="closed-ring"></div>
+      <div class="closed-ring-inner">loop</div>
+
+      <!-- Directional arrows SVG -->
+      <div class="closed-arrows">
+        <svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Connecting arcs between nodes -->
+          <path d="M 230 38 Q 310 50 330 110" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <path d="M 340 170 Q 340 240 310 280" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <path d="M 280 320 Q 230 350 200 340" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <path d="M 170 340 Q 110 330 80 290" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <path d="M 60 240 Q 50 170 70 120" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <path d="M 100 60 Q 140 30 180 32" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+          <!-- Arrow tips -->
+          <polygon points="328,108 334,118 322,116" fill="rgba(201,167,106,0.35)"/>
+          <polygon points="308,278 316,284 304,286" fill="rgba(201,167,106,0.35)"/>
+          <polygon points="200,340 198,328 210,336" fill="rgba(201,167,106,0.35)"/>
+          <polygon points="82,290 76,280 88,282" fill="rgba(201,167,106,0.35)"/>
+          <polygon points="72,122 66,132 78,130" fill="rgba(201,167,106,0.35)"/>
+          <polygon points="178,34 182,46 170,38" fill="rgba(201,167,106,0.35)"/>
+        </svg>
+      </div>
+
+      <div class="closed-node">
         <div class="closed-letter">C</div>
         <h3>Capture</h3>
-        <p>Every email, message, invoice, and calendar event flows in automatically.</p>
+        <p>Every email, message, invoice, and event flows in automatically.</p>
       </div>
-      <div class="closed-step reveal rd-1">
+      <div class="closed-node">
         <div class="closed-letter">L</div>
         <h3>Log</h3>
-        <p>Structured records, not scattered notes. Searchable. Actionable. Permanent.</p>
+        <p>Structured records. Searchable. Actionable. Permanent.</p>
       </div>
-      <div class="closed-step reveal rd-2">
+      <div class="closed-node">
         <div class="closed-letter">O</div>
         <h3>Orchestrate</h3>
-        <p>Routes work to the right place. Scheduling, follow-ups, invoicing — connected, not siloed.</p>
+        <p>Routes work to the right place. Connected, not siloed.</p>
       </div>
-      <div class="closed-step reveal">
+      <div class="closed-node">
         <div class="closed-letter">S</div>
         <h3>Scan</h3>
-        <p>Monitors for what's slipping. Cold leads, overdue invoices, missed follow-ups.</p>
+        <p>Monitors for what's slipping. Cold leads, overdue invoices.</p>
       </div>
-      <div class="closed-step reveal rd-1">
+      <div class="closed-node">
         <div class="closed-letter">E</div>
         <h3>Execute</h3>
-        <p>Drafts actions for your approval. You stay in control. Nothing ships without you.</p>
+        <p>Drafts actions for your approval. Nothing ships without you.</p>
       </div>
-      <div class="closed-step reveal rd-2">
+      <div class="closed-node">
         <div class="closed-letter">D</div>
         <h3>Document</h3>
-        <p>Every cycle writes back what it learned. Next time, it starts ahead.</p>
+        <p>Every cycle writes back what it learned. Next time, starts ahead.</p>
       </div>
     </div>
 
-    <p class="closed-tag reveal">Built on the <strong>CLOSED Framework</strong> — the first ops system designed to get smarter every cycle.</p>
+    <!-- Mobile: 2-col grid fallback -->
+    <div class="closed-mobile">
+      <div class="cm-step">
+        <div class="closed-letter">C</div>
+        <h3>Capture</h3>
+        <p>Every email, message, invoice, and event flows in automatically.</p>
+      </div>
+      <div class="cm-step">
+        <div class="closed-letter">L</div>
+        <h3>Log</h3>
+        <p>Structured records. Searchable. Actionable. Permanent.</p>
+      </div>
+      <div class="cm-step">
+        <div class="closed-letter">O</div>
+        <h3>Orchestrate</h3>
+        <p>Routes work to the right place. Connected, not siloed.</p>
+      </div>
+      <div class="cm-step">
+        <div class="closed-letter">S</div>
+        <h3>Scan</h3>
+        <p>Monitors for what's slipping. Cold leads, overdue invoices.</p>
+      </div>
+      <div class="cm-step">
+        <div class="closed-letter">E</div>
+        <h3>Execute</h3>
+        <p>Drafts actions for your approval. Nothing ships without you.</p>
+      </div>
+      <div class="cm-step">
+        <div class="closed-letter">D</div>
+        <h3>Document</h3>
+        <p>Every cycle writes back what it learned. Next time, starts ahead.</p>
+      </div>
+    </div>
+
+    <p class="closed-tag reveal">Built on the <strong>CLOSED Framework</strong> &mdash; the first ops system designed to get smarter every cycle.</p>
   </div>
 </section>
 
-
-<section class="compare pad" id="compare">
+<!-- ============================================================
+     COMPARISON
+     ============================================================ -->
+<section class="compare section" id="compare">
   <div class="wrap">
     <div class="compare-head reveal">
       <div class="eyebrow">Compare</div>
@@ -1353,9 +1581,9 @@
             <td>Weeks to hire and train</td>
           </tr>
           <tr>
-            <td>Runs your ops end-to-end</td>
+            <td>Runs ops end-to-end</td>
             <td class="compare-highlight">Yes</td>
-            <td>No — connects tools only</td>
+            <td>No &mdash; connects tools only</td>
             <td>Depends on the person</td>
           </tr>
           <tr>
@@ -1367,14 +1595,14 @@
           <tr>
             <td>One-chat interface</td>
             <td class="compare-highlight">Yes</td>
-            <td>No — multiple dashboards</td>
+            <td>No &mdash; multiple dashboards</td>
             <td>Slack, email, async</td>
           </tr>
           <tr>
-            <td>Cost</td>
-            <td class="compare-highlight">\9/mo</td>
-            <td> –200/mo (stack cost)</td>
-            <td> –2000/mo</td>
+            <td>Monthly cost</td>
+            <td class="compare-highlight">$99&ndash;199/mo</td>
+            <td>$100&ndash;200/mo (stack)</td>
+            <td>$800&ndash;2,000/mo</td>
           </tr>
         </tbody>
       </table>
@@ -1382,18 +1610,20 @@
   </div>
 </section>
 
-
-<section class="social-proof pad" id="social-proof">
+<!-- ============================================================
+     SOCIAL PROOF
+     ============================================================ -->
+<section class="social-proof section-sm" id="social-proof">
   <div class="wrap">
     <div class="sp-head reveal">
       <div class="eyebrow">Live stats</div>
-      <h2>Arca runs on <em>Arca.</em> Here's the proof.</h2>
+      <h2>Arca runs on <em>Arca.</em></h2>
       <p>We dogfood every feature. These are real numbers from our own operations.</p>
     </div>
     <div class="sp-grid">
       <div class="sp-item reveal">
         <div class="sp-num">950+</div>
-        <div class="sp-lbl">ops tasks completed this month by our AI team</div>
+        <div class="sp-lbl">Ops tasks completed this month by our AI team</div>
       </div>
       <div class="sp-item reveal rd-1">
         <div class="sp-num">6</div>
@@ -1401,51 +1631,54 @@
       </div>
       <div class="sp-item reveal rd-2">
         <div class="sp-num">0</div>
-        <div class="sp-lbl">dashboards our team checks daily. It's all in chat.</div>
+        <div class="sp-lbl">Dashboards checked daily. It's all in chat.</div>
       </div>
       <div class="sp-item reveal">
         <div class="sp-num">17.3h</div>
-        <div class="sp-lbl">weekly admin time recovered per client</div>
+        <div class="sp-lbl">Weekly admin time recovered per operator</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="pricing pad" id="pricing">
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing section" id="pricing">
   <div class="wrap">
     <div class="pricing-head reveal">
       <div class="eyebrow">Pricing</div>
       <h2>Less than one billable hour. <em>Per month.</em></h2>
-      <p>Flat pricing. No contracts. 30-day money-back. Includes the 7-day build, managed for you.</p>
+      <p>Flat pricing. No contracts. 30-day money-back. The 7-day build is included.</p>
     </div>
 
     <div class="tiers">
       <div class="tier reveal" id="get-started">
         <div class="tier-name">Starter</div>
-        <div class="tier-who">For solo operators getting started. DIY with Arca's tools.</div>
+        <div class="tier-who">Solo operators getting started. DIY with Arca's tools.</div>
         <div class="tier-price"><span class="num">$99</span><span class="per">/mo</span></div>
-        <div class="tier-setup">1 seat · self-serve · no setup fee</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Starter%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
+        <div class="tier-setup">1 seat &middot; self-serve &middot; no setup fee</div>
+        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Starter%20diagnosis%20call" class="btn btn-primary">Book diagnosis call <span class="arrow">&rarr;</span></a></div>
         <ul class="tier-feats">
-          <li>One-chat interface (WhatsApp or Telegram)</li>
-          <li>Scheduling · invoicing · onboarding</li>
-          <li>Follow-up drafts, your voice</li>
+          <li>One-chat interface (Telegram)</li>
+          <li>Scheduling, invoicing, onboarding</li>
+          <li>Follow-up drafts in your voice</li>
           <li>Daily morning brief</li>
-          <li>Draft review (you approve before send)</li>
+          <li>Draft review before every send</li>
         </ul>
       </div>
 
       <div class="tier featured reveal rd-1">
         <div class="tier-name">Ops</div>
-        <div class="tier-who">For coaches and consultants ready to hand it off. We build and run it.</div>
+        <div class="tier-who">Coaches and consultants ready to hand it off. We build and run it.</div>
         <div class="tier-price"><span class="num">$199</span><span class="per">/mo</span></div>
-        <div class="tier-setup">White-glove build · managed for you</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Ops%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
+        <div class="tier-setup">White-glove build &middot; managed for you</div>
+        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Ops%20diagnosis%20call" class="btn btn-primary">Book diagnosis call <span class="arrow">&rarr;</span></a></div>
         <ul class="tier-feats">
           <li>Everything in Starter</li>
           <li>Lead capture + pipeline tracking</li>
           <li>Re-engagement campaigns</li>
-          <li>Recurring billing · dunning</li>
+          <li>Recurring billing and dunning</li>
           <li>Dedicated operations strategist</li>
           <li>Custom routines + weekly review</li>
         </ul>
@@ -1453,12 +1686,15 @@
     </div>
 
     <p class="pricing-note">
-      30-day money-back guarantee. Not happy in your first month? <strong>We refund it.</strong>
+      30-day money-back guarantee. Not happy in your first month? <strong>Full refund.</strong>
     </p>
   </div>
 </section>
 
-<section class="faq pad">
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq section">
   <div class="wrap">
     <div class="faq-wrap">
       <div class="faq-head reveal">
@@ -1468,7 +1704,7 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary class="faq-q">I've tried all-in-ones before. Why is Arca different? <span class="faq-icon">+</span></summary>
-          <div class="faq-a">Most all-in-ones are built for agencies running dozens of clients, then poorly adapted for solo operators. Arca was built from the ground up for service businesses with 1–15 people. And instead of weeks configuring it, we build it for you in 7 days.</div>
+          <div class="faq-a">Most all-in-ones are built for agencies running dozens of clients, then poorly adapted for solo operators. Arca was built from the ground up for service businesses with 1&ndash;15 people. And instead of weeks configuring it, we build it for you in 7 days.</div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">What if I'm not technical? <span class="faq-icon">+</span></summary>
@@ -1484,7 +1720,7 @@
         </details>
         <details class="faq-item">
           <summary class="faq-q">What tools does Arca replace? <span class="faq-icon">+</span></summary>
-          <div class="faq-a">Typically: your scheduling tool (Calendly, Acuity), invoicing (FreshBooks, Wave), CRM (HoneyBook, Dubsado), email platform (Mailchimp, ActiveCampaign), and the spreadsheet you were actually using. $150–$400/mo saved before counting time.</div>
+          <div class="faq-a">Typically: your scheduling tool (Calendly, Acuity), invoicing (FreshBooks, Wave), CRM (HoneyBook, Dubsado), email platform (Mailchimp, ActiveCampaign), and the spreadsheet you were actually using. $150&ndash;$400/mo saved before counting time.</div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Contract or commitment? <span class="faq-icon">+</span></summary>
@@ -1496,7 +1732,7 @@
         </details>
         <details class="faq-item">
           <summary class="faq-q">How is Arca different from Zapier or Make? <span class="faq-icon">+</span></summary>
-          <div class="faq-a">Zapier and Make connect apps together. Arca runs your operations end-to-end. Instead of building automations yourself, Arca captures your workflows, orchestrates them, and learns from every cycle. No setup required — we build it for you.</div>
+          <div class="faq-a">Zapier and Make connect apps together. Arca runs your operations end-to-end. Instead of building automations yourself, Arca captures your workflows, orchestrates them, and learns from every cycle. No setup required &mdash; we build it for you.</div>
         </details>
         <details class="faq-item">
           <summary class="faq-q">Do I need to set up anything? <span class="faq-icon">+</span></summary>
@@ -1507,34 +1743,40 @@
   </div>
 </section>
 
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
 <section class="final">
   <div class="wrap">
     <div class="final-inner reveal">
-      <div class="eyebrow" style="color: var(--amber); justify-content:center;">Start here</div>
+      <div class="eyebrow" style="justify-content:center;">Start here</div>
       <h2>Stop being your own <em>ops manager.</em></h2>
-      <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca. Live in 7 days. $99 to start.</p>
-      <a href="mailto:hello@runarca.xyz?subject=Diagnosis%20call" class="btn btn-amber">Book diagnosis call <span class="arrow">→</span></a>
+      <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca in 7 days. $99 to start.</p>
+      <a href="mailto:hello@runarca.xyz?subject=Diagnosis%20call" class="btn btn-brass">Book diagnosis call <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
 
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer class="foot">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="/" class="brand" aria-label="Arca home">
-          <svg class="brand-mark" width="26" height="26" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg class="brand-mark" width="24" height="24" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M 26 6 L 38 6 L 40 12 L 24 12 Z" fill="var(--ink)"/>
             <rect x="10" y="12" width="44" height="6" fill="var(--ink)"/>
             <rect x="14" y="18" width="6" height="38" fill="var(--ink)"/>
             <rect x="44" y="18" width="6" height="38" fill="var(--ink)"/>
-            <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
-            <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--ochre)"/>
+            <rect x="12" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
+            <rect x="42" y="56.5" width="10" height="2.5" rx="1.25" fill="var(--brass)"/>
           </svg>
           <span>arca</span>
         </a>
         <p>Managed operations for small service businesses. Run your business in one chat.</p>
-        <small>An Unbanked company · © 2026</small>
+        <small>An Unbanked company &middot; &copy; 2026</small>
       </div>
       <div class="foot-col">
         <h4>Product</h4>
