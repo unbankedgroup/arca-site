@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arca: Run your business in one chat | runarca.xyz</title>
-  <meta name="description" content="Arca runs your operations from a single chat. Scheduling, invoicing, onboarding, follow-ups. No dashboards. No CRMs. Live in 7 days. From $97/mo.">
+  <meta name="description" content="Arca runs your operations from a single chat using the CLOSED framework. Scheduling, invoicing, onboarding, follow-ups. No dashboards. No CRMs. Live in 7 days. From $99/mo.">
   <meta name="theme-color" content="#151413">
   <link rel="canonical" href="https://runarca.xyz">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -49,9 +49,8 @@
     "brand": { "@type": "Brand", "name": "Arca" },
     "url": "https://runarca.xyz",
     "offers": [
-      { "@type": "Offer", "name": "Foundation", "price": "97", "priceCurrency": "USD" },
-      { "@type": "Offer", "name": "Structure", "price": "247", "priceCurrency": "USD" },
-      { "@type": "Offer", "name": "Fortress", "price": "497", "priceCurrency": "USD" }
+      { "@type": "Offer", "name": "Starter", "price": "99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Ops", "price": "199", "priceCurrency": "USD" }
     ]
   }
   </script>
@@ -675,7 +674,7 @@
     .pricing-head h2 { margin: 1rem auto 1rem; max-width: 16ch; }
     .pricing-head h2 em { font-style: normal; color: var(--ochre); }
     .pricing-head p { font-size: 1.05rem; color: var(--ink-muted); max-width: 50ch; margin: 0 auto; }
-    .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     @media (max-width: 920px) {
       .tiers { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
     }
@@ -883,6 +882,58 @@
     @media (prefers-reduced-motion: reduce) {
       .reveal { opacity: 1; transform: none; transition: none; }
     }
+
+    /* CLOSED Framework section */
+    .closed { background: var(--parchment); }
+    .closed-head { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
+    .closed-head h2 { max-width: 16ch; margin-left: auto; margin-right: auto; }
+    .closed-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .closed-step { text-align: center; }
+    .closed-letter {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 3rem; height: 3rem; border-radius: 50%;
+      background: var(--ink); color: var(--paper);
+      font-family: 'Instrument Serif', serif; font-style: italic;
+      font-size: 1.5rem; margin-bottom: 0.75rem;
+    }
+    .closed-step h3 { margin-bottom: 0.35rem; }
+    .closed-step p { font-size: 0.92rem; line-height: 1.55; color: var(--stone); max-width: 22ch; margin: 0 auto; }
+    .closed-tag { text-align: center; font-size: 0.95rem; color: var(--stone); }
+    @media (max-width: 768px) {
+      .closed-steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .closed-steps { grid-template-columns: 1fr; }
+    }
+
+    /* Comparison table */
+    .compare { background: var(--cream); }
+    .compare-head { text-align: center; max-width: 720px; margin: 0 auto 2.5rem; }
+    .compare-table { overflow-x: auto; }
+    .compare-table table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    .compare-table th, .compare-table td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .compare-table th { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--stone); }
+    .compare-table th.compare-highlight { color: var(--ink); }
+    .compare-table td.compare-highlight { font-weight: 600; background: rgba(244,237,223,0.35); }
+    .compare-table td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
+    @media (max-width: 640px) {
+      .compare-table th, .compare-table td { padding: 0.6rem 0.5rem; font-size: 0.82rem; }
+    }
+
+    /* Social proof section */
+    .social-proof { background: var(--parchment); }
+    .sp-head { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
+    .sp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .sp-item { text-align: center; }
+    .sp-num { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 2.5rem; color: var(--ink); line-height: 1.1; }
+    .sp-lbl { font-size: 0.85rem; color: var(--stone); margin-top: 0.35rem; line-height: 1.4; max-width: 18ch; margin-left: auto; margin-right: auto; }
+    @media (max-width: 768px) { .sp-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .sp-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -904,6 +955,7 @@
     </a>
     <div class="nav-links">
       <a href="#features">Product</a>
+      <a href="#how-arca-thinks">Framework</a>
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="/blog/">Learn</a>
@@ -935,6 +987,7 @@
   </div>
   <div class="nav-mobile-body">
     <a href="#features" data-close>Product</a>
+    <a href="#how-arca-thinks" data-close>Framework</a>
     <a href="#how" data-close>How it works</a>
     <a href="#pricing" data-close>Pricing</a>
     <a href="/blog/" data-close>Learn</a>
@@ -947,7 +1000,7 @@
     <div class="hero-inner">
       <div class="hero-pill reveal visible">
         <span class="tag">New</span>
-        <span><strong>Arca v1.</strong> Live in 7 days.</span>
+        <span><strong>Arca v1.</strong> Live in 7 days. Better every week after.</span>
         <span class="arrow">→</span>
       </div>
 
@@ -957,6 +1010,9 @@
       </h1>
 
       <p class="hero-sub reveal visible rd-2">
+        Your ops don't just run. They learn.
+      </p>
+      <p class="hero-sub reveal visible rd-2" style="margin-top: 0.5rem; font-size: 1.05rem; opacity: 0.8;">
         One message runs your scheduling, invoicing, onboarding, and follow-ups.
         No dashboards. No CRMs. No learning curve. Built for small service businesses.
       </p>
@@ -1126,7 +1182,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3>Morning brief. Every day.</h3>
-        <p>A two-minute recap of your day before the day starts. What got handled overnight. What needs your call. What's coming up. Delivered to email, WhatsApp, or Telegram.</p>
+        <p>Your AI ops team debriefs you every morning. What happened overnight. What's coming. What it learned. Delivered to email, WhatsApp, or Telegram.</p>
       </div>
     </div>
   </div>
@@ -1180,7 +1236,7 @@
   <div class="wrap">
     <div class="how-head reveal">
       <div class="eyebrow">How it works</div>
-      <h2>Live in <em>seven days.</em> Not seven weeks.</h2>
+      <h2>Live in <em>seven days.</em> Better every week after.</h2>
       <p>You don't set up Arca. We do. Every build is custom to how your business actually runs.</p>
     </div>
 
@@ -1227,6 +1283,134 @@
   </div>
 </section>
 
+<section class="closed pad" id="how-arca-thinks">
+  <div class="wrap">
+    <div class="closed-head reveal">
+      <div class="eyebrow">How Arca Thinks</div>
+      <h2>Most tools automate a task. <em>Arca automates a loop.</em></h2>
+      <p>Every cycle, your operations get sharper. That's not a feature. It's a framework.</p>
+    </div>
+
+    <div class="closed-steps">
+      <div class="closed-step reveal">
+        <div class="closed-letter">C</div>
+        <h3>Capture</h3>
+        <p>Every email, message, invoice, and calendar event flows in automatically.</p>
+      </div>
+      <div class="closed-step reveal rd-1">
+        <div class="closed-letter">L</div>
+        <h3>Log</h3>
+        <p>Structured records, not scattered notes. Searchable. Actionable. Permanent.</p>
+      </div>
+      <div class="closed-step reveal rd-2">
+        <div class="closed-letter">O</div>
+        <h3>Orchestrate</h3>
+        <p>Routes work to the right place. Scheduling, follow-ups, invoicing — connected, not siloed.</p>
+      </div>
+      <div class="closed-step reveal">
+        <div class="closed-letter">S</div>
+        <h3>Scan</h3>
+        <p>Monitors for what's slipping. Cold leads, overdue invoices, missed follow-ups.</p>
+      </div>
+      <div class="closed-step reveal rd-1">
+        <div class="closed-letter">E</div>
+        <h3>Execute</h3>
+        <p>Drafts actions for your approval. You stay in control. Nothing ships without you.</p>
+      </div>
+      <div class="closed-step reveal rd-2">
+        <div class="closed-letter">D</div>
+        <h3>Document</h3>
+        <p>Every cycle writes back what it learned. Next time, it starts ahead.</p>
+      </div>
+    </div>
+
+    <p class="closed-tag reveal">Built on the <strong>CLOSED Framework</strong> — the first ops system designed to get smarter every cycle.</p>
+  </div>
+</section>
+
+
+<section class="compare pad" id="compare">
+  <div class="wrap">
+    <div class="compare-head reveal">
+      <div class="eyebrow">Compare</div>
+      <h2>Not another tool to manage. <em>An ops team that runs itself.</em></h2>
+    </div>
+    <div class="compare-table reveal">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th class="compare-highlight">Arca</th>
+            <th>Zapier + ChatGPT</th>
+            <th>VA hire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Setup</td>
+            <td class="compare-highlight">Built for you in 7 days</td>
+            <td>Weeks of zaps and prompts</td>
+            <td>Weeks to hire and train</td>
+          </tr>
+          <tr>
+            <td>Runs your ops end-to-end</td>
+            <td class="compare-highlight">Yes</td>
+            <td>No — connects tools only</td>
+            <td>Depends on the person</td>
+          </tr>
+          <tr>
+            <td>Learns every cycle</td>
+            <td class="compare-highlight">Yes (CLOSED framework)</td>
+            <td>No</td>
+            <td>Maybe, slowly</td>
+          </tr>
+          <tr>
+            <td>One-chat interface</td>
+            <td class="compare-highlight">Yes</td>
+            <td>No — multiple dashboards</td>
+            <td>Slack, email, async</td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td class="compare-highlight">\9/mo</td>
+            <td> –200/mo (stack cost)</td>
+            <td> –2000/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section class="social-proof pad" id="social-proof">
+  <div class="wrap">
+    <div class="sp-head reveal">
+      <div class="eyebrow">Live stats</div>
+      <h2>Arca runs on <em>Arca.</em> Here's the proof.</h2>
+      <p>We dogfood every feature. These are real numbers from our own operations.</p>
+    </div>
+    <div class="sp-grid">
+      <div class="sp-item reveal">
+        <div class="sp-num">950+</div>
+        <div class="sp-lbl">ops tasks completed this month by our AI team</div>
+      </div>
+      <div class="sp-item reveal rd-1">
+        <div class="sp-num">6</div>
+        <div class="sp-lbl">AI agents running operations 24/7</div>
+      </div>
+      <div class="sp-item reveal rd-2">
+        <div class="sp-num">0</div>
+        <div class="sp-lbl">dashboards our team checks daily. It's all in chat.</div>
+      </div>
+      <div class="sp-item reveal">
+        <div class="sp-num">17.3h</div>
+        <div class="sp-lbl">weekly admin time recovered per client</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pricing pad" id="pricing">
   <div class="wrap">
     <div class="pricing-head reveal">
@@ -1237,11 +1421,11 @@
 
     <div class="tiers">
       <div class="tier reveal" id="get-started">
-        <div class="tier-name">Foundation</div>
-        <div class="tier-who">For solo operators with 1–10 active clients.</div>
-        <div class="tier-price"><span class="num">$97</span><span class="per">/mo</span></div>
-        <div class="tier-setup">Includes the 7-day build · no setup fee</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Foundation%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
+        <div class="tier-name">Starter</div>
+        <div class="tier-who">For solo operators getting started. DIY with Arca's tools.</div>
+        <div class="tier-price"><span class="num">$99</span><span class="per">/mo</span></div>
+        <div class="tier-setup">1 seat · self-serve · no setup fee</div>
+        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Starter%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
         <ul class="tier-feats">
           <li>One-chat interface (WhatsApp or Telegram)</li>
           <li>Scheduling · invoicing · onboarding</li>
@@ -1252,32 +1436,18 @@
       </div>
 
       <div class="tier featured reveal rd-1">
-        <div class="tier-name">Structure</div>
-        <div class="tier-who">For coaches and consultants scaling to 10–25 active clients.</div>
-        <div class="tier-price"><span class="num">$247</span><span class="per">/mo</span></div>
-        <div class="tier-setup">Everything in Foundation · plus growth</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Structure%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
+        <div class="tier-name">Ops</div>
+        <div class="tier-who">For coaches and consultants ready to hand it off. We build and run it.</div>
+        <div class="tier-price"><span class="num">$199</span><span class="per">/mo</span></div>
+        <div class="tier-setup">White-glove build · managed for you</div>
+        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Ops%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
         <ul class="tier-feats">
+          <li>Everything in Starter</li>
           <li>Lead capture + pipeline tracking</li>
           <li>Re-engagement campaigns</li>
           <li>Recurring billing · dunning</li>
           <li>Dedicated operations strategist</li>
           <li>Custom routines + weekly review</li>
-        </ul>
-      </div>
-
-      <div class="tier reveal rd-2">
-        <div class="tier-name">Fortress</div>
-        <div class="tier-who">For growing teams of 2–15 with complex operations.</div>
-        <div class="tier-price"><span class="num">$497</span><span class="per">/mo</span></div>
-        <div class="tier-setup">Everything in Structure · plus team ops</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Fortress%20diagnosis%20call" class="btn btn-primary">Book diagnosis call</a></div>
-        <ul class="tier-feats">
-          <li>Multi-team coordination</li>
-          <li>Custom routines across roles</li>
-          <li>Advanced signals + escalation paths</li>
-          <li>Dedicated build specialist</li>
-          <li>Priority support · private Slack</li>
         </ul>
       </div>
     </div>
@@ -1320,6 +1490,18 @@
           <summary class="faq-q">Contract or commitment? <span class="faq-icon">+</span></summary>
           <div class="faq-a">No contracts. Month-to-month. Cancel anytime. 30-day money-back on your first month.</div>
         </details>
+        <details class="faq-item">
+          <summary class="faq-q">What is the CLOSED Framework? <span class="faq-icon">+</span></summary>
+          <div class="faq-a">CLOSED stands for Capture, Log, Orchestrate, Scan, Execute, Document. It's the operating loop Arca runs on every cycle. Each pass, your operations get sharper because the system learns from what worked and what didn't.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">How is Arca different from Zapier or Make? <span class="faq-icon">+</span></summary>
+          <div class="faq-a">Zapier and Make connect apps together. Arca runs your operations end-to-end. Instead of building automations yourself, Arca captures your workflows, orchestrates them, and learns from every cycle. No setup required — we build it for you.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Do I need to set up anything? <span class="faq-icon">+</span></summary>
+          <div class="faq-a">No. We build your Arca for you. After a 30-minute diagnosis call, our team wires up your scheduling, invoicing, onboarding, and follow-ups. You wake up to your first morning brief on day 7.</div>
+        </details>
       </div>
     </div>
   </div>
@@ -1330,7 +1512,7 @@
     <div class="final-inner reveal">
       <div class="eyebrow" style="color: var(--amber); justify-content:center;">Start here</div>
       <h2>Stop being your own <em>ops manager.</em></h2>
-      <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca. Live in 7 days. $97 to start.</p>
+      <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca. Live in 7 days. $99 to start.</p>
       <a href="mailto:hello@runarca.xyz?subject=Diagnosis%20call" class="btn btn-amber">Book diagnosis call <span class="arrow">→</span></a>
     </div>
   </div>
