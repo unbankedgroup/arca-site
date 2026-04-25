@@ -578,6 +578,9 @@
     @media (max-width: 880px) {
       .f-card, .f-card.third { grid-column: span 12; }
     }
+    @media (max-width: 600px) {
+      .f-card.wide > div { grid-template-columns: 1fr !important; }
+    }
 
     /* ---- SPLIT (dark) ---- */
     .split { padding: clamp(5rem, 9vw, 7.5rem) 0; background: var(--navy); color: var(--paper); }
