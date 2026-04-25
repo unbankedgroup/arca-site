@@ -713,75 +713,42 @@
     .closed-head h2 em { font-style: normal; color: var(--brass); }
     .closed-head p { color: rgba(250, 250, 248, 0.6); font-size: 1.025rem; margin: 0 auto; max-width: 48ch; }
 
-    /* Hexagonal cycle layout */
-    .closed-cycle {
-      position: relative;
-      max-width: 720px;
+    /* Clean 3x2 grid layout */
+    .closed-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 900px;
       margin: 0 auto 3rem;
-      aspect-ratio: 1.15 / 1;
     }
-    .closed-node {
-      position: absolute;
-      width: 160px;
+    @media (max-width: 720px) {
+      .closed-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px) {
+      .closed-grid { grid-template-columns: 1fr; max-width: 360px; }
+    }
+    .closed-step {
+      padding: 1.75rem 1.5rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--r-lg);
       text-align: center;
-      transform: translate(-50%, -50%);
+      transition: background 0.25s var(--ease), border-color 0.25s var(--ease);
     }
-    /* Position nodes in a hexagon: top, top-right, bottom-right, bottom, bottom-left, top-left */
-    .closed-node:nth-child(1) { top: 4%;  left: 50%; }
-    .closed-node:nth-child(2) { top: 26%; left: 90%; }
-    .closed-node:nth-child(3) { top: 68%; left: 90%; }
-    .closed-node:nth-child(4) { top: 92%; left: 50%; }
-    .closed-node:nth-child(5) { top: 68%; left: 10%; }
-    .closed-node:nth-child(6) { top: 26%; left: 10%; }
-
+    .closed-step:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(201, 167, 106, 0.2);
+    }
     .closed-letter {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 3rem; height: 3rem; border-radius: 50%;
+      width: 2.75rem; height: 2.75rem; border-radius: 50%;
       background: var(--brass); color: var(--navy);
       font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
-      font-size: 1.25rem; margin-bottom: 0.6rem;
-      box-shadow: 0 0 0 4px rgba(201, 167, 106, 0.15), 0 2px 8px rgba(0,0,0,0.2);
-      position: relative; z-index: 2;
+      font-size: 1.15rem; margin-bottom: 0.85rem;
+      box-shadow: 0 0 0 4px rgba(201, 167, 106, 0.12), 0 2px 8px rgba(0,0,0,0.2);
     }
-    .closed-node h3 { color: var(--paper); font-size: 1rem; margin-bottom: 0.25rem; }
-    .closed-node p { font-size: 0.8rem; line-height: 1.45; color: rgba(250,250,248,0.55); max-width: 20ch; margin: 0 auto; }
-
-    /* Connector ring */
-    .closed-ring {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 55%;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      border: 1.5px dashed rgba(201, 167, 106, 0.25);
-    }
-    .closed-ring-inner {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20%;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: rgba(201, 167, 106, 0.06);
-      border: 1px solid rgba(201, 167, 106, 0.12);
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Instrument Serif', serif; font-style: italic;
-      font-size: 1.1rem; color: var(--brass);
-    }
-    /* Directional arrows on ring */
-    .closed-arrows {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 55%;
-      aspect-ratio: 1;
-    }
-    .closed-arrows svg {
-      position: absolute; top: 50%; left: 50%;
-      width: 100%; height: 100%;
-      transform: translate(-50%, -50%);
-    }
+    .closed-step h3 { color: var(--paper); font-size: 1rem; margin-bottom: 0.35rem; font-weight: 700; }
+    .closed-step p { font-size: 0.825rem; line-height: 1.5; color: rgba(250,250,248,0.55); max-width: none; margin: 0; }
 
     .closed-tag {
       text-align: center;
@@ -791,28 +758,6 @@
       margin: 0 auto;
     }
     .closed-tag strong { color: var(--brass); font-weight: 600; }
-
-    /* Mobile CLOSED fallback */
-    @media (max-width: 640px) {
-      .closed-cycle { display: none; }
-      .closed-mobile { display: grid !important; }
-    }
-    .closed-mobile {
-      display: none;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-    .cm-step {
-      padding: 1.25rem;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: var(--r);
-      text-align: center;
-    }
-    .cm-step .closed-letter { margin-bottom: 0.5rem; }
-    .cm-step h3 { color: var(--paper); font-size: 0.95rem; margin-bottom: 0.2rem; }
-    .cm-step p { font-size: 0.78rem; line-height: 1.4; color: rgba(250,250,248,0.5); max-width: none; }
 
     /* ---- COMPARISON ---- */
     .compare { background: var(--paper); }
@@ -1459,91 +1404,33 @@
       <p>Every cycle, your operations get sharper. Not a feature. A framework.</p>
     </div>
 
-    <!-- Desktop: Hexagonal cycle -->
-    <div class="closed-cycle reveal">
-      <div class="closed-ring"></div>
-      <div class="closed-ring-inner">loop</div>
-
-      <!-- Directional arrows SVG -->
-      <div class="closed-arrows">
-        <svg viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Connecting arcs between nodes -->
-          <path d="M 230 38 Q 310 50 330 110" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <path d="M 340 170 Q 340 240 310 280" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <path d="M 280 320 Q 230 350 200 340" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <path d="M 170 340 Q 110 330 80 290" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <path d="M 60 240 Q 50 170 70 120" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <path d="M 100 60 Q 140 30 180 32" stroke="rgba(201,167,106,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
-          <!-- Arrow tips -->
-          <polygon points="328,108 334,118 322,116" fill="rgba(201,167,106,0.35)"/>
-          <polygon points="308,278 316,284 304,286" fill="rgba(201,167,106,0.35)"/>
-          <polygon points="200,340 198,328 210,336" fill="rgba(201,167,106,0.35)"/>
-          <polygon points="82,290 76,280 88,282" fill="rgba(201,167,106,0.35)"/>
-          <polygon points="72,122 66,132 78,130" fill="rgba(201,167,106,0.35)"/>
-          <polygon points="178,34 182,46 170,38" fill="rgba(201,167,106,0.35)"/>
-        </svg>
-      </div>
-
-      <div class="closed-node">
+    <div class="closed-grid reveal">
+      <div class="closed-step">
         <div class="closed-letter">C</div>
         <h3>Capture</h3>
         <p>Every email, message, invoice, and event flows in automatically.</p>
       </div>
-      <div class="closed-node">
+      <div class="closed-step">
         <div class="closed-letter">L</div>
         <h3>Log</h3>
         <p>Structured records. Searchable. Actionable. Permanent.</p>
       </div>
-      <div class="closed-node">
+      <div class="closed-step">
         <div class="closed-letter">O</div>
         <h3>Orchestrate</h3>
         <p>Routes work to the right place. Connected, not siloed.</p>
       </div>
-      <div class="closed-node">
+      <div class="closed-step">
         <div class="closed-letter">S</div>
         <h3>Scan</h3>
         <p>Monitors for what's slipping. Cold leads, overdue invoices.</p>
       </div>
-      <div class="closed-node">
+      <div class="closed-step">
         <div class="closed-letter">E</div>
         <h3>Execute</h3>
         <p>Drafts actions for your approval. Nothing ships without you.</p>
       </div>
-      <div class="closed-node">
-        <div class="closed-letter">D</div>
-        <h3>Document</h3>
-        <p>Every cycle writes back what it learned. Next time, starts ahead.</p>
-      </div>
-    </div>
-
-    <!-- Mobile: 2-col grid fallback -->
-    <div class="closed-mobile">
-      <div class="cm-step">
-        <div class="closed-letter">C</div>
-        <h3>Capture</h3>
-        <p>Every email, message, invoice, and event flows in automatically.</p>
-      </div>
-      <div class="cm-step">
-        <div class="closed-letter">L</div>
-        <h3>Log</h3>
-        <p>Structured records. Searchable. Actionable. Permanent.</p>
-      </div>
-      <div class="cm-step">
-        <div class="closed-letter">O</div>
-        <h3>Orchestrate</h3>
-        <p>Routes work to the right place. Connected, not siloed.</p>
-      </div>
-      <div class="cm-step">
-        <div class="closed-letter">S</div>
-        <h3>Scan</h3>
-        <p>Monitors for what's slipping. Cold leads, overdue invoices.</p>
-      </div>
-      <div class="cm-step">
-        <div class="closed-letter">E</div>
-        <h3>Execute</h3>
-        <p>Drafts actions for your approval. Nothing ships without you.</p>
-      </div>
-      <div class="cm-step">
+      <div class="closed-step">
         <div class="closed-letter">D</div>
         <h3>Document</h3>
         <p>Every cycle writes back what it learned. Next time, starts ahead.</p>
