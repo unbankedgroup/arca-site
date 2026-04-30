@@ -1,0 +1,602 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title="Get Your Free Ops Preview — Arca" description="Tell us about your business and we'll show you exactly how Arca would run your operations. Free, personalized, no commitment." canonicalUrl="https://runarca.xyz/preview" />
+</head>
+<body class="preview-page">
+	<Header />
+
+	<main class="preview-main">
+		<section class="preview-hero">
+			<span class="preview-eyebrow">Free Preview</span>
+			<h1>See how Arca would run your operations</h1>
+			<p class="preview-tagline">Tell us about your business. We'll build a personalized preview showing exactly which workflows Arca would automate, and how much time you'd get back.</p>
+		</section>
+
+		<section class="preview-form-wrap">
+			<form id="preview-form" class="preview-form" novalidate>
+				<div class="form-step" data-step="1">
+					<div class="form-group">
+						<label for="business-name">Business name</label>
+						<input type="text" id="business-name" name="business_name" placeholder="e.g. Brightpath Coaching" required />
+					</div>
+
+					<div class="form-group">
+						<label for="industry">What type of business?</label>
+						<select id="industry" name="industry" required>
+							<option value="" disabled selected>Choose your type</option>
+							<option value="coaching">Coaching</option>
+							<option value="consulting">Consulting</option>
+							<option value="agency">Agency</option>
+							<option value="e-commerce">E-commerce</option>
+							<option value="service-business">Service business</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="team-size">How many people on your team?</label>
+						<div class="radio-group" id="team-size" role="radiogroup" aria-label="Team size">
+							<label class="radio-pill">
+								<input type="radio" name="team_size" value="solo" required />
+								<span>Solo</span>
+							</label>
+							<label class="radio-pill">
+								<input type="radio" name="team_size" value="2-5" />
+								<span>2–5</span>
+							</label>
+							<label class="radio-pill">
+								<input type="radio" name="team_size" value="6-15" />
+								<span>6–15</span>
+							</label>
+							<label class="radio-pill">
+								<input type="radio" name="team_size" value="16+" />
+								<span>16+</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-step" data-step="2">
+					<div class="form-group">
+						<label>What are your top 3 pain points?</label>
+						<p class="form-hint">Pick the ones that drain the most time.</p>
+						<div class="checkbox-grid">
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="client-onboarding" />
+								<span class="check-label">Client onboarding</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="follow-ups" />
+								<span class="check-label">Follow-ups</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="scheduling" />
+								<span class="check-label">Scheduling</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="content-creation" />
+								<span class="check-label">Content creation</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="lead-management" />
+								<span class="check-label">Lead management</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="invoicing" />
+								<span class="check-label">Invoicing</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="project-tracking" />
+								<span class="check-label">Project tracking</span>
+							</label>
+							<label class="check-card">
+								<input type="checkbox" name="pain_points" value="other" />
+								<span class="check-label">Other</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-step" data-step="3">
+					<div class="form-group">
+						<label for="wish">What's the one thing you wish ran itself in your business?</label>
+						<p class="form-hint">Dream big. We'll show you how close it is.</p>
+						<textarea id="wish" name="wish" rows="3" placeholder="e.g. I wish client intake just happened without me chasing emails, schedules, and payment info..." required></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" id="email" name="email" placeholder="you@yourbusiness.com" required />
+					</div>
+
+					<button type="submit" class="btn-submit" id="submit-btn">
+						<span class="btn-text">Get my free preview</span>
+						<span class="btn-loading" style="display:none;">Sending...</span>
+					</button>
+				</div>
+
+				<div class="form-nav">
+					<button type="button" class="btn-step" id="next-btn" data-action="next">Next →</button>
+					<button type="button" class="btn-step btn-step-ghost" id="back-btn" data-action="back" style="display:none;">← Back</button>
+				</div>
+
+				<div class="form-progress">
+					<div class="progress-dot active" data-step="1"></div>
+					<div class="progress-dot" data-step="2"></div>
+					<div class="progress-dot" data-step="3"></div>
+				</div>
+			</form>
+		</section>
+
+		<section class="preview-success" id="success-section" style="display:none;">
+			<div class="success-card">
+				<div class="success-icon">✓</div>
+				<h2>We're building your preview</h2>
+				<p>Check your inbox within 24 hours. We'll show you exactly which workflows Arca would automate for your business, and how much time you'd save.</p>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+
+	<script>
+		const form = document.getElementById('preview-form')!;
+		const steps = form.querySelectorAll<HTMLDivElement>('.form-step');
+		const dots = form.querySelectorAll<HTMLDivElement>('.progress-dot');
+		const nextBtn = document.getElementById('next-btn')!;
+		const backBtn = document.getElementById('back-btn')!;
+		const submitBtn = document.getElementById('submit-btn')!;
+		const successSection = document.getElementById('success-section')!;
+		const formWrap = document.querySelector<HTMLElement>('.preview-form-wrap')!;
+
+		let current = 0;
+
+		function showStep(idx: number) {
+			steps.forEach((s, i) => {
+				(s as HTMLElement).style.display = i === idx ? 'block' : 'none';
+			});
+			dots.forEach((d, i) => {
+				d.classList.toggle('active', i <= idx);
+			});
+			nextBtn.style.display = idx < steps.length - 1 ? '' : 'none';
+			backBtn.style.display = idx > 0 ? '' : 'none';
+			submitBtn.style.display = idx === steps.length - 1 ? '' : 'none';
+		}
+
+		nextBtn.addEventListener('click', () => {
+			if (current < steps.length - 1) {
+				current++;
+				showStep(current);
+			}
+		});
+
+		backBtn.addEventListener('click', () => {
+			if (current > 0) {
+				current--;
+				showStep(current);
+			}
+		});
+
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			const btnText = submitBtn.querySelector<HTMLSpanElement>('.btn-text')!;
+			const btnLoading = submitBtn.querySelector<HTMLSpanElement>('.btn-loading')!;
+			btnText.style.display = 'none';
+			btnLoading.style.display = '';
+			submitBtn.setAttribute('disabled', 'true');
+
+			const data = new FormData(form);
+			const payload = {
+				business_name: data.get('business_name'),
+				industry: data.get('industry'),
+				team_size: data.get('team_size'),
+				pain_points: data.getAll('pain_points'),
+				wish: data.get('wish'),
+				email: data.get('email'),
+			};
+
+			try {
+				const res = await fetch('/api/preview-request', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify(payload),
+				});
+				if (!res.ok) throw new Error(`${res.status}`);
+				formWrap.style.display = 'none';
+				successSection.style.display = '';
+			} catch {
+				btnText.style.display = '';
+				btnLoading.style.display = 'none';
+				submitBtn.removeAttribute('disabled');
+				alert('Something went wrong. Please try again.');
+			}
+		});
+
+		showStep(0);
+	</script>
+
+	<style>
+		.preview-page {
+			background: var(--vellum);
+			min-height: 100vh;
+		}
+
+		.preview-main {
+			max-width: 680px;
+			margin: 0 auto;
+			padding: 3rem 1.5rem 4rem;
+		}
+
+		/* ── Hero ── */
+		.preview-hero {
+			text-align: center;
+			margin-bottom: 2.5rem;
+		}
+
+		.preview-eyebrow {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			color: var(--amber);
+			margin-bottom: 1rem;
+			display: block;
+		}
+
+		.preview-hero h1 {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: clamp(2rem, 5vw, 2.75rem);
+			font-weight: 800;
+			line-height: 1.1;
+			letter-spacing: -0.03em;
+			color: var(--ink);
+			margin: 0 0 1rem;
+		}
+
+		.preview-tagline {
+			font-size: clamp(1rem, 2vw, 1.125rem);
+			color: var(--ink-muted);
+			line-height: 1.6;
+			max-width: 520px;
+			margin: 0 auto;
+		}
+
+		/* ── Form ── */
+		.preview-form {
+			background: var(--paper);
+			border: 1px solid var(--line);
+			border-radius: var(--radius-lg);
+			padding: 2rem 1.75rem 1.75rem;
+			box-shadow: var(--shadow);
+		}
+
+		.form-group {
+			margin-bottom: 1.5rem;
+		}
+
+		.form-group label {
+			display: block;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 600;
+			font-size: 0.9375rem;
+			color: var(--ink);
+			margin-bottom: 0.5rem;
+		}
+
+		.form-hint {
+			font-size: 0.8125rem;
+			color: var(--ink-haze);
+			margin: 0 0 0.75rem;
+		}
+
+		.form-group input[type="text"],
+		.form-group input[type="email"],
+		.form-group select,
+		.form-group textarea {
+			width: 100%;
+			padding: 0.75rem 1rem;
+			font-family: 'Inter', sans-serif;
+			font-size: 0.9375rem;
+			color: var(--ink);
+			background: var(--vellum);
+			border: 1.5px solid var(--line);
+			border-radius: 8px;
+			outline: none;
+			transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+			box-sizing: border-box;
+			-moz-appearance: textfield;
+		}
+
+		.form-group input:focus,
+		.form-group select:focus,
+		.form-group textarea:focus {
+			border-color: var(--amber);
+			box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.12);
+		}
+
+		.form-group input::placeholder,
+		.form-group textarea::placeholder {
+			color: var(--ink-haze);
+		}
+
+		.form-group select {
+			appearance: none;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%238A8278' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position: right 1rem center;
+			padding-right: 2.5rem;
+		}
+
+		.form-group textarea {
+			resize: vertical;
+			min-height: 80px;
+		}
+
+		/* ── Radio pills ── */
+		.radio-group {
+			display: flex;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+
+		.radio-pill {
+			position: relative;
+			cursor: pointer;
+		}
+
+		.radio-pill input {
+			position: absolute;
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+
+		.radio-pill span {
+			display: inline-block;
+			padding: 0.5rem 1.25rem;
+			font-family: 'Inter', sans-serif;
+			font-size: 0.875rem;
+			font-weight: 500;
+			color: var(--ink-muted);
+			background: var(--vellum);
+			border: 1.5px solid var(--line);
+			border-radius: 100px;
+			transition: all 0.2s var(--ease);
+		}
+
+		.radio-pill input:checked + span {
+			background: var(--amber-wash);
+			border-color: var(--amber);
+			color: var(--amber-deep);
+			font-weight: 600;
+		}
+
+		.radio-pill input:focus-visible + span {
+			box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.2);
+		}
+
+		/* ── Checkbox cards ── */
+		.checkbox-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.625rem;
+		}
+
+		@media (max-width: 480px) {
+			.checkbox-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.check-card {
+			position: relative;
+			cursor: pointer;
+		}
+
+		.check-card input {
+			position: absolute;
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+
+		.check-label {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			padding: 0.625rem 0.875rem;
+			font-family: 'Inter', sans-serif;
+			font-size: 0.875rem;
+			color: var(--ink-muted);
+			background: var(--vellum);
+			border: 1.5px solid var(--line);
+			border-radius: 8px;
+			transition: all 0.2s var(--ease);
+		}
+
+		.check-label::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			border: 1.5px solid var(--line);
+			border-radius: 4px;
+			flex-shrink: 0;
+			transition: all 0.2s var(--ease);
+		}
+
+		.check-card input:checked + .check-label {
+			background: var(--amber-wash);
+			border-color: var(--amber);
+			color: var(--amber-deep);
+			font-weight: 600;
+		}
+
+		.check-card input:checked + .check-label::before {
+			background: var(--amber);
+			border-color: var(--amber);
+			content: '✓';
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.625rem;
+			font-weight: 700;
+		}
+
+		.check-card input:focus-visible + .check-label {
+			box-shadow: 0 0 0 3px rgba(184, 116, 61, 0.2);
+		}
+
+		/* ── Nav buttons ── */
+		.form-nav {
+			display: flex;
+			justify-content: space-between;
+			gap: 0.75rem;
+			margin-top: 1rem;
+		}
+
+		.btn-step {
+			font-family: 'Inter', sans-serif;
+			font-weight: 600;
+			font-size: 0.9375rem;
+			padding: 0.75rem 1.5rem;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			background: var(--ink);
+			color: var(--paper);
+			transition: background 0.2s var(--ease), transform 0.2s var(--ease);
+		}
+
+		.btn-step:hover {
+			transform: translateY(-1px);
+		}
+
+		.btn-step-ghost {
+			background: transparent;
+			color: var(--ink-muted);
+			border: 1.5px solid var(--line);
+		}
+
+		.btn-step-ghost:hover {
+			border-color: var(--ink-muted);
+			color: var(--ink);
+		}
+
+		/* ── Progress dots ── */
+		.form-progress {
+			display: flex;
+			justify-content: center;
+			gap: 0.5rem;
+			margin-top: 1.5rem;
+		}
+
+		.progress-dot {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: var(--line);
+			transition: background 0.3s var(--ease);
+		}
+
+		.progress-dot.active {
+			background: var(--amber);
+		}
+
+		/* ── Submit ── */
+		.btn-submit {
+			width: 100%;
+			padding: 0.875rem;
+			margin-top: 0.5rem;
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-weight: 700;
+			font-size: 1rem;
+			color: var(--paper);
+			background: var(--amber);
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+			box-shadow: 0 2px 12px rgba(184, 116, 61, 0.25);
+		}
+
+		.btn-submit:hover:not([disabled]) {
+			background: var(--amber-deep);
+			transform: translateY(-1px);
+			box-shadow: 0 4px 16px rgba(184, 116, 61, 0.35);
+		}
+
+		.btn-submit[disabled] {
+			opacity: 0.7;
+			cursor: not-allowed;
+		}
+
+		/* ── Success ── */
+		.success-card {
+			text-align: center;
+			padding: 3rem 2rem;
+			background: var(--paper);
+			border: 1px solid var(--line);
+			border-radius: var(--radius-lg);
+			box-shadow: var(--shadow);
+		}
+
+		.success-icon {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			background: var(--sage-wash);
+			color: var(--sage);
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-bottom: 1.25rem;
+		}
+
+		.success-card h2 {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 1.5rem;
+			font-weight: 800;
+			color: var(--ink);
+			margin: 0 0 0.75rem;
+		}
+
+		.success-card p {
+			color: var(--ink-muted);
+			line-height: 1.6;
+			max-width: 420px;
+			margin: 0 auto;
+		}
+
+		/* ── Mobile ── */
+		@media (max-width: 640px) {
+			.preview-main {
+				padding: 2rem 1rem 3rem;
+			}
+
+			.preview-form {
+				padding: 1.5rem 1.25rem 1.25rem;
+			}
+
+			.radio-group {
+				gap: 0.375rem;
+			}
+
+			.radio-pill span {
+				padding: 0.4rem 0.875rem;
+				font-size: 0.8125rem;
+			}
+		}
+	</style>
+</body>
+</html>

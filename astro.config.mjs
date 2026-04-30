@@ -37,7 +37,9 @@ export default defineConfig({
           item.url.endsWith('/blog/privacy') ||
           item.url.endsWith('/blog/privacy/') ||
           item.url.endsWith('/blog/terms') ||
-          item.url.endsWith('/blog/terms/')
+          item.url.endsWith('/blog/terms/') ||
+          item.url.endsWith('/blog/preview') ||
+          item.url.endsWith('/blog/preview/')
         ) {
           return undefined;
         }
@@ -58,6 +60,10 @@ export default defineConfig({
         // Rewrite /blog/strategy → /strategy (page lives at root, not under /blog/)
         if (item.url.includes('/blog/strategy')) {
           item.url = item.url.replace('/blog/strategy', '/strategy');
+        }
+        // Rewrite /blog/preview → /preview (page lives at root, not under /blog/)
+        if (item.url.includes('/blog/preview')) {
+          item.url = item.url.replace('/blog/preview', '/preview');
         }
         // Dedupe (site root and blog index both land on /blog after fix-up)
         if (SITEMAP_SEEN.has(item.url)) return undefined;
