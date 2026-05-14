@@ -272,6 +272,16 @@ If you are spending 10 minutes re-explaining your business every time you open a
 
 The reset tax ends when your AI loads your business context automatically. Zero session setup. Zero re-explanation. Zero tax.
 
+## Further Reading
+
+- [OpenAI Memory: Why ChatGPT Keeps Forgetting You](/blog/openai-memory-reset-tax) -- how ChatGPT's 1,200-word memory limit, 52.9% accuracy, and two unannounced memory wipes make the reset tax worse
+- [Limited Memory AI: Why Your AI Assistant Forgets Everything](/blog/limited-memory-ai-explained) -- why the context window architecture causes session-level amnesia and what that actually costs
+- [AI for Small Business: The Hidden Cost No One Talks About](/blog/small-business-ai-hidden-cost) -- the 200+ hours a year solopreneurs lose re-explaining their business to AI
+- [AI-Powered Coaching Platforms: What They Get Wrong About Memory](/blog/ai-coaching-platform-memory) -- why memory is the foundation of coaching tools, not a feature on them
+- [AI Strategy Consultant vs. AI Operations: What SMBs Actually Need](/blog/ai-strategy-consultant-vs-operations) -- why strategy decks miss the reset tax and what operations-level context actually looks like
+- [AI Automation Tools That Remember: Breaking the Reset Tax Cycle](/blog/ai-automation-tools-memory) -- a comparison of ChatGPT, Claude, memory startups, and operations platforms on persistent context
+- [Supermemory AI and Other Memory Solutions: Do They Actually Work?](/blog/supermemory-ai-review) -- why memory APIs and operations platforms solve different problems
+
 ---
 
 ## FAQ
