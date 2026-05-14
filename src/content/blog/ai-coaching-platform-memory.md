@@ -40,6 +40,11 @@ The reset tax is the cost of re-explaining your business to AI that forgets. For
 
 I have watched coaches do this six times a day. Six sessions. Six rounds of catching the AI up on context it should already have. At $150 to $200 an hour, that is $1,400 to $1,900 a month in time paid to a tool that was supposed to save you time.
 
+<aside class="callout callout-stat">
+<strong>The numbers</strong>
+Six re-explanation sessions per day. At $150 to $200 per hour, that is $1,400 to $1,900 per month in time spent catching up an AI that should already know your business.
+</aside>
+
 ## What AI Coaching Platforms Get Wrong About Memory
 
 Every AI-powered coaching platform I have looked at treats memory the same way. As an add-on. A feature you toggle on in settings. A notes section you fill in yourself.
@@ -65,6 +70,12 @@ You did not type any of that. You did not upload a file. You did not fill in a c
 That is what I call the Canada moment. When I moved from Zambia to Canada, I experienced what it felt like for systems to just work. Opening a bank account. Getting internet set up. The things that took weeks of frustration back home happened in 20 minutes. Coaches using AI platforms are still in Zambia. Every session is a new bank account application. Every morning starts with the same explanation of who you are and what you need.
 
 The Canada moment for coaching is when your AI platform holds your context automatically. No setup. No re-explanation. No tax.
+
+<blockquote class="pull-quote">
+<span class="dek">The gap</span>
+You were promised an always-on super employee. You got an assistant that forgets your client's name.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## Why Coaches Feel It First
 

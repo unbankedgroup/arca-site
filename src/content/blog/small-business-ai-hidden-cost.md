@@ -40,6 +40,12 @@ The average solopreneur spends 8 to 12 minutes re-establishing context per sessi
 
 10 minutes times 6 sessions. 60 minutes a day of zero-output overhead. One full hour, every day, on re-introducing yourself to a tool that was supposed to save you time.
 
+<div class="stat-cards">
+<div class="card"><div class="tag">Time</div><div class="num">200+ hrs</div><div class="lbl">per year re-explaining your business to AI</div></div>
+<div class="card"><div class="tag">Cost</div><div class="num">$10K-$30K</div><div class="lbl">in lost billable time per year</div></div>
+<div class="card"><div class="tag">Per session</div><div class="num">8-12 min</div><div class="lbl">re-establishing context every time</div></div>
+</div>
+
 Over a year, that is 250 hours. At $50 per hour, a mid-range consultant rate, that is $12,500 a year. At $150 per hour, a coaching rate, it is $37,500. Even at $25 per hour, you are burning $5,000 on pure overhead.
 
 That is just the direct time cost. The indirect costs go further. Inconsistent output, because the AI gives you different answers based on slightly different re-explanations. Decisions re-litigated because the tool does not remember why they were settled. Tasks that never start because the setup overhead is not worth it.
@@ -61,6 +67,11 @@ Think about the independent trucker in Etobicoke who owns three trucks, uses Zoh
 ## The Emotional Cost Nobody Counts
 
 There is a cost that does not show up in the hourly math. Re-explaining your business to AI feels humiliating. Not because the AI judges you. Because you hear yourself say the same things over and over. Same client names. Same pricing. Same preferences. You start to feel like you are talking to a wall.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+The emotional cost compounds. Every time you re-explain your business, you lose more than time. You lose trust in the tool. You start second-guessing the output. You verify every response because you cannot rely on a system that forgot what you told it yesterday.
+</aside>
 
 This is also including me. I have caught myself depending on the AI because it has accumulated so much nuance and understanding about my business. Then one day it tells me it has no recollection of that, can I remind it again?
 

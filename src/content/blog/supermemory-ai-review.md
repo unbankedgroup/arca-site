@@ -34,6 +34,12 @@ Five layers:
 
 The benchmarks are real. LongMemEval at 85.4%. Number one on LoCoMo and ConvoMem. Supermemory retrieves stored context more accurately than ChatGPT Memory at 52.9% or Mem0 at 49%.
 
+<div class="stat-cards">
+<div class="card"><div class="tag">Supermemory</div><div class="num">85.4%</div><div class="lbl">accuracy on LongMemEval benchmark</div></div>
+<div class="card"><div class="tag">ChatGPT</div><div class="num">52.9%</div><div class="lbl">accuracy on same benchmark</div></div>
+<div class="card"><div class="tag">Mem0</div><div class="num">49%</div><div class="lbl">accuracy on same benchmark</div></div>
+</div>
+
 ## Where Supermemory Falls Short
 
 Here is the part most reviews skip.
@@ -75,6 +81,11 @@ Supermemory is not alone. Four serious contenders in 2026, each solving a differ
 All of these tools solve storage and retrieval. None of them touch the operations gap.
 
 The reset tax is not "my AI cannot find the right fact." The reset tax is "I have to set up my AI every time I start a session." Storage and retrieval shrink the retrieval gap. The setup gap stays exactly where it was.
+
+<aside class="callout callout-note">
+<strong>Note</strong>
+Memory add-ons and operations-level context are different problems. A memory add-on stores facts you feed it. Operations-level context loads your business state automatically because the platform is running your operations. One requires setup. The other is structural.
+</aside>
 
 **Memory add-on** (what Supermemory, Mem0, Zep, and Letta all are): you configure what gets stored, connect data sources, manage the pipeline. Your AI retrieves facts when you ask. You still prompt. You still operate the tool.
 

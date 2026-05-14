@@ -42,11 +42,22 @@ If you were relying on OpenAI memory to hold your client details, your pricing, 
 
 This is not a hypothetical risk. It happened. Twice. And there is no guarantee it won't happen again.
 
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+OpenAI wiped user memory twice with no warning and no backup option. If your business context lives in ChatGPT's memory, one unannounced wipe takes it all. No export. No recovery. No recourse.
+</aside>
+
 ## Why 52.9% Accuracy Is the Real Problem
 
 The Mem0/LoCoMo benchmark scores ChatGPT Memory at 52.9% accuracy on business context retrieval. That means roughly half the time, ChatGPT either remembers the wrong thing or forgets the right one.
 
 Half.
+
+<div class="stat-cards">
+<div class="card"><div class="tag">Memory</div><div class="num">1,200</div><div class="lbl">words of flat text storage about your entire business</div></div>
+<div class="card"><div class="tag">Accuracy</div><div class="num">52.9%</div><div class="lbl">business context retrieval, per Mem0/LoCoMo benchmark</div></div>
+<div class="card"><div class="tag">Wipes</div><div class="num">2×</div><div class="lbl">mass deletions with zero warning or recovery</div></div>
+</div>
 
 You ask ChatGPT to draft a follow-up email to a client. It pulls the wrong pricing tier. You ask it to summarize a project status. It mixes up two clients with similar names. You ask it to generate a proposal. It uses last quarter's rates instead of this quarter's.
 
@@ -63,6 +74,12 @@ Now you have to feed all of that back in. Every change. Every update. Every new 
 The continuity tax is the ongoing cost of keeping your AI tool up to date. Forget the one-time setup fee framing. This is a recurring charge you pay every day, in time, because the tool cannot update itself. ChatGPT is a chatbot. You cannot run your business on a chatbot. The context goes in when you type it in. Nothing goes in automatically.
 
 As I wrote in the [reset tax pillar](/blog/reset-tax-ai), the average solopreneur spends 8 to 12 minutes re-explaining business context per session. With ChatGPT, that number goes up because the memory is unreliable. You are not just re-explaining. You are verifying. Checking whether it remembered the right thing this time. Double-checking every output against what you actually told it. The tool was supposed to be an always-on super employee. You ended up with a coworker who has amnesia.
+
+<blockquote class="pull-quote">
+<span class="dek">The real cost</span>
+The tool was supposed to be an always-on super employee. You ended up with a coworker who has amnesia.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## Why Resetting Beats Remembering
 

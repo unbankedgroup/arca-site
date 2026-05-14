@@ -52,6 +52,11 @@ This is what strategy decks miss. They map the toolstack. They do not map the co
 
 The math is brutal. At 10 minutes of re-explanation per session, 6 sessions a day, you lose over 200 hours a year. Five working weeks of pure overhead. This cost does not show up in a tool comparison matrix. It shows up in your calendar.
 
+<aside class="callout callout-stat">
+<strong>The numbers</strong>
+200 hours a year lost to re-explaining your business to AI. Over 60% of small business owners spend more time managing their AI tools than using them for real work. The strategy deck accounts for zero of those hours.
+</aside>
+
 ## Strategy Without Operations Is a Subscription Problem
 
 Here is the pattern I keep seeing. SMB owners get a toolstack recommendation and end up subscribing to four or five AI-powered SaaS tools. Each one does one thing well. None of them talk to each other. Each one wants its own setup, its own context, its own re-explanation.
@@ -61,6 +66,11 @@ The ROI projections assumed the tools would run at 80% efficiency. In practice, 
 The strategy consultant gave them five tools to buy. Nobody gave them a plan for how those tools remember context between sessions, or what happens when pricing changes, a client drops off, or a decision on Tuesday has not registered by Thursday.
 
 Strategy without operations is a subscription problem with nicer branding.
+
+<aside class="callout callout-warning">
+<strong>Red flag</strong>
+The ROI projections in your strategy deck assumed the tools would run at 80% efficiency. In practice, SMBs use 15 to 20% of a tool's capability because they are paying the reset tax on every single one. The strategy consultant gave you five tools to buy. Nobody gave you a plan for making them remember your business.
+</aside>
 
 ## What SMBs Actually Need
 

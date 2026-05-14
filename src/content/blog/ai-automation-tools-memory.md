@@ -38,6 +38,11 @@ Then there are the wipe events. OpenAI performed mass memory wipes in February 2
 
 I kept using the same long conversation to avoid resetting. That worked until the context window filled up and started compressing earlier instructions into conflicting rules. The longer I worked in one session, the worse the output got. I described this exact problem in [the reset tax post](/blog/reset-tax-ai). When I finally reset with clean context and pointed the agent at the right source files, it worked immediately. Less is more.
 
+<aside class="callout callout-note">
+<strong>Note</strong>
+The paradox of long AI conversations: the more context you accumulate, the worse the output gets. Compression creates contradictions. Conflicting rules produce behavior nobody asked for. The fix is not more context. It is clean, structured context that loads fresh every session.
+</aside>
+
 ### Claude (Anthropic)
 
 Claude takes a conservative approach to memory. It deliberately under-remembers to avoid noise and contradictions. More reliable when it does remember. But it misses details that matter.
@@ -76,6 +81,12 @@ You do not maintain the context. It lives inside how the platform actually opera
 | Reset tax | Full | Reduced | Minimal (if configured) | Zero |
 
 The pattern is clear. As you move from left to right, the reset tax drops. But so does the accessibility for non-technical users. The operations platform column is where the tax hits zero, because the context is structural, not stored.
+
+<blockquote class="pull-quote">
+<span class="dek">The pattern</span>
+A tool waits for you to tell it what to do. A service already knows what needs doing.
+<cite>Mal Mposha · Arca</cite>
+</blockquote>
 
 ## Why "Just Use ChatGPT" Misses the Point
 
