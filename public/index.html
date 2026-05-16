@@ -27,6 +27,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <script>
+    window.ARCA_GA_MEASUREMENT_ID = '';
+    if (window.ARCA_GA_MEASUREMENT_ID) {
+      const ga = document.createElement('script');
+      ga.async = true;
+      ga.src = `https://www.googletagmanager.com/gtag/js?id=${window.ARCA_GA_MEASUREMENT_ID}`;
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', window.ARCA_GA_MEASUREMENT_ID);
+    }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -214,6 +227,7 @@
       font-family: 'Inter', sans-serif;
       font-weight: 600; font-size: 0.9375rem;
       line-height: 1; padding: 0.8125rem 1.375rem;
+      min-height: 44px;
       border-radius: 8px;
       transition: all 0.2s var(--ease);
       white-space: nowrap;
@@ -231,10 +245,14 @@
     }
     .btn-ghost:hover { box-shadow: inset 0 0 0 1px var(--ink-muted); background: var(--paper-2); }
     .btn-amber {
-      background: var(--amber); color: #fff;
+      background: var(--amber-deep); color: #fff;
       box-shadow: 0 1px 3px rgba(224,112,32,0.3);
     }
-    .btn-amber:hover { background: var(--amber-deep); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(224,112,32,0.25); }
+    .btn-amber:hover { background: #8f4311; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(224,112,32,0.25); }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
+    }
 
     /* ---- EYEBROW ---- */
     .eyebrow {
@@ -284,7 +302,7 @@
     .nav-links a { transition: color 0.2s ease; }
     .nav-links a:hover { color: var(--ink); }
     .nav-cta { display: flex; align-items: center; gap: 0.5rem; }
-    .nav-toggle { display: none; width: 36px; height: 36px; position: relative; }
+    .nav-toggle { display: none; width: 44px; height: 44px; position: relative; }
     .nav-toggle span {
       position: absolute; left: 9px; right: 9px; height: 1.5px;
       background: var(--ink); border-radius: 2px; transition: all 0.2s ease;
@@ -782,12 +800,44 @@
     }
     .compare-table th.compare-highlight { color: var(--ink); }
     .compare-table td.compare-highlight { font-weight: 600; color: var(--ink); background: var(--amber-wash); }
-    .compare-table td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
+    .compare-table tbody th { font-weight: 500; color: var(--ink); white-space: nowrap; }
     .compare-table tbody tr:last-child td { border-bottom: none; }
     .compare-table tbody tr { transition: background 0.15s ease; }
     .compare-table tbody tr:hover { background: var(--paper); }
     @media (max-width: 640px) {
       .compare-table th, .compare-table td { padding: 0.75rem 0.65rem; font-size: 0.82rem; }
+    }
+    @media (max-width: 560px) {
+      .compare-table { overflow-x: visible; }
+      .compare-table table,
+      .compare-table thead,
+      .compare-table tbody,
+      .compare-table tr,
+      .compare-table th,
+      .compare-table td { display: block; width: 100%; }
+      .compare-table thead { display: none; }
+      .compare-table tbody tr {
+        border-bottom: 1px solid var(--line-soft);
+        padding: 1rem 0;
+      }
+      .compare-table tbody tr:last-child { border-bottom: none; }
+      .compare-table tbody th {
+        border-bottom: none;
+        padding: 0 1rem 0.75rem;
+        white-space: normal;
+      }
+      .compare-table tbody td {
+        display: grid;
+        grid-template-columns: minmax(7rem, 42%) 1fr;
+        gap: 0.75rem;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+      }
+      .compare-table tbody td::before {
+        content: attr(data-label);
+        color: var(--ink-muted);
+        font-weight: 600;
+      }
     }
 
     /* ---- SOCIAL PROOF ---- */
@@ -863,8 +913,8 @@
     .tier.featured .tier-setup { color: rgba(250, 250, 248, 0.4); }
     .tier-cta { margin-bottom: 1.75rem; }
     .tier-cta .btn { width: 100%; justify-content: center; padding: 0.875rem 1.5rem; }
-    .tier.featured .btn-primary { background: var(--amber); color: #fff; box-shadow: 0 1px 3px rgba(224,112,32,0.3); }
-    .tier.featured .btn-primary:hover { background: var(--amber-deep); }
+    .tier.featured .btn-primary { background: var(--amber-deep); color: #fff; box-shadow: 0 1px 3px rgba(224,112,32,0.3); }
+    .tier.featured .btn-primary:hover { background: #8f4311; }
     .tier-feats {
       list-style: none; padding: 0;
       display: flex; flex-direction: column; gap: 0.65rem;
@@ -1020,6 +1070,13 @@
     .rd-2 { transition-delay: 0.12s; }
     .rd-3 { transition-delay: 0.19s; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
       .reveal { opacity: 1; transform: none; transition: none; }
     }
 
@@ -1056,19 +1113,18 @@
       <a href="#how-arca-thinks">Framework</a>
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
-      <a href="/blog/">Learn</a>
+      <a href="/blog">Learn</a>
     </div>
     <div class="nav-cta">
-      <a href="#pricing" class="btn btn-ghost">Sign in</a>
-      <a href="#get-started" class="btn btn-primary">Get started <span class="arrow">&rarr;</span></a>
+      <a href="/preview?source=home_nav&cta_id=start_build" class="btn btn-primary" data-analytics-event="cta_click" data-cta-id="home_nav_start">Start your build <span class="arrow">&rarr;</span></a>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navMobile">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<div class="nav-mobile" id="navMobile" role="dialog" aria-modal="true">
+<div class="nav-mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Main menu">
   <div class="nav-mobile-top">
     <a href="/" class="brand" aria-label="Arca home">
       <svg class="brand-mark" width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -1088,8 +1144,8 @@
     <a href="#how-arca-thinks" data-close>Framework</a>
     <a href="#how" data-close>How it works</a>
     <a href="#pricing" data-close>Pricing</a>
-    <a href="/blog/" data-close>Learn</a>
-    <a href="#get-started" class="btn btn-primary" data-close>Get started &rarr;</a>
+    <a href="/blog" data-close>Learn</a>
+    <a href="/preview?source=mobile_nav&cta_id=start_build" class="btn btn-primary" data-close data-analytics-event="cta_click" data-cta-id="mobile_nav_start">Start your build &rarr;</a>
   </div>
 </div>
 
@@ -1116,7 +1172,7 @@
       </p>
 
       <div class="hero-ctas reveal visible rd-3">
-        <a href="#get-started" class="btn btn-primary">
+        <a href="/preview?source=hero&cta_id=start_7_day_build" class="btn btn-primary" data-analytics-event="cta_click" data-cta-id="hero_start">
           Start your 7-day build <span class="arrow">&rarr;</span>
         </a>
         <a href="#features" class="btn btn-ghost">See how it works</a>
@@ -1455,42 +1511,42 @@
       <table>
         <thead>
           <tr>
-            <th></th>
-            <th class="compare-highlight">Arca</th>
-            <th>Zapier + ChatGPT</th>
-            <th>VA hire</th>
+            <th scope="col"></th>
+            <th scope="col" class="compare-highlight">Arca</th>
+            <th scope="col">Zapier + ChatGPT</th>
+            <th scope="col">VA hire</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Setup</td>
-            <td class="compare-highlight">Built for you in 7 days</td>
-            <td>Weeks of zaps and prompts</td>
-            <td>Weeks to hire and train</td>
+            <th scope="row">Setup</th>
+            <td data-label="Arca" class="compare-highlight">Built for you in 7 days</td>
+            <td data-label="Zapier + ChatGPT">Weeks of zaps and prompts</td>
+            <td data-label="VA hire">Weeks to hire and train</td>
           </tr>
           <tr>
-            <td>Runs ops end-to-end</td>
-            <td class="compare-highlight">Yes</td>
-            <td>No &mdash; connects tools only</td>
-            <td>Depends on the person</td>
+            <th scope="row">Runs ops end-to-end</th>
+            <td data-label="Arca" class="compare-highlight">Yes</td>
+            <td data-label="Zapier + ChatGPT">No &mdash; connects tools only</td>
+            <td data-label="VA hire">Depends on the person</td>
           </tr>
           <tr>
-            <td>Learns every cycle</td>
-            <td class="compare-highlight">Yes (CLOSED framework)</td>
-            <td>No</td>
-            <td>Maybe, slowly</td>
+            <th scope="row">Learns every cycle</th>
+            <td data-label="Arca" class="compare-highlight">Yes (CLOSED framework)</td>
+            <td data-label="Zapier + ChatGPT">No</td>
+            <td data-label="VA hire">Maybe, slowly</td>
           </tr>
           <tr>
-            <td>One-chat interface</td>
-            <td class="compare-highlight">Yes</td>
-            <td>No &mdash; multiple dashboards</td>
-            <td>Slack, email, async</td>
+            <th scope="row">One-chat interface</th>
+            <td data-label="Arca" class="compare-highlight">Yes</td>
+            <td data-label="Zapier + ChatGPT">No &mdash; multiple dashboards</td>
+            <td data-label="VA hire">Slack, email, async</td>
           </tr>
           <tr>
-            <td>Monthly cost</td>
-            <td class="compare-highlight">$99&ndash;199/mo</td>
-            <td>$100&ndash;200/mo (stack)</td>
-            <td>$800&ndash;2,000/mo</td>
+            <th scope="row">Monthly cost</th>
+            <td data-label="Arca" class="compare-highlight">$99&ndash;199/mo</td>
+            <td data-label="Zapier + ChatGPT">$100&ndash;200/mo (stack)</td>
+            <td data-label="VA hire">$800&ndash;2,000/mo</td>
           </tr>
         </tbody>
       </table>
@@ -1530,6 +1586,19 @@
 </section>
 
 <!-- ============================================================
+     MISSION/VISION
+     ============================================================ -->
+<section class="mission section" id="mission">
+  <div class="wrap">
+    <div style="text-align:center; max-width:680px; margin:0 auto;" class="reveal">
+      <div class="eyebrow" style="justify-content:center;">Why we exist</div>
+      <h2 style="margin:0.75rem auto 1.25rem;">To bring structure to growing businesses before <em>chaos breaks them.</em></h2>
+      <p style="font-size:1.1rem; color:var(--ink-muted); max-width:48ch; margin:0 auto;">A world where founders spend more time building what they love than managing what they built.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      PRICING
      ============================================================ -->
 <section class="pricing section" id="pricing">
@@ -1546,7 +1615,7 @@
         <div class="tier-who">Solo operators getting started. DIY with Arca's tools.</div>
         <div class="tier-price"><span class="num">$99</span><span class="per">/mo</span></div>
         <div class="tier-setup">1 seat &middot; self-serve &middot; no setup fee</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Starter%20diagnosis%20call" class="btn btn-primary">Book diagnosis call <span class="arrow">&rarr;</span></a></div>
+        <div class="tier-cta"><a href="/preview?source=pricing&plan=starter&cta_id=starter" class="btn btn-primary" data-analytics-event="cta_click" data-cta-id="pricing_starter">Start Starter <span class="arrow">&rarr;</span></a></div>
         <ul class="tier-feats">
           <li>One-chat interface (Telegram)</li>
           <li>Scheduling, invoicing, onboarding</li>
@@ -1561,7 +1630,7 @@
         <div class="tier-who">Coaches and consultants ready to hand it off. We build and run it.</div>
         <div class="tier-price"><span class="num">$199</span><span class="per">/mo</span></div>
         <div class="tier-setup">White-glove build &middot; managed for you</div>
-        <div class="tier-cta"><a href="mailto:hello@runarca.xyz?subject=Ops%20diagnosis%20call" class="btn btn-primary">Book diagnosis call <span class="arrow">&rarr;</span></a></div>
+        <div class="tier-cta"><a href="/preview?source=pricing&plan=ops&cta_id=ops" class="btn btn-primary" data-analytics-event="cta_click" data-cta-id="pricing_ops">Start Ops <span class="arrow">&rarr;</span></a></div>
         <ul class="tier-feats">
           <li>Everything in Starter</li>
           <li>Lead capture + pipeline tracking</li>
@@ -1640,7 +1709,7 @@
       <div class="eyebrow" style="justify-content:center;">Start here</div>
       <h2>Stop being your own <em>ops manager.</em></h2>
       <p>Book a 30-minute diagnosis. If it's a fit, we build your Arca in 7 days. $99 to start.</p>
-      <a href="mailto:hello@runarca.xyz?subject=Diagnosis%20call" class="btn btn-amber">Book diagnosis call <span class="arrow">&rarr;</span></a>
+      <a href="/preview?source=final_cta&cta_id=diagnosis" class="btn btn-amber" data-analytics-event="cta_click" data-cta-id="final_diagnosis">Start your build <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -1672,15 +1741,15 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#how">How it works</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#get-started">Get started</a></li>
+          <li><a href="/preview?source=footer&cta_id=start_build" data-analytics-event="cta_click" data-cta-id="footer_start">Get started</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h4>Learn</h4>
         <ul>
-          <li><a href="/blog/">All articles</a></li>
+          <li><a href="/blog">All articles</a></li>
           <li><a href="/blog/managed-operations-guide">Managed operations guide</a></li>
-          <li><a href="/blog/vacation-test">The vacation test</a></li>
+          <li><a href="/blog/operations-audit-checklist">Operations audit checklist</a></li>
           <li><a href="/blog/operations-cost-mistake">The operations cost mistake</a></li>
           <li><a href="/blog/7-day-build-explained">The 7-day build</a></li>
         </ul>
@@ -1688,10 +1757,10 @@
       <div class="foot-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="/about/">About</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="mailto:hello@runarca.xyz">Contact</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
-          <li><a href="/terms/">Terms</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
         </ul>
       </div>
     </div>
@@ -1711,9 +1780,36 @@
   const navToggle = document.getElementById('navToggle');
   const navMobile = document.getElementById('navMobile');
   const navCloseBtn = document.getElementById('navCloseBtn');
-  navToggle?.addEventListener('click', () => navMobile.classList.add('open'));
-  navCloseBtn?.addEventListener('click', () => navMobile.classList.remove('open'));
-  document.querySelectorAll('[data-close]').forEach(a => a.addEventListener('click', () => navMobile.classList.remove('open')));
+  const setNavOpen = (open) => {
+    navMobile?.classList.toggle('open', open);
+    navToggle?.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) navMobile?.querySelector('a, button')?.focus();
+  };
+  navToggle?.addEventListener('click', () => setNavOpen(true));
+  navCloseBtn?.addEventListener('click', () => setNavOpen(false));
+  document.querySelectorAll('[data-close]').forEach(a => a.addEventListener('click', () => setNavOpen(false)));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navMobile?.classList.contains('open')) {
+      setNavOpen(false);
+      navToggle?.focus();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target.closest('a, button') : null;
+    if (!target || typeof window.gtag !== 'function') return;
+    const anchor = target instanceof HTMLAnchorElement ? target : null;
+    const ctaId = target.getAttribute('data-cta-id') || target.textContent?.trim() || 'unknown';
+    if (anchor?.href?.startsWith('mailto:')) {
+      window.gtag('event', 'mailto_click', { cta_id: ctaId, destination: anchor.href, page_path: window.location.pathname });
+      return;
+    }
+    if (target.getAttribute('data-analytics-event') === 'cta_click') {
+      window.gtag('event', 'cta_click', { cta_id: ctaId, destination: anchor?.href || '', page_path: window.location.pathname });
+    }
+  }, { passive: true });
 
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
